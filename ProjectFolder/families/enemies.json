@@ -1,0 +1,65 @@
+{
+	"name": "Enemies",
+	"plugin-id": "Sprite",
+	"sid": 801188332889848,
+	"instanceVariables": [
+		{
+			"name": "Health",
+			"type": "number",
+			"desc": "",
+			"sid": 682086268071486
+		},
+		{
+			"name": "Burning",
+			"type": "boolean",
+			"desc": "",
+			"sid": 369254390477172
+		},
+		{
+			"name": "Paralyzed",
+			"type": "boolean",
+			"desc": "",
+			"sid": 201353733258106
+		},
+		{
+			"name": "Frozen",
+			"type": "boolean",
+			"desc": "",
+			"sid": 862770507914934
+		},
+		{
+			"name": "StartPosX",
+			"type": "number",
+			"desc": "",
+			"sid": 857048166460020
+		},
+		{
+			"name": "StartPosY",
+			"type": "number",
+			"desc": "",
+			"sid": 585969796109004
+		},
+		{
+			"name": "StartHealth",
+			"type": "number",
+			"desc": "",
+			"sid": 484479940893158
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "MoveTo",
+			"name": "MoveTo",
+			"sid": 805259193701825
+		},
+		{
+			"behaviorId": "LOS",
+			"name": "LineOfSight",
+			"sid": 902020211761051
+		}
+	],
+	"effectTypes": [],
+	"members": [
+		"Enemy_Minor"
+	]
+}

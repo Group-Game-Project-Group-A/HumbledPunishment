@@ -1,0 +1,25 @@
+{
+	"name": "CardDocks",
+	"plugin-id": "Sprite",
+	"sid": 791114147972810,
+	"instanceVariables": [
+		{
+			"name": "Dockable",
+			"type": "boolean",
+			"desc": "",
+			"sid": 188688572426502
+		},
+		{
+			"name": "CardSlot",
+			"type": "number",
+			"desc": "",
+			"sid": 731424432623542
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"AbilityDock",
+		"ElementDock"
+	]
+}

@@ -1,0 +1,49 @@
+{
+	"name": "Cards",
+	"plugin-id": "Sprite",
+	"sid": 376656692329450,
+	"instanceVariables": [
+		{
+			"name": "StartPosX",
+			"type": "number",
+			"desc": "",
+			"sid": 970497093591974
+		},
+		{
+			"name": "StartPosY",
+			"type": "number",
+			"desc": "",
+			"sid": 126865080107425
+		},
+		{
+			"name": "Docked",
+			"type": "boolean",
+			"desc": "",
+			"sid": 152867949904408
+		},
+		{
+			"name": "CardPosition",
+			"type": "number",
+			"desc": "",
+			"sid": 269377839959885
+		},
+		{
+			"name": "Type",
+			"type": "string",
+			"desc": "",
+			"sid": 354094161553551
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "DragnDrop",
+			"name": "DragDrop",
+			"sid": 553601395770223
+		}
+	],
+	"effectTypes": [],
+	"members": [
+		"ElementCards",
+		"AbilityCards"
+	]
+}

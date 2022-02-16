@@ -5,27 +5,206 @@
 	"runtime": "c3",
 	"useWorker": "auto",
 	"bundleAddons": false,
-	"usedAddons": [],
+	"usedAddons": [
+		{
+			"type": "plugin",
+			"id": "Text",
+			"name": "Text",
+			"author": "Scirra",
+			"version": "r276.2",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Button",
+			"name": "Button",
+			"author": "Scirra",
+			"version": "r276.2",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Keyboard",
+			"name": "Keyboard",
+			"author": "Scirra",
+			"version": "r276.2",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Sprite",
+			"name": "Sprite",
+			"author": "Scirra",
+			"version": "r276.2",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "TiledBg",
+			"name": "Tiled Background",
+			"author": "Scirra",
+			"version": "r276.2",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Bullet",
+			"name": "Bullet",
+			"author": "Scirra",
+			"version": "r276.2",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "EightDir",
+			"name": "8 Direction",
+			"author": "Scirra",
+			"version": "r276.2",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "scrollto",
+			"name": "Scroll To",
+			"author": "Scirra",
+			"version": "r276.2",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "bound",
+			"name": "Bound to layout",
+			"author": "Scirra",
+			"version": "r276.2",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "solid",
+			"name": "Solid",
+			"author": "Scirra",
+			"version": "r276.2",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "MoveTo",
+			"name": "Move To",
+			"author": "Scirra",
+			"version": "r276.2",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "LOS",
+			"name": "Line of sight",
+			"author": "Scirra",
+			"version": "r276.2",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "DragnDrop",
+			"name": "Drag & Drop",
+			"author": "Scirra",
+			"version": "r276.2",
+			"bundled": false
+		}
+	],
 	"uniqueId": "7xtbmyvnn7g",
 	"objectTypes": {
-		"items": [],
-		"subfolders": []
+		"items": [
+			"Player",
+			"Enemy_Minor",
+			"NextSceneZone",
+			"Tile2",
+			"TiledBackground",
+			"Tile1",
+			"Border",
+			"Guide",
+			"Wall",
+			"WallTurn1",
+			"Pillar"
+		],
+		"subfolders": [
+			{
+				"items": [
+					"Tutorial_Txt"
+				],
+				"subfolders": [],
+				"name": "Text"
+			},
+			{
+				"items": [
+					"But_NextLevel",
+					"But_EnterLevel"
+				],
+				"subfolders": [],
+				"name": "Buttons"
+			},
+			{
+				"items": [
+					"Keyboard"
+				],
+				"subfolders": [],
+				"name": "Inputs"
+			},
+			{
+				"items": [
+					"Arrow"
+				],
+				"subfolders": [],
+				"name": "Projectiles"
+			},
+			{
+				"items": [],
+				"subfolders": [
+					{
+						"items": [
+							"AbilityCards",
+							"AbilityDock"
+						],
+						"subfolders": [],
+						"name": "Ability"
+					},
+					{
+						"items": [
+							"ElementCards",
+							"ElementDock"
+						],
+						"subfolders": [],
+						"name": "Element"
+					}
+				],
+				"name": "Cards"
+			}
+		]
 	},
 	"autosaveData": null,
 	"containers": [],
 	"families": {
-		"items": [],
+		"items": [
+			"Enemies",
+			"Cards",
+			"CardDocks",
+			"Walls"
+		],
 		"subfolders": []
 	},
 	"layouts": {
 		"items": [
-			"Menu"
+			"Menu",
+			"Lobby",
+			"LevelOne"
 		],
 		"subfolders": []
 	},
 	"eventSheets": {
 		"items": [
-			"Menu_ES"
+			"Menu_ES",
+			"Controls_ES",
+			"Lobby_ES",
+			"Combat_ES"
 		],
 		"subfolders": []
 	},
@@ -169,7 +348,7 @@
 		"renderingMode": "auto",
 		"anisotropicFiltering": "auto",
 		"maxSpriteSheetSize": 2048,
-		"loaderStyle": "splash",
+		"loaderStyle": "progress",
 		"preloadSounds": true,
 		"cordovaiOSScheme": "app",
 		"cordovaAndroidScheme": "https"

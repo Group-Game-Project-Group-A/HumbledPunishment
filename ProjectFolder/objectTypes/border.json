@@ -1,0 +1,63 @@
+{
+	"name": "Border",
+	"plugin-id": "Sprite",
+	"sid": 677613203876788,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 587345698206010
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 13,
+						"height": 34,
+						"originX": 0.46153846153846156,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 1920973,
+						"collisionPoly": {
+							"points": [
+								0.07692307692307693,
+								0.35294117647058826,
+								0.46153846153846156,
+								0.029411764705882353,
+								0.8461538461538461,
+								0.3235294117647059,
+								0.8461538461538461,
+								0.5,
+								0.8461538461538461,
+								0.6470588235294118,
+								0.46153846153846156,
+								0.9411764705882353,
+								0.07692307692307693,
+								0.6176470588235294,
+								0.07692307692307693,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 419846667404240,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

@@ -1,0 +1,929 @@
+{
+	"name": "Combat_ES",
+	"events": [
+		{
+			"eventType": "include",
+			"includeSheet": "Controls_ES"
+		},
+		{
+			"eventType": "variable",
+			"name": "NormalBow",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 445924503337737
+		},
+		{
+			"eventType": "variable",
+			"name": "Fire",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 273607049522809
+		},
+		{
+			"eventType": "variable",
+			"name": "Ice",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 781948531481146
+		},
+		{
+			"eventType": "variable",
+			"name": "Electric",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 217299613501252
+		},
+		{
+			"eventType": "variable",
+			"name": "PlayerHealth",
+			"type": "number",
+			"initialValue": "10",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 705718756633429
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Player",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Basic Bow",
+					"description": "Just fires one shot in the direction you're facing",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-key-pressed",
+									"objectClass": "Keyboard",
+									"sid": 980766780149687,
+									"parameters": {
+										"key": 32
+									}
+								}
+							],
+							"actions": [],
+							"sid": 496688218942924,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 957226274436315,
+											"parameters": {
+												"variable": "NormalBow"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "spawn-another-object",
+											"objectClass": "Player",
+											"sid": 230491976585586,
+											"parameters": {
+												"object": "Arrow",
+												"layer": "0",
+												"image-point": "0",
+												"create-hierarchy": false
+											}
+										}
+									],
+									"sid": 418451668442817
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 190739554661512,
+											"parameters": {
+												"variable": "NormalBow"
+											}
+										},
+										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 616102679665029,
+											"parameters": {
+												"variable": "Fire"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "spawn-another-object",
+											"objectClass": "Player",
+											"sid": 372011034928262,
+											"parameters": {
+												"object": "Arrow",
+												"layer": "0",
+												"image-point": "0",
+												"create-hierarchy": false
+											}
+										},
+										{
+											"id": "set-animation",
+											"objectClass": "Arrow",
+											"sid": 605997800206493,
+											"parameters": {
+												"animation": "\"Fire\"",
+												"from": "beginning"
+											}
+										}
+									],
+									"sid": 456695688283921
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 220415452829541,
+											"parameters": {
+												"variable": "NormalBow"
+											}
+										},
+										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 190537955076577,
+											"parameters": {
+												"variable": "Ice"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "spawn-another-object",
+											"objectClass": "Player",
+											"sid": 274904046836343,
+											"parameters": {
+												"object": "Arrow",
+												"layer": "0",
+												"image-point": "0",
+												"create-hierarchy": false
+											}
+										},
+										{
+											"id": "set-animation",
+											"objectClass": "Arrow",
+											"sid": 978505652005399,
+											"parameters": {
+												"animation": "\"Ice\"",
+												"from": "beginning"
+											}
+										}
+									],
+									"sid": 365829035030454
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 155067468784867,
+											"parameters": {
+												"variable": "NormalBow"
+											}
+										},
+										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 152713777222463,
+											"parameters": {
+												"variable": "Electric"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "spawn-another-object",
+											"objectClass": "Player",
+											"sid": 603151233542524,
+											"parameters": {
+												"object": "Arrow",
+												"layer": "0",
+												"image-point": "0",
+												"create-hierarchy": false
+											}
+										},
+										{
+											"id": "set-animation",
+											"objectClass": "Arrow",
+											"sid": 290747130658878,
+											"parameters": {
+												"animation": "\"Electric\"",
+												"from": "beginning"
+											}
+										}
+									],
+									"sid": 810217076537401
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 286737325341650,
+									"parameters": {
+										"variable": "NormalBow"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 475407304310836,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "on-collision-with-another-object",
+											"objectClass": "Arrow",
+											"sid": 793555758855715,
+											"parameters": {
+												"object": "Walls"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "destroy",
+											"objectClass": "Arrow",
+											"sid": 293544137659550
+										}
+									],
+									"sid": 843910283762890
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "on-collision-with-another-object",
+											"objectClass": "Arrow",
+											"sid": 465553008861964,
+											"parameters": {
+												"object": "Enemies"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "subtract-from-instvar",
+											"objectClass": "Enemies",
+											"sid": 518050689383205,
+											"parameters": {
+												"instance-variable": "Health",
+												"value": "1"
+											}
+										},
+										{
+											"id": "destroy",
+											"objectClass": "Arrow",
+											"sid": 155283803516615
+										}
+									],
+									"sid": 598430733630433,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-boolean-eventvar",
+													"objectClass": "System",
+													"sid": 856908453443508,
+													"parameters": {
+														"variable": "Electric"
+													}
+												},
+												{
+													"id": "is-boolean-instance-variable-set",
+													"objectClass": "Enemies",
+													"sid": 934713353282834,
+													"parameters": {
+														"instance-variable": "Paralyzed"
+													},
+													"isInverted": true
+												}
+											],
+											"actions": [
+												{
+													"id": "set-boolean-instvar",
+													"objectClass": "Enemies",
+													"sid": 525219357718528,
+													"parameters": {
+														"instance-variable": "Paralyzed",
+														"value": "true"
+													}
+												}
+											],
+											"sid": 923211164408369
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-boolean-eventvar",
+													"objectClass": "System",
+													"sid": 810329107322415,
+													"parameters": {
+														"variable": "Fire"
+													}
+												},
+												{
+													"id": "is-boolean-instance-variable-set",
+													"objectClass": "Enemies",
+													"sid": 520799220271814,
+													"parameters": {
+														"instance-variable": "Burning"
+													},
+													"isInverted": true
+												}
+											],
+											"actions": [
+												{
+													"id": "set-boolean-instvar",
+													"objectClass": "Enemies",
+													"sid": 399849208217699,
+													"parameters": {
+														"instance-variable": "Burning",
+														"value": "true"
+													}
+												}
+											],
+											"sid": 940746601418212
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-boolean-eventvar",
+													"objectClass": "System",
+													"sid": 850008904172791,
+													"parameters": {
+														"variable": "Ice"
+													}
+												},
+												{
+													"id": "is-boolean-instance-variable-set",
+													"objectClass": "Enemies",
+													"sid": 978749774881339,
+													"parameters": {
+														"instance-variable": "Frozen"
+													},
+													"isInverted": true
+												}
+											],
+											"actions": [
+												{
+													"id": "set-boolean-instvar",
+													"objectClass": "Enemies",
+													"sid": 249590311259167,
+													"parameters": {
+														"instance-variable": "Frozen",
+														"value": "true"
+													}
+												}
+											],
+											"sid": 616630255503313
+										}
+									]
+								}
+							]
+						}
+					],
+					"sid": 166833783374994
+				}
+			],
+			"sid": 315092312897719
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Enemy",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Status Effects",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "Enemies",
+									"sid": 155162972367071,
+									"parameters": {
+										"instance-variable": "Burning"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 957567256070242,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [],
+									"actions": [
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "Enemies",
+											"sid": 612451012126307,
+											"parameters": {
+												"instance-variable": "Burning",
+												"value": "false"
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 282608240000159,
+											"parameters": {
+												"seconds": "1.0"
+											}
+										},
+										{
+											"id": "subtract-from-instvar",
+											"objectClass": "Enemies",
+											"sid": 702142909278185,
+											"parameters": {
+												"instance-variable": "Health",
+												"value": "1"
+											}
+										},
+										{
+											"id": "set-default-color",
+											"objectClass": "Enemies",
+											"sid": 421872280251422,
+											"parameters": {
+												"color": "rgb(255,0,0)"
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 534052085853510,
+											"parameters": {
+												"seconds": "0.5"
+											}
+										},
+										{
+											"id": "set-default-color",
+											"objectClass": "Enemies",
+											"sid": 267510456300491,
+											"parameters": {
+												"color": "rgb(255,255,255)"
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 170903421939258,
+											"parameters": {
+												"seconds": "1.0"
+											}
+										},
+										{
+											"id": "subtract-from-instvar",
+											"objectClass": "Enemies",
+											"sid": 109046176629095,
+											"parameters": {
+												"instance-variable": "Health",
+												"value": "1"
+											}
+										},
+										{
+											"id": "set-default-color",
+											"objectClass": "Enemies",
+											"sid": 341213989329400,
+											"parameters": {
+												"color": "rgb(255,0,0)"
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 835762274844650,
+											"parameters": {
+												"seconds": "0.5"
+											}
+										},
+										{
+											"id": "set-default-color",
+											"objectClass": "Enemies",
+											"sid": 119761475645953,
+											"parameters": {
+												"color": "rgb(255,255,255)"
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 933859806037405,
+											"parameters": {
+												"seconds": "1.0"
+											}
+										},
+										{
+											"id": "subtract-from-instvar",
+											"objectClass": "Enemies",
+											"sid": 971389576188479,
+											"parameters": {
+												"instance-variable": "Health",
+												"value": "1"
+											}
+										},
+										{
+											"id": "set-default-color",
+											"objectClass": "Enemies",
+											"sid": 190986108820593,
+											"parameters": {
+												"color": "rgb(255,0,0)"
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 219876716664921,
+											"parameters": {
+												"seconds": "0.5"
+											}
+										},
+										{
+											"id": "set-default-color",
+											"objectClass": "Enemies",
+											"sid": 594919463299953,
+											"parameters": {
+												"color": "rgb(255,255,255)"
+											}
+										}
+									],
+									"sid": 170959005210033
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "Enemies",
+									"sid": 469483195180340,
+									"parameters": {
+										"instance-variable": "Frozen"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 659138077337811,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [],
+									"actions": [
+										{
+											"id": "set-max-speed",
+											"objectClass": "Enemies",
+											"sid": 494911249945298,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"max-speed": "75"
+											}
+										},
+										{
+											"id": "set-default-color",
+											"objectClass": "Enemy_Minor",
+											"sid": 721786866337747,
+											"parameters": {
+												"color": "rgb(51, 157, 218)"
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 899040774149017,
+											"parameters": {
+												"seconds": "5.0"
+											}
+										},
+										{
+											"id": "set-max-speed",
+											"objectClass": "Enemies",
+											"sid": 189025761831654,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"max-speed": "150"
+											}
+										},
+										{
+											"id": "set-default-color",
+											"objectClass": "Enemy_Minor",
+											"sid": 915577242194676,
+											"parameters": {
+												"color": "rgb(255, 255, 255)"
+											}
+										},
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "Enemies",
+											"sid": 154198308464806,
+											"parameters": {
+												"instance-variable": "Frozen",
+												"value": "false"
+											}
+										}
+									],
+									"sid": 942192821965737
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "Enemies",
+									"sid": 710079705057037,
+									"parameters": {
+										"instance-variable": "Paralyzed"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 519777255672967,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [],
+									"actions": [
+										{
+											"id": "set-max-speed",
+											"objectClass": "Enemies",
+											"sid": 956128077331745,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"max-speed": "0"
+											}
+										},
+										{
+											"id": "set-default-color",
+											"objectClass": "Enemy_Minor",
+											"sid": 377387532951174,
+											"parameters": {
+												"color": "rgb(252, 243, 7)"
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 226476860952625,
+											"parameters": {
+												"seconds": "5.0"
+											}
+										},
+										{
+											"id": "set-max-speed",
+											"objectClass": "Enemies",
+											"sid": 141661437607135,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"max-speed": "150"
+											}
+										},
+										{
+											"id": "set-default-color",
+											"objectClass": "Enemy_Minor",
+											"sid": 786184876091134,
+											"parameters": {
+												"color": "rgb(255, 255, 255)"
+											}
+										},
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "Enemies",
+											"sid": 916516274591724,
+											"parameters": {
+												"instance-variable": "Paralyzed",
+												"value": "false"
+											}
+										}
+									],
+									"sid": 123461238040437
+								}
+							]
+						}
+					],
+					"sid": 806757725568009
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Enemies",
+							"sid": 644092135248222,
+							"parameters": {
+								"instance-variable": "Health",
+								"comparison": 3,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "Enemies",
+							"sid": 985996051179181,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-collisions-enabled",
+							"objectClass": "Enemies",
+							"sid": 702372393420612,
+							"parameters": {
+								"collisions": "disabled"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "Enemies",
+							"sid": 903496736588124,
+							"parameters": {
+								"x": "Enemies.StartPosX",
+								"y": "Enemies.StartPosY"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 248251314249826,
+							"parameters": {
+								"seconds": "10"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Enemies",
+							"sid": 440381838661593,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-collisions-enabled",
+							"objectClass": "Enemies",
+							"sid": 824951879517169,
+							"parameters": {
+								"collisions": "enabled"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "Enemies",
+							"sid": 826058176830215,
+							"parameters": {
+								"instance-variable": "Health",
+								"value": "Enemies.StartHealth"
+							}
+						}
+					],
+					"sid": 472983756066426
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 480632889951959
+						}
+					],
+					"actions": [
+						{
+							"id": "set-instvar-value",
+							"objectClass": "Enemies",
+							"sid": 731047064634461,
+							"parameters": {
+								"instance-variable": "StartHealth",
+								"value": "Enemies.Health"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "Enemies",
+							"sid": 264329155685203,
+							"parameters": {
+								"instance-variable": "StartPosX",
+								"value": "Enemies.X"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "Enemies",
+							"sid": 640650793827300,
+							"parameters": {
+								"instance-variable": "StartPosY",
+								"value": "Enemies.Y"
+							}
+						}
+					],
+					"sid": 858192994813381
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "has-los-to-object",
+							"objectClass": "Enemies",
+							"sid": 449468203751423,
+							"behaviorType": "LineOfSight",
+							"parameters": {
+								"object": "Player",
+								"image-point": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "move-to-object",
+							"objectClass": "Enemies",
+							"sid": 473774168739513,
+							"behaviorType": "MoveTo",
+							"parameters": {
+								"object": "Player",
+								"image-point": "0",
+								"mode": "direct"
+							}
+						}
+					],
+					"sid": 478866298343488
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "has-los-to-object",
+							"objectClass": "Enemies",
+							"sid": 559474224517131,
+							"behaviorType": "LineOfSight",
+							"parameters": {
+								"object": "Player",
+								"image-point": "0"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "move-to-position",
+							"objectClass": "Enemies",
+							"sid": 993067126404375,
+							"behaviorType": "MoveTo",
+							"parameters": {
+								"x": "Enemies.StartPosX",
+								"y": "Enemies.StartPosY",
+								"mode": "direct"
+							}
+						}
+					],
+					"sid": 936237471295173
+				}
+			],
+			"sid": 976221568735994
+		}
+	],
+	"sid": 572159754785977
+}

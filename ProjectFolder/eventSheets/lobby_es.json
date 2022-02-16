@@ -1,0 +1,1260 @@
+{
+	"name": "Lobby_ES",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "AbilityCardsDocked",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 683090296235918
+		},
+		{
+			"eventType": "variable",
+			"name": "ElementalCardsDocked",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 512049463496007
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "Controls_ES"
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Cards",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Cards Showing",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-overlapping-another-object",
+									"objectClass": "Player",
+									"sid": 739768278153409,
+									"parameters": {
+										"object": "NextSceneZone"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-visible",
+									"objectClass": "CardDocks",
+									"sid": 381882562609860,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "set-collisions-enabled",
+									"objectClass": "CardDocks",
+									"sid": 121908849064390,
+									"parameters": {
+										"collisions": "enabled"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "Cards",
+									"sid": 160089074333048,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "set-collisions-enabled",
+									"objectClass": "Cards",
+									"sid": 736543736254402,
+									"parameters": {
+										"collisions": "enabled"
+									}
+								}
+							],
+							"sid": 241973884428367,
+							"children": [
+								{
+									"eventType": "comment",
+									"text": "If the player is overlapping the next scene zone, set the card docks & the card's visibility & collisions to enabled"
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 205379523761622,
+											"parameters": {
+												"variable": "AbilityCardsDocked",
+												"comparison": 5,
+												"value": "1"
+											}
+										},
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 150853779815831,
+											"parameters": {
+												"variable": "ElementalCardsDocked",
+												"comparison": 5,
+												"value": "1"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-enabled",
+											"objectClass": "But_EnterLevel",
+											"sid": 348538961810967,
+											"parameters": {
+												"mode": "enabled"
+											}
+										},
+										{
+											"id": "set-visible",
+											"objectClass": "But_EnterLevel",
+											"sid": 312741916537394,
+											"parameters": {
+												"visibility": "visible"
+											}
+										}
+									],
+									"sid": 922372312100475,
+									"children": [
+										{
+											"eventType": "comment",
+											"text": "If both types of Cards Docked variables are equal or greater than 1 (the amount you're allowed to choose), then set the button & it's visibility to enabled"
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "on-clicked",
+													"objectClass": "But_EnterLevel",
+													"sid": 473812744520433
+												}
+											],
+											"actions": [
+												{
+													"id": "go-to-layout-by-name",
+													"objectClass": "System",
+													"sid": 923021054196555,
+													"parameters": {
+														"layout": "NextSceneZone.NextScene"
+													}
+												}
+											],
+											"sid": 418148377048291,
+											"children": [
+												{
+													"eventType": "comment",
+													"text": "Click the button to go to the level that's indicated by the NextSceneZone's NextScene string variable"
+												}
+											]
+										}
+									]
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 575606347018227,
+											"parameters": {
+												"variable": "AbilityCardsDocked",
+												"comparison": 2,
+												"value": "1"
+											}
+										},
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 993053646180087,
+											"parameters": {
+												"variable": "ElementalCardsDocked",
+												"comparison": 2,
+												"value": "1"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-enabled",
+											"objectClass": "But_EnterLevel",
+											"sid": 831802932466423,
+											"parameters": {
+												"mode": "disabled"
+											}
+										},
+										{
+											"id": "set-visible",
+											"objectClass": "But_EnterLevel",
+											"sid": 336627440431866,
+											"parameters": {
+												"visibility": "invisible"
+											}
+										}
+									],
+									"sid": 261769573017661,
+									"children": [
+										{
+											"eventType": "comment",
+											"text": "If the cardsDocked variables are not equal to the correct amount, make the button invisible, and disabled"
+										}
+									],
+									"isOrBlock": true
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-overlapping-another-object",
+									"objectClass": "Player",
+									"sid": 700431035949716,
+									"parameters": {
+										"object": "NextSceneZone"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "set-visible",
+									"objectClass": "CardDocks",
+									"sid": 239086773005182,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "set-collisions-enabled",
+									"objectClass": "CardDocks",
+									"sid": 989047267128148,
+									"parameters": {
+										"collisions": "disabled"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "Cards",
+									"sid": 892829093151182,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "set-collisions-enabled",
+									"objectClass": "Cards",
+									"sid": 578109065360274,
+									"parameters": {
+										"collisions": "disabled"
+									}
+								},
+								{
+									"id": "set-enabled",
+									"objectClass": "But_EnterLevel",
+									"sid": 284117421040963,
+									"parameters": {
+										"mode": "enabled"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "But_EnterLevel",
+									"sid": 653852377119669,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								}
+							],
+							"sid": 352346755081117,
+							"children": [
+								{
+									"eventType": "comment",
+									"text": "If the player is not overlapping the next scene zone, make the cards, their docks, and the start button all invisible, and disabled"
+								}
+							]
+						}
+					],
+					"sid": 542580203578581
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Cards Docking",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-start-of-layout",
+									"objectClass": "System",
+									"sid": 818919039797243
+								}
+							],
+							"actions": [
+								{
+									"id": "set-instvar-value",
+									"objectClass": "Cards",
+									"sid": 609316897999007,
+									"parameters": {
+										"instance-variable": "StartPosX",
+										"value": "Cards.X"
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "Cards",
+									"sid": 471007501333537,
+									"parameters": {
+										"instance-variable": "StartPosY",
+										"value": "Cards.Y"
+									}
+								}
+							],
+							"sid": 220572128034155,
+							"children": [
+								{
+									"eventType": "comment",
+									"text": "On the start of the layout, set each card's startPos variables to their x & y positions"
+								}
+							]
+						},
+						{
+							"eventType": "group",
+							"disabled": false,
+							"title": "Ability Cards",
+							"description": "",
+							"isActiveOnStart": true,
+							"children": [
+								{
+									"eventType": "group",
+									"disabled": false,
+									"title": "Ability Undocking",
+									"description": "",
+									"isActiveOnStart": true,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "is-overlapping-another-object",
+													"objectClass": "AbilityCards",
+													"sid": 169204601392728,
+													"parameters": {
+														"object": "AbilityDock"
+													},
+													"isInverted": true
+												},
+												{
+													"id": "is-dragging",
+													"objectClass": "AbilityCards",
+													"sid": 600255971293154,
+													"behaviorType": "DragDrop",
+													"isInverted": true
+												}
+											],
+											"actions": [
+												{
+													"id": "set-position",
+													"objectClass": "AbilityCards",
+													"sid": 259979761284239,
+													"parameters": {
+														"x": "AbilityCards.StartPosX",
+														"y": "AbilityCards.StartPosY"
+													}
+												},
+												{
+													"id": "set-boolean-instvar",
+													"objectClass": "AbilityCards",
+													"sid": 844201657327784,
+													"parameters": {
+														"instance-variable": "Docked",
+														"value": "false"
+													}
+												}
+											],
+											"sid": 584164437577975,
+											"children": [
+												{
+													"eventType": "comment",
+													"text": "When the card is not overlapping a dock and you are not dragging the card, set the card's position to the OG position, and set the docked variable to false"
+												}
+											]
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "on-drop",
+													"objectClass": "AbilityCards",
+													"sid": 316455572559658,
+													"behaviorType": "DragDrop"
+												},
+												{
+													"id": "is-overlapping-another-object",
+													"objectClass": "AbilityCards",
+													"sid": 899904240075461,
+													"parameters": {
+														"object": "AbilityDock"
+													},
+													"isInverted": true
+												}
+											],
+											"actions": [
+												{
+													"id": "set-boolean-instvar",
+													"objectClass": "AbilityCards",
+													"sid": 455669194607049,
+													"parameters": {
+														"instance-variable": "Docked",
+														"value": "false"
+													}
+												}
+											],
+											"sid": 236777197200313,
+											"children": [
+												{
+													"eventType": "comment",
+													"text": "When you drop a card, and it's not overlapping a dock, set the card's docked variable to false"
+												},
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "compare-instance-variable",
+															"objectClass": "AbilityDock",
+															"sid": 491207794330344,
+															"parameters": {
+																"instance-variable": "CardSlot",
+																"comparison": 0,
+																"value": "AbilityCards.CardPosition"
+															}
+														}
+													],
+													"actions": [
+														{
+															"id": "set-boolean-instvar",
+															"objectClass": "AbilityDock",
+															"sid": 737550991759750,
+															"parameters": {
+																"instance-variable": "Dockable",
+																"value": "true"
+															}
+														}
+													],
+													"sid": 648306747820451,
+													"children": [
+														{
+															"eventType": "comment",
+															"text": "set card dock's to dockable, allowing another card to be placed"
+														}
+													]
+												},
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "compare-instance-variable",
+															"objectClass": "AbilityCards",
+															"sid": 497239421857778,
+															"parameters": {
+																"instance-variable": "CardPosition",
+																"comparison": 0,
+																"value": "AbilityDock.CardSlot"
+															}
+														}
+													],
+													"actions": [
+														{
+															"id": "subtract-from-eventvar",
+															"objectClass": "System",
+															"sid": 546548694570861,
+															"parameters": {
+																"variable": "AbilityCardsDocked",
+																"value": "AbilityCards.CardPosition"
+															}
+														},
+														{
+															"id": "set-boolean-eventvar",
+															"objectClass": "System",
+															"sid": 380583627367366,
+															"parameters": {
+																"variable": "NormalBow",
+																"value": "false"
+															}
+														}
+													],
+													"sid": 360124957866948,
+													"children": [
+														{
+															"eventType": "comment",
+															"text": "Subtract ability cards docked by the card position (one), and set the ability bools to false"
+														},
+														{
+															"eventType": "block",
+															"conditions": [],
+															"actions": [
+																{
+																	"id": "set-instvar-value",
+																	"objectClass": "AbilityCards",
+																	"sid": 193689000422824,
+																	"parameters": {
+																		"instance-variable": "CardPosition",
+																		"value": "0"
+																	}
+																}
+															],
+															"sid": 556945392663985,
+															"children": [
+																{
+																	"eventType": "comment",
+																	"text": "Set the card's position to 0"
+																}
+															]
+														}
+													]
+												},
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "compare-instance-variable",
+															"objectClass": "AbilityCards",
+															"sid": 800142752097902,
+															"parameters": {
+																"instance-variable": "CardPosition",
+																"comparison": 0,
+																"value": "0"
+															}
+														}
+													],
+													"actions": [
+														{
+															"id": "set-position",
+															"objectClass": "AbilityCards",
+															"sid": 933645821011257,
+															"parameters": {
+																"x": "AbilityCards.StartPosX",
+																"y": "AbilityCards.StartPosY"
+															}
+														}
+													],
+													"sid": 269237221981702,
+													"children": [
+														{
+															"eventType": "comment",
+															"text": "When the card's cardposition is set to 0, reset it's position to the starting position"
+														}
+													]
+												}
+											]
+										}
+									],
+									"sid": 713276801068818
+								},
+								{
+									"eventType": "group",
+									"disabled": false,
+									"title": "Ability Docking",
+									"description": "",
+									"isActiveOnStart": true,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "on-drop",
+													"objectClass": "AbilityCards",
+													"sid": 744352716516217,
+													"behaviorType": "DragDrop"
+												},
+												{
+													"id": "is-overlapping-another-object",
+													"objectClass": "AbilityCards",
+													"sid": 423409391755097,
+													"parameters": {
+														"object": "AbilityDock"
+													}
+												},
+												{
+													"id": "is-boolean-instance-variable-set",
+													"objectClass": "AbilityDock",
+													"sid": 764736267502003,
+													"parameters": {
+														"instance-variable": "Dockable"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-instvar-value",
+													"objectClass": "AbilityCards",
+													"sid": 175901360069352,
+													"parameters": {
+														"instance-variable": "CardPosition",
+														"value": "AbilityDock.CardSlot"
+													}
+												}
+											],
+											"sid": 546647894750130,
+											"children": [
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "compare-instance-variable",
+															"objectClass": "AbilityCards",
+															"sid": 456592933589913,
+															"parameters": {
+																"instance-variable": "CardPosition",
+																"comparison": 0,
+																"value": "AbilityDock.CardSlot"
+															}
+														}
+													],
+													"actions": [
+														{
+															"id": "set-position-to-another-object",
+															"objectClass": "AbilityCards",
+															"sid": 805584751139287,
+															"parameters": {
+																"object": "AbilityDock",
+																"image-point-optional": "0"
+															}
+														},
+														{
+															"id": "set-boolean-instvar",
+															"objectClass": "AbilityCards",
+															"sid": 928939489987781,
+															"parameters": {
+																"instance-variable": "Docked",
+																"value": "true"
+															}
+														}
+													],
+													"sid": 981596798388076,
+													"children": [
+														{
+															"eventType": "block",
+															"conditions": [
+																{
+																	"id": "compare-instance-variable",
+																	"objectClass": "AbilityDock",
+																	"sid": 369261825837279,
+																	"parameters": {
+																		"instance-variable": "CardSlot",
+																		"comparison": 0,
+																		"value": "AbilityCards.CardPosition"
+																	}
+																}
+															],
+															"actions": [
+																{
+																	"id": "set-boolean-instvar",
+																	"objectClass": "AbilityDock",
+																	"sid": 970694568673583,
+																	"parameters": {
+																		"instance-variable": "Dockable",
+																		"value": "false"
+																	}
+																}
+															],
+															"sid": 538926822135559,
+															"children": [
+																{
+																	"eventType": "comment",
+																	"text": "if the card slot is equal to the card's card position, set the card dock's dockable variable to false"
+																},
+																{
+																	"eventType": "block",
+																	"conditions": [
+																		{
+																			"id": "compare-instance-variable",
+																			"objectClass": "AbilityCards",
+																			"sid": 597382059089155,
+																			"parameters": {
+																				"instance-variable": "Type",
+																				"comparison": 0,
+																				"value": "\"NormalBow\""
+																			}
+																		}
+																	],
+																	"actions": [
+																		{
+																			"id": "set-boolean-eventvar",
+																			"objectClass": "System",
+																			"sid": 791020267545130,
+																			"parameters": {
+																				"variable": "NormalBow",
+																				"value": "true"
+																			}
+																		},
+																		{
+																			"id": "add-to-eventvar",
+																			"objectClass": "System",
+																			"sid": 527634481731020,
+																			"parameters": {
+																				"variable": "AbilityCardsDocked",
+																				"value": "AbilityCards.CardPosition"
+																			}
+																		}
+																	],
+																	"sid": 321112740989975,
+																	"children": [
+																		{
+																			"eventType": "comment",
+																			"text": "Set the global ability to the ability chosen"
+																		}
+																	]
+																}
+															]
+														}
+													]
+												},
+												{
+													"eventType": "comment",
+													"text": "When you stop dragging the card, and the card is overlapping a card dock, AND that card dock is dockable, set the card's card position to the card dock's card slot"
+												}
+											]
+										}
+									],
+									"sid": 323750974674073
+								}
+							],
+							"sid": 236130972038378
+						},
+						{
+							"eventType": "group",
+							"disabled": false,
+							"title": "Elemental Cards",
+							"description": "",
+							"isActiveOnStart": true,
+							"children": [
+								{
+									"eventType": "group",
+									"disabled": false,
+									"title": "Elemental Docking",
+									"description": "",
+									"isActiveOnStart": true,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "on-drop",
+													"objectClass": "ElementCards",
+													"sid": 887261336893707,
+													"behaviorType": "DragDrop"
+												},
+												{
+													"id": "is-overlapping-another-object",
+													"objectClass": "ElementCards",
+													"sid": 188783426114814,
+													"parameters": {
+														"object": "ElementDock"
+													}
+												},
+												{
+													"id": "is-boolean-instance-variable-set",
+													"objectClass": "ElementDock",
+													"sid": 431591171694292,
+													"parameters": {
+														"instance-variable": "Dockable"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-instvar-value",
+													"objectClass": "ElementCards",
+													"sid": 711952735304981,
+													"parameters": {
+														"instance-variable": "CardPosition",
+														"value": "ElementDock.CardSlot"
+													}
+												}
+											],
+											"sid": 832512836419439,
+											"children": [
+												{
+													"eventType": "comment",
+													"text": "When you stop dragging the card, and the card is overlapping a card dock, AND that card dock is dockable, set the card's card position to the card dock's card slot"
+												},
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "compare-instance-variable",
+															"objectClass": "ElementCards",
+															"sid": 978411262559426,
+															"parameters": {
+																"instance-variable": "CardPosition",
+																"comparison": 0,
+																"value": "ElementDock.CardSlot"
+															}
+														}
+													],
+													"actions": [
+														{
+															"id": "set-position-to-another-object",
+															"objectClass": "ElementCards",
+															"sid": 632459798263592,
+															"parameters": {
+																"object": "ElementDock",
+																"image-point-optional": "0"
+															}
+														},
+														{
+															"id": "set-boolean-instvar",
+															"objectClass": "ElementCards",
+															"sid": 695210775017039,
+															"parameters": {
+																"instance-variable": "Docked",
+																"value": "true"
+															}
+														}
+													],
+													"sid": 555474685662755,
+													"children": [
+														{
+															"eventType": "block",
+															"conditions": [
+																{
+																	"id": "compare-instance-variable",
+																	"objectClass": "ElementDock",
+																	"sid": 450318125692033,
+																	"parameters": {
+																		"instance-variable": "CardSlot",
+																		"comparison": 0,
+																		"value": "ElementCards.CardPosition"
+																	}
+																}
+															],
+															"actions": [
+																{
+																	"id": "set-boolean-instvar",
+																	"objectClass": "ElementDock",
+																	"sid": 729907181135773,
+																	"parameters": {
+																		"instance-variable": "Dockable",
+																		"value": "false"
+																	}
+																}
+															],
+															"sid": 105906198488630,
+															"children": [
+																{
+																	"eventType": "comment",
+																	"text": "if the card slot is equal to the card's card position, set the card dock's dockable variable to false"
+																},
+																{
+																	"eventType": "block",
+																	"conditions": [
+																		{
+																			"id": "compare-instance-variable",
+																			"objectClass": "ElementCards",
+																			"sid": 239476459358943,
+																			"parameters": {
+																				"instance-variable": "Type",
+																				"comparison": 0,
+																				"value": "\"Ice\""
+																			}
+																		}
+																	],
+																	"actions": [
+																		{
+																			"id": "set-boolean-eventvar",
+																			"objectClass": "System",
+																			"sid": 422742266657307,
+																			"parameters": {
+																				"variable": "Ice",
+																				"value": "true"
+																			}
+																		},
+																		{
+																			"id": "add-to-eventvar",
+																			"objectClass": "System",
+																			"sid": 319971958291236,
+																			"parameters": {
+																				"variable": "ElementalCardsDocked",
+																				"value": "ElementCards.CardPosition"
+																			}
+																		}
+																	],
+																	"sid": 868584098058454,
+																	"children": [
+																		{
+																			"eventType": "comment",
+																			"text": "Set the global ability to the ability chosen"
+																		}
+																	]
+																},
+																{
+																	"eventType": "block",
+																	"conditions": [
+																		{
+																			"id": "compare-instance-variable",
+																			"objectClass": "ElementCards",
+																			"sid": 568486791541275,
+																			"parameters": {
+																				"instance-variable": "Type",
+																				"comparison": 0,
+																				"value": "\"Fire\""
+																			}
+																		}
+																	],
+																	"actions": [
+																		{
+																			"id": "set-boolean-eventvar",
+																			"objectClass": "System",
+																			"sid": 487790680395405,
+																			"parameters": {
+																				"variable": "Fire",
+																				"value": "true"
+																			}
+																		},
+																		{
+																			"id": "add-to-eventvar",
+																			"objectClass": "System",
+																			"sid": 169583110414249,
+																			"parameters": {
+																				"variable": "ElementalCardsDocked",
+																				"value": "ElementCards.CardPosition"
+																			}
+																		}
+																	],
+																	"sid": 888134328251615,
+																	"children": [
+																		{
+																			"eventType": "comment",
+																			"text": "Set the global ability to the ability chosen"
+																		}
+																	]
+																},
+																{
+																	"eventType": "block",
+																	"conditions": [
+																		{
+																			"id": "compare-instance-variable",
+																			"objectClass": "ElementCards",
+																			"sid": 893116726464748,
+																			"parameters": {
+																				"instance-variable": "Type",
+																				"comparison": 0,
+																				"value": "\"Electric\""
+																			}
+																		}
+																	],
+																	"actions": [
+																		{
+																			"id": "set-boolean-eventvar",
+																			"objectClass": "System",
+																			"sid": 555305534944989,
+																			"parameters": {
+																				"variable": "Electric",
+																				"value": "true"
+																			}
+																		},
+																		{
+																			"id": "add-to-eventvar",
+																			"objectClass": "System",
+																			"sid": 307870966466387,
+																			"parameters": {
+																				"variable": "ElementalCardsDocked",
+																				"value": "ElementCards.CardPosition"
+																			}
+																		}
+																	],
+																	"sid": 294030080974110,
+																	"children": [
+																		{
+																			"eventType": "comment",
+																			"text": "Set the global ability to the ability chosen"
+																		}
+																	]
+																}
+															]
+														}
+													]
+												}
+											]
+										}
+									],
+									"sid": 569099400581160
+								},
+								{
+									"eventType": "group",
+									"disabled": false,
+									"title": "Ele Undocking",
+									"description": "",
+									"isActiveOnStart": true,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "is-overlapping-another-object",
+													"objectClass": "ElementCards",
+													"sid": 798050384778071,
+													"parameters": {
+														"object": "ElementDock"
+													},
+													"isInverted": true
+												},
+												{
+													"id": "is-dragging",
+													"objectClass": "ElementCards",
+													"sid": 548587077445882,
+													"behaviorType": "DragDrop",
+													"isInverted": true
+												}
+											],
+											"actions": [
+												{
+													"id": "set-position",
+													"objectClass": "ElementCards",
+													"sid": 365417147896850,
+													"parameters": {
+														"x": "ElementCards.StartPosX",
+														"y": "ElementCards.StartPosY"
+													}
+												},
+												{
+													"id": "set-boolean-instvar",
+													"objectClass": "ElementCards",
+													"sid": 320781815275963,
+													"parameters": {
+														"instance-variable": "Docked",
+														"value": "false"
+													}
+												}
+											],
+											"sid": 768131161654066,
+											"children": [
+												{
+													"eventType": "comment",
+													"text": "When the card is not overlapping a dock and you are not dragging the card, set the card's position to the OG position, and set the docked variable to false"
+												}
+											]
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "on-drop",
+													"objectClass": "ElementCards",
+													"sid": 200473523949956,
+													"behaviorType": "DragDrop"
+												},
+												{
+													"id": "is-overlapping-another-object",
+													"objectClass": "ElementCards",
+													"sid": 640958373030429,
+													"parameters": {
+														"object": "ElementDock"
+													},
+													"isInverted": true
+												}
+											],
+											"actions": [
+												{
+													"id": "set-boolean-instvar",
+													"objectClass": "ElementCards",
+													"sid": 918157177141164,
+													"parameters": {
+														"instance-variable": "Docked",
+														"value": "false"
+													}
+												}
+											],
+											"sid": 977089611494973,
+											"children": [
+												{
+													"eventType": "comment",
+													"text": "When you drop a card, and it's not overlapping a dock, set the card's docked variable to false"
+												},
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "compare-instance-variable",
+															"objectClass": "ElementDock",
+															"sid": 505136541803939,
+															"parameters": {
+																"instance-variable": "CardSlot",
+																"comparison": 0,
+																"value": "ElementCards.CardPosition"
+															}
+														}
+													],
+													"actions": [
+														{
+															"id": "set-boolean-instvar",
+															"objectClass": "ElementDock",
+															"sid": 828879912734859,
+															"parameters": {
+																"instance-variable": "Dockable",
+																"value": "true"
+															}
+														}
+													],
+													"sid": 828446897551546,
+													"children": [
+														{
+															"eventType": "comment",
+															"text": "set card dock's to dockable, allowing another card to be placed"
+														}
+													]
+												},
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "compare-instance-variable",
+															"objectClass": "ElementCards",
+															"sid": 542900479715493,
+															"parameters": {
+																"instance-variable": "CardPosition",
+																"comparison": 0,
+																"value": "ElementDock.CardSlot"
+															}
+														}
+													],
+													"actions": [
+														{
+															"id": "subtract-from-eventvar",
+															"objectClass": "System",
+															"sid": 651077209937512,
+															"parameters": {
+																"variable": "ElementalCardsDocked",
+																"value": "ElementCards.CardPosition"
+															}
+														},
+														{
+															"id": "set-boolean-eventvar",
+															"objectClass": "System",
+															"sid": 232080901726942,
+															"parameters": {
+																"variable": "Fire",
+																"value": "false"
+															}
+														},
+														{
+															"id": "set-boolean-eventvar",
+															"objectClass": "System",
+															"sid": 680040741393314,
+															"parameters": {
+																"variable": "Ice",
+																"value": "false"
+															}
+														},
+														{
+															"id": "set-boolean-eventvar",
+															"objectClass": "System",
+															"sid": 819981439170656,
+															"parameters": {
+																"variable": "Electric",
+																"value": "false"
+															}
+														}
+													],
+													"sid": 487008578615303,
+													"children": [
+														{
+															"eventType": "comment",
+															"text": "Subtract cards docked by the card position (one), and set the bools to false"
+														},
+														{
+															"eventType": "block",
+															"conditions": [],
+															"actions": [
+																{
+																	"id": "set-instvar-value",
+																	"objectClass": "ElementCards",
+																	"sid": 845305418423787,
+																	"parameters": {
+																		"instance-variable": "CardPosition",
+																		"value": "0"
+																	}
+																}
+															],
+															"sid": 786162186442245,
+															"children": [
+																{
+																	"eventType": "comment",
+																	"text": "Set the card's position to 0"
+																}
+															]
+														}
+													]
+												},
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "compare-instance-variable",
+															"objectClass": "ElementCards",
+															"sid": 216440115791986,
+															"parameters": {
+																"instance-variable": "CardPosition",
+																"comparison": 0,
+																"value": "0"
+															}
+														}
+													],
+													"actions": [
+														{
+															"id": "set-position",
+															"objectClass": "ElementCards",
+															"sid": 463536531728682,
+															"parameters": {
+																"x": "ElementCards.StartPosX",
+																"y": "ElementCards.StartPosY"
+															}
+														}
+													],
+													"sid": 141735264000402,
+													"children": [
+														{
+															"eventType": "comment",
+															"text": "When the card's cardposition is set to 0, reset it's position to the starting position"
+														}
+													]
+												}
+											]
+										}
+									],
+									"sid": 956736137223835
+								}
+							],
+							"sid": 690083413604015
+						}
+					],
+					"sid": 734491092751138
+				}
+			],
+			"sid": 368188500201813
+		}
+	],
+	"sid": 780379625061602
+}

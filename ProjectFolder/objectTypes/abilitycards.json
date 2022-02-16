@@ -1,0 +1,49 @@
+{
+	"name": "AbilityCards",
+	"plugin-id": "Sprite",
+	"sid": 736850135937085,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 34,
+						"height": 50,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3059581,
+						"collisionPoly": {
+							"points": [
+								0.029411764705882353,
+								0.02,
+								0.9705882352941176,
+								0.02,
+								0.9705882352941176,
+								0.98,
+								0.029411764705882353,
+								0.98
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 602255682149427,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}
