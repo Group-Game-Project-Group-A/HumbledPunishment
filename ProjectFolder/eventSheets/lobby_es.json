@@ -502,6 +502,33 @@
 																"variable": "NormalBow",
 																"value": "false"
 															}
+														},
+														{
+															"id": "set-boolean-eventvar",
+															"objectClass": "System",
+															"sid": 271618662528395,
+															"parameters": {
+																"variable": "MultiShot",
+																"value": "false"
+															}
+														},
+														{
+															"id": "set-boolean-eventvar",
+															"objectClass": "System",
+															"sid": 379861969039436,
+															"parameters": {
+																"variable": "ChargedShot",
+																"value": "false"
+															}
+														},
+														{
+															"id": "set-boolean-eventvar",
+															"objectClass": "System",
+															"sid": 735702113664281,
+															"parameters": {
+																"variable": "Dash",
+																"value": "false"
+															}
 														}
 													],
 													"sid": 360124957866948,
@@ -598,6 +625,15 @@
 												},
 												{
 													"id": "is-boolean-instance-variable-set",
+													"objectClass": "AbilityCards",
+													"sid": 248373438563900,
+													"parameters": {
+														"instance-variable": "Docked"
+													},
+													"isInverted": true
+												},
+												{
+													"id": "is-boolean-instance-variable-set",
 													"objectClass": "AbilityDock",
 													"sid": 764736267502003,
 													"parameters": {
@@ -691,6 +727,48 @@
 																		{
 																			"id": "compare-instance-variable",
 																			"objectClass": "AbilityCards",
+																			"sid": 595750100078034,
+																			"parameters": {
+																				"instance-variable": "Type",
+																				"comparison": 0,
+																				"value": "\"Multishot\""
+																			}
+																		}
+																	],
+																	"actions": [
+																		{
+																			"id": "set-boolean-eventvar",
+																			"objectClass": "System",
+																			"sid": 684610342496980,
+																			"parameters": {
+																				"variable": "MultiShot",
+																				"value": "true"
+																			}
+																		},
+																		{
+																			"id": "add-to-eventvar",
+																			"objectClass": "System",
+																			"sid": 660269545327536,
+																			"parameters": {
+																				"variable": "AbilityCardsDocked",
+																				"value": "AbilityCards.CardPosition"
+																			}
+																		}
+																	],
+																	"sid": 993980809816322,
+																	"children": [
+																		{
+																			"eventType": "comment",
+																			"text": "Set the global ability to the ability chosen"
+																		}
+																	]
+																},
+																{
+																	"eventType": "block",
+																	"conditions": [
+																		{
+																			"id": "compare-instance-variable",
+																			"objectClass": "AbilityCards",
 																			"sid": 597382059089155,
 																			"parameters": {
 																				"instance-variable": "Type",
@@ -720,6 +798,48 @@
 																		}
 																	],
 																	"sid": 321112740989975,
+																	"children": [
+																		{
+																			"eventType": "comment",
+																			"text": "Set the global ability to the ability chosen"
+																		}
+																	]
+																},
+																{
+																	"eventType": "block",
+																	"conditions": [
+																		{
+																			"id": "compare-instance-variable",
+																			"objectClass": "AbilityCards",
+																			"sid": 332350851456566,
+																			"parameters": {
+																				"instance-variable": "Type",
+																				"comparison": 0,
+																				"value": "\"Dash\""
+																			}
+																		}
+																	],
+																	"actions": [
+																		{
+																			"id": "set-boolean-eventvar",
+																			"objectClass": "System",
+																			"sid": 607279804619996,
+																			"parameters": {
+																				"variable": "Dash",
+																				"value": "true"
+																			}
+																		},
+																		{
+																			"id": "add-to-eventvar",
+																			"objectClass": "System",
+																			"sid": 150523189668464,
+																			"parameters": {
+																				"variable": "AbilityCardsDocked",
+																				"value": "AbilityCards.CardPosition"
+																			}
+																		}
+																	],
+																	"sid": 373423423285337,
 																	"children": [
 																		{
 																			"eventType": "comment",
@@ -765,6 +885,15 @@
 													"objectClass": "ElementCards",
 													"sid": 887261336893707,
 													"behaviorType": "DragDrop"
+												},
+												{
+													"id": "is-boolean-instance-variable-set",
+													"objectClass": "ElementCards",
+													"sid": 621926096761108,
+													"parameters": {
+														"instance-variable": "Docked"
+													},
+													"isInverted": true
 												},
 												{
 													"id": "is-overlapping-another-object",

@@ -1,7 +1,7 @@
 {
-	"name": "Enemy_Minor",
+	"name": "DashPaths",
 	"plugin-id": "Sprite",
-	"sid": 479808422501921,
+	"sid": 520568522165314,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
@@ -12,19 +12,19 @@
 				"frames": [
 					{
 						"width": 16,
-						"height": 16,
-						"originX": 0.5,
+						"height": 32,
+						"originX": 1,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 4328428,
+						"imageSpriteId": 5641915,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 252265176200206,
-				"name": "Normal",
+				"sid": 308961633423191,
+				"name": "Electric",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,
@@ -35,19 +35,19 @@
 				"frames": [
 					{
 						"width": 16,
-						"height": 16,
+						"height": 32,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 7862978,
+						"imageSpriteId": 4805264,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 489911772786862,
-				"name": "Burning",
+				"sid": 549683281866551,
+				"name": "Fire",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,
@@ -58,42 +58,19 @@
 				"frames": [
 					{
 						"width": 16,
-						"height": 16,
+						"height": 32,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 7738535,
+						"imageSpriteId": 4047387,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 839398903178132,
-				"name": "Frozen",
-				"isLooping": false,
-				"isPingPong": false,
-				"repeatCount": 1,
-				"repeatTo": 0,
-				"speed": 5
-			},
-			{
-				"frames": [
-					{
-						"width": 16,
-						"height": 16,
-						"originX": 0.5,
-						"originY": 0.5,
-						"originalSource": "",
-						"exportFormat": "png",
-						"exportQuality": 0.8,
-						"imageSpriteId": 2472925,
-						"useCollisionPoly": true,
-						"duration": 1
-					}
-				],
-				"sid": 623944742292940,
-				"name": "Paralyzed",
+				"sid": 958857487853185,
+				"name": "Ice",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,

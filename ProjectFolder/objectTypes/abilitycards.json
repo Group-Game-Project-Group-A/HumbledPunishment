@@ -18,7 +18,7 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 3059581,
+						"imageSpriteId": 26319,
 						"collisionPoly": {
 							"points": [
 								0.029411764705882353,
@@ -36,7 +36,112 @@
 					}
 				],
 				"sid": 602255682149427,
-				"name": "Animation 1",
+				"name": "Multishot",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 34,
+						"height": 50,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8590974,
+						"collisionPoly": {
+							"points": [
+								0.029411764705882353,
+								0.02,
+								0.9705882352941176,
+								0.02,
+								0.9705882352941176,
+								0.98,
+								0.029411764705882353,
+								0.98
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 338309440612711,
+				"name": "Piercing Shot",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 34,
+						"height": 50,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7579154,
+						"collisionPoly": {
+							"points": [
+								0.029411764705882353,
+								0.02,
+								0.9705882352941176,
+								0.02,
+								0.9705882352941176,
+								0.98,
+								0.029411764705882353,
+								0.98
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 557208303533331,
+				"name": "Charged Shot",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 34,
+						"height": 50,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 1290012,
+						"collisionPoly": {
+							"points": [
+								0.029411764705882353,
+								0.02,
+								0.9705882352941176,
+								0.02,
+								0.9705882352941176,
+								0.98,
+								0.029411764705882353,
+								0.98
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 631690163089649,
+				"name": "Dash",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,

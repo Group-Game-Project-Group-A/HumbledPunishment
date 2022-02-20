@@ -19,6 +19,11 @@
 			"behaviorId": "bound",
 			"name": "BoundToLayout",
 			"sid": 963926395094694
+		},
+		{
+			"behaviorId": "Bullet",
+			"name": "Bullet",
+			"sid": 584511997098110
 		}
 	],
 	"effectTypes": [],
@@ -36,6 +41,13 @@
 						"exportQuality": 0.8,
 						"imageSpriteId": 1337155,
 						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Image Point 1",
+								"x": 0,
+								"y": 0.5
+							}
+						],
 						"duration": 1
 					}
 				],

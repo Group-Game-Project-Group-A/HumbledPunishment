@@ -20,9 +20,9 @@
 					"behaviors": {
 						"8Direction": {
 							"properties": {
-								"max-speed": 200,
-								"acceleration": 600,
-								"deceleration": 500,
+								"max-speed": 150,
+								"acceleration": 1000,
+								"deceleration": 1000,
 								"directions": "dir-8",
 								"set-angle": "interval-90",
 								"default-controls": false,
@@ -37,6 +37,17 @@
 						"BoundToLayout": {
 							"properties": {
 								"bound-by": "edge"
+							}
+						},
+						"Bullet": {
+							"properties": {
+								"speed": 400,
+								"acceleration": 0,
+								"gravity": 0,
+								"bounce-off-solids": false,
+								"set-angle": true,
+								"step": false,
+								"enabled": false
 							}
 						}
 					},
@@ -68,7 +79,7 @@
 					},
 					"uid": 8,
 					"instanceVariables": {
-						"NextScene": "LevelOne"
+						"NextScene": "Prototype_LevelOne"
 					},
 					"behaviors": {},
 					"world": {
@@ -76,6 +87,132 @@
 						"y": 60,
 						"width": 250,
 						"height": 88,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "AbilityCards",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Charged Shot",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 297,
+					"instanceVariables": {
+						"StartPosX": 0,
+						"StartPosY": 0,
+						"Docked": false,
+						"CardPosition": 0,
+						"Type": "Charged Shot"
+					},
+					"behaviors": {
+						"DragDrop": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": 531,
+						"y": 273,
+						"width": 32,
+						"height": 48,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "AbilityCards",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Piercing Shot",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 298,
+					"instanceVariables": {
+						"StartPosX": 0,
+						"StartPosY": 0,
+						"Docked": false,
+						"CardPosition": 0,
+						"Type": "Piercing Shot"
+					},
+					"behaviors": {
+						"DragDrop": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": 497,
+						"y": 245,
+						"width": 32,
+						"height": 48,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "AbilityCards",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Dash",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 299,
+					"instanceVariables": {
+						"StartPosX": 0,
+						"StartPosY": 0,
+						"Docked": false,
+						"CardPosition": 0,
+						"Type": "Dash"
+					},
+					"behaviors": {
+						"DragDrop": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": 463,
+						"y": 273,
+						"width": 32,
+						"height": 48,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -137,7 +274,7 @@
 					},
 					"behaviors": {},
 					"world": {
-						"x": 497,
+						"x": 357,
 						"y": 191,
 						"width": 32,
 						"height": 48,
@@ -179,7 +316,7 @@
 						}
 					},
 					"world": {
-						"x": 497,
+						"x": 357,
 						"y": 251,
 						"width": 30.11764705882353,
 						"height": 46.08,
@@ -221,7 +358,7 @@
 						}
 					},
 					"world": {
-						"x": 537,
+						"x": 397,
 						"y": 251,
 						"width": 30.11764705882353,
 						"height": 46.08,
@@ -263,7 +400,7 @@
 						}
 					},
 					"world": {
-						"x": 457,
+						"x": 317,
 						"y": 251,
 						"width": 30.11764705882353,
 						"height": 46.08,
@@ -295,7 +432,39 @@
 					},
 					"behaviors": {},
 					"world": {
-						"x": 357,
+						"x": 517,
+						"y": 191,
+						"width": 32,
+						"height": 48,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "AbilityDock",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 296,
+					"instanceVariables": {
+						"Dockable": true,
+						"CardSlot": 1
+					},
+					"behaviors": {},
+					"world": {
+						"x": 477,
 						"y": 191,
 						"width": 32,
 						"height": 48,
@@ -315,7 +484,7 @@
 					"type": "AbilityCards",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Animation 1",
+						"initial-animation": "Multishot",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -326,7 +495,7 @@
 						"StartPosY": 0,
 						"Docked": false,
 						"CardPosition": 0,
-						"Type": "NormalBow"
+						"Type": "Multishot"
 					},
 					"behaviors": {
 						"DragDrop": {
@@ -337,8 +506,8 @@
 						}
 					},
 					"world": {
-						"x": 357,
-						"y": 251,
+						"x": 497,
+						"y": 300,
 						"width": 32,
 						"height": 48,
 						"originX": 0.5,

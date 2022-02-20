@@ -1,0 +1,44 @@
+{
+	"name": "HealthPickups",
+	"plugin-id": "Sprite",
+	"sid": 300153571758741,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "HealthBoost",
+			"type": "number",
+			"desc": "",
+			"sid": 843077184616547
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7407893,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 812292587029860,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

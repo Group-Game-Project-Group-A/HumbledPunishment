@@ -1,5 +1,5 @@
 {
-	"name": "LevelOne",
+	"name": "Prototype_LevelOne",
 	"layers": [
 		{
 			"name": "Layer 0",
@@ -9796,7 +9796,7 @@
 					"type": "Enemy_Minor",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Animation 1",
+						"initial-animation": "Normal",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -9881,6 +9881,17 @@
 							"properties": {
 								"bound-by": "edge"
 							}
+						},
+						"Bullet": {
+							"properties": {
+								"speed": 400,
+								"acceleration": 0,
+								"gravity": 0,
+								"bounce-off-solids": false,
+								"set-angle": true,
+								"step": false,
+								"enabled": false
+							}
 						}
 					},
 					"world": {
@@ -9945,7 +9956,7 @@
 					"type": "Enemy_Minor",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Animation 1",
+						"initial-animation": "Normal",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -10002,7 +10013,7 @@
 					"type": "Enemy_Minor",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Animation 1",
+						"initial-animation": "Normal",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false

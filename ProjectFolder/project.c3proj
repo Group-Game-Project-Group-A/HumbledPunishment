@@ -32,6 +32,14 @@
 		},
 		{
 			"type": "plugin",
+			"id": "Mouse",
+			"name": "Mouse",
+			"author": "Scirra",
+			"version": "r276.2",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
 			"id": "Sprite",
 			"name": "Sprite",
 			"author": "Scirra",
@@ -144,7 +152,8 @@
 			},
 			{
 				"items": [
-					"Keyboard"
+					"Keyboard",
+					"Mouse"
 				],
 				"subfolders": [],
 				"name": "Inputs"
@@ -177,6 +186,20 @@
 					}
 				],
 				"name": "Cards"
+			},
+			{
+				"items": [
+					"DashPaths"
+				],
+				"subfolders": [],
+				"name": "Abilities"
+			},
+			{
+				"items": [
+					"HealthPickups"
+				],
+				"subfolders": [],
+				"name": "Pickups"
 			}
 		]
 	},
@@ -194,10 +217,17 @@
 	"layouts": {
 		"items": [
 			"Menu",
-			"Lobby",
-			"LevelOne"
+			"Lobby"
 		],
-		"subfolders": []
+		"subfolders": [
+			{
+				"items": [
+					"Prototype_LevelOne"
+				],
+				"subfolders": [],
+				"name": "Prototypes"
+			}
+		]
 	},
 	"eventSheets": {
 		"items": [
