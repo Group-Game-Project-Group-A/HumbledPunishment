@@ -132,7 +132,10 @@
 			"Guide",
 			"Wall",
 			"WallTurn1",
-			"Pillar"
+			"Pillar",
+			"TiledBackground2",
+			"TiledBackground3",
+			"ArrowLauncher"
 		],
 		"subfolders": [
 			{
@@ -203,11 +206,7 @@
 			},
 			{
 				"items": [
-					"Abilities",
-					"Elements",
-					"Arrows",
-					"Player2",
-					"Skelenemy"
+					"Elements"
 				],
 				"subfolders": [],
 				"name": "NEW Art"
@@ -221,14 +220,16 @@
 			"Enemies",
 			"Cards",
 			"CardDocks",
-			"Walls"
+			"Walls",
+			"TiledWalls"
 		],
 		"subfolders": []
 	},
 	"layouts": {
 		"items": [
 			"Menu",
-			"Lobby"
+			"Lobby",
+			"Arena_1"
 		],
 		"subfolders": [
 			{

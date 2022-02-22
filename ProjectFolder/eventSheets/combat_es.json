@@ -184,6 +184,14 @@
 									"parameters": {
 										"object": "Walls"
 									}
+								},
+								{
+									"id": "on-collision-with-another-object",
+									"objectClass": "Arrow",
+									"sid": 900039721766133,
+									"parameters": {
+										"object": "TiledWalls"
+									}
 								}
 							],
 							"actions": [
@@ -193,7 +201,8 @@
 									"sid": 588133228526631
 								}
 							],
-							"sid": 574007271027268
+							"sid": 574007271027268,
+							"isOrBlock": true
 						},
 						{
 							"eventType": "block",
@@ -877,6 +886,15 @@
 														"image-point": "0",
 														"create-hierarchy": false
 													}
+												},
+												{
+													"id": "set-size",
+													"objectClass": "Arrow",
+													"sid": 962180960380062,
+													"parameters": {
+														"width": "32",
+														"height": "6"
+													}
 												}
 											],
 											"sid": 174384703515188,
@@ -993,6 +1011,15 @@
 														"layer": "0",
 														"image-point": "0",
 														"create-hierarchy": false
+													}
+												},
+												{
+													"id": "set-size",
+													"objectClass": "Arrow",
+													"sid": 537764323006467,
+													"parameters": {
+														"width": "32",
+														"height": "6"
 													}
 												}
 											],
@@ -1111,6 +1138,15 @@
 														"image-point": "0",
 														"create-hierarchy": false
 													}
+												},
+												{
+													"id": "set-size",
+													"objectClass": "Arrow",
+													"sid": 899400585166801,
+													"parameters": {
+														"width": "32",
+														"height": "6"
+													}
 												}
 											],
 											"sid": 411220681790304
@@ -1167,6 +1203,15 @@
 												"layer": "0",
 												"image-point": "0",
 												"create-hierarchy": false
+											}
+										},
+										{
+											"id": "set-size",
+											"objectClass": "Arrow",
+											"sid": 995997682089691,
+											"parameters": {
+												"width": "32",
+												"height": "6"
 											}
 										}
 									],
@@ -1720,6 +1765,31 @@
 						}
 					],
 					"sid": 936237471295173
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Enemies",
+							"sid": 734611516550675,
+							"parameters": {
+								"object": "Player"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "subtract-from-eventvar",
+							"objectClass": "System",
+							"sid": 915334457825504,
+							"parameters": {
+								"variable": "PlayerHealth",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 727844119744413
 				}
 			],
 			"sid": 976221568735994
