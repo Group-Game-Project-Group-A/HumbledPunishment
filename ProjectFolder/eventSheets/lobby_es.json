@@ -727,6 +727,90 @@
 																		{
 																			"id": "compare-instance-variable",
 																			"objectClass": "AbilityCards",
+																			"sid": 466499442541901,
+																			"parameters": {
+																				"instance-variable": "Type",
+																				"comparison": 0,
+																				"value": "\"Piercing Shot\""
+																			}
+																		}
+																	],
+																	"actions": [
+																		{
+																			"id": "set-boolean-eventvar",
+																			"objectClass": "System",
+																			"sid": 765533438586782,
+																			"parameters": {
+																				"variable": "PiercingShot",
+																				"value": "true"
+																			}
+																		},
+																		{
+																			"id": "add-to-eventvar",
+																			"objectClass": "System",
+																			"sid": 134181598745467,
+																			"parameters": {
+																				"variable": "AbilityCardsDocked",
+																				"value": "AbilityCards.CardPosition"
+																			}
+																		}
+																	],
+																	"sid": 307552171179193,
+																	"children": [
+																		{
+																			"eventType": "comment",
+																			"text": "Set the global ability to the ability chosen"
+																		}
+																	]
+																},
+																{
+																	"eventType": "block",
+																	"conditions": [
+																		{
+																			"id": "compare-instance-variable",
+																			"objectClass": "AbilityCards",
+																			"sid": 743148609280797,
+																			"parameters": {
+																				"instance-variable": "Type",
+																				"comparison": 0,
+																				"value": "\"Charged Shot\""
+																			}
+																		}
+																	],
+																	"actions": [
+																		{
+																			"id": "set-boolean-eventvar",
+																			"objectClass": "System",
+																			"sid": 853785850906734,
+																			"parameters": {
+																				"variable": "ChargedShot",
+																				"value": "true"
+																			}
+																		},
+																		{
+																			"id": "add-to-eventvar",
+																			"objectClass": "System",
+																			"sid": 741877687571521,
+																			"parameters": {
+																				"variable": "AbilityCardsDocked",
+																				"value": "AbilityCards.CardPosition"
+																			}
+																		}
+																	],
+																	"sid": 879129001046323,
+																	"children": [
+																		{
+																			"eventType": "comment",
+																			"text": "Set the global ability to the ability chosen"
+																		}
+																	]
+																},
+																{
+																	"eventType": "block",
+																	"conditions": [
+																		{
+																			"id": "compare-instance-variable",
+																			"objectClass": "AbilityCards",
 																			"sid": 595750100078034,
 																			"parameters": {
 																				"instance-variable": "Type",

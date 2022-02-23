@@ -1,33 +1,33 @@
 {
-	"name": "Arrow",
+	"name": "EnemyArrows",
 	"plugin-id": "Sprite",
-	"sid": 445036625508531,
+	"sid": 548224874885287,
 	"isGlobal": false,
 	"instanceVariables": [
 		{
 			"name": "AttackPower",
 			"type": "number",
 			"desc": "",
-			"sid": 415814055653546
+			"sid": 578744188049503
 		},
 		{
 			"name": "EnemiesItCanHit",
 			"type": "number",
 			"desc": "",
-			"sid": 248850810105683
+			"sid": 304224658718601
 		},
 		{
 			"name": "ChargedAttackPower",
 			"type": "number",
 			"desc": "",
-			"sid": 309921540038658
+			"sid": 868532571027227
 		}
 	],
 	"behaviorTypes": [
 		{
 			"behaviorId": "Bullet",
 			"name": "Bullet",
-			"sid": 284986792267009
+			"sid": 780109210418871
 		}
 	],
 	"effectTypes": [],
@@ -43,7 +43,7 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 2695289,
+						"imageSpriteId": 2851697,
 						"collisionPoly": {
 							"points": [
 								1,
@@ -60,7 +60,7 @@
 						"duration": 1
 					}
 				],
-				"sid": 333677999821381,
+				"sid": 426145890555427,
 				"name": "Normal",
 				"isLooping": false,
 				"isPingPong": false,
@@ -78,7 +78,7 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 2764985,
+						"imageSpriteId": 5462791,
 						"collisionPoly": {
 							"points": [
 								1,
@@ -95,7 +95,7 @@
 						"duration": 1
 					}
 				],
-				"sid": 703987790848779,
+				"sid": 954564717277748,
 				"name": "Fire",
 				"isLooping": false,
 				"isPingPong": false,
@@ -113,7 +113,7 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 4931329,
+						"imageSpriteId": 8450794,
 						"collisionPoly": {
 							"points": [
 								1,
@@ -130,7 +130,7 @@
 						"duration": 1
 					}
 				],
-				"sid": 939215929431969,
+				"sid": 319947181103141,
 				"name": "Ice",
 				"isLooping": false,
 				"isPingPong": false,
@@ -148,7 +148,7 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 1211295,
+						"imageSpriteId": 7529495,
 						"collisionPoly": {
 							"points": [
 								1,
@@ -165,7 +165,7 @@
 						"duration": 1
 					}
 				],
-				"sid": 119818133350235,
+				"sid": 693751561446427,
 				"name": "Electric",
 				"isLooping": false,
 				"isPingPong": false,

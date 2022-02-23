@@ -9921,7 +9921,11 @@
 						"live-preview": false
 					},
 					"uid": 16,
-					"instanceVariables": {},
+					"instanceVariables": {
+						"AttackPower": 0,
+						"EnemiesItCanHit": 1,
+						"ChargedAttackPower": 0
+					},
 					"behaviors": {
 						"Bullet": {
 							"properties": {
