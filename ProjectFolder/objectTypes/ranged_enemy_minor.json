@@ -1,10 +1,16 @@
 {
-	"name": "Enemy_Minor",
+	"name": "Ranged_Enemy_Minor",
 	"plugin-id": "Sprite",
-	"sid": 479808422501921,
+	"sid": 459427754936889,
 	"isGlobal": false,
 	"instanceVariables": [],
-	"behaviorTypes": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Turret",
+			"name": "Turret",
+			"sid": 896632534375532
+		}
+	],
 	"effectTypes": [],
 	"animations": {
 		"items": [
@@ -18,12 +24,12 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 3994024,
+						"imageSpriteId": 6258542,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 252265176200206,
+				"sid": 736468096908327,
 				"name": "Normal",
 				"isLooping": false,
 				"isPingPong": false,
@@ -41,12 +47,12 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 2441720,
+						"imageSpriteId": 1673756,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 489911772786862,
+				"sid": 206207044726741,
 				"name": "Burning",
 				"isLooping": false,
 				"isPingPong": false,
@@ -64,12 +70,12 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 5883798,
+						"imageSpriteId": 6467836,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 839398903178132,
+				"sid": 392983323743200,
 				"name": "Frozen",
 				"isLooping": false,
 				"isPingPong": false,
@@ -87,12 +93,12 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 7543213,
+						"imageSpriteId": 2626052,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 623944742292940,
+				"sid": 193561887015468,
 				"name": "Paralyzed",
 				"isLooping": false,
 				"isPingPong": false,

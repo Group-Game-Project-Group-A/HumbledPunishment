@@ -9793,7 +9793,7 @@
 					}
 				},
 				{
-					"type": "Enemy_Minor",
+					"type": "Melee_Enemy_Minor",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Normal",
@@ -9829,6 +9829,12 @@
 								"range": 200,
 								"cone-of-view": 180,
 								"use-collision-cells": true
+							}
+						},
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
 							}
 						}
 					},
@@ -9944,7 +9950,7 @@
 						"y": -138,
 						"width": 743,
 						"height": 161,
-						"originX": 0.5555555555555556,
+						"originX": 0,
 						"originY": 0.5,
 						"color": [
 							1,
@@ -9957,7 +9963,7 @@
 					}
 				},
 				{
-					"type": "Enemy_Minor",
+					"type": "Melee_Enemy_Minor",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Normal",
@@ -9994,6 +10000,12 @@
 								"cone-of-view": 180,
 								"use-collision-cells": true
 							}
+						},
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
 						}
 					},
 					"world": {
@@ -10014,7 +10026,7 @@
 					}
 				},
 				{
-					"type": "Enemy_Minor",
+					"type": "Melee_Enemy_Minor",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Normal",
@@ -10050,6 +10062,12 @@
 								"range": 200,
 								"cone-of-view": 180,
 								"use-collision-cells": true
+							}
+						},
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
 							}
 						}
 					},

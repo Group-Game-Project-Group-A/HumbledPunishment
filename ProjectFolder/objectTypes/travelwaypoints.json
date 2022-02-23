@@ -1,14 +1,14 @@
 {
-	"name": "ArrowLauncher",
+	"name": "TravelWaypoints",
 	"plugin-id": "Sprite",
-	"sid": 309498870462909,
+	"sid": 454980518965272,
 	"isGlobal": false,
 	"instanceVariables": [
 		{
-			"name": "FiringOrder",
+			"name": "Order",
 			"type": "number",
 			"desc": "",
-			"sid": 970704081145215
+			"sid": 332940560846600
 		}
 	],
 	"behaviorTypes": [],
@@ -18,19 +18,19 @@
 			{
 				"frames": [
 					{
-						"width": 32,
-						"height": 32,
+						"width": 16,
+						"height": 16,
 						"originX": 0.5,
-						"originY": 1,
+						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 3760838,
+						"imageSpriteId": 7469214,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 709986070258128,
+				"sid": 581974318712688,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

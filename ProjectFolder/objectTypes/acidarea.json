@@ -1,16 +1,9 @@
 {
-	"name": "ArrowLauncher",
+	"name": "AcidArea",
 	"plugin-id": "Sprite",
-	"sid": 309498870462909,
+	"sid": 623115422817608,
 	"isGlobal": false,
-	"instanceVariables": [
-		{
-			"name": "FiringOrder",
-			"type": "number",
-			"desc": "",
-			"sid": 970704081145215
-		}
-	],
+	"instanceVariables": [],
 	"behaviorTypes": [],
 	"effectTypes": [],
 	"animations": {
@@ -18,19 +11,19 @@
 			{
 				"frames": [
 					{
-						"width": 32,
-						"height": 32,
+						"width": 64,
+						"height": 64,
 						"originX": 0.5,
-						"originY": 1,
+						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 3760838,
+						"imageSpriteId": 4068208,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 709986070258128,
+				"sid": 822621973331726,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

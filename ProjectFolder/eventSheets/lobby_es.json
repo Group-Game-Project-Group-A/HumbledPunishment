@@ -13,6 +13,16 @@
 		},
 		{
 			"eventType": "variable",
+			"name": "AbilityCardCount",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 684939980657039
+		},
+		{
+			"eventType": "variable",
 			"name": "ElementalCardsDocked",
 			"type": "number",
 			"initialValue": "0",
@@ -97,21 +107,21 @@
 										{
 											"id": "compare-eventvar",
 											"objectClass": "System",
-											"sid": 205379523761622,
+											"sid": 435095286782692,
 											"parameters": {
 												"variable": "AbilityCardsDocked",
 												"comparison": 5,
-												"value": "1"
+												"value": "AbilityDock.Count"
 											}
 										},
 										{
 											"id": "compare-eventvar",
 											"objectClass": "System",
-											"sid": 150853779815831,
+											"sid": 343176387153595,
 											"parameters": {
 												"variable": "ElementalCardsDocked",
 												"comparison": 5,
-												"value": "1"
+												"value": "ElementDock.Count"
 											}
 										}
 									],
@@ -174,21 +184,21 @@
 										{
 											"id": "compare-eventvar",
 											"objectClass": "System",
-											"sid": 575606347018227,
+											"sid": 423099034754597,
 											"parameters": {
 												"variable": "AbilityCardsDocked",
 												"comparison": 2,
-												"value": "1"
+												"value": "AbilityDock.Count"
 											}
 										},
 										{
 											"id": "compare-eventvar",
 											"objectClass": "System",
-											"sid": 993053646180087,
+											"sid": 489793529875647,
 											"parameters": {
 												"variable": "ElementalCardsDocked",
 												"comparison": 2,
-												"value": "1"
+												"value": "ElementDock.Count"
 											}
 										}
 									],
@@ -328,6 +338,15 @@
 									"parameters": {
 										"instance-variable": "StartPosY",
 										"value": "Cards.Y"
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 465092471707387,
+									"parameters": {
+										"variable": "AbilityCardCount",
+										"value": "AbilityDock.Count"
 									}
 								}
 							],
@@ -853,48 +872,6 @@
 																		{
 																			"id": "compare-instance-variable",
 																			"objectClass": "AbilityCards",
-																			"sid": 597382059089155,
-																			"parameters": {
-																				"instance-variable": "Type",
-																				"comparison": 0,
-																				"value": "\"NormalBow\""
-																			}
-																		}
-																	],
-																	"actions": [
-																		{
-																			"id": "set-boolean-eventvar",
-																			"objectClass": "System",
-																			"sid": 791020267545130,
-																			"parameters": {
-																				"variable": "NormalBow",
-																				"value": "true"
-																			}
-																		},
-																		{
-																			"id": "add-to-eventvar",
-																			"objectClass": "System",
-																			"sid": 527634481731020,
-																			"parameters": {
-																				"variable": "AbilityCardsDocked",
-																				"value": "AbilityCards.CardPosition"
-																			}
-																		}
-																	],
-																	"sid": 321112740989975,
-																	"children": [
-																		{
-																			"eventType": "comment",
-																			"text": "Set the global ability to the ability chosen"
-																		}
-																	]
-																},
-																{
-																	"eventType": "block",
-																	"conditions": [
-																		{
-																			"id": "compare-instance-variable",
-																			"objectClass": "AbilityCards",
 																			"sid": 332350851456566,
 																			"parameters": {
 																				"instance-variable": "Type",
@@ -943,6 +920,85 @@
 										}
 									],
 									"sid": 323750974674073
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 516962193432093,
+											"parameters": {
+												"variable": "AbilityCardCount",
+												"comparison": 3,
+												"value": "0"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 679785858593292,
+											"parameters": {
+												"variable": "NormalBow",
+												"value": "true"
+											}
+										}
+									],
+									"sid": 454388722430497
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 230674028094462,
+											"parameters": {
+												"variable": "Dash"
+											}
+										},
+										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 894628920530228,
+											"parameters": {
+												"variable": "ChargedShot"
+											},
+											"isInverted": true
+										},
+										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 580497233106186,
+											"parameters": {
+												"variable": "MultiShot"
+											},
+											"isInverted": true
+										},
+										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 780565268330110,
+											"parameters": {
+												"variable": "PiercingShot"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "set-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 798268565620743,
+											"parameters": {
+												"variable": "NormalBow",
+												"value": "true"
+											}
+										}
+									],
+									"sid": 231539106213278
 								}
 							],
 							"sid": 236130972038378

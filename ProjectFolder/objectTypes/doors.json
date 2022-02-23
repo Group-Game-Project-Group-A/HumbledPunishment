@@ -1,0 +1,26 @@
+{
+	"name": "Doors",
+	"plugin-id": "TiledBg",
+	"sid": 394939370687713,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 177680395960104
+		}
+	],
+	"effectTypes": [],
+	"image": {
+		"width": 13,
+		"height": 33,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "png",
+		"exportQuality": 0.8,
+		"imageSpriteId": 9095416,
+		"useCollisionPoly": true
+	}
+}

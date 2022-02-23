@@ -64,6 +64,14 @@
 		},
 		{
 			"type": "behavior",
+			"id": "MoveTo",
+			"name": "Move To",
+			"author": "Scirra",
+			"version": "r276.2",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
 			"id": "EightDir",
 			"name": "8 Direction",
 			"author": "Scirra",
@@ -96,8 +104,8 @@
 		},
 		{
 			"type": "behavior",
-			"id": "MoveTo",
-			"name": "Move To",
+			"id": "Turret",
+			"name": "Turret",
 			"author": "Scirra",
 			"version": "r276.2",
 			"bundled": false
@@ -123,7 +131,7 @@
 	"objectTypes": {
 		"items": [
 			"Player",
-			"Enemy_Minor",
+			"Melee_Enemy_Minor",
 			"NextSceneZone",
 			"Tile2",
 			"TiledBackground",
@@ -135,7 +143,10 @@
 			"Pillar",
 			"TiledBackground2",
 			"TiledBackground3",
-			"ArrowLauncher"
+			"ArrowLauncher",
+			"Ranged_Enemy_Minor",
+			"DoorCloser",
+			"Doors"
 		],
 		"subfolders": [
 			{
@@ -211,6 +222,24 @@
 				],
 				"subfolders": [],
 				"name": "NEW Art"
+			},
+			{
+				"items": [
+					"OrcBoss",
+					"TravelWaypoints",
+					"AcidFlask",
+					"AcidArea",
+					"OrcBossHealthText"
+				],
+				"subfolders": [],
+				"name": "OrcBoss"
+			},
+			{
+				"items": [
+					"Health_Text"
+				],
+				"subfolders": [],
+				"name": "UI"
 			}
 		]
 	},
@@ -229,8 +258,15 @@
 	"layouts": {
 		"items": [
 			"Menu",
-			"Lobby",
-			"Arena_1"
+			"Lobby1_0",
+			"Arena_1_1",
+			"Lobby1_2",
+			"Arena_1_2",
+			"Lobby1_3",
+			"Arena_1_3",
+			"Lobby1_4",
+			"Arena_1_4",
+			"EndScreen"
 		],
 		"subfolders": [
 			{

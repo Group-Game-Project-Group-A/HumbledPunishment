@@ -248,6 +248,47 @@
 				}
 			],
 			"sid": 201701813883260
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Player",
+					"sid": 455564357139035,
+					"parameters": {
+						"object": "DoorCloser"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Doors",
+					"sid": 841816094476154,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "Doors",
+					"sid": 850682769480779,
+					"behaviorType": "Solid",
+					"parameters": {
+						"state": "enabled"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "OrcBossHealthText",
+					"sid": 939845892469857,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 139228943738778
 		}
 	],
 	"sid": 312005651760020
