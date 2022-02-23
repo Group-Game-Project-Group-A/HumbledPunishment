@@ -146,7 +146,8 @@
 			"ArrowLauncher",
 			"Ranged_Enemy_Minor",
 			"DoorCloser",
-			"Doors"
+			"Doors",
+			"Sprite"
 		],
 		"subfolders": [
 			{
@@ -225,21 +226,36 @@
 			},
 			{
 				"items": [
-					"OrcBoss",
-					"TravelWaypoints",
-					"AcidFlask",
-					"AcidArea",
-					"OrcBossHealthText"
-				],
-				"subfolders": [],
-				"name": "OrcBoss"
-			},
-			{
-				"items": [
 					"Health_Text"
 				],
 				"subfolders": [],
 				"name": "UI"
+			},
+			{
+				"items": [],
+				"subfolders": [
+					{
+						"items": [
+							"OrcBoss",
+							"TravelWaypoints",
+							"AcidFlask",
+							"AcidArea",
+							"OrcBossHealthText"
+						],
+						"subfolders": [],
+						"name": "OrcBoss"
+					},
+					{
+						"items": [
+							"Bob",
+							"BobHealthText",
+							"Bobmelee"
+						],
+						"subfolders": [],
+						"name": "RobBoss"
+					}
+				],
+				"name": "Bosses"
 			}
 		]
 	},
@@ -258,14 +274,22 @@
 	"layouts": {
 		"items": [
 			"Menu",
-			"Lobby1_0",
+			"Lobby_1_1",
 			"Arena_1_1",
-			"Lobby1_2",
+			"Lobby_1_2",
 			"Arena_1_2",
-			"Lobby1_3",
+			"Lobby_1_3",
 			"Arena_1_3",
-			"Lobby1_4",
+			"Lobby_1_4",
 			"Arena_1_4",
+			"Lobby_2_1",
+			"Arena_2_1",
+			"Lobby_2_2",
+			"Arena_2_2",
+			"Lobby_2_3",
+			"Arena_2_3",
+			"Lobby_2_4",
+			"Arena_2_4",
 			"EndScreen"
 		],
 		"subfolders": [

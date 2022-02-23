@@ -159,7 +159,7 @@
 			"eventType": "variable",
 			"name": "PlayerMaxHealth",
 			"type": "number",
-			"initialValue": "10",
+			"initialValue": "30",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
@@ -169,7 +169,7 @@
 			"eventType": "variable",
 			"name": "PlayerHealth",
 			"type": "number",
-			"initialValue": "10",
+			"initialValue": "30",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
@@ -3698,6 +3698,37 @@
 										}
 									],
 									"sid": 123822048736022
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "every-tick",
+											"objectClass": "System",
+											"sid": 874275150645112
+										}
+									],
+									"actions": [
+										{
+											"id": "add-obstacle",
+											"objectClass": "Melee_Enemy_Minor",
+											"sid": 567225770132150,
+											"behaviorType": "LineOfSight",
+											"parameters": {
+												"obstacle": "TiledWalls"
+											}
+										},
+										{
+											"id": "add-obstacle",
+											"objectClass": "Melee_Enemy_Minor",
+											"sid": 760424718313382,
+											"behaviorType": "LineOfSight",
+											"parameters": {
+												"obstacle": "Walls"
+											}
+										}
+									],
+									"sid": 900011492364506
 								}
 							],
 							"sid": 534095564135910
@@ -5044,7 +5075,323 @@
 					"title": "Bob",
 					"description": "This bastard was a cultist all along. Bob stabs the player at the beginning as a cheap shot, and every once in a while bob will try to dash towards the player and stab them.\n\nPlayer has reduced visibility due to a shadow vignette affecting the screen.",
 					"isActiveOnStart": true,
-					"children": [],
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "TravelWaypoints",
+									"sid": 267394654809708,
+									"parameters": {
+										"instance-variable": "Order",
+										"comparison": 0,
+										"value": "Bob.TravelOrder"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "move-to-object",
+									"objectClass": "Bob",
+									"sid": 345296263330134,
+									"behaviorType": "MoveTo",
+									"parameters": {
+										"object": "TravelWaypoints",
+										"image-point": "0",
+										"mode": "direct"
+									}
+								}
+							],
+							"sid": 624252066501572
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-arrived",
+									"objectClass": "Bob",
+									"sid": 662123129123994,
+									"behaviorType": "MoveTo"
+								}
+							],
+							"actions": [],
+							"sid": 996264783957400,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "trigger-once-while-true",
+											"objectClass": "System",
+											"sid": 893295065577919
+										}
+									],
+									"actions": [
+										{
+											"id": "spawn-another-object",
+											"objectClass": "Bob",
+											"sid": 488646760808879,
+											"parameters": {
+												"object": "Bobmelee",
+												"layer": "0",
+												"image-point": "0",
+												"create-hierarchy": false
+											}
+										},
+										{
+											"id": "move-to-object",
+											"objectClass": "Bobmelee",
+											"sid": 414326288653655,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"object": "Player",
+												"image-point": "0",
+												"mode": "direct"
+											}
+										}
+									],
+									"sid": 989178838520032,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [],
+											"actions": [
+												{
+													"id": "set-visible",
+													"objectClass": "Bob",
+													"sid": 103964488626726,
+													"parameters": {
+														"visibility": "invisible"
+													}
+												}
+											],
+											"sid": 657115791036498
+										}
+									]
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "every-x-seconds",
+									"objectClass": "System",
+									"sid": 860334609694860,
+									"parameters": {
+										"interval-seconds": "8"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 168375980239573,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "Bob",
+											"sid": 994042315304244,
+											"parameters": {
+												"instance-variable": "TravelOrder",
+												"comparison": 3,
+												"value": "4"
+											}
+										},
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "Bob",
+											"sid": 683255870303173,
+											"parameters": {
+												"instance-variable": "TravelOrder",
+												"comparison": 5,
+												"value": "0"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "add-to-instvar",
+											"objectClass": "Bob",
+											"sid": 922861324467134,
+											"parameters": {
+												"instance-variable": "TravelOrder",
+												"value": "1"
+											}
+										}
+									],
+									"sid": 215309018310031,
+									"isOrBlock": true
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "Bob",
+											"sid": 998974784834629,
+											"parameters": {
+												"instance-variable": "TravelOrder",
+												"comparison": 5,
+												"value": "4"
+											}
+										},
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "Bob",
+											"sid": 447171516638602,
+											"parameters": {
+												"instance-variable": "TravelOrder",
+												"comparison": 3,
+												"value": "0"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-instvar-value",
+											"objectClass": "Bob",
+											"sid": 884277897953879,
+											"parameters": {
+												"instance-variable": "TravelOrder",
+												"value": "0"
+											}
+										}
+									],
+									"sid": 140090698021873,
+									"isOrBlock": true
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-collision-with-another-object",
+									"objectClass": "Bobmelee",
+									"sid": 634459005362349,
+									"parameters": {
+										"object": "Player"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "subtract-from-eventvar",
+									"objectClass": "System",
+									"sid": 466172689682235,
+									"parameters": {
+										"variable": "PlayerHealth",
+										"value": "1"
+									}
+								},
+								{
+									"id": "destroy",
+									"objectClass": "Bobmelee",
+									"sid": 533496080023407
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "Bob",
+									"sid": 415511247343915,
+									"parameters": {
+										"visibility": "visible"
+									}
+								}
+							],
+							"sid": 460537599159765
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-arrived",
+									"objectClass": "Bobmelee",
+									"sid": 433894629639257,
+									"behaviorType": "MoveTo"
+								}
+							],
+							"actions": [
+								{
+									"id": "destroy",
+									"objectClass": "Bobmelee",
+									"sid": 726426393181813
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "Bob",
+									"sid": 349587324002320,
+									"parameters": {
+										"visibility": "visible"
+									}
+								}
+							],
+							"sid": 859272552561804,
+							"isOrBlock": true
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "every-tick",
+									"objectClass": "System",
+									"sid": 641895067634150
+								}
+							],
+							"actions": [
+								{
+									"id": "set-text",
+									"objectClass": "BobHealthText",
+									"sid": 789647338112683,
+									"parameters": {
+										"text": "\"Bob: \"&Bob.Health&\"/\"& Bob.MaxHealth"
+									}
+								},
+								{
+									"id": "set-position-to-another-object",
+									"objectClass": "Sprite",
+									"sid": 792900846317153,
+									"parameters": {
+										"object": "Player",
+										"image-point-optional": "0"
+									}
+								},
+								{
+									"id": "move-to-top",
+									"objectClass": "Sprite",
+									"sid": 175742611587327
+								}
+							],
+							"sid": 131080769176906
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-collision-with-another-object",
+									"objectClass": "Bob",
+									"sid": 547740174501296,
+									"parameters": {
+										"object": "Player"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "subtract-from-eventvar",
+									"objectClass": "System",
+									"sid": 582846384684634,
+									"parameters": {
+										"variable": "PlayerHealth",
+										"value": "1"
+									}
+								}
+							],
+							"sid": 170194622787891
+						}
+					],
 					"sid": 434424742700522
 				},
 				{

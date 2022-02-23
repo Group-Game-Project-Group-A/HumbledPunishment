@@ -1,5 +1,5 @@
 {
-	"name": "Lobby1_2",
+	"name": "Lobby_1_3",
 	"layers": [
 		{
 			"name": "Layer 0",
@@ -15,7 +15,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 509,
+					"uid": 522,
 					"instanceVariables": {},
 					"behaviors": {
 						"8Direction": {
@@ -77,9 +77,9 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 510,
+					"uid": 523,
 					"instanceVariables": {
-						"NextScene": "Arena_1_2"
+						"NextScene": "Arena_1_3"
 					},
 					"behaviors": {},
 					"world": {
@@ -100,7 +100,7 @@
 					}
 				}
 			],
-			"sid": 750546529308386,
+			"sid": 237728537180067,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"color": [
@@ -144,7 +144,7 @@
 						"checked": false,
 						"id": ""
 					},
-					"uid": 511,
+					"uid": 524,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -171,7 +171,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 512,
+					"uid": 525,
 					"instanceVariables": {
 						"Dockable": true,
 						"CardSlot": 1
@@ -203,14 +203,46 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 513,
+					"uid": 526,
 					"instanceVariables": {
 						"Dockable": true,
 						"CardSlot": 1
 					},
 					"behaviors": {},
 					"world": {
-						"x": 507,
+						"x": 484,
+						"y": 191,
+						"width": 44,
+						"height": 50,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "AbilityDock",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 527,
+					"instanceVariables": {
+						"Dockable": true,
+						"CardSlot": 1
+					},
+					"behaviors": {},
+					"world": {
+						"x": 550,
 						"y": 191,
 						"width": 44,
 						"height": 50,
@@ -235,7 +267,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 515,
+					"uid": 528,
 					"instanceVariables": {
 						"StartPosX": 0,
 						"StartPosY": 0,
@@ -277,7 +309,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 516,
+					"uid": 529,
 					"instanceVariables": {
 						"StartPosX": 0,
 						"StartPosY": 0,
@@ -319,7 +351,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 517,
+					"uid": 530,
 					"instanceVariables": {
 						"StartPosX": 0,
 						"StartPosY": 0,
@@ -361,7 +393,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 520,
+					"uid": 533,
 					"instanceVariables": {
 						"StartPosX": 0,
 						"StartPosY": 0,
@@ -378,7 +410,49 @@
 						}
 					},
 					"world": {
-						"x": 507,
+						"x": 494,
+						"y": 251,
+						"width": 42,
+						"height": 48,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "AbilityCards",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Multishot",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 534,
+					"instanceVariables": {
+						"StartPosX": 0,
+						"StartPosY": 0,
+						"Docked": false,
+						"CardPosition": 0,
+						"Type": "Multishot"
+					},
+					"behaviors": {
+						"DragDrop": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": 540,
 						"y": 251,
 						"width": 42,
 						"height": 48,
@@ -395,7 +469,7 @@
 					}
 				}
 			],
-			"sid": 869827932471765,
+			"sid": 411723543960187,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"color": [
@@ -423,7 +497,7 @@
 			"global": false
 		}
 	],
-	"sid": 411607593099308,
+	"sid": 921400678262527,
 	"nonworld-instances": [],
 	"effectTypes": [],
 	"width": 854,

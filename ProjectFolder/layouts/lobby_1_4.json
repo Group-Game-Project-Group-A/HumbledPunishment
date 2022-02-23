@@ -1,5 +1,5 @@
 {
-	"name": "Lobby1_3",
+	"name": "Lobby_1_4",
 	"layers": [
 		{
 			"name": "Layer 0",
@@ -15,7 +15,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 522,
+					"uid": 535,
 					"instanceVariables": {},
 					"behaviors": {
 						"8Direction": {
@@ -77,9 +77,9 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 523,
+					"uid": 536,
 					"instanceVariables": {
-						"NextScene": "Arena_1_3"
+						"NextScene": "Arena_1_4"
 					},
 					"behaviors": {},
 					"world": {
@@ -100,7 +100,7 @@
 					}
 				}
 			],
-			"sid": 237728537180067,
+			"sid": 592490068623363,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"color": [
@@ -144,7 +144,7 @@
 						"checked": false,
 						"id": ""
 					},
-					"uid": 524,
+					"uid": 537,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -171,7 +171,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 525,
+					"uid": 538,
 					"instanceVariables": {
 						"Dockable": true,
 						"CardSlot": 1
@@ -203,7 +203,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 526,
+					"uid": 539,
 					"instanceVariables": {
 						"Dockable": true,
 						"CardSlot": 1
@@ -235,7 +235,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 527,
+					"uid": 540,
 					"instanceVariables": {
 						"Dockable": true,
 						"CardSlot": 1
@@ -267,7 +267,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 528,
+					"uid": 541,
 					"instanceVariables": {
 						"StartPosX": 0,
 						"StartPosY": 0,
@@ -309,7 +309,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 529,
+					"uid": 542,
 					"instanceVariables": {
 						"StartPosX": 0,
 						"StartPosY": 0,
@@ -351,7 +351,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 530,
+					"uid": 543,
 					"instanceVariables": {
 						"StartPosX": 0,
 						"StartPosY": 0,
@@ -388,12 +388,96 @@
 					"type": "AbilityCards",
 					"properties": {
 						"initially-visible": true,
+						"initial-animation": "Charged Shot",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 544,
+					"instanceVariables": {
+						"StartPosX": 0,
+						"StartPosY": 0,
+						"Docked": false,
+						"CardPosition": 0,
+						"Type": "Charged Shot"
+					},
+					"behaviors": {
+						"DragDrop": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": 517,
+						"y": 251,
+						"width": 42,
+						"height": 48,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "AbilityCards",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Piercing Shot",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 545,
+					"instanceVariables": {
+						"StartPosX": 0,
+						"StartPosY": 0,
+						"Docked": false,
+						"CardPosition": 0,
+						"Type": "Piercing Shot"
+					},
+					"behaviors": {
+						"DragDrop": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": 517,
+						"y": 311,
+						"width": 42,
+						"height": 48,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "AbilityCards",
+					"properties": {
+						"initially-visible": true,
 						"initial-animation": "Dash",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 533,
+					"uid": 546,
 					"instanceVariables": {
 						"StartPosX": 0,
 						"StartPosY": 0,
@@ -410,8 +494,8 @@
 						}
 					},
 					"world": {
-						"x": 494,
-						"y": 251,
+						"x": 473,
+						"y": 281,
 						"width": 42,
 						"height": 48,
 						"originX": 0.5,
@@ -435,7 +519,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 534,
+					"uid": 547,
 					"instanceVariables": {
 						"StartPosX": 0,
 						"StartPosY": 0,
@@ -452,8 +536,8 @@
 						}
 					},
 					"world": {
-						"x": 540,
-						"y": 251,
+						"x": 561,
+						"y": 281,
 						"width": 42,
 						"height": 48,
 						"originX": 0.5,
@@ -469,7 +553,7 @@
 					}
 				}
 			],
-			"sid": 411723543960187,
+			"sid": 487396495241954,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"color": [
@@ -497,7 +581,7 @@
 			"global": false
 		}
 	],
-	"sid": 921400678262527,
+	"sid": 527142167386344,
 	"nonworld-instances": [],
 	"effectTypes": [],
 	"width": 854,

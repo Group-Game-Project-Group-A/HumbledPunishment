@@ -1,5 +1,5 @@
 {
-	"name": "Lobby1_4",
+	"name": "Lobby_2_4",
 	"layers": [
 		{
 			"name": "Layer 0",
@@ -15,7 +15,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 535,
+					"uid": 985,
 					"instanceVariables": {},
 					"behaviors": {
 						"8Direction": {
@@ -77,7 +77,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 536,
+					"uid": 986,
 					"instanceVariables": {
 						"NextScene": "Arena_1_4"
 					},
@@ -100,7 +100,7 @@
 					}
 				}
 			],
-			"sid": 592490068623363,
+			"sid": 970252060896317,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"color": [
@@ -144,7 +144,7 @@
 						"checked": false,
 						"id": ""
 					},
-					"uid": 537,
+					"uid": 987,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -171,7 +171,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 538,
+					"uid": 988,
 					"instanceVariables": {
 						"Dockable": true,
 						"CardSlot": 1
@@ -203,7 +203,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 539,
+					"uid": 989,
 					"instanceVariables": {
 						"Dockable": true,
 						"CardSlot": 1
@@ -235,7 +235,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 540,
+					"uid": 990,
 					"instanceVariables": {
 						"Dockable": true,
 						"CardSlot": 1
@@ -267,7 +267,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 541,
+					"uid": 991,
 					"instanceVariables": {
 						"StartPosX": 0,
 						"StartPosY": 0,
@@ -309,7 +309,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 542,
+					"uid": 992,
 					"instanceVariables": {
 						"StartPosX": 0,
 						"StartPosY": 0,
@@ -351,7 +351,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 543,
+					"uid": 993,
 					"instanceVariables": {
 						"StartPosX": 0,
 						"StartPosY": 0,
@@ -393,7 +393,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 544,
+					"uid": 994,
 					"instanceVariables": {
 						"StartPosX": 0,
 						"StartPosY": 0,
@@ -435,7 +435,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 545,
+					"uid": 995,
 					"instanceVariables": {
 						"StartPosX": 0,
 						"StartPosY": 0,
@@ -477,7 +477,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 546,
+					"uid": 996,
 					"instanceVariables": {
 						"StartPosX": 0,
 						"StartPosY": 0,
@@ -519,7 +519,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 547,
+					"uid": 997,
 					"instanceVariables": {
 						"StartPosX": 0,
 						"StartPosY": 0,
@@ -553,7 +553,7 @@
 					}
 				}
 			],
-			"sid": 487396495241954,
+			"sid": 360007967062084,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"color": [
@@ -581,7 +581,7 @@
 			"global": false
 		}
 	],
-	"sid": 527142167386344,
+	"sid": 529036280412787,
 	"nonworld-instances": [],
 	"effectTypes": [],
 	"width": 854,

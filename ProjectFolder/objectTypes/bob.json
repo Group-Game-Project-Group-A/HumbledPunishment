@@ -1,0 +1,119 @@
+{
+	"name": "Bob",
+	"plugin-id": "Sprite",
+	"sid": 103772390127765,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "TravelOrder",
+			"type": "number",
+			"desc": "",
+			"sid": 374118183444946
+		},
+		{
+			"name": "MaxHealth",
+			"type": "number",
+			"desc": "",
+			"sid": 244167836869007
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 622,
+						"height": 600,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2632184,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 887254248027635,
+				"name": "Normal",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 622,
+						"height": 600,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9931740,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 737736592643885,
+				"name": "Burning",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 622,
+						"height": 600,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3636280,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 510414642045316,
+				"name": "Frozen",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 622,
+						"height": 600,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5495190,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 959941392941263,
+				"name": "Paralyzed",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

@@ -1520,6 +1520,114 @@
 						}
 					],
 					"sid": 734491092751138
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 689255699003748
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 812595010157889,
+							"disabled": true,
+							"parameters": {
+								"variable": "ChargedShot",
+								"value": "false"
+							}
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 133212638620112,
+							"disabled": true,
+							"parameters": {
+								"variable": "Dash",
+								"value": "false"
+							}
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 984780241828930,
+							"disabled": true,
+							"parameters": {
+								"variable": "Electric",
+								"value": "false"
+							}
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 954736457776454,
+							"disabled": true,
+							"parameters": {
+								"variable": "Fire",
+								"value": "false"
+							}
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 926982037715234,
+							"disabled": true,
+							"parameters": {
+								"variable": "Ice",
+								"value": "false"
+							}
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 703554856554199,
+							"disabled": true,
+							"parameters": {
+								"variable": "isPoisoned",
+								"value": "false"
+							}
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 315551866886759,
+							"disabled": true,
+							"parameters": {
+								"variable": "MultiShot",
+								"value": "false"
+							}
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 646436863145719,
+							"disabled": true,
+							"parameters": {
+								"variable": "NormalBow",
+								"value": "false"
+							}
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 689977526378423,
+							"disabled": true,
+							"parameters": {
+								"variable": "PiercingShot",
+								"value": "false"
+							}
+						},
+						{
+							"id": "reset-global-variables",
+							"objectClass": "System",
+							"sid": 528957829036876
+						}
+					],
+					"sid": 795390316153478
 				}
 			],
 			"sid": 368188500201813
