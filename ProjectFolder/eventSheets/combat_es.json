@@ -37,16 +37,6 @@
 		},
 		{
 			"eventType": "variable",
-			"name": "FacingUp",
-			"type": "boolean",
-			"initialValue": "false",
-			"comment": "",
-			"isStatic": false,
-			"isConstant": false,
-			"sid": 633421516207236
-		},
-		{
-			"eventType": "variable",
 			"name": "Ice",
 			"type": "boolean",
 			"initialValue": "false",
@@ -54,26 +44,6 @@
 			"isStatic": false,
 			"isConstant": false,
 			"sid": 781948531481146
-		},
-		{
-			"eventType": "variable",
-			"name": "FacingDown",
-			"type": "boolean",
-			"initialValue": "false",
-			"comment": "",
-			"isStatic": false,
-			"isConstant": false,
-			"sid": 126961892017800
-		},
-		{
-			"eventType": "variable",
-			"name": "facingLeft",
-			"type": "boolean",
-			"initialValue": "false",
-			"comment": "",
-			"isStatic": false,
-			"isConstant": false,
-			"sid": 979010972306769
 		},
 		{
 			"eventType": "variable",
@@ -164,6 +134,16 @@
 			"isStatic": false,
 			"isConstant": false,
 			"sid": 585655555962504
+		},
+		{
+			"eventType": "variable",
+			"name": "isDashing",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 518174539269871
 		},
 		{
 			"eventType": "variable",
@@ -1033,108 +1013,17 @@
 														"instance-variable": "AttackPower",
 														"value": "1"
 													}
+												},
+												{
+													"id": "set-angle",
+													"objectClass": "Arrow",
+													"sid": 858878829054739,
+													"parameters": {
+														"angle": "Player.Angle+15"
+													}
 												}
 											],
-											"sid": 856275784008356,
-											"children": [
-												{
-													"eventType": "block",
-													"conditions": [
-														{
-															"id": "compare-boolean-eventvar",
-															"objectClass": "System",
-															"sid": 379834614293039,
-															"parameters": {
-																"variable": "facingLeft"
-															},
-															"isInverted": true
-														}
-													],
-													"actions": [
-														{
-															"id": "set-angle",
-															"objectClass": "Arrow",
-															"sid": 786301620496907,
-															"parameters": {
-																"angle": "330"
-															}
-														}
-													],
-													"sid": 964737081022735
-												},
-												{
-													"eventType": "block",
-													"conditions": [
-														{
-															"id": "compare-boolean-eventvar",
-															"objectClass": "System",
-															"sid": 982869568612887,
-															"parameters": {
-																"variable": "facingLeft"
-															}
-														}
-													],
-													"actions": [
-														{
-															"id": "set-angle",
-															"objectClass": "Arrow",
-															"sid": 843208118076247,
-															"parameters": {
-																"angle": "210"
-															}
-														}
-													],
-													"sid": 137809366029053
-												},
-												{
-													"eventType": "block",
-													"conditions": [
-														{
-															"id": "compare-boolean-eventvar",
-															"objectClass": "System",
-															"sid": 324882805190334,
-															"parameters": {
-																"variable": "FacingUp"
-															}
-														}
-													],
-													"actions": [
-														{
-															"id": "set-angle",
-															"objectClass": "Arrow",
-															"sid": 164899708761892,
-															"parameters": {
-																"angle": "300"
-															}
-														}
-													],
-													"sid": 287149371595100
-												},
-												{
-													"eventType": "block",
-													"conditions": [
-														{
-															"id": "compare-boolean-eventvar",
-															"objectClass": "System",
-															"sid": 983822412484744,
-															"parameters": {
-																"variable": "FacingDown"
-															}
-														}
-													],
-													"actions": [
-														{
-															"id": "set-angle",
-															"objectClass": "Arrow",
-															"sid": 654060847475710,
-															"parameters": {
-																"angle": "60"
-															}
-														}
-													],
-													"sid": 391431134943449
-												}
-											]
+											"sid": 856275784008356
 										},
 										{
 											"eventType": "block",
@@ -1222,108 +1111,17 @@
 														"instance-variable": "AttackPower",
 														"value": "1"
 													}
+												},
+												{
+													"id": "set-angle",
+													"objectClass": "Arrow",
+													"sid": 528638836615921,
+													"parameters": {
+														"angle": "Player.Angle-15"
+													}
 												}
 											],
-											"sid": 571983501175112,
-											"children": [
-												{
-													"eventType": "block",
-													"conditions": [
-														{
-															"id": "compare-boolean-eventvar",
-															"objectClass": "System",
-															"sid": 542826532774012,
-															"parameters": {
-																"variable": "facingLeft"
-															},
-															"isInverted": true
-														}
-													],
-													"actions": [
-														{
-															"id": "set-angle",
-															"objectClass": "Arrow",
-															"sid": 105440739963293,
-															"parameters": {
-																"angle": "30"
-															}
-														}
-													],
-													"sid": 587862838776685
-												},
-												{
-													"eventType": "block",
-													"conditions": [
-														{
-															"id": "compare-boolean-eventvar",
-															"objectClass": "System",
-															"sid": 809634804428996,
-															"parameters": {
-																"variable": "facingLeft"
-															}
-														}
-													],
-													"actions": [
-														{
-															"id": "set-angle",
-															"objectClass": "Arrow",
-															"sid": 455459641773927,
-															"parameters": {
-																"angle": "150"
-															}
-														}
-													],
-													"sid": 845605458776386
-												},
-												{
-													"eventType": "block",
-													"conditions": [
-														{
-															"id": "compare-boolean-eventvar",
-															"objectClass": "System",
-															"sid": 871719056202219,
-															"parameters": {
-																"variable": "FacingUp"
-															}
-														}
-													],
-													"actions": [
-														{
-															"id": "set-angle",
-															"objectClass": "Arrow",
-															"sid": 127101069258890,
-															"parameters": {
-																"angle": "240"
-															}
-														}
-													],
-													"sid": 384801682186908
-												},
-												{
-													"eventType": "block",
-													"conditions": [
-														{
-															"id": "compare-boolean-eventvar",
-															"objectClass": "System",
-															"sid": 354593569468181,
-															"parameters": {
-																"variable": "FacingDown"
-															}
-														}
-													],
-													"actions": [
-														{
-															"id": "set-angle",
-															"objectClass": "Arrow",
-															"sid": 688665531316430,
-															"parameters": {
-																"angle": "120"
-															}
-														}
-													],
-													"sid": 431337541914625
-												}
-											]
+											"sid": 571983501175112
 										}
 									]
 								}
@@ -1740,108 +1538,17 @@
 																"width": "32",
 																"height": "6"
 															}
+														},
+														{
+															"id": "set-angle",
+															"objectClass": "Arrow",
+															"sid": 710758158196764,
+															"parameters": {
+																"angle": "Player.Angle+15"
+															}
 														}
 													],
-													"sid": 864432855241807,
-													"children": [
-														{
-															"eventType": "block",
-															"conditions": [
-																{
-																	"id": "compare-boolean-eventvar",
-																	"objectClass": "System",
-																	"sid": 934279700037523,
-																	"parameters": {
-																		"variable": "facingLeft"
-																	},
-																	"isInverted": true
-																}
-															],
-															"actions": [
-																{
-																	"id": "set-angle",
-																	"objectClass": "Arrow",
-																	"sid": 922521109329307,
-																	"parameters": {
-																		"angle": "330"
-																	}
-																}
-															],
-															"sid": 581561658697600
-														},
-														{
-															"eventType": "block",
-															"conditions": [
-																{
-																	"id": "compare-boolean-eventvar",
-																	"objectClass": "System",
-																	"sid": 582566850697527,
-																	"parameters": {
-																		"variable": "facingLeft"
-																	}
-																}
-															],
-															"actions": [
-																{
-																	"id": "set-angle",
-																	"objectClass": "Arrow",
-																	"sid": 538665379442596,
-																	"parameters": {
-																		"angle": "210"
-																	}
-																}
-															],
-															"sid": 752951859906361
-														},
-														{
-															"eventType": "block",
-															"conditions": [
-																{
-																	"id": "compare-boolean-eventvar",
-																	"objectClass": "System",
-																	"sid": 829858525983696,
-																	"parameters": {
-																		"variable": "FacingUp"
-																	}
-																}
-															],
-															"actions": [
-																{
-																	"id": "set-angle",
-																	"objectClass": "Arrow",
-																	"sid": 882561156940279,
-																	"parameters": {
-																		"angle": "300"
-																	}
-																}
-															],
-															"sid": 918680862500110
-														},
-														{
-															"eventType": "block",
-															"conditions": [
-																{
-																	"id": "compare-boolean-eventvar",
-																	"objectClass": "System",
-																	"sid": 850028916140506,
-																	"parameters": {
-																		"variable": "FacingDown"
-																	}
-																}
-															],
-															"actions": [
-																{
-																	"id": "set-angle",
-																	"objectClass": "Arrow",
-																	"sid": 901635727522166,
-																	"parameters": {
-																		"angle": "60"
-																	}
-																}
-															],
-															"sid": 450526653109097
-														}
-													]
+													"sid": 864432855241807
 												},
 												{
 													"eventType": "block",
@@ -1875,108 +1582,17 @@
 																"width": "32",
 																"height": "6"
 															}
+														},
+														{
+															"id": "set-angle",
+															"objectClass": "Arrow",
+															"sid": 300985833105676,
+															"parameters": {
+																"angle": "Player.Angle-15"
+															}
 														}
 													],
-													"sid": 633546180232125,
-													"children": [
-														{
-															"eventType": "block",
-															"conditions": [
-																{
-																	"id": "compare-boolean-eventvar",
-																	"objectClass": "System",
-																	"sid": 680878870548411,
-																	"parameters": {
-																		"variable": "facingLeft"
-																	},
-																	"isInverted": true
-																}
-															],
-															"actions": [
-																{
-																	"id": "set-angle",
-																	"objectClass": "Arrow",
-																	"sid": 117565580514328,
-																	"parameters": {
-																		"angle": "30"
-																	}
-																}
-															],
-															"sid": 796515213902506
-														},
-														{
-															"eventType": "block",
-															"conditions": [
-																{
-																	"id": "compare-boolean-eventvar",
-																	"objectClass": "System",
-																	"sid": 681925342152024,
-																	"parameters": {
-																		"variable": "facingLeft"
-																	}
-																}
-															],
-															"actions": [
-																{
-																	"id": "set-angle",
-																	"objectClass": "Arrow",
-																	"sid": 476512280724672,
-																	"parameters": {
-																		"angle": "150"
-																	}
-																}
-															],
-															"sid": 302409845296882
-														},
-														{
-															"eventType": "block",
-															"conditions": [
-																{
-																	"id": "compare-boolean-eventvar",
-																	"objectClass": "System",
-																	"sid": 644805970951655,
-																	"parameters": {
-																		"variable": "FacingUp"
-																	}
-																}
-															],
-															"actions": [
-																{
-																	"id": "set-angle",
-																	"objectClass": "Arrow",
-																	"sid": 408049732924117,
-																	"parameters": {
-																		"angle": "240"
-																	}
-																}
-															],
-															"sid": 992689301504573
-														},
-														{
-															"eventType": "block",
-															"conditions": [
-																{
-																	"id": "compare-boolean-eventvar",
-																	"objectClass": "System",
-																	"sid": 210814237607123,
-																	"parameters": {
-																		"variable": "FacingDown"
-																	}
-																}
-															],
-															"actions": [
-																{
-																	"id": "set-angle",
-																	"objectClass": "Arrow",
-																	"sid": 181269887603243,
-																	"parameters": {
-																		"angle": "120"
-																	}
-																}
-															],
-															"sid": 546104107774723
-														}
-													]
+													"sid": 633546180232125
 												},
 												{
 													"eventType": "block",
@@ -2075,108 +1691,17 @@
 																"instance-variable": "AttackPower",
 																"value": "2"
 															}
+														},
+														{
+															"id": "set-angle",
+															"objectClass": "Arrow",
+															"sid": 610710203909879,
+															"parameters": {
+																"angle": "Player.Angle+15"
+															}
 														}
 													],
-													"sid": 624045815312333,
-													"children": [
-														{
-															"eventType": "block",
-															"conditions": [
-																{
-																	"id": "compare-boolean-eventvar",
-																	"objectClass": "System",
-																	"sid": 902088978842764,
-																	"parameters": {
-																		"variable": "facingLeft"
-																	},
-																	"isInverted": true
-																}
-															],
-															"actions": [
-																{
-																	"id": "set-angle",
-																	"objectClass": "Arrow",
-																	"sid": 361785357610694,
-																	"parameters": {
-																		"angle": "30"
-																	}
-																}
-															],
-															"sid": 680076483902431
-														},
-														{
-															"eventType": "block",
-															"conditions": [
-																{
-																	"id": "compare-boolean-eventvar",
-																	"objectClass": "System",
-																	"sid": 351843269422422,
-																	"parameters": {
-																		"variable": "facingLeft"
-																	}
-																}
-															],
-															"actions": [
-																{
-																	"id": "set-angle",
-																	"objectClass": "Arrow",
-																	"sid": 336873363177154,
-																	"parameters": {
-																		"angle": "150"
-																	}
-																}
-															],
-															"sid": 827185407953489
-														},
-														{
-															"eventType": "block",
-															"conditions": [
-																{
-																	"id": "compare-boolean-eventvar",
-																	"objectClass": "System",
-																	"sid": 192726037599281,
-																	"parameters": {
-																		"variable": "FacingUp"
-																	}
-																}
-															],
-															"actions": [
-																{
-																	"id": "set-angle",
-																	"objectClass": "Arrow",
-																	"sid": 939504062614358,
-																	"parameters": {
-																		"angle": "240"
-																	}
-																}
-															],
-															"sid": 584285811000347
-														},
-														{
-															"eventType": "block",
-															"conditions": [
-																{
-																	"id": "compare-boolean-eventvar",
-																	"objectClass": "System",
-																	"sid": 121497856855361,
-																	"parameters": {
-																		"variable": "FacingDown"
-																	}
-																}
-															],
-															"actions": [
-																{
-																	"id": "set-angle",
-																	"objectClass": "Arrow",
-																	"sid": 657263090067545,
-																	"parameters": {
-																		"angle": "120"
-																	}
-																}
-															],
-															"sid": 920239125025703
-														}
-													]
+													"sid": 624045815312333
 												},
 												{
 													"eventType": "block",
@@ -2210,108 +1735,17 @@
 																"instance-variable": "AttackPower",
 																"value": "2"
 															}
+														},
+														{
+															"id": "set-angle",
+															"objectClass": "Arrow",
+															"sid": 383972516544613,
+															"parameters": {
+																"angle": "Player.Angle-15"
+															}
 														}
 													],
-													"sid": 798431884515335,
-													"children": [
-														{
-															"eventType": "block",
-															"conditions": [
-																{
-																	"id": "compare-boolean-eventvar",
-																	"objectClass": "System",
-																	"sid": 481155596687339,
-																	"parameters": {
-																		"variable": "facingLeft"
-																	},
-																	"isInverted": true
-																}
-															],
-															"actions": [
-																{
-																	"id": "set-angle",
-																	"objectClass": "Arrow",
-																	"sid": 728654904542921,
-																	"parameters": {
-																		"angle": "330"
-																	}
-																}
-															],
-															"sid": 651262972216729
-														},
-														{
-															"eventType": "block",
-															"conditions": [
-																{
-																	"id": "compare-boolean-eventvar",
-																	"objectClass": "System",
-																	"sid": 404057982182666,
-																	"parameters": {
-																		"variable": "facingLeft"
-																	}
-																}
-															],
-															"actions": [
-																{
-																	"id": "set-angle",
-																	"objectClass": "Arrow",
-																	"sid": 923370566593125,
-																	"parameters": {
-																		"angle": "210"
-																	}
-																}
-															],
-															"sid": 170353712713789
-														},
-														{
-															"eventType": "block",
-															"conditions": [
-																{
-																	"id": "compare-boolean-eventvar",
-																	"objectClass": "System",
-																	"sid": 305887918900763,
-																	"parameters": {
-																		"variable": "FacingUp"
-																	}
-																}
-															],
-															"actions": [
-																{
-																	"id": "set-angle",
-																	"objectClass": "Arrow",
-																	"sid": 619297624951413,
-																	"parameters": {
-																		"angle": "300"
-																	}
-																}
-															],
-															"sid": 291871298883076
-														},
-														{
-															"eventType": "block",
-															"conditions": [
-																{
-																	"id": "compare-boolean-eventvar",
-																	"objectClass": "System",
-																	"sid": 425987099564612,
-																	"parameters": {
-																		"variable": "FacingDown"
-																	}
-																}
-															],
-															"actions": [
-																{
-																	"id": "set-angle",
-																	"objectClass": "Arrow",
-																	"sid": 691558211694176,
-																	"parameters": {
-																		"angle": "60"
-																	}
-																}
-															],
-															"sid": 801659800161912
-														}
-													]
+													"sid": 798431884515335
 												},
 												{
 													"eventType": "block",
@@ -2435,108 +1869,17 @@
 														"width": "32",
 														"height": "6"
 													}
+												},
+												{
+													"id": "set-angle",
+													"objectClass": "Arrow",
+													"sid": 939031609248186,
+													"parameters": {
+														"angle": "Player.Angle+15"
+													}
 												}
 											],
-											"sid": 604147568778948,
-											"children": [
-												{
-													"eventType": "block",
-													"conditions": [
-														{
-															"id": "compare-boolean-eventvar",
-															"objectClass": "System",
-															"sid": 924020564814025,
-															"parameters": {
-																"variable": "facingLeft"
-															},
-															"isInverted": true
-														}
-													],
-													"actions": [
-														{
-															"id": "set-angle",
-															"objectClass": "Arrow",
-															"sid": 161562986274875,
-															"parameters": {
-																"angle": "30"
-															}
-														}
-													],
-													"sid": 233156870226381
-												},
-												{
-													"eventType": "block",
-													"conditions": [
-														{
-															"id": "compare-boolean-eventvar",
-															"objectClass": "System",
-															"sid": 977744650733156,
-															"parameters": {
-																"variable": "facingLeft"
-															}
-														}
-													],
-													"actions": [
-														{
-															"id": "set-angle",
-															"objectClass": "Arrow",
-															"sid": 893176106746621,
-															"parameters": {
-																"angle": "150"
-															}
-														}
-													],
-													"sid": 751690730323043
-												},
-												{
-													"eventType": "block",
-													"conditions": [
-														{
-															"id": "compare-boolean-eventvar",
-															"objectClass": "System",
-															"sid": 503243795949555,
-															"parameters": {
-																"variable": "FacingUp"
-															}
-														}
-													],
-													"actions": [
-														{
-															"id": "set-angle",
-															"objectClass": "Arrow",
-															"sid": 417239369006470,
-															"parameters": {
-																"angle": "240"
-															}
-														}
-													],
-													"sid": 494016202901138
-												},
-												{
-													"eventType": "block",
-													"conditions": [
-														{
-															"id": "compare-boolean-eventvar",
-															"objectClass": "System",
-															"sid": 204996687900244,
-															"parameters": {
-																"variable": "FacingDown"
-															}
-														}
-													],
-													"actions": [
-														{
-															"id": "set-angle",
-															"objectClass": "Arrow",
-															"sid": 768842813397934,
-															"parameters": {
-																"angle": "120"
-															}
-														}
-													],
-													"sid": 535697001308970
-												}
-											]
+											"sid": 604147568778948
 										},
 										{
 											"eventType": "block",
@@ -2570,108 +1913,17 @@
 														"width": "32",
 														"height": "6"
 													}
+												},
+												{
+													"id": "set-angle",
+													"objectClass": "Arrow",
+													"sid": 576204505056932,
+													"parameters": {
+														"angle": "Player.Angle-15"
+													}
 												}
 											],
-											"sid": 138632994306811,
-											"children": [
-												{
-													"eventType": "block",
-													"conditions": [
-														{
-															"id": "compare-boolean-eventvar",
-															"objectClass": "System",
-															"sid": 600107147674764,
-															"parameters": {
-																"variable": "facingLeft"
-															},
-															"isInverted": true
-														}
-													],
-													"actions": [
-														{
-															"id": "set-angle",
-															"objectClass": "Arrow",
-															"sid": 391843924705305,
-															"parameters": {
-																"angle": "330"
-															}
-														}
-													],
-													"sid": 791253683357498
-												},
-												{
-													"eventType": "block",
-													"conditions": [
-														{
-															"id": "compare-boolean-eventvar",
-															"objectClass": "System",
-															"sid": 661215919082125,
-															"parameters": {
-																"variable": "facingLeft"
-															}
-														}
-													],
-													"actions": [
-														{
-															"id": "set-angle",
-															"objectClass": "Arrow",
-															"sid": 667762409576067,
-															"parameters": {
-																"angle": "210"
-															}
-														}
-													],
-													"sid": 104948009461034
-												},
-												{
-													"eventType": "block",
-													"conditions": [
-														{
-															"id": "compare-boolean-eventvar",
-															"objectClass": "System",
-															"sid": 816397992863576,
-															"parameters": {
-																"variable": "FacingUp"
-															}
-														}
-													],
-													"actions": [
-														{
-															"id": "set-angle",
-															"objectClass": "Arrow",
-															"sid": 529609597139583,
-															"parameters": {
-																"angle": "300"
-															}
-														}
-													],
-													"sid": 624201821968727
-												},
-												{
-													"eventType": "block",
-													"conditions": [
-														{
-															"id": "compare-boolean-eventvar",
-															"objectClass": "System",
-															"sid": 524782688494322,
-															"parameters": {
-																"variable": "FacingDown"
-															}
-														}
-													],
-													"actions": [
-														{
-															"id": "set-angle",
-															"objectClass": "Arrow",
-															"sid": 288205037536453,
-															"parameters": {
-																"angle": "60"
-															}
-														}
-													],
-													"sid": 447717939737639
-												}
-											]
+											"sid": 138632994306811
 										},
 										{
 											"eventType": "block",
@@ -2754,6 +2006,15 @@
 									}
 								},
 								{
+									"id": "set-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 865613612658420,
+									"parameters": {
+										"variable": "isDashing",
+										"value": "true"
+									}
+								},
+								{
 									"id": "set-speed",
 									"objectClass": "Player",
 									"sid": 477865141389469,
@@ -2772,11 +2033,29 @@
 									}
 								},
 								{
+									"id": "set-angle-of-motion",
+									"objectClass": "Player",
+									"sid": 452653995051794,
+									"behaviorType": "Bullet",
+									"parameters": {
+										"angle": "Player.8Direction.MovingAngle"
+									}
+								},
+								{
 									"id": "wait",
 									"objectClass": "System",
-									"sid": 453592094237558,
+									"sid": 763231686313168,
 									"parameters": {
 										"seconds": "0.2"
+									}
+								},
+								{
+									"id": "set-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 634077174549053,
+									"parameters": {
+										"variable": "isDashing",
+										"value": "false"
 									}
 								},
 								{
@@ -2902,7 +2181,17 @@
 									"behaviorType": "Bullet"
 								}
 							],
-							"actions": [],
+							"actions": [
+								{
+									"id": "set-solid-collision-filter",
+									"objectClass": "Player",
+									"sid": 131972868200212,
+									"parameters": {
+										"mode": "exclusive",
+										"tags": "\"Enemy\""
+									}
+								}
+							],
 							"sid": 715322268378519,
 							"children": [
 								{
@@ -3114,6 +2403,20 @@
 							],
 							"sid": 781602752374261,
 							"isOrBlock": true
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-enabled",
+									"objectClass": "Player",
+									"sid": 666593523202990,
+									"behaviorType": "Bullet",
+									"isInverted": true
+								}
+							],
+							"actions": [],
+							"sid": 361136500300843
 						}
 					],
 					"sid": 343307339553862
@@ -3590,6 +2893,15 @@
 											"parameters": {
 												"object": "Player"
 											}
+										},
+										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 354123862732659,
+											"parameters": {
+												"variable": "isDashing"
+											},
+											"isInverted": true
 										}
 									],
 									"actions": [
@@ -3605,7 +2917,7 @@
 										{
 											"id": "set-speed",
 											"objectClass": "Player",
-											"sid": 834870187893859,
+											"sid": 695354573306270,
 											"behaviorType": "Bullet",
 											"parameters": {
 												"speed": "20"
@@ -3614,7 +2926,7 @@
 										{
 											"id": "set-angle-of-motion",
 											"objectClass": "Player",
-											"sid": 760617993465776,
+											"sid": 278780055792889,
 											"behaviorType": "Bullet",
 											"parameters": {
 												"angle": "angle(Enemies.X, Enemies.Y, Self.X, Self.Y)"
@@ -3623,7 +2935,7 @@
 										{
 											"id": "wait",
 											"objectClass": "System",
-											"sid": 513647922700178,
+											"sid": 504832222254578,
 											"parameters": {
 												"seconds": "0.25"
 											}
@@ -3631,7 +2943,7 @@
 										{
 											"id": "set-speed",
 											"objectClass": "Player",
-											"sid": 896032933654261,
+											"sid": 194094713095914,
 											"behaviorType": "Bullet",
 											"parameters": {
 												"speed": "0"
@@ -4425,6 +3737,57 @@
 						}
 					],
 					"sid": 702960246094041
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Melee_Enemy_Minor",
+							"sid": 482614152882302,
+							"parameters": {
+								"object": "Melee_Enemy_Minor"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-speed",
+							"objectClass": "Melee_Enemy_Minor",
+							"sid": 893470473058917,
+							"behaviorType": "Bullet",
+							"parameters": {
+								"speed": "100"
+							}
+						},
+						{
+							"id": "set-angle-of-motion",
+							"objectClass": "Melee_Enemy_Minor",
+							"sid": 619197923404858,
+							"behaviorType": "Bullet",
+							"parameters": {
+								"angle": "angle(Melee_Enemy_Minor.X, Melee_Enemy_Minor.Y, Self.X, Self.Y)"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 378423273107647,
+							"parameters": {
+								"seconds": "0.25"
+							}
+						},
+						{
+							"id": "set-speed",
+							"objectClass": "Melee_Enemy_Minor",
+							"sid": 811325534915483,
+							"behaviorType": "Bullet",
+							"parameters": {
+								"speed": "0"
+							}
+						}
+					],
+					"sid": 199107478294919
 				}
 			],
 			"sid": 976221568735994
@@ -4685,7 +4048,7 @@
 										{
 											"id": "every-x-seconds",
 											"objectClass": "System",
-											"sid": 174497054159450,
+											"sid": 526061594074874,
 											"parameters": {
 												"interval-seconds": "1"
 											}
@@ -5065,6 +4428,31 @@
 								}
 							],
 							"sid": 160853680861360
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "every-x-seconds",
+									"objectClass": "System",
+									"sid": 685564414586431,
+									"parameters": {
+										"interval-seconds": "1.0"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-size",
+									"objectClass": "AcidArea",
+									"sid": 797299268518461,
+									"parameters": {
+										"width": "AcidArea.Width+1",
+										"height": "AcidArea.Height+1"
+									}
+								}
+							],
+							"sid": 436082378746957
 						}
 					],
 					"sid": 796081876847270

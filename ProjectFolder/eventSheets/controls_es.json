@@ -22,33 +22,6 @@
 					"parameters": {
 						"control": "up"
 					}
-				},
-				{
-					"id": "set-boolean-eventvar",
-					"objectClass": "System",
-					"sid": 278474006823309,
-					"parameters": {
-						"variable": "FacingUp",
-						"value": "true"
-					}
-				},
-				{
-					"id": "set-boolean-eventvar",
-					"objectClass": "System",
-					"sid": 291049531419637,
-					"parameters": {
-						"variable": "facingLeft",
-						"value": "false"
-					}
-				},
-				{
-					"id": "set-boolean-eventvar",
-					"objectClass": "System",
-					"sid": 916233672097646,
-					"parameters": {
-						"variable": "FacingDown",
-						"value": "false"
-					}
 				}
 			],
 			"sid": 770013458991863
@@ -73,33 +46,6 @@
 					"behaviorType": "8Direction",
 					"parameters": {
 						"control": "left"
-					}
-				},
-				{
-					"id": "set-boolean-eventvar",
-					"objectClass": "System",
-					"sid": 204932843123881,
-					"parameters": {
-						"variable": "facingLeft",
-						"value": "true"
-					}
-				},
-				{
-					"id": "set-boolean-eventvar",
-					"objectClass": "System",
-					"sid": 143269211757535,
-					"parameters": {
-						"variable": "FacingUp",
-						"value": "false"
-					}
-				},
-				{
-					"id": "set-boolean-eventvar",
-					"objectClass": "System",
-					"sid": 780467351921994,
-					"parameters": {
-						"variable": "FacingDown",
-						"value": "false"
 					}
 				}
 			],
@@ -126,33 +72,6 @@
 					"parameters": {
 						"control": "down"
 					}
-				},
-				{
-					"id": "set-boolean-eventvar",
-					"objectClass": "System",
-					"sid": 880406522330303,
-					"parameters": {
-						"variable": "FacingDown",
-						"value": "true"
-					}
-				},
-				{
-					"id": "set-boolean-eventvar",
-					"objectClass": "System",
-					"sid": 730722573861576,
-					"parameters": {
-						"variable": "facingLeft",
-						"value": "false"
-					}
-				},
-				{
-					"id": "set-boolean-eventvar",
-					"objectClass": "System",
-					"sid": 715471602456507,
-					"parameters": {
-						"variable": "FacingUp",
-						"value": "false"
-					}
 				}
 			],
 			"sid": 979860117776179
@@ -178,33 +97,6 @@
 					"parameters": {
 						"control": "right"
 					}
-				},
-				{
-					"id": "set-boolean-eventvar",
-					"objectClass": "System",
-					"sid": 312033678031305,
-					"parameters": {
-						"variable": "facingLeft",
-						"value": "false"
-					}
-				},
-				{
-					"id": "set-boolean-eventvar",
-					"objectClass": "System",
-					"sid": 412923328272544,
-					"parameters": {
-						"variable": "FacingUp",
-						"value": "false"
-					}
-				},
-				{
-					"id": "set-boolean-eventvar",
-					"objectClass": "System",
-					"sid": 877917791668389,
-					"parameters": {
-						"variable": "FacingDown",
-						"value": "false"
-					}
 				}
 			],
 			"sid": 386972767845438
@@ -218,35 +110,7 @@
 					"sid": 141037855383649
 				}
 			],
-			"actions": [
-				{
-					"id": "set-boolean-eventvar",
-					"objectClass": "System",
-					"sid": 155507124258459,
-					"parameters": {
-						"variable": "facingLeft",
-						"value": "false"
-					}
-				},
-				{
-					"id": "set-boolean-eventvar",
-					"objectClass": "System",
-					"sid": 391118088028376,
-					"parameters": {
-						"variable": "FacingUp",
-						"value": "false"
-					}
-				},
-				{
-					"id": "set-boolean-eventvar",
-					"objectClass": "System",
-					"sid": 722421100923885,
-					"parameters": {
-						"variable": "FacingDown",
-						"value": "false"
-					}
-				}
-			],
+			"actions": [],
 			"sid": 201701813883260
 		},
 		{
@@ -289,6 +153,36 @@
 				}
 			],
 			"sid": 139228943738778
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 911643708774631
+				}
+			],
+			"actions": [
+				{
+					"id": "set-angle-toward-position",
+					"objectClass": "Player",
+					"sid": 570748073090458,
+					"parameters": {
+						"x": "Mouse.X",
+						"y": "Mouse.Y"
+					}
+				},
+				{
+					"id": "set-cursor-from-sprite",
+					"objectClass": "Mouse",
+					"sid": 653987509745106,
+					"parameters": {
+						"sprite": "Sprite2"
+					}
+				}
+			],
+			"sid": 695237718982920
 		}
 	],
 	"sid": 312005651760020

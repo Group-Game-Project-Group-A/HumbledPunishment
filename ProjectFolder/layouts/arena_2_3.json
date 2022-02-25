@@ -2360,7 +2360,18 @@
 						"Solid": {
 							"properties": {
 								"enabled": true,
-								"tags": ""
+								"tags": "Enemy"
+							}
+						},
+						"Bullet": {
+							"properties": {
+								"speed": 400,
+								"acceleration": 0,
+								"gravity": 0,
+								"bounce-off-solids": false,
+								"set-angle": true,
+								"step": false,
+								"enabled": true
 							}
 						}
 					},
@@ -2423,7 +2434,18 @@
 						"Solid": {
 							"properties": {
 								"enabled": true,
-								"tags": ""
+								"tags": "Enemy"
+							}
+						},
+						"Bullet": {
+							"properties": {
+								"speed": 400,
+								"acceleration": 0,
+								"gravity": 0,
+								"bounce-off-solids": false,
+								"set-angle": true,
+								"step": false,
+								"enabled": true
 							}
 						}
 					},
@@ -2486,7 +2508,18 @@
 						"Solid": {
 							"properties": {
 								"enabled": true,
-								"tags": ""
+								"tags": "Enemy"
+							}
+						},
+						"Bullet": {
+							"properties": {
+								"speed": 400,
+								"acceleration": 0,
+								"gravity": 0,
+								"bounce-off-solids": false,
+								"set-angle": true,
+								"step": false,
+								"enabled": true
 							}
 						}
 					},
@@ -2549,7 +2582,18 @@
 						"Solid": {
 							"properties": {
 								"enabled": true,
-								"tags": ""
+								"tags": "Enemy"
+							}
+						},
+						"Bullet": {
+							"properties": {
+								"speed": 400,
+								"acceleration": 0,
+								"gravity": 0,
+								"bounce-off-solids": false,
+								"set-angle": true,
+								"step": false,
+								"enabled": true
 							}
 						}
 					},
@@ -2892,7 +2936,18 @@
 						"Solid": {
 							"properties": {
 								"enabled": true,
-								"tags": ""
+								"tags": "Enemy"
+							}
+						},
+						"Bullet": {
+							"properties": {
+								"speed": 400,
+								"acceleration": 0,
+								"gravity": 0,
+								"bounce-off-solids": false,
+								"set-angle": true,
+								"step": false,
+								"enabled": true
 							}
 						}
 					},
@@ -2955,7 +3010,18 @@
 						"Solid": {
 							"properties": {
 								"enabled": true,
-								"tags": ""
+								"tags": "Enemy"
+							}
+						},
+						"Bullet": {
+							"properties": {
+								"speed": 400,
+								"acceleration": 0,
+								"gravity": 0,
+								"bounce-off-solids": false,
+								"set-angle": true,
+								"step": false,
+								"enabled": true
 							}
 						}
 					},
@@ -2964,6 +3030,35 @@
 						"y": 347,
 						"width": 32,
 						"height": 32,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Sprite2",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 732,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 30,
+						"y": -155,
+						"width": 11,
+						"height": 11,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [

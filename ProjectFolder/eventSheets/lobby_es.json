@@ -93,10 +93,93 @@
 									"parameters": {
 										"collisions": "enabled"
 									}
+								},
+								{
+									"id": "set-enabled",
+									"objectClass": "But_EnterLevel",
+									"sid": 348108624172042,
+									"parameters": {
+										"mode": "enabled"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "But_EnterLevel",
+									"sid": 115613622241101,
+									"parameters": {
+										"visibility": "visible"
+									}
 								}
 							],
 							"sid": 241973884428367,
 							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "on-clicked",
+											"objectClass": "But_EnterLevel",
+											"sid": 842558266527822
+										}
+									],
+									"actions": [],
+									"sid": 975630470163295,
+									"children": [
+										{
+											"eventType": "comment",
+											"text": "Click the button to go to the level that's indicated by the NextSceneZone's NextScene string variable"
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "is-visible",
+													"objectClass": "WarningNoCards",
+													"sid": 366166624448646
+												}
+											],
+											"actions": [
+												{
+													"id": "go-to-layout-by-name",
+													"objectClass": "System",
+													"sid": 982382845209860,
+													"parameters": {
+														"layout": "NextSceneZone.NextScene"
+													}
+												}
+											],
+											"sid": 338012333033960,
+											"children": [
+												{
+													"eventType": "comment",
+													"text": "Click the button to go to the level that's indicated by the NextSceneZone's NextScene string variable"
+												}
+											]
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "is-visible",
+													"objectClass": "WarningNoCards",
+													"sid": 428345673251217,
+													"isInverted": true
+												}
+											],
+											"actions": [
+												{
+													"id": "set-visible",
+													"objectClass": "WarningNoCards",
+													"sid": 437035849705743,
+													"parameters": {
+														"visibility": "visible"
+													}
+												}
+											],
+											"sid": 610672061882129
+										}
+									]
+								},
 								{
 									"eventType": "comment",
 									"text": "If the player is overlapping the next scene zone, set the card docks & the card's visibility & collisions to enabled"
@@ -125,56 +208,13 @@
 											}
 										}
 									],
-									"actions": [
-										{
-											"id": "set-enabled",
-											"objectClass": "But_EnterLevel",
-											"sid": 348538961810967,
-											"parameters": {
-												"mode": "enabled"
-											}
-										},
-										{
-											"id": "set-visible",
-											"objectClass": "But_EnterLevel",
-											"sid": 312741916537394,
-											"parameters": {
-												"visibility": "visible"
-											}
-										}
-									],
+									"actions": [],
 									"sid": 922372312100475,
+									"disabled": true,
 									"children": [
 										{
 											"eventType": "comment",
 											"text": "If both types of Cards Docked variables are equal or greater than 1 (the amount you're allowed to choose), then set the button & it's visibility to enabled"
-										},
-										{
-											"eventType": "block",
-											"conditions": [
-												{
-													"id": "on-clicked",
-													"objectClass": "But_EnterLevel",
-													"sid": 473812744520433
-												}
-											],
-											"actions": [
-												{
-													"id": "go-to-layout-by-name",
-													"objectClass": "System",
-													"sid": 923021054196555,
-													"parameters": {
-														"layout": "NextSceneZone.NextScene"
-													}
-												}
-											],
-											"sid": 418148377048291,
-											"children": [
-												{
-													"eventType": "comment",
-													"text": "Click the button to go to the level that's indicated by the NextSceneZone's NextScene string variable"
-												}
-											]
 										}
 									]
 								},
@@ -221,7 +261,36 @@
 										}
 									],
 									"sid": 261769573017661,
+									"disabled": true,
 									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "on-clicked",
+													"objectClass": "But_EnterLevel",
+													"sid": 256363161723494
+												}
+											],
+											"actions": [
+												{
+													"id": "go-to-layout-by-name",
+													"objectClass": "System",
+													"sid": 981024840072025,
+													"parameters": {
+														"layout": "NextSceneZone.NextScene"
+													}
+												}
+											],
+											"sid": 854809382271004,
+											"disabled": true,
+											"children": [
+												{
+													"eventType": "comment",
+													"text": "Click the button to go to the level that's indicated by the NextSceneZone's NextScene string variable"
+												}
+											]
+										},
 										{
 											"eventType": "comment",
 											"text": "If the cardsDocked variables are not equal to the correct amount, make the button invisible, and disabled"
@@ -958,47 +1027,54 @@
 											"parameters": {
 												"variable": "Dash"
 											}
-										},
-										{
-											"id": "compare-boolean-eventvar",
-											"objectClass": "System",
-											"sid": 894628920530228,
-											"parameters": {
-												"variable": "ChargedShot"
-											},
-											"isInverted": true
-										},
-										{
-											"id": "compare-boolean-eventvar",
-											"objectClass": "System",
-											"sid": 580497233106186,
-											"parameters": {
-												"variable": "MultiShot"
-											},
-											"isInverted": true
-										},
-										{
-											"id": "compare-boolean-eventvar",
-											"objectClass": "System",
-											"sid": 780565268330110,
-											"parameters": {
-												"variable": "PiercingShot"
-											},
-											"isInverted": true
 										}
 									],
-									"actions": [
+									"actions": [],
+									"sid": 231539106213278,
+									"children": [
 										{
-											"id": "set-boolean-eventvar",
-											"objectClass": "System",
-											"sid": 798268565620743,
-											"parameters": {
-												"variable": "NormalBow",
-												"value": "true"
-											}
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-boolean-eventvar",
+													"objectClass": "System",
+													"sid": 586355131140682,
+													"parameters": {
+														"variable": "ChargedShot"
+													}
+												},
+												{
+													"id": "compare-boolean-eventvar",
+													"objectClass": "System",
+													"sid": 566878747000271,
+													"parameters": {
+														"variable": "MultiShot"
+													}
+												},
+												{
+													"id": "compare-boolean-eventvar",
+													"objectClass": "System",
+													"sid": 819714907416664,
+													"parameters": {
+														"variable": "PiercingShot"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-boolean-eventvar",
+													"objectClass": "System",
+													"sid": 734541725899987,
+													"parameters": {
+														"variable": "NormalBow",
+														"value": "false"
+													}
+												}
+											],
+											"sid": 426859882200949,
+											"isOrBlock": true
 										}
-									],
-									"sid": 231539106213278
+									]
 								}
 							],
 							"sid": 236130972038378

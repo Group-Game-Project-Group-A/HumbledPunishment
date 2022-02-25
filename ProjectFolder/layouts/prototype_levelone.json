@@ -9836,6 +9836,17 @@
 								"enabled": true,
 								"tags": ""
 							}
+						},
+						"Bullet": {
+							"properties": {
+								"speed": 400,
+								"acceleration": 0,
+								"gravity": 0,
+								"bounce-off-solids": false,
+								"set-angle": true,
+								"step": false,
+								"enabled": true
+							}
 						}
 					},
 					"world": {
@@ -10006,6 +10017,17 @@
 								"enabled": true,
 								"tags": ""
 							}
+						},
+						"Bullet": {
+							"properties": {
+								"speed": 400,
+								"acceleration": 0,
+								"gravity": 0,
+								"bounce-off-solids": false,
+								"set-angle": true,
+								"step": false,
+								"enabled": true
+							}
 						}
 					},
 					"world": {
@@ -10068,6 +10090,17 @@
 							"properties": {
 								"enabled": true,
 								"tags": ""
+							}
+						},
+						"Bullet": {
+							"properties": {
+								"speed": 400,
+								"acceleration": 0,
+								"gravity": 0,
+								"bounce-off-solids": false,
+								"set-angle": true,
+								"step": false,
+								"enabled": true
 							}
 						}
 					},
