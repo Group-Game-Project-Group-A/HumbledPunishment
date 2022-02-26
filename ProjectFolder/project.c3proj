@@ -64,8 +64,24 @@
 		},
 		{
 			"type": "behavior",
+			"id": "solid",
+			"name": "Solid",
+			"author": "Scirra",
+			"version": "r276.2",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
 			"id": "MoveTo",
 			"name": "Move To",
+			"author": "Scirra",
+			"version": "r276.2",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Turret",
+			"name": "Turret",
 			"author": "Scirra",
 			"version": "r276.2",
 			"bundled": false
@@ -96,22 +112,6 @@
 		},
 		{
 			"type": "behavior",
-			"id": "solid",
-			"name": "Solid",
-			"author": "Scirra",
-			"version": "r276.2",
-			"bundled": false
-		},
-		{
-			"type": "behavior",
-			"id": "Turret",
-			"name": "Turret",
-			"author": "Scirra",
-			"version": "r276.2",
-			"bundled": false
-		},
-		{
-			"type": "behavior",
 			"id": "LOS",
 			"name": "Line of sight",
 			"author": "Scirra",
@@ -131,22 +131,12 @@
 	"objectTypes": {
 		"items": [
 			"Player",
-			"Melee_Enemy_Minor",
 			"NextSceneZone",
 			"Tile2",
-			"TiledBackground",
 			"Tile1",
-			"Border",
 			"Guide",
-			"Wall",
-			"WallTurn1",
-			"Pillar",
-			"TiledBackground2",
-			"TiledBackground3",
 			"ArrowLauncher",
-			"Ranged_Enemy_Minor",
 			"DoorCloser",
-			"Doors",
 			"Sprite",
 			"WarningNoCards",
 			"Sprite2"
@@ -191,7 +181,18 @@
 							"AbilityCards",
 							"AbilityDock"
 						],
-						"subfolders": [],
+						"subfolders": [
+							{
+								"items": [
+									"Tooltip_Dash",
+									"Tooltip_Multishot",
+									"Tooltip_ChargedShot",
+									"Tooltip_PierceShot"
+								],
+								"subfolders": [],
+								"name": "Tooltips"
+							}
+						],
 						"name": "Ability"
 					},
 					{
@@ -199,7 +200,17 @@
 							"ElementCards",
 							"ElementDock"
 						],
-						"subfolders": [],
+						"subfolders": [
+							{
+								"items": [
+									"Tooltip_Fire",
+									"Tooltip_Ice",
+									"Tooltip_Electricity"
+								],
+								"subfolders": [],
+								"name": "Tooltips"
+							}
+						],
 						"name": "Element"
 					}
 				],
@@ -221,43 +232,64 @@
 			},
 			{
 				"items": [
-					"Elements"
-				],
-				"subfolders": [],
-				"name": "NEW Art"
-			},
-			{
-				"items": [
 					"Health_Text"
 				],
 				"subfolders": [],
 				"name": "UI"
 			},
 			{
+				"items": [
+					"Border",
+					"Doors",
+					"Pillar",
+					"TiledBackground",
+					"TiledBackground2",
+					"TiledBackground3",
+					"Wall",
+					"WallTurn1"
+				],
+				"subfolders": [],
+				"name": "Walls & Barriers"
+			},
+			{
 				"items": [],
 				"subfolders": [
 					{
-						"items": [
-							"OrcBoss",
-							"TravelWaypoints",
-							"AcidFlask",
-							"AcidArea",
-							"OrcBossHealthText"
+						"items": [],
+						"subfolders": [
+							{
+								"items": [
+									"OrcBoss",
+									"TravelWaypoints",
+									"AcidFlask",
+									"AcidArea",
+									"OrcBossHealthText"
+								],
+								"subfolders": [],
+								"name": "OrcBoss"
+							},
+							{
+								"items": [
+									"Bob",
+									"BobHealthText",
+									"Bobmelee"
+								],
+								"subfolders": [],
+								"name": "RobBoss"
+							}
 						],
-						"subfolders": [],
-						"name": "OrcBoss"
+						"name": "Bosses"
 					},
 					{
 						"items": [
-							"Bob",
-							"BobHealthText",
-							"Bobmelee"
+							"Melee_Enemy_Minor",
+							"Ranged_Enemy_Minor"
 						],
 						"subfolders": [],
-						"name": "RobBoss"
+						"name": "Minor Enemies"
 					}
 				],
-				"name": "Bosses"
+				"name": "Enemies"
 			}
 		]
 	},
