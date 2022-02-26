@@ -117,6 +117,387 @@
 									"eventType": "block",
 									"conditions": [
 										{
+											"id": "cursor-is-over-object",
+											"objectClass": "Mouse",
+											"sid": 275375492461378,
+											"parameters": {
+												"object": "ElementCards"
+											}
+										}
+									],
+									"actions": [],
+									"sid": 503896619375179,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-instance-variable",
+													"objectClass": "ElementCards",
+													"sid": 270413809678356,
+													"parameters": {
+														"instance-variable": "Type",
+														"comparison": 0,
+														"value": "\"Fire\""
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-position",
+													"objectClass": "Tooltip_Fire",
+													"sid": 638128479351212,
+													"parameters": {
+														"x": "Mouse.X",
+														"y": "Mouse.Y"
+													}
+												},
+												{
+													"id": "set-visible",
+													"objectClass": "Tooltip_Fire",
+													"sid": 632430796577662,
+													"parameters": {
+														"visibility": "visible"
+													}
+												},
+												{
+													"id": "set-visible",
+													"objectClass": "Tooltip_Electricity",
+													"sid": 215241686461581,
+													"parameters": {
+														"visibility": "invisible"
+													}
+												},
+												{
+													"id": "set-visible",
+													"objectClass": "Tooltip_Ice",
+													"sid": 901650585300600,
+													"parameters": {
+														"visibility": "invisible"
+													}
+												}
+											],
+											"sid": 607858122296378
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-instance-variable",
+													"objectClass": "ElementCards",
+													"sid": 291765961611619,
+													"parameters": {
+														"instance-variable": "Type",
+														"comparison": 0,
+														"value": "\"Ice\""
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-position",
+													"objectClass": "Tooltip_Ice",
+													"sid": 548411201365298,
+													"parameters": {
+														"x": "Mouse.X",
+														"y": "Mouse.Y"
+													}
+												},
+												{
+													"id": "set-visible",
+													"objectClass": "Tooltip_Ice",
+													"sid": 832508863806240,
+													"parameters": {
+														"visibility": "visible"
+													}
+												},
+												{
+													"id": "set-visible",
+													"objectClass": "Tooltip_Fire",
+													"sid": 752412175991417,
+													"parameters": {
+														"visibility": "invisible"
+													}
+												},
+												{
+													"id": "set-visible",
+													"objectClass": "Tooltip_Electricity",
+													"sid": 125069558350119,
+													"parameters": {
+														"visibility": "invisible"
+													}
+												}
+											],
+											"sid": 857494845969866
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-instance-variable",
+													"objectClass": "ElementCards",
+													"sid": 949377392735636,
+													"parameters": {
+														"instance-variable": "Type",
+														"comparison": 0,
+														"value": "\"Electric\""
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-position",
+													"objectClass": "Tooltip_Electricity",
+													"sid": 523528785354206,
+													"parameters": {
+														"x": "Mouse.X",
+														"y": "Mouse.Y"
+													}
+												},
+												{
+													"id": "set-visible",
+													"objectClass": "Tooltip_Electricity",
+													"sid": 524308061253333,
+													"parameters": {
+														"visibility": "visible"
+													}
+												},
+												{
+													"id": "set-visible",
+													"objectClass": "Tooltip_Ice",
+													"sid": 789429996329268,
+													"parameters": {
+														"visibility": "invisible"
+													}
+												},
+												{
+													"id": "set-visible",
+													"objectClass": "Tooltip_Fire",
+													"sid": 804052467137700,
+													"parameters": {
+														"visibility": "invisible"
+													}
+												}
+											],
+											"sid": 627410588134974
+										}
+									]
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "cursor-is-over-object",
+											"objectClass": "Mouse",
+											"sid": 681802726406424,
+											"parameters": {
+												"object": "AbilityCards"
+											}
+										}
+									],
+									"actions": [],
+									"sid": 608873504274417,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-instance-variable",
+													"objectClass": "AbilityCards",
+													"sid": 928236616251193,
+													"parameters": {
+														"instance-variable": "Type",
+														"comparison": 0,
+														"value": "\"Charged Shot\""
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-position",
+													"objectClass": "Tooltip_ChargedShot",
+													"sid": 788262038868047,
+													"parameters": {
+														"x": "Mouse.X",
+														"y": "Mouse.Y"
+													}
+												},
+												{
+													"id": "set-visible",
+													"objectClass": "Tooltip_ChargedShot",
+													"sid": 523441018950884,
+													"parameters": {
+														"visibility": "visible"
+													}
+												},
+												{
+													"id": "set-visible",
+													"objectClass": "Tooltip_Dash",
+													"sid": 841463352718073,
+													"parameters": {
+														"visibility": "invisible"
+													}
+												},
+												{
+													"id": "set-visible",
+													"objectClass": "Tooltip_Multishot",
+													"sid": 103854034756345,
+													"parameters": {
+														"visibility": "invisible"
+													}
+												},
+												{
+													"id": "set-visible",
+													"objectClass": "Tooltip_PierceShot",
+													"sid": 507813506717289,
+													"parameters": {
+														"visibility": "invisible"
+													}
+												}
+											],
+											"sid": 744061517819870
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-instance-variable",
+													"objectClass": "AbilityCards",
+													"sid": 167202120976028,
+													"parameters": {
+														"instance-variable": "Type",
+														"comparison": 0,
+														"value": "\"Dash\""
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-position",
+													"objectClass": "Tooltip_Dash",
+													"sid": 182697306947653,
+													"parameters": {
+														"x": "Mouse.X",
+														"y": "Mouse.Y"
+													}
+												},
+												{
+													"id": "set-visible",
+													"objectClass": "Tooltip_Dash",
+													"sid": 517433760930781,
+													"parameters": {
+														"visibility": "visible"
+													}
+												},
+												{
+													"id": "set-visible",
+													"objectClass": "Tooltip_ChargedShot",
+													"sid": 720295895061920,
+													"parameters": {
+														"visibility": "invisible"
+													}
+												},
+												{
+													"id": "set-visible",
+													"objectClass": "Tooltip_Multishot",
+													"sid": 784935326362875,
+													"parameters": {
+														"visibility": "invisible"
+													}
+												},
+												{
+													"id": "set-visible",
+													"objectClass": "Tooltip_PierceShot",
+													"sid": 122341835446181,
+													"parameters": {
+														"visibility": "invisible"
+													}
+												}
+											],
+											"sid": 313794368775254
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-instance-variable",
+													"objectClass": "AbilityCards",
+													"sid": 843134042500280,
+													"parameters": {
+														"instance-variable": "Type",
+														"comparison": 0,
+														"value": "\"Multishot\""
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-position",
+													"objectClass": "Tooltip_Multishot",
+													"sid": 997220255569040,
+													"parameters": {
+														"x": "Mouse.X",
+														"y": "Mouse.Y"
+													}
+												},
+												{
+													"id": "set-visible",
+													"objectClass": "Tooltip_Multishot",
+													"sid": 426550570177154,
+													"parameters": {
+														"visibility": "visible"
+													}
+												},
+												{
+													"id": "set-visible",
+													"objectClass": "Tooltip_ChargedShot",
+													"sid": 518679267810902,
+													"parameters": {
+														"visibility": "invisible"
+													}
+												},
+												{
+													"id": "set-visible",
+													"objectClass": "Tooltip_Dash",
+													"sid": 671187643178230,
+													"parameters": {
+														"visibility": "invisible"
+													}
+												},
+												{
+													"id": "set-visible",
+													"objectClass": "Tooltip_PierceShot",
+													"sid": 901625456875512,
+													"parameters": {
+														"visibility": "invisible"
+													}
+												}
+											],
+											"sid": 304371434879273
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-instance-variable",
+													"objectClass": "AbilityCards",
+													"sid": 680669748373717,
+													"parameters": {
+														"instance-variable": "Type",
+														"comparison": 0,
+														"value": "\"Piercing Shot\""
+													}
+												}
+											],
+											"actions": [],
+											"sid": 205509151333758
+										}
+									]
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
 											"id": "on-clicked",
 											"objectClass": "But_EnterLevel",
 											"sid": 842558266527822
@@ -417,6 +798,14 @@
 										"variable": "AbilityCardCount",
 										"value": "AbilityDock.Count"
 									}
+								},
+								{
+									"id": "set-time-scale",
+									"objectClass": "System",
+									"sid": 674496357577494,
+									"parameters": {
+										"time-scale": "0"
+									}
 								}
 							],
 							"sid": 220572128034155,
@@ -585,10 +974,10 @@
 														{
 															"id": "set-boolean-eventvar",
 															"objectClass": "System",
-															"sid": 380583627367366,
+															"sid": 378247186944373,
 															"parameters": {
 																"variable": "NormalBow",
-																"value": "false"
+																"value": "true"
 															}
 														},
 														{
@@ -834,6 +1223,15 @@
 																			}
 																		},
 																		{
+																			"id": "set-boolean-eventvar",
+																			"objectClass": "System",
+																			"sid": 893819388694340,
+																			"parameters": {
+																				"variable": "NormalBow",
+																				"value": "false"
+																			}
+																		},
+																		{
 																			"id": "add-to-eventvar",
 																			"objectClass": "System",
 																			"sid": 134181598745467,
@@ -873,6 +1271,15 @@
 																			"parameters": {
 																				"variable": "ChargedShot",
 																				"value": "true"
+																			}
+																		},
+																		{
+																			"id": "set-boolean-eventvar",
+																			"objectClass": "System",
+																			"sid": 407043468579659,
+																			"parameters": {
+																				"variable": "NormalBow",
+																				"value": "false"
 																			}
 																		},
 																		{
@@ -918,6 +1325,15 @@
 																			}
 																		},
 																		{
+																			"id": "set-boolean-eventvar",
+																			"objectClass": "System",
+																			"sid": 796030918967554,
+																			"parameters": {
+																				"variable": "NormalBow",
+																				"value": "false"
+																			}
+																		},
+																		{
 																			"id": "add-to-eventvar",
 																			"objectClass": "System",
 																			"sid": 660269545327536,
@@ -960,6 +1376,15 @@
 																			}
 																		},
 																		{
+																			"id": "set-boolean-eventvar",
+																			"objectClass": "System",
+																			"sid": 670381165709258,
+																			"parameters": {
+																				"variable": "NormalBow",
+																				"value": "true"
+																			}
+																		},
+																		{
 																			"id": "add-to-eventvar",
 																			"objectClass": "System",
 																			"sid": 150523189668464,
@@ -996,9 +1421,36 @@
 										{
 											"id": "compare-eventvar",
 											"objectClass": "System",
-											"sid": 516962193432093,
+											"sid": 249703490532199,
 											"parameters": {
-												"variable": "AbilityCardCount",
+												"variable": "AbilityCardsDocked",
+												"comparison": 4,
+												"value": "1"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 550136117826548,
+											"parameters": {
+												"variable": "NormalBow",
+												"value": "false"
+											}
+										}
+									],
+									"sid": 424979945749091
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 391914411679530,
+											"parameters": {
+												"variable": "AbilityCardsDocked",
 												"comparison": 3,
 												"value": "0"
 											}
@@ -1016,65 +1468,6 @@
 										}
 									],
 									"sid": 454388722430497
-								},
-								{
-									"eventType": "block",
-									"conditions": [
-										{
-											"id": "compare-boolean-eventvar",
-											"objectClass": "System",
-											"sid": 230674028094462,
-											"parameters": {
-												"variable": "Dash"
-											}
-										}
-									],
-									"actions": [],
-									"sid": 231539106213278,
-									"children": [
-										{
-											"eventType": "block",
-											"conditions": [
-												{
-													"id": "compare-boolean-eventvar",
-													"objectClass": "System",
-													"sid": 586355131140682,
-													"parameters": {
-														"variable": "ChargedShot"
-													}
-												},
-												{
-													"id": "compare-boolean-eventvar",
-													"objectClass": "System",
-													"sid": 566878747000271,
-													"parameters": {
-														"variable": "MultiShot"
-													}
-												},
-												{
-													"id": "compare-boolean-eventvar",
-													"objectClass": "System",
-													"sid": 819714907416664,
-													"parameters": {
-														"variable": "PiercingShot"
-													}
-												}
-											],
-											"actions": [
-												{
-													"id": "set-boolean-eventvar",
-													"objectClass": "System",
-													"sid": 734541725899987,
-													"parameters": {
-														"variable": "NormalBow",
-														"value": "false"
-													}
-												}
-											],
-											"sid": 426859882200949,
-											"isOrBlock": true
-										}
-									]
 								}
 							],
 							"sid": 236130972038378
@@ -1701,232 +2094,9 @@
 							"id": "reset-global-variables",
 							"objectClass": "System",
 							"sid": 528957829036876
-						},
-						{
-							"id": "create-object",
-							"objectClass": "System",
-							"sid": 717912413996236,
-							"parameters": {
-								"object-to-create": "Tooltip_ChargedShot",
-								"layer": "0",
-								"x": "0",
-								"y": "0",
-								"create-hierarchy": false
-							}
 						}
 					],
 					"sid": 795390316153478
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "cursor-is-over-object",
-							"objectClass": "Mouse",
-							"sid": 883818272893564,
-							"parameters": {
-								"object": "AbilityCards"
-							}
-						}
-					],
-					"actions": [],
-					"sid": 135636082248304,
-					"children": [
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "compare-instance-variable",
-									"objectClass": "AbilityCards",
-									"sid": 374982554413945,
-									"parameters": {
-										"instance-variable": "Type",
-										"comparison": 0,
-										"value": "\"Charged Shot\""
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "set-position",
-									"objectClass": "Tooltip_ChargedShot",
-									"sid": 312818527358544,
-									"parameters": {
-										"x": "Mouse.X",
-										"y": "Mouse.Y"
-									}
-								},
-								{
-									"id": "set-visible",
-									"objectClass": "Tooltip_ChargedShot",
-									"sid": 135792838363350,
-									"parameters": {
-										"visibility": "visible"
-									}
-								},
-								{
-									"id": "set-visible",
-									"objectClass": "Tooltip_Dash",
-									"sid": 238263047773440,
-									"parameters": {
-										"visibility": "invisible"
-									}
-								},
-								{
-									"id": "set-visible",
-									"objectClass": "Tooltip_Multishot",
-									"sid": 412168239484166,
-									"parameters": {
-										"visibility": "invisible"
-									}
-								},
-								{
-									"id": "set-visible",
-									"objectClass": "Tooltip_PierceShot",
-									"sid": 960178925808532,
-									"parameters": {
-										"visibility": "invisible"
-									}
-								}
-							],
-							"sid": 745701570037773
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "compare-instance-variable",
-									"objectClass": "AbilityCards",
-									"sid": 775329661063049,
-									"parameters": {
-										"instance-variable": "Type",
-										"comparison": 0,
-										"value": "\"Dash\""
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "set-position",
-									"objectClass": "Tooltip_Dash",
-									"sid": 174910118152342,
-									"parameters": {
-										"x": "Mouse.X",
-										"y": "Mouse.Y"
-									}
-								},
-								{
-									"id": "set-visible",
-									"objectClass": "Tooltip_Dash",
-									"sid": 316279138160393,
-									"parameters": {
-										"visibility": "visible"
-									}
-								},
-								{
-									"id": "set-visible",
-									"objectClass": "Tooltip_ChargedShot",
-									"sid": 412906554865415,
-									"parameters": {
-										"visibility": "invisible"
-									}
-								},
-								{
-									"id": "set-visible",
-									"objectClass": "Tooltip_Multishot",
-									"sid": 260947595076757,
-									"parameters": {
-										"visibility": "invisible"
-									}
-								},
-								{
-									"id": "set-visible",
-									"objectClass": "Tooltip_PierceShot",
-									"sid": 124470029523688,
-									"parameters": {
-										"visibility": "invisible"
-									}
-								}
-							],
-							"sid": 445641500422852
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "compare-instance-variable",
-									"objectClass": "AbilityCards",
-									"sid": 359042768856661,
-									"parameters": {
-										"instance-variable": "Type",
-										"comparison": 0,
-										"value": "\"Multishot\""
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "set-position",
-									"objectClass": "Tooltip_Multishot",
-									"sid": 573727519761831,
-									"parameters": {
-										"x": "Mouse.X",
-										"y": "Mouse.Y"
-									}
-								},
-								{
-									"id": "set-visible",
-									"objectClass": "Tooltip_Multishot",
-									"sid": 438230303349150,
-									"parameters": {
-										"visibility": "visible"
-									}
-								},
-								{
-									"id": "set-visible",
-									"objectClass": "Tooltip_ChargedShot",
-									"sid": 498754689078853,
-									"parameters": {
-										"visibility": "invisible"
-									}
-								},
-								{
-									"id": "set-visible",
-									"objectClass": "Tooltip_Dash",
-									"sid": 864171993495552,
-									"parameters": {
-										"visibility": "invisible"
-									}
-								},
-								{
-									"id": "set-visible",
-									"objectClass": "Tooltip_PierceShot",
-									"sid": 574315118433681,
-									"parameters": {
-										"visibility": "invisible"
-									}
-								}
-							],
-							"sid": 279517312530280
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "compare-instance-variable",
-									"objectClass": "AbilityCards",
-									"sid": 448974608757778,
-									"parameters": {
-										"instance-variable": "Type",
-										"comparison": 0,
-										"value": "\"Piercing Shot\""
-									}
-								}
-							],
-							"actions": [],
-							"sid": 461018359003391
-						}
-					]
 				},
 				{
 					"eventType": "block",
@@ -1976,176 +2146,6 @@
 						}
 					],
 					"sid": 669311922428844
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "cursor-is-over-object",
-							"objectClass": "Mouse",
-							"sid": 974234605481567,
-							"parameters": {
-								"object": "ElementCards"
-							}
-						}
-					],
-					"actions": [],
-					"sid": 713234365500510,
-					"children": [
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "compare-instance-variable",
-									"objectClass": "ElementCards",
-									"sid": 273057866726935,
-									"parameters": {
-										"instance-variable": "Type",
-										"comparison": 0,
-										"value": "\"Fire\""
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "set-position",
-									"objectClass": "Tooltip_Fire",
-									"sid": 892744746040270,
-									"parameters": {
-										"x": "Mouse.X",
-										"y": "Mouse.Y"
-									}
-								},
-								{
-									"id": "set-visible",
-									"objectClass": "Tooltip_Fire",
-									"sid": 414345889492800,
-									"parameters": {
-										"visibility": "visible"
-									}
-								},
-								{
-									"id": "set-visible",
-									"objectClass": "Tooltip_Electricity",
-									"sid": 356609314994072,
-									"parameters": {
-										"visibility": "invisible"
-									}
-								},
-								{
-									"id": "set-visible",
-									"objectClass": "Tooltip_Ice",
-									"sid": 619238559057816,
-									"parameters": {
-										"visibility": "invisible"
-									}
-								}
-							],
-							"sid": 887983652151417
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "compare-instance-variable",
-									"objectClass": "ElementCards",
-									"sid": 126958938086247,
-									"parameters": {
-										"instance-variable": "Type",
-										"comparison": 0,
-										"value": "\"Ice\""
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "set-position",
-									"objectClass": "Tooltip_Ice",
-									"sid": 482049939013020,
-									"parameters": {
-										"x": "Mouse.X",
-										"y": "Mouse.Y"
-									}
-								},
-								{
-									"id": "set-visible",
-									"objectClass": "Tooltip_Ice",
-									"sid": 222350350507065,
-									"parameters": {
-										"visibility": "visible"
-									}
-								},
-								{
-									"id": "set-visible",
-									"objectClass": "Tooltip_Fire",
-									"sid": 503763603346574,
-									"parameters": {
-										"visibility": "invisible"
-									}
-								},
-								{
-									"id": "set-visible",
-									"objectClass": "Tooltip_Electricity",
-									"sid": 884624134584058,
-									"parameters": {
-										"visibility": "invisible"
-									}
-								}
-							],
-							"sid": 513088541262885
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "compare-instance-variable",
-									"objectClass": "ElementCards",
-									"sid": 406580694460041,
-									"parameters": {
-										"instance-variable": "Type",
-										"comparison": 0,
-										"value": "\"Electric\""
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "set-position",
-									"objectClass": "Tooltip_Electricity",
-									"sid": 430614342759485,
-									"parameters": {
-										"x": "Mouse.X",
-										"y": "Mouse.Y"
-									}
-								},
-								{
-									"id": "set-visible",
-									"objectClass": "Tooltip_Electricity",
-									"sid": 159595853636626,
-									"parameters": {
-										"visibility": "visible"
-									}
-								},
-								{
-									"id": "set-visible",
-									"objectClass": "Tooltip_Ice",
-									"sid": 597386671844443,
-									"parameters": {
-										"visibility": "invisible"
-									}
-								},
-								{
-									"id": "set-visible",
-									"objectClass": "Tooltip_Fire",
-									"sid": 965133346948060,
-									"parameters": {
-										"visibility": "invisible"
-									}
-								}
-							],
-							"sid": 695268110760506
-						}
-					]
 				},
 				{
 					"eventType": "block",
