@@ -3135,7 +3135,35 @@
 							}
 						}
 					],
-					"sid": 201945289813932
+					"sid": 201945289813932,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 630770862775140,
+									"parameters": {
+										"variable": "isPaused"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "set-position",
+									"objectClass": "Sprite2",
+									"sid": 859855604760010,
+									"parameters": {
+										"x": "Mouse.X",
+										"y": "Mouse.Y"
+									}
+								}
+							],
+							"sid": 665532196725659
+						}
+					]
 				},
 				{
 					"eventType": "block",
