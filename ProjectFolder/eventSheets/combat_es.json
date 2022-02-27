@@ -671,6 +671,15 @@
 									"parameters": {
 										"variable": "ChargedShot"
 									}
+								},
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 827185353904514,
+									"parameters": {
+										"variable": "isPaused"
+									},
+									"isInverted": true
 								}
 							],
 							"actions": [],
@@ -688,7 +697,17 @@
 											}
 										}
 									],
-									"actions": [],
+									"actions": [
+										{
+											"id": "set-size",
+											"objectClass": "Sprite2",
+											"sid": 750051008892028,
+											"parameters": {
+												"width": "17",
+												"height": "17"
+											}
+										}
+									],
 									"sid": 993933492729893,
 									"children": [
 										{
@@ -870,7 +889,36 @@
 													}
 												}
 											],
-											"sid": 468861837525975
+											"sid": 468861837525975,
+											"children": [
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "compare-eventvar",
+															"objectClass": "System",
+															"sid": 724873769898959,
+															"parameters": {
+																"variable": "CS_Power",
+																"comparison": 3,
+																"value": "3"
+															}
+														}
+													],
+													"actions": [
+														{
+															"id": "set-size",
+															"objectClass": "Sprite2",
+															"sid": 392638058725262,
+															"parameters": {
+																"width": "Sprite2.Width-3.3",
+																"height": "Sprite2.Height-3.3"
+															}
+														}
+													],
+													"sid": 325786496487432
+												}
+											]
 										}
 									]
 								}
@@ -1216,6 +1264,15 @@
 										"variable": "MultiShot"
 									},
 									"isInverted": true
+								},
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 521329392747756,
+									"parameters": {
+										"variable": "isPaused"
+									},
+									"isInverted": true
 								}
 							],
 							"actions": [],
@@ -1259,7 +1316,36 @@
 													}
 												}
 											],
-											"sid": 244975736790426
+											"sid": 244975736790426,
+											"children": [
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "compare-eventvar",
+															"objectClass": "System",
+															"sid": 226318513154447,
+															"parameters": {
+																"variable": "CS_Power",
+																"comparison": 3,
+																"value": "3"
+															}
+														}
+													],
+													"actions": [
+														{
+															"id": "set-size",
+															"objectClass": "Sprite2",
+															"sid": 553775096552229,
+															"parameters": {
+																"width": "Sprite2.Width-3.3",
+																"height": "Sprite2.Height-3.3"
+															}
+														}
+													],
+													"sid": 215084081885161
+												}
+											]
 										}
 									]
 								},
@@ -1275,7 +1361,17 @@
 											}
 										}
 									],
-									"actions": [],
+									"actions": [
+										{
+											"id": "set-size",
+											"objectClass": "Sprite2",
+											"sid": 194215376320990,
+											"parameters": {
+												"width": "17",
+												"height": "17"
+											}
+										}
+									],
 									"sid": 445919929229937,
 									"children": [
 										{
@@ -1439,6 +1535,15 @@
 									"parameters": {
 										"variable": "MultiShot"
 									}
+								},
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 998027192058467,
+									"parameters": {
+										"variable": "isPaused"
+									},
+									"isInverted": true
 								}
 							],
 							"actions": [],
@@ -1482,7 +1587,36 @@
 													}
 												}
 											],
-											"sid": 103009824954063
+											"sid": 103009824954063,
+											"children": [
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "compare-eventvar",
+															"objectClass": "System",
+															"sid": 983323526298144,
+															"parameters": {
+																"variable": "CS_Power",
+																"comparison": 3,
+																"value": "3"
+															}
+														}
+													],
+													"actions": [
+														{
+															"id": "set-size",
+															"objectClass": "Sprite2",
+															"sid": 862487098271576,
+															"parameters": {
+																"width": "Sprite2.Width-3.3",
+																"height": "Sprite2.Height-3.3"
+															}
+														}
+													],
+													"sid": 754298332951487
+												}
+											]
 										}
 									]
 								},
@@ -1498,7 +1632,17 @@
 											}
 										}
 									],
-									"actions": [],
+									"actions": [
+										{
+											"id": "set-size",
+											"objectClass": "Sprite2",
+											"sid": 963716159216182,
+											"parameters": {
+												"width": "17",
+												"height": "17"
+											}
+										}
+									],
 									"sid": 618277401026840,
 									"children": [
 										{
@@ -1810,6 +1954,60 @@
 									]
 								}
 							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 499717567281108,
+									"parameters": {
+										"variable": "CS_Power",
+										"comparison": 5,
+										"value": "3"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "Sprite2",
+									"sid": 424580629169148,
+									"parameters": {
+										"animation": "\"Animation 2\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 772735120278645
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 903700159268572,
+									"parameters": {
+										"variable": "CS_Power",
+										"comparison": 2,
+										"value": "3"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "Sprite2",
+									"sid": 314358287559753,
+									"parameters": {
+										"animation": "\"Animation 1\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 740959505210321
 						}
 					],
 					"sid": 332231565760914
@@ -1832,6 +2030,15 @@
 										"mouse-button": "left",
 										"click-type": "clicked"
 									}
+								},
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 339500069016178,
+									"parameters": {
+										"variable": "isPaused"
+									},
+									"isInverted": true
 								}
 							],
 							"actions": [],
@@ -2035,6 +2242,15 @@
 									"parameters": {
 										"variable": "Dash"
 									}
+								},
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 536660682976248,
+									"parameters": {
+										"variable": "isPaused"
+									},
+									"isInverted": true
 								}
 							],
 							"actions": [
@@ -3174,20 +3390,67 @@
 							"parameters": {
 								"visibility": "visible"
 							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "WinButton",
+							"sid": 948552644812792,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "WinButton",
+							"sid": 952826854864944,
+							"parameters": {
+								"mode": "enabled"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Vignette",
+							"sid": 754333967763689,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 275173371797679,
+							"parameters": {
+								"variable": "isPaused",
+								"value": "true"
+							}
 						}
 					],
 					"sid": 853412666558142,
 					"children": [
 						{
 							"eventType": "block",
-							"conditions": [],
+							"conditions": [
+								{
+									"id": "on-clicked",
+									"objectClass": "WinButton",
+									"sid": 266439947519193
+								}
+							],
 							"actions": [
 								{
-									"id": "wait",
+									"id": "set-time-scale",
 									"objectClass": "System",
-									"sid": 706244728576789,
+									"sid": 865161178256108,
 									"parameters": {
-										"seconds": "2"
+										"time-scale": "1"
+									}
+								},
+								{
+									"id": "go-to-nextprevious-layout",
+									"objectClass": "System",
+									"sid": 915638937017490,
+									"parameters": {
+										"which": "next"
 									}
 								}
 							],
@@ -5165,7 +5428,7 @@
 								},
 								{
 									"id": "set-position-to-another-object",
-									"objectClass": "Sprite",
+									"objectClass": "Vignette",
 									"sid": 792900846317153,
 									"parameters": {
 										"object": "Player",
@@ -5174,7 +5437,7 @@
 								},
 								{
 									"id": "move-to-top",
-									"objectClass": "Sprite",
+									"objectClass": "Vignette",
 									"sid": 175742611587327
 								}
 							],

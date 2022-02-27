@@ -2802,8 +2802,8 @@
 					"world": {
 						"x": -212,
 						"y": -730,
-						"width": 11,
-						"height": 11,
+						"width": 17,
+						"height": 17,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -2960,6 +2960,36 @@
 						],
 						"angle": 0,
 						"zElevation": 0
+					}
+				},
+				{
+					"type": "WinButton",
+					"properties": {
+						"type": "button",
+						"text": "Continue",
+						"tooltip": "",
+						"initially-visible": false,
+						"enabled": false,
+						"auto-font-size": true,
+						"checked": false,
+						"id": ""
+					},
+					"uid": 803,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 391,
+						"y": 262,
+						"width": 72,
+						"height": 24,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						]
 					}
 				}
 			],

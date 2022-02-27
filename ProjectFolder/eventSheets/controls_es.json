@@ -2,6 +2,16 @@
 	"name": "Controls_ES",
 	"events": [
 		{
+			"eventType": "variable",
+			"name": "isPaused",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 333485203561551
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -105,18 +115,6 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "on-start-of-layout",
-					"objectClass": "System",
-					"sid": 141037855383649
-				}
-			],
-			"actions": [],
-			"sid": 201701813883260
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
 					"id": "on-collision-with-another-object",
 					"objectClass": "Player",
 					"sid": 455564357139035,
@@ -163,26 +161,53 @@
 					"sid": 911643708774631
 				}
 			],
-			"actions": [
+			"actions": [],
+			"sid": 695237718982920,
+			"children": [
 				{
-					"id": "set-angle-toward-position",
-					"objectClass": "Player",
-					"sid": 570748073090458,
-					"parameters": {
-						"x": "Mouse.X",
-						"y": "Mouse.Y"
-					}
-				},
-				{
-					"id": "set-cursor-from-sprite",
-					"objectClass": "Mouse",
-					"sid": 653987509745106,
-					"parameters": {
-						"sprite": "Sprite2"
-					}
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 604396913377106,
+							"parameters": {
+								"variable": "isPaused"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-angle-toward-position",
+							"objectClass": "Player",
+							"sid": 802345716354302,
+							"parameters": {
+								"x": "Mouse.X",
+								"y": "Mouse.Y"
+							}
+						},
+						{
+							"id": "set-cursor-style",
+							"objectClass": "Mouse",
+							"sid": 788824751840265,
+							"parameters": {
+								"cursor-style": "none"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "Sprite2",
+							"sid": 191833766886055,
+							"parameters": {
+								"x": "Mouse.X",
+								"y": "Mouse.Y"
+							}
+						}
+					],
+					"sid": 644884289131860
 				}
-			],
-			"sid": 695237718982920
+			]
 		}
 	],
 	"sid": 312005651760020

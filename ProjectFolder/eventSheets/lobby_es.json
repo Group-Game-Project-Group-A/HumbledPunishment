@@ -806,6 +806,47 @@
 									"parameters": {
 										"time-scale": "0"
 									}
+								},
+								{
+									"id": "set-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 367685426426517,
+									"parameters": {
+										"variable": "isPaused",
+										"value": "true"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "Dialog_Box_background",
+									"sid": 336388984678010,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "Dialog_Text",
+									"sid": 867700964445946,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "DialogButtonNext",
+									"sid": 379666286780972,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "set-enabled",
+									"objectClass": "DialogButtonNext",
+									"sid": 439110748416928,
+									"parameters": {
+										"mode": "enabled"
+									}
 								}
 							],
 							"sid": 220572128034155,
@@ -2190,6 +2231,68 @@
 				}
 			],
 			"sid": 368188500201813
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "DialogButtonNext",
+					"sid": 246174549664024
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Dialog_Box_background",
+					"sid": 657060282910387,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Dialog_Text",
+					"sid": 455614295309468,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "DialogButtonNext",
+					"sid": 985550833346251,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "DialogButtonNext",
+					"sid": 376033519533138,
+					"parameters": {
+						"mode": "disabled"
+					}
+				},
+				{
+					"id": "set-time-scale",
+					"objectClass": "System",
+					"sid": 793317565837038,
+					"parameters": {
+						"time-scale": "1.0"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 808448572083543,
+					"parameters": {
+						"variable": "isPaused",
+						"value": "false"
+					}
+				}
+			],
+			"sid": 331899806064586
 		}
 	],
 	"sid": 780379625061602
