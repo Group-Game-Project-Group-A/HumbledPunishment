@@ -9,11 +9,6 @@
 			"behaviorId": "solid",
 			"name": "Solid",
 			"sid": 281092781757943
-		},
-		{
-			"behaviorId": "Bullet",
-			"name": "Bullet",
-			"sid": 403895607235016
 		}
 	],
 	"effectTypes": [],
@@ -32,6 +27,18 @@
 						"imageSpriteId": 3994024,
 						"useCollisionPoly": true,
 						"duration": 1
+					},
+					{
+						"width": 614,
+						"height": 590,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9184656,
+						"useCollisionPoly": true,
+						"duration": 1
 					}
 				],
 				"sid": 252265176200206,
@@ -40,7 +47,7 @@
 				"isPingPong": false,
 				"repeatCount": 1,
 				"repeatTo": 0,
-				"speed": 5
+				"speed": 0
 			},
 			{
 				"frames": [

@@ -64,24 +64,8 @@
 		},
 		{
 			"type": "behavior",
-			"id": "solid",
-			"name": "Solid",
-			"author": "Scirra",
-			"version": "r276.2",
-			"bundled": false
-		},
-		{
-			"type": "behavior",
 			"id": "MoveTo",
 			"name": "Move To",
-			"author": "Scirra",
-			"version": "r276.2",
-			"bundled": false
-		},
-		{
-			"type": "behavior",
-			"id": "Turret",
-			"name": "Turret",
 			"author": "Scirra",
 			"version": "r276.2",
 			"bundled": false
@@ -112,6 +96,22 @@
 		},
 		{
 			"type": "behavior",
+			"id": "solid",
+			"name": "Solid",
+			"author": "Scirra",
+			"version": "r276.2",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Turret",
+			"name": "Turret",
+			"author": "Scirra",
+			"version": "r276.2",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
 			"id": "LOS",
 			"name": "Line of sight",
 			"author": "Scirra",
@@ -131,19 +131,23 @@
 	"objectTypes": {
 		"items": [
 			"Player",
+			"Melee_Enemy_Minor",
 			"NextSceneZone",
+			"Tile2",
+			"TiledBackground",
+			"Tile1",
+			"Border",
 			"Guide",
+			"Wall",
+			"WallTurn1",
+			"Pillar",
+			"TiledBackground2",
+			"TiledBackground3",
 			"ArrowLauncher",
+			"Ranged_Enemy_Minor",
 			"DoorCloser",
-			"Vignette",
-			"WarningNoCards",
-			"Sprite2",
-			"Dialog_Text",
-			"Dialog_Box_background",
-			"DialogButtonNext",
-			"WinText",
-			"WinBackground",
-			"WinButton"
+			"Doors",
+			"Sprite"
 		],
 		"subfolders": [
 			{
@@ -185,18 +189,7 @@
 							"AbilityCards",
 							"AbilityDock"
 						],
-						"subfolders": [
-							{
-								"items": [
-									"Tooltip_Dash",
-									"Tooltip_Multishot",
-									"Tooltip_ChargedShot",
-									"Tooltip_PierceShot"
-								],
-								"subfolders": [],
-								"name": "Tooltips"
-							}
-						],
+						"subfolders": [],
 						"name": "Ability"
 					},
 					{
@@ -204,17 +197,7 @@
 							"ElementCards",
 							"ElementDock"
 						],
-						"subfolders": [
-							{
-								"items": [
-									"Tooltip_Fire",
-									"Tooltip_Ice",
-									"Tooltip_Electricity"
-								],
-								"subfolders": [],
-								"name": "Tooltips"
-							}
-						],
+						"subfolders": [],
 						"name": "Element"
 					}
 				],
@@ -236,89 +219,43 @@
 			},
 			{
 				"items": [
+					"Elements"
+				],
+				"subfolders": [],
+				"name": "NEW Art"
+			},
+			{
+				"items": [
 					"Health_Text"
 				],
 				"subfolders": [],
 				"name": "UI"
 			},
 			{
-				"items": [
-					"Border",
-					"Doors",
-					"Pillar",
-					"TiledBackground",
-					"TiledBackground2",
-					"Wall",
-					"WallTurn1"
-				],
-				"subfolders": [],
-				"name": "Walls & Barriers"
-			},
-			{
 				"items": [],
 				"subfolders": [
 					{
-						"items": [],
-						"subfolders": [
-							{
-								"items": [
-									"OrcBoss",
-									"TravelWaypoints",
-									"AcidFlask",
-									"AcidArea",
-									"OrcBossHealthText"
-								],
-								"subfolders": [],
-								"name": "OrcBoss"
-							},
-							{
-								"items": [
-									"Bob",
-									"BobHealthText",
-									"Bobmelee"
-								],
-								"subfolders": [],
-								"name": "RobBoss"
-							}
+						"items": [
+							"OrcBoss",
+							"TravelWaypoints",
+							"AcidFlask",
+							"AcidArea",
+							"OrcBossHealthText"
 						],
-						"name": "Bosses"
+						"subfolders": [],
+						"name": "OrcBoss"
 					},
 					{
 						"items": [
-							"Melee_Enemy_Minor",
-							"Ranged_Enemy_Minor"
+							"Bob",
+							"BobHealthText",
+							"Bobmelee"
 						],
 						"subfolders": [],
-						"name": "Minor Enemies"
+						"name": "RobBoss"
 					}
 				],
-				"name": "Enemies"
-			},
-			{
-				"items": [
-					"Tile1",
-					"Tile2",
-					"Wall_Basic",
-					"Wall_Border",
-					"Gate",
-					"Decor1",
-					"Pillar_2",
-					"Banner1",
-					"Tile3",
-					"Wall2",
-					"LevelFill",
-					"Painting1",
-					"Painting2",
-					"Painting3",
-					"Banner2",
-					"Banner3",
-					"Tile4",
-					"Wall_Border2",
-					"Sprite",
-					"Level2Fill"
-				],
-				"subfolders": [],
-				"name": "LevelDesign"
+				"name": "Bosses"
 			}
 		]
 	},
