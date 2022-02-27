@@ -1,16 +1,9 @@
 {
-	"name": "NextSceneZone",
+	"name": "Banner2",
 	"plugin-id": "Sprite",
-	"sid": 233863503319446,
+	"sid": 642410727583013,
 	"isGlobal": false,
-	"instanceVariables": [
-		{
-			"name": "NextScene",
-			"type": "string",
-			"desc": "",
-			"sid": 282273001647161
-		}
-	],
+	"instanceVariables": [],
 	"behaviorTypes": [],
 	"effectTypes": [],
 	"animations": {
@@ -18,19 +11,39 @@
 			{
 				"frames": [
 					{
-						"width": 250,
-						"height": 250,
+						"width": 10,
+						"height": 18,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 4047282,
+						"imageSpriteId": 5338123,
+						"collisionPoly": {
+							"points": [
+								0,
+								0,
+								0.5,
+								0,
+								0.9,
+								0,
+								0.7,
+								0.5,
+								0.7,
+								0.8333333333333334,
+								0.5,
+								0.9444444444444444,
+								0.2,
+								0.8333333333333334,
+								0.2,
+								0.5
+							]
+						},
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 110172285359449,
+				"sid": 101233366432147,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

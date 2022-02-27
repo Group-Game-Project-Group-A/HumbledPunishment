@@ -132,8 +132,6 @@
 		"items": [
 			"Player",
 			"NextSceneZone",
-			"Tile2",
-			"Tile1",
 			"Guide",
 			"ArrowLauncher",
 			"DoorCloser",
@@ -250,7 +248,6 @@
 					"Pillar",
 					"TiledBackground",
 					"TiledBackground2",
-					"TiledBackground3",
 					"Wall",
 					"WallTurn1"
 				],
@@ -296,6 +293,32 @@
 					}
 				],
 				"name": "Enemies"
+			},
+			{
+				"items": [
+					"Tile1",
+					"Tile2",
+					"Wall_Basic",
+					"Wall_Border",
+					"Gate",
+					"Decor1",
+					"Pillar_2",
+					"Banner1",
+					"Tile3",
+					"Wall2",
+					"LevelFill",
+					"Painting1",
+					"Painting2",
+					"Painting3",
+					"Banner2",
+					"Banner3",
+					"Tile4",
+					"Wall_Border2",
+					"Sprite",
+					"Level2Fill"
+				],
+				"subfolders": [],
+				"name": "LevelDesign"
 			}
 		]
 	},

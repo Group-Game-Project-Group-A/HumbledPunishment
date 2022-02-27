@@ -1,16 +1,9 @@
 {
-	"name": "NextSceneZone",
+	"name": "LevelFill",
 	"plugin-id": "Sprite",
-	"sid": 233863503319446,
+	"sid": 612091086528083,
 	"isGlobal": false,
-	"instanceVariables": [
-		{
-			"name": "NextScene",
-			"type": "string",
-			"desc": "",
-			"sid": 282273001647161
-		}
-	],
+	"instanceVariables": [],
 	"behaviorTypes": [],
 	"effectTypes": [],
 	"animations": {
@@ -25,12 +18,12 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 4047282,
+						"imageSpriteId": 9200239,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 110172285359449,
+				"sid": 957986233443562,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

@@ -1,16 +1,9 @@
 {
-	"name": "NextSceneZone",
+	"name": "Painting3",
 	"plugin-id": "Sprite",
-	"sid": 233863503319446,
+	"sid": 339618559073229,
 	"isGlobal": false,
-	"instanceVariables": [
-		{
-			"name": "NextScene",
-			"type": "string",
-			"desc": "",
-			"sid": 282273001647161
-		}
-	],
+	"instanceVariables": [],
 	"behaviorTypes": [],
 	"effectTypes": [],
 	"animations": {
@@ -18,19 +11,39 @@
 			{
 				"frames": [
 					{
-						"width": 250,
-						"height": 250,
+						"width": 25,
+						"height": 17,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 4047282,
+						"imageSpriteId": 9880859,
+						"collisionPoly": {
+							"points": [
+								0,
+								0,
+								0.5,
+								0.058823529411764705,
+								0.96,
+								0,
+								0.92,
+								0.5,
+								0.96,
+								0.9411764705882353,
+								0.5,
+								0.8823529411764706,
+								0,
+								0.9411764705882353,
+								0.04,
+								0.5
+							]
+						},
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 110172285359449,
+				"sid": 362808625024691,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,
