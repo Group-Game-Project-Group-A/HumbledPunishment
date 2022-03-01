@@ -20,7 +20,6 @@
 					"behaviors": {
 						"8Direction": {
 <<<<<<< HEAD
-<<<<<<< HEAD
 							"properties": {
 								"max-speed": 200,
 								"acceleration": 600,
@@ -100,17 +99,6 @@
 								"default-controls": false,
 								"enabled": true
 							}
-=======
-							"properties": {
-								"max-speed": 200,
-								"acceleration": 600,
-								"deceleration": 500,
-								"directions": "dir-8",
-								"set-angle": "smooth",
-								"default-controls": false,
-								"enabled": true
-							}
->>>>>>> parent of c33351a (final Level Design)
 						},
 						"ScrollTo": {
 							"properties": {
@@ -131,15 +119,11 @@
 								"set-angle": true,
 								"step": false,
 								"enabled": false
-<<<<<<< HEAD
->>>>>>> parent of c33351a (final Level Design)
-=======
 >>>>>>> parent of c33351a (final Level Design)
 							}
 						}
 					},
 					"world": {
-<<<<<<< HEAD
 <<<<<<< HEAD
 						"x": 0.844722274905223,
 						"y": 0.6558463041446316,
@@ -308,8 +292,6 @@
 						"originX": 0,
 						"originY": 0,
 =======
-=======
->>>>>>> parent of c33351a (final Level Design)
 						"x": 95.0991735537176,
 						"y": 103.57024793388291,
 						"width": 32,
@@ -352,13 +334,10 @@
 					},
 					"world": {
 <<<<<<< HEAD
-<<<<<<< HEAD
 						"x": 196.3113145827841,
 						"y": 535.7398114047103,
 						"width": 368.65901064678917,
 =======
-=======
->>>>>>> parent of c33351a (final Level Design)
 						"x": 0.844722274905223,
 						"y": 0.6558463041446316,
 						"width": 298.09445716789725,
@@ -401,13 +380,10 @@
 					},
 					"world": {
 <<<<<<< HEAD
-<<<<<<< HEAD
 						"x": 288.0792980049407,
 						"y": 428.6416803783589,
 						"width": 276.65901064678917,
 =======
-=======
->>>>>>> parent of c33351a (final Level Design)
 						"x": 0.3782148946955033,
 						"y": 183.52673934636064,
 						"width": 206.6590106467892,
@@ -439,11 +415,7 @@
 						"image-angle": 0
 					},
 <<<<<<< HEAD
-<<<<<<< HEAD
 					"uid": 465,
-=======
-					"uid": 463,
->>>>>>> parent of c33351a (final Level Design)
 =======
 					"uid": 463,
 >>>>>>> parent of c33351a (final Level Design)
@@ -458,14 +430,11 @@
 					},
 					"world": {
 <<<<<<< HEAD
-<<<<<<< HEAD
 						"x": 553,
 						"y": 331.0909090909091,
 						"width": 13,
 						"height": 97.98846663133384,
 =======
-=======
->>>>>>> parent of c33351a (final Level Design)
 						"x": 196.3113145827841,
 						"y": 535.7398114047103,
 						"width": 368.65901064678917,
@@ -497,11 +466,7 @@
 						"image-angle": 0
 					},
 <<<<<<< HEAD
-<<<<<<< HEAD
 					"uid": 466,
-=======
-					"uid": 464,
->>>>>>> parent of c33351a (final Level Design)
 =======
 					"uid": 464,
 >>>>>>> parent of c33351a (final Level Design)
@@ -516,14 +481,11 @@
 					},
 					"world": {
 <<<<<<< HEAD
-<<<<<<< HEAD
 						"x": 553,
 						"y": 538,
 						"width": 13,
 						"height": 73.44301208587933,
 =======
-=======
->>>>>>> parent of c33351a (final Level Design)
 						"x": 288.0792980049407,
 						"y": 428.6416803783589,
 						"width": 276.65901064678917,
@@ -841,7 +803,6 @@
 					"type": "TiledBackground3",
 					"properties": {
 						"initially-visible": true,
-<<<<<<< HEAD
 						"origin": "top-left",
 						"wrap-horizontal": "clamp-to-edge",
 						"wrap-vertical": "repeat",
@@ -856,14 +817,6 @@
 =======
 					"uid": 476,
 >>>>>>> parent of c33351a (final Level Design)
-=======
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 476,
->>>>>>> parent of c33351a (final Level Design)
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
@@ -874,7 +827,6 @@
 						}
 					},
 					"world": {
-<<<<<<< HEAD
 <<<<<<< HEAD
 						"x": 1187,
 						"y": 330.1760561996722,
@@ -883,8 +835,6 @@
 						"originX": 0,
 						"originY": 0,
 =======
-=======
->>>>>>> parent of c33351a (final Level Design)
 						"x": 1108,
 						"y": 683,
 						"width": 32,
@@ -911,15 +861,11 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-<<<<<<< HEAD
 <<<<<<< HEAD
 					"uid": 476,
 =======
 					"uid": 477,
 >>>>>>> parent of c33351a (final Level Design)
-=======
-					"uid": 477,
->>>>>>> parent of c33351a (final Level Design)
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
@@ -930,7 +876,6 @@
 						}
 					},
 					"world": {
-<<<<<<< HEAD
 <<<<<<< HEAD
 						"x": 1108,
 						"y": 683,
@@ -938,10 +883,6 @@
 						"x": 1140,
 						"y": 652,
 >>>>>>> parent of c33351a (final Level Design)
-=======
-						"x": 1140,
-						"y": 652,
->>>>>>> parent of c33351a (final Level Design)
 						"width": 32,
 						"height": 32,
 						"originX": 0.5,
@@ -965,15 +906,11 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-<<<<<<< HEAD
 <<<<<<< HEAD
 					"uid": 477,
 =======
 					"uid": 478,
 >>>>>>> parent of c33351a (final Level Design)
-=======
-					"uid": 478,
->>>>>>> parent of c33351a (final Level Design)
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
@@ -984,7 +921,6 @@
 						}
 					},
 					"world": {
-<<<<<<< HEAD
 <<<<<<< HEAD
 						"x": 1140,
 						"y": 652,
@@ -992,10 +928,6 @@
 						"x": 1172,
 						"y": 620,
 >>>>>>> parent of c33351a (final Level Design)
-=======
-						"x": 1172,
-						"y": 620,
->>>>>>> parent of c33351a (final Level Design)
 						"width": 32,
 						"height": 32,
 						"originX": 0.5,
@@ -1019,15 +951,11 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-<<<<<<< HEAD
 <<<<<<< HEAD
 					"uid": 478,
 =======
 					"uid": 479,
 >>>>>>> parent of c33351a (final Level Design)
-=======
-					"uid": 479,
->>>>>>> parent of c33351a (final Level Design)
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
@@ -1038,7 +966,6 @@
 						}
 					},
 					"world": {
-<<<<<<< HEAD
 <<<<<<< HEAD
 						"x": 1172,
 						"y": 620,
@@ -1046,10 +973,6 @@
 						"x": 1108,
 						"y": 283,
 >>>>>>> parent of c33351a (final Level Design)
-=======
-						"x": 1108,
-						"y": 283,
->>>>>>> parent of c33351a (final Level Design)
 						"width": 32,
 						"height": 32,
 						"originX": 0.5,
@@ -1073,15 +996,11 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-<<<<<<< HEAD
 <<<<<<< HEAD
 					"uid": 479,
 =======
 					"uid": 480,
 >>>>>>> parent of c33351a (final Level Design)
-=======
-					"uid": 480,
->>>>>>> parent of c33351a (final Level Design)
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
@@ -1093,13 +1012,8 @@
 					},
 					"world": {
 <<<<<<< HEAD
-<<<<<<< HEAD
 						"x": 1108,
 						"y": 283,
-=======
-						"x": 1140,
-						"y": 315,
->>>>>>> parent of c33351a (final Level Design)
 =======
 						"x": 1140,
 						"y": 315,
@@ -1128,11 +1042,7 @@
 						"live-preview": false
 					},
 <<<<<<< HEAD
-<<<<<<< HEAD
 					"uid": 480,
-=======
-					"uid": 481,
->>>>>>> parent of c33351a (final Level Design)
 =======
 					"uid": 481,
 >>>>>>> parent of c33351a (final Level Design)
@@ -1147,13 +1057,8 @@
 					},
 					"world": {
 <<<<<<< HEAD
-<<<<<<< HEAD
 						"x": 1140,
 						"y": 315,
-=======
-						"x": 1172,
-						"y": 347,
->>>>>>> parent of c33351a (final Level Design)
 =======
 						"x": 1172,
 						"y": 347,
@@ -1174,11 +1079,8 @@
 				},
 				{
 <<<<<<< HEAD
-<<<<<<< HEAD
 					"type": "Wall",
 =======
-=======
->>>>>>> parent of c33351a (final Level Design)
 					"type": "Arrow",
 					"properties": {
 						"initially-visible": true,
@@ -1296,7 +1198,6 @@
 						"live-preview": false
 					},
 <<<<<<< HEAD
-<<<<<<< HEAD
 					"uid": 481,
 					"instanceVariables": {},
 					"behaviors": {
@@ -1311,21 +1212,11 @@
 					"instanceVariables": {
 						"FiringOrder": 2
 >>>>>>> parent of c33351a (final Level Design)
-=======
-					"uid": 491,
-					"instanceVariables": {
-						"FiringOrder": 2
->>>>>>> parent of c33351a (final Level Design)
 					},
 					"world": {
 <<<<<<< HEAD
-<<<<<<< HEAD
 						"x": 1172,
 						"y": 347,
-=======
-						"x": 710.4569501927939,
-						"y": 268.86602952083894,
->>>>>>> parent of c33351a (final Level Design)
 =======
 						"x": 710.4569501927939,
 						"y": 268.86602952083894,
@@ -1358,7 +1249,6 @@
 						"image-angle": 0
 					},
 <<<<<<< HEAD
-<<<<<<< HEAD
 					"uid": 482,
 					"instanceVariables": {},
 					"behaviors": {
@@ -1373,14 +1263,8 @@
 					"instanceVariables": {
 						"FiringOrder": 6
 >>>>>>> parent of c33351a (final Level Design)
-=======
-					"uid": 492,
-					"instanceVariables": {
-						"FiringOrder": 6
->>>>>>> parent of c33351a (final Level Design)
 					},
 					"world": {
-<<<<<<< HEAD
 <<<<<<< HEAD
 						"x": 584.8181818181819,
 						"y": 299.2727272727273,
@@ -1389,8 +1273,6 @@
 						"originX": 0,
 						"originY": 0,
 =======
-=======
->>>>>>> parent of c33351a (final Level Design)
 						"x": 1074.7992141365967,
 						"y": 270.2655516614681,
 						"width": 32,
@@ -1519,9 +1401,6 @@
 						"height": 32,
 						"originX": 0.5,
 						"originY": 1,
-<<<<<<< HEAD
->>>>>>> parent of c33351a (final Level Design)
-=======
 >>>>>>> parent of c33351a (final Level Design)
 						"color": [
 							1,
@@ -1534,7 +1413,6 @@
 					}
 				},
 				{
-<<<<<<< HEAD
 <<<<<<< HEAD
 					"type": "TiledBackground3",
 					"properties": {
@@ -1581,31 +1459,12 @@
 						"originX": 0,
 						"originY": 0,
 =======
-=======
-					"type": "ArrowLauncher",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 496,
-					"instanceVariables": {
-						"FiringOrder": 4
-					},
-					"behaviors": {},
-					"world": {
->>>>>>> parent of c33351a (final Level Design)
 						"x": 933.9139853132567,
 						"y": 268.86602952083894,
 						"width": 32,
 						"height": 32,
 						"originX": 0.5,
 						"originY": 1,
-<<<<<<< HEAD
->>>>>>> parent of c33351a (final Level Design)
-=======
 >>>>>>> parent of c33351a (final Level Design)
 						"color": [
 							1,
@@ -1618,7 +1477,6 @@
 					}
 				},
 				{
-<<<<<<< HEAD
 <<<<<<< HEAD
 					"type": "TiledBackground3",
 					"properties": {
@@ -1657,25 +1515,6 @@
 								"enabled": true,
 								"tags": ""
 =======
-=======
-					"type": "EnemyArrows",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Normal",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 499,
-					"instanceVariables": {
-						"AttackPower": 0,
-						"EnemiesItCanHit": 1,
-						"ChargedAttackPower": 0
-					},
-					"behaviors": {
-						"Bullet": {
-							"properties": {
->>>>>>> parent of c33351a (final Level Design)
 								"speed": 300,
 								"acceleration": 0,
 								"gravity": 0,
@@ -1683,30 +1522,21 @@
 								"set-angle": true,
 								"step": false,
 								"enabled": true
-<<<<<<< HEAD
->>>>>>> parent of c33351a (final Level Design)
-=======
 >>>>>>> parent of c33351a (final Level Design)
 							}
 						}
 					},
 					"world": {
 <<<<<<< HEAD
-<<<<<<< HEAD
 						"x": 1092.0909090909097,
 						"y": 234.7272727272727,
 						"width": 615.4793388429766,
 						"height": 35.26119390406103,
 =======
-=======
->>>>>>> parent of c33351a (final Level Design)
 						"x": 930,
 						"y": -298,
 						"width": 32,
 						"height": 6,
-<<<<<<< HEAD
->>>>>>> parent of c33351a (final Level Design)
-=======
 >>>>>>> parent of c33351a (final Level Design)
 						"originX": 0,
 						"originY": 0.5,
@@ -1721,7 +1551,6 @@
 					}
 				},
 				{
-<<<<<<< HEAD
 <<<<<<< HEAD
 					"type": "TiledBackground3",
 					"properties": {
@@ -1766,31 +1595,6 @@
 								"enabled": true,
 								"tags": ""
 =======
-=======
-					"type": "OrcBoss",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Normal",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 508,
-					"instanceVariables": {
-						"Health": 100,
-						"Burning": false,
-						"Paralyzed": false,
-						"Frozen": false,
-						"StartPosX": 0,
-						"StartPosY": 0,
-						"StartHealth": 0,
-						"TravelOrder": 0,
-						"MaxHealth": 100
-					},
-					"behaviors": {
-						"MoveTo": {
-							"properties": {
->>>>>>> parent of c33351a (final Level Design)
 								"max-speed": 100,
 								"acceleration": 600,
 								"deceleration": 600,
@@ -1806,15 +1610,11 @@
 								"range": 300,
 								"cone-of-view": 360,
 								"use-collision-cells": true
-<<<<<<< HEAD
->>>>>>> parent of c33351a (final Level Design)
-=======
 >>>>>>> parent of c33351a (final Level Design)
 							}
 						}
 					},
 					"world": {
-<<<<<<< HEAD
 <<<<<<< HEAD
 						"x": 1123.0000000000007,
 						"y": 267.4545454545455,
@@ -1823,17 +1623,12 @@
 						"originX": 0,
 						"originY": 0,
 =======
-=======
->>>>>>> parent of c33351a (final Level Design)
 						"x": 873.6262381030064,
 						"y": 486.0249486187605,
 						"width": 64,
 						"height": 64,
 						"originX": 0.5,
 						"originY": 0.5,
-<<<<<<< HEAD
->>>>>>> parent of c33351a (final Level Design)
-=======
 >>>>>>> parent of c33351a (final Level Design)
 						"color": [
 							1,
@@ -1846,7 +1641,6 @@
 					}
 				},
 				{
-<<<<<<< HEAD
 <<<<<<< HEAD
 					"type": "TiledBackground3",
 					"properties": {
@@ -1870,7 +1664,6 @@
 							}
 						}
 =======
-=======
 					"type": "TravelWaypoints",
 					"properties": {
 						"initially-visible": false,
@@ -1879,39 +1672,6 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 13,
-					"instanceVariables": {
-						"Order": 6
-					},
-					"behaviors": {},
-					"world": {
-						"x": 1052.6340871130037,
-						"y": 603.1225004388787,
-						"width": 16,
-						"height": 16,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
->>>>>>> parent of c33351a (final Level Design)
-					"type": "TravelWaypoints",
-					"properties": {
-						"initially-visible": false,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-<<<<<<< HEAD
 					"uid": 13,
 					"instanceVariables": {
 						"Order": 6
@@ -1929,16 +1689,6 @@
 =======
 						"x": 1052.6340871130037,
 						"y": 603.1225004388787,
-=======
-					"uid": 14,
-					"instanceVariables": {
-						"Order": 1
-					},
-					"behaviors": {},
-					"world": {
-						"x": 1054.891982833219,
-						"y": 358.70528872559294,
->>>>>>> parent of c33351a (final Level Design)
 						"width": 16,
 						"height": 16,
 						"originX": 0.5,
@@ -1956,19 +1706,15 @@
 				},
 				{
 <<<<<<< HEAD
-<<<<<<< HEAD
 					"type": "Arrow",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Normal",
 =======
-=======
->>>>>>> parent of c33351a (final Level Design)
 					"type": "TravelWaypoints",
 					"properties": {
 						"initially-visible": false,
 						"initial-animation": "Animation 1",
-<<<<<<< HEAD
 >>>>>>> parent of c33351a (final Level Design)
 						"initial-frame": 0,
 						"enable-collisions": true,
@@ -2002,20 +1748,6 @@
 					"world": {
 						"x": 1054.891982833219,
 						"y": 358.70528872559294,
-=======
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 296,
-					"instanceVariables": {
-						"Order": 2
-					},
-					"behaviors": {},
-					"world": {
-						"x": 879.9050645165478,
-						"y": 320.32106148193606,
->>>>>>> parent of c33351a (final Level Design)
 						"width": 16,
 						"height": 16,
 						"originX": 0.5,
@@ -2039,7 +1771,6 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-<<<<<<< HEAD
 					"uid": 296,
 					"instanceVariables": {
 						"Order": 2
@@ -2048,16 +1779,6 @@
 					"world": {
 						"x": 879.9050645165478,
 						"y": 320.32106148193606,
-=======
-					"uid": 297,
-					"instanceVariables": {
-						"Order": 5
-					},
-					"behaviors": {},
-					"world": {
-						"x": 685.7260325780483,
-						"y": 358.14081479553914,
->>>>>>> parent of c33351a (final Level Design)
 						"width": 16,
 						"height": 16,
 						"originX": 0.5,
@@ -2081,7 +1802,6 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-<<<<<<< HEAD
 					"uid": 297,
 					"instanceVariables": {
 						"Order": 5
@@ -2090,16 +1810,6 @@
 					"world": {
 						"x": 685.7260325780483,
 						"y": 358.14081479553914,
-=======
-					"uid": 298,
-					"instanceVariables": {
-						"Order": 4
-					},
-					"behaviors": {},
-					"world": {
-						"x": 680.0812932775104,
-						"y": 606.5093440192012,
->>>>>>> parent of c33351a (final Level Design)
 						"width": 16,
 						"height": 16,
 						"originX": 0.5,
@@ -2118,7 +1828,6 @@
 					"type": "TravelWaypoints",
 					"properties": {
 						"initially-visible": false,
-<<<<<<< HEAD
 						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
@@ -2160,14 +1869,11 @@
 					"type": "ArrowLauncher",
 					"properties": {
 						"initially-visible": true,
-=======
->>>>>>> parent of c33351a (final Level Design)
 						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
 					},
-<<<<<<< HEAD
 					"uid": 489,
 					"instanceVariables": {
 						"FiringOrder": 0
@@ -2178,18 +1884,6 @@
 						"y": 331.8445258491531,
 						"width": 32,
 						"height": 32,
-=======
-					"uid": 299,
-					"instanceVariables": {
-						"Order": 3
-					},
-					"behaviors": {},
-					"world": {
-						"x": 885.5498038170856,
-						"y": 666.9080545349556,
-						"width": 16,
-						"height": 16,
->>>>>>> parent of c33351a (final Level Design)
 						"originX": 0.5,
 						"originY": 1,
 						"color": [
@@ -2203,7 +1897,6 @@
 					}
 				},
 				{
-<<<<<<< HEAD
 					"type": "ArrowLauncher",
 					"properties": {
 						"initially-visible": true,
@@ -2213,17 +1906,10 @@
 						"initially-visible": false,
 >>>>>>> parent of c33351a (final Level Design)
 						"initial-animation": "Animation 1",
-=======
-					"type": "AcidFlask",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "0",
->>>>>>> parent of c33351a (final Level Design)
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
 					},
-<<<<<<< HEAD
 <<<<<<< HEAD
 					"uid": 490,
 					"instanceVariables": {
@@ -2249,30 +1935,6 @@
 >>>>>>> parent of c33351a (final Level Design)
 						"originX": 0.5,
 						"originY": 1,
-=======
-					"uid": 336,
-					"instanceVariables": {},
-					"behaviors": {
-						"MoveTo": {
-							"properties": {
-								"max-speed": 100,
-								"acceleration": 600,
-								"deceleration": 600,
-								"rotate-speed": 0,
-								"set-angle": true,
-								"stop-on-solids": false,
-								"enabled": true
-							}
-						}
-					},
-					"world": {
-						"x": 1098,
-						"y": -73,
-						"width": 17,
-						"height": 18,
-						"originX": 0.47058823529411764,
-						"originY": 0.5,
->>>>>>> parent of c33351a (final Level Design)
 						"color": [
 							1,
 							1,
@@ -2285,13 +1947,9 @@
 				},
 				{
 <<<<<<< HEAD
-<<<<<<< HEAD
 					"type": "ArrowLauncher",
 =======
 					"type": "AcidFlask",
->>>>>>> parent of c33351a (final Level Design)
-=======
-					"type": "TravelWaypoints",
 >>>>>>> parent of c33351a (final Level Design)
 					"properties": {
 						"initially-visible": true,
@@ -2300,7 +1958,6 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-<<<<<<< HEAD
 <<<<<<< HEAD
 					"uid": 491,
 					"instanceVariables": {
@@ -2316,40 +1973,6 @@
 						"originY": 1,
 =======
 					"uid": 336,
-=======
-					"uid": 338,
-					"instanceVariables": {
-						"Order": 0
-					},
-					"behaviors": {},
-					"world": {
-						"x": 873,
-						"y": 483,
-						"width": 16,
-						"height": 16,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "AcidArea",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "0",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 343,
->>>>>>> parent of c33351a (final Level Design)
 					"instanceVariables": {},
 					"behaviors": {
 						"MoveTo": {
@@ -2365,19 +1988,11 @@
 						}
 					},
 					"world": {
-<<<<<<< HEAD
 						"x": 1098,
 						"y": -73,
 						"width": 17,
 						"height": 18,
 						"originX": 0.47058823529411764,
-=======
-						"x": 1331,
-						"y": -75,
-						"width": 64,
-						"height": 64,
-						"originX": 0.5,
->>>>>>> parent of c33351a (final Level Design)
 						"originY": 0.5,
 >>>>>>> parent of c33351a (final Level Design)
 						"color": [
@@ -2392,22 +2007,17 @@
 				},
 				{
 <<<<<<< HEAD
-<<<<<<< HEAD
 					"type": "ArrowLauncher",
 =======
 					"type": "TravelWaypoints",
 >>>>>>> parent of c33351a (final Level Design)
-=======
-					"type": "DoorCloser",
->>>>>>> parent of c33351a (final Level Design)
 					"properties": {
-						"initially-visible": false,
+						"initially-visible": true,
 						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
 					},
-<<<<<<< HEAD
 <<<<<<< HEAD
 					"uid": 492,
 					"instanceVariables": {
@@ -2431,16 +2041,6 @@
 						"width": 16,
 						"height": 16,
 >>>>>>> parent of c33351a (final Level Design)
-=======
-					"uid": 345,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 605,
-						"y": 478.5,
-						"width": 15,
-						"height": 355.5330619752892,
->>>>>>> parent of c33351a (final Level Design)
 						"originX": 0.5,
 						"originY": 1,
 						"color": [
@@ -2454,7 +2054,6 @@
 					}
 				},
 				{
-<<<<<<< HEAD
 <<<<<<< HEAD
 					"type": "ArrowLauncher",
 =======
@@ -2490,37 +2089,6 @@
 >>>>>>> parent of c33351a (final Level Design)
 						"originX": 0.5,
 						"originY": 1,
-=======
-					"type": "Doors",
-					"properties": {
-						"initially-visible": false,
-						"origin": "top-left",
-						"wrap-horizontal": "repeat",
-						"wrap-vertical": "repeat",
-						"image-offset-x": 0,
-						"image-offset-y": 0,
-						"image-scale-x": 1,
-						"image-scale-y": 1,
-						"image-angle": 0
-					},
-					"uid": 346,
-					"instanceVariables": {},
-					"behaviors": {
-						"Solid": {
-							"properties": {
-								"enabled": false,
-								"tags": ""
-							}
-						}
-					},
-					"world": {
-						"x": 553,
-						"y": 428,
-						"width": 13,
-						"height": 113.61511020973364,
-						"originX": 0,
-						"originY": 0,
->>>>>>> parent of c33351a (final Level Design)
 						"color": [
 							1,
 							1,
@@ -2532,7 +2100,6 @@
 					}
 				},
 				{
-<<<<<<< HEAD
 <<<<<<< HEAD
 					"type": "ArrowLauncher",
 =======
@@ -2568,37 +2135,6 @@
 >>>>>>> parent of c33351a (final Level Design)
 						"originX": 0.5,
 						"originY": 1,
-=======
-					"type": "Doors",
-					"properties": {
-						"initially-visible": false,
-						"origin": "top-left",
-						"wrap-horizontal": "repeat",
-						"wrap-vertical": "repeat",
-						"image-offset-x": 0,
-						"image-offset-y": 0,
-						"image-scale-x": 1,
-						"image-scale-y": 1,
-						"image-angle": 0
-					},
-					"uid": 502,
-					"instanceVariables": {},
-					"behaviors": {
-						"Solid": {
-							"properties": {
-								"enabled": false,
-								"tags": ""
-							}
-						}
-					},
-					"world": {
-						"x": 542,
-						"y": 428,
-						"width": 13,
-						"height": 113.61511020973364,
-						"originX": 0,
-						"originY": 0,
->>>>>>> parent of c33351a (final Level Design)
 						"color": [
 							1,
 							1,
@@ -2611,11 +2147,7 @@
 				},
 				{
 <<<<<<< HEAD
-<<<<<<< HEAD
 					"type": "ArrowLauncher",
-=======
-					"type": "Doors",
->>>>>>> parent of c33351a (final Level Design)
 =======
 					"type": "Doors",
 >>>>>>> parent of c33351a (final Level Design)
@@ -2629,7 +2161,6 @@
 						"image-scale-x": 1,
 						"image-scale-y": 1,
 						"image-angle": 0
-<<<<<<< HEAD
 					},
 <<<<<<< HEAD
 					"uid": 495,
@@ -2748,15 +2279,9 @@
 						"EnemiesItCanHit": 1,
 						"ChargedAttackPower": 0
 					},
-=======
-					},
-					"uid": 503,
-					"instanceVariables": {},
->>>>>>> parent of c33351a (final Level Design)
 					"behaviors": {
 						"Bullet": {
 							"properties": {
-<<<<<<< HEAD
 								"speed": 300,
 								"acceleration": 0,
 								"gravity": 0,
@@ -2764,29 +2289,16 @@
 								"set-angle": true,
 								"step": false,
 								"enabled": true
-=======
-								"enabled": false,
-								"tags": ""
->>>>>>> parent of c33351a (final Level Design)
 							}
 						}
 					},
 					"world": {
-<<<<<<< HEAD
 						"x": 930,
 						"y": -298,
 						"width": 32,
 						"height": 6,
 						"originX": 0,
 						"originY": 0.5,
-=======
-						"x": 531.230398485355,
-						"y": 428,
-						"width": 13,
-						"height": 113.61511020973364,
-						"originX": 0,
-						"originY": 0,
->>>>>>> parent of c33351a (final Level Design)
 						"color": [
 							1,
 							1,
@@ -2798,7 +2310,6 @@
 					}
 				},
 				{
-<<<<<<< HEAD
 					"type": "OrcBoss",
 					"properties": {
 						"initially-visible": true,
@@ -2833,27 +2344,11 @@
 						"image-angle": 0
 					},
 					"uid": 503,
-=======
-					"type": "Doors",
-					"properties": {
-						"initially-visible": false,
-						"origin": "top-left",
-						"wrap-horizontal": "repeat",
-						"wrap-vertical": "repeat",
-						"image-offset-x": 0,
-						"image-offset-y": 0,
-						"image-scale-x": 1,
-						"image-scale-y": 1,
-						"image-angle": 0
-					},
-					"uid": 504,
->>>>>>> parent of c33351a (final Level Design)
 					"instanceVariables": {},
 >>>>>>> parent of c33351a (final Level Design)
 					"behaviors": {
 						"MoveTo": {
 							"properties": {
-<<<<<<< HEAD
 <<<<<<< HEAD
 								"max-speed": 100,
 								"acceleration": 600,
@@ -2871,8 +2366,6 @@
 								"cone-of-view": 360,
 								"use-collision-cells": true
 =======
-=======
->>>>>>> parent of c33351a (final Level Design)
 								"enabled": false,
 								"tags": ""
 >>>>>>> parent of c33351a (final Level Design)
@@ -2880,7 +2373,6 @@
 						}
 					},
 					"world": {
-<<<<<<< HEAD
 <<<<<<< HEAD
 						"x": 812.4500779304302,
 						"y": 411.6272559523453,
@@ -2890,17 +2382,11 @@
 						"originY": 0.5,
 =======
 						"x": 531.230398485355,
-=======
-						"x": 520.230398485355,
->>>>>>> parent of c33351a (final Level Design)
 						"y": 428,
 						"width": 13,
 						"height": 113.61511020973364,
 						"originX": 0,
 						"originY": 0,
-<<<<<<< HEAD
->>>>>>> parent of c33351a (final Level Design)
-=======
 >>>>>>> parent of c33351a (final Level Design)
 						"color": [
 							1,
@@ -2913,7 +2399,6 @@
 					}
 				},
 				{
-<<<<<<< HEAD
 <<<<<<< HEAD
 					"type": "TravelWaypoints",
 					"properties": {
@@ -2940,21 +2425,6 @@
 						"image-angle": 0
 					},
 					"uid": 504,
-=======
-					"type": "Doors",
-					"properties": {
-						"initially-visible": false,
-						"origin": "top-left",
-						"wrap-horizontal": "repeat",
-						"wrap-vertical": "repeat",
-						"image-offset-x": 0,
-						"image-offset-y": 0,
-						"image-scale-x": 1,
-						"image-scale-y": 1,
-						"image-angle": 0
-					},
-					"uid": 505,
->>>>>>> parent of c33351a (final Level Design)
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
@@ -2968,7 +2438,6 @@
 					"behaviors": {},
 					"world": {
 <<<<<<< HEAD
-<<<<<<< HEAD
 						"x": 1052.6340871130037,
 						"y": 603.1225004388787,
 						"width": 16,
@@ -2977,17 +2446,11 @@
 						"originY": 0.5,
 =======
 						"x": 520.230398485355,
-=======
-						"x": 509.44074548025316,
->>>>>>> parent of c33351a (final Level Design)
 						"y": 428,
 						"width": 13,
 						"height": 113.61511020973364,
 						"originX": 0,
 						"originY": 0,
-<<<<<<< HEAD
->>>>>>> parent of c33351a (final Level Design)
-=======
 >>>>>>> parent of c33351a (final Level Design)
 						"color": [
 							1,
@@ -3000,7 +2463,6 @@
 					}
 				},
 				{
-<<<<<<< HEAD
 <<<<<<< HEAD
 					"type": "TravelWaypoints",
 					"properties": {
@@ -3027,21 +2489,6 @@
 						"image-angle": 0
 					},
 					"uid": 505,
-=======
-					"type": "Doors",
-					"properties": {
-						"initially-visible": false,
-						"origin": "top-left",
-						"wrap-horizontal": "repeat",
-						"wrap-vertical": "repeat",
-						"image-offset-x": 0,
-						"image-offset-y": 0,
-						"image-scale-x": 1,
-						"image-scale-y": 1,
-						"image-angle": 0
-					},
-					"uid": 506,
->>>>>>> parent of c33351a (final Level Design)
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
@@ -3055,7 +2502,6 @@
 					"behaviors": {},
 					"world": {
 <<<<<<< HEAD
-<<<<<<< HEAD
 						"x": 1054.891982833219,
 						"y": 358.70528872559294,
 						"width": 16,
@@ -3064,17 +2510,11 @@
 						"originY": 0.5,
 =======
 						"x": 509.44074548025316,
-=======
-						"x": 498.44074548025316,
->>>>>>> parent of c33351a (final Level Design)
 						"y": 428,
 						"width": 13,
 						"height": 113.61511020973364,
 						"originX": 0,
 						"originY": 0,
-<<<<<<< HEAD
->>>>>>> parent of c33351a (final Level Design)
-=======
 >>>>>>> parent of c33351a (final Level Design)
 						"color": [
 							1,
@@ -3087,7 +2527,6 @@
 					}
 				},
 				{
-<<<<<<< HEAD
 <<<<<<< HEAD
 					"type": "TravelWaypoints",
 					"properties": {
@@ -3114,21 +2553,6 @@
 						"image-angle": 0
 					},
 					"uid": 506,
-=======
-					"type": "Doors",
-					"properties": {
-						"initially-visible": false,
-						"origin": "top-left",
-						"wrap-horizontal": "repeat",
-						"wrap-vertical": "repeat",
-						"image-offset-x": 0,
-						"image-offset-y": 0,
-						"image-scale-x": 1,
-						"image-scale-y": 1,
-						"image-angle": 0
-					},
-					"uid": 507,
->>>>>>> parent of c33351a (final Level Design)
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
@@ -3137,7 +2561,6 @@
 								"tags": ""
 							}
 						}
-<<<<<<< HEAD
 >>>>>>> parent of c33351a (final Level Design)
 					},
 					"behaviors": {},
@@ -3189,16 +2612,6 @@
 						"height": 16,
 						"originX": 0.5,
 						"originY": 0.5,
-=======
-					},
-					"world": {
-						"x": 487.49723599752167,
-						"y": 428,
-						"width": 13,
-						"height": 113.61511020973364,
-						"originX": 0,
-						"originY": 0,
->>>>>>> parent of c33351a (final Level Design)
 						"color": [
 							1,
 							1,
@@ -3210,7 +2623,6 @@
 					}
 				},
 				{
-<<<<<<< HEAD
 					"type": "TravelWaypoints",
 					"properties": {
 						"initially-visible": false,
@@ -3245,21 +2657,6 @@
 						"image-angle": 0
 					},
 					"uid": 507,
-=======
-					"type": "Doors",
-					"properties": {
-						"initially-visible": false,
-						"origin": "top-left",
-						"wrap-horizontal": "repeat",
-						"wrap-vertical": "repeat",
-						"image-offset-x": 0,
-						"image-offset-y": 0,
-						"image-scale-x": 1,
-						"image-scale-y": 1,
-						"image-angle": 0
-					},
-					"uid": 514,
->>>>>>> parent of c33351a (final Level Design)
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
@@ -3268,7 +2665,6 @@
 								"tags": ""
 							}
 						}
-<<<<<<< HEAD
 					},
 					"world": {
 						"x": 487.49723599752167,
@@ -3779,17 +3175,12 @@
 					},
 					"world": {
 >>>>>>> parent of c33351a (final Level Design)
-=======
-					},
-					"world": {
->>>>>>> parent of c33351a (final Level Design)
 						"x": 476.49723599752167,
 						"y": 428,
 						"width": 13,
 						"height": 113.61511020973364,
 						"originX": 0,
 						"originY": 0,
-<<<<<<< HEAD
 <<<<<<< HEAD
 						"color": [
 							1,
@@ -4351,8 +3742,6 @@
 						"height": 236.80931220199145,
 						"originX": 0,
 						"originY": 0,
-=======
->>>>>>> parent of c33351a (final Level Design)
 =======
 >>>>>>> parent of c33351a (final Level Design)
 						"color": [
