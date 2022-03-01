@@ -37,16 +37,6 @@
 		},
 		{
 			"eventType": "variable",
-			"name": "FacingUp",
-			"type": "boolean",
-			"initialValue": "false",
-			"comment": "",
-			"isStatic": false,
-			"isConstant": false,
-			"sid": 633421516207236
-		},
-		{
-			"eventType": "variable",
 			"name": "Ice",
 			"type": "boolean",
 			"initialValue": "false",
@@ -54,26 +44,6 @@
 			"isStatic": false,
 			"isConstant": false,
 			"sid": 781948531481146
-		},
-		{
-			"eventType": "variable",
-			"name": "FacingDown",
-			"type": "boolean",
-			"initialValue": "false",
-			"comment": "",
-			"isStatic": false,
-			"isConstant": false,
-			"sid": 126961892017800
-		},
-		{
-			"eventType": "variable",
-			"name": "facingLeft",
-			"type": "boolean",
-			"initialValue": "false",
-			"comment": "",
-			"isStatic": false,
-			"isConstant": false,
-			"sid": 979010972306769
 		},
 		{
 			"eventType": "variable",
@@ -167,6 +137,16 @@
 		},
 		{
 			"eventType": "variable",
+			"name": "isDashing",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 518174539269871
+		},
+		{
+			"eventType": "variable",
 			"name": "PlayerHealth",
 			"type": "number",
 			"initialValue": "30",
@@ -225,126 +205,6 @@
 									"id": "destroy",
 									"objectClass": "HealthPickups",
 									"sid": 295844449009507
-								},
-								{
-									"id": "set-animation-frame",
-									"objectClass": "Player",
-									"sid": 825175515830451,
-									"parameters": {
-										"frame-number": "1"
-									}
-								},
-								{
-									"id": "wait",
-									"objectClass": "System",
-									"sid": 385092671525949,
-									"parameters": {
-										"seconds": "0.1"
-									}
-								},
-								{
-									"id": "set-animation-frame",
-									"objectClass": "Player",
-									"sid": 113904243400068,
-									"parameters": {
-										"frame-number": "0"
-									}
-								},
-								{
-									"id": "wait",
-									"objectClass": "System",
-									"sid": 395532867647623,
-									"parameters": {
-										"seconds": "0.1"
-									}
-								},
-								{
-									"id": "set-animation-frame",
-									"objectClass": "Player",
-									"sid": 671750861871103,
-									"parameters": {
-										"frame-number": "1"
-									}
-								},
-								{
-									"id": "wait",
-									"objectClass": "System",
-									"sid": 877985816721543,
-									"parameters": {
-										"seconds": "0.1"
-									}
-								},
-								{
-									"id": "set-animation-frame",
-									"objectClass": "Player",
-									"sid": 769850360768089,
-									"parameters": {
-										"frame-number": "0"
-									}
-								},
-								{
-									"id": "wait",
-									"objectClass": "System",
-									"sid": 884837532116906,
-									"parameters": {
-										"seconds": "0.1"
-									}
-								},
-								{
-									"id": "set-animation-frame",
-									"objectClass": "Player",
-									"sid": 591532830969011,
-									"parameters": {
-										"frame-number": "1"
-									}
-								},
-								{
-									"id": "wait",
-									"objectClass": "System",
-									"sid": 425646904629616,
-									"parameters": {
-										"seconds": "0.1"
-									}
-								},
-								{
-									"id": "set-animation-frame",
-									"objectClass": "Player",
-									"sid": 590451209585447,
-									"parameters": {
-										"frame-number": "0"
-									}
-								},
-								{
-									"id": "wait",
-									"objectClass": "System",
-									"sid": 186332517955443,
-									"parameters": {
-										"seconds": "0.1"
-									}
-								},
-								{
-									"id": "set-animation-frame",
-									"objectClass": "Player",
-									"sid": 915177539406313,
-									"parameters": {
-										"frame-number": "1"
-									}
-								},
-								{
-									"id": "wait",
-									"objectClass": "System",
-									"sid": 820162207985713,
-									"parameters": {
-										"seconds": "0.1"
-									}
-								},
-								{
-									"id": "set-animation-frame",
-									"objectClass": "Player",
-									"sid": 118800459519662,
-									"parameters": {
-										"frame-number": "0"
-									}
 								}
 							],
 							"sid": 530465646510311
@@ -420,126 +280,6 @@
 										"instance-variable": "Health",
 										"value": "Arrow.AttackPower"
 									}
-								},
-								{
-									"id": "set-animation-frame",
-									"objectClass": "Enemies",
-									"sid": 628856236464444,
-									"parameters": {
-										"frame-number": "1"
-									}
-								},
-								{
-									"id": "wait",
-									"objectClass": "System",
-									"sid": 632589336037744,
-									"parameters": {
-										"seconds": "0.1"
-									}
-								},
-								{
-									"id": "set-animation-frame",
-									"objectClass": "Enemies",
-									"sid": 288923679501899,
-									"parameters": {
-										"frame-number": "0"
-									}
-								},
-								{
-									"id": "wait",
-									"objectClass": "System",
-									"sid": 623716782208239,
-									"parameters": {
-										"seconds": "0.1"
-									}
-								},
-								{
-									"id": "set-animation-frame",
-									"objectClass": "Enemies",
-									"sid": 259140526521807,
-									"parameters": {
-										"frame-number": "1"
-									}
-								},
-								{
-									"id": "wait",
-									"objectClass": "System",
-									"sid": 173117874288238,
-									"parameters": {
-										"seconds": "0.1"
-									}
-								},
-								{
-									"id": "set-animation-frame",
-									"objectClass": "Enemies",
-									"sid": 284526833648494,
-									"parameters": {
-										"frame-number": "0"
-									}
-								},
-								{
-									"id": "wait",
-									"objectClass": "System",
-									"sid": 660326472649011,
-									"parameters": {
-										"seconds": "0.1"
-									}
-								},
-								{
-									"id": "set-animation-frame",
-									"objectClass": "Enemies",
-									"sid": 362570292306597,
-									"parameters": {
-										"frame-number": "1"
-									}
-								},
-								{
-									"id": "wait",
-									"objectClass": "System",
-									"sid": 727903434902304,
-									"parameters": {
-										"seconds": "0.1"
-									}
-								},
-								{
-									"id": "set-animation-frame",
-									"objectClass": "Enemies",
-									"sid": 844836909854376,
-									"parameters": {
-										"frame-number": "0"
-									}
-								},
-								{
-									"id": "wait",
-									"objectClass": "System",
-									"sid": 612020242701239,
-									"parameters": {
-										"seconds": "0.1"
-									}
-								},
-								{
-									"id": "set-animation-frame",
-									"objectClass": "Enemies",
-									"sid": 975532153113244,
-									"parameters": {
-										"frame-number": "1"
-									}
-								},
-								{
-									"id": "wait",
-									"objectClass": "System",
-									"sid": 510071017519488,
-									"parameters": {
-										"seconds": "0.1"
-									}
-								},
-								{
-									"id": "set-animation-frame",
-									"objectClass": "Enemies",
-									"sid": 369147222425622,
-									"parameters": {
-										"frame-number": "0"
-									}
 								}
 							],
 							"sid": 793411940882274,
@@ -574,6 +314,23 @@
 												"instance-variable": "Paralyzed",
 												"value": "true"
 											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 601563190880486,
+											"parameters": {
+												"seconds": "5"
+											}
+										},
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "Enemies",
+											"sid": 660591274993404,
+											"parameters": {
+												"instance-variable": "Paralyzed",
+												"value": "false"
+											}
 										}
 									],
 									"sid": 819983089720972
@@ -588,15 +345,6 @@
 											"parameters": {
 												"variable": "Fire"
 											}
-										},
-										{
-											"id": "is-boolean-instance-variable-set",
-											"objectClass": "Enemies",
-											"sid": 267172534862888,
-											"parameters": {
-												"instance-variable": "Burning"
-											},
-											"isInverted": true
 										}
 									],
 									"actions": [
@@ -607,6 +355,23 @@
 											"parameters": {
 												"instance-variable": "Burning",
 												"value": "true"
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 489239339124038,
+											"parameters": {
+												"seconds": "4.5"
+											}
+										},
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "Enemies",
+											"sid": 201789943471541,
+											"parameters": {
+												"instance-variable": "Burning",
+												"value": "false"
 											}
 										}
 									],
@@ -641,6 +406,23 @@
 											"parameters": {
 												"instance-variable": "Frozen",
 												"value": "true"
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 959000987902469,
+											"parameters": {
+												"seconds": "5"
+											}
+										},
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "Enemies",
+											"sid": 199577482064308,
+											"parameters": {
+												"instance-variable": "Frozen",
+												"value": "false"
 											}
 										}
 									],
@@ -802,126 +584,6 @@
 							"id": "destroy",
 							"objectClass": "EnemyArrows",
 							"sid": 480263598012900
-						},
-						{
-							"id": "set-animation-frame",
-							"objectClass": "Player",
-							"sid": 286164034537281,
-							"parameters": {
-								"frame-number": "1"
-							}
-						},
-						{
-							"id": "wait",
-							"objectClass": "System",
-							"sid": 914690086143486,
-							"parameters": {
-								"seconds": "0.1"
-							}
-						},
-						{
-							"id": "set-animation-frame",
-							"objectClass": "Player",
-							"sid": 830944332909814,
-							"parameters": {
-								"frame-number": "0"
-							}
-						},
-						{
-							"id": "wait",
-							"objectClass": "System",
-							"sid": 230690276746343,
-							"parameters": {
-								"seconds": "0.1"
-							}
-						},
-						{
-							"id": "set-animation-frame",
-							"objectClass": "Player",
-							"sid": 892194602015170,
-							"parameters": {
-								"frame-number": "1"
-							}
-						},
-						{
-							"id": "wait",
-							"objectClass": "System",
-							"sid": 216856552762022,
-							"parameters": {
-								"seconds": "0.1"
-							}
-						},
-						{
-							"id": "set-animation-frame",
-							"objectClass": "Player",
-							"sid": 336315521239456,
-							"parameters": {
-								"frame-number": "0"
-							}
-						},
-						{
-							"id": "wait",
-							"objectClass": "System",
-							"sid": 681452529170397,
-							"parameters": {
-								"seconds": "0.1"
-							}
-						},
-						{
-							"id": "set-animation-frame",
-							"objectClass": "Player",
-							"sid": 986211417060725,
-							"parameters": {
-								"frame-number": "1"
-							}
-						},
-						{
-							"id": "wait",
-							"objectClass": "System",
-							"sid": 273158933254732,
-							"parameters": {
-								"seconds": "0.1"
-							}
-						},
-						{
-							"id": "set-animation-frame",
-							"objectClass": "Player",
-							"sid": 685073392887992,
-							"parameters": {
-								"frame-number": "0"
-							}
-						},
-						{
-							"id": "wait",
-							"objectClass": "System",
-							"sid": 412751983762803,
-							"parameters": {
-								"seconds": "0.1"
-							}
-						},
-						{
-							"id": "set-animation-frame",
-							"objectClass": "Player",
-							"sid": 105139740457958,
-							"parameters": {
-								"frame-number": "1"
-							}
-						},
-						{
-							"id": "wait",
-							"objectClass": "System",
-							"sid": 720599132798308,
-							"parameters": {
-								"seconds": "0.1"
-							}
-						},
-						{
-							"id": "set-animation-frame",
-							"objectClass": "Player",
-							"sid": 699592121495895,
-							"parameters": {
-								"frame-number": "0"
-							}
 						}
 					],
 					"sid": 807235261596449
@@ -1009,6 +671,15 @@
 									"parameters": {
 										"variable": "ChargedShot"
 									}
+								},
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 827185353904514,
+									"parameters": {
+										"variable": "isPaused"
+									},
+									"isInverted": true
 								}
 							],
 							"actions": [],
@@ -1026,7 +697,17 @@
 											}
 										}
 									],
-									"actions": [],
+									"actions": [
+										{
+											"id": "set-size",
+											"objectClass": "Sprite2",
+											"sid": 750051008892028,
+											"parameters": {
+												"width": "17",
+												"height": "17"
+											}
+										}
+									],
 									"sid": 993933492729893,
 									"children": [
 										{
@@ -1208,7 +889,36 @@
 													}
 												}
 											],
-											"sid": 468861837525975
+											"sid": 468861837525975,
+											"children": [
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "compare-eventvar",
+															"objectClass": "System",
+															"sid": 724873769898959,
+															"parameters": {
+																"variable": "CS_Power",
+																"comparison": 3,
+																"value": "3"
+															}
+														}
+													],
+													"actions": [
+														{
+															"id": "set-size",
+															"objectClass": "Sprite2",
+															"sid": 392638058725262,
+															"parameters": {
+																"width": "Sprite2.Width-3.3",
+																"height": "Sprite2.Height-3.3"
+															}
+														}
+													],
+													"sid": 325786496487432
+												}
+											]
 										}
 									]
 								}
@@ -1388,113 +1098,22 @@
 												{
 													"id": "set-instvar-value",
 													"objectClass": "Arrow",
-													"sid": 832978874378009,
+													"sid": 339777662526968,
 													"parameters": {
 														"instance-variable": "AttackPower",
-														"value": "1"
+														"value": "0.5"
+													}
+												},
+												{
+													"id": "set-angle",
+													"objectClass": "Arrow",
+													"sid": 161328930669897,
+													"parameters": {
+														"angle": "Player.Angle+10"
 													}
 												}
 											],
-											"sid": 856275784008356,
-											"children": [
-												{
-													"eventType": "block",
-													"conditions": [
-														{
-															"id": "compare-boolean-eventvar",
-															"objectClass": "System",
-															"sid": 379834614293039,
-															"parameters": {
-																"variable": "facingLeft"
-															},
-															"isInverted": true
-														}
-													],
-													"actions": [
-														{
-															"id": "set-angle",
-															"objectClass": "Arrow",
-															"sid": 786301620496907,
-															"parameters": {
-																"angle": "330"
-															}
-														}
-													],
-													"sid": 964737081022735
-												},
-												{
-													"eventType": "block",
-													"conditions": [
-														{
-															"id": "compare-boolean-eventvar",
-															"objectClass": "System",
-															"sid": 982869568612887,
-															"parameters": {
-																"variable": "facingLeft"
-															}
-														}
-													],
-													"actions": [
-														{
-															"id": "set-angle",
-															"objectClass": "Arrow",
-															"sid": 843208118076247,
-															"parameters": {
-																"angle": "210"
-															}
-														}
-													],
-													"sid": 137809366029053
-												},
-												{
-													"eventType": "block",
-													"conditions": [
-														{
-															"id": "compare-boolean-eventvar",
-															"objectClass": "System",
-															"sid": 324882805190334,
-															"parameters": {
-																"variable": "FacingUp"
-															}
-														}
-													],
-													"actions": [
-														{
-															"id": "set-angle",
-															"objectClass": "Arrow",
-															"sid": 164899708761892,
-															"parameters": {
-																"angle": "300"
-															}
-														}
-													],
-													"sid": 287149371595100
-												},
-												{
-													"eventType": "block",
-													"conditions": [
-														{
-															"id": "compare-boolean-eventvar",
-															"objectClass": "System",
-															"sid": 983822412484744,
-															"parameters": {
-																"variable": "FacingDown"
-															}
-														}
-													],
-													"actions": [
-														{
-															"id": "set-angle",
-															"objectClass": "Arrow",
-															"sid": 654060847475710,
-															"parameters": {
-																"angle": "60"
-															}
-														}
-													],
-													"sid": 391431134943449
-												}
-											]
+											"sid": 856275784008356
 										},
 										{
 											"eventType": "block",
@@ -1532,10 +1151,10 @@
 												{
 													"id": "set-instvar-value",
 													"objectClass": "Arrow",
-													"sid": 159240571962790,
+													"sid": 495290251020392,
 													"parameters": {
 														"instance-variable": "AttackPower",
-														"value": "1"
+														"value": "0.5"
 													}
 												}
 											],
@@ -1577,113 +1196,22 @@
 												{
 													"id": "set-instvar-value",
 													"objectClass": "Arrow",
-													"sid": 204051369635335,
+													"sid": 336273454312852,
 													"parameters": {
 														"instance-variable": "AttackPower",
-														"value": "1"
+														"value": "0.5"
+													}
+												},
+												{
+													"id": "set-angle",
+													"objectClass": "Arrow",
+													"sid": 639768855311518,
+													"parameters": {
+														"angle": "Player.Angle-10"
 													}
 												}
 											],
-											"sid": 571983501175112,
-											"children": [
-												{
-													"eventType": "block",
-													"conditions": [
-														{
-															"id": "compare-boolean-eventvar",
-															"objectClass": "System",
-															"sid": 542826532774012,
-															"parameters": {
-																"variable": "facingLeft"
-															},
-															"isInverted": true
-														}
-													],
-													"actions": [
-														{
-															"id": "set-angle",
-															"objectClass": "Arrow",
-															"sid": 105440739963293,
-															"parameters": {
-																"angle": "30"
-															}
-														}
-													],
-													"sid": 587862838776685
-												},
-												{
-													"eventType": "block",
-													"conditions": [
-														{
-															"id": "compare-boolean-eventvar",
-															"objectClass": "System",
-															"sid": 809634804428996,
-															"parameters": {
-																"variable": "facingLeft"
-															}
-														}
-													],
-													"actions": [
-														{
-															"id": "set-angle",
-															"objectClass": "Arrow",
-															"sid": 455459641773927,
-															"parameters": {
-																"angle": "150"
-															}
-														}
-													],
-													"sid": 845605458776386
-												},
-												{
-													"eventType": "block",
-													"conditions": [
-														{
-															"id": "compare-boolean-eventvar",
-															"objectClass": "System",
-															"sid": 871719056202219,
-															"parameters": {
-																"variable": "FacingUp"
-															}
-														}
-													],
-													"actions": [
-														{
-															"id": "set-angle",
-															"objectClass": "Arrow",
-															"sid": 127101069258890,
-															"parameters": {
-																"angle": "240"
-															}
-														}
-													],
-													"sid": 384801682186908
-												},
-												{
-													"eventType": "block",
-													"conditions": [
-														{
-															"id": "compare-boolean-eventvar",
-															"objectClass": "System",
-															"sid": 354593569468181,
-															"parameters": {
-																"variable": "FacingDown"
-															}
-														}
-													],
-													"actions": [
-														{
-															"id": "set-angle",
-															"objectClass": "Arrow",
-															"sid": 688665531316430,
-															"parameters": {
-																"angle": "120"
-															}
-														}
-													],
-													"sid": 431337541914625
-												}
-											]
+											"sid": 571983501175112
 										}
 									]
 								}
@@ -1736,6 +1264,15 @@
 										"variable": "MultiShot"
 									},
 									"isInverted": true
+								},
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 521329392747756,
+									"parameters": {
+										"variable": "isPaused"
+									},
+									"isInverted": true
 								}
 							],
 							"actions": [],
@@ -1779,7 +1316,36 @@
 													}
 												}
 											],
-											"sid": 244975736790426
+											"sid": 244975736790426,
+											"children": [
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "compare-eventvar",
+															"objectClass": "System",
+															"sid": 226318513154447,
+															"parameters": {
+																"variable": "CS_Power",
+																"comparison": 3,
+																"value": "3"
+															}
+														}
+													],
+													"actions": [
+														{
+															"id": "set-size",
+															"objectClass": "Sprite2",
+															"sid": 553775096552229,
+															"parameters": {
+																"width": "Sprite2.Width-3.3",
+																"height": "Sprite2.Height-3.3"
+															}
+														}
+													],
+													"sid": 215084081885161
+												}
+											]
 										}
 									]
 								},
@@ -1795,7 +1361,17 @@
 											}
 										}
 									],
-									"actions": [],
+									"actions": [
+										{
+											"id": "set-size",
+											"objectClass": "Sprite2",
+											"sid": 194215376320990,
+											"parameters": {
+												"width": "17",
+												"height": "17"
+											}
+										}
+									],
 									"sid": 445919929229937,
 									"children": [
 										{
@@ -1959,6 +1535,15 @@
 									"parameters": {
 										"variable": "MultiShot"
 									}
+								},
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 998027192058467,
+									"parameters": {
+										"variable": "isPaused"
+									},
+									"isInverted": true
 								}
 							],
 							"actions": [],
@@ -2002,7 +1587,36 @@
 													}
 												}
 											],
-											"sid": 103009824954063
+											"sid": 103009824954063,
+											"children": [
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "compare-eventvar",
+															"objectClass": "System",
+															"sid": 983323526298144,
+															"parameters": {
+																"variable": "CS_Power",
+																"comparison": 3,
+																"value": "3"
+															}
+														}
+													],
+													"actions": [
+														{
+															"id": "set-size",
+															"objectClass": "Sprite2",
+															"sid": 862487098271576,
+															"parameters": {
+																"width": "Sprite2.Width-3.3",
+																"height": "Sprite2.Height-3.3"
+															}
+														}
+													],
+													"sid": 754298332951487
+												}
+											]
 										}
 									]
 								},
@@ -2018,7 +1632,17 @@
 											}
 										}
 									],
-									"actions": [],
+									"actions": [
+										{
+											"id": "set-size",
+											"objectClass": "Sprite2",
+											"sid": 963716159216182,
+											"parameters": {
+												"width": "17",
+												"height": "17"
+											}
+										}
+									],
 									"sid": 618277401026840,
 									"children": [
 										{
@@ -2050,10 +1674,10 @@
 												{
 													"id": "set-instvar-value",
 													"objectClass": "Arrow",
-													"sid": 329631108392565,
+													"sid": 686445675648147,
 													"parameters": {
 														"instance-variable": "AttackPower",
-														"value": "1"
+														"value": "0.5"
 													}
 												},
 												{
@@ -2086,10 +1710,10 @@
 														{
 															"id": "set-instvar-value",
 															"objectClass": "Arrow",
-															"sid": 521546394605404,
+															"sid": 226497949759813,
 															"parameters": {
 																"instance-variable": "AttackPower",
-																"value": "1"
+																"value": "0.5"
 															}
 														},
 														{
@@ -2100,108 +1724,17 @@
 																"width": "32",
 																"height": "6"
 															}
+														},
+														{
+															"id": "set-angle",
+															"objectClass": "Arrow",
+															"sid": 686657569176400,
+															"parameters": {
+																"angle": "Player.Angle+10"
+															}
 														}
 													],
-													"sid": 864432855241807,
-													"children": [
-														{
-															"eventType": "block",
-															"conditions": [
-																{
-																	"id": "compare-boolean-eventvar",
-																	"objectClass": "System",
-																	"sid": 934279700037523,
-																	"parameters": {
-																		"variable": "facingLeft"
-																	},
-																	"isInverted": true
-																}
-															],
-															"actions": [
-																{
-																	"id": "set-angle",
-																	"objectClass": "Arrow",
-																	"sid": 922521109329307,
-																	"parameters": {
-																		"angle": "330"
-																	}
-																}
-															],
-															"sid": 581561658697600
-														},
-														{
-															"eventType": "block",
-															"conditions": [
-																{
-																	"id": "compare-boolean-eventvar",
-																	"objectClass": "System",
-																	"sid": 582566850697527,
-																	"parameters": {
-																		"variable": "facingLeft"
-																	}
-																}
-															],
-															"actions": [
-																{
-																	"id": "set-angle",
-																	"objectClass": "Arrow",
-																	"sid": 538665379442596,
-																	"parameters": {
-																		"angle": "210"
-																	}
-																}
-															],
-															"sid": 752951859906361
-														},
-														{
-															"eventType": "block",
-															"conditions": [
-																{
-																	"id": "compare-boolean-eventvar",
-																	"objectClass": "System",
-																	"sid": 829858525983696,
-																	"parameters": {
-																		"variable": "FacingUp"
-																	}
-																}
-															],
-															"actions": [
-																{
-																	"id": "set-angle",
-																	"objectClass": "Arrow",
-																	"sid": 882561156940279,
-																	"parameters": {
-																		"angle": "300"
-																	}
-																}
-															],
-															"sid": 918680862500110
-														},
-														{
-															"eventType": "block",
-															"conditions": [
-																{
-																	"id": "compare-boolean-eventvar",
-																	"objectClass": "System",
-																	"sid": 850028916140506,
-																	"parameters": {
-																		"variable": "FacingDown"
-																	}
-																}
-															],
-															"actions": [
-																{
-																	"id": "set-angle",
-																	"objectClass": "Arrow",
-																	"sid": 901635727522166,
-																	"parameters": {
-																		"angle": "60"
-																	}
-																}
-															],
-															"sid": 450526653109097
-														}
-													]
+													"sid": 864432855241807
 												},
 												{
 													"eventType": "block",
@@ -2221,10 +1754,10 @@
 														{
 															"id": "set-instvar-value",
 															"objectClass": "Arrow",
-															"sid": 207870235328725,
+															"sid": 894116813579958,
 															"parameters": {
 																"instance-variable": "AttackPower",
-																"value": "1"
+																"value": "0.5"
 															}
 														},
 														{
@@ -2235,108 +1768,17 @@
 																"width": "32",
 																"height": "6"
 															}
+														},
+														{
+															"id": "set-angle",
+															"objectClass": "Arrow",
+															"sid": 370490992351411,
+															"parameters": {
+																"angle": "Player.Angle-10"
+															}
 														}
 													],
-													"sid": 633546180232125,
-													"children": [
-														{
-															"eventType": "block",
-															"conditions": [
-																{
-																	"id": "compare-boolean-eventvar",
-																	"objectClass": "System",
-																	"sid": 680878870548411,
-																	"parameters": {
-																		"variable": "facingLeft"
-																	},
-																	"isInverted": true
-																}
-															],
-															"actions": [
-																{
-																	"id": "set-angle",
-																	"objectClass": "Arrow",
-																	"sid": 117565580514328,
-																	"parameters": {
-																		"angle": "30"
-																	}
-																}
-															],
-															"sid": 796515213902506
-														},
-														{
-															"eventType": "block",
-															"conditions": [
-																{
-																	"id": "compare-boolean-eventvar",
-																	"objectClass": "System",
-																	"sid": 681925342152024,
-																	"parameters": {
-																		"variable": "facingLeft"
-																	}
-																}
-															],
-															"actions": [
-																{
-																	"id": "set-angle",
-																	"objectClass": "Arrow",
-																	"sid": 476512280724672,
-																	"parameters": {
-																		"angle": "150"
-																	}
-																}
-															],
-															"sid": 302409845296882
-														},
-														{
-															"eventType": "block",
-															"conditions": [
-																{
-																	"id": "compare-boolean-eventvar",
-																	"objectClass": "System",
-																	"sid": 644805970951655,
-																	"parameters": {
-																		"variable": "FacingUp"
-																	}
-																}
-															],
-															"actions": [
-																{
-																	"id": "set-angle",
-																	"objectClass": "Arrow",
-																	"sid": 408049732924117,
-																	"parameters": {
-																		"angle": "240"
-																	}
-																}
-															],
-															"sid": 992689301504573
-														},
-														{
-															"eventType": "block",
-															"conditions": [
-																{
-																	"id": "compare-boolean-eventvar",
-																	"objectClass": "System",
-																	"sid": 210814237607123,
-																	"parameters": {
-																		"variable": "FacingDown"
-																	}
-																}
-															],
-															"actions": [
-																{
-																	"id": "set-angle",
-																	"objectClass": "Arrow",
-																	"sid": 181269887603243,
-																	"parameters": {
-																		"angle": "120"
-																	}
-																}
-															],
-															"sid": 546104107774723
-														}
-													]
+													"sid": 633546180232125
 												},
 												{
 													"eventType": "block",
@@ -2394,10 +1836,10 @@
 												{
 													"id": "set-instvar-value",
 													"objectClass": "Arrow",
-													"sid": 504970894909357,
+													"sid": 137311008177215,
 													"parameters": {
 														"instance-variable": "AttackPower",
-														"value": "2"
+														"value": "1.5"
 													}
 												}
 											],
@@ -2430,113 +1872,22 @@
 														{
 															"id": "set-instvar-value",
 															"objectClass": "Arrow",
-															"sid": 664378637841573,
+															"sid": 688922296087752,
 															"parameters": {
 																"instance-variable": "AttackPower",
-																"value": "2"
+																"value": "1.5"
+															}
+														},
+														{
+															"id": "set-angle",
+															"objectClass": "Arrow",
+															"sid": 989445435134192,
+															"parameters": {
+																"angle": "Player.Angle+10"
 															}
 														}
 													],
-													"sid": 624045815312333,
-													"children": [
-														{
-															"eventType": "block",
-															"conditions": [
-																{
-																	"id": "compare-boolean-eventvar",
-																	"objectClass": "System",
-																	"sid": 902088978842764,
-																	"parameters": {
-																		"variable": "facingLeft"
-																	},
-																	"isInverted": true
-																}
-															],
-															"actions": [
-																{
-																	"id": "set-angle",
-																	"objectClass": "Arrow",
-																	"sid": 361785357610694,
-																	"parameters": {
-																		"angle": "30"
-																	}
-																}
-															],
-															"sid": 680076483902431
-														},
-														{
-															"eventType": "block",
-															"conditions": [
-																{
-																	"id": "compare-boolean-eventvar",
-																	"objectClass": "System",
-																	"sid": 351843269422422,
-																	"parameters": {
-																		"variable": "facingLeft"
-																	}
-																}
-															],
-															"actions": [
-																{
-																	"id": "set-angle",
-																	"objectClass": "Arrow",
-																	"sid": 336873363177154,
-																	"parameters": {
-																		"angle": "150"
-																	}
-																}
-															],
-															"sid": 827185407953489
-														},
-														{
-															"eventType": "block",
-															"conditions": [
-																{
-																	"id": "compare-boolean-eventvar",
-																	"objectClass": "System",
-																	"sid": 192726037599281,
-																	"parameters": {
-																		"variable": "FacingUp"
-																	}
-																}
-															],
-															"actions": [
-																{
-																	"id": "set-angle",
-																	"objectClass": "Arrow",
-																	"sid": 939504062614358,
-																	"parameters": {
-																		"angle": "240"
-																	}
-																}
-															],
-															"sid": 584285811000347
-														},
-														{
-															"eventType": "block",
-															"conditions": [
-																{
-																	"id": "compare-boolean-eventvar",
-																	"objectClass": "System",
-																	"sid": 121497856855361,
-																	"parameters": {
-																		"variable": "FacingDown"
-																	}
-																}
-															],
-															"actions": [
-																{
-																	"id": "set-angle",
-																	"objectClass": "Arrow",
-																	"sid": 657263090067545,
-																	"parameters": {
-																		"angle": "120"
-																	}
-																}
-															],
-															"sid": 920239125025703
-														}
-													]
+													"sid": 624045815312333
 												},
 												{
 													"eventType": "block",
@@ -2565,113 +1916,22 @@
 														{
 															"id": "set-instvar-value",
 															"objectClass": "Arrow",
-															"sid": 165697007185752,
+															"sid": 411992155797795,
 															"parameters": {
 																"instance-variable": "AttackPower",
-																"value": "2"
+																"value": "1.5"
+															}
+														},
+														{
+															"id": "set-angle",
+															"objectClass": "Arrow",
+															"sid": 961787789771960,
+															"parameters": {
+																"angle": "Player.Angle-10"
 															}
 														}
 													],
-													"sid": 798431884515335,
-													"children": [
-														{
-															"eventType": "block",
-															"conditions": [
-																{
-																	"id": "compare-boolean-eventvar",
-																	"objectClass": "System",
-																	"sid": 481155596687339,
-																	"parameters": {
-																		"variable": "facingLeft"
-																	},
-																	"isInverted": true
-																}
-															],
-															"actions": [
-																{
-																	"id": "set-angle",
-																	"objectClass": "Arrow",
-																	"sid": 728654904542921,
-																	"parameters": {
-																		"angle": "330"
-																	}
-																}
-															],
-															"sid": 651262972216729
-														},
-														{
-															"eventType": "block",
-															"conditions": [
-																{
-																	"id": "compare-boolean-eventvar",
-																	"objectClass": "System",
-																	"sid": 404057982182666,
-																	"parameters": {
-																		"variable": "facingLeft"
-																	}
-																}
-															],
-															"actions": [
-																{
-																	"id": "set-angle",
-																	"objectClass": "Arrow",
-																	"sid": 923370566593125,
-																	"parameters": {
-																		"angle": "210"
-																	}
-																}
-															],
-															"sid": 170353712713789
-														},
-														{
-															"eventType": "block",
-															"conditions": [
-																{
-																	"id": "compare-boolean-eventvar",
-																	"objectClass": "System",
-																	"sid": 305887918900763,
-																	"parameters": {
-																		"variable": "FacingUp"
-																	}
-																}
-															],
-															"actions": [
-																{
-																	"id": "set-angle",
-																	"objectClass": "Arrow",
-																	"sid": 619297624951413,
-																	"parameters": {
-																		"angle": "300"
-																	}
-																}
-															],
-															"sid": 291871298883076
-														},
-														{
-															"eventType": "block",
-															"conditions": [
-																{
-																	"id": "compare-boolean-eventvar",
-																	"objectClass": "System",
-																	"sid": 425987099564612,
-																	"parameters": {
-																		"variable": "FacingDown"
-																	}
-																}
-															],
-															"actions": [
-																{
-																	"id": "set-angle",
-																	"objectClass": "Arrow",
-																	"sid": 691558211694176,
-																	"parameters": {
-																		"angle": "60"
-																	}
-																}
-															],
-															"sid": 801659800161912
-														}
-													]
+													"sid": 798431884515335
 												},
 												{
 													"eventType": "block",
@@ -2694,6 +1954,60 @@
 									]
 								}
 							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 499717567281108,
+									"parameters": {
+										"variable": "CS_Power",
+										"comparison": 5,
+										"value": "3"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "Sprite2",
+									"sid": 424580629169148,
+									"parameters": {
+										"animation": "\"Animation 2\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 772735120278645
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 903700159268572,
+									"parameters": {
+										"variable": "CS_Power",
+										"comparison": 2,
+										"value": "3"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "Sprite2",
+									"sid": 314358287559753,
+									"parameters": {
+										"animation": "\"Animation 1\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 740959505210321
 						}
 					],
 					"sid": 332231565760914
@@ -2716,6 +2030,15 @@
 										"mouse-button": "left",
 										"click-type": "clicked"
 									}
+								},
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 339500069016178,
+									"parameters": {
+										"variable": "isPaused"
+									},
+									"isInverted": true
 								}
 							],
 							"actions": [],
@@ -2781,10 +2104,10 @@
 												{
 													"id": "set-instvar-value",
 													"objectClass": "Arrow",
-													"sid": 103243729219156,
+													"sid": 361082129116643,
 													"parameters": {
 														"instance-variable": "AttackPower",
-														"value": "1"
+														"value": "0.5"
 													}
 												},
 												{
@@ -2795,108 +2118,17 @@
 														"width": "32",
 														"height": "6"
 													}
+												},
+												{
+													"id": "set-angle",
+													"objectClass": "Arrow",
+													"sid": 121888265793613,
+													"parameters": {
+														"angle": "Player.Angle+10"
+													}
 												}
 											],
-											"sid": 604147568778948,
-											"children": [
-												{
-													"eventType": "block",
-													"conditions": [
-														{
-															"id": "compare-boolean-eventvar",
-															"objectClass": "System",
-															"sid": 924020564814025,
-															"parameters": {
-																"variable": "facingLeft"
-															},
-															"isInverted": true
-														}
-													],
-													"actions": [
-														{
-															"id": "set-angle",
-															"objectClass": "Arrow",
-															"sid": 161562986274875,
-															"parameters": {
-																"angle": "30"
-															}
-														}
-													],
-													"sid": 233156870226381
-												},
-												{
-													"eventType": "block",
-													"conditions": [
-														{
-															"id": "compare-boolean-eventvar",
-															"objectClass": "System",
-															"sid": 977744650733156,
-															"parameters": {
-																"variable": "facingLeft"
-															}
-														}
-													],
-													"actions": [
-														{
-															"id": "set-angle",
-															"objectClass": "Arrow",
-															"sid": 893176106746621,
-															"parameters": {
-																"angle": "150"
-															}
-														}
-													],
-													"sid": 751690730323043
-												},
-												{
-													"eventType": "block",
-													"conditions": [
-														{
-															"id": "compare-boolean-eventvar",
-															"objectClass": "System",
-															"sid": 503243795949555,
-															"parameters": {
-																"variable": "FacingUp"
-															}
-														}
-													],
-													"actions": [
-														{
-															"id": "set-angle",
-															"objectClass": "Arrow",
-															"sid": 417239369006470,
-															"parameters": {
-																"angle": "240"
-															}
-														}
-													],
-													"sid": 494016202901138
-												},
-												{
-													"eventType": "block",
-													"conditions": [
-														{
-															"id": "compare-boolean-eventvar",
-															"objectClass": "System",
-															"sid": 204996687900244,
-															"parameters": {
-																"variable": "FacingDown"
-															}
-														}
-													],
-													"actions": [
-														{
-															"id": "set-angle",
-															"objectClass": "Arrow",
-															"sid": 768842813397934,
-															"parameters": {
-																"angle": "120"
-															}
-														}
-													],
-													"sid": 535697001308970
-												}
-											]
+											"sid": 604147568778948
 										},
 										{
 											"eventType": "block",
@@ -2916,10 +2148,10 @@
 												{
 													"id": "set-instvar-value",
 													"objectClass": "Arrow",
-													"sid": 498589002816485,
+													"sid": 370068969375410,
 													"parameters": {
 														"instance-variable": "AttackPower",
-														"value": "1"
+														"value": "0.5"
 													}
 												},
 												{
@@ -2930,108 +2162,17 @@
 														"width": "32",
 														"height": "6"
 													}
+												},
+												{
+													"id": "set-angle",
+													"objectClass": "Arrow",
+													"sid": 581760799556630,
+													"parameters": {
+														"angle": "Player.Angle-10"
+													}
 												}
 											],
-											"sid": 138632994306811,
-											"children": [
-												{
-													"eventType": "block",
-													"conditions": [
-														{
-															"id": "compare-boolean-eventvar",
-															"objectClass": "System",
-															"sid": 600107147674764,
-															"parameters": {
-																"variable": "facingLeft"
-															},
-															"isInverted": true
-														}
-													],
-													"actions": [
-														{
-															"id": "set-angle",
-															"objectClass": "Arrow",
-															"sid": 391843924705305,
-															"parameters": {
-																"angle": "330"
-															}
-														}
-													],
-													"sid": 791253683357498
-												},
-												{
-													"eventType": "block",
-													"conditions": [
-														{
-															"id": "compare-boolean-eventvar",
-															"objectClass": "System",
-															"sid": 661215919082125,
-															"parameters": {
-																"variable": "facingLeft"
-															}
-														}
-													],
-													"actions": [
-														{
-															"id": "set-angle",
-															"objectClass": "Arrow",
-															"sid": 667762409576067,
-															"parameters": {
-																"angle": "210"
-															}
-														}
-													],
-													"sid": 104948009461034
-												},
-												{
-													"eventType": "block",
-													"conditions": [
-														{
-															"id": "compare-boolean-eventvar",
-															"objectClass": "System",
-															"sid": 816397992863576,
-															"parameters": {
-																"variable": "FacingUp"
-															}
-														}
-													],
-													"actions": [
-														{
-															"id": "set-angle",
-															"objectClass": "Arrow",
-															"sid": 529609597139583,
-															"parameters": {
-																"angle": "300"
-															}
-														}
-													],
-													"sid": 624201821968727
-												},
-												{
-													"eventType": "block",
-													"conditions": [
-														{
-															"id": "compare-boolean-eventvar",
-															"objectClass": "System",
-															"sid": 524782688494322,
-															"parameters": {
-																"variable": "FacingDown"
-															}
-														}
-													],
-													"actions": [
-														{
-															"id": "set-angle",
-															"objectClass": "Arrow",
-															"sid": 288205037536453,
-															"parameters": {
-																"angle": "60"
-															}
-														}
-													],
-													"sid": 447717939737639
-												}
-											]
+											"sid": 138632994306811
 										},
 										{
 											"eventType": "block",
@@ -3051,10 +2192,10 @@
 												{
 													"id": "set-instvar-value",
 													"objectClass": "Arrow",
-													"sid": 533077736804004,
+													"sid": 912189592394944,
 													"parameters": {
 														"instance-variable": "AttackPower",
-														"value": "1"
+														"value": "0.5"
 													}
 												},
 												{
@@ -3101,6 +2242,15 @@
 									"parameters": {
 										"variable": "Dash"
 									}
+								},
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 536660682976248,
+									"parameters": {
+										"variable": "isPaused"
+									},
+									"isInverted": true
 								}
 							],
 							"actions": [
@@ -3111,6 +2261,15 @@
 									"behaviorType": "Bullet",
 									"parameters": {
 										"state": "enabled"
+									}
+								},
+								{
+									"id": "set-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 865613612658420,
+									"parameters": {
+										"variable": "isDashing",
+										"value": "true"
 									}
 								},
 								{
@@ -3132,11 +2291,29 @@
 									}
 								},
 								{
+									"id": "set-angle-of-motion",
+									"objectClass": "Player",
+									"sid": 452653995051794,
+									"behaviorType": "Bullet",
+									"parameters": {
+										"angle": "Player.8Direction.MovingAngle"
+									}
+								},
+								{
 									"id": "wait",
 									"objectClass": "System",
-									"sid": 453592094237558,
+									"sid": 763231686313168,
 									"parameters": {
 										"seconds": "0.2"
+									}
+								},
+								{
+									"id": "set-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 634077174549053,
+									"parameters": {
+										"variable": "isDashing",
+										"value": "false"
 									}
 								},
 								{
@@ -3165,8 +2342,294 @@
 							"conditions": [
 								{
 									"id": "on-collision-with-another-object",
-									"objectClass": "Enemies",
-									"sid": 234970296501252,
+									"objectClass": "Ranged_Enemy_Minor",
+									"sid": 483210335461665,
+									"parameters": {
+										"object": "DashPaths"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 672826590009068,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 854924309838277,
+											"parameters": {
+												"variable": "Electric"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "Ranged_Enemy_Minor",
+											"sid": 178170930614768,
+											"parameters": {
+												"instance-variable": "Paralyzed",
+												"value": "true"
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 761946139356553,
+											"parameters": {
+												"seconds": "5"
+											}
+										},
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "Ranged_Enemy_Minor",
+											"sid": 839097096927246,
+											"parameters": {
+												"instance-variable": "Paralyzed",
+												"value": "false"
+											}
+										}
+									],
+									"sid": 781921533925384
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 804147058315323,
+											"parameters": {
+												"variable": "Ice"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "Ranged_Enemy_Minor",
+											"sid": 486809578761859,
+											"parameters": {
+												"instance-variable": "Frozen",
+												"value": "true"
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 308499130514272,
+											"parameters": {
+												"seconds": "5"
+											}
+										},
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "Ranged_Enemy_Minor",
+											"sid": 351973668981718,
+											"parameters": {
+												"instance-variable": "Frozen",
+												"value": "false"
+											}
+										}
+									],
+									"sid": 441256289635941
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 380605105763158,
+											"parameters": {
+												"variable": "Fire"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "Ranged_Enemy_Minor",
+											"sid": 600585685518870,
+											"parameters": {
+												"instance-variable": "Burning",
+												"value": "true"
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 665808640918139,
+											"parameters": {
+												"seconds": "4.5"
+											}
+										},
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "Ranged_Enemy_Minor",
+											"sid": 807962935299854,
+											"parameters": {
+												"instance-variable": "Burning",
+												"value": "false"
+											}
+										}
+									],
+									"sid": 106349746923101
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-collision-with-another-object",
+									"objectClass": "OrcBoss",
+									"sid": 544167277105045,
+									"parameters": {
+										"object": "DashPaths"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 560625694858677,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 589856827833581,
+											"parameters": {
+												"variable": "Electric"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "OrcBoss",
+											"sid": 597786538287819,
+											"parameters": {
+												"instance-variable": "Paralyzed",
+												"value": "true"
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 291642302603154,
+											"parameters": {
+												"seconds": "5"
+											}
+										},
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "OrcBoss",
+											"sid": 811020410116878,
+											"parameters": {
+												"instance-variable": "Paralyzed",
+												"value": "false"
+											}
+										}
+									],
+									"sid": 249736441995222
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 551180449482449,
+											"parameters": {
+												"variable": "Ice"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "OrcBoss",
+											"sid": 136449436108254,
+											"parameters": {
+												"instance-variable": "Frozen",
+												"value": "true"
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 190667305997667,
+											"parameters": {
+												"seconds": "5"
+											}
+										},
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "OrcBoss",
+											"sid": 107302786711829,
+											"parameters": {
+												"instance-variable": "Frozen",
+												"value": "false"
+											}
+										}
+									],
+									"sid": 654979501591652
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 319317284601520,
+											"parameters": {
+												"variable": "Fire"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "OrcBoss",
+											"sid": 466682229691892,
+											"parameters": {
+												"instance-variable": "Burning",
+												"value": "true"
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 500981809152194,
+											"parameters": {
+												"seconds": "4.5"
+											}
+										},
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "OrcBoss",
+											"sid": 203304401973741,
+											"parameters": {
+												"instance-variable": "Burning",
+												"value": "false"
+											}
+										}
+									],
+									"sid": 905568378922539
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-collision-with-another-object",
+									"objectClass": "Melee_Enemy_Minor",
+									"sid": 370879902122300,
 									"parameters": {
 										"object": "DashPaths"
 									}
@@ -3190,11 +2653,28 @@
 									"actions": [
 										{
 											"id": "set-boolean-instvar",
-											"objectClass": "Enemies",
-											"sid": 828208196063159,
+											"objectClass": "Melee_Enemy_Minor",
+											"sid": 456269087836008,
 											"parameters": {
 												"instance-variable": "Paralyzed",
 												"value": "true"
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 861900414748604,
+											"parameters": {
+												"seconds": "5"
+											}
+										},
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "Melee_Enemy_Minor",
+											"sid": 783820097575712,
+											"parameters": {
+												"instance-variable": "Paralyzed",
+												"value": "false"
 											}
 										}
 									],
@@ -3215,11 +2695,28 @@
 									"actions": [
 										{
 											"id": "set-boolean-instvar",
-											"objectClass": "Enemies",
-											"sid": 916505167171731,
+											"objectClass": "Melee_Enemy_Minor",
+											"sid": 220115041062871,
 											"parameters": {
 												"instance-variable": "Frozen",
 												"value": "true"
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 272735041238716,
+											"parameters": {
+												"seconds": "5"
+											}
+										},
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "Melee_Enemy_Minor",
+											"sid": 700723935776140,
+											"parameters": {
+												"instance-variable": "Frozen",
+												"value": "false"
 											}
 										}
 									],
@@ -3240,11 +2737,28 @@
 									"actions": [
 										{
 											"id": "set-boolean-instvar",
-											"objectClass": "Enemies",
-											"sid": 763318595854177,
+											"objectClass": "Melee_Enemy_Minor",
+											"sid": 240449786358976,
 											"parameters": {
 												"instance-variable": "Burning",
 												"value": "true"
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 201641127740538,
+											"parameters": {
+												"seconds": "4.5"
+											}
+										},
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "Melee_Enemy_Minor",
+											"sid": 417316300946772,
+											"parameters": {
+												"instance-variable": "Burning",
+												"value": "false"
 											}
 										}
 									],
@@ -3262,7 +2776,17 @@
 									"behaviorType": "Bullet"
 								}
 							],
-							"actions": [],
+							"actions": [
+								{
+									"id": "set-solid-collision-filter",
+									"objectClass": "Player",
+									"sid": 131972868200212,
+									"parameters": {
+										"mode": "exclusive",
+										"tags": "\"Enemy\""
+									}
+								}
+							],
 							"sid": 715322268378519,
 							"children": [
 								{
@@ -3474,6 +2998,20 @@
 							],
 							"sid": 781602752374261,
 							"isOrBlock": true
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-enabled",
+									"objectClass": "Player",
+									"sid": 666593523202990,
+									"behaviorType": "Bullet",
+									"isInverted": true
+								}
+							],
+							"actions": [],
+							"sid": 361136500300843
 						}
 					],
 					"sid": 343307339553862
@@ -3597,7 +3135,35 @@
 							}
 						}
 					],
-					"sid": 201945289813932
+					"sid": 201945289813932,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 630770862775140,
+									"parameters": {
+										"variable": "isPaused"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "set-position",
+									"objectClass": "Sprite2",
+									"sid": 859855604760010,
+									"parameters": {
+										"x": "Mouse.X",
+										"y": "Mouse.Y"
+									}
+								}
+							],
+							"sid": 665532196725659
+						}
+					]
 				},
 				{
 					"eventType": "block",
@@ -3833,21 +3399,92 @@
 							"id": "set-time-scale",
 							"objectClass": "System",
 							"sid": 484583472174656,
-							"disabled": true,
 							"parameters": {
 								"time-scale": "0"
 							}
 						},
 						{
-							"id": "go-to-nextprevious-layout",
-							"objectClass": "System",
-							"sid": 715904486041087,
+							"id": "set-visible",
+							"objectClass": "WinBackground",
+							"sid": 896027946070769,
 							"parameters": {
-								"which": "next"
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "WinText",
+							"sid": 249251872884776,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "WinButton",
+							"sid": 948552644812792,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "WinButton",
+							"sid": 952826854864944,
+							"parameters": {
+								"mode": "enabled"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Vignette",
+							"sid": 754333967763689,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 275173371797679,
+							"parameters": {
+								"variable": "isPaused",
+								"value": "true"
 							}
 						}
 					],
-					"sid": 853412666558142
+					"sid": 853412666558142,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-clicked",
+									"objectClass": "WinButton",
+									"sid": 266439947519193
+								}
+							],
+							"actions": [
+								{
+									"id": "set-time-scale",
+									"objectClass": "System",
+									"sid": 865161178256108,
+									"parameters": {
+										"time-scale": "1"
+									}
+								},
+								{
+									"id": "go-to-nextprevious-layout",
+									"objectClass": "System",
+									"sid": 915638937017490,
+									"parameters": {
+										"which": "next"
+									}
+								}
+							],
+							"sid": 375678534783220
+						}
+					]
 				},
 				{
 					"eventType": "group",
@@ -3950,6 +3587,15 @@
 											"parameters": {
 												"object": "Player"
 											}
+										},
+										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 354123862732659,
+											"parameters": {
+												"variable": "isDashing"
+											},
+											"isInverted": true
 										}
 									],
 									"actions": [
@@ -3965,7 +3611,7 @@
 										{
 											"id": "set-speed",
 											"objectClass": "Player",
-											"sid": 834870187893859,
+											"sid": 695354573306270,
 											"behaviorType": "Bullet",
 											"parameters": {
 												"speed": "20"
@@ -3974,7 +3620,7 @@
 										{
 											"id": "set-angle-of-motion",
 											"objectClass": "Player",
-											"sid": 760617993465776,
+											"sid": 278780055792889,
 											"behaviorType": "Bullet",
 											"parameters": {
 												"angle": "angle(Enemies.X, Enemies.Y, Self.X, Self.Y)"
@@ -3983,7 +3629,7 @@
 										{
 											"id": "wait",
 											"objectClass": "System",
-											"sid": 513647922700178,
+											"sid": 504832222254578,
 											"parameters": {
 												"seconds": "0.25"
 											}
@@ -3991,130 +3637,10 @@
 										{
 											"id": "set-speed",
 											"objectClass": "Player",
-											"sid": 896032933654261,
+											"sid": 194094713095914,
 											"behaviorType": "Bullet",
 											"parameters": {
 												"speed": "0"
-											}
-										},
-										{
-											"id": "set-animation-frame",
-											"objectClass": "Player",
-											"sid": 547583731492076,
-											"parameters": {
-												"frame-number": "1"
-											}
-										},
-										{
-											"id": "wait",
-											"objectClass": "System",
-											"sid": 378421213080064,
-											"parameters": {
-												"seconds": "0.1"
-											}
-										},
-										{
-											"id": "set-animation-frame",
-											"objectClass": "Player",
-											"sid": 258694732758354,
-											"parameters": {
-												"frame-number": "0"
-											}
-										},
-										{
-											"id": "wait",
-											"objectClass": "System",
-											"sid": 693133698676184,
-											"parameters": {
-												"seconds": "0.1"
-											}
-										},
-										{
-											"id": "set-animation-frame",
-											"objectClass": "Player",
-											"sid": 594780607881012,
-											"parameters": {
-												"frame-number": "1"
-											}
-										},
-										{
-											"id": "wait",
-											"objectClass": "System",
-											"sid": 429666293003012,
-											"parameters": {
-												"seconds": "0.1"
-											}
-										},
-										{
-											"id": "set-animation-frame",
-											"objectClass": "Player",
-											"sid": 810756406863824,
-											"parameters": {
-												"frame-number": "0"
-											}
-										},
-										{
-											"id": "wait",
-											"objectClass": "System",
-											"sid": 480275795226526,
-											"parameters": {
-												"seconds": "0.1"
-											}
-										},
-										{
-											"id": "set-animation-frame",
-											"objectClass": "Player",
-											"sid": 236029601138068,
-											"parameters": {
-												"frame-number": "1"
-											}
-										},
-										{
-											"id": "wait",
-											"objectClass": "System",
-											"sid": 519778033211579,
-											"parameters": {
-												"seconds": "0.1"
-											}
-										},
-										{
-											"id": "set-animation-frame",
-											"objectClass": "Player",
-											"sid": 511313547948730,
-											"parameters": {
-												"frame-number": "0"
-											}
-										},
-										{
-											"id": "wait",
-											"objectClass": "System",
-											"sid": 230688024188268,
-											"parameters": {
-												"seconds": "0.1"
-											}
-										},
-										{
-											"id": "set-animation-frame",
-											"objectClass": "Player",
-											"sid": 380473901690796,
-											"parameters": {
-												"frame-number": "1"
-											}
-										},
-										{
-											"id": "wait",
-											"objectClass": "System",
-											"sid": 205779060770616,
-											"parameters": {
-												"seconds": "0.1"
-											}
-										},
-										{
-											"id": "set-animation-frame",
-											"objectClass": "Player",
-											"sid": 600900738332981,
-											"parameters": {
-												"frame-number": "0"
 											}
 										}
 									],
@@ -4239,16 +3765,28 @@
 											"eventType": "block",
 											"conditions": [
 												{
-													"id": "trigger-once-while-true",
+													"id": "every-x-seconds",
 													"objectClass": "System",
-													"sid": 781886411695611
+													"sid": 963413093376171,
+													"parameters": {
+														"interval-seconds": "1"
+													}
 												}
 											],
 											"actions": [
 												{
+													"id": "subtract-from-instvar",
+													"objectClass": "Melee_Enemy_Minor",
+													"sid": 483136656861976,
+													"parameters": {
+														"instance-variable": "Health",
+														"value": "1"
+													}
+												},
+												{
 													"id": "set-animation",
 													"objectClass": "Melee_Enemy_Minor",
-													"sid": 505699978107919,
+													"sid": 381038159677155,
 													"parameters": {
 														"animation": "\"Burning\"",
 														"from": "beginning"
@@ -4257,24 +3795,7 @@
 												{
 													"id": "wait",
 													"objectClass": "System",
-													"sid": 328232375675844,
-													"parameters": {
-														"seconds": "1.0"
-													}
-												},
-												{
-													"id": "subtract-from-instvar",
-													"objectClass": "Melee_Enemy_Minor",
-													"sid": 694567055444796,
-													"parameters": {
-														"instance-variable": "Health",
-														"value": "1"
-													}
-												},
-												{
-													"id": "wait",
-													"objectClass": "System",
-													"sid": 485927923027550,
+													"sid": 864082118189721,
 													"parameters": {
 														"seconds": "0.5"
 													}
@@ -4282,105 +3803,10 @@
 												{
 													"id": "set-animation",
 													"objectClass": "Melee_Enemy_Minor",
-													"sid": 640118576426816,
+													"sid": 695959295168238,
 													"parameters": {
 														"animation": "\"Normal\"",
 														"from": "beginning"
-													}
-												},
-												{
-													"id": "wait",
-													"objectClass": "System",
-													"sid": 293564856086165,
-													"parameters": {
-														"seconds": "1.0"
-													}
-												},
-												{
-													"id": "set-animation",
-													"objectClass": "Melee_Enemy_Minor",
-													"sid": 939894434725343,
-													"parameters": {
-														"animation": "\"Burning\"",
-														"from": "beginning"
-													}
-												},
-												{
-													"id": "subtract-from-instvar",
-													"objectClass": "Melee_Enemy_Minor",
-													"sid": 568865529225440,
-													"parameters": {
-														"instance-variable": "Health",
-														"value": "1"
-													}
-												},
-												{
-													"id": "wait",
-													"objectClass": "System",
-													"sid": 831027834154052,
-													"parameters": {
-														"seconds": "0.5"
-													}
-												},
-												{
-													"id": "set-animation",
-													"objectClass": "Melee_Enemy_Minor",
-													"sid": 948085799021216,
-													"parameters": {
-														"animation": "\"Normal\"",
-														"from": "beginning"
-													}
-												},
-												{
-													"id": "wait",
-													"objectClass": "System",
-													"sid": 582890380905566,
-													"parameters": {
-														"seconds": "1.0"
-													}
-												},
-												{
-													"id": "set-animation",
-													"objectClass": "Melee_Enemy_Minor",
-													"sid": 394061619970510,
-													"parameters": {
-														"animation": "\"Burning\"",
-														"from": "beginning"
-													}
-												},
-												{
-													"id": "subtract-from-instvar",
-													"objectClass": "Melee_Enemy_Minor",
-													"sid": 285825013735679,
-													"parameters": {
-														"instance-variable": "Health",
-														"value": "1"
-													}
-												},
-												{
-													"id": "wait",
-													"objectClass": "System",
-													"sid": 170321547828257,
-													"parameters": {
-														"seconds": "0.5"
-													}
-												},
-												{
-													"id": "set-animation",
-													"objectClass": "Melee_Enemy_Minor",
-													"sid": 192760979582146,
-													"parameters": {
-														"animation": "\"Normal\"",
-														"from": "beginning"
-													}
-												},
-												{
-													"id": "set-boolean-instvar",
-													"objectClass": "Melee_Enemy_Minor",
-													"sid": 205970974867056,
-													"parameters": {
-														"instance-variable": "Burning",
-														"value": "false"
 													}
 												}
 											],
@@ -4454,7 +3880,7 @@
 												{
 													"id": "set-boolean-instvar",
 													"objectClass": "Melee_Enemy_Minor",
-													"sid": 182078799154210,
+													"sid": 509183358908060,
 													"parameters": {
 														"instance-variable": "Frozen",
 														"value": "false"
@@ -4477,70 +3903,62 @@
 											}
 										}
 									],
-									"actions": [],
-									"sid": 509077660892053,
-									"children": [
+									"actions": [
 										{
-											"eventType": "block",
-											"conditions": [],
-											"actions": [
-												{
-													"id": "set-max-speed",
-													"objectClass": "Melee_Enemy_Minor",
-													"sid": 127465284267911,
-													"behaviorType": "MoveTo",
-													"parameters": {
-														"max-speed": "0"
-													}
-												},
-												{
-													"id": "set-animation",
-													"objectClass": "Melee_Enemy_Minor",
-													"sid": 372647369558424,
-													"parameters": {
-														"animation": "\"Paralyzed\"",
-														"from": "beginning"
-													}
-												},
-												{
-													"id": "wait",
-													"objectClass": "System",
-													"sid": 443929662615555,
-													"parameters": {
-														"seconds": "5.0"
-													}
-												},
-												{
-													"id": "set-max-speed",
-													"objectClass": "Melee_Enemy_Minor",
-													"sid": 741231455116522,
-													"behaviorType": "MoveTo",
-													"parameters": {
-														"max-speed": "150"
-													}
-												},
-												{
-													"id": "set-animation",
-													"objectClass": "Melee_Enemy_Minor",
-													"sid": 587563043649829,
-													"parameters": {
-														"animation": "\"Normal\"",
-														"from": "beginning"
-													}
-												},
-												{
-													"id": "set-boolean-instvar",
-													"objectClass": "Melee_Enemy_Minor",
-													"sid": 137559062632495,
-													"parameters": {
-														"instance-variable": "Paralyzed",
-														"value": "false"
-													}
-												}
-											],
-											"sid": 688420303521431
+											"id": "set-max-speed",
+											"objectClass": "Melee_Enemy_Minor",
+											"sid": 922309941181539,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"max-speed": "0"
+											}
+										},
+										{
+											"id": "set-animation",
+											"objectClass": "Melee_Enemy_Minor",
+											"sid": 409177005100931,
+											"parameters": {
+												"animation": "\"Paralyzed\"",
+												"from": "beginning"
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 914139242847287,
+											"parameters": {
+												"seconds": "5.0"
+											}
+										},
+										{
+											"id": "set-max-speed",
+											"objectClass": "Melee_Enemy_Minor",
+											"sid": 740125621607180,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"max-speed": "150"
+											}
+										},
+										{
+											"id": "set-animation",
+											"objectClass": "Melee_Enemy_Minor",
+											"sid": 956262610204607,
+											"parameters": {
+												"animation": "\"Normal\"",
+												"from": "beginning"
+											}
+										},
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "Melee_Enemy_Minor",
+											"sid": 611899492711080,
+											"parameters": {
+												"instance-variable": "Paralyzed",
+												"value": "false"
+											}
 										}
-									]
+									],
+									"sid": 509077660892053
 								},
 								{
 									"eventType": "block",
@@ -4561,16 +3979,28 @@
 											"eventType": "block",
 											"conditions": [
 												{
-													"id": "trigger-once-while-true",
+													"id": "every-x-seconds",
 													"objectClass": "System",
-													"sid": 659009951088293
+													"sid": 661721431444914,
+													"parameters": {
+														"interval-seconds": "1.0"
+													}
 												}
 											],
 											"actions": [
 												{
+													"id": "subtract-from-instvar",
+													"objectClass": "Ranged_Enemy_Minor",
+													"sid": 103796138436580,
+													"parameters": {
+														"instance-variable": "Health",
+														"value": "1"
+													}
+												},
+												{
 													"id": "set-animation",
 													"objectClass": "Ranged_Enemy_Minor",
-													"sid": 812353354191695,
+													"sid": 615318977704323,
 													"parameters": {
 														"animation": "\"Burning\"",
 														"from": "beginning"
@@ -4579,24 +4009,7 @@
 												{
 													"id": "wait",
 													"objectClass": "System",
-													"sid": 559488002187779,
-													"parameters": {
-														"seconds": "1.0"
-													}
-												},
-												{
-													"id": "subtract-from-instvar",
-													"objectClass": "Ranged_Enemy_Minor",
-													"sid": 148165384599251,
-													"parameters": {
-														"instance-variable": "Health",
-														"value": "1"
-													}
-												},
-												{
-													"id": "wait",
-													"objectClass": "System",
-													"sid": 290835328478855,
+													"sid": 957249752365279,
 													"parameters": {
 														"seconds": "0.5"
 													}
@@ -4604,105 +4017,10 @@
 												{
 													"id": "set-animation",
 													"objectClass": "Ranged_Enemy_Minor",
-													"sid": 150684421360634,
+													"sid": 392969942325050,
 													"parameters": {
 														"animation": "\"Normal\"",
 														"from": "beginning"
-													}
-												},
-												{
-													"id": "wait",
-													"objectClass": "System",
-													"sid": 805411304605847,
-													"parameters": {
-														"seconds": "1.0"
-													}
-												},
-												{
-													"id": "set-animation",
-													"objectClass": "Ranged_Enemy_Minor",
-													"sid": 412247553313995,
-													"parameters": {
-														"animation": "\"Burning\"",
-														"from": "beginning"
-													}
-												},
-												{
-													"id": "subtract-from-instvar",
-													"objectClass": "Ranged_Enemy_Minor",
-													"sid": 644297384176269,
-													"parameters": {
-														"instance-variable": "Health",
-														"value": "1"
-													}
-												},
-												{
-													"id": "wait",
-													"objectClass": "System",
-													"sid": 279126989960933,
-													"parameters": {
-														"seconds": "0.5"
-													}
-												},
-												{
-													"id": "set-animation",
-													"objectClass": "Ranged_Enemy_Minor",
-													"sid": 693544739934037,
-													"parameters": {
-														"animation": "\"Normal\"",
-														"from": "beginning"
-													}
-												},
-												{
-													"id": "wait",
-													"objectClass": "System",
-													"sid": 641451934415135,
-													"parameters": {
-														"seconds": "1.0"
-													}
-												},
-												{
-													"id": "set-animation",
-													"objectClass": "Ranged_Enemy_Minor",
-													"sid": 945365606245834,
-													"parameters": {
-														"animation": "\"Burning\"",
-														"from": "beginning"
-													}
-												},
-												{
-													"id": "subtract-from-instvar",
-													"objectClass": "Ranged_Enemy_Minor",
-													"sid": 558960054770523,
-													"parameters": {
-														"instance-variable": "Health",
-														"value": "1"
-													}
-												},
-												{
-													"id": "wait",
-													"objectClass": "System",
-													"sid": 178796398936353,
-													"parameters": {
-														"seconds": "0.5"
-													}
-												},
-												{
-													"id": "set-animation",
-													"objectClass": "Ranged_Enemy_Minor",
-													"sid": 449818020413448,
-													"parameters": {
-														"animation": "\"Normal\"",
-														"from": "beginning"
-													}
-												},
-												{
-													"id": "set-boolean-instvar",
-													"objectClass": "Ranged_Enemy_Minor",
-													"sid": 570050792101430,
-													"parameters": {
-														"instance-variable": "Burning",
-														"value": "false"
 													}
 												}
 											],
@@ -4790,15 +4108,6 @@
 														"animation": "\"Normal\"",
 														"from": "beginning"
 													}
-												},
-												{
-													"id": "set-boolean-instvar",
-													"objectClass": "Ranged_Enemy_Minor",
-													"sid": 545627523784731,
-													"parameters": {
-														"instance-variable": "Frozen",
-														"value": "false"
-													}
 												}
 											],
 											"sid": 962503830745699
@@ -4885,15 +4194,6 @@
 													"parameters": {
 														"state": "enabled"
 													}
-												},
-												{
-													"id": "set-boolean-instvar",
-													"objectClass": "Ranged_Enemy_Minor",
-													"sid": 395971847656950,
-													"parameters": {
-														"instance-variable": "Paralyzed",
-														"value": "false"
-													}
 												}
 											],
 											"sid": 630110448576954
@@ -4905,6 +4205,57 @@
 						}
 					],
 					"sid": 702960246094041
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Melee_Enemy_Minor",
+							"sid": 482614152882302,
+							"parameters": {
+								"object": "Melee_Enemy_Minor"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-speed",
+							"objectClass": "Melee_Enemy_Minor",
+							"sid": 893470473058917,
+							"behaviorType": "Bullet",
+							"parameters": {
+								"speed": "100"
+							}
+						},
+						{
+							"id": "set-angle-of-motion",
+							"objectClass": "Melee_Enemy_Minor",
+							"sid": 619197923404858,
+							"behaviorType": "Bullet",
+							"parameters": {
+								"angle": "angle(Melee_Enemy_Minor.X, Melee_Enemy_Minor.Y, Self.X, Self.Y)"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 378423273107647,
+							"parameters": {
+								"seconds": "0.25"
+							}
+						},
+						{
+							"id": "set-speed",
+							"objectClass": "Melee_Enemy_Minor",
+							"sid": 811325534915483,
+							"behaviorType": "Bullet",
+							"parameters": {
+								"speed": "0"
+							}
+						}
+					],
+					"sid": 199107478294919
 				}
 			],
 			"sid": 976221568735994
@@ -5012,6 +4363,220 @@
 					"description": "Orc Shaman who throws acid flasks at the player, sometimes the acid does a DoT effect, sometimes it pushes the player back",
 					"isActiveOnStart": true,
 					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "Melee_Enemy_Minor",
+									"sid": 268204349413834,
+									"parameters": {
+										"instance-variable": "Burning"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 161062051654253,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "every-x-seconds",
+											"objectClass": "System",
+											"sid": 223404417536283,
+											"parameters": {
+												"interval-seconds": "1"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "subtract-from-instvar",
+											"objectClass": "Melee_Enemy_Minor",
+											"sid": 515726628100316,
+											"parameters": {
+												"instance-variable": "Health",
+												"value": "1"
+											}
+										},
+										{
+											"id": "set-animation",
+											"objectClass": "Melee_Enemy_Minor",
+											"sid": 543386381787539,
+											"parameters": {
+												"animation": "\"Burning\"",
+												"from": "beginning"
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 529697872190843,
+											"parameters": {
+												"seconds": "0.5"
+											}
+										},
+										{
+											"id": "set-animation",
+											"objectClass": "Melee_Enemy_Minor",
+											"sid": 122717436343183,
+											"parameters": {
+												"animation": "\"Normal\"",
+												"from": "beginning"
+											}
+										}
+									],
+									"sid": 209460218751104
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "Melee_Enemy_Minor",
+									"sid": 925616626499328,
+									"parameters": {
+										"instance-variable": "Frozen"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 593051678909188,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [],
+									"actions": [
+										{
+											"id": "set-max-speed",
+											"objectClass": "Melee_Enemy_Minor",
+											"sid": 239372416800977,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"max-speed": "75"
+											}
+										},
+										{
+											"id": "set-animation",
+											"objectClass": "Melee_Enemy_Minor",
+											"sid": 348221394052105,
+											"parameters": {
+												"animation": "\"Frozen\"",
+												"from": "beginning"
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 464824600140448,
+											"parameters": {
+												"seconds": "5.0"
+											}
+										},
+										{
+											"id": "set-max-speed",
+											"objectClass": "Melee_Enemy_Minor",
+											"sid": 256469872494174,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"max-speed": "150"
+											}
+										},
+										{
+											"id": "set-animation",
+											"objectClass": "Melee_Enemy_Minor",
+											"sid": 315790023320778,
+											"parameters": {
+												"animation": "\"Normal\"",
+												"from": "beginning"
+											}
+										},
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "Melee_Enemy_Minor",
+											"sid": 450607717188366,
+											"parameters": {
+												"instance-variable": "Frozen",
+												"value": "false"
+											}
+										}
+									],
+									"sid": 312494914325841
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "Melee_Enemy_Minor",
+									"sid": 377826973598190,
+									"parameters": {
+										"instance-variable": "Paralyzed"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-max-speed",
+									"objectClass": "Melee_Enemy_Minor",
+									"sid": 251395748556410,
+									"behaviorType": "MoveTo",
+									"parameters": {
+										"max-speed": "0"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Melee_Enemy_Minor",
+									"sid": 825810163316575,
+									"parameters": {
+										"animation": "\"Paralyzed\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 514473080570281,
+									"parameters": {
+										"seconds": "5.0"
+									}
+								},
+								{
+									"id": "set-max-speed",
+									"objectClass": "Melee_Enemy_Minor",
+									"sid": 859208153278785,
+									"behaviorType": "MoveTo",
+									"parameters": {
+										"max-speed": "150"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Melee_Enemy_Minor",
+									"sid": 351957316598234,
+									"parameters": {
+										"animation": "\"Normal\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "Melee_Enemy_Minor",
+									"sid": 447018095952099,
+									"parameters": {
+										"instance-variable": "Paralyzed",
+										"value": "false"
+									}
+								}
+							],
+							"sid": 542772811689045
+						},
 						{
 							"eventType": "block",
 							"conditions": [
@@ -5165,9 +4730,9 @@
 										{
 											"id": "every-x-seconds",
 											"objectClass": "System",
-											"sid": 174497054159450,
+											"sid": 951679643449544,
 											"parameters": {
-												"interval-seconds": "1"
+												"interval-seconds": "0.5"
 											}
 										}
 									],
@@ -5186,9 +4751,9 @@
 										{
 											"id": "set-animation",
 											"objectClass": "AcidFlask",
-											"sid": 805136608370128,
+											"sid": 950710451218585,
 											"parameters": {
-												"animation": "choose(0,2)",
+												"animation": "str(round(random(0,2)))",
 												"from": "beginning"
 											}
 										},
@@ -5238,126 +4803,6 @@
 										"variable": "PlayerHealth",
 										"value": "1"
 									}
-								},
-								{
-									"id": "set-animation-frame",
-									"objectClass": "Player",
-									"sid": 363638777946571,
-									"parameters": {
-										"frame-number": "1"
-									}
-								},
-								{
-									"id": "wait",
-									"objectClass": "System",
-									"sid": 243315131219437,
-									"parameters": {
-										"seconds": "0.1"
-									}
-								},
-								{
-									"id": "set-animation-frame",
-									"objectClass": "Player",
-									"sid": 766999887405487,
-									"parameters": {
-										"frame-number": "0"
-									}
-								},
-								{
-									"id": "wait",
-									"objectClass": "System",
-									"sid": 966576490049127,
-									"parameters": {
-										"seconds": "0.1"
-									}
-								},
-								{
-									"id": "set-animation-frame",
-									"objectClass": "Player",
-									"sid": 911869087923629,
-									"parameters": {
-										"frame-number": "1"
-									}
-								},
-								{
-									"id": "wait",
-									"objectClass": "System",
-									"sid": 398007418151919,
-									"parameters": {
-										"seconds": "0.1"
-									}
-								},
-								{
-									"id": "set-animation-frame",
-									"objectClass": "Player",
-									"sid": 366681655792976,
-									"parameters": {
-										"frame-number": "0"
-									}
-								},
-								{
-									"id": "wait",
-									"objectClass": "System",
-									"sid": 888143035967767,
-									"parameters": {
-										"seconds": "0.1"
-									}
-								},
-								{
-									"id": "set-animation-frame",
-									"objectClass": "Player",
-									"sid": 102262483946274,
-									"parameters": {
-										"frame-number": "1"
-									}
-								},
-								{
-									"id": "wait",
-									"objectClass": "System",
-									"sid": 787731447862992,
-									"parameters": {
-										"seconds": "0.1"
-									}
-								},
-								{
-									"id": "set-animation-frame",
-									"objectClass": "Player",
-									"sid": 262574329563447,
-									"parameters": {
-										"frame-number": "0"
-									}
-								},
-								{
-									"id": "wait",
-									"objectClass": "System",
-									"sid": 679166822021298,
-									"parameters": {
-										"seconds": "0.1"
-									}
-								},
-								{
-									"id": "set-animation-frame",
-									"objectClass": "Player",
-									"sid": 458755222464493,
-									"parameters": {
-										"frame-number": "1"
-									}
-								},
-								{
-									"id": "wait",
-									"objectClass": "System",
-									"sid": 900299441927691,
-									"parameters": {
-										"seconds": "0.1"
-									}
-								},
-								{
-									"id": "set-animation-frame",
-									"objectClass": "Player",
-									"sid": 709998008116291,
-									"parameters": {
-										"frame-number": "0"
-									}
 								}
 							],
 							"sid": 197359431068452,
@@ -5382,6 +4827,39 @@
 											"parameters": {
 												"variable": "isPoisoned",
 												"value": "true"
+											}
+										},
+										{
+											"id": "set-visible",
+											"objectClass": "AcidFlask",
+											"sid": 608798769737277,
+											"parameters": {
+												"visibility": "invisible"
+											}
+										},
+										{
+											"id": "set-collisions-enabled",
+											"objectClass": "AcidFlask",
+											"sid": 806028275114598,
+											"parameters": {
+												"collisions": "disabled"
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 898285627589638,
+											"parameters": {
+												"seconds": "4.5"
+											}
+										},
+										{
+											"id": "set-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 793041328166920,
+											"parameters": {
+												"variable": "isPoisoned",
+												"value": "false"
 											}
 										},
 										{
@@ -5487,30 +4965,6 @@
 												"variable": "PlayerHealth",
 												"value": "0.5"
 											}
-										},
-										{
-											"id": "set-animation-frame",
-											"objectClass": "Player",
-											"sid": 739601474035803,
-											"parameters": {
-												"frame-number": "1"
-											}
-										},
-										{
-											"id": "wait",
-											"objectClass": "System",
-											"sid": 416176109171665,
-											"parameters": {
-												"seconds": "0.1"
-											}
-										},
-										{
-											"id": "set-animation-frame",
-											"objectClass": "Player",
-											"sid": 265183343334518,
-											"parameters": {
-												"frame-number": "0"
-											}
 										}
 									],
 									"sid": 830341738021443
@@ -5548,7 +5002,59 @@
 									}
 								}
 							],
-							"sid": 863257758243483
+							"sid": 863257758243483,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-animation-playing",
+											"objectClass": "AcidFlask",
+											"sid": 972431845857497,
+											"parameters": {
+												"animation": "\"1\""
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "AcidArea",
+											"sid": 379173069449242,
+											"parameters": {
+												"animation": "\"1\"",
+												"from": "beginning"
+											}
+										}
+									],
+									"sid": 277150509163043
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-animation-playing",
+											"objectClass": "AcidFlask",
+											"sid": 575312395779405,
+											"parameters": {
+												"animation": "\"2\""
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "AcidArea",
+											"sid": 654497549316424,
+											"parameters": {
+												"animation": "\"2\"",
+												"from": "beginning"
+											}
+										}
+									],
+									"sid": 518529907364755
+								}
+							]
 						},
 						{
 							"eventType": "block",
@@ -5581,165 +5087,43 @@
 									}
 								}
 							],
-							"actions": [
+							"actions": [],
+							"sid": 839111890876475,
+							"children": [
 								{
-									"id": "wait",
-									"objectClass": "System",
-									"sid": 274191453922945,
-									"parameters": {
-										"seconds": "1.0"
-									}
-								},
-								{
-									"id": "subtract-from-eventvar",
-									"objectClass": "System",
-									"sid": 689281267701954,
-									"parameters": {
-										"variable": "PlayerHealth",
-										"value": "1"
-									}
-								},
-								{
-									"id": "set-animation-frame",
-									"objectClass": "Player",
-									"sid": 861394047776141,
-									"parameters": {
-										"frame-number": "1"
-									}
-								},
-								{
-									"id": "wait",
-									"objectClass": "System",
-									"sid": 764988634446598,
-									"parameters": {
-										"seconds": "0.1"
-									}
-								},
-								{
-									"id": "set-animation-frame",
-									"objectClass": "Player",
-									"sid": 594957867577164,
-									"parameters": {
-										"frame-number": "0"
-									}
-								},
-								{
-									"id": "wait",
-									"objectClass": "System",
-									"sid": 729956118644982,
-									"parameters": {
-										"seconds": "0.5"
-									}
-								},
-								{
-									"id": "wait",
-									"objectClass": "System",
-									"sid": 365953684562098,
-									"parameters": {
-										"seconds": "1.0"
-									}
-								},
-								{
-									"id": "subtract-from-eventvar",
-									"objectClass": "System",
-									"sid": 861308499799191,
-									"parameters": {
-										"variable": "PlayerHealth",
-										"value": "1"
-									}
-								},
-								{
-									"id": "set-animation-frame",
-									"objectClass": "Player",
-									"sid": 374750626457671,
-									"parameters": {
-										"frame-number": "1"
-									}
-								},
-								{
-									"id": "wait",
-									"objectClass": "System",
-									"sid": 955753840859311,
-									"parameters": {
-										"seconds": "0.1"
-									}
-								},
-								{
-									"id": "set-animation-frame",
-									"objectClass": "Player",
-									"sid": 253990648176924,
-									"parameters": {
-										"frame-number": "0"
-									}
-								},
-								{
-									"id": "wait",
-									"objectClass": "System",
-									"sid": 524529156264048,
-									"parameters": {
-										"seconds": "0.5"
-									}
-								},
-								{
-									"id": "wait",
-									"objectClass": "System",
-									"sid": 318326990712365,
-									"parameters": {
-										"seconds": "1.0"
-									}
-								},
-								{
-									"id": "subtract-from-eventvar",
-									"objectClass": "System",
-									"sid": 817486481804541,
-									"parameters": {
-										"variable": "PlayerHealth",
-										"value": "1"
-									}
-								},
-								{
-									"id": "set-animation-frame",
-									"objectClass": "Player",
-									"sid": 455907328645853,
-									"parameters": {
-										"frame-number": "1"
-									}
-								},
-								{
-									"id": "wait",
-									"objectClass": "System",
-									"sid": 756102044501841,
-									"parameters": {
-										"seconds": "0.1"
-									}
-								},
-								{
-									"id": "set-animation-frame",
-									"objectClass": "Player",
-									"sid": 822068426244434,
-									"parameters": {
-										"frame-number": "0"
-									}
-								},
-								{
-									"id": "wait",
-									"objectClass": "System",
-									"sid": 292298102327208,
-									"parameters": {
-										"seconds": "0.5"
-									}
-								},
-								{
-									"id": "set-boolean-eventvar",
-									"objectClass": "System",
-									"sid": 358856672037804,
-									"parameters": {
-										"variable": "isPoisoned",
-										"value": "false"
-									}
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "every-x-seconds",
+											"objectClass": "System",
+											"sid": 822599591987117,
+											"parameters": {
+												"interval-seconds": "1.0"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "subtract-from-eventvar",
+											"objectClass": "System",
+											"sid": 153428062328344,
+											"parameters": {
+												"variable": "PlayerHealth",
+												"value": "1"
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 980495495802645,
+											"parameters": {
+												"seconds": "0.5"
+											}
+										}
+									],
+									"sid": 583259626561860
 								}
-							],
-							"sid": 839111890876475
+							]
 						},
 						{
 							"eventType": "block",
@@ -5761,6 +5145,31 @@
 								}
 							],
 							"sid": 160853680861360
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "every-x-seconds",
+									"objectClass": "System",
+									"sid": 685564414586431,
+									"parameters": {
+										"interval-seconds": "1.0"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-size",
+									"objectClass": "AcidArea",
+									"sid": 797299268518461,
+									"parameters": {
+										"width": "AcidArea.Width+1",
+										"height": "AcidArea.Height+1"
+									}
+								}
+							],
+							"sid": 436082378746957
 						}
 					],
 					"sid": 796081876847270
@@ -5995,126 +5404,6 @@
 									"parameters": {
 										"visibility": "visible"
 									}
-								},
-								{
-									"id": "set-animation-frame",
-									"objectClass": "Player",
-									"sid": 311189732117314,
-									"parameters": {
-										"frame-number": "1"
-									}
-								},
-								{
-									"id": "wait",
-									"objectClass": "System",
-									"sid": 405999911335041,
-									"parameters": {
-										"seconds": "0.1"
-									}
-								},
-								{
-									"id": "set-animation-frame",
-									"objectClass": "Player",
-									"sid": 697916929785349,
-									"parameters": {
-										"frame-number": "0"
-									}
-								},
-								{
-									"id": "wait",
-									"objectClass": "System",
-									"sid": 343451050036822,
-									"parameters": {
-										"seconds": "0.1"
-									}
-								},
-								{
-									"id": "set-animation-frame",
-									"objectClass": "Player",
-									"sid": 262281562418041,
-									"parameters": {
-										"frame-number": "1"
-									}
-								},
-								{
-									"id": "wait",
-									"objectClass": "System",
-									"sid": 742775850876458,
-									"parameters": {
-										"seconds": "0.1"
-									}
-								},
-								{
-									"id": "set-animation-frame",
-									"objectClass": "Player",
-									"sid": 377588377767974,
-									"parameters": {
-										"frame-number": "0"
-									}
-								},
-								{
-									"id": "wait",
-									"objectClass": "System",
-									"sid": 441381450020688,
-									"parameters": {
-										"seconds": "0.1"
-									}
-								},
-								{
-									"id": "set-animation-frame",
-									"objectClass": "Player",
-									"sid": 656317758276368,
-									"parameters": {
-										"frame-number": "1"
-									}
-								},
-								{
-									"id": "wait",
-									"objectClass": "System",
-									"sid": 308031907428300,
-									"parameters": {
-										"seconds": "0.1"
-									}
-								},
-								{
-									"id": "set-animation-frame",
-									"objectClass": "Player",
-									"sid": 151688724634642,
-									"parameters": {
-										"frame-number": "0"
-									}
-								},
-								{
-									"id": "wait",
-									"objectClass": "System",
-									"sid": 544348171295370,
-									"parameters": {
-										"seconds": "0.1"
-									}
-								},
-								{
-									"id": "set-animation-frame",
-									"objectClass": "Player",
-									"sid": 792887304041575,
-									"parameters": {
-										"frame-number": "1"
-									}
-								},
-								{
-									"id": "wait",
-									"objectClass": "System",
-									"sid": 151154783040487,
-									"parameters": {
-										"seconds": "0.1"
-									}
-								},
-								{
-									"id": "set-animation-frame",
-									"objectClass": "Player",
-									"sid": 350963727429577,
-									"parameters": {
-										"frame-number": "0"
-									}
 								}
 							],
 							"sid": 460537599159765
@@ -6167,7 +5456,7 @@
 								},
 								{
 									"id": "set-position-to-another-object",
-									"objectClass": "Sprite",
+									"objectClass": "Vignette",
 									"sid": 792900846317153,
 									"parameters": {
 										"object": "Player",
@@ -6176,7 +5465,7 @@
 								},
 								{
 									"id": "move-to-top",
-									"objectClass": "Sprite",
+									"objectClass": "Vignette",
 									"sid": 175742611587327
 								}
 							],
@@ -6202,126 +5491,6 @@
 									"parameters": {
 										"variable": "PlayerHealth",
 										"value": "1"
-									}
-								},
-								{
-									"id": "set-animation-frame",
-									"objectClass": "Player",
-									"sid": 932474857895855,
-									"parameters": {
-										"frame-number": "1"
-									}
-								},
-								{
-									"id": "wait",
-									"objectClass": "System",
-									"sid": 143910331099898,
-									"parameters": {
-										"seconds": "0.1"
-									}
-								},
-								{
-									"id": "set-animation-frame",
-									"objectClass": "Player",
-									"sid": 553146377736810,
-									"parameters": {
-										"frame-number": "0"
-									}
-								},
-								{
-									"id": "wait",
-									"objectClass": "System",
-									"sid": 695977440507194,
-									"parameters": {
-										"seconds": "0.1"
-									}
-								},
-								{
-									"id": "set-animation-frame",
-									"objectClass": "Player",
-									"sid": 487934597695141,
-									"parameters": {
-										"frame-number": "1"
-									}
-								},
-								{
-									"id": "wait",
-									"objectClass": "System",
-									"sid": 752327774301005,
-									"parameters": {
-										"seconds": "0.1"
-									}
-								},
-								{
-									"id": "set-animation-frame",
-									"objectClass": "Player",
-									"sid": 410997968529257,
-									"parameters": {
-										"frame-number": "0"
-									}
-								},
-								{
-									"id": "wait",
-									"objectClass": "System",
-									"sid": 385688522742636,
-									"parameters": {
-										"seconds": "0.1"
-									}
-								},
-								{
-									"id": "set-animation-frame",
-									"objectClass": "Player",
-									"sid": 905317740269925,
-									"parameters": {
-										"frame-number": "1"
-									}
-								},
-								{
-									"id": "wait",
-									"objectClass": "System",
-									"sid": 938328757330865,
-									"parameters": {
-										"seconds": "0.1"
-									}
-								},
-								{
-									"id": "set-animation-frame",
-									"objectClass": "Player",
-									"sid": 390424884639362,
-									"parameters": {
-										"frame-number": "0"
-									}
-								},
-								{
-									"id": "wait",
-									"objectClass": "System",
-									"sid": 196293094451174,
-									"parameters": {
-										"seconds": "0.1"
-									}
-								},
-								{
-									"id": "set-animation-frame",
-									"objectClass": "Player",
-									"sid": 339974774682023,
-									"parameters": {
-										"frame-number": "1"
-									}
-								},
-								{
-									"id": "wait",
-									"objectClass": "System",
-									"sid": 576940853998897,
-									"parameters": {
-										"seconds": "0.1"
-									}
-								},
-								{
-									"id": "set-animation-frame",
-									"objectClass": "Player",
-									"sid": 226123394551970,
-									"parameters": {
-										"frame-number": "0"
 									}
 								}
 							],
