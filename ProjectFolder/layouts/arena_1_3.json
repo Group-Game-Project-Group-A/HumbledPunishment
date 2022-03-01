@@ -19,6 +19,7 @@
 					"instanceVariables": {},
 					"behaviors": {
 						"8Direction": {
+<<<<<<< HEAD
 							"properties": {
 								"max-speed": 200,
 								"acceleration": 600,
@@ -88,10 +89,42 @@
 							"properties": {
 								"enabled": true,
 								"tags": ""
+=======
+							"properties": {
+								"max-speed": 200,
+								"acceleration": 600,
+								"deceleration": 500,
+								"directions": "dir-8",
+								"set-angle": "smooth",
+								"default-controls": false,
+								"enabled": true
+							}
+						},
+						"ScrollTo": {
+							"properties": {
+								"enabled": true
+							}
+						},
+						"BoundToLayout": {
+							"properties": {
+								"bound-by": "edge"
+							}
+						},
+						"Bullet": {
+							"properties": {
+								"speed": 400,
+								"acceleration": 0,
+								"gravity": 0,
+								"bounce-off-solids": false,
+								"set-angle": true,
+								"step": false,
+								"enabled": false
+>>>>>>> parent of c33351a (final Level Design)
 							}
 						}
 					},
 					"world": {
+<<<<<<< HEAD
 						"x": 0.844722274905223,
 						"y": 0.6558463041446316,
 						"width": 298.09445716789725,
@@ -178,6 +211,14 @@
 						"height": 213.55774465905358,
 						"originX": 0,
 						"originY": 0,
+=======
+						"x": 43.96767003350203,
+						"y": 58.84912682300947,
+						"width": 32,
+						"height": 32,
+						"originX": 0.5,
+						"originY": 0.5,
+>>>>>>> parent of c33351a (final Level Design)
 						"color": [
 							1,
 							1,
@@ -201,7 +242,11 @@
 						"image-scale-y": 1,
 						"image-angle": 0
 					},
+<<<<<<< HEAD
 					"uid": 409,
+=======
+					"uid": 406,
+>>>>>>> parent of c33351a (final Level Design)
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
@@ -212,9 +257,15 @@
 						}
 					},
 					"world": {
+<<<<<<< HEAD
 						"x": 0.3782148946955033,
 						"y": 183.52673934636064,
 						"width": 206.6590106467892,
+=======
+						"x": 0.844722274905223,
+						"y": 0.6558463041446316,
+						"width": 298.09445716789725,
+>>>>>>> parent of c33351a (final Level Design)
 						"height": 32.30997181907448,
 						"originX": 0,
 						"originY": 0,
@@ -241,7 +292,11 @@
 						"image-scale-y": 1,
 						"image-angle": 0
 					},
+<<<<<<< HEAD
 					"uid": 410,
+=======
+					"uid": 409,
+>>>>>>> parent of c33351a (final Level Design)
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
@@ -252,10 +307,17 @@
 						}
 					},
 					"world": {
+<<<<<<< HEAD
 						"x": 195.25299149138542,
 						"y": 182.23381721158282,
 						"width": 13,
 						"height": 355.8424956230226,
+=======
+						"x": 0.3782148946955033,
+						"y": 183.52673934636064,
+						"width": 206.6590106467892,
+						"height": 32.30997181907448,
+>>>>>>> parent of c33351a (final Level Design)
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -737,7 +799,11 @@
 						"image-scale-y": 1,
 						"image-angle": 0
 					},
+<<<<<<< HEAD
 					"uid": 423,
+=======
+					"uid": 424,
+>>>>>>> parent of c33351a (final Level Design)
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
@@ -748,48 +814,21 @@
 						}
 					},
 					"world": {
+<<<<<<< HEAD
 						"x": 1187,
 						"y": 330.1760561996722,
 						"width": 13,
 						"height": 305.46063823677696,
 						"originX": 0,
 						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Wall",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 424,
-					"instanceVariables": {},
-					"behaviors": {
-						"Solid": {
-							"properties": {
-								"enabled": true,
-								"tags": ""
-							}
-						}
-					},
-					"world": {
+=======
 						"x": 1108,
 						"y": 683,
 						"width": 32,
 						"height": 32,
 						"originX": 0.5,
 						"originY": 0.5,
+>>>>>>> parent of c33351a (final Level Design)
 						"color": [
 							1,
 							1,
@@ -820,8 +859,13 @@
 						}
 					},
 					"world": {
+<<<<<<< HEAD
+						"x": 1108,
+						"y": 683,
+=======
 						"x": 1140,
 						"y": 652,
+>>>>>>> parent of c33351a (final Level Design)
 						"width": 32,
 						"height": 32,
 						"originX": 0.5,
@@ -856,8 +900,13 @@
 						}
 					},
 					"world": {
+<<<<<<< HEAD
+						"x": 1140,
+						"y": 652,
+=======
 						"x": 1172,
 						"y": 620,
+>>>>>>> parent of c33351a (final Level Design)
 						"width": 32,
 						"height": 32,
 						"originX": 0.5,
@@ -892,8 +941,13 @@
 						}
 					},
 					"world": {
+<<<<<<< HEAD
+						"x": 1172,
+						"y": 620,
+=======
 						"x": 1108,
 						"y": 283,
+>>>>>>> parent of c33351a (final Level Design)
 						"width": 32,
 						"height": 32,
 						"originX": 0.5,
@@ -928,8 +982,13 @@
 						}
 					},
 					"world": {
+<<<<<<< HEAD
+						"x": 1108,
+						"y": 283,
+=======
 						"x": 1140,
 						"y": 315,
+>>>>>>> parent of c33351a (final Level Design)
 						"width": 32,
 						"height": 32,
 						"originX": 0.5,
@@ -964,8 +1023,13 @@
 						}
 					},
 					"world": {
+<<<<<<< HEAD
+						"x": 1140,
+						"y": 315,
+=======
 						"x": 1172,
 						"y": 347,
+>>>>>>> parent of c33351a (final Level Design)
 						"width": 32,
 						"height": 32,
 						"originX": 0.5,
@@ -981,247 +1045,11 @@
 					}
 				},
 				{
-					"type": "TiledBackground3",
-					"properties": {
-						"initially-visible": true,
-						"origin": "top-left",
-						"wrap-horizontal": "clamp-to-edge",
-						"wrap-vertical": "repeat",
-						"image-offset-x": 0,
-						"image-offset-y": 0,
-						"image-scale-x": 1,
-						"image-scale-y": 1,
-						"image-angle": 0
-					},
-					"uid": 430,
-					"instanceVariables": {},
-					"behaviors": {
-						"Solid": {
-							"properties": {
-								"enabled": true,
-								"tags": ""
-							}
-						}
-					},
-					"world": {
-						"x": 584.8181818181819,
-						"y": 299.2727272727273,
-						"width": 13,
-						"height": 35.26119390406103,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "TiledBackground3",
-					"properties": {
-						"initially-visible": true,
-						"origin": "top-left",
-						"wrap-horizontal": "clamp-to-edge",
-						"wrap-vertical": "repeat",
-						"image-offset-x": 0,
-						"image-offset-y": 0,
-						"image-scale-x": 1,
-						"image-scale-y": 1,
-						"image-angle": 0
-					},
-					"uid": 431,
-					"instanceVariables": {},
-					"behaviors": {
-						"Solid": {
-							"properties": {
-								"enabled": true,
-								"tags": ""
-							}
-						}
-					},
-					"world": {
-						"x": 615.7272727272729,
-						"y": 267.4545454545455,
-						"width": 13,
-						"height": 35.26119390406103,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "TiledBackground3",
-					"properties": {
-						"initially-visible": true,
-						"origin": "top-left",
-						"wrap-horizontal": "clamp-to-edge",
-						"wrap-vertical": "repeat",
-						"image-offset-x": 0,
-						"image-offset-y": 0,
-						"image-scale-x": 1,
-						"image-scale-y": 1,
-						"image-angle": 0
-					},
-					"uid": 432,
-					"instanceVariables": {},
-					"behaviors": {
-						"Solid": {
-							"properties": {
-								"enabled": true,
-								"tags": ""
-							}
-						}
-					},
-					"world": {
-						"x": 648.4545454545456,
-						"y": 234.7272727272727,
-						"width": 13,
-						"height": 35.26119390406103,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "TiledBackground3",
-					"properties": {
-						"initially-visible": true,
-						"origin": "top-left",
-						"wrap-horizontal": "clamp-to-edge",
-						"wrap-vertical": "repeat",
-						"image-offset-x": 0,
-						"image-offset-y": 0,
-						"image-scale-x": 1,
-						"image-scale-y": 1,
-						"image-angle": 0
-					},
-					"uid": 433,
-					"instanceVariables": {},
-					"behaviors": {
-						"Solid": {
-							"properties": {
-								"enabled": true,
-								"tags": ""
-							}
-						}
-					},
-					"world": {
-						"x": 1092.0909090909097,
-						"y": 234.7272727272727,
-						"width": 13,
-						"height": 35.26119390406103,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "TiledBackground3",
-					"properties": {
-						"initially-visible": true,
-						"origin": "top-left",
-						"wrap-horizontal": "clamp-to-edge",
-						"wrap-vertical": "repeat",
-						"image-offset-x": 0,
-						"image-offset-y": 0,
-						"image-scale-x": 1,
-						"image-scale-y": 1,
-						"image-angle": 0
-					},
-					"uid": 434,
-					"instanceVariables": {},
-					"behaviors": {
-						"Solid": {
-							"properties": {
-								"enabled": true,
-								"tags": ""
-							}
-						}
-					},
-					"world": {
-						"x": 1123.0000000000007,
-						"y": 267.4545454545455,
-						"width": 13,
-						"height": 35.26119390406103,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "TiledBackground3",
-					"properties": {
-						"initially-visible": true,
-						"origin": "top-left",
-						"wrap-horizontal": "clamp-to-edge",
-						"wrap-vertical": "repeat",
-						"image-offset-x": 0,
-						"image-offset-y": 0,
-						"image-scale-x": 1,
-						"image-scale-y": 1,
-						"image-angle": 0
-					},
-					"uid": 435,
-					"instanceVariables": {},
-					"behaviors": {
-						"Solid": {
-							"properties": {
-								"enabled": true,
-								"tags": ""
-							}
-						}
-					},
-					"world": {
-						"x": 1154.8181818181824,
-						"y": 300.18181818181824,
-						"width": 13,
-						"height": 35.26119390406103,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
+<<<<<<< HEAD
+					"type": "Wall",
+=======
 					"type": "Arrow",
+>>>>>>> parent of c33351a (final Level Design)
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Normal",
@@ -1229,6 +1057,17 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
+<<<<<<< HEAD
+					"uid": 429,
+					"instanceVariables": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+=======
 					"uid": 436,
 					"instanceVariables": {
 						"AttackPower": 1,
@@ -1307,7 +1146,7 @@
 					},
 					"uid": 438,
 					"instanceVariables": {
-						"FiringOrder": 0
+						"FiringOrder": 1
 					},
 					"behaviors": {},
 					"world": {
@@ -1328,6 +1167,1033 @@
 					}
 				},
 				{
+					"type": "ArrowLauncher",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 439,
+					"instanceVariables": {
+						"FiringOrder": 2
+>>>>>>> parent of c33351a (final Level Design)
+					},
+					"world": {
+<<<<<<< HEAD
+						"x": 1172,
+						"y": 347,
+=======
+						"x": 710.4569501927939,
+						"y": 269.86602952083894,
+>>>>>>> parent of c33351a (final Level Design)
+						"width": 32,
+						"height": 32,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "TiledBackground3",
+					"properties": {
+						"initially-visible": true,
+						"origin": "top-left",
+						"wrap-horizontal": "clamp-to-edge",
+						"wrap-vertical": "repeat",
+						"image-offset-x": 0,
+						"image-offset-y": 0,
+						"image-scale-x": 1,
+						"image-scale-y": 1,
+						"image-angle": 0
+					},
+<<<<<<< HEAD
+					"uid": 430,
+					"instanceVariables": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+=======
+					"uid": 440,
+					"instanceVariables": {
+						"FiringOrder": 6
+>>>>>>> parent of c33351a (final Level Design)
+					},
+					"world": {
+<<<<<<< HEAD
+						"x": 584.8181818181819,
+						"y": 299.2727272727273,
+						"width": 13,
+						"height": 35.26119390406103,
+						"originX": 0,
+						"originY": 0,
+=======
+						"x": 1074.7992141365967,
+						"y": 271.2655516614681,
+						"width": 32,
+						"height": 32,
+						"originX": 0.5,
+						"originY": 1,
+>>>>>>> parent of c33351a (final Level Design)
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "TiledBackground3",
+					"properties": {
+						"initially-visible": true,
+<<<<<<< HEAD
+						"origin": "top-left",
+						"wrap-horizontal": "clamp-to-edge",
+						"wrap-vertical": "repeat",
+						"image-offset-x": 0,
+						"image-offset-y": 0,
+						"image-scale-x": 1,
+						"image-scale-y": 1,
+						"image-angle": 0
+					},
+					"uid": 431,
+					"instanceVariables": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
+					"world": {
+						"x": 615.7272727272729,
+						"y": 267.4545454545455,
+						"width": 13,
+						"height": 35.26119390406103,
+						"originX": 0,
+						"originY": 0,
+=======
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 441,
+					"instanceVariables": {
+						"FiringOrder": 5
+					},
+					"behaviors": {},
+					"world": {
+						"x": 1042.1436975219153,
+						"y": 271.2655516614681,
+						"width": 32,
+						"height": 32,
+						"originX": 0.5,
+						"originY": 1,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "ArrowLauncher",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 442,
+					"instanceVariables": {
+						"FiringOrder": 7
+					},
+					"behaviors": {},
+					"world": {
+						"x": 1139.6437399857498,
+						"y": 337.97610703146023,
+						"width": 32,
+						"height": 32,
+						"originX": 0.5,
+						"originY": 1,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "ArrowLauncher",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 443,
+					"instanceVariables": {
+						"FiringOrder": 3
+					},
+					"behaviors": {},
+					"world": {
+						"x": 807.9569926566284,
+						"y": 269.86602952083894,
+						"width": 32,
+						"height": 32,
+						"originX": 0.5,
+						"originY": 1,
+>>>>>>> parent of c33351a (final Level Design)
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+<<<<<<< HEAD
+					"type": "TiledBackground3",
+					"properties": {
+						"initially-visible": true,
+						"origin": "top-left",
+						"wrap-horizontal": "clamp-to-edge",
+						"wrap-vertical": "repeat",
+						"image-offset-x": 0,
+						"image-offset-y": 0,
+						"image-scale-x": 1,
+						"image-scale-y": 1,
+						"image-angle": 0
+					},
+					"uid": 432,
+					"instanceVariables": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+=======
+					"type": "ArrowLauncher",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 444,
+					"instanceVariables": {
+						"FiringOrder": 4
+>>>>>>> parent of c33351a (final Level Design)
+					},
+					"behaviors": {},
+					"world": {
+<<<<<<< HEAD
+						"x": 648.4545454545456,
+						"y": 234.7272727272727,
+						"width": 13,
+						"height": 35.26119390406103,
+						"originX": 0,
+						"originY": 0,
+=======
+						"x": 933.9139853132567,
+						"y": 269.86602952083894,
+						"width": 32,
+						"height": 32,
+						"originX": 0.5,
+						"originY": 1,
+>>>>>>> parent of c33351a (final Level Design)
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+<<<<<<< HEAD
+					"type": "TiledBackground3",
+					"properties": {
+						"initially-visible": true,
+						"origin": "top-left",
+						"wrap-horizontal": "clamp-to-edge",
+						"wrap-vertical": "repeat",
+						"image-offset-x": 0,
+						"image-offset-y": 0,
+						"image-scale-x": 1,
+						"image-scale-y": 1,
+						"image-angle": 0
+					},
+					"uid": 433,
+					"instanceVariables": {},
+=======
+					"type": "EnemyArrows",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Normal",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 447,
+					"instanceVariables": {
+						"AttackPower": 0,
+						"EnemiesItCanHit": 1,
+						"ChargedAttackPower": 0
+					},
+>>>>>>> parent of c33351a (final Level Design)
+					"behaviors": {
+						"Bullet": {
+							"properties": {
+<<<<<<< HEAD
+								"enabled": true,
+								"tags": ""
+=======
+								"speed": 300,
+								"acceleration": 0,
+								"gravity": 0,
+								"bounce-off-solids": false,
+								"set-angle": true,
+								"step": false,
+								"enabled": true
+>>>>>>> parent of c33351a (final Level Design)
+							}
+						}
+					},
+					"world": {
+<<<<<<< HEAD
+						"x": 1092.0909090909097,
+						"y": 234.7272727272727,
+						"width": 13,
+						"height": 35.26119390406103,
+=======
+						"x": 930,
+						"y": -298,
+						"width": 32,
+						"height": 6,
+>>>>>>> parent of c33351a (final Level Design)
+						"originX": 0,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+<<<<<<< HEAD
+					"type": "TiledBackground3",
+					"properties": {
+						"initially-visible": true,
+						"origin": "top-left",
+						"wrap-horizontal": "clamp-to-edge",
+						"wrap-vertical": "repeat",
+						"image-offset-x": 0,
+						"image-offset-y": 0,
+						"image-scale-x": 1,
+						"image-scale-y": 1,
+						"image-angle": 0
+					},
+					"uid": 434,
+					"instanceVariables": {},
+=======
+					"type": "Melee_Enemy_Minor",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Normal",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 446,
+					"instanceVariables": {
+						"Health": 10,
+						"Burning": false,
+						"Paralyzed": false,
+						"Frozen": false,
+						"StartPosX": 0,
+						"StartPosY": 0,
+						"StartHealth": 0
+					},
+>>>>>>> parent of c33351a (final Level Design)
+					"behaviors": {
+						"MoveTo": {
+							"properties": {
+								"max-speed": 150,
+								"acceleration": 600,
+								"deceleration": 600,
+								"rotate-speed": 0,
+								"set-angle": true,
+								"stop-on-solids": false,
+								"enabled": true
+							}
+						},
+						"LineOfSight": {
+							"properties": {
+								"obstacles": "custom",
+								"range": 300,
+								"cone-of-view": 360,
+								"use-collision-cells": true
+							}
+						},
+						"Solid": {
+							"properties": {
+								"enabled": true,
+<<<<<<< HEAD
+								"tags": ""
+=======
+								"tags": "Enemy"
+							}
+						},
+						"Bullet": {
+							"properties": {
+								"speed": 0,
+								"acceleration": 0,
+								"gravity": 0,
+								"bounce-off-solids": true,
+								"set-angle": false,
+								"step": false,
+								"enabled": true
+>>>>>>> parent of c33351a (final Level Design)
+							}
+						}
+					},
+					"world": {
+<<<<<<< HEAD
+						"x": 1123.0000000000007,
+						"y": 267.4545454545455,
+						"width": 13,
+						"height": 35.26119390406103,
+						"originX": 0,
+						"originY": 0,
+=======
+						"x": 716,
+						"y": 351,
+						"width": 32,
+						"height": 32,
+						"originX": 0.5,
+						"originY": 0.5,
+>>>>>>> parent of c33351a (final Level Design)
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+<<<<<<< HEAD
+					"type": "TiledBackground3",
+					"properties": {
+						"initially-visible": true,
+						"origin": "top-left",
+						"wrap-horizontal": "clamp-to-edge",
+						"wrap-vertical": "repeat",
+						"image-offset-x": 0,
+						"image-offset-y": 0,
+						"image-scale-x": 1,
+						"image-scale-y": 1,
+						"image-angle": 0
+					},
+					"uid": 435,
+					"instanceVariables": {},
+=======
+					"type": "Melee_Enemy_Minor",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Normal",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 448,
+					"instanceVariables": {
+						"Health": 10,
+						"Burning": false,
+						"Paralyzed": false,
+						"Frozen": false,
+						"StartPosX": 0,
+						"StartPosY": 0,
+						"StartHealth": 0
+					},
+>>>>>>> parent of c33351a (final Level Design)
+					"behaviors": {
+						"MoveTo": {
+							"properties": {
+								"max-speed": 150,
+								"acceleration": 600,
+								"deceleration": 600,
+								"rotate-speed": 0,
+								"set-angle": true,
+								"stop-on-solids": false,
+								"enabled": true
+							}
+						},
+						"LineOfSight": {
+							"properties": {
+								"obstacles": "custom",
+								"range": 300,
+								"cone-of-view": 360,
+								"use-collision-cells": true
+							}
+						},
+						"Solid": {
+							"properties": {
+								"enabled": true,
+<<<<<<< HEAD
+								"tags": ""
+=======
+								"tags": "Enemy"
+							}
+						},
+						"Bullet": {
+							"properties": {
+								"speed": 0,
+								"acceleration": 0,
+								"gravity": 0,
+								"bounce-off-solids": true,
+								"set-angle": false,
+								"step": false,
+								"enabled": true
+>>>>>>> parent of c33351a (final Level Design)
+							}
+						}
+					},
+					"world": {
+<<<<<<< HEAD
+						"x": 1154.8181818181824,
+						"y": 300.18181818181824,
+						"width": 13,
+						"height": 35.26119390406103,
+						"originX": 0,
+						"originY": 0,
+=======
+						"x": 734,
+						"y": 651,
+						"width": 32,
+						"height": 32,
+						"originX": 0.5,
+						"originY": 0.5,
+>>>>>>> parent of c33351a (final Level Design)
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+<<<<<<< HEAD
+					"type": "Arrow",
+=======
+					"type": "Melee_Enemy_Minor",
+>>>>>>> parent of c33351a (final Level Design)
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Normal",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+<<<<<<< HEAD
+					"uid": 436,
+					"instanceVariables": {
+						"AttackPower": 1,
+						"EnemiesItCanHit": 1,
+						"ChargedAttackPower": 2
+					},
+=======
+					"uid": 449,
+					"instanceVariables": {
+						"Health": 10,
+						"Burning": false,
+						"Paralyzed": false,
+						"Frozen": false,
+						"StartPosX": 0,
+						"StartPosY": 0,
+						"StartHealth": 0
+					},
+					"behaviors": {
+						"MoveTo": {
+							"properties": {
+								"max-speed": 150,
+								"acceleration": 600,
+								"deceleration": 600,
+								"rotate-speed": 0,
+								"set-angle": true,
+								"stop-on-solids": false,
+								"enabled": true
+							}
+						},
+						"LineOfSight": {
+							"properties": {
+								"obstacles": "custom",
+								"range": 300,
+								"cone-of-view": 360,
+								"use-collision-cells": true
+							}
+						},
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": "Enemy"
+							}
+						},
+						"Bullet": {
+							"properties": {
+								"speed": 0,
+								"acceleration": 0,
+								"gravity": 0,
+								"bounce-off-solids": true,
+								"set-angle": false,
+								"step": false,
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": 1045.2396694214876,
+						"y": 598.1074380165289,
+						"width": 32,
+						"height": 32,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Melee_Enemy_Minor",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Normal",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 451,
+					"instanceVariables": {
+						"Health": 10,
+						"Burning": false,
+						"Paralyzed": false,
+						"Frozen": false,
+						"StartPosX": 0,
+						"StartPosY": 0,
+						"StartHealth": 0
+					},
+					"behaviors": {
+						"MoveTo": {
+							"properties": {
+								"max-speed": 150,
+								"acceleration": 600,
+								"deceleration": 600,
+								"rotate-speed": 0,
+								"set-angle": true,
+								"stop-on-solids": false,
+								"enabled": true
+							}
+						},
+						"LineOfSight": {
+							"properties": {
+								"obstacles": "custom",
+								"range": 300,
+								"cone-of-view": 360,
+								"use-collision-cells": true
+							}
+						},
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": "Enemy"
+							}
+						},
+						"Bullet": {
+							"properties": {
+								"speed": 0,
+								"acceleration": 0,
+								"gravity": 0,
+								"bounce-off-solids": true,
+								"set-angle": false,
+								"step": false,
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": 1042.504132231405,
+						"y": 365.85950413223134,
+						"width": 32,
+						"height": 32,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Melee_Enemy_Minor",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Normal",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 454,
+					"instanceVariables": {
+						"Health": 10,
+						"Burning": false,
+						"Paralyzed": false,
+						"Frozen": false,
+						"StartPosX": 0,
+						"StartPosY": 0,
+						"StartHealth": 0
+					},
+					"behaviors": {
+						"MoveTo": {
+							"properties": {
+								"max-speed": 150,
+								"acceleration": 600,
+								"deceleration": 600,
+								"rotate-speed": 0,
+								"set-angle": true,
+								"stop-on-solids": false,
+								"enabled": true
+							}
+						},
+						"LineOfSight": {
+							"properties": {
+								"obstacles": "custom",
+								"range": 300,
+								"cone-of-view": 360,
+								"use-collision-cells": true
+							}
+						},
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": "Enemy"
+							}
+						},
+						"Bullet": {
+							"properties": {
+								"speed": 0,
+								"acceleration": 0,
+								"gravity": 0,
+								"bounce-off-solids": true,
+								"set-angle": false,
+								"step": false,
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": 890.1570247933886,
+						"y": 474.71900826446273,
+						"width": 32,
+						"height": 32,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "DoorCloser",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 404,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 605,
+						"y": 481.22036415594846,
+						"width": 15,
+						"height": 310.45353909558696,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Doors",
+					"properties": {
+						"initially-visible": false,
+						"origin": "top-left",
+						"wrap-horizontal": "repeat",
+						"wrap-vertical": "repeat",
+						"image-offset-x": 0,
+						"image-offset-y": 0,
+						"image-scale-x": 1,
+						"image-scale-y": 1,
+						"image-angle": 0
+					},
+					"uid": 352,
+					"instanceVariables": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": false,
+								"tags": ""
+							}
+						}
+					},
+					"world": {
+						"x": 553.0709771742006,
+						"y": 426.44035618308953,
+						"width": 13,
+						"height": 113.61511020973364,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Doors",
+					"properties": {
+						"initially-visible": false,
+						"origin": "top-left",
+						"wrap-horizontal": "repeat",
+						"wrap-vertical": "repeat",
+						"image-offset-x": 0,
+						"image-offset-y": 0,
+						"image-scale-x": 1,
+						"image-scale-y": 1,
+						"image-angle": 0
+					},
+					"uid": 585,
+					"instanceVariables": {},
+>>>>>>> parent of c33351a (final Level Design)
+					"behaviors": {
+						"Bullet": {
+							"properties": {
+								"speed": 300,
+								"acceleration": 0,
+								"gravity": 0,
+								"bounce-off-solids": false,
+								"set-angle": true,
+								"step": false,
+								"enabled": false
+							}
+						}
+					},
+					"world": {
+<<<<<<< HEAD
+						"x": 167.78770904689713,
+						"y": -342.343481359815,
+						"width": 32,
+						"height": 6,
+=======
+						"x": 542.0709771742006,
+						"y": 426.44035618308953,
+						"width": 13,
+						"height": 113.61511020973364,
+>>>>>>> parent of c33351a (final Level Design)
+						"originX": 0,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "ArrowLauncher",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+<<<<<<< HEAD
+					"uid": 437,
+					"instanceVariables": {
+						"FiringOrder": 0
+=======
+					"uid": 586,
+					"instanceVariables": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": false,
+								"tags": ""
+							}
+						}
+>>>>>>> parent of c33351a (final Level Design)
+					},
+					"behaviors": {},
+					"world": {
+<<<<<<< HEAD
+						"x": 612.9569077289593,
+						"y": 332.8445258491531,
+						"width": 32,
+						"height": 32,
+						"originX": 0.5,
+						"originY": 1,
+=======
+						"x": 531.0709771742006,
+						"y": 426.44035618308953,
+						"width": 13,
+						"height": 113.61511020973364,
+						"originX": 0,
+						"originY": 0,
+>>>>>>> parent of c33351a (final Level Design)
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+<<<<<<< HEAD
+					"type": "ArrowLauncher",
+=======
+					"type": "Doors",
+>>>>>>> parent of c33351a (final Level Design)
+					"properties": {
+						"initially-visible": false,
+						"origin": "top-left",
+						"wrap-horizontal": "repeat",
+						"wrap-vertical": "repeat",
+						"image-offset-x": 0,
+						"image-offset-y": 0,
+						"image-scale-x": 1,
+						"image-scale-y": 1,
+						"image-angle": 0
+					},
+<<<<<<< HEAD
+					"uid": 438,
+					"instanceVariables": {
+						"FiringOrder": 0
+					},
+					"behaviors": {},
+					"world": {
+						"x": 677.8014335781124,
+						"y": 269.86602952083894,
+						"width": 32,
+						"height": 32,
+						"originX": 0.5,
+						"originY": 1,
+=======
+					"uid": 587,
+					"instanceVariables": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": false,
+								"tags": ""
+							}
+						}
+					},
+					"world": {
+						"x": 520.0709771742006,
+						"y": 426.44035618308953,
+						"width": 13,
+						"height": 113.61511020973364,
+						"originX": 0,
+						"originY": 0,
+>>>>>>> parent of c33351a (final Level Design)
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+<<<<<<< HEAD
 					"type": "ArrowLauncher",
 					"properties": {
 						"initially-visible": true,
@@ -1611,6 +2477,37 @@
 						"height": 6,
 						"originX": 0,
 						"originY": 0.5,
+=======
+					"type": "Doors",
+					"properties": {
+						"initially-visible": false,
+						"origin": "top-left",
+						"wrap-horizontal": "repeat",
+						"wrap-vertical": "repeat",
+						"image-offset-x": 0,
+						"image-offset-y": 0,
+						"image-scale-x": 1,
+						"image-scale-y": 1,
+						"image-angle": 0
+					},
+					"uid": 588,
+					"instanceVariables": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": false,
+								"tags": ""
+							}
+						}
+					},
+					"world": {
+						"x": 510.0709771742006,
+						"y": 426.44035618308953,
+						"width": 13,
+						"height": 113.61511020973364,
+						"originX": 0,
+						"originY": 0,
+>>>>>>> parent of c33351a (final Level Design)
 						"color": [
 							1,
 							1,
@@ -1622,6 +2519,7 @@
 					}
 				},
 				{
+<<<<<<< HEAD
 					"type": "Melee_Enemy_Minor",
 					"properties": {
 						"initially-visible": true,
@@ -1640,6 +2538,22 @@
 						"StartPosY": 0,
 						"StartHealth": 0
 					},
+=======
+					"type": "Doors",
+					"properties": {
+						"initially-visible": false,
+						"origin": "top-left",
+						"wrap-horizontal": "repeat",
+						"wrap-vertical": "repeat",
+						"image-offset-x": 0,
+						"image-offset-y": 0,
+						"image-scale-x": 1,
+						"image-scale-y": 1,
+						"image-angle": 0
+					},
+					"uid": 589,
+					"instanceVariables": {},
+>>>>>>> parent of c33351a (final Level Design)
 					"behaviors": {
 						"MoveTo": {
 							"properties": {
@@ -1662,18 +2576,27 @@
 						},
 						"Solid": {
 							"properties": {
-								"enabled": true,
+								"enabled": false,
 								"tags": ""
 							}
 						}
 					},
 					"world": {
+<<<<<<< HEAD
 						"x": 734,
 						"y": 651,
 						"width": 32,
 						"height": 32,
 						"originX": 0.5,
 						"originY": 0.5,
+=======
+						"x": 499.0709771742006,
+						"y": 426.44035618308953,
+						"width": 13,
+						"height": 113.61511020973364,
+						"originX": 0,
+						"originY": 0,
+>>>>>>> parent of c33351a (final Level Design)
 						"color": [
 							1,
 							1,
@@ -1685,6 +2608,7 @@
 					}
 				},
 				{
+<<<<<<< HEAD
 					"type": "Melee_Enemy_Minor",
 					"properties": {
 						"initially-visible": true,
@@ -1703,6 +2627,22 @@
 						"StartPosY": 0,
 						"StartHealth": 0
 					},
+=======
+					"type": "Doors",
+					"properties": {
+						"initially-visible": false,
+						"origin": "top-left",
+						"wrap-horizontal": "repeat",
+						"wrap-vertical": "repeat",
+						"image-offset-x": 0,
+						"image-offset-y": 0,
+						"image-scale-x": 1,
+						"image-scale-y": 1,
+						"image-angle": 0
+					},
+					"uid": 590,
+					"instanceVariables": {},
+>>>>>>> parent of c33351a (final Level Design)
 					"behaviors": {
 						"MoveTo": {
 							"properties": {
@@ -1725,18 +2665,27 @@
 						},
 						"Solid": {
 							"properties": {
-								"enabled": true,
+								"enabled": false,
 								"tags": ""
 							}
 						}
 					},
 					"world": {
+<<<<<<< HEAD
 						"x": 1045.2396694214876,
 						"y": 598.1074380165289,
 						"width": 32,
 						"height": 32,
 						"originX": 0.5,
 						"originY": 0.5,
+=======
+						"x": 488.0709771742006,
+						"y": 426.44035618308953,
+						"width": 13,
+						"height": 113.61511020973364,
+						"originX": 0,
+						"originY": 0,
+>>>>>>> parent of c33351a (final Level Design)
 						"color": [
 							1,
 							1,
@@ -1748,6 +2697,7 @@
 					}
 				},
 				{
+<<<<<<< HEAD
 					"type": "Melee_Enemy_Minor",
 					"properties": {
 						"initially-visible": true,
@@ -1766,6 +2716,22 @@
 						"StartPosY": 0,
 						"StartHealth": 0
 					},
+=======
+					"type": "Doors",
+					"properties": {
+						"initially-visible": false,
+						"origin": "top-left",
+						"wrap-horizontal": "repeat",
+						"wrap-vertical": "repeat",
+						"image-offset-x": 0,
+						"image-offset-y": 0,
+						"image-scale-x": 1,
+						"image-scale-y": 1,
+						"image-angle": 0
+					},
+					"uid": 591,
+					"instanceVariables": {},
+>>>>>>> parent of c33351a (final Level Design)
 					"behaviors": {
 						"MoveTo": {
 							"properties": {
@@ -1788,12 +2754,13 @@
 						},
 						"Solid": {
 							"properties": {
-								"enabled": true,
+								"enabled": false,
 								"tags": ""
 							}
 						}
 					},
 					"world": {
+<<<<<<< HEAD
 						"x": 1042.504132231405,
 						"y": 365.85950413223134,
 						"width": 32,
@@ -2206,12 +3173,15 @@
 						}
 					},
 					"world": {
+=======
+>>>>>>> parent of c33351a (final Level Design)
 						"x": 477.0709771742006,
 						"y": 426.44035618308953,
 						"width": 13,
 						"height": 113.61511020973364,
 						"originX": 0,
 						"originY": 0,
+<<<<<<< HEAD
 						"color": [
 							1,
 							1,
@@ -2932,6 +3902,8 @@
 						"height": 236.80931220199145,
 						"originX": 0,
 						"originY": 0,
+=======
+>>>>>>> parent of c33351a (final Level Design)
 						"color": [
 							1,
 							1,
@@ -2998,8 +3970,13 @@
 					"world": {
 						"x": 865.3300579480886,
 						"y": 648.0095724310759,
+<<<<<<< HEAD
 						"width": 41.054662379421224,
 						"height": 40,
+=======
+						"width": 32,
+						"height": 32,
+>>>>>>> parent of c33351a (final Level Design)
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -3068,8 +4045,13 @@
 					"world": {
 						"x": 866.1565042290803,
 						"y": 319.9103988773562,
+<<<<<<< HEAD
 						"width": 41.054662379421224,
 						"height": 40,
+=======
+						"width": 32,
+						"height": 32,
+>>>>>>> parent of c33351a (final Level Design)
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -3138,8 +4120,13 @@
 					"world": {
 						"x": 1135.5779918323865,
 						"y": 471.97651457983585,
+<<<<<<< HEAD
 						"width": 41.054662379421224,
 						"height": 40,
+=======
+						"width": 32,
+						"height": 32,
+>>>>>>> parent of c33351a (final Level Design)
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
