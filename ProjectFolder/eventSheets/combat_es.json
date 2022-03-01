@@ -205,6 +205,126 @@
 									"id": "destroy",
 									"objectClass": "HealthPickups",
 									"sid": 295844449009507
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "Player",
+									"sid": 606499027161510,
+									"parameters": {
+										"frame-number": "1"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 193334283842895,
+									"parameters": {
+										"seconds": "0.1"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "Player",
+									"sid": 403024034882526,
+									"parameters": {
+										"frame-number": "0"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 744693745036293,
+									"parameters": {
+										"seconds": "0.1"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "Player",
+									"sid": 963644735017904,
+									"parameters": {
+										"frame-number": "1"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 989552515025904,
+									"parameters": {
+										"seconds": "0.1"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "Player",
+									"sid": 721785170233897,
+									"parameters": {
+										"frame-number": "0"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 190051168411315,
+									"parameters": {
+										"seconds": "0.1"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "Player",
+									"sid": 877939178921570,
+									"parameters": {
+										"frame-number": "1"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 421731695686943,
+									"parameters": {
+										"seconds": "0.1"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "Player",
+									"sid": 982270184351252,
+									"parameters": {
+										"frame-number": "0"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 967553764656754,
+									"parameters": {
+										"seconds": "0.1"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "Player",
+									"sid": 966916450620790,
+									"parameters": {
+										"frame-number": "1"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 346385635909599,
+									"parameters": {
+										"seconds": "0.1"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "Player",
+									"sid": 355682085228703,
+									"parameters": {
+										"frame-number": "0"
+									}
 								}
 							],
 							"sid": 530465646510311
@@ -279,6 +399,126 @@
 									"parameters": {
 										"instance-variable": "Health",
 										"value": "Arrow.AttackPower"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "Enemies",
+									"sid": 101442955407538,
+									"parameters": {
+										"frame-number": "1"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 739606717298184,
+									"parameters": {
+										"seconds": "0.1"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "Enemies",
+									"sid": 388420807573617,
+									"parameters": {
+										"frame-number": "0"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 320726545449315,
+									"parameters": {
+										"seconds": "0.1"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "Enemies",
+									"sid": 785194222893886,
+									"parameters": {
+										"frame-number": "1"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 730990116401403,
+									"parameters": {
+										"seconds": "0.1"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "Enemies",
+									"sid": 302474332812869,
+									"parameters": {
+										"frame-number": "0"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 361406444833592,
+									"parameters": {
+										"seconds": "0.1"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "Enemies",
+									"sid": 356409016455035,
+									"parameters": {
+										"frame-number": "1"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 359715648872264,
+									"parameters": {
+										"seconds": "0.1"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "Enemies",
+									"sid": 837017615058028,
+									"parameters": {
+										"frame-number": "0"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 871910996690111,
+									"parameters": {
+										"seconds": "0.1"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "Enemies",
+									"sid": 966874826919189,
+									"parameters": {
+										"frame-number": "1"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 592786268487251,
+									"parameters": {
+										"seconds": "0.1"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "Enemies",
+									"sid": 699660580461131,
+									"parameters": {
+										"frame-number": "0"
 									}
 								}
 							],
@@ -584,6 +824,126 @@
 							"id": "destroy",
 							"objectClass": "EnemyArrows",
 							"sid": 480263598012900
+						},
+						{
+							"id": "set-animation-frame",
+							"objectClass": "Player",
+							"sid": 536427680775223,
+							"parameters": {
+								"frame-number": "1"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 470322628952678,
+							"parameters": {
+								"seconds": "0.1"
+							}
+						},
+						{
+							"id": "set-animation-frame",
+							"objectClass": "Player",
+							"sid": 172054759798725,
+							"parameters": {
+								"frame-number": "0"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 770313389851793,
+							"parameters": {
+								"seconds": "0.1"
+							}
+						},
+						{
+							"id": "set-animation-frame",
+							"objectClass": "Player",
+							"sid": 457509308379817,
+							"parameters": {
+								"frame-number": "1"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 290065355333479,
+							"parameters": {
+								"seconds": "0.1"
+							}
+						},
+						{
+							"id": "set-animation-frame",
+							"objectClass": "Player",
+							"sid": 396154659039979,
+							"parameters": {
+								"frame-number": "0"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 473073829896229,
+							"parameters": {
+								"seconds": "0.1"
+							}
+						},
+						{
+							"id": "set-animation-frame",
+							"objectClass": "Player",
+							"sid": 172939031655760,
+							"parameters": {
+								"frame-number": "1"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 971635812167327,
+							"parameters": {
+								"seconds": "0.1"
+							}
+						},
+						{
+							"id": "set-animation-frame",
+							"objectClass": "Player",
+							"sid": 584505479495754,
+							"parameters": {
+								"frame-number": "0"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 986273501240213,
+							"parameters": {
+								"seconds": "0.1"
+							}
+						},
+						{
+							"id": "set-animation-frame",
+							"objectClass": "Player",
+							"sid": 167554851715754,
+							"parameters": {
+								"frame-number": "1"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 258538150590606,
+							"parameters": {
+								"seconds": "0.1"
+							}
+						},
+						{
+							"id": "set-animation-frame",
+							"objectClass": "Player",
+							"sid": 692473221187213,
+							"parameters": {
+								"frame-number": "0"
+							}
 						}
 					],
 					"sid": 807235261596449
@@ -3642,6 +4002,126 @@
 											"parameters": {
 												"speed": "0"
 											}
+										},
+										{
+											"id": "set-animation-frame",
+											"objectClass": "Player",
+											"sid": 474753397216147,
+											"parameters": {
+												"frame-number": "1"
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 114453639998024,
+											"parameters": {
+												"seconds": "0.1"
+											}
+										},
+										{
+											"id": "set-animation-frame",
+											"objectClass": "Player",
+											"sid": 575008850076350,
+											"parameters": {
+												"frame-number": "0"
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 105498939282803,
+											"parameters": {
+												"seconds": "0.1"
+											}
+										},
+										{
+											"id": "set-animation-frame",
+											"objectClass": "Player",
+											"sid": 242379382860221,
+											"parameters": {
+												"frame-number": "1"
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 905302360810408,
+											"parameters": {
+												"seconds": "0.1"
+											}
+										},
+										{
+											"id": "set-animation-frame",
+											"objectClass": "Player",
+											"sid": 575007759636210,
+											"parameters": {
+												"frame-number": "0"
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 690993789186768,
+											"parameters": {
+												"seconds": "0.1"
+											}
+										},
+										{
+											"id": "set-animation-frame",
+											"objectClass": "Player",
+											"sid": 727826033704402,
+											"parameters": {
+												"frame-number": "1"
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 204870691545857,
+											"parameters": {
+												"seconds": "0.1"
+											}
+										},
+										{
+											"id": "set-animation-frame",
+											"objectClass": "Player",
+											"sid": 264427161544624,
+											"parameters": {
+												"frame-number": "0"
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 647620036518301,
+											"parameters": {
+												"seconds": "0.1"
+											}
+										},
+										{
+											"id": "set-animation-frame",
+											"objectClass": "Player",
+											"sid": 551346750527284,
+											"parameters": {
+												"frame-number": "1"
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 868534094123598,
+											"parameters": {
+												"seconds": "0.1"
+											}
+										},
+										{
+											"id": "set-animation-frame",
+											"objectClass": "Player",
+											"sid": 744705097748866,
+											"parameters": {
+												"frame-number": "0"
+											}
 										}
 									],
 									"sid": 864916221087725
@@ -4803,6 +5283,126 @@
 										"variable": "PlayerHealth",
 										"value": "1"
 									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "Player",
+									"sid": 433212192029069,
+									"parameters": {
+										"frame-number": "1"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 171581144113768,
+									"parameters": {
+										"seconds": "0.1"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "Player",
+									"sid": 380560741951608,
+									"parameters": {
+										"frame-number": "0"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 116002432889062,
+									"parameters": {
+										"seconds": "0.1"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "Player",
+									"sid": 878788765925614,
+									"parameters": {
+										"frame-number": "1"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 658771994636316,
+									"parameters": {
+										"seconds": "0.1"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "Player",
+									"sid": 275100857760340,
+									"parameters": {
+										"frame-number": "0"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 797320180132901,
+									"parameters": {
+										"seconds": "0.1"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "Player",
+									"sid": 316492841862544,
+									"parameters": {
+										"frame-number": "1"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 677985843826409,
+									"parameters": {
+										"seconds": "0.1"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "Player",
+									"sid": 653714171368731,
+									"parameters": {
+										"frame-number": "0"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 176883831441841,
+									"parameters": {
+										"seconds": "0.1"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "Player",
+									"sid": 191232571075063,
+									"parameters": {
+										"frame-number": "1"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 918906333588238,
+									"parameters": {
+										"seconds": "0.1"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "Player",
+									"sid": 303925237524686,
+									"parameters": {
+										"frame-number": "0"
+									}
 								}
 							],
 							"sid": 197359431068452,
@@ -5119,6 +5719,126 @@
 											"parameters": {
 												"seconds": "0.5"
 											}
+										},
+										{
+											"id": "set-animation-frame",
+											"objectClass": "Player",
+											"sid": 923566211352280,
+											"parameters": {
+												"frame-number": "1"
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 230272091453309,
+											"parameters": {
+												"seconds": "0.1"
+											}
+										},
+										{
+											"id": "set-animation-frame",
+											"objectClass": "Player",
+											"sid": 497434929643289,
+											"parameters": {
+												"frame-number": "0"
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 557826843348102,
+											"parameters": {
+												"seconds": "0.1"
+											}
+										},
+										{
+											"id": "set-animation-frame",
+											"objectClass": "Player",
+											"sid": 486091203595062,
+											"parameters": {
+												"frame-number": "1"
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 737884308442596,
+											"parameters": {
+												"seconds": "0.1"
+											}
+										},
+										{
+											"id": "set-animation-frame",
+											"objectClass": "Player",
+											"sid": 840925802782422,
+											"parameters": {
+												"frame-number": "0"
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 488759729172897,
+											"parameters": {
+												"seconds": "0.1"
+											}
+										},
+										{
+											"id": "set-animation-frame",
+											"objectClass": "Player",
+											"sid": 523557717500383,
+											"parameters": {
+												"frame-number": "1"
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 317149453478347,
+											"parameters": {
+												"seconds": "0.1"
+											}
+										},
+										{
+											"id": "set-animation-frame",
+											"objectClass": "Player",
+											"sid": 499131302762667,
+											"parameters": {
+												"frame-number": "0"
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 916574511100976,
+											"parameters": {
+												"seconds": "0.1"
+											}
+										},
+										{
+											"id": "set-animation-frame",
+											"objectClass": "Player",
+											"sid": 681029854666225,
+											"parameters": {
+												"frame-number": "1"
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 214117819954878,
+											"parameters": {
+												"seconds": "0.1"
+											}
+										},
+										{
+											"id": "set-animation-frame",
+											"objectClass": "Player",
+											"sid": 517528995127394,
+											"parameters": {
+												"frame-number": "0"
+											}
 										}
 									],
 									"sid": 583259626561860
@@ -5404,6 +6124,126 @@
 									"parameters": {
 										"visibility": "visible"
 									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "Player",
+									"sid": 671932803908421,
+									"parameters": {
+										"frame-number": "1"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 438251723218402,
+									"parameters": {
+										"seconds": "0.1"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "Player",
+									"sid": 850962532050101,
+									"parameters": {
+										"frame-number": "0"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 997217491336625,
+									"parameters": {
+										"seconds": "0.1"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "Player",
+									"sid": 249535556316897,
+									"parameters": {
+										"frame-number": "1"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 143597302335478,
+									"parameters": {
+										"seconds": "0.1"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "Player",
+									"sid": 619994129031290,
+									"parameters": {
+										"frame-number": "0"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 547338199788384,
+									"parameters": {
+										"seconds": "0.1"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "Player",
+									"sid": 492657281812365,
+									"parameters": {
+										"frame-number": "1"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 768645300353564,
+									"parameters": {
+										"seconds": "0.1"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "Player",
+									"sid": 396280901803146,
+									"parameters": {
+										"frame-number": "0"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 932393653424974,
+									"parameters": {
+										"seconds": "0.1"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "Player",
+									"sid": 923867611104704,
+									"parameters": {
+										"frame-number": "1"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 314057434607435,
+									"parameters": {
+										"seconds": "0.1"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "Player",
+									"sid": 268172679090742,
+									"parameters": {
+										"frame-number": "0"
+									}
 								}
 							],
 							"sid": 460537599159765
@@ -5491,6 +6331,126 @@
 									"parameters": {
 										"variable": "PlayerHealth",
 										"value": "1"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "Player",
+									"sid": 383803135895657,
+									"parameters": {
+										"frame-number": "1"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 283721432311043,
+									"parameters": {
+										"seconds": "0.1"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "Player",
+									"sid": 589261906279478,
+									"parameters": {
+										"frame-number": "0"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 616805482337634,
+									"parameters": {
+										"seconds": "0.1"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "Player",
+									"sid": 106552909669184,
+									"parameters": {
+										"frame-number": "1"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 988335662874654,
+									"parameters": {
+										"seconds": "0.1"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "Player",
+									"sid": 243103099956741,
+									"parameters": {
+										"frame-number": "0"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 979962447294231,
+									"parameters": {
+										"seconds": "0.1"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "Player",
+									"sid": 511258589004619,
+									"parameters": {
+										"frame-number": "1"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 970170947262173,
+									"parameters": {
+										"seconds": "0.1"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "Player",
+									"sid": 401336211334075,
+									"parameters": {
+										"frame-number": "0"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 410327238369767,
+									"parameters": {
+										"seconds": "0.1"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "Player",
+									"sid": 425260259875428,
+									"parameters": {
+										"frame-number": "1"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 820468362829559,
+									"parameters": {
+										"seconds": "0.1"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "Player",
+									"sid": 989819576367821,
+									"parameters": {
+										"frame-number": "0"
 									}
 								}
 							],
