@@ -64,6 +64,22 @@
 		},
 		{
 			"type": "behavior",
+			"id": "Anchor",
+			"name": "Anchor",
+			"author": "Scirra",
+			"version": "r285",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Persist",
+			"name": "Persist",
+			"author": "Scirra",
+			"version": "r285",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
 			"id": "solid",
 			"name": "Solid",
 			"author": "Scirra",
@@ -236,7 +252,11 @@
 			},
 			{
 				"items": [
-					"Health_Text"
+					"Health_Text",
+					"HP_UI",
+					"HP_Green",
+					"Health_TextShadow",
+					"HP_BlackBG"
 				],
 				"subfolders": [],
 				"name": "UI"

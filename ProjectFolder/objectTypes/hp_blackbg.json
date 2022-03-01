@@ -1,0 +1,68 @@
+{
+	"name": "HP_BlackBG",
+	"plugin-id": "Sprite",
+	"sid": 952909332649507,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Anchor",
+			"name": "Anchor",
+			"sid": 231495317974722
+		},
+		{
+			"behaviorId": "Persist",
+			"name": "Persist",
+			"sid": 583539517532268
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 1132,
+						"height": 326,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 1754855,
+						"collisionPoly": {
+							"points": [
+								0.04240282685512368,
+								0.147239263803681,
+								0.5,
+								0.07668711656441718,
+								0.9982332155477032,
+								0.003067484662576687,
+								0.9876325088339223,
+								0.5,
+								0.9779151943462897,
+								0.9233128834355828,
+								0.5,
+								0.9386503067484663,
+								0.07685512367491167,
+								0.7300613496932515,
+								0.045936395759717315,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 225676345748918,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

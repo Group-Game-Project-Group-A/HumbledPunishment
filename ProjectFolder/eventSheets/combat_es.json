@@ -202,6 +202,23 @@
 									}
 								},
 								{
+									"id": "set-width",
+									"objectClass": "HP_Green",
+									"sid": 405904137628042,
+									"parameters": {
+										"width": "(PlayerHealth/PlayerMaxHealth) * 238"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "HP_Green",
+									"sid": 918401283925115,
+									"parameters": {
+										"x": "136 + ((PlayerHealth/PlayerMaxHealth) * 136)",
+										"y": "HP_Green.Y"
+									}
+								},
+								{
 									"id": "destroy",
 									"objectClass": "HealthPickups",
 									"sid": 295844449009507
@@ -289,39 +306,7 @@
 								{
 									"id": "set-animation-frame",
 									"objectClass": "Player",
-									"sid": 982270184351252,
-									"parameters": {
-										"frame-number": "0"
-									}
-								},
-								{
-									"id": "wait",
-									"objectClass": "System",
-									"sid": 967553764656754,
-									"parameters": {
-										"seconds": "0.1"
-									}
-								},
-								{
-									"id": "set-animation-frame",
-									"objectClass": "Player",
-									"sid": 966916450620790,
-									"parameters": {
-										"frame-number": "1"
-									}
-								},
-								{
-									"id": "wait",
-									"objectClass": "System",
-									"sid": 346385635909599,
-									"parameters": {
-										"seconds": "0.1"
-									}
-								},
-								{
-									"id": "set-animation-frame",
-									"objectClass": "Player",
-									"sid": 355682085228703,
+									"sid": 540192060261335,
 									"parameters": {
 										"frame-number": "0"
 									}
@@ -485,38 +470,6 @@
 									"id": "set-animation-frame",
 									"objectClass": "Enemies",
 									"sid": 837017615058028,
-									"parameters": {
-										"frame-number": "0"
-									}
-								},
-								{
-									"id": "wait",
-									"objectClass": "System",
-									"sid": 871910996690111,
-									"parameters": {
-										"seconds": "0.1"
-									}
-								},
-								{
-									"id": "set-animation-frame",
-									"objectClass": "Enemies",
-									"sid": 966874826919189,
-									"parameters": {
-										"frame-number": "1"
-									}
-								},
-								{
-									"id": "wait",
-									"objectClass": "System",
-									"sid": 592786268487251,
-									"parameters": {
-										"seconds": "0.1"
-									}
-								},
-								{
-									"id": "set-animation-frame",
-									"objectClass": "Enemies",
-									"sid": 699660580461131,
 									"parameters": {
 										"frame-number": "0"
 									}
@@ -821,9 +774,37 @@
 							}
 						},
 						{
+							"id": "set-width",
+							"objectClass": "HP_Green",
+							"sid": 259534737789509,
+							"parameters": {
+								"width": "(PlayerHealth/PlayerMaxHealth) * 238"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "HP_Green",
+							"sid": 635447787923674,
+							"parameters": {
+								"x": "136 - ((PlayerHealth/PlayerMaxHealth) * 136)",
+								"y": "HP_Green.Y"
+							}
+						},
+						{
 							"id": "destroy",
 							"objectClass": "EnemyArrows",
 							"sid": 480263598012900
+						},
+						{
+							"id": "shake",
+							"objectClass": "Player",
+							"sid": 922428166280249,
+							"behaviorType": "ScrollTo",
+							"parameters": {
+								"magnitude": "10",
+								"duration": "0.3",
+								"mode": "reducing-magnitude"
+							}
 						},
 						{
 							"id": "set-animation-frame",
@@ -909,38 +890,6 @@
 							"id": "set-animation-frame",
 							"objectClass": "Player",
 							"sid": 584505479495754,
-							"parameters": {
-								"frame-number": "0"
-							}
-						},
-						{
-							"id": "wait",
-							"objectClass": "System",
-							"sid": 986273501240213,
-							"parameters": {
-								"seconds": "0.1"
-							}
-						},
-						{
-							"id": "set-animation-frame",
-							"objectClass": "Player",
-							"sid": 167554851715754,
-							"parameters": {
-								"frame-number": "1"
-							}
-						},
-						{
-							"id": "wait",
-							"objectClass": "System",
-							"sid": 258538150590606,
-							"parameters": {
-								"seconds": "0.1"
-							}
-						},
-						{
-							"id": "set-animation-frame",
-							"objectClass": "Player",
-							"sid": 692473221187213,
 							"parameters": {
 								"frame-number": "0"
 							}
@@ -3489,9 +3438,17 @@
 						{
 							"id": "set-text",
 							"objectClass": "Health_Text",
-							"sid": 351527581957768,
+							"sid": 523853625202749,
 							"parameters": {
-								"text": "\"Health: \"&PlayerHealth&\"/\"& PlayerMaxHealth"
+								"text": "PlayerHealth"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "Health_TextShadow",
+							"sid": 876185697255523,
+							"parameters": {
+								"text": "PlayerHealth"
 							}
 						}
 					],
@@ -3550,6 +3507,58 @@
 						}
 					],
 					"sid": 187586539003536
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 269311554646804,
+							"parameters": {
+								"variable": "PlayerHealth",
+								"comparison": 3,
+								"value": "9"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-font-color",
+							"objectClass": "Health_Text",
+							"sid": 797402305904042,
+							"parameters": {
+								"color": "rgbEx(225, 45, 45)"
+							}
+						}
+					],
+					"sid": 599079007140902
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 947492900548917,
+							"parameters": {
+								"variable": "PlayerHealth",
+								"comparison": 5,
+								"value": "10"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-font-color",
+							"objectClass": "Health_Text",
+							"sid": 218102154901150,
+							"parameters": {
+								"color": "rgbEx(225, 255, 255)"
+							}
+						}
+					],
+					"sid": 334919262340930
 				}
 			],
 			"sid": 315092312897719
@@ -3969,6 +3978,34 @@
 											}
 										},
 										{
+											"id": "set-width",
+											"objectClass": "HP_Green",
+											"sid": 267465723752437,
+											"parameters": {
+												"width": "(PlayerHealth/PlayerMaxHealth) * 238"
+											}
+										},
+										{
+											"id": "set-position",
+											"objectClass": "HP_Green",
+											"sid": 379490228705133,
+											"parameters": {
+												"x": "136 - ((PlayerHealth/PlayerMaxHealth) * 136)",
+												"y": "HP_Green.Y"
+											}
+										},
+										{
+											"id": "shake",
+											"objectClass": "Player",
+											"sid": 165421572330711,
+											"behaviorType": "ScrollTo",
+											"parameters": {
+												"magnitude": "10",
+												"duration": "0.3",
+												"mode": "reducing-magnitude"
+											}
+										},
+										{
 											"id": "set-speed",
 											"objectClass": "Player",
 											"sid": 695354573306270,
@@ -4087,38 +4124,6 @@
 											"id": "set-animation-frame",
 											"objectClass": "Player",
 											"sid": 264427161544624,
-											"parameters": {
-												"frame-number": "0"
-											}
-										},
-										{
-											"id": "wait",
-											"objectClass": "System",
-											"sid": 647620036518301,
-											"parameters": {
-												"seconds": "0.1"
-											}
-										},
-										{
-											"id": "set-animation-frame",
-											"objectClass": "Player",
-											"sid": 551346750527284,
-											"parameters": {
-												"frame-number": "1"
-											}
-										},
-										{
-											"id": "wait",
-											"objectClass": "System",
-											"sid": 868534094123598,
-											"parameters": {
-												"seconds": "0.1"
-											}
-										},
-										{
-											"id": "set-animation-frame",
-											"objectClass": "Player",
-											"sid": 744705097748866,
 											"parameters": {
 												"frame-number": "0"
 											}
@@ -5285,11 +5290,39 @@
 									}
 								},
 								{
+									"id": "set-width",
+									"objectClass": "HP_Green",
+									"sid": 685748240876566,
+									"parameters": {
+										"width": "(PlayerHealth/PlayerMaxHealth) * 238"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "HP_Green",
+									"sid": 176425882053813,
+									"parameters": {
+										"x": "136 - ((PlayerHealth/PlayerMaxHealth) * 136)",
+										"y": "HP_Green.Y"
+									}
+								},
+								{
 									"id": "set-animation-frame",
 									"objectClass": "Player",
 									"sid": 433212192029069,
 									"parameters": {
 										"frame-number": "1"
+									}
+								},
+								{
+									"id": "shake",
+									"objectClass": "Player",
+									"sid": 940442011238200,
+									"behaviorType": "ScrollTo",
+									"parameters": {
+										"magnitude": "10",
+										"duration": "0.3",
+										"mode": "reducing-magnitude"
 									}
 								},
 								{
@@ -5368,38 +5401,6 @@
 									"id": "set-animation-frame",
 									"objectClass": "Player",
 									"sid": 653714171368731,
-									"parameters": {
-										"frame-number": "0"
-									}
-								},
-								{
-									"id": "wait",
-									"objectClass": "System",
-									"sid": 176883831441841,
-									"parameters": {
-										"seconds": "0.1"
-									}
-								},
-								{
-									"id": "set-animation-frame",
-									"objectClass": "Player",
-									"sid": 191232571075063,
-									"parameters": {
-										"frame-number": "1"
-									}
-								},
-								{
-									"id": "wait",
-									"objectClass": "System",
-									"sid": 918906333588238,
-									"parameters": {
-										"seconds": "0.1"
-									}
-								},
-								{
-									"id": "set-animation-frame",
-									"objectClass": "Player",
-									"sid": 303925237524686,
 									"parameters": {
 										"frame-number": "0"
 									}
@@ -5565,6 +5566,23 @@
 												"variable": "PlayerHealth",
 												"value": "0.5"
 											}
+										},
+										{
+											"id": "set-width",
+											"objectClass": "HP_Green",
+											"sid": 521582640059270,
+											"parameters": {
+												"width": "(PlayerHealth/PlayerMaxHealth) * 238"
+											}
+										},
+										{
+											"id": "set-position",
+											"objectClass": "HP_Green",
+											"sid": 885263504063912,
+											"parameters": {
+												"x": "136 - ((PlayerHealth/PlayerMaxHealth) * 136)",
+												"y": "HP_Green.Y"
+											}
 										}
 									],
 									"sid": 830341738021443
@@ -5713,6 +5731,34 @@
 											}
 										},
 										{
+											"id": "set-width",
+											"objectClass": "HP_Green",
+											"sid": 157393874599583,
+											"parameters": {
+												"width": "(PlayerHealth/PlayerMaxHealth) * 238"
+											}
+										},
+										{
+											"id": "set-position",
+											"objectClass": "HP_Green",
+											"sid": 362007496469024,
+											"parameters": {
+												"x": "136 - ((PlayerHealth/PlayerMaxHealth) * 136)",
+												"y": "HP_Green.Y"
+											}
+										},
+										{
+											"id": "shake",
+											"objectClass": "Player",
+											"sid": 770137901861012,
+											"behaviorType": "ScrollTo",
+											"parameters": {
+												"magnitude": "10",
+												"duration": "0.3",
+												"mode": "reducing-magnitude"
+											}
+										},
+										{
 											"id": "wait",
 											"objectClass": "System",
 											"sid": 980495495802645,
@@ -5804,38 +5850,6 @@
 											"id": "set-animation-frame",
 											"objectClass": "Player",
 											"sid": 499131302762667,
-											"parameters": {
-												"frame-number": "0"
-											}
-										},
-										{
-											"id": "wait",
-											"objectClass": "System",
-											"sid": 916574511100976,
-											"parameters": {
-												"seconds": "0.1"
-											}
-										},
-										{
-											"id": "set-animation-frame",
-											"objectClass": "Player",
-											"sid": 681029854666225,
-											"parameters": {
-												"frame-number": "1"
-											}
-										},
-										{
-											"id": "wait",
-											"objectClass": "System",
-											"sid": 214117819954878,
-											"parameters": {
-												"seconds": "0.1"
-											}
-										},
-										{
-											"id": "set-animation-frame",
-											"objectClass": "Player",
-											"sid": 517528995127394,
 											"parameters": {
 												"frame-number": "0"
 											}
@@ -6113,6 +6127,23 @@
 									}
 								},
 								{
+									"id": "set-width",
+									"objectClass": "HP_Green",
+									"sid": 287900316679366,
+									"parameters": {
+										"width": "(PlayerHealth/PlayerMaxHealth) * 238"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "HP_Green",
+									"sid": 476018470673937,
+									"parameters": {
+										"x": "136 - ((PlayerHealth/PlayerMaxHealth) * 136)",
+										"y": "HP_Green.Y"
+									}
+								},
+								{
 									"id": "destroy",
 									"objectClass": "Bobmelee",
 									"sid": 533496080023407
@@ -6123,6 +6154,17 @@
 									"sid": 415511247343915,
 									"parameters": {
 										"visibility": "visible"
+									}
+								},
+								{
+									"id": "shake",
+									"objectClass": "Player",
+									"sid": 974533095977560,
+									"behaviorType": "ScrollTo",
+									"parameters": {
+										"magnitude": "10",
+										"duration": "0.3",
+										"mode": "reducing-magnitude"
 									}
 								},
 								{
@@ -6209,38 +6251,6 @@
 									"id": "set-animation-frame",
 									"objectClass": "Player",
 									"sid": 396280901803146,
-									"parameters": {
-										"frame-number": "0"
-									}
-								},
-								{
-									"id": "wait",
-									"objectClass": "System",
-									"sid": 932393653424974,
-									"parameters": {
-										"seconds": "0.1"
-									}
-								},
-								{
-									"id": "set-animation-frame",
-									"objectClass": "Player",
-									"sid": 923867611104704,
-									"parameters": {
-										"frame-number": "1"
-									}
-								},
-								{
-									"id": "wait",
-									"objectClass": "System",
-									"sid": 314057434607435,
-									"parameters": {
-										"seconds": "0.1"
-									}
-								},
-								{
-									"id": "set-animation-frame",
-									"objectClass": "Player",
-									"sid": 268172679090742,
 									"parameters": {
 										"frame-number": "0"
 									}
@@ -6334,6 +6344,34 @@
 									}
 								},
 								{
+									"id": "set-width",
+									"objectClass": "HP_Green",
+									"sid": 285214866563074,
+									"parameters": {
+										"width": "(PlayerHealth/PlayerMaxHealth) * 238"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "HP_Green",
+									"sid": 590932565569537,
+									"parameters": {
+										"x": "136 - ((PlayerHealth/PlayerMaxHealth) * 136)",
+										"y": "HP_Green.Y"
+									}
+								},
+								{
+									"id": "shake",
+									"objectClass": "Player",
+									"sid": 762282988421686,
+									"behaviorType": "ScrollTo",
+									"parameters": {
+										"magnitude": "10",
+										"duration": "0.3",
+										"mode": "reducing-magnitude"
+									}
+								},
+								{
 									"id": "set-animation-frame",
 									"objectClass": "Player",
 									"sid": 383803135895657,
@@ -6417,38 +6455,6 @@
 									"id": "set-animation-frame",
 									"objectClass": "Player",
 									"sid": 401336211334075,
-									"parameters": {
-										"frame-number": "0"
-									}
-								},
-								{
-									"id": "wait",
-									"objectClass": "System",
-									"sid": 410327238369767,
-									"parameters": {
-										"seconds": "0.1"
-									}
-								},
-								{
-									"id": "set-animation-frame",
-									"objectClass": "Player",
-									"sid": 425260259875428,
-									"parameters": {
-										"frame-number": "1"
-									}
-								},
-								{
-									"id": "wait",
-									"objectClass": "System",
-									"sid": 820468362829559,
-									"parameters": {
-										"seconds": "0.1"
-									}
-								},
-								{
-									"id": "set-animation-frame",
-									"objectClass": "Player",
-									"sid": 989819576367821,
 									"parameters": {
 										"frame-number": "0"
 									}
