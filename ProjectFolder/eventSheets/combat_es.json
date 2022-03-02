@@ -137,6 +137,26 @@
 		},
 		{
 			"eventType": "variable",
+			"name": "OrcBossPresent",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 224708504484266
+		},
+		{
+			"eventType": "variable",
+			"name": "BobPresent",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 204489728652082
+		},
+		{
+			"eventType": "variable",
 			"name": "Dash",
 			"type": "boolean",
 			"initialValue": "false",
@@ -242,10 +262,10 @@
 								{
 									"id": "set-position",
 									"objectClass": "HP_Green",
-									"sid": 918401283925115,
+									"sid": 655963345580519,
 									"disabled": true,
 									"parameters": {
-										"x": "136 + ((PlayerHealth/PlayerMaxHealth) * 136)",
+										"x": "48 + ((PlayerHealth/PlayerMaxHealth) * 48)",
 										"y": "HP_Green.Y"
 									}
 								},
@@ -840,10 +860,10 @@
 						{
 							"id": "set-position",
 							"objectClass": "HP_Green",
-							"sid": 635447787923674,
+							"sid": 576608744508143,
 							"disabled": true,
 							"parameters": {
-								"x": "136 - ((PlayerHealth/PlayerMaxHealth) * 136)",
+								"x": "48 - ((PlayerHealth/PlayerMaxHealth) * 48)",
 								"y": "HP_Green.Y"
 							}
 						},
@@ -851,6 +871,17 @@
 							"id": "destroy",
 							"objectClass": "EnemyArrows",
 							"sid": 480263598012900
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 683170838837409,
+							"parameters": {
+								"audio-file": "Player Hurt Play at -5 DB",
+								"loop": "not-looping",
+								"volume": "-5",
+								"tag-optional": "\"\""
+							}
 						},
 						{
 							"id": "shake",
@@ -1347,6 +1378,17 @@
 									],
 									"actions": [
 										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 579794795408043,
+											"parameters": {
+												"audio-file": "Arrow Shooting Sound Play at -5 DB",
+												"loop": "not-looping",
+												"volume": "-5",
+												"tag-optional": "\"\""
+											}
+										},
+										{
 											"id": "spawn-another-object",
 											"objectClass": "Player",
 											"sid": 942105392774244,
@@ -1425,7 +1467,19 @@
 											"isInverted": true
 										}
 									],
-									"actions": [],
+									"actions": [
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 941505606443392,
+											"parameters": {
+												"audio-file": "Arrow Shooting Sound Play at -5 DB",
+												"loop": "not-looping",
+												"volume": "-5",
+												"tag-optional": "\"\""
+											}
+										}
+									],
 									"sid": 143069810325141,
 									"children": [
 										{
@@ -1755,6 +1809,17 @@
 											"parameters": {
 												"state": "enabled"
 											}
+										},
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 813570843041704,
+											"parameters": {
+												"audio-file": "Arrow Shooting Sound Play at -5 DB",
+												"loop": "not-looping",
+												"volume": "-5",
+												"tag-optional": "\"\""
+											}
 										}
 									],
 									"sid": 445919929229937,
@@ -2044,6 +2109,17 @@
 											"behaviorType": "8Direction",
 											"parameters": {
 												"state": "enabled"
+											}
+										},
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 306830931982281,
+											"parameters": {
+												"audio-file": "Arrow Shooting Sound Play at -5 DB",
+												"loop": "not-looping",
+												"volume": "-5",
+												"tag-optional": "\"\""
 											}
 										}
 									],
@@ -3515,6 +3591,15 @@
 												"variable": "ChargedShot"
 											},
 											"isInverted": true
+										},
+										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 434508271744785,
+											"parameters": {
+												"variable": "isPaused"
+											},
+											"isInverted": true
 										}
 									],
 									"actions": [
@@ -3546,6 +3631,17 @@
 												"width": "32",
 												"height": "6"
 											}
+										},
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 380056475204431,
+											"parameters": {
+												"audio-file": "Arrow Shooting Sound Play at -5 DB",
+												"loop": "not-looping",
+												"volume": "-5",
+												"tag-optional": "\"\""
+											}
 										}
 									],
 									"sid": 418451668442817
@@ -3568,17 +3664,17 @@
 						{
 							"id": "set-text",
 							"objectClass": "Health_Text",
-							"sid": 523853625202749,
+							"sid": 233245567462002,
 							"parameters": {
-								"text": "PlayerHealth"
+								"text": "round(PlayerHealth)"
 							}
 						},
 						{
 							"id": "set-text",
 							"objectClass": "Health_TextShadow",
-							"sid": 876185697255523,
+							"sid": 262988593958984,
 							"parameters": {
-								"text": "PlayerHealth"
+								"text": "round(PlayerHealth)"
 							}
 						},
 						{
@@ -3867,6 +3963,24 @@
 								"variable": "EnemyCount",
 								"value": "Enemies.Count"
 							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 513050469892092,
+							"parameters": {
+								"variable": "BobPresent",
+								"value": "Bob.Count"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 223147197744535,
+							"parameters": {
+								"variable": "OrcBossPresent",
+								"value": "OrcBoss.Count"
+							}
 						}
 					],
 					"sid": 290728631739627,
@@ -4116,10 +4230,10 @@
 										{
 											"id": "set-position",
 											"objectClass": "HP_Green",
-											"sid": 379490228705133,
+											"sid": 834004708353989,
 											"disabled": true,
 											"parameters": {
-												"x": "136 - ((PlayerHealth/PlayerMaxHealth) * 136)",
+												"x": "48 - ((PlayerHealth/PlayerMaxHealth) * 48)",
 												"y": "HP_Green.Y"
 											}
 										},
@@ -4150,6 +4264,17 @@
 											"behaviorType": "Bullet",
 											"parameters": {
 												"angle": "angle(Enemies.X, Enemies.Y, Self.X, Self.Y)"
+											}
+										},
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 343427818716159,
+											"parameters": {
+												"audio-file": "Player Hurt Play at -5 DB",
+												"loop": "not-looping",
+												"volume": "-5",
+												"tag-optional": "\"\""
 											}
 										},
 										{
@@ -4982,8 +5107,8 @@
 							"conditions": [
 								{
 									"id": "is-boolean-instance-variable-set",
-									"objectClass": "Melee_Enemy_Minor",
-									"sid": 268204349413834,
+									"objectClass": "OrcBoss",
+									"sid": 204861425513415,
 									"parameters": {
 										"instance-variable": "Burning"
 									}
@@ -5007,8 +5132,8 @@
 									"actions": [
 										{
 											"id": "subtract-from-instvar",
-											"objectClass": "Melee_Enemy_Minor",
-											"sid": 515726628100316,
+											"objectClass": "OrcBoss",
+											"sid": 607953389784982,
 											"parameters": {
 												"instance-variable": "Health",
 												"value": "1"
@@ -5016,8 +5141,8 @@
 										},
 										{
 											"id": "set-animation",
-											"objectClass": "Melee_Enemy_Minor",
-											"sid": 543386381787539,
+											"objectClass": "OrcBoss",
+											"sid": 976688168005216,
 											"parameters": {
 												"animation": "\"Burning\"",
 												"from": "beginning"
@@ -5033,8 +5158,8 @@
 										},
 										{
 											"id": "set-animation",
-											"objectClass": "Melee_Enemy_Minor",
-											"sid": 122717436343183,
+											"objectClass": "OrcBoss",
+											"sid": 309096482510080,
 											"parameters": {
 												"animation": "\"Normal\"",
 												"from": "beginning"
@@ -5044,152 +5169,6 @@
 									"sid": 209460218751104
 								}
 							]
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "is-boolean-instance-variable-set",
-									"objectClass": "Melee_Enemy_Minor",
-									"sid": 925616626499328,
-									"parameters": {
-										"instance-variable": "Frozen"
-									}
-								}
-							],
-							"actions": [],
-							"sid": 593051678909188,
-							"children": [
-								{
-									"eventType": "block",
-									"conditions": [],
-									"actions": [
-										{
-											"id": "set-max-speed",
-											"objectClass": "Melee_Enemy_Minor",
-											"sid": 239372416800977,
-											"behaviorType": "MoveTo",
-											"parameters": {
-												"max-speed": "75"
-											}
-										},
-										{
-											"id": "set-animation",
-											"objectClass": "Melee_Enemy_Minor",
-											"sid": 348221394052105,
-											"parameters": {
-												"animation": "\"Frozen\"",
-												"from": "beginning"
-											}
-										},
-										{
-											"id": "wait",
-											"objectClass": "System",
-											"sid": 464824600140448,
-											"parameters": {
-												"seconds": "5.0"
-											}
-										},
-										{
-											"id": "set-max-speed",
-											"objectClass": "Melee_Enemy_Minor",
-											"sid": 256469872494174,
-											"behaviorType": "MoveTo",
-											"parameters": {
-												"max-speed": "150"
-											}
-										},
-										{
-											"id": "set-animation",
-											"objectClass": "Melee_Enemy_Minor",
-											"sid": 315790023320778,
-											"parameters": {
-												"animation": "\"Normal\"",
-												"from": "beginning"
-											}
-										},
-										{
-											"id": "set-boolean-instvar",
-											"objectClass": "Melee_Enemy_Minor",
-											"sid": 450607717188366,
-											"parameters": {
-												"instance-variable": "Frozen",
-												"value": "false"
-											}
-										}
-									],
-									"sid": 312494914325841
-								}
-							]
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "is-boolean-instance-variable-set",
-									"objectClass": "Melee_Enemy_Minor",
-									"sid": 377826973598190,
-									"parameters": {
-										"instance-variable": "Paralyzed"
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "set-max-speed",
-									"objectClass": "Melee_Enemy_Minor",
-									"sid": 251395748556410,
-									"behaviorType": "MoveTo",
-									"parameters": {
-										"max-speed": "0"
-									}
-								},
-								{
-									"id": "set-animation",
-									"objectClass": "Melee_Enemy_Minor",
-									"sid": 825810163316575,
-									"parameters": {
-										"animation": "\"Paralyzed\"",
-										"from": "beginning"
-									}
-								},
-								{
-									"id": "wait",
-									"objectClass": "System",
-									"sid": 514473080570281,
-									"parameters": {
-										"seconds": "5.0"
-									}
-								},
-								{
-									"id": "set-max-speed",
-									"objectClass": "Melee_Enemy_Minor",
-									"sid": 859208153278785,
-									"behaviorType": "MoveTo",
-									"parameters": {
-										"max-speed": "150"
-									}
-								},
-								{
-									"id": "set-animation",
-									"objectClass": "Melee_Enemy_Minor",
-									"sid": 351957316598234,
-									"parameters": {
-										"animation": "\"Normal\"",
-										"from": "beginning"
-									}
-								},
-								{
-									"id": "set-boolean-instvar",
-									"objectClass": "Melee_Enemy_Minor",
-									"sid": 447018095952099,
-									"parameters": {
-										"instance-variable": "Paralyzed",
-										"value": "false"
-									}
-								}
-							],
-							"sid": 542772811689045
 						},
 						{
 							"eventType": "block",
@@ -5419,19 +5398,31 @@
 									}
 								},
 								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 359284502343384,
+									"parameters": {
+										"audio-file": "Player Hurt Play at -5 DB",
+										"loop": "not-looping",
+										"volume": "-5",
+										"tag-optional": "\"\""
+									}
+								},
+								{
 									"id": "set-width",
 									"objectClass": "HP_Green",
-									"sid": 685748240876566,
+									"sid": 284440506544281,
 									"parameters": {
-										"width": "(PlayerHealth/PlayerMaxHealth) * 238"
+										"width": "(PlayerHealth/PlayerMaxHealth) * 96"
 									}
 								},
 								{
 									"id": "set-position",
 									"objectClass": "HP_Green",
-									"sid": 176425882053813,
+									"sid": 686897038419907,
+									"disabled": true,
 									"parameters": {
-										"x": "136 - ((PlayerHealth/PlayerMaxHealth) * 136)",
+										"x": "48 - ((PlayerHealth/PlayerMaxHealth) * 48)",
 										"y": "HP_Green.Y"
 									}
 								},
@@ -5699,15 +5690,16 @@
 										{
 											"id": "set-width",
 											"objectClass": "HP_Green",
-											"sid": 521582640059270,
+											"sid": 166527940502948,
 											"parameters": {
-												"width": "(PlayerHealth/PlayerMaxHealth) * 238"
+												"width": "(PlayerHealth/PlayerMaxHealth) * 96"
 											}
 										},
 										{
 											"id": "set-position",
 											"objectClass": "HP_Green",
 											"sid": 885263504063912,
+											"disabled": true,
 											"parameters": {
 												"x": "136 - ((PlayerHealth/PlayerMaxHealth) * 136)",
 												"y": "HP_Green.Y"
@@ -5746,6 +5738,26 @@
 									"parameters": {
 										"where": "behind",
 										"object": "Player"
+									}
+								},
+								{
+									"id": "move-to-object",
+									"objectClass": "AcidArea",
+									"sid": 874245288363370,
+									"parameters": {
+										"where": "behind",
+										"object": "OrcBoss"
+									}
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 275308334441512,
+									"parameters": {
+										"audio-file": "Flask Explosion Play at -5 DB",
+										"loop": "not-looping",
+										"volume": "-5",
+										"tag-optional": "\"\""
 									}
 								}
 							],
@@ -5862,15 +5874,16 @@
 										{
 											"id": "set-width",
 											"objectClass": "HP_Green",
-											"sid": 157393874599583,
+											"sid": 661208583886025,
 											"parameters": {
-												"width": "(PlayerHealth/PlayerMaxHealth) * 238"
+												"width": "(PlayerHealth/PlayerMaxHealth) * 96"
 											}
 										},
 										{
 											"id": "set-position",
 											"objectClass": "HP_Green",
 											"sid": 362007496469024,
+											"disabled": true,
 											"parameters": {
 												"x": "136 - ((PlayerHealth/PlayerMaxHealth) * 136)",
 												"y": "HP_Green.Y"
@@ -6033,6 +6046,59 @@
 								}
 							],
 							"sid": 436082378746957
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 723892734899582,
+									"parameters": {
+										"variable": "OrcBossPresent",
+										"comparison": 5,
+										"value": "1"
+									}
+								},
+								{
+									"id": "trigger-once-while-true",
+									"objectClass": "System",
+									"sid": 940202419726734
+								}
+							],
+							"actions": [
+								{
+									"id": "stop",
+									"objectClass": "Audio",
+									"sid": 553499144088483,
+									"parameters": {
+										"tag": "\"Normal\""
+									}
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 242426259054957,
+									"parameters": {
+										"audio-file": "Boss 1 Evil Laugh Play at -5 DB",
+										"loop": "not-looping",
+										"volume": "-5",
+										"tag-optional": "\"\""
+									}
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 905030085153244,
+									"parameters": {
+										"audio-file": "1st Boss Fight Play at -4 DB",
+										"loop": "looping",
+										"volume": "-4",
+										"tag-optional": "\"\""
+									}
+								}
+							],
+							"sid": 152899172840843
 						}
 					],
 					"sid": 796081876847270
@@ -6044,6 +6110,74 @@
 					"description": "This bastard was a cultist all along. Bob stabs the player at the beginning as a cheap shot, and every once in a while bob will try to dash towards the player and stab them.\n\nPlayer has reduced visibility due to a shadow vignette affecting the screen.",
 					"isActiveOnStart": true,
 					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "Bob",
+									"sid": 345495218363903,
+									"parameters": {
+										"instance-variable": "Burning"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 192170153927237,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "every-x-seconds",
+											"objectClass": "System",
+											"sid": 634002739647654,
+											"parameters": {
+												"interval-seconds": "1"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "subtract-from-instvar",
+											"objectClass": "Bob",
+											"sid": 612227238006251,
+											"parameters": {
+												"instance-variable": "Health",
+												"value": "1"
+											}
+										},
+										{
+											"id": "set-animation",
+											"objectClass": "Bob",
+											"sid": 496347500192421,
+											"parameters": {
+												"animation": "\"Burning\"",
+												"from": "beginning"
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 177108896693383,
+											"parameters": {
+												"seconds": "0.5"
+											}
+										},
+										{
+											"id": "set-animation",
+											"objectClass": "Bob",
+											"sid": 233165957261946,
+											"parameters": {
+												"animation": "\"Normal\"",
+												"from": "beginning"
+											}
+										}
+									],
+									"sid": 669471524464869
+								}
+							]
+						},
 						{
 							"eventType": "block",
 							"conditions": [
@@ -6256,19 +6390,31 @@
 									}
 								},
 								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 985383203160663,
+									"parameters": {
+										"audio-file": "Player Hurt Play at -5 DB",
+										"loop": "not-looping",
+										"volume": "-5",
+										"tag-optional": "\"\""
+									}
+								},
+								{
 									"id": "set-width",
 									"objectClass": "HP_Green",
-									"sid": 287900316679366,
+									"sid": 477915256498386,
 									"parameters": {
-										"width": "(PlayerHealth/PlayerMaxHealth) * 238"
+										"width": "(PlayerHealth/PlayerMaxHealth) * 96"
 									}
 								},
 								{
 									"id": "set-position",
 									"objectClass": "HP_Green",
-									"sid": 476018470673937,
+									"sid": 390950097567290,
+									"disabled": true,
 									"parameters": {
-										"x": "136 - ((PlayerHealth/PlayerMaxHealth) * 136)",
+										"x": "48 - ((PlayerHealth/PlayerMaxHealth) * 48)",
 										"y": "HP_Green.Y"
 									}
 								},
@@ -6473,17 +6619,29 @@
 									}
 								},
 								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 174175576911370,
+									"parameters": {
+										"audio-file": "Player Hurt Play at -5 DB",
+										"loop": "not-looping",
+										"volume": "-5",
+										"tag-optional": "\"\""
+									}
+								},
+								{
 									"id": "set-width",
 									"objectClass": "HP_Green",
-									"sid": 285214866563074,
+									"sid": 949490694099037,
 									"parameters": {
-										"width": "(PlayerHealth/PlayerMaxHealth) * 238"
+										"width": "(PlayerHealth/PlayerMaxHealth) * 96"
 									}
 								},
 								{
 									"id": "set-position",
 									"objectClass": "HP_Green",
 									"sid": 590932565569537,
+									"disabled": true,
 									"parameters": {
 										"x": "136 - ((PlayerHealth/PlayerMaxHealth) * 136)",
 										"y": "HP_Green.Y"
@@ -6590,6 +6748,59 @@
 								}
 							],
 							"sid": 170194622787891
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 409275881580464,
+									"parameters": {
+										"variable": "BobPresent",
+										"comparison": 5,
+										"value": "1"
+									}
+								},
+								{
+									"id": "trigger-once-while-true",
+									"objectClass": "System",
+									"sid": 446618513169564
+								}
+							],
+							"actions": [
+								{
+									"id": "stop",
+									"objectClass": "Audio",
+									"sid": 865813853279495,
+									"parameters": {
+										"tag": "\"Normal\""
+									}
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 351608211697802,
+									"parameters": {
+										"audio-file": "2nd Boss Fight Play at -4 DB",
+										"loop": "not-looping",
+										"volume": "-4",
+										"tag-optional": "\"\""
+									}
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 843487366702098,
+									"parameters": {
+										"audio-file": "Boss 2 Evil Laugh Play at - 5 DB",
+										"loop": "not-looping",
+										"volume": "-5",
+										"tag-optional": "\"\""
+									}
+								}
+							],
+							"sid": 430256102818544
 						}
 					],
 					"sid": 434424742700522

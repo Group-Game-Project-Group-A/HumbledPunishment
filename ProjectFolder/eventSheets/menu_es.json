@@ -63,6 +63,54 @@
 				}
 			],
 			"sid": 561847107513438
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 479158676470347
+				}
+			],
+			"actions": [
+				{
+					"id": "set-cursor-style",
+					"objectClass": "Mouse",
+					"sid": 671149851247483,
+					"parameters": {
+						"cursor-style": "normal"
+					}
+				}
+			],
+			"sid": 130721268814402,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-any-playing",
+							"objectClass": "Audio",
+							"sid": 815840796476200,
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 599711346891091,
+							"parameters": {
+								"audio-file": "Common Battle Music Play at -10 DB",
+								"loop": "looping",
+								"volume": "-10",
+								"tag-optional": "\"Normal\""
+							}
+						}
+					],
+					"sid": 429814602964864
+				}
+			]
 		}
 	],
 	"sid": 326467844477213

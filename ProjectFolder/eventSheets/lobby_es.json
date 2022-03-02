@@ -2301,6 +2301,14 @@
 							"id": "reset-global-variables",
 							"objectClass": "System",
 							"sid": 528957829036876
+						},
+						{
+							"id": "set-time-scale",
+							"objectClass": "System",
+							"sid": 862975165540734,
+							"parameters": {
+								"time-scale": "1.0"
+							}
 						}
 					],
 					"sid": 795390316153478
@@ -2480,6 +2488,50 @@
 						}
 					],
 					"sid": 751611547968814
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-tag-playing",
+							"objectClass": "Audio",
+							"sid": 414865477139586,
+							"parameters": {
+								"tag": "\"Normal\""
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "fade-volume",
+							"objectClass": "Audio",
+							"sid": 532599766630903,
+							"parameters": {
+								"tag": "\"\"",
+								"db": "-100",
+								"duration": "3",
+								"ending": "stop"
+							}
+						},
+						{
+							"id": "wait-for-previous-actions",
+							"objectClass": "System",
+							"sid": 619329558170718
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 168055785520602,
+							"parameters": {
+								"audio-file": "Common Battle Music Play at -10 DB",
+								"loop": "looping",
+								"volume": "-10",
+								"tag-optional": "\"Normal\""
+							}
+						}
+					],
+					"sid": 688985485229919
 				}
 			],
 			"sid": 368188500201813

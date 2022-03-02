@@ -63,6 +63,14 @@
 			"bundled": false
 		},
 		{
+			"type": "plugin",
+			"id": "Audio",
+			"name": "Audio",
+			"author": "Scirra",
+			"version": "r285",
+			"bundled": false
+		},
+		{
 			"type": "behavior",
 			"id": "Bullet",
 			"name": "Bullet",
@@ -167,7 +175,8 @@
 			"WinText",
 			"WinBackground",
 			"WinButton",
-			"SpriteFont"
+			"SpriteFont",
+			"Audio"
 		],
 		"subfolders": [
 			{
@@ -430,11 +439,53 @@
 			"subfolders": []
 		},
 		"sound": {
-			"items": [],
+			"items": [
+				{
+					"name": "Arrow Shooting Sound Play at -5 DB.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 359440169694650
+				},
+				{
+					"name": "Boss 1 Evil Laugh Play at -5 DB.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 848239444594578
+				},
+				{
+					"name": "Boss 2 Evil Laugh Play at - 5 DB.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 445419777120051
+				},
+				{
+					"name": "Flask Explosion Play at -5 DB.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 243957531579990
+				},
+				{
+					"name": "Player Hurt Play at -5 DB.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 680817940797424
+				}
+			],
 			"subfolders": []
 		},
 		"music": {
-			"items": [],
+			"items": [
+				{
+					"name": "2nd Boss Fight Play at -4 DB.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 882881721656722
+				},
+				{
+					"name": "Common Battle Music Play at -10 DB.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 556116273695916
+				},
+				{
+					"name": "1st Boss Fight Play at -4 DB.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 626355822984292
+				}
+			],
 			"subfolders": []
 		},
 		"video": {

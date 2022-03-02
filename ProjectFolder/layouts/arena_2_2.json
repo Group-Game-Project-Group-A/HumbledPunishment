@@ -5444,7 +5444,7 @@
 						"LineOfSight": {
 							"properties": {
 								"obstacles": "solids",
-								"range": 200,
+								"range": 300,
 								"cone-of-view": 360,
 								"use-collision-cells": true
 							}
@@ -5514,7 +5514,7 @@
 						"LineOfSight": {
 							"properties": {
 								"obstacles": "solids",
-								"range": 200,
+								"range": 300,
 								"cone-of-view": 360,
 								"use-collision-cells": true
 							}
