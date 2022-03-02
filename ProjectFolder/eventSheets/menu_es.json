@@ -6,21 +6,63 @@
 			"conditions": [
 				{
 					"id": "on-clicked",
-					"objectClass": "But_NextLevel",
+					"objectClass": "But_StartGame",
 					"sid": 273602011573554
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 153288868628763,
+					"parameters": {
+						"which": "next"
+					}
+				}
+			],
+			"sid": 340353346403150
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "But_Credits",
+					"sid": 564299738809763
 				}
 			],
 			"actions": [
 				{
 					"id": "go-to-layout",
 					"objectClass": "System",
-					"sid": 106116060421019,
+					"sid": 188713578750491,
 					"parameters": {
-						"layout": "Lobby_1_1"
+						"layout": "Credits"
 					}
 				}
 			],
-			"sid": 340353346403150
+			"sid": 817785890990450
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "But_StartOver",
+					"sid": 390859035761401
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 929871169310539,
+					"parameters": {
+						"layout": "Menu"
+					}
+				}
+			],
+			"sid": 561847107513438
 		}
 	],
 	"sid": 326467844477213

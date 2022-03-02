@@ -6499,6 +6499,35 @@
 						"angle": 0,
 						"zElevation": 0
 					}
+				},
+				{
+					"type": "Sprite2",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 796,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1638,
+						"y": -895,
+						"width": 17,
+						"height": 17,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
 				}
 			],
 			"sid": 248432428251539,
@@ -6551,7 +6580,7 @@
 					"behaviors": {},
 					"world": {
 						"x": 391.00001261783393,
-						"y": 360.624267578125,
+						"y": 400.624268,
 						"width": 72,
 						"height": 24,
 						"originX": 0,
@@ -6981,7 +7010,7 @@
 					"behaviors": {},
 					"world": {
 						"x": 327,
-						"y": 225,
+						"y": 345,
 						"width": 200,
 						"height": 30,
 						"originX": 0,
@@ -6997,301 +7026,7 @@
 					}
 				},
 				{
-					"type": "Tooltip_ChargedShot",
-					"properties": {
-						"text": "Charged Shot",
-						"enable-bbcode": true,
-						"font": "Arial",
-						"size": 12,
-						"line-height": 0,
-						"bold": false,
-						"italic": false,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"horizontal-alignment": "left",
-						"vertical-alignment": "top",
-						"wrapping": "word",
-						"initially-visible": true,
-						"origin": "top-left"
-					},
-					"uid": 777,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 1328,
-						"y": -948,
-						"width": 200,
-						"height": 30,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Tooltip_Dash",
-					"properties": {
-						"text": "Dash",
-						"enable-bbcode": true,
-						"font": "Arial",
-						"size": 12,
-						"line-height": 0,
-						"bold": false,
-						"italic": false,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"horizontal-alignment": "left",
-						"vertical-alignment": "top",
-						"wrapping": "word",
-						"initially-visible": true,
-						"origin": "top-left"
-					},
-					"uid": 778,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 1470,
-						"y": -624,
-						"width": 200,
-						"height": 30,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Tooltip_Multishot",
-					"properties": {
-						"text": "Multi-Shot",
-						"enable-bbcode": true,
-						"font": "Arial",
-						"size": 12,
-						"line-height": 0,
-						"bold": false,
-						"italic": false,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"horizontal-alignment": "left",
-						"vertical-alignment": "top",
-						"wrapping": "word",
-						"initially-visible": true,
-						"origin": "top-left"
-					},
-					"uid": 779,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 1761,
-						"y": -897,
-						"width": 200,
-						"height": 30,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Tooltip_PierceShot",
-					"properties": {
-						"text": "Pierce Shot",
-						"enable-bbcode": true,
-						"font": "Arial",
-						"size": 12,
-						"line-height": 0,
-						"bold": false,
-						"italic": false,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"horizontal-alignment": "left",
-						"vertical-alignment": "top",
-						"wrapping": "word",
-						"initially-visible": true,
-						"origin": "top-left"
-					},
-					"uid": 780,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 1821,
-						"y": -715,
-						"width": 200,
-						"height": 30,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Tooltip_Electricity",
-					"properties": {
-						"text": "Electric",
-						"enable-bbcode": true,
-						"font": "Arial",
-						"size": 12,
-						"line-height": 0,
-						"bold": false,
-						"italic": false,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"horizontal-alignment": "left",
-						"vertical-alignment": "top",
-						"wrapping": "word",
-						"initially-visible": true,
-						"origin": "top-left"
-					},
-					"uid": 781,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 1918,
-						"y": -903,
-						"width": 200,
-						"height": 30,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Tooltip_Fire",
-					"properties": {
-						"text": "Fire",
-						"enable-bbcode": true,
-						"font": "Arial",
-						"size": 12,
-						"line-height": 0,
-						"bold": false,
-						"italic": false,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"horizontal-alignment": "left",
-						"vertical-alignment": "top",
-						"wrapping": "word",
-						"initially-visible": true,
-						"origin": "top-left"
-					},
-					"uid": 782,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 1670,
-						"y": -1132,
-						"width": 200,
-						"height": 30,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Tooltip_Ice",
-					"properties": {
-						"text": "Ice",
-						"enable-bbcode": true,
-						"font": "Arial",
-						"size": 12,
-						"line-height": 0,
-						"bold": false,
-						"italic": false,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"horizontal-alignment": "left",
-						"vertical-alignment": "top",
-						"wrapping": "word",
-						"initially-visible": true,
-						"origin": "top-left"
-					},
-					"uid": 783,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 1909,
-						"y": -1084,
-						"width": 200,
-						"height": 30,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Sprite2",
+					"type": "Tooltip_Background_Fire",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -7299,16 +7034,16 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 796,
+					"uid": 787,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1638,
-						"y": -895,
-						"width": 17,
-						"height": 17,
-						"originX": 0.5,
-						"originY": 0.5,
+						"x": 1609,
+						"y": -843,
+						"width": 219.95608,
+						"height": 139.289991,
+						"originX": 0,
+						"originY": 0,
 						"color": [
 							1,
 							1,
@@ -7320,24 +7055,368 @@
 					}
 				},
 				{
-					"type": "Dialog_Box_background",
+					"type": "Tooltip_Background_Electricity",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
+					},
+					"uid": 788,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1612,
+						"y": -555,
+						"width": 219.95608,
+						"height": 139.289991,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Tooltip_Background_Ice",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 789,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1610,
+						"y": -702,
+						"width": 219.95608,
+						"height": 139.289991,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Tooltip_Background_Dash",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 790,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1617,
+						"y": -399,
+						"width": 220,
+						"height": 140,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Tutorial_SpriteFont_Ice",
+					"properties": {
+						"text": "Selecting the FROST affinity causes all your attacks and abilities to inflict a slow effect on enemies. This slow effect causes enemies to act for the course of its duration. An enemy cannot be affected by more than one slow effect at a time. Each instance of applying a slow effect causes the duration to be refreshed.\n\nBosses are immune to slow effects.\n\nEach affinity card is mutually exclusive, you cannot select more than one at the same time.",
+						"enable-bbcode": true,
+						"character-width": 16,
+						"character-height": 16,
+						"character-set": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#\"'&()[]|`\\/@°+=*$£€<>",
+						"spacing-data": "",
+						"scale": 0.4,
+						"character-spacing": 0,
+						"line-height": 0,
+						"horizontal-alignment": "center",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 812,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1616,
+						"y": -702,
+						"width": 220,
+						"height": 140,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Tutorial_SpriteFont_fire",
+					"properties": {
+						"text": "Selecting the FIRE affinity causes all your attacks and abilities to inflict a burn effect on enemies. This burn effect causes enemies to take additional fire damage each second over the course of its duration. An enemy cannot be affected by more than one burn effect at a time. Each instance of applying a burn effect causes the duration to be refreshed.\n\nEach affinity card is mutually exclusive, you cannot select more than one at the same time.",
+						"enable-bbcode": true,
+						"character-width": 16,
+						"character-height": 16,
+						"character-set": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#\"'&()[]|`\\/@°+=*$£€<>",
+						"spacing-data": "",
+						"scale": 0.4,
+						"character-spacing": 0,
+						"line-height": 0,
+						"horizontal-alignment": "center",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 813,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1616,
+						"y": -840,
+						"width": 220,
+						"height": 140,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Tutorial_SpriteFont_Electricity",
+					"properties": {
+						"text": "Selecting the LIGHTNING affinity causes all your attacks and abilities to have a chance of inflicting a stun effect on enemies, otherwise known as paralysis. This paralysis effect prevents enemies from taking any actions over the course of its duration. An enemy once affected by a paralysis effect cannot be inflicted by another paralysis effect for some time afterwards.\n\nBosses are immune to paralysis effects.\n\nEach affinity card is mutually exclusive, you cannot select more than one at the same time.",
+						"enable-bbcode": true,
+						"character-width": 16,
+						"character-height": 16,
+						"character-set": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#\"'&()[]|`\\/@°+=*$£€<>",
+						"spacing-data": "",
+						"scale": 0.4,
+						"character-spacing": 0,
+						"line-height": 0,
+						"horizontal-alignment": "center",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 814,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1611,
+						"y": -552,
+						"width": 220,
+						"height": 140,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Tutorial_SpriteFont_Dash",
+					"properties": {
+						"text": "Selecting DASH will allow you to make a short tumble with your SPACE BAR. When you dash, you will leave behind a small trailing effect that will inflict the status effect of your elemental affinity. Dash has a cooldown of 1.5 seconds.\n\nFire dash will leave behind a burning effect that will damage enemies.\n\nElectricity dash will leave behind a shocking effect that will have a chance of paralyzing enemies.\n\nFrost dash will leave behind a slow effect that will slow enemies down while they are in the area.",
+						"enable-bbcode": true,
+						"character-width": 16,
+						"character-height": 16,
+						"character-set": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#\"'&()[]|`\\/@°+=*$£€<>",
+						"spacing-data": "",
+						"scale": 0.4,
+						"character-spacing": 0,
+						"line-height": 0,
+						"horizontal-alignment": "center",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 815,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1607,
+						"y": -403,
+						"width": 220,
+						"height": 140,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Tooltip_Background_Multishot",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 816,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1620,
+						"y": -243,
+						"width": 220,
+						"height": 54,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Tutorial_SpriteFont_Multishot",
+					"properties": {
+						"text": "Selecting MULTISHOT will cause each of your attacks to shoot three arrows instead of one. Each arrow will do reduced base damage and will apply the elemental affinity you selected.",
+						"enable-bbcode": true,
+						"character-width": 16,
+						"character-height": 16,
+						"character-set": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#\"'&()[]|`\\/@°+=*$£€<>",
+						"spacing-data": "",
+						"scale": 0.4,
+						"character-spacing": 0,
+						"line-height": 0,
+						"horizontal-alignment": "center",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 817,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1630,
+						"y": -244,
+						"width": 220,
+						"height": 54,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Tooltip_Background_ChargedShot",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 818,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1607,
+						"y": -182,
+						"width": 220,
+						"height": 106,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Tutorial_SpriteFont_ChargedShot",
+					"properties": {
+						"text": "Selecting CHARGED SHOT will allow you to hold-down the attack function to make an extremely strong attack with your arrow. The charge-up time for this attack is 3 seconds. While holding down the attack function you are stationary. Each charged shot will apply your elemental affinity to targets hit by your attack.\n\nYou may still attack regularly without holding down the attack function.\n",
+						"enable-bbcode": true,
+						"character-width": 16,
+						"character-height": 16,
+						"character-set": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#\"'&()[]|`\\/@°+=*$£€<>",
+						"spacing-data": "",
+						"scale": 0.4,
+						"character-spacing": 0,
+						"line-height": 0,
+						"horizontal-alignment": "center",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
 					},
 					"uid": 819,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 427,
-						"y": 409,
-						"width": 854,
-						"height": 142,
-						"originX": 0.5,
-						"originY": 0.5,
+						"x": 1612,
+						"y": -185,
+						"width": 220,
+						"height": 106,
+						"originX": 0,
+						"originY": 0,
 						"color": [
 							1,
 							1,
@@ -7349,35 +7428,22 @@
 					}
 				},
 				{
-					"type": "Dialog_Text",
+					"type": "Tooltip_Background_PierceShot",
 					"properties": {
-						"text": "Dialogue Text is going to go here",
-						"enable-bbcode": true,
-						"font": "Arial",
-						"size": 12,
-						"line-height": 0,
-						"bold": false,
-						"italic": false,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"horizontal-alignment": "left",
-						"vertical-alignment": "top",
-						"wrapping": "word",
 						"initially-visible": true,
-						"origin": "top-left"
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
 					},
 					"uid": 820,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 5,
-						"y": 342,
-						"width": 844,
-						"height": 105.82286183970348,
+						"x": 1610,
+						"y": -72,
+						"width": 220,
+						"height": 54,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -7391,25 +7457,31 @@
 					}
 				},
 				{
-					"type": "DialogButtonNext",
+					"type": "Tutorial_SpriteFont_PierceShot",
 					"properties": {
-						"type": "button",
-						"text": "Next",
-						"tooltip": "",
+						"text": "Selecting PIERCE SHOT will cause each of your attacks to pierce and hit an additional enemy. Each attack will apply your elemental affinity to each additional enemy hit by the piercing effect.",
+						"enable-bbcode": true,
+						"character-width": 16,
+						"character-height": 16,
+						"character-set": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#\"'&()[]|`\\/@°+=*$£€<>",
+						"spacing-data": "",
+						"scale": 0.4,
+						"character-spacing": 0,
+						"line-height": 0,
+						"horizontal-alignment": "center",
+						"vertical-alignment": "center",
+						"wrapping": "word",
 						"initially-visible": true,
-						"enabled": true,
-						"auto-font-size": true,
-						"checked": false,
-						"id": ""
+						"origin": "top-left"
 					},
 					"uid": 821,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 778.716355,
-						"y": 449.265985,
-						"width": 72,
-						"height": 24,
+						"x": 1609,
+						"y": -67,
+						"width": 220,
+						"height": 54,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -7417,7 +7489,9 @@
 							1,
 							1,
 							1
-						]
+						],
+						"angle": 0,
+						"zElevation": 0
 					}
 				}
 			],

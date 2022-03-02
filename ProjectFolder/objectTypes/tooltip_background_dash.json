@@ -1,7 +1,7 @@
 {
-	"name": "Dialog_Box_background",
+	"name": "Tooltip_Background_Dash",
 	"plugin-id": "Sprite",
-	"sid": 224305389420299,
+	"sid": 750710366294966,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
@@ -13,17 +13,17 @@
 					{
 						"width": 250,
 						"height": 250,
-						"originX": 0.5,
-						"originY": 0.5,
+						"originX": 0,
+						"originY": 0,
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 9612434,
+						"imageSpriteId": 1406317,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 260196619570338,
+				"sid": 533056522556338,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

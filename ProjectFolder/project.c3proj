@@ -48,6 +48,14 @@
 		},
 		{
 			"type": "plugin",
+			"id": "Spritefont2",
+			"name": "Sprite font",
+			"author": "Scirra",
+			"version": "r285",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
 			"id": "TiledBg",
 			"name": "Tiled Background",
 			"author": "Scirra",
@@ -155,11 +163,11 @@
 			"WarningNoCards",
 			"Sprite2",
 			"Dialog_Text",
-			"Dialog_Box_background",
 			"DialogButtonNext",
 			"WinText",
 			"WinBackground",
-			"WinButton"
+			"WinButton",
+			"SpriteFont"
 		],
 		"subfolders": [
 			{
@@ -171,8 +179,10 @@
 			},
 			{
 				"items": [
-					"But_NextLevel",
-					"But_EnterLevel"
+					"But_StartGame",
+					"But_EnterLevel",
+					"But_Credits",
+					"But_StartOver"
 				],
 				"subfolders": [],
 				"name": "Buttons"
@@ -204,10 +214,14 @@
 						"subfolders": [
 							{
 								"items": [
-									"Tooltip_Dash",
-									"Tooltip_Multishot",
-									"Tooltip_ChargedShot",
-									"Tooltip_PierceShot"
+									"Tooltip_Background_ChargedShot",
+									"Tooltip_Background_Dash",
+									"Tooltip_Background_Multishot",
+									"Tooltip_Background_PierceShot",
+									"Tutorial_SpriteFont_ChargedShot",
+									"Tutorial_SpriteFont_Dash",
+									"Tutorial_SpriteFont_Multishot",
+									"Tutorial_SpriteFont_PierceShot"
 								],
 								"subfolders": [],
 								"name": "Tooltips"
@@ -223,9 +237,12 @@
 						"subfolders": [
 							{
 								"items": [
-									"Tooltip_Fire",
-									"Tooltip_Ice",
-									"Tooltip_Electricity"
+									"Tooltip_Background_Fire",
+									"Tooltip_Background_Electricity",
+									"Tooltip_Background_Ice",
+									"Tutorial_SpriteFont_fire",
+									"Tutorial_SpriteFont_Ice",
+									"Tutorial_SpriteFont_Electricity"
 								],
 								"subfolders": [],
 								"name": "Tooltips"
@@ -357,23 +374,36 @@
 	"layouts": {
 		"items": [
 			"Menu",
+			"Controls",
+			"Story_1_1",
 			"Lobby_1_1",
 			"Arena_1_1",
+			"Story_1_2",
 			"Lobby_1_2",
 			"Arena_1_2",
+			"Story_1_3",
 			"Lobby_1_3",
 			"Arena_1_3",
+			"Story_1_4",
 			"Lobby_1_4",
 			"Arena_1_4",
+			"Story_1_5",
+			"Story_2_1",
 			"Lobby_2_1",
 			"Arena_2_1",
+			"Story_2_2",
 			"Lobby_2_2",
 			"Arena_2_2",
+			"Story_2_3",
 			"Lobby_2_3",
 			"Arena_2_3",
+			"Story_2_4",
 			"Lobby_2_4",
 			"Arena_2_4",
-			"EndScreen"
+			"Story_2_5",
+			"Story_3_1",
+			"EndScreen",
+			"Credits"
 		],
 		"subfolders": [
 			{
@@ -536,7 +566,7 @@
 		"renderingMode": "auto",
 		"anisotropicFiltering": "auto",
 		"maxSpriteSheetSize": 2048,
-		"loaderStyle": "progress",
+		"loaderStyle": "splash",
 		"preloadSounds": true,
 		"cordovaiOSScheme": "app",
 		"cordovaAndroidScheme": "https"

@@ -145,8 +145,17 @@
 											"actions": [
 												{
 													"id": "set-position",
-													"objectClass": "Tooltip_Fire",
-													"sid": 638128479351212,
+													"objectClass": "Tutorial_SpriteFont_fire",
+													"sid": 445943666720351,
+													"parameters": {
+														"x": "Mouse.X",
+														"y": "Mouse.Y"
+													}
+												},
+												{
+													"id": "set-position",
+													"objectClass": "Tooltip_Background_Fire",
+													"sid": 172293263000149,
 													"parameters": {
 														"x": "Mouse.X",
 														"y": "Mouse.Y"
@@ -154,24 +163,48 @@
 												},
 												{
 													"id": "set-visible",
-													"objectClass": "Tooltip_Fire",
-													"sid": 632430796577662,
+													"objectClass": "Tutorial_SpriteFont_fire",
+													"sid": 514419163050208,
 													"parameters": {
 														"visibility": "visible"
 													}
 												},
 												{
 													"id": "set-visible",
-													"objectClass": "Tooltip_Electricity",
-													"sid": 215241686461581,
+													"objectClass": "Tooltip_Background_Fire",
+													"sid": 167676912225647,
+													"parameters": {
+														"visibility": "visible"
+													}
+												},
+												{
+													"id": "set-visible",
+													"objectClass": "Tutorial_SpriteFont_Electricity",
+													"sid": 689389699215668,
 													"parameters": {
 														"visibility": "invisible"
 													}
 												},
 												{
 													"id": "set-visible",
-													"objectClass": "Tooltip_Ice",
-													"sid": 901650585300600,
+													"objectClass": "Tooltip_Background_Electricity",
+													"sid": 454876445138539,
+													"parameters": {
+														"visibility": "invisible"
+													}
+												},
+												{
+													"id": "set-visible",
+													"objectClass": "Tutorial_SpriteFont_Ice",
+													"sid": 555879325618259,
+													"parameters": {
+														"visibility": "invisible"
+													}
+												},
+												{
+													"id": "set-visible",
+													"objectClass": "Tooltip_Background_Ice",
+													"sid": 134228674113940,
 													"parameters": {
 														"visibility": "invisible"
 													}
@@ -196,8 +229,17 @@
 											"actions": [
 												{
 													"id": "set-position",
-													"objectClass": "Tooltip_Ice",
-													"sid": 548411201365298,
+													"objectClass": "Tutorial_SpriteFont_Ice",
+													"sid": 251963695820031,
+													"parameters": {
+														"x": "Mouse.X",
+														"y": "Mouse.Y"
+													}
+												},
+												{
+													"id": "set-position",
+													"objectClass": "Tooltip_Background_Ice",
+													"sid": 879929751778386,
 													"parameters": {
 														"x": "Mouse.X",
 														"y": "Mouse.Y"
@@ -205,24 +247,48 @@
 												},
 												{
 													"id": "set-visible",
-													"objectClass": "Tooltip_Ice",
-													"sid": 832508863806240,
+													"objectClass": "Tutorial_SpriteFont_Ice",
+													"sid": 515604271642099,
 													"parameters": {
 														"visibility": "visible"
 													}
 												},
 												{
 													"id": "set-visible",
-													"objectClass": "Tooltip_Fire",
-													"sid": 752412175991417,
+													"objectClass": "Tooltip_Background_Ice",
+													"sid": 560285192134805,
+													"parameters": {
+														"visibility": "visible"
+													}
+												},
+												{
+													"id": "set-visible",
+													"objectClass": "Tutorial_SpriteFont_Electricity",
+													"sid": 406489293321889,
 													"parameters": {
 														"visibility": "invisible"
 													}
 												},
 												{
 													"id": "set-visible",
-													"objectClass": "Tooltip_Electricity",
-													"sid": 125069558350119,
+													"objectClass": "Tooltip_Background_Electricity",
+													"sid": 981951607592352,
+													"parameters": {
+														"visibility": "invisible"
+													}
+												},
+												{
+													"id": "set-visible",
+													"objectClass": "Tutorial_SpriteFont_fire",
+													"sid": 301533825914492,
+													"parameters": {
+														"visibility": "invisible"
+													}
+												},
+												{
+													"id": "set-visible",
+													"objectClass": "Tooltip_Background_Fire",
+													"sid": 864245695429919,
 													"parameters": {
 														"visibility": "invisible"
 													}
@@ -247,8 +313,17 @@
 											"actions": [
 												{
 													"id": "set-position",
-													"objectClass": "Tooltip_Electricity",
-													"sid": 523528785354206,
+													"objectClass": "Tutorial_SpriteFont_Electricity",
+													"sid": 773867628648636,
+													"parameters": {
+														"x": "Mouse.X",
+														"y": "Mouse.Y"
+													}
+												},
+												{
+													"id": "set-position",
+													"objectClass": "Tooltip_Background_Electricity",
+													"sid": 681043480613813,
 													"parameters": {
 														"x": "Mouse.X",
 														"y": "Mouse.Y"
@@ -256,24 +331,48 @@
 												},
 												{
 													"id": "set-visible",
-													"objectClass": "Tooltip_Electricity",
-													"sid": 524308061253333,
+													"objectClass": "Tutorial_SpriteFont_Electricity",
+													"sid": 636106234153494,
 													"parameters": {
 														"visibility": "visible"
 													}
 												},
 												{
 													"id": "set-visible",
-													"objectClass": "Tooltip_Ice",
-													"sid": 789429996329268,
+													"objectClass": "Tooltip_Background_Electricity",
+													"sid": 702334007952869,
+													"parameters": {
+														"visibility": "visible"
+													}
+												},
+												{
+													"id": "set-visible",
+													"objectClass": "Tutorial_SpriteFont_Ice",
+													"sid": 819675691379001,
 													"parameters": {
 														"visibility": "invisible"
 													}
 												},
 												{
 													"id": "set-visible",
-													"objectClass": "Tooltip_Fire",
-													"sid": 804052467137700,
+													"objectClass": "Tooltip_Background_Ice",
+													"sid": 197795490151492,
+													"parameters": {
+														"visibility": "invisible"
+													}
+												},
+												{
+													"id": "set-visible",
+													"objectClass": "Tutorial_SpriteFont_fire",
+													"sid": 284587708434312,
+													"parameters": {
+														"visibility": "invisible"
+													}
+												},
+												{
+													"id": "set-visible",
+													"objectClass": "Tooltip_Background_Fire",
+													"sid": 385426872536514,
 													"parameters": {
 														"visibility": "invisible"
 													}
@@ -315,8 +414,17 @@
 											"actions": [
 												{
 													"id": "set-position",
-													"objectClass": "Tooltip_ChargedShot",
-													"sid": 788262038868047,
+													"objectClass": "Tutorial_SpriteFont_ChargedShot",
+													"sid": 605655356982261,
+													"parameters": {
+														"x": "Mouse.X",
+														"y": "Mouse.Y"
+													}
+												},
+												{
+													"id": "set-position",
+													"objectClass": "Tooltip_Background_ChargedShot",
+													"sid": 865121585804540,
 													"parameters": {
 														"x": "Mouse.X",
 														"y": "Mouse.Y"
@@ -324,32 +432,64 @@
 												},
 												{
 													"id": "set-visible",
-													"objectClass": "Tooltip_ChargedShot",
-													"sid": 523441018950884,
+													"objectClass": "Tutorial_SpriteFont_ChargedShot",
+													"sid": 682900813218904,
 													"parameters": {
 														"visibility": "visible"
 													}
 												},
 												{
 													"id": "set-visible",
-													"objectClass": "Tooltip_Dash",
-													"sid": 841463352718073,
+													"objectClass": "Tooltip_Background_ChargedShot",
+													"sid": 811086970330821,
+													"parameters": {
+														"visibility": "visible"
+													}
+												},
+												{
+													"id": "set-visible",
+													"objectClass": "Tutorial_SpriteFont_Dash",
+													"sid": 156767797412125,
 													"parameters": {
 														"visibility": "invisible"
 													}
 												},
 												{
 													"id": "set-visible",
-													"objectClass": "Tooltip_Multishot",
-													"sid": 103854034756345,
+													"objectClass": "Tooltip_Background_Dash",
+													"sid": 623084769432746,
 													"parameters": {
 														"visibility": "invisible"
 													}
 												},
 												{
 													"id": "set-visible",
-													"objectClass": "Tooltip_PierceShot",
-													"sid": 507813506717289,
+													"objectClass": "Tutorial_SpriteFont_Multishot",
+													"sid": 696350551021047,
+													"parameters": {
+														"visibility": "invisible"
+													}
+												},
+												{
+													"id": "set-visible",
+													"objectClass": "Tooltip_Background_Multishot",
+													"sid": 740318111142342,
+													"parameters": {
+														"visibility": "invisible"
+													}
+												},
+												{
+													"id": "set-visible",
+													"objectClass": "Tutorial_SpriteFont_PierceShot",
+													"sid": 310372883748520,
+													"parameters": {
+														"visibility": "invisible"
+													}
+												},
+												{
+													"id": "set-visible",
+													"objectClass": "Tooltip_Background_PierceShot",
+													"sid": 726610470714146,
 													"parameters": {
 														"visibility": "invisible"
 													}
@@ -374,8 +514,17 @@
 											"actions": [
 												{
 													"id": "set-position",
-													"objectClass": "Tooltip_Dash",
-													"sid": 182697306947653,
+													"objectClass": "Tutorial_SpriteFont_Dash",
+													"sid": 907524139495400,
+													"parameters": {
+														"x": "Mouse.X",
+														"y": "Mouse.Y"
+													}
+												},
+												{
+													"id": "set-position",
+													"objectClass": "Tooltip_Background_Dash",
+													"sid": 885379301286258,
 													"parameters": {
 														"x": "Mouse.X",
 														"y": "Mouse.Y"
@@ -383,32 +532,64 @@
 												},
 												{
 													"id": "set-visible",
-													"objectClass": "Tooltip_Dash",
-													"sid": 517433760930781,
+													"objectClass": "Tutorial_SpriteFont_Dash",
+													"sid": 910252112475027,
 													"parameters": {
 														"visibility": "visible"
 													}
 												},
 												{
 													"id": "set-visible",
-													"objectClass": "Tooltip_ChargedShot",
-													"sid": 720295895061920,
+													"objectClass": "Tooltip_Background_Dash",
+													"sid": 239481266221032,
+													"parameters": {
+														"visibility": "visible"
+													}
+												},
+												{
+													"id": "set-visible",
+													"objectClass": "Tutorial_SpriteFont_ChargedShot",
+													"sid": 145239030231758,
 													"parameters": {
 														"visibility": "invisible"
 													}
 												},
 												{
 													"id": "set-visible",
-													"objectClass": "Tooltip_Multishot",
-													"sid": 784935326362875,
+													"objectClass": "Tooltip_Background_ChargedShot",
+													"sid": 336378526970979,
 													"parameters": {
 														"visibility": "invisible"
 													}
 												},
 												{
 													"id": "set-visible",
-													"objectClass": "Tooltip_PierceShot",
-													"sid": 122341835446181,
+													"objectClass": "Tutorial_SpriteFont_Multishot",
+													"sid": 803566262366211,
+													"parameters": {
+														"visibility": "invisible"
+													}
+												},
+												{
+													"id": "set-visible",
+													"objectClass": "Tooltip_Background_Multishot",
+													"sid": 285978829814887,
+													"parameters": {
+														"visibility": "invisible"
+													}
+												},
+												{
+													"id": "set-visible",
+													"objectClass": "Tutorial_SpriteFont_PierceShot",
+													"sid": 327683261042328,
+													"parameters": {
+														"visibility": "invisible"
+													}
+												},
+												{
+													"id": "set-visible",
+													"objectClass": "Tooltip_Background_PierceShot",
+													"sid": 753531301110461,
 													"parameters": {
 														"visibility": "invisible"
 													}
@@ -433,8 +614,17 @@
 											"actions": [
 												{
 													"id": "set-position",
-													"objectClass": "Tooltip_Multishot",
-													"sid": 997220255569040,
+													"objectClass": "Tutorial_SpriteFont_Multishot",
+													"sid": 132345012803198,
+													"parameters": {
+														"x": "Mouse.X",
+														"y": "Mouse.Y"
+													}
+												},
+												{
+													"id": "set-position",
+													"objectClass": "Tooltip_Background_Multishot",
+													"sid": 159016614451204,
 													"parameters": {
 														"x": "Mouse.X",
 														"y": "Mouse.Y"
@@ -442,32 +632,64 @@
 												},
 												{
 													"id": "set-visible",
-													"objectClass": "Tooltip_Multishot",
-													"sid": 426550570177154,
+													"objectClass": "Tutorial_SpriteFont_Multishot",
+													"sid": 340394089884016,
 													"parameters": {
 														"visibility": "visible"
 													}
 												},
 												{
 													"id": "set-visible",
-													"objectClass": "Tooltip_ChargedShot",
-													"sid": 518679267810902,
+													"objectClass": "Tooltip_Background_Multishot",
+													"sid": 749828349152283,
+													"parameters": {
+														"visibility": "visible"
+													}
+												},
+												{
+													"id": "set-visible",
+													"objectClass": "Tutorial_SpriteFont_Dash",
+													"sid": 471791451493490,
 													"parameters": {
 														"visibility": "invisible"
 													}
 												},
 												{
 													"id": "set-visible",
-													"objectClass": "Tooltip_Dash",
-													"sid": 671187643178230,
+													"objectClass": "Tooltip_Background_Dash",
+													"sid": 623342469571635,
 													"parameters": {
 														"visibility": "invisible"
 													}
 												},
 												{
 													"id": "set-visible",
-													"objectClass": "Tooltip_PierceShot",
-													"sid": 901625456875512,
+													"objectClass": "Tutorial_SpriteFont_ChargedShot",
+													"sid": 475859225942177,
+													"parameters": {
+														"visibility": "invisible"
+													}
+												},
+												{
+													"id": "set-visible",
+													"objectClass": "Tooltip_Background_ChargedShot",
+													"sid": 207252147455930,
+													"parameters": {
+														"visibility": "invisible"
+													}
+												},
+												{
+													"id": "set-visible",
+													"objectClass": "Tutorial_SpriteFont_PierceShot",
+													"sid": 212878237959938,
+													"parameters": {
+														"visibility": "invisible"
+													}
+												},
+												{
+													"id": "set-visible",
+													"objectClass": "Tooltip_Background_PierceShot",
+													"sid": 306523883234757,
 													"parameters": {
 														"visibility": "invisible"
 													}
@@ -489,7 +711,90 @@
 													}
 												}
 											],
-											"actions": [],
+											"actions": [
+												{
+													"id": "set-position",
+													"objectClass": "Tutorial_SpriteFont_PierceShot",
+													"sid": 269182691540922,
+													"parameters": {
+														"x": "Mouse.X",
+														"y": "Mouse.Y"
+													}
+												},
+												{
+													"id": "set-position",
+													"objectClass": "Tooltip_Background_PierceShot",
+													"sid": 319748686493307,
+													"parameters": {
+														"x": "Mouse.X",
+														"y": "Mouse.Y"
+													}
+												},
+												{
+													"id": "set-visible",
+													"objectClass": "Tutorial_SpriteFont_PierceShot",
+													"sid": 417628060117777,
+													"parameters": {
+														"visibility": "visible"
+													}
+												},
+												{
+													"id": "set-visible",
+													"objectClass": "Tooltip_Background_PierceShot",
+													"sid": 457529900466770,
+													"parameters": {
+														"visibility": "visible"
+													}
+												},
+												{
+													"id": "set-visible",
+													"objectClass": "Tutorial_SpriteFont_Multishot",
+													"sid": 607874028715057,
+													"parameters": {
+														"visibility": "invisible"
+													}
+												},
+												{
+													"id": "set-visible",
+													"objectClass": "Tooltip_Background_Multishot",
+													"sid": 299010830811721,
+													"parameters": {
+														"visibility": "invisible"
+													}
+												},
+												{
+													"id": "set-visible",
+													"objectClass": "Tutorial_SpriteFont_Dash",
+													"sid": 683656996166057,
+													"parameters": {
+														"visibility": "invisible"
+													}
+												},
+												{
+													"id": "set-visible",
+													"objectClass": "Tooltip_Background_Dash",
+													"sid": 425005174100174,
+													"parameters": {
+														"visibility": "invisible"
+													}
+												},
+												{
+													"id": "set-visible",
+													"objectClass": "Tutorial_SpriteFont_ChargedShot",
+													"sid": 776098365818226,
+													"parameters": {
+														"visibility": "invisible"
+													}
+												},
+												{
+													"id": "set-visible",
+													"objectClass": "Tooltip_Background_ChargedShot",
+													"sid": 748415671371024,
+													"parameters": {
+														"visibility": "invisible"
+													}
+												}
+											],
 											"sid": 205509151333758
 										}
 									]
@@ -797,55 +1102,6 @@
 									"parameters": {
 										"variable": "AbilityCardCount",
 										"value": "AbilityDock.Count"
-									}
-								},
-								{
-									"id": "set-time-scale",
-									"objectClass": "System",
-									"sid": 674496357577494,
-									"parameters": {
-										"time-scale": "0"
-									}
-								},
-								{
-									"id": "set-boolean-eventvar",
-									"objectClass": "System",
-									"sid": 367685426426517,
-									"parameters": {
-										"variable": "isPaused",
-										"value": "true"
-									}
-								},
-								{
-									"id": "set-visible",
-									"objectClass": "Dialog_Box_background",
-									"sid": 336388984678010,
-									"parameters": {
-										"visibility": "visible"
-									}
-								},
-								{
-									"id": "set-visible",
-									"objectClass": "Dialog_Text",
-									"sid": 867700964445946,
-									"parameters": {
-										"visibility": "visible"
-									}
-								},
-								{
-									"id": "set-visible",
-									"objectClass": "DialogButtonNext",
-									"sid": 379666286780972,
-									"parameters": {
-										"visibility": "visible"
-									}
-								},
-								{
-									"id": "set-enabled",
-									"objectClass": "DialogButtonNext",
-									"sid": 439110748416928,
-									"parameters": {
-										"mode": "enabled"
 									}
 								}
 							],
@@ -2042,96 +2298,6 @@
 					],
 					"actions": [
 						{
-							"id": "set-boolean-eventvar",
-							"objectClass": "System",
-							"sid": 812595010157889,
-							"disabled": true,
-							"parameters": {
-								"variable": "ChargedShot",
-								"value": "false"
-							}
-						},
-						{
-							"id": "set-boolean-eventvar",
-							"objectClass": "System",
-							"sid": 133212638620112,
-							"disabled": true,
-							"parameters": {
-								"variable": "Dash",
-								"value": "false"
-							}
-						},
-						{
-							"id": "set-boolean-eventvar",
-							"objectClass": "System",
-							"sid": 984780241828930,
-							"disabled": true,
-							"parameters": {
-								"variable": "Electric",
-								"value": "false"
-							}
-						},
-						{
-							"id": "set-boolean-eventvar",
-							"objectClass": "System",
-							"sid": 954736457776454,
-							"disabled": true,
-							"parameters": {
-								"variable": "Fire",
-								"value": "false"
-							}
-						},
-						{
-							"id": "set-boolean-eventvar",
-							"objectClass": "System",
-							"sid": 926982037715234,
-							"disabled": true,
-							"parameters": {
-								"variable": "Ice",
-								"value": "false"
-							}
-						},
-						{
-							"id": "set-boolean-eventvar",
-							"objectClass": "System",
-							"sid": 703554856554199,
-							"disabled": true,
-							"parameters": {
-								"variable": "isPoisoned",
-								"value": "false"
-							}
-						},
-						{
-							"id": "set-boolean-eventvar",
-							"objectClass": "System",
-							"sid": 315551866886759,
-							"disabled": true,
-							"parameters": {
-								"variable": "MultiShot",
-								"value": "false"
-							}
-						},
-						{
-							"id": "set-boolean-eventvar",
-							"objectClass": "System",
-							"sid": 646436863145719,
-							"disabled": true,
-							"parameters": {
-								"variable": "NormalBow",
-								"value": "false"
-							}
-						},
-						{
-							"id": "set-boolean-eventvar",
-							"objectClass": "System",
-							"sid": 689977526378423,
-							"disabled": true,
-							"parameters": {
-								"variable": "PiercingShot",
-								"value": "false"
-							}
-						},
-						{
 							"id": "reset-global-variables",
 							"objectClass": "System",
 							"sid": 528957829036876
@@ -2155,32 +2321,64 @@
 					"actions": [
 						{
 							"id": "set-visible",
-							"objectClass": "Tooltip_ChargedShot",
-							"sid": 583614210541577,
+							"objectClass": "Tutorial_SpriteFont_ChargedShot",
+							"sid": 875770778291504,
 							"parameters": {
 								"visibility": "invisible"
 							}
 						},
 						{
 							"id": "set-visible",
-							"objectClass": "Tooltip_Dash",
-							"sid": 142796478559531,
+							"objectClass": "Tooltip_Background_ChargedShot",
+							"sid": 945302139699120,
 							"parameters": {
 								"visibility": "invisible"
 							}
 						},
 						{
 							"id": "set-visible",
-							"objectClass": "Tooltip_Multishot",
-							"sid": 380019650704198,
+							"objectClass": "Tutorial_SpriteFont_Dash",
+							"sid": 373247384598825,
 							"parameters": {
 								"visibility": "invisible"
 							}
 						},
 						{
 							"id": "set-visible",
-							"objectClass": "Tooltip_PierceShot",
-							"sid": 154421184369839,
+							"objectClass": "Tooltip_Background_Dash",
+							"sid": 119177834125354,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Tutorial_SpriteFont_Multishot",
+							"sid": 123005855098971,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Tooltip_Background_Multishot",
+							"sid": 223256542267948,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Tutorial_SpriteFont_PierceShot",
+							"sid": 942727362316649,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Tooltip_Background_PierceShot",
+							"sid": 303401998761793,
 							"parameters": {
 								"visibility": "invisible"
 							}
@@ -2204,95 +2402,87 @@
 					"actions": [
 						{
 							"id": "set-visible",
-							"objectClass": "Tooltip_Fire",
-							"sid": 922142973722579,
+							"objectClass": "Tutorial_SpriteFont_fire",
+							"sid": 597434818385993,
 							"parameters": {
 								"visibility": "invisible"
 							}
 						},
 						{
 							"id": "set-visible",
-							"objectClass": "Tooltip_Ice",
-							"sid": 555188011789738,
+							"objectClass": "Tooltip_Background_Fire",
+							"sid": 876934760794236,
 							"parameters": {
 								"visibility": "invisible"
 							}
 						},
 						{
 							"id": "set-visible",
-							"objectClass": "Tooltip_Electricity",
-							"sid": 171344104915619,
+							"objectClass": "Tutorial_SpriteFont_Electricity",
+							"sid": 220548515352500,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Tooltip_Background_Electricity",
+							"sid": 787584534411059,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Tutorial_SpriteFont_Ice",
+							"sid": 536254225105409,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Tooltip_Background_Ice",
+							"sid": 829218553104580,
 							"parameters": {
 								"visibility": "invisible"
 							}
 						}
 					],
 					"sid": 110413422694065
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 327937266964780
+						}
+					],
+					"actions": [
+						{
+							"id": "set-cursor-style",
+							"objectClass": "Mouse",
+							"sid": 723982911269109,
+							"parameters": {
+								"cursor-style": "normal"
+							}
+						},
+						{
+							"id": "set-angle-toward-position",
+							"objectClass": "Player",
+							"sid": 858914928681002,
+							"parameters": {
+								"x": "Mouse.X",
+								"y": "Mouse.Y"
+							}
+						}
+					],
+					"sid": 751611547968814
 				}
 			],
 			"sid": 368188500201813
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-clicked",
-					"objectClass": "DialogButtonNext",
-					"sid": 246174549664024
-				}
-			],
-			"actions": [
-				{
-					"id": "set-visible",
-					"objectClass": "Dialog_Box_background",
-					"sid": 657060282910387,
-					"parameters": {
-						"visibility": "invisible"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "Dialog_Text",
-					"sid": 455614295309468,
-					"parameters": {
-						"visibility": "invisible"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "DialogButtonNext",
-					"sid": 985550833346251,
-					"parameters": {
-						"visibility": "invisible"
-					}
-				},
-				{
-					"id": "set-enabled",
-					"objectClass": "DialogButtonNext",
-					"sid": 376033519533138,
-					"parameters": {
-						"mode": "disabled"
-					}
-				},
-				{
-					"id": "set-time-scale",
-					"objectClass": "System",
-					"sid": 793317565837038,
-					"parameters": {
-						"time-scale": "1.0"
-					}
-				},
-				{
-					"id": "set-boolean-eventvar",
-					"objectClass": "System",
-					"sid": 808448572083543,
-					"parameters": {
-						"variable": "isPaused",
-						"value": "false"
-					}
-				}
-			],
-			"sid": 331899806064586
 		}
 	],
 	"sid": 780379625061602

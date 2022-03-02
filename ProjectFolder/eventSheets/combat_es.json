@@ -97,6 +97,16 @@
 		},
 		{
 			"eventType": "variable",
+			"name": "DashOnCD",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 509161215540942
+		},
+		{
+			"eventType": "variable",
 			"name": "isPoisoned",
 			"type": "boolean",
 			"initialValue": "false",
@@ -104,6 +114,26 @@
 			"isStatic": false,
 			"isConstant": false,
 			"sid": 578949046250685
+		},
+		{
+			"eventType": "variable",
+			"name": "RandomNumber",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 258305629747823
+		},
+		{
+			"eventType": "variable",
+			"name": "ParalyzeChance",
+			"type": "number",
+			"initialValue": "20",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 655049170250136
 		},
 		{
 			"eventType": "variable",
@@ -204,15 +234,16 @@
 								{
 									"id": "set-width",
 									"objectClass": "HP_Green",
-									"sid": 405904137628042,
+									"sid": 142582223857018,
 									"parameters": {
-										"width": "(PlayerHealth/PlayerMaxHealth) * 238"
+										"width": "(PlayerHealth/PlayerMaxHealth) * 96"
 									}
 								},
 								{
 									"id": "set-position",
 									"objectClass": "HP_Green",
 									"sid": 918401283925115,
+									"disabled": true,
 									"parameters": {
 										"x": "136 + ((PlayerHealth/PlayerMaxHealth) * 136)",
 										"y": "HP_Green.Y"
@@ -378,6 +409,11 @@
 							],
 							"actions": [
 								{
+									"id": "destroy",
+									"objectClass": "Arrow",
+									"sid": 637639282913208
+								},
+								{
 									"id": "subtract-from-instvar",
 									"objectClass": "Enemies",
 									"sid": 703080980361880,
@@ -500,33 +536,62 @@
 									],
 									"actions": [
 										{
-											"id": "set-boolean-instvar",
-											"objectClass": "Enemies",
-											"sid": 890643467168574,
-											"parameters": {
-												"instance-variable": "Paralyzed",
-												"value": "true"
-											}
-										},
-										{
-											"id": "wait",
+											"id": "set-eventvar-value",
 											"objectClass": "System",
-											"sid": 601563190880486,
+											"sid": 756912238537805,
 											"parameters": {
-												"seconds": "5"
-											}
-										},
-										{
-											"id": "set-boolean-instvar",
-											"objectClass": "Enemies",
-											"sid": 660591274993404,
-											"parameters": {
-												"instance-variable": "Paralyzed",
-												"value": "false"
+												"variable": "RandomNumber",
+												"value": "random(0,101)"
 											}
 										}
 									],
-									"sid": 819983089720972
+									"sid": 819983089720972,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-eventvar",
+													"objectClass": "System",
+													"sid": 139927642550437,
+													"parameters": {
+														"variable": "RandomNumber",
+														"comparison": 3,
+														"value": "ParalyzeChance"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-boolean-instvar",
+													"objectClass": "Enemies",
+													"sid": 179524467097044,
+													"parameters": {
+														"instance-variable": "Paralyzed",
+														"value": "true"
+													}
+												},
+												{
+													"id": "wait",
+													"objectClass": "System",
+													"sid": 124838526543530,
+													"parameters": {
+														"seconds": "5"
+													}
+												},
+												{
+													"id": "set-boolean-instvar",
+													"objectClass": "Enemies",
+													"sid": 917955448641988,
+													"parameters": {
+														"instance-variable": "Paralyzed",
+														"value": "false"
+													}
+												}
+											],
+											"sid": 463816225483100
+										}
+									]
 								},
 								{
 									"eventType": "block",
@@ -580,15 +645,6 @@
 											"parameters": {
 												"variable": "Ice"
 											}
-										},
-										{
-											"id": "is-boolean-instance-variable-set",
-											"objectClass": "Enemies",
-											"sid": 476937011354858,
-											"parameters": {
-												"instance-variable": "Frozen"
-											},
-											"isInverted": true
 										}
 									],
 									"actions": [
@@ -776,15 +832,16 @@
 						{
 							"id": "set-width",
 							"objectClass": "HP_Green",
-							"sid": 259534737789509,
+							"sid": 978184809409328,
 							"parameters": {
-								"width": "(PlayerHealth/PlayerMaxHealth) * 238"
+								"width": "(PlayerHealth/PlayerMaxHealth) * 96"
 							}
 						},
 						{
 							"id": "set-position",
 							"objectClass": "HP_Green",
 							"sid": 635447787923674,
+							"disabled": true,
 							"parameters": {
 								"x": "136 - ((PlayerHealth/PlayerMaxHealth) * 136)",
 								"y": "HP_Green.Y"
@@ -1131,10 +1188,10 @@
 												{
 													"id": "set-instvar-value",
 													"objectClass": "Arrow",
-													"sid": 584052308675835,
+													"sid": 648529288599112,
 													"parameters": {
 														"instance-variable": "AttackPower",
-														"value": "2"
+														"value": "4"
 													}
 												}
 											],
@@ -1599,7 +1656,17 @@
 											}
 										}
 									],
-									"actions": [],
+									"actions": [
+										{
+											"id": "set-enabled",
+											"objectClass": "Player",
+											"sid": 310858311041014,
+											"behaviorType": "8Direction",
+											"parameters": {
+												"state": "disabled"
+											}
+										}
+									],
 									"sid": 347607669843114,
 									"children": [
 										{
@@ -1678,6 +1745,15 @@
 											"parameters": {
 												"width": "17",
 												"height": "17"
+											}
+										},
+										{
+											"id": "set-enabled",
+											"objectClass": "Player",
+											"sid": 293654802751603,
+											"behaviorType": "8Direction",
+											"parameters": {
+												"state": "enabled"
 											}
 										}
 									],
@@ -1777,10 +1853,10 @@
 												{
 													"id": "set-instvar-value",
 													"objectClass": "Arrow",
-													"sid": 356349422424349,
+													"sid": 437189559668590,
 													"parameters": {
 														"instance-variable": "AttackPower",
-														"value": "2"
+														"value": "4"
 													}
 												}
 											],
@@ -1870,7 +1946,17 @@
 											}
 										}
 									],
-									"actions": [],
+									"actions": [
+										{
+											"id": "set-enabled",
+											"objectClass": "Player",
+											"sid": 144397949347634,
+											"behaviorType": "8Direction",
+											"parameters": {
+												"state": "disabled"
+											}
+										}
+									],
 									"sid": 257829464921375,
 									"children": [
 										{
@@ -1949,6 +2035,15 @@
 											"parameters": {
 												"width": "17",
 												"height": "17"
+											}
+										},
+										{
+											"id": "set-enabled",
+											"objectClass": "Player",
+											"sid": 932392672056035,
+											"behaviorType": "8Direction",
+											"parameters": {
+												"state": "enabled"
 											}
 										}
 									],
@@ -2145,10 +2240,10 @@
 												{
 													"id": "set-instvar-value",
 													"objectClass": "Arrow",
-													"sid": 137311008177215,
+													"sid": 523267850798494,
 													"parameters": {
 														"instance-variable": "AttackPower",
-														"value": "1.5"
+														"value": "2"
 													}
 												}
 											],
@@ -2181,10 +2276,10 @@
 														{
 															"id": "set-instvar-value",
 															"objectClass": "Arrow",
-															"sid": 688922296087752,
+															"sid": 186945700298804,
 															"parameters": {
 																"instance-variable": "AttackPower",
-																"value": "1.5"
+																"value": "2"
 															}
 														},
 														{
@@ -2225,10 +2320,10 @@
 														{
 															"id": "set-instvar-value",
 															"objectClass": "Arrow",
-															"sid": 411992155797795,
+															"sid": 927127225002978,
 															"parameters": {
 																"instance-variable": "AttackPower",
-																"value": "1.5"
+																"value": "2"
 															}
 														},
 														{
@@ -2555,9 +2650,9 @@
 								{
 									"id": "compare-boolean-eventvar",
 									"objectClass": "System",
-									"sid": 536660682976248,
+									"sid": 254040121303306,
 									"parameters": {
-										"variable": "isPaused"
+										"variable": "DashOnCD"
 									},
 									"isInverted": true
 								}
@@ -2570,6 +2665,15 @@
 									"behaviorType": "Bullet",
 									"parameters": {
 										"state": "enabled"
+									}
+								},
+								{
+									"id": "set-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 699906524108440,
+									"parameters": {
+										"variable": "DashOnCD",
+										"value": "true"
 									}
 								},
 								{
@@ -2644,7 +2748,33 @@
 									}
 								}
 							],
-							"sid": 737082202789044
+							"sid": 737082202789044,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [],
+									"actions": [
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 144980180201328,
+											"parameters": {
+												"seconds": "1.5"
+											}
+										},
+										{
+											"id": "set-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 694853644579040,
+											"parameters": {
+												"variable": "DashOnCD",
+												"value": "false"
+											}
+										}
+									],
+									"sid": 868652008211928
+								}
+							]
 						},
 						{
 							"eventType": "block",
@@ -3450,37 +3580,35 @@
 							"parameters": {
 								"text": "PlayerHealth"
 							}
+						},
+						{
+							"id": "set-angle-toward-position",
+							"objectClass": "Player",
+							"sid": 830640310340272,
+							"parameters": {
+								"x": "Mouse.X",
+								"y": "Mouse.Y"
+							}
+						},
+						{
+							"id": "set-cursor-style",
+							"objectClass": "Mouse",
+							"sid": 993803949105186,
+							"parameters": {
+								"cursor-style": "none"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "Sprite2",
+							"sid": 196676030828978,
+							"parameters": {
+								"x": "Mouse.X",
+								"y": "Mouse.Y"
+							}
 						}
 					],
-					"sid": 201945289813932,
-					"children": [
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "compare-boolean-eventvar",
-									"objectClass": "System",
-									"sid": 630770862775140,
-									"parameters": {
-										"variable": "isPaused"
-									},
-									"isInverted": true
-								}
-							],
-							"actions": [
-								{
-									"id": "set-position",
-									"objectClass": "Sprite2",
-									"sid": 859855604760010,
-									"parameters": {
-										"x": "Mouse.X",
-										"y": "Mouse.Y"
-									}
-								}
-							],
-							"sid": 665532196725659
-						}
-					]
+					"sid": 201945289813932
 				},
 				{
 					"eventType": "block",
@@ -3980,15 +4108,16 @@
 										{
 											"id": "set-width",
 											"objectClass": "HP_Green",
-											"sid": 267465723752437,
+											"sid": 103861270159887,
 											"parameters": {
-												"width": "(PlayerHealth/PlayerMaxHealth) * 238"
+												"width": "(PlayerHealth/PlayerMaxHealth) * 96"
 											}
 										},
 										{
 											"id": "set-position",
 											"objectClass": "HP_Green",
 											"sid": 379490228705133,
+											"disabled": true,
 											"parameters": {
 												"x": "136 - ((PlayerHealth/PlayerMaxHealth) * 136)",
 												"y": "HP_Green.Y"

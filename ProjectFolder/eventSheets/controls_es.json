@@ -151,54 +151,6 @@
 				}
 			],
 			"sid": 139228943738778
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "every-tick",
-					"objectClass": "System",
-					"sid": 911643708774631
-				}
-			],
-			"actions": [],
-			"sid": 695237718982920,
-			"children": [
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-boolean-eventvar",
-							"objectClass": "System",
-							"sid": 604396913377106,
-							"parameters": {
-								"variable": "isPaused"
-							},
-							"isInverted": true
-						}
-					],
-					"actions": [
-						{
-							"id": "set-angle-toward-position",
-							"objectClass": "Player",
-							"sid": 802345716354302,
-							"parameters": {
-								"x": "Mouse.X",
-								"y": "Mouse.Y"
-							}
-						},
-						{
-							"id": "set-cursor-style",
-							"objectClass": "Mouse",
-							"sid": 788824751840265,
-							"parameters": {
-								"cursor-style": "none"
-							}
-						}
-					],
-					"sid": 644884289131860
-				}
-			]
 		}
 	],
 	"sid": 312005651760020

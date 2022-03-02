@@ -69,68 +69,6 @@
 					}
 				},
 				{
-					"type": "Player",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 301,
-					"instanceVariables": {},
-					"behaviors": {
-						"8Direction": {
-							"properties": {
-								"max-speed": 200,
-								"acceleration": 600,
-								"deceleration": 500,
-								"directions": "dir-8",
-								"set-angle": "smooth",
-								"default-controls": false,
-								"enabled": true
-							}
-						},
-						"ScrollTo": {
-							"properties": {
-								"enabled": true
-							}
-						},
-						"BoundToLayout": {
-							"properties": {
-								"bound-by": "edge"
-							}
-						},
-						"Bullet": {
-							"properties": {
-								"speed": 400,
-								"acceleration": 0,
-								"gravity": 0,
-								"bounce-off-solids": false,
-								"set-angle": true,
-								"step": false,
-								"enabled": false
-							}
-						}
-					},
-					"world": {
-						"x": 42,
-						"y": 149,
-						"width": 32,
-						"height": 32,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
 					"type": "TiledBackground2",
 					"properties": {
 						"initially-visible": true,
@@ -1695,35 +1633,6 @@
 						"y": 490,
 						"width": 32,
 						"height": 32,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Sprite2",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 556,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": -212,
-						"y": -730,
-						"width": 17,
-						"height": 17,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -4824,6 +4733,97 @@
 						"angle": 0,
 						"zElevation": 0
 					}
+				},
+				{
+					"type": "Player",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 301,
+					"instanceVariables": {},
+					"behaviors": {
+						"8Direction": {
+							"properties": {
+								"max-speed": 200,
+								"acceleration": 600,
+								"deceleration": 500,
+								"directions": "dir-8",
+								"set-angle": "smooth",
+								"default-controls": false,
+								"enabled": true
+							}
+						},
+						"ScrollTo": {
+							"properties": {
+								"enabled": true
+							}
+						},
+						"BoundToLayout": {
+							"properties": {
+								"bound-by": "edge"
+							}
+						},
+						"Bullet": {
+							"properties": {
+								"speed": 400,
+								"acceleration": 0,
+								"gravity": 0,
+								"bounce-off-solids": false,
+								"set-angle": true,
+								"step": false,
+								"enabled": false
+							}
+						}
+					},
+					"world": {
+						"x": 42,
+						"y": 149,
+						"width": 32,
+						"height": 32,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Sprite2",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 556,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": -212,
+						"y": -730,
+						"width": 17,
+						"height": 17,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
 				}
 			],
 			"sid": 846710645887002,
@@ -4986,10 +4986,10 @@
 						}
 					},
 					"world": {
-						"x": 122,
-						"y": 68,
-						"width": 238,
-						"height": 76,
+						"x": 49.03166809618817,
+						"y": 27.662156406259243,
+						"width": 96,
+						"height": 30,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -5025,10 +5025,10 @@
 						}
 					},
 					"world": {
-						"x": 122,
-						"y": 68,
-						"width": 238,
-						"height": 76,
+						"x": 49.03166809618817,
+						"y": 27.662156406259243,
+						"width": 96,
+						"height": 30,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -5064,10 +5064,10 @@
 						}
 					},
 					"world": {
-						"x": 121,
-						"y": 67,
-						"width": 238.20000000000002,
-						"height": 76,
+						"x": 48.996945996406794,
+						"y": 27.654206986872737,
+						"width": 96.1938919928136,
+						"height": 30.691586026254537,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -5103,10 +5103,10 @@
 						}
 					},
 					"world": {
-						"x": 124,
-						"y": 28,
-						"width": 238.20000000000002,
-						"height": 76,
+						"x": 47.996945996406794,
+						"y": 11.654206986872737,
+						"width": 96.1938919928136,
+						"height": 30.691586026254537,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -5125,7 +5125,7 @@
 						"text": "30",
 						"enable-bbcode": true,
 						"font": "Arial",
-						"size": 50,
+						"size": 10,
 						"line-height": 0,
 						"bold": true,
 						"italic": false,
@@ -5145,10 +5145,10 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 151,
-						"y": 48,
-						"width": 73,
-						"height": 52,
+						"x": 74.94214032333637,
+						"y": 28.77483516235702,
+						"width": 17.364905213153918,
+						"height": 12.36952152169868,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -5167,7 +5167,7 @@
 						"text": "30",
 						"enable-bbcode": true,
 						"font": "Arial",
-						"size": 45,
+						"size": 10,
 						"line-height": 0,
 						"bold": true,
 						"italic": false,
@@ -5187,10 +5187,10 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 143,
-						"y": 47,
-						"width": 73,
-						"height": 49,
+						"x": 74.17027720176615,
+						"y": 28.47793608566792,
+						"width": 17.364905,
+						"height": 12.369522,
 						"originX": 0,
 						"originY": 0,
 						"color": [
