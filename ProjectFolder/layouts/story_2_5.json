@@ -6277,6 +6277,35 @@
 					}
 				},
 				{
+					"type": "MenuBackgrounds",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 810,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 265,
+						"y": 157,
+						"width": 331.363052,
+						"height": 224.623307,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
 					"type": "SpriteFont",
 					"properties": {
 						"text": "Bob, that cur, was a cultist all along.\n\nHe had orchestrated your kidnapping, and set you upon this path.\n\nStill, you do not take any pleasure in his death.",

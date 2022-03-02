@@ -6277,6 +6277,35 @@
 					}
 				},
 				{
+					"type": "MenuBackgrounds",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 799,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 263,
+						"y": 147,
+						"width": 331.363052,
+						"height": 224.623307,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
 					"type": "SpriteFont",
 					"properties": {
 						"text": "At the end of the first round of this new challenge, a cultist dropped an Ability Card.\n\n\nWhat kind of ability will you gain when you use more than one?",

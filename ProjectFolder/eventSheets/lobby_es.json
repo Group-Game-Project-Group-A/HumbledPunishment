@@ -2502,36 +2502,108 @@
 							"isInverted": true
 						}
 					],
-					"actions": [
+					"actions": [],
+					"sid": 688985485229919,
+					"children": [
 						{
-							"id": "fade-volume",
-							"objectClass": "Audio",
-							"sid": 532599766630903,
-							"parameters": {
-								"tag": "\"\"",
-								"db": "-100",
-								"duration": "3",
-								"ending": "stop"
-							}
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-tag-playing",
+									"objectClass": "Audio",
+									"sid": 163897740118623,
+									"parameters": {
+										"tag": "\"Boss1\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "fade-volume",
+									"objectClass": "Audio",
+									"sid": 927830811665518,
+									"parameters": {
+										"tag": "\"Boss1\"\n",
+										"db": "-100",
+										"duration": "1",
+										"ending": "stop"
+									}
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 726776133272092,
+									"parameters": {
+										"audio-file": "Common Battle Music Play at -10 DB",
+										"loop": "looping",
+										"volume": "-100",
+										"tag-optional": "\"Normal\""
+									}
+								},
+								{
+									"id": "fade-volume",
+									"objectClass": "Audio",
+									"sid": 928952636785231,
+									"parameters": {
+										"tag": "\"Normal\"",
+										"db": "-20",
+										"duration": "1",
+										"ending": "keep-playing"
+									}
+								}
+							],
+							"sid": 894084970292100
 						},
 						{
-							"id": "wait-for-previous-actions",
-							"objectClass": "System",
-							"sid": 619329558170718
-						},
-						{
-							"id": "play",
-							"objectClass": "Audio",
-							"sid": 256963412792701,
-							"parameters": {
-								"audio-file": "Common Battle Music Play at -10 DB",
-								"loop": "looping",
-								"volume": "-20",
-								"tag-optional": "\"Normal\""
-							}
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-tag-playing",
+									"objectClass": "Audio",
+									"sid": 587687877311984,
+									"parameters": {
+										"tag": "\"Boss2\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "fade-volume",
+									"objectClass": "Audio",
+									"sid": 690246807172814,
+									"parameters": {
+										"tag": "\"Boss2\"\n",
+										"db": "-100",
+										"duration": "1",
+										"ending": "stop"
+									}
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 707284814299701,
+									"parameters": {
+										"audio-file": "Common Battle Music Play at -10 DB",
+										"loop": "looping",
+										"volume": "-100",
+										"tag-optional": "\"Normal\""
+									}
+								},
+								{
+									"id": "fade-volume",
+									"objectClass": "Audio",
+									"sid": 200187181090781,
+									"parameters": {
+										"tag": "\"Normal\"",
+										"db": "-20",
+										"duration": "1",
+										"ending": "keep-playing"
+									}
+								}
+							],
+							"sid": 268113342146197
 						}
-					],
-					"sid": 688985485229919
+					]
 				}
 			],
 			"sid": 368188500201813

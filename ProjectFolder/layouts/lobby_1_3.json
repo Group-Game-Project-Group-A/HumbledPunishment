@@ -6880,10 +6880,10 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1567,
-						"y": -459,
-						"width": 219.95608,
-						"height": 139.289991,
+						"x": 1595,
+						"y": -964,
+						"width": 220,
+						"height": 167,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -6909,10 +6909,10 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1576,
-						"y": -622,
-						"width": 219.95608,
-						"height": 139.289991,
+						"x": 1599,
+						"y": -589,
+						"width": 220,
+						"height": 203,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -6938,10 +6938,10 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1585,
-						"y": -312,
-						"width": 219.95608,
-						"height": 139.289991,
+						"x": 1599,
+						"y": -786,
+						"width": 220,
+						"height": 191.047785,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -6967,10 +6967,10 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1597,
-						"y": -75,
+						"x": 1600.5121218834206,
+						"y": -371.02699396908685,
 						"width": 220,
-						"height": 140,
+						"height": 213,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -6986,13 +6986,13 @@
 				{
 					"type": "Tutorial_SpriteFont_Ice",
 					"properties": {
-						"text": "Selecting the FROST affinity causes all your attacks and abilities to inflict a slow effect on enemies. This slow effect causes enemies to act for the course of its duration. An enemy cannot be affected by more than one slow effect at a time. Each instance of applying a slow effect causes the duration to be refreshed.\n\nBosses are immune to slow effects.\n\nEach affinity card is mutually exclusive, you cannot select more than one at the same time.",
+						"text": "Selecting the FROST affinity causes all your attacks and abilities to inflict a slow effect on enemies. This slow effect causes enemies to act for the course of its duration. An enemy cannot be affected by more than one slow effect at a time. There is a short cooldown on the application of the slow effect.\n\nBosses are immune to slow effects.\n\nEach affinity card is mutually exclusive, you cannot select more than one at the same time.",
 						"enable-bbcode": true,
 						"character-width": 16,
 						"character-height": 16,
 						"character-set": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#\"'&()[]|`\\/@°+=*$£€<>",
 						"spacing-data": "",
-						"scale": 0.4,
+						"scale": 0.5,
 						"character-spacing": 0,
 						"line-height": 0,
 						"horizontal-alignment": "center",
@@ -7005,10 +7005,10 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1585.1481245378739,
-						"y": -313.0492421703574,
+						"x": 1599,
+						"y": -787,
 						"width": 220,
-						"height": 140,
+						"height": 191.047785,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -7030,7 +7030,7 @@
 						"character-height": 16,
 						"character-set": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#\"'&()[]|`\\/@°+=*$£€<>",
 						"spacing-data": "",
-						"scale": 0.4,
+						"scale": 0.5,
 						"character-spacing": 0,
 						"line-height": 0,
 						"horizontal-alignment": "center",
@@ -7043,10 +7043,10 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1570.9261113793143,
-						"y": -461.13893196174405,
+						"x": 1599,
+						"y": -966,
 						"width": 220,
-						"height": 140,
+						"height": 167,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -7062,13 +7062,13 @@
 				{
 					"type": "Tutorial_SpriteFont_Electricity",
 					"properties": {
-						"text": "Selecting the ELECTRICITY affinity causes all your attacks and abilities to have a chance of inflicting a stun effect on enemies, otherwise known as paralysis. This paralysis effect prevents enemies from taking any actions over the course of its duration. An enemy once affected by a paralysis effect cannot be inflicted by another paralysis effect for some time afterwards.\n\nBosses are immune to paralysis effects.\n\nEach affinity card is mutually exclusive, you cannot select more than one at the same time.",
+						"text": "Selecting the LIGHTNING affinity causes all your attacks and abilities to have a chance of inflicting a stun effect on enemies, otherwise known as paralysis. This paralysis effect prevents enemies from taking any actions over the course of its duration. An enemy once affected by a paralysis effect cannot be inflicted by another paralysis effect for some time afterwards.\n\nBosses are immune to paralysis effects.\n\nEach affinity card is mutually exclusive, you cannot select more than one at the same time.",
 						"enable-bbcode": true,
 						"character-width": 16,
 						"character-height": 16,
 						"character-set": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#\"'&()[]|`\\/@°+=*$£€<>",
 						"spacing-data": "",
-						"scale": 0.4,
+						"scale": 0.5,
 						"character-spacing": 0,
 						"line-height": 0,
 						"horizontal-alignment": "center",
@@ -7081,10 +7081,10 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1577,
-						"y": -616,
+						"x": 1600,
+						"y": -583,
 						"width": 220,
-						"height": 140,
+						"height": 203,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -7100,13 +7100,13 @@
 				{
 					"type": "Tutorial_SpriteFont_Dash",
 					"properties": {
-						"text": "Selecting DASH will allow you to make a short tumble with your SPACE BAR. When you dash, you will leave behind a small trailing effect that will inflict the status effect of your elemental affinity. Dash has a cooldown of 1.5 seconds.\n\nFire dash will leave behind a burning effect that will damage enemies.\n\nElectricity dash will leave behind a shocking effect that will have a chance of paralyzing enemies.\n\nFrost dash will leave behind a slow effect that will slow enemies down while they are in the area.",
+						"text": "Selecting DASH will allow you to make a short tumble with your SPACE BAR. When you dash, you will leave behind a small trailing effect that will inflict the status effect of your elemental affinity. Dash has a cooldown of 1.5 seconds.\n\nFIRE dash will leave behind a burning effect that will damage enemies.\n\nLIGHTNING dash will leave behind a shocking effect that will have a chance of paralyzing enemies.\n\nFROST dash will leave behind a slow effect that will slow enemies down while they are in the area.",
 						"enable-bbcode": true,
 						"character-width": 16,
 						"character-height": 16,
 						"character-set": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#\"'&()[]|`\\/@°+=*$£€<>",
 						"spacing-data": "",
-						"scale": 0.4,
+						"scale": 0.5,
 						"character-spacing": 0,
 						"line-height": 0,
 						"horizontal-alignment": "center",
@@ -7119,77 +7119,10 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1601,
-						"y": -79,
+						"x": 1604.5121218834206,
+						"y": -375.02699396908685,
 						"width": 220,
-						"height": 140,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Tooltip_Background_Multishot",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 799,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 1589.3049928947771,
-						"y": -156.37893224576197,
-						"width": 220,
-						"height": 54,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Tutorial_SpriteFont_Multishot",
-					"properties": {
-						"text": "Selecting MULTISHOT will cause each of your attacks to shoot three arrows instead of one. Each arrow will do reduced base damage and will apply the elemental affinity you selected.",
-						"enable-bbcode": true,
-						"character-width": 16,
-						"character-height": 16,
-						"character-set": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#\"'&()[]|`\\/@°+=*$£€<>",
-						"spacing-data": "",
-						"scale": 0.4,
-						"character-spacing": 0,
-						"line-height": 0,
-						"horizontal-alignment": "center",
-						"vertical-alignment": "center",
-						"wrapping": "word",
-						"initially-visible": true,
-						"origin": "top-left"
-					},
-					"uid": 798,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 1587,
-						"y": -160,
-						"width": 220,
-						"height": 54,
+						"height": 213,
 						"originX": 0,
 						"originY": 0,
 						"color": [

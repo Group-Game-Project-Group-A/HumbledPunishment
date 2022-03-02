@@ -421,6 +421,37 @@
 								{
 									"id": "on-collision-with-another-object",
 									"objectClass": "Arrow",
+									"sid": 561436713048450,
+									"parameters": {
+										"object": "Enemies"
+									}
+								},
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Arrow",
+									"sid": 341927838418744,
+									"parameters": {
+										"instance-variable": "EnemiesItCanHit",
+										"comparison": 2,
+										"value": "2"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "destroy",
+									"objectClass": "Arrow",
+									"sid": 106791751977426
+								}
+							],
+							"sid": 578548343971852
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-collision-with-another-object",
+									"objectClass": "Arrow",
 									"sid": 297026492222872,
 									"parameters": {
 										"object": "Enemies"
@@ -429,17 +460,21 @@
 							],
 							"actions": [
 								{
-									"id": "destroy",
-									"objectClass": "Arrow",
-									"sid": 637639282913208
-								},
-								{
 									"id": "subtract-from-instvar",
 									"objectClass": "Enemies",
 									"sid": 703080980361880,
 									"parameters": {
 										"instance-variable": "Health",
 										"value": "Arrow.AttackPower"
+									}
+								},
+								{
+									"id": "subtract-from-instvar",
+									"objectClass": "Arrow",
+									"sid": 522384506533497,
+									"parameters": {
+										"instance-variable": "EnemiesItCanHit",
+										"value": "1"
 									}
 								},
 								{
@@ -533,6 +568,33 @@
 							],
 							"sid": 793411940882274,
 							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "Arrow",
+											"sid": 890877370611427,
+											"parameters": {
+												"instance-variable": "EnemiesItCanHit",
+												"comparison": 5,
+												"value": "2"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "subtract-from-instvar",
+											"objectClass": "Arrow",
+											"sid": 225030898004041,
+											"parameters": {
+												"instance-variable": "EnemiesItCanHit",
+												"value": "1"
+											}
+										}
+									],
+									"sid": 831294704025933
+								},
 								{
 									"eventType": "block",
 									"conditions": [
@@ -696,56 +758,6 @@
 										}
 									],
 									"sid": 359572339097907
-								},
-								{
-									"eventType": "block",
-									"conditions": [
-										{
-											"id": "compare-instance-variable",
-											"objectClass": "Arrow",
-											"sid": 329187416194279,
-											"parameters": {
-												"instance-variable": "EnemiesItCanHit",
-												"comparison": 3,
-												"value": "1"
-											}
-										}
-									],
-									"actions": [
-										{
-											"id": "destroy",
-											"objectClass": "Arrow",
-											"sid": 684008596575086
-										}
-									],
-									"sid": 650390822237493
-								},
-								{
-									"eventType": "block",
-									"conditions": [
-										{
-											"id": "compare-instance-variable",
-											"objectClass": "Arrow",
-											"sid": 595820000050556,
-											"parameters": {
-												"instance-variable": "EnemiesItCanHit",
-												"comparison": 0,
-												"value": "2"
-											}
-										}
-									],
-									"actions": [
-										{
-											"id": "subtract-from-instvar",
-											"objectClass": "Arrow",
-											"sid": 282392100724458,
-											"parameters": {
-												"instance-variable": "EnemiesItCanHit",
-												"value": "1"
-											}
-										}
-									],
-									"sid": 209496345147464
 								}
 							]
 						},
@@ -1103,6 +1115,17 @@
 												"width": "17",
 												"height": "17"
 											}
+										},
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 201196008982112,
+											"parameters": {
+												"audio-file": "Arrow Shooting Sound Play at -5 DB",
+												"loop": "not-looping",
+												"volume": "-10",
+												"tag-optional": "\"\""
+											}
 										}
 									],
 									"sid": 993933492729893,
@@ -1377,17 +1400,6 @@
 										}
 									],
 									"actions": [
-										{
-											"id": "play",
-											"objectClass": "Audio",
-											"sid": 778741121743940,
-											"parameters": {
-												"audio-file": "Arrow Shooting Sound Play at -5 DB",
-												"loop": "not-looping",
-												"volume": "-10",
-												"tag-optional": "\"\""
-											}
-										},
 										{
 											"id": "spawn-another-object",
 											"objectClass": "Player",
@@ -2563,7 +2575,19 @@
 											"isInverted": true
 										}
 									],
-									"actions": [],
+									"actions": [
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 429154831116915,
+											"parameters": {
+												"audio-file": "Arrow Shooting Sound Play at -5 DB",
+												"loop": "not-looping",
+												"volume": "-10",
+												"tag-optional": "\"\""
+											}
+										}
+									],
 									"sid": 392919009343651,
 									"children": [
 										{
@@ -3617,6 +3641,15 @@
 										{
 											"id": "set-instvar-value",
 											"objectClass": "Arrow",
+											"sid": 516685655701512,
+											"parameters": {
+												"instance-variable": "EnemiesItCanHit",
+												"value": "0"
+											}
+										},
+										{
+											"id": "set-instvar-value",
+											"objectClass": "Arrow",
 											"sid": 786207584977060,
 											"parameters": {
 												"instance-variable": "AttackPower",
@@ -3678,23 +3711,6 @@
 							}
 						},
 						{
-							"id": "set-angle-toward-position",
-							"objectClass": "Player",
-							"sid": 830640310340272,
-							"parameters": {
-								"x": "Mouse.X",
-								"y": "Mouse.Y"
-							}
-						},
-						{
-							"id": "set-cursor-style",
-							"objectClass": "Mouse",
-							"sid": 993803949105186,
-							"parameters": {
-								"cursor-style": "none"
-							}
-						},
-						{
 							"id": "set-position",
 							"objectClass": "Sprite2",
 							"sid": 196676030828978,
@@ -3704,7 +3720,43 @@
 							}
 						}
 					],
-					"sid": 201945289813932
+					"sid": 201945289813932,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 563618127422799,
+									"parameters": {
+										"variable": "isPaused"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "set-angle-toward-position",
+									"objectClass": "Player",
+									"sid": 340786019569541,
+									"parameters": {
+										"x": "Mouse.X",
+										"y": "Mouse.Y"
+									}
+								},
+								{
+									"id": "set-cursor-style",
+									"objectClass": "Mouse",
+									"sid": 413304166287784,
+									"parameters": {
+										"cursor-style": "none"
+									}
+								}
+							],
+							"sid": 164569686069249
+						}
+					]
 				},
 				{
 					"eventType": "block",
@@ -3722,15 +3774,126 @@
 					],
 					"actions": [
 						{
-							"id": "go-to-nextprevious-layout",
+							"id": "destroy",
+							"objectClass": "Sprite2",
+							"sid": 317295799825700
+						},
+						{
+							"id": "set-time-scale",
 							"objectClass": "System",
-							"sid": 666680353755266,
+							"sid": 331560250236403,
 							"parameters": {
-								"which": "previous"
+								"time-scale": "0"
+							}
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 345323683245053,
+							"parameters": {
+								"variable": "isPaused",
+								"value": "true"
+							}
+						},
+						{
+							"id": "set-cursor-style",
+							"objectClass": "Mouse",
+							"sid": 368795148708480,
+							"parameters": {
+								"cursor-style": "normal"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Vignette",
+							"sid": 760667456486743,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 200107942159414,
+							"parameters": {
+								"variable": "isPaused",
+								"value": "true"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "LoseText",
+							"sid": 172265189023282,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "LoseButton",
+							"sid": 731061938455105,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "LoseButton",
+							"sid": 138910017152411,
+							"parameters": {
+								"mode": "enabled"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "WinBackground",
+							"sid": 998986955027229,
+							"parameters": {
+								"visibility": "visible"
 							}
 						}
 					],
-					"sid": 187586539003536
+					"sid": 187586539003536,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-clicked",
+									"objectClass": "LoseButton",
+									"sid": 989814499700869
+								}
+							],
+							"actions": [
+								{
+									"id": "set-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 984672308507121,
+									"parameters": {
+										"variable": "isPaused",
+										"value": "false"
+									}
+								},
+								{
+									"id": "go-to-nextprevious-layout",
+									"objectClass": "System",
+									"sid": 185703015902584,
+									"parameters": {
+										"which": "previous"
+									}
+								},
+								{
+									"id": "set-time-scale",
+									"objectClass": "System",
+									"sid": 224027445654714,
+									"parameters": {
+										"time-scale": "1.0"
+									}
+								}
+							],
+							"sid": 649105368638377
+						}
+					]
 				},
 				{
 					"eventType": "block",
@@ -6068,11 +6231,36 @@
 							],
 							"actions": [
 								{
-									"id": "stop",
+									"id": "fade-volume",
 									"objectClass": "Audio",
-									"sid": 553499144088483,
+									"sid": 827147174224361,
 									"parameters": {
-										"tag": "\"Normal\""
+										"tag": "\"Normal\"",
+										"db": "-100",
+										"duration": "1",
+										"ending": "stop"
+									}
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 838994999235551,
+									"parameters": {
+										"audio-file": "1st Boss Fight Play at -4 DB",
+										"loop": "looping",
+										"volume": "-100",
+										"tag-optional": "\"Boss1\""
+									}
+								},
+								{
+									"id": "fade-volume",
+									"objectClass": "Audio",
+									"sid": 476547393364338,
+									"parameters": {
+										"tag": "\"Boss1\"",
+										"db": "-10",
+										"duration": "1",
+										"ending": "keep-playing"
 									}
 								},
 								{
@@ -6083,17 +6271,6 @@
 										"audio-file": "Boss 1 Evil Laugh Play at -5 DB",
 										"loop": "not-looping",
 										"volume": "-5",
-										"tag-optional": "\"\""
-									}
-								},
-								{
-									"id": "play",
-									"objectClass": "Audio",
-									"sid": 951810152157310,
-									"parameters": {
-										"audio-file": "1st Boss Fight Play at -4 DB",
-										"loop": "looping",
-										"volume": "-10",
 										"tag-optional": "\"\""
 									}
 								}
@@ -6215,6 +6392,16 @@
 									"objectClass": "Bob",
 									"sid": 662123129123994,
 									"behaviorType": "MoveTo"
+								},
+								{
+									"id": "has-los-to-object",
+									"objectClass": "Bob",
+									"sid": 750000520080602,
+									"behaviorType": "LineOfSight",
+									"parameters": {
+										"object": "Player",
+										"image-point": "0"
+									}
 								}
 							],
 							"actions": [],
@@ -6770,22 +6957,36 @@
 							],
 							"actions": [
 								{
-									"id": "stop",
+									"id": "fade-volume",
 									"objectClass": "Audio",
-									"sid": 865813853279495,
+									"sid": 987213929371279,
 									"parameters": {
-										"tag": "\"Normal\""
+										"tag": "\"Normal\"",
+										"db": "-100",
+										"duration": "1",
+										"ending": "stop"
 									}
 								},
 								{
 									"id": "play",
 									"objectClass": "Audio",
-									"sid": 236152121334820,
+									"sid": 625522575875125,
 									"parameters": {
 										"audio-file": "2nd Boss Fight Play at -4 DB",
 										"loop": "not-looping",
-										"volume": "-10",
-										"tag-optional": "\"\""
+										"volume": "-100",
+										"tag-optional": "\"Boss2\""
+									}
+								},
+								{
+									"id": "fade-volume",
+									"objectClass": "Audio",
+									"sid": 208925839548064,
+									"parameters": {
+										"tag": "\"Boss2\"",
+										"db": "-10",
+										"duration": "1",
+										"ending": "keep-playing"
 									}
 								},
 								{

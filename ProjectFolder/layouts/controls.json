@@ -6147,6 +6147,35 @@
 					}
 				},
 				{
+					"type": "MenuBackgrounds",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 769,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 236,
+						"y": 149,
+						"width": 388.363052,
+						"height": 163,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
 					"type": "SpriteFont",
 					"properties": {
 						"text": "C.O.N.T.R.O.L.S.",
@@ -6170,7 +6199,7 @@
 					"world": {
 						"x": 437.0000131869979,
 						"y": 171.54836607645677,
-						"width": 388.36305194774116,
+						"width": 388.363052,
 						"height": 42.623306587954545,
 						"originX": 0.5,
 						"originY": 0.5,
@@ -6208,7 +6237,7 @@
 					"world": {
 						"x": 437.000013,
 						"y": 260.4582710824121,
-						"width": 388.36305194774116,
+						"width": 388.363052,
 						"height": 140.4431167527788,
 						"originX": 0.5,
 						"originY": 0.5,

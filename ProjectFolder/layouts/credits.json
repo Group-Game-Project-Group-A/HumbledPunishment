@@ -6315,6 +6315,35 @@
 					}
 				},
 				{
+					"type": "MenuBackgrounds",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 5996,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 206,
+						"y": 207,
+						"width": 433.000013,
+						"height": 81.895811,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
 					"type": "SpriteFont",
 					"properties": {
 						"text": "was created by:\n\nHarry Brock - Programmer\nKyle Coll - Level Designer\nRosswell Cabrera - Art Designer\nSang Nguyen - Writer, Audio Designer, Project Manager",
@@ -6330,18 +6359,18 @@
 						"vertical-alignment": "center",
 						"wrapping": "word",
 						"initially-visible": true,
-						"origin": "center"
+						"origin": "top-left"
 					},
 					"uid": 3625,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 423.83078381007937,
-						"y": 253.97648168425138,
+						"x": 206,
+						"y": 207,
 						"width": 433.000013,
 						"height": 81.89581074114975,
-						"originX": 0.5,
-						"originY": 0.5,
+						"originX": 0,
+						"originY": 0,
 						"color": [
 							1,
 							1,

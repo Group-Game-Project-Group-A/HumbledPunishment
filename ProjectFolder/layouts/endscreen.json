@@ -6247,44 +6247,6 @@
 					}
 				},
 				{
-					"type": "SpriteFont",
-					"properties": {
-						"text": "Thank you for playing H.U.M.B.L.E.!!",
-						"enable-bbcode": true,
-						"character-width": 16,
-						"character-height": 16,
-						"character-set": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#\"'&()[]|`\\/@°+=*$£€<>",
-						"spacing-data": "",
-						"scale": 1,
-						"character-spacing": 0,
-						"line-height": 0,
-						"horizontal-alignment": "center",
-						"vertical-alignment": "center",
-						"wrapping": "word",
-						"initially-visible": true,
-						"origin": "center"
-					},
-					"uid": 5979,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 434.5000131869979,
-						"y": 198.54836607645677,
-						"width": 331.36305194774116,
-						"height": 84.62330658795454,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
 					"type": "But_Credits",
 					"properties": {
 						"type": "button",
@@ -6342,6 +6304,44 @@
 							1,
 							1
 						]
+					}
+				},
+				{
+					"type": "SpriteFont",
+					"properties": {
+						"text": "Thank you for playing H.U.M.B.L.E.!!",
+						"enable-bbcode": true,
+						"character-width": 16,
+						"character-height": 16,
+						"character-set": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#\"'&()[]|`\\/@°+=*$£€<>",
+						"spacing-data": "",
+						"scale": 1,
+						"character-spacing": 0,
+						"line-height": 0,
+						"horizontal-alignment": "center",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "center"
+					},
+					"uid": 5979,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 434.5000131869979,
+						"y": 198.54836607645677,
+						"width": 331.36305194774116,
+						"height": 84.62330658795454,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
 					}
 				}
 			],

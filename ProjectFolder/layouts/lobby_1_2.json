@@ -6808,8 +6808,8 @@
 					"world": {
 						"x": 1617,
 						"y": -979,
-						"width": 219.95608,
-						"height": 139.289991,
+						"width": 220,
+						"height": 167,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -6835,10 +6835,10 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1632,
-						"y": -669,
-						"width": 219.95608,
-						"height": 139.289991,
+						"x": 1612,
+						"y": -583,
+						"width": 220,
+						"height": 203,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -6864,10 +6864,10 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1619,
-						"y": -831,
-						"width": 219.95608,
-						"height": 139.289991,
+						"x": 1612.701771578436,
+						"y": -783.4769949915305,
+						"width": 220,
+						"height": 191.047785,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -6883,13 +6883,13 @@
 				{
 					"type": "Tutorial_SpriteFont_Ice",
 					"properties": {
-						"text": "Selecting the frost affinity causes all your attacks and abilities to inflict a slow effect on enemies. This slow effect causes enemies to act for the course of its duration. An enemy cannot be affected by more than one slow effect at a time. Each instance of applying a slow effect causes the duration to be refreshed.\n\nBosses are immune to slow effects.\n\nEach affinity card is mutually exclusive, you cannot select more than one at the same time.",
+						"text": "Selecting the FROST affinity causes all your attacks and abilities to inflict a slow effect on enemies. This slow effect causes enemies to act for the course of its duration. An enemy cannot be affected by more than one slow effect at a time. There is a short cooldown on the application of the slow effect.\n\nBosses are immune to slow effects.\n\nEach affinity card is mutually exclusive, you cannot select more than one at the same time.",
 						"enable-bbcode": true,
 						"character-width": 16,
 						"character-height": 16,
 						"character-set": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#\"'&()[]|`\\/@°+=*$£€<>",
 						"spacing-data": "",
-						"scale": 0.4,
+						"scale": 0.5,
 						"character-spacing": 0,
 						"line-height": 0,
 						"horizontal-alignment": "center",
@@ -6902,10 +6902,10 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1623,
-						"y": -832,
+						"x": 1613.83896843506,
+						"y": -790.7752426337626,
 						"width": 220,
-						"height": 140,
+						"height": 191.04778474063914,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -6927,7 +6927,7 @@
 						"character-height": 16,
 						"character-set": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#\"'&()[]|`\\/@°+=*$£€<>",
 						"spacing-data": "",
-						"scale": 0.4,
+						"scale": 0.5,
 						"character-spacing": 0,
 						"line-height": 0,
 						"horizontal-alignment": "center",
@@ -6943,7 +6943,7 @@
 						"x": 1621,
 						"y": -981,
 						"width": 220,
-						"height": 140,
+						"height": 167,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -6959,13 +6959,13 @@
 				{
 					"type": "Tutorial_SpriteFont_Electricity",
 					"properties": {
-						"text": "Selecting the electricity affinity causes all your attacks and abilities to have a chance of inflicting a stun effect on enemies, otherwise known as paralysis. This paralysis effect prevents enemies from taking any actions over the course of its duration. An enemy once affected by a paralysis effect cannot be inflicted by another paralysis effect for some time afterwards.\n\nBosses are immune to paralysis effects.\n\nEach affinity card is mutually exclusive, you cannot select more than one at the same time.",
+						"text": "Selecting the LIGHTNING affinity causes all your attacks and abilities to have a chance of inflicting a stun effect on enemies, otherwise known as paralysis. This paralysis effect prevents enemies from taking any actions over the course of its duration. An enemy once affected by a paralysis effect cannot be inflicted by another paralysis effect for some time afterwards.\n\nBosses are immune to paralysis effects.\n\nEach affinity card is mutually exclusive, you cannot select more than one at the same time.",
 						"enable-bbcode": true,
 						"character-width": 16,
 						"character-height": 16,
 						"character-set": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#\"'&()[]|`\\/@°+=*$£€<>",
 						"spacing-data": "",
-						"scale": 0.4,
+						"scale": 0.5,
 						"character-spacing": 0,
 						"line-height": 0,
 						"horizontal-alignment": "center",
@@ -6978,10 +6978,10 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1637,
-						"y": -675,
+						"x": 1613,
+						"y": -584,
 						"width": 220,
-						"height": 140,
+						"height": 203,
 						"originX": 0,
 						"originY": 0,
 						"color": [

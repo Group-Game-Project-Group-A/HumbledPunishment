@@ -6954,10 +6954,10 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1595,
-						"y": -886,
-						"width": 219.95608,
-						"height": 139.289991,
+						"x": 1606,
+						"y": -976,
+						"width": 220,
+						"height": 167,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -6983,10 +6983,10 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1598,
-						"y": -598,
-						"width": 219.95608,
-						"height": 139.289991,
+						"x": 1607,
+						"y": -594,
+						"width": 220,
+						"height": 203,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -7012,10 +7012,10 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1596,
-						"y": -745,
-						"width": 219.95608,
-						"height": 139.289991,
+						"x": 1605,
+						"y": -791,
+						"width": 220,
+						"height": 191.047785,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -7041,10 +7041,10 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1603,
-						"y": -442,
+						"x": 1620,
+						"y": -376,
 						"width": 220,
-						"height": 140,
+						"height": 213,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -7060,13 +7060,13 @@
 				{
 					"type": "Tutorial_SpriteFont_Ice",
 					"properties": {
-						"text": "Selecting the FROST affinity causes all your attacks and abilities to inflict a slow effect on enemies. This slow effect causes enemies to act for the course of its duration. An enemy cannot be affected by more than one slow effect at a time. Each instance of applying a slow effect causes the duration to be refreshed.\n\nBosses are immune to slow effects.\n\nEach affinity card is mutually exclusive, you cannot select more than one at the same time.",
+						"text": "Selecting the FROST affinity causes all your attacks and abilities to inflict a slow effect on enemies. This slow effect causes enemies to act for the course of its duration. An enemy cannot be affected by more than one slow effect at a time. There is a short cooldown on the application of the slow effect.\n\nBosses are immune to slow effects.\n\nEach affinity card is mutually exclusive, you cannot select more than one at the same time.",
 						"enable-bbcode": true,
 						"character-width": 16,
 						"character-height": 16,
 						"character-set": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#\"'&()[]|`\\/@°+=*$£€<>",
 						"spacing-data": "",
-						"scale": 0.4,
+						"scale": 0.5,
 						"character-spacing": 0,
 						"line-height": 0,
 						"horizontal-alignment": "center",
@@ -7079,10 +7079,10 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1594,
-						"y": -754,
+						"x": 1603,
+						"y": -800,
 						"width": 220,
-						"height": 140,
+						"height": 191.047785,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -7104,7 +7104,7 @@
 						"character-height": 16,
 						"character-set": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#\"'&()[]|`\\/@°+=*$£€<>",
 						"spacing-data": "",
-						"scale": 0.4,
+						"scale": 0.5,
 						"character-spacing": 0,
 						"line-height": 0,
 						"horizontal-alignment": "center",
@@ -7117,10 +7117,10 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1603,
-						"y": -888,
+						"x": 1614,
+						"y": -978,
 						"width": 220,
-						"height": 140,
+						"height": 167,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -7142,7 +7142,7 @@
 						"character-height": 16,
 						"character-set": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#\"'&()[]|`\\/@°+=*$£€<>",
 						"spacing-data": "",
-						"scale": 0.4,
+						"scale": 0.5,
 						"character-spacing": 0,
 						"line-height": 0,
 						"horizontal-alignment": "center",
@@ -7155,10 +7155,10 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1597,
-						"y": -595,
+						"x": 1606,
+						"y": -591,
 						"width": 220,
-						"height": 140,
+						"height": 203,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -7174,13 +7174,13 @@
 				{
 					"type": "Tutorial_SpriteFont_Dash",
 					"properties": {
-						"text": "Selecting DASH will allow you to make a short tumble with your SPACE BAR. When you dash, you will leave behind a small trailing effect that will inflict the status effect of your elemental affinity. Dash has a cooldown of 1.5 seconds.\n\nFire dash will leave behind a burning effect that will damage enemies.\n\nElectricity dash will leave behind a shocking effect that will have a chance of paralyzing enemies.\n\nFrost dash will leave behind a slow effect that will slow enemies down while they are in the area.",
+						"text": "Selecting DASH will allow you to make a short tumble with your SPACE BAR. When you dash, you will leave behind a small trailing effect that will inflict the status effect of your elemental affinity. Dash has a cooldown of 1.5 seconds.\n\nFIRE dash will leave behind a burning effect that will damage enemies.\n\nLIGHTNING dash will leave behind a shocking effect that will have a chance of paralyzing enemies.\n\nFROST dash will leave behind a slow effect that will slow enemies down while they are in the area.",
 						"enable-bbcode": true,
 						"character-width": 16,
 						"character-height": 16,
 						"character-set": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#\"'&()[]|`\\/@°+=*$£€<>",
 						"spacing-data": "",
-						"scale": 0.4,
+						"scale": 0.5,
 						"character-spacing": 0,
 						"line-height": 0,
 						"horizontal-alignment": "center",
@@ -7193,10 +7193,10 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1593,
-						"y": -446,
+						"x": 1610,
+						"y": -380,
 						"width": 220,
-						"height": 140,
+						"height": 213,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -7222,10 +7222,10 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1606,
-						"y": -286,
+						"x": 1613.5775889740385,
+						"y": -143.9795887501864,
 						"width": 220,
-						"height": 54,
+						"height": 83,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -7247,7 +7247,7 @@
 						"character-height": 16,
 						"character-set": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#\"'&()[]|`\\/@°+=*$£€<>",
 						"spacing-data": "",
-						"scale": 0.4,
+						"scale": 0.5,
 						"character-spacing": 0,
 						"line-height": 0,
 						"horizontal-alignment": "center",
@@ -7260,144 +7260,10 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1616,
-						"y": -287,
+						"x": 1623.5775889740385,
+						"y": -144.9795887501864,
 						"width": 220,
-						"height": 54,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Tooltip_Background_ChargedShot",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 769,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 1593,
-						"y": -225,
-						"width": 220,
-						"height": 106,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Tutorial_SpriteFont_ChargedShot",
-					"properties": {
-						"text": "Selecting CHARGED SHOT will allow you to hold-down the attack function to make an extremely strong attack with your arrow. The charge-up time for this attack is 3 seconds. While holding down the attack function you are stationary. Each charged shot will apply your elemental affinity to targets hit by your attack.\n\nYou may still attack regularly without holding down the attack function.\n",
-						"enable-bbcode": true,
-						"character-width": 16,
-						"character-height": 16,
-						"character-set": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#\"'&()[]|`\\/@°+=*$£€<>",
-						"spacing-data": "",
-						"scale": 0.4,
-						"character-spacing": 0,
-						"line-height": 0,
-						"horizontal-alignment": "center",
-						"vertical-alignment": "center",
-						"wrapping": "word",
-						"initially-visible": true,
-						"origin": "top-left"
-					},
-					"uid": 770,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 1598,
-						"y": -228,
-						"width": 220,
-						"height": 106,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Tooltip_Background_PierceShot",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 771,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 1596,
-						"y": -115,
-						"width": 220,
-						"height": 54,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Tutorial_SpriteFont_PierceShot",
-					"properties": {
-						"text": "Selecting PIERCE SHOT will cause each of your attacks to pierce and hit an additional enemy. Each attack will apply your elemental affinity to each additional enemy hit by the piercing effect.",
-						"enable-bbcode": true,
-						"character-width": 16,
-						"character-height": 16,
-						"character-set": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#\"'&()[]|`\\/@°+=*$£€<>",
-						"spacing-data": "",
-						"scale": 0.4,
-						"character-spacing": 0,
-						"line-height": 0,
-						"horizontal-alignment": "center",
-						"vertical-alignment": "center",
-						"wrapping": "word",
-						"initially-visible": true,
-						"origin": "top-left"
-					},
-					"uid": 772,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 1595,
-						"y": -110,
-						"width": 220,
-						"height": 54,
+						"height": 83,
 						"originX": 0,
 						"originY": 0,
 						"color": [

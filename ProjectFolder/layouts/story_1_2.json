@@ -6277,6 +6277,35 @@
 					}
 				},
 				{
+					"type": "MenuBackgrounds",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 771,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 263,
+						"y": 159,
+						"width": 331.363052,
+						"height": 224.623307,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
 					"type": "SpriteFont",
 					"properties": {
 						"text": "One of the skeletons dropped a couple of Tarot Cards.\n\n\n\nYou feel power emanating from them.",
