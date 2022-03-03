@@ -826,11 +826,11 @@
 											],
 											"actions": [
 												{
-													"id": "go-to-layout-by-name",
+													"id": "go-to-nextprevious-layout",
 													"objectClass": "System",
-													"sid": 982382845209860,
+													"sid": 673374851731574,
 													"parameters": {
-														"layout": "NextSceneZone.NextScene"
+														"which": "next"
 													}
 												}
 											],
