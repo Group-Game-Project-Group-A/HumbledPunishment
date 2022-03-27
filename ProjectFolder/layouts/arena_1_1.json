@@ -1447,7 +1447,10 @@
 						"Frozen": false,
 						"StartPosX": 0,
 						"StartPosY": 0,
-						"StartHealth": 0
+						"StartHealth": 0,
+						"Brittle": false,
+						"BrittleDamage": 0,
+						"BurnDamage": 1
 					},
 					"behaviors": {
 						"MoveTo": {
@@ -1464,7 +1467,7 @@
 						"LineOfSight": {
 							"properties": {
 								"obstacles": "custom",
-								"range": 300,
+								"range": 0,
 								"cone-of-view": 360,
 								"use-collision-cells": true
 							}
@@ -1488,8 +1491,8 @@
 						}
 					},
 					"world": {
-						"x": 804,
-						"y": 345,
+						"x": 1094,
+						"y": 482,
 						"width": 32,
 						"height": 32,
 						"originX": 0.5,
@@ -1521,7 +1524,10 @@
 						"Frozen": false,
 						"StartPosX": 0,
 						"StartPosY": 0,
-						"StartHealth": 0
+						"StartHealth": 0,
+						"Brittle": false,
+						"BrittleDamage": 0,
+						"BurnDamage": 1
 					},
 					"behaviors": {
 						"MoveTo": {
@@ -1538,7 +1544,7 @@
 						"LineOfSight": {
 							"properties": {
 								"obstacles": "custom",
-								"range": 300,
+								"range": 0,
 								"cone-of-view": 360,
 								"use-collision-cells": true
 							}
@@ -1562,8 +1568,8 @@
 						}
 					},
 					"world": {
-						"x": 783,
-						"y": 639,
+						"x": 900,
+						"y": 345,
 						"width": 32,
 						"height": 32,
 						"originX": 0.5,
@@ -1595,7 +1601,10 @@
 						"Frozen": false,
 						"StartPosX": 0,
 						"StartPosY": 0,
-						"StartHealth": 0
+						"StartHealth": 0,
+						"Brittle": false,
+						"BrittleDamage": 0,
+						"BurnDamage": 1
 					},
 					"behaviors": {
 						"MoveTo": {
@@ -1612,7 +1621,7 @@
 						"LineOfSight": {
 							"properties": {
 								"obstacles": "custom",
-								"range": 300,
+								"range": 0,
 								"cone-of-view": 360,
 								"use-collision-cells": true
 							}
@@ -1636,8 +1645,8 @@
 						}
 					},
 					"world": {
-						"x": 1003,
-						"y": 490,
+						"x": 848,
+						"y": 654,
 						"width": 32,
 						"height": 32,
 						"originX": 0.5,

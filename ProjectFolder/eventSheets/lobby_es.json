@@ -450,6 +450,7 @@
 													"id": "set-visible",
 													"objectClass": "Tutorial_SpriteFont_Dash",
 													"sid": 156767797412125,
+													"disabled": true,
 													"parameters": {
 														"visibility": "invisible"
 													}
@@ -458,6 +459,7 @@
 													"id": "set-visible",
 													"objectClass": "Tooltip_Background_Dash",
 													"sid": 623084769432746,
+													"disabled": true,
 													"parameters": {
 														"visibility": "invisible"
 													}
@@ -595,7 +597,8 @@
 													}
 												}
 											],
-											"sid": 313794368775254
+											"sid": 313794368775254,
+											"disabled": true
 										},
 										{
 											"eventType": "block",
@@ -650,6 +653,7 @@
 													"id": "set-visible",
 													"objectClass": "Tutorial_SpriteFont_Dash",
 													"sid": 471791451493490,
+													"disabled": true,
 													"parameters": {
 														"visibility": "invisible"
 													}
@@ -658,6 +662,7 @@
 													"id": "set-visible",
 													"objectClass": "Tooltip_Background_Dash",
 													"sid": 623342469571635,
+													"disabled": true,
 													"parameters": {
 														"visibility": "invisible"
 													}
@@ -766,6 +771,7 @@
 													"id": "set-visible",
 													"objectClass": "Tutorial_SpriteFont_Dash",
 													"sid": 683656996166057,
+													"disabled": true,
 													"parameters": {
 														"visibility": "invisible"
 													}
@@ -774,6 +780,7 @@
 													"id": "set-visible",
 													"objectClass": "Tooltip_Background_Dash",
 													"sid": 425005174100174,
+													"disabled": true,
 													"parameters": {
 														"visibility": "invisible"
 													}
@@ -2347,6 +2354,7 @@
 							"id": "set-visible",
 							"objectClass": "Tutorial_SpriteFont_Dash",
 							"sid": 373247384598825,
+							"disabled": true,
 							"parameters": {
 								"visibility": "invisible"
 							}
@@ -2355,6 +2363,7 @@
 							"id": "set-visible",
 							"objectClass": "Tooltip_Background_Dash",
 							"sid": 119177834125354,
+							"disabled": true,
 							"parameters": {
 								"visibility": "invisible"
 							}

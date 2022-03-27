@@ -1,7 +1,7 @@
 {
-	"name": "Tooltip_Background_Fire",
+	"name": "ZapRadius",
 	"plugin-id": "Sprite",
-	"sid": 224305389420299,
+	"sid": 920887379983075,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
@@ -11,19 +11,19 @@
 			{
 				"frames": [
 					{
-						"width": 250,
-						"height": 250,
-						"originX": 0,
-						"originY": 0,
+						"width": 96,
+						"height": 96,
+						"originX": 0.5,
+						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 9699666,
+						"imageSpriteId": 7830759,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 260196619570338,
+				"sid": 786521268415695,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

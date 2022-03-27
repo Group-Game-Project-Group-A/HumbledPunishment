@@ -6609,39 +6609,7 @@
 					},
 					"behaviors": {},
 					"world": {
-						"x": 367,
-						"y": 191,
-						"width": 44,
-						"height": 50,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "AbilityDock",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 526,
-					"instanceVariables": {
-						"Dockable": true,
-						"CardSlot": 1
-					},
-					"behaviors": {},
-					"world": {
-						"x": 504,
+						"x": 430,
 						"y": 191,
 						"width": 44,
 						"height": 50,
@@ -6683,7 +6651,7 @@
 						}
 					},
 					"world": {
-						"x": 323,
+						"x": 386,
 						"y": 251,
 						"width": 42,
 						"height": 48,
@@ -6725,7 +6693,7 @@
 						}
 					},
 					"world": {
-						"x": 367,
+						"x": 430,
 						"y": 251,
 						"width": 42,
 						"height": 48,
@@ -6767,49 +6735,7 @@
 						}
 					},
 					"world": {
-						"x": 411,
-						"y": 251,
-						"width": 42,
-						"height": 48,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "AbilityCards",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Dash",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 533,
-					"instanceVariables": {
-						"StartPosX": 0,
-						"StartPosY": 0,
-						"Docked": false,
-						"CardPosition": 0,
-						"Type": "Dash"
-					},
-					"behaviors": {
-						"DragDrop": {
-							"properties": {
-								"axes": "both",
-								"enabled": true
-							}
-						}
-					},
-					"world": {
-						"x": 504,
+						"x": 474,
 						"y": 251,
 						"width": 42,
 						"height": 48,
@@ -6868,6 +6794,207 @@
 					}
 				},
 				{
+					"type": "Tooltip_Background_PierceShot",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 526,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1714,
+						"y": -839,
+						"width": 125,
+						"height": 70,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Tutorial_SpriteFont_PierceShot",
+					"properties": {
+						"text": "[color=#a5a1b4]PIERCE SHOT[/color]\n\nYour arrows [color=#a5a1b4]PIERCE[/color], allowing you to hit multiple enemies with the same arrow.",
+						"enable-bbcode": true,
+						"character-width": 16,
+						"character-height": 16,
+						"character-set": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#\"'&()[]|`\\/@°+=*$£€<>",
+						"spacing-data": "",
+						"scale": 0.5,
+						"character-spacing": 0,
+						"line-height": 0,
+						"horizontal-alignment": "center",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 533,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1714,
+						"y": -839,
+						"width": 125,
+						"height": 70,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Tooltip_Background_ChargedShot",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 546,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1714,
+						"y": -911,
+						"width": 125,
+						"height": 70,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Tutorial_SpriteFont_ChargedShot",
+					"properties": {
+						"text": "[color=#a5a1b4]CHARGED SHOT[/color]\n\nStand still and [color=#a5a1b4]HOLD FIRE[/color] to charge up your shot, inflicting extra damage.",
+						"enable-bbcode": true,
+						"character-width": 16,
+						"character-height": 16,
+						"character-set": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#\"'&()[]|`\\/@°+=*$£€<>",
+						"spacing-data": "",
+						"scale": 0.5,
+						"character-spacing": 0,
+						"line-height": 0,
+						"horizontal-alignment": "center",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 743,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1714,
+						"y": -911,
+						"width": 125,
+						"height": 70,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Tooltip_Background_Multishot",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 744,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1714,
+						"y": -983,
+						"width": 125,
+						"height": 70,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Tutorial_SpriteFont_Multishot",
+					"properties": {
+						"text": "[color=#a5a1b4]MULTISHOT[/color]\n\nShoot three arrows in a cone in front of you at the same time.",
+						"enable-bbcode": true,
+						"character-width": 16,
+						"character-height": 16,
+						"character-set": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#\"'&()[]|`\\/@°+=*$£€<>",
+						"spacing-data": "",
+						"scale": 0.5,
+						"character-spacing": 0,
+						"line-height": 0,
+						"horizontal-alignment": "center",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 745,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1714,
+						"y": -983,
+						"width": 125,
+						"height": 70,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
 					"type": "Tooltip_Background_Fire",
 					"properties": {
 						"initially-visible": true,
@@ -6876,14 +7003,14 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 743,
+					"uid": 970,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1595,
-						"y": -964,
-						"width": 220,
-						"height": 167,
+						"x": 1587,
+						"y": -983,
+						"width": 125,
+						"height": 70,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -6905,14 +7032,14 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 744,
+					"uid": 996,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1599,
-						"y": -589,
-						"width": 220,
-						"height": 203,
+						"x": 1587,
+						"y": -839,
+						"width": 125,
+						"height": 70,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -6934,43 +7061,14 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 745,
+					"uid": 1062,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1599,
-						"y": -786,
-						"width": 220,
-						"height": 191.047785,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Tooltip_Background_Dash",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 746,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 1600.5121218834206,
-						"y": -371.02699396908685,
-						"width": 220,
-						"height": 213,
+						"x": 1587,
+						"y": -911,
+						"width": 125,
+						"height": 70,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -6986,7 +7084,7 @@
 				{
 					"type": "Tutorial_SpriteFont_Ice",
 					"properties": {
-						"text": "Selecting the FROST affinity causes all your attacks and abilities to inflict a slow effect on enemies. This slow effect causes enemies to act for the course of its duration. An enemy cannot be affected by more than one slow effect at a time. There is a short cooldown on the application of the slow effect.\n\nBosses are immune to slow effects.\n\nEach affinity card is mutually exclusive, you cannot select more than one at the same time.",
+						"text": "[color=#00f1f2]FROST ARROWS[/color]\n\nAttacks can cause [color=#00f1f2]EMBRITTLEMENT[/color]: enemies take extra arrow damage.",
 						"enable-bbcode": true,
 						"character-width": 16,
 						"character-height": 16,
@@ -7001,14 +7099,14 @@
 						"initially-visible": true,
 						"origin": "top-left"
 					},
-					"uid": 747,
+					"uid": 1063,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1599,
-						"y": -787,
-						"width": 220,
-						"height": 191.047785,
+						"x": 1587,
+						"y": -911,
+						"width": 125,
+						"height": 70,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -7024,7 +7122,7 @@
 				{
 					"type": "Tutorial_SpriteFont_fire",
 					"properties": {
-						"text": "Selecting the FIRE affinity causes all your attacks and abilities to inflict a burn effect on enemies. This burn effect causes enemies to take additional fire damage each second over the course of its duration. An enemy cannot be affected by more than one burn effect at a time. Each instance of applying a burn effect causes the duration to be refreshed.\n\nEach affinity card is mutually exclusive, you cannot select more than one at the same time.",
+						"text": "[color=#FF0000]FIRE ARROWS[/color]\n\nAttacks inflict [color=#FF0000]BURN[/color] damage over time to enemies hit by them.",
 						"enable-bbcode": true,
 						"character-width": 16,
 						"character-height": 16,
@@ -7039,14 +7137,14 @@
 						"initially-visible": true,
 						"origin": "top-left"
 					},
-					"uid": 748,
+					"uid": 1133,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1599,
-						"y": -966,
-						"width": 220,
-						"height": 167,
+						"x": 1587,
+						"y": -983,
+						"width": 125,
+						"height": 70,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -7062,7 +7160,7 @@
 				{
 					"type": "Tutorial_SpriteFont_Electricity",
 					"properties": {
-						"text": "Selecting the LIGHTNING affinity causes all your attacks and abilities to have a chance of inflicting a stun effect on enemies, otherwise known as paralysis. This paralysis effect prevents enemies from taking any actions over the course of its duration. An enemy once affected by a paralysis effect cannot be inflicted by another paralysis effect for some time afterwards.\n\nBosses are immune to paralysis effects.\n\nEach affinity card is mutually exclusive, you cannot select more than one at the same time.",
+						"text": "[color=#f2e600]ELECTRIC ARROWS[/color]\n\n\n[color=#f2e600]SHOCK[/color] enemies and spread damage to enemies nearby.",
 						"enable-bbcode": true,
 						"character-width": 16,
 						"character-height": 16,
@@ -7077,52 +7175,14 @@
 						"initially-visible": true,
 						"origin": "top-left"
 					},
-					"uid": 749,
+					"uid": 1134,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1600,
-						"y": -583,
-						"width": 220,
-						"height": 203,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Tutorial_SpriteFont_Dash",
-					"properties": {
-						"text": "Selecting DASH will allow you to make a short tumble with your SPACE BAR. When you dash, you will leave behind a small trailing effect that will inflict the status effect of your elemental affinity. Dash has a cooldown of 1.5 seconds.\n\nFIRE dash will leave behind a burning effect that will damage enemies.\n\nLIGHTNING dash will leave behind a shocking effect that will have a chance of paralyzing enemies.\n\nFROST dash will leave behind a slow effect that will slow enemies down while they are in the area.",
-						"enable-bbcode": true,
-						"character-width": 16,
-						"character-height": 16,
-						"character-set": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#\"'&()[]|`\\/@°+=*$£€<>",
-						"spacing-data": "",
-						"scale": 0.5,
-						"character-spacing": 0,
-						"line-height": 0,
-						"horizontal-alignment": "center",
-						"vertical-alignment": "center",
-						"wrapping": "word",
-						"initially-visible": true,
-						"origin": "top-left"
-					},
-					"uid": 750,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 1604.5121218834206,
-						"y": -375.02699396908685,
-						"width": 220,
-						"height": 213,
+						"x": 1587,
+						"y": -839,
+						"width": 125,
+						"height": 70,
 						"originX": 0,
 						"originY": 0,
 						"color": [
