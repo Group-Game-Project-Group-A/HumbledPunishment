@@ -180,7 +180,8 @@
 			"LoseText",
 			"LoseButton",
 			"MenuBackgrounds",
-			"ZapRadius"
+			"ZapRadius",
+			"Wall_Bar"
 		],
 		"subfolders": [
 			{
@@ -294,12 +295,7 @@
 			{
 				"items": [
 					"Border",
-					"Doors",
-					"Pillar",
-					"TiledBackground",
-					"TiledBackground2",
-					"Wall",
-					"WallTurn1"
+					"Doors"
 				],
 				"subfolders": [],
 				"name": "Walls & Barriers"
@@ -346,28 +342,60 @@
 			},
 			{
 				"items": [
-					"Tile1",
-					"Tile2",
-					"Wall_Basic",
-					"Wall_Border",
-					"Gate",
-					"Decor1",
-					"Pillar_2",
-					"Banner1",
-					"Tile3",
-					"Wall2",
-					"LevelFill",
-					"Painting1",
-					"Painting2",
-					"Painting3",
-					"Banner2",
-					"Banner3",
-					"Tile4",
-					"Wall_Border2",
-					"Sprite",
-					"Level2Fill"
+					"Level_Fill"
 				],
-				"subfolders": [],
+				"subfolders": [
+					{
+						"items": [
+							"Arena1_Decor1",
+							"Arena1_Decor2",
+							"Arena1_Fill",
+							"Arena1_FillConnector",
+							"Arena1_FillConnector2",
+							"Arena1_FillLeft",
+							"Arena1_FillRight",
+							"Arena1_Fountain",
+							"Arena1_Gate",
+							"Arena1_GateOpen",
+							"Arena1_Pedastal",
+							"Arena1_Pillar",
+							"Arena1_SeatsConnector",
+							"Arena1_SeatsConnector2",
+							"Arena1_SeatsMiddle",
+							"Arena1_Torch",
+							"Arena1_WallBar",
+							"Arena1_WallLeft",
+							"Arena1_WallMiddle",
+							"Arena1_WallRight",
+							"Banner"
+						],
+						"subfolders": [],
+						"name": "Level 1"
+					},
+					{
+						"items": [
+							"Level2_Border",
+							"Level2_Connector",
+							"Level2_Connector2",
+							"Level2_Fill",
+							"Level2_Gate",
+							"Level2_LeftFill",
+							"Level2_Pedastal",
+							"Level2_SeatsConnector",
+							"Level2_SeatsMiddle",
+							"Level2_Wall",
+							"Pipe",
+							"Acid",
+							"Level2_Decor",
+							"Level2_Decor2",
+							"Level2_Decor3",
+							"Pillaer",
+							"Banner2"
+						],
+						"subfolders": [],
+						"name": "Level 2"
+					}
+				],
 				"name": "LevelDesign"
 			}
 		]
@@ -616,7 +644,7 @@
 		"scriptsType": "module",
 		"framerateMode": "vsync",
 		"compositingMode": "standard",
-		"sampling": "trilinear",
+		"sampling": "nearest",
 		"downscaling": "medium",
 		"renderingMode": "auto",
 		"anisotropicFiltering": "auto",

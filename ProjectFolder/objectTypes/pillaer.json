@@ -1,0 +1,57 @@
+{
+	"name": "Pillaer",
+	"plugin-id": "Sprite",
+	"sid": 171242130995743,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 21,
+						"height": 47,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 1212583,
+						"collisionPoly": {
+							"points": [
+								0.14285714285714285,
+								0.06382978723404255,
+								0.5,
+								0,
+								0.7619047619047619,
+								0.0851063829787234,
+								0.7619047619047619,
+								0.5,
+								0.9523809523809523,
+								0.9787234042553191,
+								0.5,
+								0.9787234042553191,
+								0,
+								0.9787234042553191,
+								0.14285714285714285,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 104273434095196,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

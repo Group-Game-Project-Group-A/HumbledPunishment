@@ -1,0 +1,63 @@
+{
+	"name": "Level2_Gate",
+	"plugin-id": "Sprite",
+	"sid": 719221082898836,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 869884903167053
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 64,
+						"height": 32,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7912745,
+						"collisionPoly": {
+							"points": [
+								0.1875,
+								0.375,
+								0.5,
+								0,
+								0.796875,
+								0.375,
+								0.984375,
+								0.5,
+								0.984375,
+								0.96875,
+								0.5,
+								0.96875,
+								0,
+								0.96875,
+								0,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 473922218713559,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

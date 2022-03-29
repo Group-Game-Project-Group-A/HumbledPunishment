@@ -1,0 +1,63 @@
+{
+	"name": "Arena1_Pillar",
+	"plugin-id": "Sprite",
+	"sid": 950269271798024,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 392611037505928
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 16,
+						"height": 21,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 480625,
+						"collisionPoly": {
+							"points": [
+								0.125,
+								0.09523809523809523,
+								0.5,
+								0,
+								0.8125,
+								0.09523809523809523,
+								0.9375,
+								0.5,
+								0.8125,
+								0.8571428571428571,
+								0.5,
+								0.9523809523809523,
+								0.125,
+								0.8571428571428571,
+								0,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 990539596780844,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

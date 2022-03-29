@@ -1,0 +1,217 @@
+{
+	"name": "Arena1_Fountain",
+	"plugin-id": "Sprite",
+	"sid": 836389583041510,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7372672,
+						"collisionPoly": {
+							"points": [
+								0.1875,
+								0.1875,
+								0.5,
+								0,
+								0.75,
+								0.1875,
+								0.9375,
+								0.5,
+								0.9375,
+								0.9375,
+								0.5,
+								0.9375,
+								0,
+								0.9375,
+								0,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2158217,
+						"collisionPoly": {
+							"points": [
+								0.1875,
+								0.1875,
+								0.5,
+								0,
+								0.75,
+								0.1875,
+								0.9375,
+								0.5,
+								0.9375,
+								0.9375,
+								0.5,
+								0.9375,
+								0,
+								0.9375,
+								0,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9097767,
+						"collisionPoly": {
+							"points": [
+								0.1875,
+								0.1875,
+								0.5,
+								0,
+								0.75,
+								0.1875,
+								0.9375,
+								0.5,
+								0.9375,
+								0.9375,
+								0.5,
+								0.9375,
+								0,
+								0.9375,
+								0,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7106980,
+						"collisionPoly": {
+							"points": [
+								0.1875,
+								0.1875,
+								0.5,
+								0,
+								0.75,
+								0.1875,
+								0.9375,
+								0.5,
+								0.9375,
+								0.9375,
+								0.5,
+								0.9375,
+								0,
+								0.9375,
+								0,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 1585825,
+						"collisionPoly": {
+							"points": [
+								0.1875,
+								0.1875,
+								0.5,
+								0,
+								0.75,
+								0.1875,
+								0.9375,
+								0.5,
+								0.9375,
+								0.9375,
+								0.5,
+								0.9375,
+								0,
+								0.9375,
+								0,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 1197633,
+						"collisionPoly": {
+							"points": [
+								0.1875,
+								0.1875,
+								0.5,
+								0,
+								0.75,
+								0.1875,
+								0.9375,
+								0.5,
+								0.9375,
+								0.9375,
+								0.5,
+								0.9375,
+								0,
+								0.9375,
+								0,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 377822582766022,
+				"name": "Fountain-On",
+				"isLooping": true,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

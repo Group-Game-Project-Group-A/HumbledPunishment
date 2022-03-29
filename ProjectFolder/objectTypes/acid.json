@@ -1,0 +1,121 @@
+{
+	"name": "Acid",
+	"plugin-id": "Sprite",
+	"sid": 139011769213109,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 17,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5926222,
+						"collisionPoly": {
+							"points": [
+								0,
+								0,
+								0.5,
+								0,
+								0.9411764705882353,
+								0,
+								0.9411764705882353,
+								0.5,
+								0.9411764705882353,
+								0.9375,
+								0.5,
+								0.9375,
+								0,
+								0.9375,
+								0,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 17,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8181635,
+						"collisionPoly": {
+							"points": [
+								0,
+								0,
+								0.5,
+								0,
+								0.9411764705882353,
+								0,
+								0.9411764705882353,
+								0.5,
+								0.9411764705882353,
+								0.9375,
+								0.5,
+								0.9375,
+								0,
+								0.9375,
+								0,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 17,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 6692845,
+						"collisionPoly": {
+							"points": [
+								0,
+								0,
+								0.5,
+								0,
+								0.9411764705882353,
+								0,
+								0.9411764705882353,
+								0.5,
+								0.9411764705882353,
+								0.9375,
+								0.5,
+								0.9375,
+								0,
+								0.9375,
+								0,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 164607371843346,
+				"name": "On",
+				"isLooping": true,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 4
+			}
+		],
+		"subfolders": []
+	}
+}

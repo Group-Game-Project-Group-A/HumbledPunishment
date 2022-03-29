@@ -7179,6 +7179,55 @@
 				}
 			],
 			"sid": 581517714183928
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 777043671989064
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Arena1_Fountain",
+					"sid": 197290477812514,
+					"parameters": {
+						"animation": "\"Fountain-On\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Banner",
+					"sid": 410785445253573,
+					"parameters": {
+						"animation": "\"Banner-On\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Arena1_Torch",
+					"sid": 641510394746846,
+					"parameters": {
+						"animation": "\"Torch-On\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Acid",
+					"sid": 154957735935643,
+					"parameters": {
+						"animation": "\"On\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 932583215756547
 		}
 	],
 	"sid": 572159754785977
