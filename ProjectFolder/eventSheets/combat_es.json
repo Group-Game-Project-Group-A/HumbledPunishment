@@ -407,6 +407,25 @@
 							],
 							"actions": [
 								{
+									"id": "spawn-another-object",
+									"objectClass": "Arrow",
+									"sid": 867941103267907,
+									"parameters": {
+										"object": "Arrow_Hit_Wall",
+										"layer": "0",
+										"image-point": "0",
+										"create-hierarchy": false
+									}
+								},
+								{
+									"id": "set-angle",
+									"objectClass": "Arrow_Hit_Wall",
+									"sid": 446862451715762,
+									"parameters": {
+										"angle": "Arrow.Angle+180"
+									}
+								},
+								{
 									"id": "destroy",
 									"objectClass": "Arrow",
 									"sid": 444665964915630
@@ -438,6 +457,25 @@
 								}
 							],
 							"actions": [
+								{
+									"id": "spawn-another-object",
+									"objectClass": "Arrow",
+									"sid": 178613400148311,
+									"parameters": {
+										"object": "Arrow_Hit_Wall",
+										"layer": "0",
+										"image-point": "0",
+										"create-hierarchy": false
+									}
+								},
+								{
+									"id": "set-angle",
+									"objectClass": "Arrow_Hit_Wall",
+									"sid": 592067247252510,
+									"parameters": {
+										"angle": "Arrow.Angle+180"
+									}
+								},
 								{
 									"id": "destroy",
 									"objectClass": "Arrow",
