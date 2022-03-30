@@ -4064,6 +4064,17 @@
 					],
 					"actions": [
 						{
+							"id": "spawn-another-object",
+							"objectClass": "Enemies",
+							"sid": 583895189059556,
+							"parameters": {
+								"object": "Enemy_Defeat",
+								"layer": "0",
+								"image-point": "0",
+								"create-hierarchy": false
+							}
+						},
+						{
 							"id": "destroy",
 							"objectClass": "Enemies",
 							"sid": 647444111620868

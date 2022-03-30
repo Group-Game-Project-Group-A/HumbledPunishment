@@ -26971,6 +26971,51 @@
 						"angle": 0,
 						"zElevation": 0
 					}
+				},
+				{
+					"type": "Enemy_Defeat",
+					"properties": {
+						"rate": 50,
+						"spray-cone": 360,
+						"type": "one-shot",
+						"object": -1,
+						"live-preview": false,
+						"speed": 200,
+						"size": 7,
+						"opacity": 100,
+						"grow-rate": -10,
+						"x-randomiser": 0,
+						"y-randomiser": 0,
+						"initial-speed-randomiser": 10,
+						"size-randomiser": 8,
+						"grow-rate-randomiser": 0,
+						"acceleration": -150,
+						"gravity": 10,
+						"angle-randomiser": 35,
+						"life-speed-randomiser": 800,
+						"opacity-randomiser": 0,
+						"destroy-mode": "fade-to-invisible",
+						"timeout": 0.5
+					},
+					"uid": 8025,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 415,
+						"y": 1106,
+						"width": 36.41428291206625,
+						"height": 36.41428291206625,
+						"originX": 0,
+						"originY": 0.5,
+						"color": [
+							0,
+							0,
+							0,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
 				}
 			],
 			"sid": 725291316813194,

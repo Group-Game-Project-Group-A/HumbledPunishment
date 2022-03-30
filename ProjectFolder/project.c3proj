@@ -64,16 +64,16 @@
 		},
 		{
 			"type": "plugin",
-			"id": "Audio",
-			"name": "Audio",
+			"id": "Particles",
+			"name": "Particles",
 			"author": "Scirra",
 			"version": "r285.3",
 			"bundled": false
 		},
 		{
 			"type": "plugin",
-			"id": "Particles",
-			"name": "Particles",
+			"id": "Audio",
+			"name": "Audio",
 			"author": "Scirra",
 			"version": "r285.3",
 			"bundled": false
@@ -189,10 +189,7 @@
 			"LoseButton",
 			"MenuBackgrounds",
 			"ZapRadius",
-			"Wall_Bar",
-			"Blood",
-			"Blood2",
-			"Blood3"
+			"Wall_Bar"
 		],
 		"subfolders": [
 			{
@@ -408,6 +405,16 @@
 					}
 				],
 				"name": "LevelDesign"
+			},
+			{
+				"items": [
+					"Blood",
+					"Blood2",
+					"Blood3",
+					"Enemy_Defeat"
+				],
+				"subfolders": [],
+				"name": "Particles"
 			}
 		]
 	},
@@ -507,6 +514,11 @@
 					"name": "Player Hurt Play at -5 DB.webm",
 					"type": "audio/webm; codecs=opus",
 					"sid": 680817940797424
+				},
+				{
+					"name": "Skeleton_enemy_Defeated.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 547404724251389
 				}
 			],
 			"subfolders": []
