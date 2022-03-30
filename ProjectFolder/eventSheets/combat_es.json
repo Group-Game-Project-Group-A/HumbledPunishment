@@ -927,6 +927,39 @@
 							}
 						},
 						{
+							"id": "spawn-another-object",
+							"objectClass": "Player",
+							"sid": 465666642490629,
+							"parameters": {
+								"object": "Blood",
+								"layer": "0",
+								"image-point": "0",
+								"create-hierarchy": false
+							}
+						},
+						{
+							"id": "spawn-another-object",
+							"objectClass": "Player",
+							"sid": 808186945372377,
+							"parameters": {
+								"object": "Blood2",
+								"layer": "0",
+								"image-point": "0",
+								"create-hierarchy": false
+							}
+						},
+						{
+							"id": "spawn-another-object",
+							"objectClass": "Player",
+							"sid": 556378225817132,
+							"parameters": {
+								"object": "Blood3",
+								"layer": "0",
+								"image-point": "0",
+								"create-hierarchy": false
+							}
+						},
+						{
 							"id": "set-position",
 							"objectClass": "HP_Green",
 							"sid": 576608744508143,
@@ -5264,6 +5297,39 @@
 											}
 										},
 										{
+											"id": "spawn-another-object",
+											"objectClass": "Player",
+											"sid": 710706304167453,
+											"parameters": {
+												"object": "Blood",
+												"layer": "0",
+												"image-point": "0",
+												"create-hierarchy": false
+											}
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "Player",
+											"sid": 396056700334457,
+											"parameters": {
+												"object": "Blood2",
+												"layer": "0",
+												"image-point": "0",
+												"create-hierarchy": false
+											}
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "Player",
+											"sid": 227346619255251,
+											"parameters": {
+												"object": "Blood3",
+												"layer": "0",
+												"image-point": "0",
+												"create-hierarchy": false
+											}
+										},
+										{
 											"id": "play",
 											"objectClass": "Audio",
 											"sid": 898259035893448,
@@ -5735,6 +5801,39 @@
 													"parameters": {
 														"variable": "PlayerHealth",
 														"value": "1"
+													}
+												},
+												{
+													"id": "spawn-another-object",
+													"objectClass": "Player",
+													"sid": 243689231271602,
+													"parameters": {
+														"object": "Blood",
+														"layer": "0",
+														"image-point": "0",
+														"create-hierarchy": false
+													}
+												},
+												{
+													"id": "spawn-another-object",
+													"objectClass": "Player",
+													"sid": 123096765811792,
+													"parameters": {
+														"object": "Blood2",
+														"layer": "0",
+														"image-point": "0",
+														"create-hierarchy": false
+													}
+												},
+												{
+													"id": "spawn-another-object",
+													"objectClass": "Player",
+													"sid": 109355276614861,
+													"parameters": {
+														"object": "Blood3",
+														"layer": "0",
+														"image-point": "0",
+														"create-hierarchy": false
 													}
 												},
 												{
@@ -6212,6 +6311,39 @@
 											}
 										},
 										{
+											"id": "spawn-another-object",
+											"objectClass": "Player",
+											"sid": 262458436164438,
+											"parameters": {
+												"object": "Blood",
+												"layer": "0",
+												"image-point": "0",
+												"create-hierarchy": false
+											}
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "Player",
+											"sid": 329418171738762,
+											"parameters": {
+												"object": "Blood2",
+												"layer": "0",
+												"image-point": "0",
+												"create-hierarchy": false
+											}
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "Player",
+											"sid": 398783692110144,
+											"parameters": {
+												"object": "Blood3",
+												"layer": "0",
+												"image-point": "0",
+												"create-hierarchy": false
+											}
+										},
+										{
 											"id": "play",
 											"objectClass": "Audio",
 											"sid": 427356529730923,
@@ -6438,6 +6570,39 @@
 											"parameters": {
 												"variable": "PlayerHealth",
 												"value": "1"
+											}
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "Player",
+											"sid": 466264749328892,
+											"parameters": {
+												"object": "Blood",
+												"layer": "0",
+												"image-point": "0",
+												"create-hierarchy": false
+											}
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "Player",
+											"sid": 749526787184866,
+											"parameters": {
+												"object": "Blood2",
+												"layer": "0",
+												"image-point": "0",
+												"create-hierarchy": false
+											}
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "Player",
+											"sid": 526813070398919,
+											"parameters": {
+												"object": "Blood3",
+												"layer": "0",
+												"image-point": "0",
+												"create-hierarchy": false
 											}
 										},
 										{
@@ -6824,6 +6989,39 @@
 											"parameters": {
 												"variable": "PlayerHealth",
 												"value": "1"
+											}
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "Player",
+											"sid": 372651090907426,
+											"parameters": {
+												"object": "Blood",
+												"layer": "0",
+												"image-point": "0",
+												"create-hierarchy": false
+											}
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "Player",
+											"sid": 436367586142068,
+											"parameters": {
+												"object": "Blood2",
+												"layer": "0",
+												"image-point": "0",
+												"create-hierarchy": false
+											}
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "Player",
+											"sid": 188323680797265,
+											"parameters": {
+												"object": "Blood3",
+												"layer": "0",
+												"image-point": "0",
+												"create-hierarchy": false
 											}
 										},
 										{

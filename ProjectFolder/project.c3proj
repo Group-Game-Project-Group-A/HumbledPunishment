@@ -71,6 +71,14 @@
 			"bundled": false
 		},
 		{
+			"type": "plugin",
+			"id": "Particles",
+			"name": "Particles",
+			"author": "Scirra",
+			"version": "r285.3",
+			"bundled": false
+		},
+		{
 			"type": "behavior",
 			"id": "Bullet",
 			"name": "Bullet",
@@ -181,7 +189,10 @@
 			"LoseButton",
 			"MenuBackgrounds",
 			"ZapRadius",
-			"Wall_Bar"
+			"Wall_Bar",
+			"Blood",
+			"Blood2",
+			"Blood3"
 		],
 		"subfolders": [
 			{
