@@ -407,6 +407,10 @@
 							],
 							"actions": [
 								{
+									"type": "comment",
+									"text": "Added Arrow particle Effects"
+								},
+								{
 									"id": "spawn-another-object",
 									"objectClass": "Arrow",
 									"sid": 867941103267907,
@@ -457,6 +461,10 @@
 								}
 							],
 							"actions": [
+								{
+									"type": "comment",
+									"text": "Added Arrow particle Effects"
+								},
 								{
 									"id": "spawn-another-object",
 									"objectClass": "Arrow",
@@ -655,7 +663,7 @@
 												{
 													"id": "spawn-another-object",
 													"objectClass": "Enemies",
-													"sid": 250931539716297,
+													"sid": 986750320170172,
 													"parameters": {
 														"object": "ZapRadius",
 														"layer": "0",
@@ -963,6 +971,10 @@
 							"parameters": {
 								"width": "(PlayerHealth/PlayerMaxHealth) * 96"
 							}
+						},
+						{
+							"type": "comment",
+							"text": "Added Blood particle Effects (Located everywhere the player takes damage)"
 						},
 						{
 							"id": "spawn-another-object",
@@ -5855,9 +5867,9 @@
 												{
 													"id": "spawn-another-object",
 													"objectClass": "Player",
-													"sid": 243689231271602,
+													"sid": 683758396800690,
 													"parameters": {
-														"object": "Blood",
+														"object": "Acid_Particle",
 														"layer": "0",
 														"image-point": "0",
 														"create-hierarchy": false
@@ -5866,20 +5878,9 @@
 												{
 													"id": "spawn-another-object",
 													"objectClass": "Player",
-													"sid": 123096765811792,
+													"sid": 117258224283509,
 													"parameters": {
-														"object": "Blood2",
-														"layer": "0",
-														"image-point": "0",
-														"create-hierarchy": false
-													}
-												},
-												{
-													"id": "spawn-another-object",
-													"objectClass": "Player",
-													"sid": 109355276614861,
-													"parameters": {
-														"object": "Blood3",
+														"object": "Acid_Particle2",
 														"layer": "0",
 														"image-point": "0",
 														"create-hierarchy": false

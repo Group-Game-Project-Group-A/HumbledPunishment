@@ -27151,6 +27151,90 @@
 						"angle": 0,
 						"zElevation": 0
 					}
+				},
+				{
+					"type": "Dmg_Text_BG",
+					"properties": {
+						"text": "0",
+						"enable-bbcode": true,
+						"font": "Pixel_Font",
+						"size": 20,
+						"line-height": 0,
+						"bold": true,
+						"italic": false,
+						"color": [
+							0,
+							0,
+							0,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 8029,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 219.2411882361995,
+						"y": 999.959551882157,
+						"width": 54.49196277630227,
+						"height": 29.24993704485091,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Dmg_Text",
+					"properties": {
+						"text": "0",
+						"enable-bbcode": true,
+						"font": "Pixel_Font",
+						"size": 20,
+						"line-height": 0,
+						"bold": true,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 8030,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 218.2411882361995,
+						"y": 997.959551882157,
+						"width": 54.49196277630227,
+						"height": 29.24993704485091,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
 				}
 			],
 			"sid": 725291316813194,
