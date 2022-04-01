@@ -935,6 +935,66 @@
 										"animation": "\"Fire\"",
 										"from": "beginning"
 									}
+								},
+								{
+									"id": "spawn-another-object",
+									"objectClass": "Arrow",
+									"sid": 371392036809266,
+									"parameters": {
+										"object": "DashPaths",
+										"layer": "0",
+										"image-point": "0",
+										"create-hierarchy": false
+									}
+								},
+								{
+									"id": "move-to-object",
+									"objectClass": "DashPaths",
+									"sid": 545980058977392,
+									"parameters": {
+										"where": "behind",
+										"object": "Arrow"
+									}
+								},
+								{
+									"id": "move-to-object",
+									"objectClass": "DashPaths",
+									"sid": 606547130943475,
+									"parameters": {
+										"where": "behind",
+										"object": "Player"
+									}
+								},
+								{
+									"id": "move-to-object",
+									"objectClass": "DashPaths",
+									"sid": 409389622430333,
+									"parameters": {
+										"where": "behind",
+										"object": "Enemies"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "DashPaths",
+									"sid": 893688581891498,
+									"parameters": {
+										"animation": "\"Fire\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 650560643797103,
+									"parameters": {
+										"seconds": "1"
+									}
+								},
+								{
+									"id": "destroy",
+									"objectClass": "DashPaths",
+									"sid": 453391775213156
 								}
 							],
 							"sid": 390059806813614
@@ -2909,6 +2969,15 @@
 									}
 								},
 								{
+									"id": "set-angle-of-motion",
+									"objectClass": "Player",
+									"sid": 596233528610612,
+									"behaviorType": "Bullet",
+									"parameters": {
+										"angle": "Player.8Direction.MovingAngle"
+									}
+								},
+								{
 									"id": "set-boolean-eventvar",
 									"objectClass": "System",
 									"sid": 699906524108440,
@@ -2945,20 +3014,11 @@
 									}
 								},
 								{
-									"id": "set-angle-of-motion",
-									"objectClass": "Player",
-									"sid": 452653995051794,
-									"behaviorType": "Bullet",
-									"parameters": {
-										"angle": "Player.8Direction.MovingAngle"
-									}
-								},
-								{
 									"id": "wait",
 									"objectClass": "System",
-									"sid": 763231686313168,
+									"sid": 406646187193117,
 									"parameters": {
-										"seconds": "0.2"
+										"seconds": ".25"
 									}
 								},
 								{
@@ -4125,18 +4185,48 @@
 							}
 						},
 						{
-							"id": "destroy",
+							"id": "set-visible",
 							"objectClass": "Enemies",
-							"sid": 647444111620868
+							"sid": 371565583000411,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-collisions-enabled",
+							"objectClass": "Enemies",
+							"sid": 608773822020203,
+							"parameters": {
+								"collisions": "disabled"
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "Enemies",
+							"sid": 144127426036503,
+							"behaviorType": "MoveTo",
+							"parameters": {
+								"enabled": false
+							}
 						},
 						{
 							"id": "subtract-from-eventvar",
 							"objectClass": "System",
-							"sid": 397234212146864,
+							"sid": 138501408560603,
 							"parameters": {
 								"variable": "EnemyCount",
 								"value": "1"
 							}
+						},
+						{
+							"id": "wait-for-previous-actions",
+							"objectClass": "System",
+							"sid": 983265560087283
+						},
+						{
+							"id": "destroy",
+							"objectClass": "Enemies",
+							"sid": 647444111620868
 						}
 					],
 					"sid": 652613357011993,
@@ -4450,6 +4540,60 @@
 										}
 									],
 									"sid": 572942148844837
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-boolean-instance-variable-set",
+											"objectClass": "Enemies",
+											"sid": 951448777459327,
+											"parameters": {
+												"instance-variable": "Brittle"
+											}
+										}
+									],
+									"actions": [],
+									"sid": 362130105809800,
+									"children": [
+										{
+											"eventType": "comment",
+											"text": "When the enemy is brittle, their move speed is reduced by 20% for 5 seconds"
+										},
+										{
+											"eventType": "block",
+											"conditions": [],
+											"actions": [
+												{
+													"id": "set-max-speed",
+													"objectClass": "Enemies",
+													"sid": 198452978259156,
+													"behaviorType": "MoveTo",
+													"parameters": {
+														"max-speed": "Enemies.StartSpeed-(Enemies.StartSpeed*.20)"
+													}
+												},
+												{
+													"id": "wait",
+													"objectClass": "System",
+													"sid": 795925273667502,
+													"parameters": {
+														"seconds": "5"
+													}
+												},
+												{
+													"id": "set-max-speed",
+													"objectClass": "Enemies",
+													"sid": 944552826736067,
+													"behaviorType": "MoveTo",
+													"parameters": {
+														"max-speed": "Enemies.MoveTo.MaxSpeed + (Enemies.StartSpeed*.20)"
+													}
+												}
+											],
+											"sid": 584744848238655
+										}
+									]
 								}
 							],
 							"sid": 314933073886961
@@ -5283,9 +5427,9 @@
 												{
 													"id": "every-x-seconds",
 													"objectClass": "System",
-													"sid": 140981611783761,
+													"sid": 822697465788677,
 													"parameters": {
-														"interval-seconds": "0.5"
+														"interval-seconds": ".25"
 													}
 												}
 											],
@@ -6251,9 +6395,9 @@
 										{
 											"id": "every-x-seconds",
 											"objectClass": "System",
-											"sid": 930620017229934,
+											"sid": 682884487564549,
 											"parameters": {
-												"interval-seconds": "8"
+												"interval-seconds": "7"
 											}
 										}
 									],
@@ -7352,9 +7496,9 @@
 						{
 							"id": "every-x-seconds",
 							"objectClass": "System",
-							"sid": 840941366794206,
+							"sid": 829378904721595,
 							"parameters": {
-								"interval-seconds": "1"
+								"interval-seconds": ".75"
 							}
 						}
 					],
@@ -7394,9 +7538,9 @@
 								{
 									"id": "every-x-seconds",
 									"objectClass": "System",
-									"sid": 145996720330606,
+									"sid": 308049409398476,
 									"parameters": {
-										"interval-seconds": "1"
+										"interval-seconds": ".75"
 									}
 								}
 							],

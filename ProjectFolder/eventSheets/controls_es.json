@@ -126,27 +126,18 @@
 			"actions": [
 				{
 					"id": "set-visible",
-					"objectClass": "Doors",
-					"sid": 841816094476154,
+					"objectClass": "DoorWalls",
+					"sid": 133734348062166,
 					"parameters": {
 						"visibility": "visible"
 					}
 				},
 				{
-					"id": "set-enabled",
-					"objectClass": "Doors",
-					"sid": 850682769480779,
-					"behaviorType": "Solid",
+					"id": "set-collisions-enabled",
+					"objectClass": "DoorWalls",
+					"sid": 367319158245131,
 					"parameters": {
-						"state": "enabled"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "OrcBossHealthText",
-					"sid": 939845892469857,
-					"parameters": {
-						"visibility": "visible"
+						"collisions": "enabled"
 					}
 				}
 			],
