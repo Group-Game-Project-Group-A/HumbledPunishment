@@ -3563,6 +3563,15 @@
 											}
 										},
 										{
+											"id": "move-to-object",
+											"objectClass": "DashPaths",
+											"sid": 883693762654683,
+											"parameters": {
+												"where": "behind",
+												"object": "Enemies"
+											}
+										},
+										{
 											"id": "set-animation",
 											"objectClass": "DashPaths",
 											"sid": 551431995321319,
@@ -3621,6 +3630,15 @@
 											}
 										},
 										{
+											"id": "move-to-object",
+											"objectClass": "DashPaths",
+											"sid": 702594848226855,
+											"parameters": {
+												"where": "behind",
+												"object": "Enemies"
+											}
+										},
+										{
 											"id": "set-animation",
 											"objectClass": "DashPaths",
 											"sid": 599024324851922,
@@ -3676,6 +3694,15 @@
 											"parameters": {
 												"where": "behind",
 												"object": "Player"
+											}
+										},
+										{
+											"id": "move-to-object",
+											"objectClass": "DashPaths",
+											"sid": 451447152732604,
+											"parameters": {
+												"where": "behind",
+												"object": "Enemies"
 											}
 										},
 										{
