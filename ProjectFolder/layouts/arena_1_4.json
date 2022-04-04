@@ -25127,7 +25127,7 @@
 					},
 					"uid": 508,
 					"instanceVariables": {
-						"Health": 100,
+						"Health": 200,
 						"Burning": false,
 						"Paralyzed": false,
 						"Frozen": false,
@@ -25137,13 +25137,14 @@
 						"Brittle": false,
 						"BrittleDamage": 0,
 						"BurnDamage": 1,
+						"StartSpeed": 0,
 						"TravelOrder": 0,
 						"MaxHealth": 100
 					},
 					"behaviors": {
 						"MoveTo": {
 							"properties": {
-								"max-speed": 100,
+								"max-speed": 125,
 								"acceleration": 600,
 								"deceleration": 600,
 								"rotate-speed": 0,
@@ -25434,7 +25435,7 @@
 								"acceleration": 0,
 								"gravity": 0,
 								"bounce-off-solids": false,
-								"set-angle": true,
+								"set-angle": false,
 								"step": false,
 								"enabled": false
 							}
