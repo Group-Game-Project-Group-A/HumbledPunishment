@@ -1,0 +1,1110 @@
+{
+	"name": "Festival_ES",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "KillScore",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 327256276328643
+		},
+		{
+			"eventType": "variable",
+			"name": "TimeScore",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 383582821575547
+		},
+		{
+			"eventType": "variable",
+			"name": "StartTime",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 243500648016942
+		},
+		{
+			"eventType": "variable",
+			"name": "CombinedScore",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 896319468982335
+		},
+		{
+			"eventType": "variable",
+			"name": "timeStart",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 547608355018075
+		},
+		{
+			"eventType": "variable",
+			"name": "BossCount",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 364404336868121
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "Combat_ES"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "Controls_ES"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 969060733255276,
+					"parameters": {
+						"interval-seconds": "10"
+					}
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 254557169181193,
+					"parameters": {
+						"variable": "StartTime"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-instvar-value",
+					"objectClass": "EnemySpawnPoint",
+					"sid": 989701706090279,
+					"parameters": {
+						"instance-variable": "SpawnType",
+						"value": "round(random(0,4))"
+					}
+				}
+			],
+			"sid": 965010035727007,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "EnemySpawnPoint",
+							"sid": 625782660783638,
+							"parameters": {
+								"instance-variable": "SpawnType",
+								"comparison": 3,
+								"value": "0"
+							}
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "EnemySpawnPoint",
+							"sid": 637718327869849,
+							"parameters": {
+								"object": "Ranged_Enemy_Minor"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [],
+					"sid": 697578230265618,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "trigger-once-while-true",
+									"objectClass": "System",
+									"sid": 615582669399457
+								}
+							],
+							"actions": [
+								{
+									"id": "spawn-another-object",
+									"objectClass": "EnemySpawnPoint",
+									"sid": 280712300151333,
+									"parameters": {
+										"object": "Ranged_Enemy_Minor",
+										"layer": "0",
+										"image-point": "0",
+										"create-hierarchy": false
+									}
+								}
+							],
+							"sid": 186626908346098,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [],
+									"actions": [
+										{
+											"id": "move-to-object",
+											"objectClass": "Ranged_Enemy_Minor",
+											"sid": 394589002029819,
+											"parameters": {
+												"where": "in-front",
+												"object": "Player"
+											}
+										},
+										{
+											"id": "set-size",
+											"objectClass": "Ranged_Enemy_Minor",
+											"sid": 502763097987865,
+											"parameters": {
+												"width": "41.054662",
+												"height": "40"
+											}
+										},
+										{
+											"id": "set-range",
+											"objectClass": "Ranged_Enemy_Minor",
+											"sid": 859696943093058,
+											"behaviorType": "LineOfSight",
+											"parameters": {
+												"range": "300"
+											}
+										}
+									],
+									"sid": 832441907049254
+								}
+							]
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "EnemySpawnPoint",
+							"sid": 102484053896876,
+							"parameters": {
+								"instance-variable": "SpawnType",
+								"comparison": 4,
+								"value": "0"
+							}
+						},
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "EnemySpawnPoint",
+							"sid": 951816464688422,
+							"parameters": {
+								"instance-variable": "SpawnType",
+								"comparison": 3,
+								"value": "4"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 349814090491344,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "trigger-once-while-true",
+									"objectClass": "System",
+									"sid": 357246457506301
+								}
+							],
+							"actions": [
+								{
+									"id": "spawn-another-object",
+									"objectClass": "EnemySpawnPoint",
+									"sid": 694261459313207,
+									"parameters": {
+										"object": "Melee_Enemy_Minor",
+										"layer": "0",
+										"image-point": "0",
+										"create-hierarchy": false
+									}
+								}
+							],
+							"sid": 942613907297020,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [],
+									"actions": [
+										{
+											"id": "set-speed",
+											"objectClass": "Melee_Enemy_Minor",
+											"sid": 944040151422737,
+											"behaviorType": "Bullet",
+											"parameters": {
+												"speed": "0"
+											}
+										},
+										{
+											"id": "move-to-object",
+											"objectClass": "Melee_Enemy_Minor",
+											"sid": 172824409634001,
+											"parameters": {
+												"where": "in-front",
+												"object": "Player"
+											}
+										},
+										{
+											"id": "set-size",
+											"objectClass": "Melee_Enemy_Minor",
+											"sid": 824099699781810,
+											"parameters": {
+												"width": "32",
+												"height": "32"
+											}
+										},
+										{
+											"id": "set-max-speed",
+											"objectClass": "Melee_Enemy_Minor",
+											"sid": 741366796189695,
+											"behaviorType": "MoveTo",
+											"parameters": {
+												"max-speed": "150"
+											}
+										},
+										{
+											"id": "set-range",
+											"objectClass": "Melee_Enemy_Minor",
+											"sid": 745971872221283,
+											"behaviorType": "LineOfSight",
+											"parameters": {
+												"range": "10000"
+											}
+										},
+										{
+											"id": "set-cone-of-view",
+											"objectClass": "Melee_Enemy_Minor",
+											"sid": 667880733492876,
+											"behaviorType": "LineOfSight",
+											"parameters": {
+												"cone-of-view": "360"
+											}
+										},
+										{
+											"id": "set-instvar-value",
+											"objectClass": "Melee_Enemy_Minor",
+											"sid": 742812823681657,
+											"parameters": {
+												"instance-variable": "StartSpeed",
+												"value": "Melee_Enemy_Minor.MoveTo.MaxSpeed"
+											}
+										}
+									],
+									"sid": 849652813881414
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 894072784744942,
+					"parameters": {
+						"interval-seconds": "30"
+					}
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "HealthPickUpSpawner",
+					"sid": 361719729701346,
+					"parameters": {
+						"object": "HealthPickups"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "spawn-another-object",
+					"objectClass": "HealthPickUpSpawner",
+					"sid": 620812741663566,
+					"parameters": {
+						"object": "HealthPickups",
+						"layer": "0",
+						"image-point": "0",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "move-to-object",
+					"objectClass": "HealthPickups",
+					"sid": 849138973224699,
+					"parameters": {
+						"where": "in-front",
+						"object": "Player"
+					}
+				}
+			],
+			"sid": 467648160049063
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 492315105888290,
+					"parameters": {
+						"variable": "StartTime"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 201134321395237,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-x-seconds",
+							"objectClass": "System",
+							"sid": 300411057897581,
+							"parameters": {
+								"interval-seconds": "60"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-instvar-value",
+							"objectClass": "BossSpawnPoint",
+							"sid": 965879870766852,
+							"parameters": {
+								"instance-variable": "SpawnType",
+								"value": "round(random(0,2))"
+							}
+						}
+					],
+					"sid": 357669598256663,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "BossSpawnPoint",
+									"sid": 948387521327880,
+									"parameters": {
+										"instance-variable": "SpawnType",
+										"comparison": 5,
+										"value": "1"
+									}
+								},
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 760931301628494,
+									"parameters": {
+										"variable": "BossCount",
+										"comparison": 2,
+										"value": "1"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 185123715323982,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "trigger-once-while-true",
+											"objectClass": "System",
+											"sid": 942505717389101
+										}
+									],
+									"actions": [
+										{
+											"id": "spawn-another-object",
+											"objectClass": "BossSpawnPoint",
+											"sid": 302815717669886,
+											"parameters": {
+												"object": "Bob",
+												"layer": "0",
+												"image-point": "0",
+												"create-hierarchy": false
+											}
+										},
+										{
+											"id": "move-to-object",
+											"objectClass": "Bob",
+											"sid": 195578036049352,
+											"parameters": {
+												"where": "in-front",
+												"object": "Player"
+											}
+										},
+										{
+											"id": "set-instvar-value",
+											"objectClass": "Bob",
+											"sid": 935011724793425,
+											"parameters": {
+												"instance-variable": "Health",
+												"value": "100"
+											}
+										},
+										{
+											"id": "set-instvar-value",
+											"objectClass": "Bob",
+											"sid": 169378416449411,
+											"parameters": {
+												"instance-variable": "StartSpeed",
+												"value": "Bob.MoveTo.MaxSpeed"
+											}
+										},
+										{
+											"id": "add-to-eventvar",
+											"objectClass": "System",
+											"sid": 924443343829885,
+											"parameters": {
+												"variable": "BossCount",
+												"value": "1"
+											}
+										}
+									],
+									"sid": 226419031688759
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "BossSpawnPoint",
+									"sid": 815723246717790,
+									"parameters": {
+										"instance-variable": "SpawnType",
+										"comparison": 2,
+										"value": "1"
+									}
+								},
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 697635902820683,
+									"parameters": {
+										"variable": "BossCount",
+										"comparison": 2,
+										"value": "1"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 369034429731387,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "trigger-once-while-true",
+											"objectClass": "System",
+											"sid": 207942482943234
+										}
+									],
+									"actions": [
+										{
+											"id": "spawn-another-object",
+											"objectClass": "BossSpawnPoint",
+											"sid": 681610869651813,
+											"parameters": {
+												"object": "OrcBoss",
+												"layer": "0",
+												"image-point": "0",
+												"create-hierarchy": false
+											}
+										},
+										{
+											"id": "move-to-object",
+											"objectClass": "OrcBoss",
+											"sid": 317108924425124,
+											"parameters": {
+												"where": "in-front",
+												"object": "Player"
+											}
+										},
+										{
+											"id": "set-instvar-value",
+											"objectClass": "OrcBoss",
+											"sid": 227275056789523,
+											"parameters": {
+												"instance-variable": "Health",
+												"value": "100"
+											}
+										},
+										{
+											"id": "set-instvar-value",
+											"objectClass": "OrcBoss",
+											"sid": 341780211198392,
+											"parameters": {
+												"instance-variable": "StartSpeed",
+												"value": "OrcBoss.MoveTo.MaxSpeed"
+											}
+										},
+										{
+											"id": "add-to-eventvar",
+											"objectClass": "System",
+											"sid": 807294566706478,
+											"parameters": {
+												"variable": "BossCount",
+												"value": "1"
+											}
+										}
+									],
+									"sid": 350935361528172
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 673227427704758
+				}
+			],
+			"actions": [
+				{
+					"id": "set-instvar-value",
+					"objectClass": "BossSpawnPoint",
+					"sid": 389156794762173,
+					"parameters": {
+						"instance-variable": "SpawnType",
+						"value": "3"
+					}
+				},
+				{
+					"id": "move-to-top",
+					"objectClass": "Sprite2",
+					"sid": 902370468426206
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "EnemySpawnPoint",
+					"sid": 573500550564666,
+					"parameters": {
+						"instance-variable": "SpawnType",
+						"value": "7"
+					}
+				}
+			],
+			"sid": 773763210936864
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-destroyed",
+					"objectClass": "Melee_Enemy_Minor",
+					"sid": 771273966560663
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 780119098679020,
+					"parameters": {
+						"variable": "KillScore",
+						"value": "100"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "ScoreText",
+					"sid": 658213395689095,
+					"parameters": {
+						"text": "\"Score: \"&KillScore"
+					}
+				}
+			],
+			"sid": 225205885447903
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-destroyed",
+					"objectClass": "Ranged_Enemy_Minor",
+					"sid": 794412906727769
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 537725306121980,
+					"parameters": {
+						"variable": "KillScore",
+						"value": "75"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "ScoreText",
+					"sid": 289087486862134,
+					"parameters": {
+						"text": "\"Score: \"&KillScore"
+					}
+				}
+			],
+			"sid": 540091730636377
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-destroyed",
+					"objectClass": "OrcBoss",
+					"sid": 503378195772726
+				},
+				{
+					"id": "on-destroyed",
+					"objectClass": "Bob",
+					"sid": 407804781669352
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 152080004672006,
+					"parameters": {
+						"variable": "KillScore",
+						"value": "300"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "ScoreText",
+					"sid": 712637024517590,
+					"parameters": {
+						"text": "\"Score: \"&KillScore"
+					}
+				},
+				{
+					"id": "subtract-from-eventvar",
+					"objectClass": "System",
+					"sid": 402456280920548,
+					"parameters": {
+						"variable": "BossCount",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 796129728633898,
+			"isOrBlock": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 330834624014847,
+					"parameters": {
+						"interval-seconds": "1.0"
+					}
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 730990547560070,
+					"parameters": {
+						"variable": "StartTime"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 791089727438368,
+					"parameters": {
+						"variable": "PlayerHealth",
+						"comparison": 4,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 444749597824972,
+					"parameters": {
+						"variable": "TimeScore",
+						"value": "10"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "TimeText",
+					"sid": 795691080097443,
+					"parameters": {
+						"text": "\"Time: \"&round( time - timeStart)"
+					}
+				}
+			],
+			"sid": 780441169585008
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 429457615877640,
+					"parameters": {
+						"variable": "PlayerHealth",
+						"comparison": 3,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 276185520996790,
+					"parameters": {
+						"variable": "StartTime",
+						"value": "false"
+					}
+				}
+			],
+			"sid": 969904788602954,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 671637750216517,
+							"parameters": {
+								"variable": "KillScore",
+								"comparison": 5,
+								"value": "CombinedScore"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "Festival_LoseButton",
+							"sid": 108227068402985,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "Festival_LoseButton",
+							"sid": 383662581163484,
+							"parameters": {
+								"mode": "enabled"
+							}
+						}
+					],
+					"sid": 781523382972017
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 805518116678101
+						}
+					],
+					"actions": [
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 683208987082126,
+							"parameters": {
+								"variable": "CombinedScore",
+								"value": "KillScore+TimeScore"
+							}
+						}
+					],
+					"sid": 158665807451605
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 612869649578562,
+							"parameters": {
+								"variable": "KillScore",
+								"comparison": 2,
+								"value": "CombinedScore"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 572221134112735,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "every-x-seconds",
+									"objectClass": "System",
+									"sid": 812502869299063,
+									"parameters": {
+										"interval-seconds": ".05"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 548059386565435,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 267591103534641,
+											"parameters": {
+												"variable": "TimeScore",
+												"comparison": 3,
+												"value": "200"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "add-to-eventvar",
+											"objectClass": "System",
+											"sid": 826376684352090,
+											"parameters": {
+												"variable": "KillScore",
+												"value": "5"
+											}
+										}
+									],
+									"sid": 879006218878666
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 887492234616494,
+											"parameters": {
+												"variable": "TimeScore",
+												"comparison": 4,
+												"value": "200"
+											}
+										},
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 675361098951441,
+											"parameters": {
+												"variable": "TimeScore",
+												"comparison": 3,
+												"value": "600"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "add-to-eventvar",
+											"objectClass": "System",
+											"sid": 361747878106225,
+											"parameters": {
+												"variable": "KillScore",
+												"value": "5"
+											}
+										}
+									],
+									"sid": 217677797204829
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 264518185801999,
+											"parameters": {
+												"variable": "TimeScore",
+												"comparison": 4,
+												"value": "600"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "add-to-eventvar",
+											"objectClass": "System",
+											"sid": 650050809357537,
+											"parameters": {
+												"variable": "KillScore",
+												"value": "10"
+											}
+										}
+									],
+									"sid": 528342222995939
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Player",
+					"sid": 229941261925383,
+					"parameters": {
+						"object": "DoorCloser"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-collisions-enabled",
+					"objectClass": "DoorCloser",
+					"sid": 752099271867023,
+					"parameters": {
+						"collisions": "disabled"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 386564312946562,
+					"parameters": {
+						"variable": "StartTime",
+						"value": "true"
+					}
+				},
+				{
+					"id": "set-range",
+					"objectClass": "Enemies",
+					"sid": 154760103129346,
+					"behaviorType": "LineOfSight",
+					"parameters": {
+						"range": "10000"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 763652989094391,
+					"parameters": {
+						"variable": "timeStart",
+						"value": "time"
+					}
+				}
+			],
+			"sid": 855446364649082
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 306533962057979
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "ScoreText",
+					"sid": 352647159387610,
+					"parameters": {
+						"text": "\"Score: \"&KillScore"
+					}
+				}
+			],
+			"sid": 734361102190074
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "Festival_LoseButton",
+					"sid": 233601255682107
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 247953670142307,
+					"parameters": {
+						"layout": "Menu_Festival"
+					}
+				}
+			],
+			"sid": 536106614591690
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 249278592545567,
+					"parameters": {
+						"key": 82
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 170471263935931,
+					"parameters": {
+						"layout": "Menu_Festival"
+					}
+				}
+			],
+			"sid": 528220155163684
+		}
+	],
+	"sid": 143161717464574
+}

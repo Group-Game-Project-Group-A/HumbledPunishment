@@ -403,6 +403,22 @@
 									"parameters": {
 										"object": "TiledWalls"
 									}
+								},
+								{
+									"id": "on-collision-with-another-object",
+									"objectClass": "Arrow",
+									"sid": 858613699155314,
+									"parameters": {
+										"object": "Arena1_Pillar"
+									}
+								},
+								{
+									"id": "on-collision-with-another-object",
+									"objectClass": "Arrow",
+									"sid": 406494425384036,
+									"parameters": {
+										"object": "Pillaer"
+									}
 								}
 							],
 							"actions": [
@@ -939,9 +955,9 @@
 								{
 									"id": "spawn-another-object",
 									"objectClass": "Arrow",
-									"sid": 371392036809266,
+									"sid": 478004272579435,
 									"parameters": {
-										"object": "DashPaths",
+										"object": "ArrowPaths",
 										"layer": "0",
 										"image-point": "0",
 										"create-hierarchy": false
@@ -949,8 +965,8 @@
 								},
 								{
 									"id": "move-to-object",
-									"objectClass": "DashPaths",
-									"sid": 545980058977392,
+									"objectClass": "ArrowPaths",
+									"sid": 786927921358950,
 									"parameters": {
 										"where": "behind",
 										"object": "Arrow"
@@ -958,8 +974,8 @@
 								},
 								{
 									"id": "move-to-object",
-									"objectClass": "DashPaths",
-									"sid": 606547130943475,
+									"objectClass": "ArrowPaths",
+									"sid": 246424231719473,
 									"parameters": {
 										"where": "behind",
 										"object": "Player"
@@ -967,8 +983,8 @@
 								},
 								{
 									"id": "move-to-object",
-									"objectClass": "DashPaths",
-									"sid": 409389622430333,
+									"objectClass": "ArrowPaths",
+									"sid": 334093306741848,
 									"parameters": {
 										"where": "behind",
 										"object": "Enemies"
@@ -976,8 +992,8 @@
 								},
 								{
 									"id": "set-animation",
-									"objectClass": "DashPaths",
-									"sid": 893688581891498,
+									"objectClass": "ArrowPaths",
+									"sid": 412870503803377,
 									"parameters": {
 										"animation": "\"Fire\"",
 										"from": "beginning"
@@ -986,18 +1002,41 @@
 								{
 									"id": "wait",
 									"objectClass": "System",
-									"sid": 650560643797103,
+									"sid": 967295219685214,
 									"parameters": {
-										"seconds": "1"
+										"seconds": "0.5"
 									}
 								},
 								{
 									"id": "destroy",
-									"objectClass": "DashPaths",
-									"sid": 453391775213156
+									"objectClass": "ArrowPaths",
+									"sid": 672549513951284
 								}
 							],
 							"sid": 390059806813614
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-distance-travelled",
+									"objectClass": "Arrow",
+									"sid": 869517016425257,
+									"behaviorType": "Bullet",
+									"parameters": {
+										"comparison": 5,
+										"distance": "350"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "destroy",
+									"objectClass": "Arrow",
+									"sid": 887361039061757
+								}
+							],
+							"sid": 790998363648452
 						}
 					],
 					"sid": 497795141305891
@@ -1214,6 +1253,22 @@
 							"sid": 160505024141414,
 							"parameters": {
 								"object": "Walls"
+							}
+						},
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "EnemyArrows",
+							"sid": 675381872018547,
+							"parameters": {
+								"object": "Pillaer"
+							}
+						},
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "EnemyArrows",
+							"sid": 453962108674660,
+							"parameters": {
+								"object": "Arena1_Pillar"
 							}
 						}
 					],
@@ -1922,17 +1977,7 @@
 											}
 										}
 									],
-									"actions": [
-										{
-											"id": "set-enabled",
-											"objectClass": "Player",
-											"sid": 310858311041014,
-											"behaviorType": "8Direction",
-											"parameters": {
-												"state": "disabled"
-											}
-										}
-									],
+									"actions": [],
 									"sid": 347607669843114,
 									"children": [
 										{
@@ -1960,6 +2005,33 @@
 											],
 											"sid": 244975736790426,
 											"children": [
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "compare-eventvar",
+															"objectClass": "System",
+															"sid": 748279651702418,
+															"parameters": {
+																"variable": "CS_Power",
+																"comparison": 4,
+																"value": "1"
+															}
+														}
+													],
+													"actions": [
+														{
+															"id": "set-enabled",
+															"objectClass": "Player",
+															"sid": 818056046221933,
+															"behaviorType": "8Direction",
+															"parameters": {
+																"state": "disabled"
+															}
+														}
+													],
+													"sid": 471336916217638
+												},
 												{
 													"eventType": "block",
 													"conditions": [
@@ -3058,9 +3130,9 @@
 										{
 											"id": "wait",
 											"objectClass": "System",
-											"sid": 144980180201328,
+											"sid": 550608649878805,
 											"parameters": {
-												"seconds": "1.5"
+												"seconds": "1"
 											}
 										},
 										{
@@ -3086,6 +3158,14 @@
 									"sid": 483210335461665,
 									"parameters": {
 										"object": "DashPaths"
+									}
+								},
+								{
+									"id": "on-collision-with-another-object",
+									"objectClass": "Ranged_Enemy_Minor",
+									"sid": 527406654992496,
+									"parameters": {
+										"object": "ArrowPaths"
 									}
 								}
 							],
@@ -3218,7 +3298,76 @@
 									],
 									"sid": 106349746923101
 								}
-							]
+							],
+							"isOrBlock": true
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-collision-with-another-object",
+									"objectClass": "Bob",
+									"sid": 433425481450082,
+									"parameters": {
+										"object": "DashPaths"
+									}
+								},
+								{
+									"id": "on-collision-with-another-object",
+									"objectClass": "Bob",
+									"sid": 267966953942612,
+									"parameters": {
+										"object": "ArrowPaths"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 546448723670297,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 838311292729446,
+											"parameters": {
+												"variable": "Fire"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "Bob",
+											"sid": 562580135511884,
+											"parameters": {
+												"instance-variable": "Burning",
+												"value": "true"
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 820918041267250,
+											"parameters": {
+												"seconds": "4.5"
+											}
+										},
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "Bob",
+											"sid": 174538846820598,
+											"parameters": {
+												"instance-variable": "Burning",
+												"value": "false"
+											}
+										}
+									],
+									"sid": 613778124147666
+								}
+							],
+							"isOrBlock": true
 						},
 						{
 							"eventType": "block",
@@ -3230,95 +3379,19 @@
 									"parameters": {
 										"object": "DashPaths"
 									}
+								},
+								{
+									"id": "on-collision-with-another-object",
+									"objectClass": "OrcBoss",
+									"sid": 274884018526966,
+									"parameters": {
+										"object": "ArrowPaths"
+									}
 								}
 							],
 							"actions": [],
 							"sid": 560625694858677,
 							"children": [
-								{
-									"eventType": "block",
-									"conditions": [
-										{
-											"id": "compare-boolean-eventvar",
-											"objectClass": "System",
-											"sid": 589856827833581,
-											"parameters": {
-												"variable": "Electric"
-											}
-										}
-									],
-									"actions": [
-										{
-											"id": "set-boolean-instvar",
-											"objectClass": "OrcBoss",
-											"sid": 597786538287819,
-											"parameters": {
-												"instance-variable": "Paralyzed",
-												"value": "true"
-											}
-										},
-										{
-											"id": "wait",
-											"objectClass": "System",
-											"sid": 291642302603154,
-											"parameters": {
-												"seconds": "5"
-											}
-										},
-										{
-											"id": "set-boolean-instvar",
-											"objectClass": "OrcBoss",
-											"sid": 811020410116878,
-											"parameters": {
-												"instance-variable": "Paralyzed",
-												"value": "false"
-											}
-										}
-									],
-									"sid": 249736441995222
-								},
-								{
-									"eventType": "block",
-									"conditions": [
-										{
-											"id": "compare-boolean-eventvar",
-											"objectClass": "System",
-											"sid": 551180449482449,
-											"parameters": {
-												"variable": "Ice"
-											}
-										}
-									],
-									"actions": [
-										{
-											"id": "set-boolean-instvar",
-											"objectClass": "OrcBoss",
-											"sid": 136449436108254,
-											"parameters": {
-												"instance-variable": "Frozen",
-												"value": "true"
-											}
-										},
-										{
-											"id": "wait",
-											"objectClass": "System",
-											"sid": 190667305997667,
-											"parameters": {
-												"seconds": "5"
-											}
-										},
-										{
-											"id": "set-boolean-instvar",
-											"objectClass": "OrcBoss",
-											"sid": 107302786711829,
-											"parameters": {
-												"instance-variable": "Frozen",
-												"value": "false"
-											}
-										}
-									],
-									"sid": 654979501591652
-								},
 								{
 									"eventType": "block",
 									"conditions": [
@@ -3361,7 +3434,8 @@
 									],
 									"sid": 905568378922539
 								}
-							]
+							],
+							"isOrBlock": true
 						},
 						{
 							"eventType": "block",
@@ -3372,6 +3446,14 @@
 									"sid": 370879902122300,
 									"parameters": {
 										"object": "DashPaths"
+									}
+								},
+								{
+									"id": "on-collision-with-another-object",
+									"objectClass": "Melee_Enemy_Minor",
+									"sid": 758268021134872,
+									"parameters": {
+										"object": "ArrowPaths"
 									}
 								}
 							],
@@ -3504,7 +3586,8 @@
 									],
 									"sid": 148699053162212
 								}
-							]
+							],
+							"isOrBlock": true
 						},
 						{
 							"eventType": "block",
@@ -3750,6 +3833,22 @@
 									"parameters": {
 										"object": "TiledWalls"
 									}
+								},
+								{
+									"id": "on-collision-with-another-object",
+									"objectClass": "Player",
+									"sid": 935217949211746,
+									"parameters": {
+										"object": "Arena1_Pillar"
+									}
+								},
+								{
+									"id": "on-collision-with-another-object",
+									"objectClass": "Player",
+									"sid": 138163520217855,
+									"parameters": {
+										"object": "Pillaer"
+									}
 								}
 							],
 							"actions": [
@@ -3946,6 +4045,24 @@
 								"x": "Mouse.X",
 								"y": "Mouse.Y"
 							}
+						},
+						{
+							"id": "move-to-object",
+							"objectClass": "DashPaths",
+							"sid": 467796564272083,
+							"parameters": {
+								"where": "behind",
+								"object": "Player"
+							}
+						},
+						{
+							"id": "move-to-object",
+							"objectClass": "Arrow",
+							"sid": 305131811506179,
+							"parameters": {
+								"where": "behind",
+								"object": "Player"
+							}
 						}
 					],
 					"sid": 201945289813932,
@@ -4007,10 +4124,83 @@
 							"sid": 317295799825700
 						},
 						{
-							"id": "set-time-scale",
+							"id": "set-object-time-scale",
 							"objectClass": "System",
-							"sid": 331560250236403,
+							"sid": 397698824069157,
 							"parameters": {
+								"object": "Enemies",
+								"time-scale": "0"
+							}
+						},
+						{
+							"id": "set-object-time-scale",
+							"objectClass": "System",
+							"sid": 700083739384869,
+							"parameters": {
+								"object": "Player",
+								"time-scale": "0"
+							}
+						},
+						{
+							"id": "set-object-time-scale",
+							"objectClass": "System",
+							"sid": 563013963124301,
+							"parameters": {
+								"object": "Arrow",
+								"time-scale": "0"
+							}
+						},
+						{
+							"id": "set-object-time-scale",
+							"objectClass": "System",
+							"sid": 238076676385039,
+							"parameters": {
+								"object": "EnemyArrows",
+								"time-scale": "0"
+							}
+						},
+						{
+							"id": "set-object-time-scale",
+							"objectClass": "System",
+							"sid": 911349154388399,
+							"parameters": {
+								"object": "DashPaths",
+								"time-scale": "0"
+							}
+						},
+						{
+							"id": "set-object-time-scale",
+							"objectClass": "System",
+							"sid": 959427843227176,
+							"parameters": {
+								"object": "BossSpawnPoint",
+								"time-scale": "0"
+							}
+						},
+						{
+							"id": "set-object-time-scale",
+							"objectClass": "System",
+							"sid": 888390113489433,
+							"parameters": {
+								"object": "EnemySpawnPoint",
+								"time-scale": "0"
+							}
+						},
+						{
+							"id": "set-object-time-scale",
+							"objectClass": "System",
+							"sid": 900477463413246,
+							"parameters": {
+								"object": "HealthPickUpSpawner",
+								"time-scale": "0"
+							}
+						},
+						{
+							"id": "set-object-time-scale",
+							"objectClass": "System",
+							"sid": 893964613289108,
+							"parameters": {
+								"object": "Bobmelee",
 								"time-scale": "0"
 							}
 						},
@@ -4413,15 +4603,63 @@
 								"variable": "OrcBossPresent",
 								"value": "OrcBoss.Count"
 							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "Enemies",
+							"sid": 108446295425334,
+							"parameters": {
+								"instance-variable": "StartSpeed",
+								"value": "Enemies.MoveTo.MaxSpeed"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Arena1_Fountain",
+							"sid": 626100539332447,
+							"parameters": {
+								"animation": "\"Fountain-On\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Banner",
+							"sid": 416956877935896,
+							"parameters": {
+								"animation": "\"Banner-On\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Arena1_Torch",
+							"sid": 602059333253439,
+							"parameters": {
+								"animation": "\"Torch-On\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Acid",
+							"sid": 853273796441800,
+							"parameters": {
+								"animation": "\"On\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 583901324030143,
+							"parameters": {
+								"variable": "PlayerMaxHealth",
+								"value": "PlayerHealth"
+							}
 						}
 					],
-					"sid": 731290726689829,
-					"children": [
-						{
-							"eventType": "comment",
-							"text": "This is if we had respawning enemies."
-						}
-					]
+					"sid": 731290726689829
 				},
 				{
 					"eventType": "block",
@@ -4497,6 +4735,7 @@
 						}
 					],
 					"sid": 715676439362131,
+					"disabled": true,
 					"children": [
 						{
 							"eventType": "block",
@@ -4525,7 +4764,8 @@
 									}
 								}
 							],
-							"sid": 429222612961630
+							"sid": 429222612961630,
+							"disabled": true
 						}
 					]
 				},
@@ -6767,6 +7007,24 @@
 											"id": "move-to-top",
 											"objectClass": "Vignette",
 											"sid": 321843199386803
+										},
+										{
+											"id": "move-to-object",
+											"objectClass": "DashPaths",
+											"sid": 529684594749883,
+											"parameters": {
+												"where": "behind",
+												"object": "Player"
+											}
+										},
+										{
+											"id": "move-to-object",
+											"objectClass": "DashPaths",
+											"sid": 271301529405537,
+											"parameters": {
+												"where": "behind",
+												"object": "Arrow"
+											}
 										}
 									],
 									"sid": 111066779667484
@@ -7468,7 +7726,8 @@
 											}
 										}
 									],
-									"sid": 123822048736022
+									"sid": 123822048736022,
+									"disabled": true
 								},
 								{
 									"eventType": "block",
@@ -7598,55 +7857,6 @@
 				}
 			],
 			"sid": 581517714183928
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-start-of-layout",
-					"objectClass": "System",
-					"sid": 777043671989064
-				}
-			],
-			"actions": [
-				{
-					"id": "set-animation",
-					"objectClass": "Arena1_Fountain",
-					"sid": 197290477812514,
-					"parameters": {
-						"animation": "\"Fountain-On\"",
-						"from": "beginning"
-					}
-				},
-				{
-					"id": "set-animation",
-					"objectClass": "Banner",
-					"sid": 410785445253573,
-					"parameters": {
-						"animation": "\"Banner-On\"",
-						"from": "beginning"
-					}
-				},
-				{
-					"id": "set-animation",
-					"objectClass": "Arena1_Torch",
-					"sid": 641510394746846,
-					"parameters": {
-						"animation": "\"Torch-On\"",
-						"from": "beginning"
-					}
-				},
-				{
-					"id": "set-animation",
-					"objectClass": "Acid",
-					"sid": 154957735935643,
-					"parameters": {
-						"animation": "\"On\"",
-						"from": "beginning"
-					}
-				}
-			],
-			"sid": 932583215756547
 		}
 	],
 	"sid": 572159754785977

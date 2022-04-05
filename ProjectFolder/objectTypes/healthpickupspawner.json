@@ -1,28 +1,9 @@
 {
-	"name": "HealthPickups",
+	"name": "HealthPickUpSpawner",
 	"plugin-id": "Sprite",
-	"sid": 300153571758741,
+	"sid": 983532082586532,
 	"isGlobal": false,
-	"instanceVariables": [
-		{
-			"name": "HealthBoost",
-			"type": "number",
-			"desc": "",
-			"sid": 843077184616547
-		},
-		{
-			"name": "startPosX",
-			"type": "number",
-			"desc": "",
-			"sid": 992575531444548
-		},
-		{
-			"name": "startPosY",
-			"type": "number",
-			"desc": "",
-			"sid": 503440892613335
-		}
-	],
+	"instanceVariables": [],
 	"behaviorTypes": [],
 	"effectTypes": [],
 	"animations": {
@@ -30,19 +11,19 @@
 			{
 				"frames": [
 					{
-						"width": 16,
-						"height": 16,
+						"width": 250,
+						"height": 250,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 7407893,
+						"imageSpriteId": 1046369,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 812292587029860,
+				"sid": 686621337957338,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

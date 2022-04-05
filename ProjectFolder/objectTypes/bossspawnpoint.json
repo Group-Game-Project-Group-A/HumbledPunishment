@@ -1,26 +1,14 @@
 {
-	"name": "HealthPickups",
+	"name": "BossSpawnPoint",
 	"plugin-id": "Sprite",
-	"sid": 300153571758741,
+	"sid": 396149835181757,
 	"isGlobal": false,
 	"instanceVariables": [
 		{
-			"name": "HealthBoost",
+			"name": "SpawnType",
 			"type": "number",
 			"desc": "",
-			"sid": 843077184616547
-		},
-		{
-			"name": "startPosX",
-			"type": "number",
-			"desc": "",
-			"sid": 992575531444548
-		},
-		{
-			"name": "startPosY",
-			"type": "number",
-			"desc": "",
-			"sid": 503440892613335
+			"sid": 530077983362035
 		}
 	],
 	"behaviorTypes": [],
@@ -30,19 +18,19 @@
 			{
 				"frames": [
 					{
-						"width": 16,
-						"height": 16,
+						"width": 250,
+						"height": 250,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 7407893,
+						"imageSpriteId": 8517180,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 812292587029860,
+				"sid": 685051488827386,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

@@ -2638,6 +2638,30 @@
 				}
 			],
 			"sid": 549877878730751
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 567540088017707,
+					"parameters": {
+						"key": 82
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 322830707444702,
+					"parameters": {
+						"layout": "Menu_Festival"
+					}
+				}
+			],
+			"sid": 379561761284671
 		}
 	],
 	"sid": 780379625061602

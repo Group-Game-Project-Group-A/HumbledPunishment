@@ -111,6 +111,82 @@
 					"sid": 429814602964864
 				}
 			]
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Festival Buttons",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-clicked",
+							"objectClass": "But_Festival_StartOver",
+							"sid": 927400908040731
+						}
+					],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 179113486016570,
+							"parameters": {
+								"layout": "Menu_Festival"
+							}
+						}
+					],
+					"sid": 652801694805146
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-clicked",
+							"objectClass": "Festival_LoseButton",
+							"sid": 394580490568360
+						}
+					],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 443387133879763,
+							"parameters": {
+								"layout": "Menu_Festival"
+							}
+						}
+					],
+					"sid": 910212073201038
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Keyboard",
+							"sid": 555523187947962,
+							"parameters": {
+								"key": 82
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 234821363903472,
+							"parameters": {
+								"layout": "Menu_Festival"
+							}
+						}
+					],
+					"sid": 584398377047286
+				}
+			],
+			"sid": 935899593130039
 		}
 	],
 	"sid": 326467844477213

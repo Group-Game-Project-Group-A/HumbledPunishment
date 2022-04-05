@@ -1,7 +1,7 @@
 {
-	"name": "DashPaths",
+	"name": "ArrowPaths",
 	"plugin-id": "Sprite",
-	"sid": 520568522165314,
+	"sid": 130992564315301,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
@@ -11,19 +11,19 @@
 			{
 				"frames": [
 					{
-						"width": 28,
-						"height": 28,
+						"width": 16,
+						"height": 16,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 1124180,
+						"imageSpriteId": 8459091,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 308961633423191,
+				"sid": 833906832182032,
 				"name": "Electric",
 				"isLooping": false,
 				"isPingPong": false,
@@ -34,19 +34,19 @@
 			{
 				"frames": [
 					{
-						"width": 28,
-						"height": 28,
+						"width": 16,
+						"height": 16,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 6616332,
+						"imageSpriteId": 4035390,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 226353540883480,
+				"sid": 513624567889517,
 				"name": "Ice",
 				"isLooping": false,
 				"isPingPong": false,
@@ -57,19 +57,19 @@
 			{
 				"frames": [
 					{
-						"width": 28,
-						"height": 28,
+						"width": 16,
+						"height": 16,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 4464267,
+						"imageSpriteId": 2183372,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 830562098544998,
+				"sid": 984016486498116,
 				"name": "Fire",
 				"isLooping": false,
 				"isPingPong": false,
