@@ -123,6 +123,408 @@
 					}
 				},
 				{
+					"type": "Tooltip_Background_PierceShot",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 723,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1714,
+						"y": -838,
+						"width": 125,
+						"height": 70,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Tutorial_SpriteFont_PierceShot",
+					"properties": {
+						"text": "[color=#a5a1b4]PIERCE SHOT[/color]\n\nYour arrows [color=#a5a1b4]PIERCE[/color], allowing you to hit multiple enemies with the same arrow.",
+						"enable-bbcode": true,
+						"character-width": 16,
+						"character-height": 16,
+						"character-set": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#\"'&()[]|`\\/@°+=*$£€<>",
+						"spacing-data": "",
+						"scale": 0.5,
+						"character-spacing": 0,
+						"line-height": 0,
+						"horizontal-alignment": "center",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 729,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1714,
+						"y": -838,
+						"width": 125,
+						"height": 70,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Tooltip_Background_ChargedShot",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 760,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1714,
+						"y": -910,
+						"width": 125,
+						"height": 70,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Tutorial_SpriteFont_ChargedShot",
+					"properties": {
+						"text": "[color=#a5a1b4]CHARGED SHOT[/color]\n\nStand still and [color=#a5a1b4]HOLD FIRE[/color] to charge up your shot, inflicting extra damage.",
+						"enable-bbcode": true,
+						"character-width": 16,
+						"character-height": 16,
+						"character-set": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#\"'&()[]|`\\/@°+=*$£€<>",
+						"spacing-data": "",
+						"scale": 0.5,
+						"character-spacing": 0,
+						"line-height": 0,
+						"horizontal-alignment": "center",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 761,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1714,
+						"y": -910,
+						"width": 125,
+						"height": 70,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Tooltip_Background_Multishot",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 762,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1714,
+						"y": -982,
+						"width": 125,
+						"height": 70,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Tutorial_SpriteFont_Multishot",
+					"properties": {
+						"text": "[color=#a5a1b4]MULTISHOT[/color]\n\nShoot three arrows in a cone in front of you at the same time.",
+						"enable-bbcode": true,
+						"character-width": 16,
+						"character-height": 16,
+						"character-set": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#\"'&()[]|`\\/@°+=*$£€<>",
+						"spacing-data": "",
+						"scale": 0.5,
+						"character-spacing": 0,
+						"line-height": 0,
+						"horizontal-alignment": "center",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 763,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1714,
+						"y": -982,
+						"width": 125,
+						"height": 70,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Tooltip_Background_Fire",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 764,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1587,
+						"y": -982,
+						"width": 125,
+						"height": 70,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Tooltip_Background_Electricity",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 765,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1587,
+						"y": -838,
+						"width": 125,
+						"height": 70,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Tooltip_Background_Ice",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 783,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1587,
+						"y": -910,
+						"width": 125,
+						"height": 70,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Tutorial_SpriteFont_Ice",
+					"properties": {
+						"text": "[color=#00f1f2]FROST ARROWS[/color]\n\nAttacks can cause [color=#00f1f2]EMBRITTLEMENT[/color]: enemies take extra arrow damage.",
+						"enable-bbcode": true,
+						"character-width": 16,
+						"character-height": 16,
+						"character-set": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#\"'&()[]|`\\/@°+=*$£€<>",
+						"spacing-data": "",
+						"scale": 0.5,
+						"character-spacing": 0,
+						"line-height": 0,
+						"horizontal-alignment": "center",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 784,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1587,
+						"y": -910,
+						"width": 125,
+						"height": 70,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Tutorial_SpriteFont_fire",
+					"properties": {
+						"text": "[color=#FF0000]FIRE ARROWS[/color]\n\nAttacks inflict [color=#FF0000]BURN[/color] damage over time to enemies hit by them.",
+						"enable-bbcode": true,
+						"character-width": 16,
+						"character-height": 16,
+						"character-set": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#\"'&()[]|`\\/@°+=*$£€<>",
+						"spacing-data": "",
+						"scale": 0.5,
+						"character-spacing": 0,
+						"line-height": 0,
+						"horizontal-alignment": "center",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 5998,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1587,
+						"y": -982,
+						"width": 125,
+						"height": 70,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Tutorial_SpriteFont_Electricity",
+					"properties": {
+						"text": "[color=#f2e600]ELECTRIC ARROWS[/color]\n\n\n[color=#f2e600]SHOCK[/color] enemies and spread damage to enemies nearby.",
+						"enable-bbcode": true,
+						"character-width": 16,
+						"character-height": 16,
+						"character-set": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#\"'&()[]|`\\/@°+=*$£€<>",
+						"spacing-data": "",
+						"scale": 0.5,
+						"character-spacing": 0,
+						"line-height": 0,
+						"horizontal-alignment": "center",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 5999,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1587,
+						"y": -838,
+						"width": 125,
+						"height": 70,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
 					"type": "NextSceneZone",
 					"properties": {
 						"initially-visible": true,
@@ -4269,408 +4671,6 @@
 						"height": 32,
 						"originX": 0.5,
 						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Tooltip_Background_PierceShot",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 723,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 1714,
-						"y": -838,
-						"width": 125,
-						"height": 70,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Tutorial_SpriteFont_PierceShot",
-					"properties": {
-						"text": "[color=#a5a1b4]PIERCE SHOT[/color]\n\nYour arrows [color=#a5a1b4]PIERCE[/color], allowing you to hit multiple enemies with the same arrow.",
-						"enable-bbcode": true,
-						"character-width": 16,
-						"character-height": 16,
-						"character-set": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#\"'&()[]|`\\/@°+=*$£€<>",
-						"spacing-data": "",
-						"scale": 0.5,
-						"character-spacing": 0,
-						"line-height": 0,
-						"horizontal-alignment": "center",
-						"vertical-alignment": "center",
-						"wrapping": "word",
-						"initially-visible": true,
-						"origin": "top-left"
-					},
-					"uid": 729,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 1714,
-						"y": -838,
-						"width": 125,
-						"height": 70,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Tooltip_Background_ChargedShot",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 760,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 1714,
-						"y": -910,
-						"width": 125,
-						"height": 70,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Tutorial_SpriteFont_ChargedShot",
-					"properties": {
-						"text": "[color=#a5a1b4]CHARGED SHOT[/color]\n\nStand still and [color=#a5a1b4]HOLD FIRE[/color] to charge up your shot, inflicting extra damage.",
-						"enable-bbcode": true,
-						"character-width": 16,
-						"character-height": 16,
-						"character-set": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#\"'&()[]|`\\/@°+=*$£€<>",
-						"spacing-data": "",
-						"scale": 0.5,
-						"character-spacing": 0,
-						"line-height": 0,
-						"horizontal-alignment": "center",
-						"vertical-alignment": "center",
-						"wrapping": "word",
-						"initially-visible": true,
-						"origin": "top-left"
-					},
-					"uid": 761,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 1714,
-						"y": -910,
-						"width": 125,
-						"height": 70,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Tooltip_Background_Multishot",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 762,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 1714,
-						"y": -982,
-						"width": 125,
-						"height": 70,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Tutorial_SpriteFont_Multishot",
-					"properties": {
-						"text": "[color=#a5a1b4]MULTISHOT[/color]\n\nShoot three arrows in a cone in front of you at the same time.",
-						"enable-bbcode": true,
-						"character-width": 16,
-						"character-height": 16,
-						"character-set": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#\"'&()[]|`\\/@°+=*$£€<>",
-						"spacing-data": "",
-						"scale": 0.5,
-						"character-spacing": 0,
-						"line-height": 0,
-						"horizontal-alignment": "center",
-						"vertical-alignment": "center",
-						"wrapping": "word",
-						"initially-visible": true,
-						"origin": "top-left"
-					},
-					"uid": 763,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 1714,
-						"y": -982,
-						"width": 125,
-						"height": 70,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Tooltip_Background_Ice",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 783,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 1587,
-						"y": -910,
-						"width": 125,
-						"height": 70,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Tutorial_SpriteFont_Ice",
-					"properties": {
-						"text": "[color=#00f1f2]FROST ARROWS[/color]\n\nAttacks can cause [color=#00f1f2]EMBRITTLEMENT[/color]: enemies take extra arrow damage.",
-						"enable-bbcode": true,
-						"character-width": 16,
-						"character-height": 16,
-						"character-set": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#\"'&()[]|`\\/@°+=*$£€<>",
-						"spacing-data": "",
-						"scale": 0.5,
-						"character-spacing": 0,
-						"line-height": 0,
-						"horizontal-alignment": "center",
-						"vertical-alignment": "center",
-						"wrapping": "word",
-						"initially-visible": true,
-						"origin": "top-left"
-					},
-					"uid": 784,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 1587,
-						"y": -910,
-						"width": 125,
-						"height": 70,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Tooltip_Background_Fire",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 764,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 1587,
-						"y": -982,
-						"width": 125,
-						"height": 70,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Tutorial_SpriteFont_fire",
-					"properties": {
-						"text": "[color=#FF0000]FIRE ARROWS[/color]\n\nAttacks inflict [color=#FF0000]BURN[/color] damage over time to enemies hit by them.",
-						"enable-bbcode": true,
-						"character-width": 16,
-						"character-height": 16,
-						"character-set": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#\"'&()[]|`\\/@°+=*$£€<>",
-						"spacing-data": "",
-						"scale": 0.5,
-						"character-spacing": 0,
-						"line-height": 0,
-						"horizontal-alignment": "center",
-						"vertical-alignment": "center",
-						"wrapping": "word",
-						"initially-visible": true,
-						"origin": "top-left"
-					},
-					"uid": 5998,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 1587,
-						"y": -982,
-						"width": 125,
-						"height": 70,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Tooltip_Background_Electricity",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 765,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 1587,
-						"y": -838,
-						"width": 125,
-						"height": 70,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Tutorial_SpriteFont_Electricity",
-					"properties": {
-						"text": "[color=#f2e600]ELECTRIC ARROWS[/color]\n\n\n[color=#f2e600]SHOCK[/color] enemies and spread damage to enemies nearby.",
-						"enable-bbcode": true,
-						"character-width": 16,
-						"character-height": 16,
-						"character-set": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#\"'&()[]|`\\/@°+=*$£€<>",
-						"spacing-data": "",
-						"scale": 0.5,
-						"character-spacing": 0,
-						"line-height": 0,
-						"horizontal-alignment": "center",
-						"vertical-alignment": "center",
-						"wrapping": "word",
-						"initially-visible": true,
-						"origin": "top-left"
-					},
-					"uid": 5999,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 1587,
-						"y": -838,
-						"width": 125,
-						"height": 70,
-						"originX": 0,
-						"originY": 0,
 						"color": [
 							1,
 							1,
