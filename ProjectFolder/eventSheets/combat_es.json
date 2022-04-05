@@ -407,29 +407,6 @@
 							],
 							"actions": [
 								{
-									"type": "comment",
-									"text": "Added Arrow particle Effects"
-								},
-								{
-									"id": "spawn-another-object",
-									"objectClass": "Arrow",
-									"sid": 867941103267907,
-									"parameters": {
-										"object": "Arrow_Hit_Wall",
-										"layer": "0",
-										"image-point": "0",
-										"create-hierarchy": false
-									}
-								},
-								{
-									"id": "set-angle",
-									"objectClass": "Arrow_Hit_Wall",
-									"sid": 446862451715762,
-									"parameters": {
-										"angle": "Arrow.Angle+180"
-									}
-								},
-								{
 									"id": "destroy",
 									"objectClass": "Arrow",
 									"sid": 444665964915630
@@ -461,29 +438,6 @@
 								}
 							],
 							"actions": [
-								{
-									"type": "comment",
-									"text": "Added Arrow particle Effects"
-								},
-								{
-									"id": "spawn-another-object",
-									"objectClass": "Arrow",
-									"sid": 178613400148311,
-									"parameters": {
-										"object": "Arrow_Hit_Wall",
-										"layer": "0",
-										"image-point": "0",
-										"create-hierarchy": false
-									}
-								},
-								{
-									"id": "set-angle",
-									"objectClass": "Arrow_Hit_Wall",
-									"sid": 592067247252510,
-									"parameters": {
-										"angle": "Arrow.Angle+180"
-									}
-								},
 								{
 									"id": "destroy",
 									"objectClass": "Arrow",
@@ -663,7 +617,7 @@
 												{
 													"id": "spawn-another-object",
 													"objectClass": "Enemies",
-													"sid": 986750320170172,
+													"sid": 250931539716297,
 													"parameters": {
 														"object": "ZapRadius",
 														"layer": "0",
@@ -935,66 +889,6 @@
 										"animation": "\"Fire\"",
 										"from": "beginning"
 									}
-								},
-								{
-									"id": "spawn-another-object",
-									"objectClass": "Arrow",
-									"sid": 371392036809266,
-									"parameters": {
-										"object": "DashPaths",
-										"layer": "0",
-										"image-point": "0",
-										"create-hierarchy": false
-									}
-								},
-								{
-									"id": "move-to-object",
-									"objectClass": "DashPaths",
-									"sid": 545980058977392,
-									"parameters": {
-										"where": "behind",
-										"object": "Arrow"
-									}
-								},
-								{
-									"id": "move-to-object",
-									"objectClass": "DashPaths",
-									"sid": 606547130943475,
-									"parameters": {
-										"where": "behind",
-										"object": "Player"
-									}
-								},
-								{
-									"id": "move-to-object",
-									"objectClass": "DashPaths",
-									"sid": 409389622430333,
-									"parameters": {
-										"where": "behind",
-										"object": "Enemies"
-									}
-								},
-								{
-									"id": "set-animation",
-									"objectClass": "DashPaths",
-									"sid": 893688581891498,
-									"parameters": {
-										"animation": "\"Fire\"",
-										"from": "beginning"
-									}
-								},
-								{
-									"id": "wait",
-									"objectClass": "System",
-									"sid": 650560643797103,
-									"parameters": {
-										"seconds": "1"
-									}
-								},
-								{
-									"id": "destroy",
-									"objectClass": "DashPaths",
-									"sid": 453391775213156
 								}
 							],
 							"sid": 390059806813614
@@ -1030,43 +924,6 @@
 							"sid": 978184809409328,
 							"parameters": {
 								"width": "(PlayerHealth/PlayerMaxHealth) * 96"
-							}
-						},
-						{
-							"type": "comment",
-							"text": "Added Blood particle Effects (Located everywhere the player takes damage)"
-						},
-						{
-							"id": "spawn-another-object",
-							"objectClass": "Player",
-							"sid": 465666642490629,
-							"parameters": {
-								"object": "Blood",
-								"layer": "0",
-								"image-point": "0",
-								"create-hierarchy": false
-							}
-						},
-						{
-							"id": "spawn-another-object",
-							"objectClass": "Player",
-							"sid": 808186945372377,
-							"parameters": {
-								"object": "Blood2",
-								"layer": "0",
-								"image-point": "0",
-								"create-hierarchy": false
-							}
-						},
-						{
-							"id": "spawn-another-object",
-							"objectClass": "Player",
-							"sid": 556378225817132,
-							"parameters": {
-								"object": "Blood3",
-								"layer": "0",
-								"image-point": "0",
-								"create-hierarchy": false
 							}
 						},
 						{
@@ -2969,15 +2826,6 @@
 									}
 								},
 								{
-									"id": "set-angle-of-motion",
-									"objectClass": "Player",
-									"sid": 596233528610612,
-									"behaviorType": "Bullet",
-									"parameters": {
-										"angle": "Player.8Direction.MovingAngle"
-									}
-								},
-								{
 									"id": "set-boolean-eventvar",
 									"objectClass": "System",
 									"sid": 699906524108440,
@@ -3014,11 +2862,20 @@
 									}
 								},
 								{
+									"id": "set-angle-of-motion",
+									"objectClass": "Player",
+									"sid": 452653995051794,
+									"behaviorType": "Bullet",
+									"parameters": {
+										"angle": "Player.8Direction.MovingAngle"
+									}
+								},
+								{
 									"id": "wait",
 									"objectClass": "System",
-									"sid": 406646187193117,
+									"sid": 763231686313168,
 									"parameters": {
-										"seconds": ".25"
+										"seconds": "0.2"
 									}
 								},
 								{
@@ -3563,15 +3420,6 @@
 											}
 										},
 										{
-											"id": "move-to-object",
-											"objectClass": "DashPaths",
-											"sid": 883693762654683,
-											"parameters": {
-												"where": "behind",
-												"object": "Enemies"
-											}
-										},
-										{
 											"id": "set-animation",
 											"objectClass": "DashPaths",
 											"sid": 551431995321319,
@@ -3630,15 +3478,6 @@
 											}
 										},
 										{
-											"id": "move-to-object",
-											"objectClass": "DashPaths",
-											"sid": 702594848226855,
-											"parameters": {
-												"where": "behind",
-												"object": "Enemies"
-											}
-										},
-										{
 											"id": "set-animation",
 											"objectClass": "DashPaths",
 											"sid": 599024324851922,
@@ -3694,15 +3533,6 @@
 											"parameters": {
 												"where": "behind",
 												"object": "Player"
-											}
-										},
-										{
-											"id": "move-to-object",
-											"objectClass": "DashPaths",
-											"sid": 451447152732604,
-											"parameters": {
-												"where": "behind",
-												"object": "Enemies"
 											}
 										},
 										{
@@ -4201,59 +4031,18 @@
 					],
 					"actions": [
 						{
-							"id": "spawn-another-object",
+							"id": "destroy",
 							"objectClass": "Enemies",
-							"sid": 583895189059556,
-							"parameters": {
-								"object": "Enemy_Defeat",
-								"layer": "0",
-								"image-point": "0",
-								"create-hierarchy": false
-							}
-						},
-						{
-							"id": "set-visible",
-							"objectClass": "Enemies",
-							"sid": 371565583000411,
-							"parameters": {
-								"visibility": "invisible"
-							}
-						},
-						{
-							"id": "set-collisions-enabled",
-							"objectClass": "Enemies",
-							"sid": 608773822020203,
-							"parameters": {
-								"collisions": "disabled"
-							}
-						},
-						{
-							"id": "set-enabled",
-							"objectClass": "Enemies",
-							"sid": 144127426036503,
-							"behaviorType": "MoveTo",
-							"parameters": {
-								"enabled": false
-							}
+							"sid": 647444111620868
 						},
 						{
 							"id": "subtract-from-eventvar",
 							"objectClass": "System",
-							"sid": 138501408560603,
+							"sid": 397234212146864,
 							"parameters": {
 								"variable": "EnemyCount",
 								"value": "1"
 							}
-						},
-						{
-							"id": "wait-for-previous-actions",
-							"objectClass": "System",
-							"sid": 983265560087283
-						},
-						{
-							"id": "destroy",
-							"objectClass": "Enemies",
-							"sid": 647444111620868
 						}
 					],
 					"sid": 652613357011993,
@@ -4567,60 +4356,6 @@
 										}
 									],
 									"sid": 572942148844837
-								},
-								{
-									"eventType": "block",
-									"conditions": [
-										{
-											"id": "is-boolean-instance-variable-set",
-											"objectClass": "Enemies",
-											"sid": 951448777459327,
-											"parameters": {
-												"instance-variable": "Brittle"
-											}
-										}
-									],
-									"actions": [],
-									"sid": 362130105809800,
-									"children": [
-										{
-											"eventType": "comment",
-											"text": "When the enemy is brittle, their move speed is reduced by 20% for 5 seconds"
-										},
-										{
-											"eventType": "block",
-											"conditions": [],
-											"actions": [
-												{
-													"id": "set-max-speed",
-													"objectClass": "Enemies",
-													"sid": 198452978259156,
-													"behaviorType": "MoveTo",
-													"parameters": {
-														"max-speed": "Enemies.StartSpeed-(Enemies.StartSpeed*.20)"
-													}
-												},
-												{
-													"id": "wait",
-													"objectClass": "System",
-													"sid": 795925273667502,
-													"parameters": {
-														"seconds": "5"
-													}
-												},
-												{
-													"id": "set-max-speed",
-													"objectClass": "Enemies",
-													"sid": 944552826736067,
-													"behaviorType": "MoveTo",
-													"parameters": {
-														"max-speed": "Enemies.MoveTo.MaxSpeed + (Enemies.StartSpeed*.20)"
-													}
-												}
-											],
-											"sid": 584744848238655
-										}
-									]
 								}
 							],
 							"sid": 314933073886961
@@ -5454,9 +5189,9 @@
 												{
 													"id": "every-x-seconds",
 													"objectClass": "System",
-													"sid": 822697465788677,
+													"sid": 140981611783761,
 													"parameters": {
-														"interval-seconds": ".25"
+														"interval-seconds": "0.5"
 													}
 												}
 											],
@@ -5526,39 +5261,6 @@
 											"parameters": {
 												"variable": "PlayerHealth",
 												"value": "1"
-											}
-										},
-										{
-											"id": "spawn-another-object",
-											"objectClass": "Player",
-											"sid": 710706304167453,
-											"parameters": {
-												"object": "Blood",
-												"layer": "0",
-												"image-point": "0",
-												"create-hierarchy": false
-											}
-										},
-										{
-											"id": "spawn-another-object",
-											"objectClass": "Player",
-											"sid": 396056700334457,
-											"parameters": {
-												"object": "Blood2",
-												"layer": "0",
-												"image-point": "0",
-												"create-hierarchy": false
-											}
-										},
-										{
-											"id": "spawn-another-object",
-											"objectClass": "Player",
-											"sid": 227346619255251,
-											"parameters": {
-												"object": "Blood3",
-												"layer": "0",
-												"image-point": "0",
-												"create-hierarchy": false
 											}
 										},
 										{
@@ -6036,28 +5738,6 @@
 													}
 												},
 												{
-													"id": "spawn-another-object",
-													"objectClass": "Player",
-													"sid": 683758396800690,
-													"parameters": {
-														"object": "Acid_Particle",
-														"layer": "0",
-														"image-point": "0",
-														"create-hierarchy": false
-													}
-												},
-												{
-													"id": "spawn-another-object",
-													"objectClass": "Player",
-													"sid": 117258224283509,
-													"parameters": {
-														"object": "Acid_Particle2",
-														"layer": "0",
-														"image-point": "0",
-														"create-hierarchy": false
-													}
-												},
-												{
 													"id": "set-width",
 													"objectClass": "HP_Green",
 													"sid": 259215401540688,
@@ -6422,9 +6102,9 @@
 										{
 											"id": "every-x-seconds",
 											"objectClass": "System",
-											"sid": 682884487564549,
+											"sid": 930620017229934,
 											"parameters": {
-												"interval-seconds": "7"
+												"interval-seconds": "8"
 											}
 										}
 									],
@@ -6529,39 +6209,6 @@
 											"parameters": {
 												"variable": "PlayerHealth",
 												"value": "1"
-											}
-										},
-										{
-											"id": "spawn-another-object",
-											"objectClass": "Player",
-											"sid": 262458436164438,
-											"parameters": {
-												"object": "Blood",
-												"layer": "0",
-												"image-point": "0",
-												"create-hierarchy": false
-											}
-										},
-										{
-											"id": "spawn-another-object",
-											"objectClass": "Player",
-											"sid": 329418171738762,
-											"parameters": {
-												"object": "Blood2",
-												"layer": "0",
-												"image-point": "0",
-												"create-hierarchy": false
-											}
-										},
-										{
-											"id": "spawn-another-object",
-											"objectClass": "Player",
-											"sid": 398783692110144,
-											"parameters": {
-												"object": "Blood3",
-												"layer": "0",
-												"image-point": "0",
-												"create-hierarchy": false
 											}
 										},
 										{
@@ -6791,39 +6438,6 @@
 											"parameters": {
 												"variable": "PlayerHealth",
 												"value": "1"
-											}
-										},
-										{
-											"id": "spawn-another-object",
-											"objectClass": "Player",
-											"sid": 466264749328892,
-											"parameters": {
-												"object": "Blood",
-												"layer": "0",
-												"image-point": "0",
-												"create-hierarchy": false
-											}
-										},
-										{
-											"id": "spawn-another-object",
-											"objectClass": "Player",
-											"sid": 749526787184866,
-											"parameters": {
-												"object": "Blood2",
-												"layer": "0",
-												"image-point": "0",
-												"create-hierarchy": false
-											}
-										},
-										{
-											"id": "spawn-another-object",
-											"objectClass": "Player",
-											"sid": 526813070398919,
-											"parameters": {
-												"object": "Blood3",
-												"layer": "0",
-												"image-point": "0",
-												"create-hierarchy": false
 											}
 										},
 										{
@@ -7213,39 +6827,6 @@
 											}
 										},
 										{
-											"id": "spawn-another-object",
-											"objectClass": "Player",
-											"sid": 372651090907426,
-											"parameters": {
-												"object": "Blood",
-												"layer": "0",
-												"image-point": "0",
-												"create-hierarchy": false
-											}
-										},
-										{
-											"id": "spawn-another-object",
-											"objectClass": "Player",
-											"sid": 436367586142068,
-											"parameters": {
-												"object": "Blood2",
-												"layer": "0",
-												"image-point": "0",
-												"create-hierarchy": false
-											}
-										},
-										{
-											"id": "spawn-another-object",
-											"objectClass": "Player",
-											"sid": 188323680797265,
-											"parameters": {
-												"object": "Blood3",
-												"layer": "0",
-												"image-point": "0",
-												"create-hierarchy": false
-											}
-										},
-										{
 											"id": "set-width",
 											"objectClass": "HP_Green",
 											"sid": 103861270159887,
@@ -7523,9 +7104,9 @@
 						{
 							"id": "every-x-seconds",
 							"objectClass": "System",
-							"sid": 829378904721595,
+							"sid": 840941366794206,
 							"parameters": {
-								"interval-seconds": ".75"
+								"interval-seconds": "1"
 							}
 						}
 					],
@@ -7565,9 +7146,9 @@
 								{
 									"id": "every-x-seconds",
 									"objectClass": "System",
-									"sid": 308049409398476,
+									"sid": 145996720330606,
 									"parameters": {
-										"interval-seconds": ".75"
+										"interval-seconds": "1"
 									}
 								}
 							],
