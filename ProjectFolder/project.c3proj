@@ -64,6 +64,14 @@
 		},
 		{
 			"type": "plugin",
+			"id": "Particles",
+			"name": "Particles",
+			"author": "Scirra",
+			"version": "r285.3",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
 			"id": "Audio",
 			"name": "Audio",
 			"author": "Scirra",
@@ -181,7 +189,8 @@
 			"LoseButton",
 			"MenuBackgrounds",
 			"ZapRadius",
-			"Wall_Bar"
+			"Wall_Bar",
+			"DoorWalls"
 		],
 		"subfolders": [
 			{
@@ -287,7 +296,9 @@
 					"HP_UI",
 					"HP_Green",
 					"Health_TextShadow",
-					"HP_BlackBG"
+					"HP_BlackBG",
+					"Dmg_Text_BG",
+					"Dmg_Text"
 				],
 				"subfolders": [],
 				"name": "UI"
@@ -397,6 +408,21 @@
 					}
 				],
 				"name": "LevelDesign"
+			},
+			{
+				"items": [
+					"Blood",
+					"Blood2",
+					"Blood3",
+					"Enemy_Defeat",
+					"Arrow_Hit_Fire",
+					"Arrow_Hit_Fire2",
+					"Arrow_Hit_Wall",
+					"Acid_Particle",
+					"Acid_Particle2"
+				],
+				"subfolders": [],
+				"name": "Particles"
 			}
 		]
 	},
@@ -496,6 +522,11 @@
 					"name": "Player Hurt Play at -5 DB.webm",
 					"type": "audio/webm; codecs=opus",
 					"sid": 680817940797424
+				},
+				{
+					"name": "Skeleton_enemy_Defeated.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 547404724251389
 				}
 			],
 			"subfolders": []
@@ -525,7 +556,13 @@
 			"subfolders": []
 		},
 		"font": {
-			"items": [],
+			"items": [
+				{
+					"name": "Pixel_Font.ttf",
+					"type": "application/font-sfnt",
+					"sid": 726001770092039
+				}
+			],
 			"subfolders": []
 		},
 		"icon": {

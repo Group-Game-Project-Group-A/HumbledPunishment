@@ -10573,7 +10573,8 @@
 						"StartHealth": 0,
 						"Brittle": false,
 						"BrittleDamage": 0,
-						"BurnDamage": 1
+						"BurnDamage": 1,
+						"StartSpeed": 0
 					},
 					"behaviors": {
 						"MoveTo": {
@@ -10650,7 +10651,8 @@
 						"StartHealth": 0,
 						"Brittle": false,
 						"BrittleDamage": 0,
-						"BurnDamage": 1
+						"BurnDamage": 1,
+						"StartSpeed": 0
 					},
 					"behaviors": {
 						"MoveTo": {
@@ -10843,7 +10845,8 @@
 						"StartHealth": 0,
 						"Brittle": false,
 						"BrittleDamage": 0,
-						"BurnDamage": 1
+						"BurnDamage": 1,
+						"StartSpeed": 0
 					},
 					"behaviors": {
 						"MoveTo": {
@@ -10939,7 +10942,7 @@
 								"acceleration": 0,
 								"gravity": 0,
 								"bounce-off-solids": false,
-								"set-angle": true,
+								"set-angle": false,
 								"step": false,
 								"enabled": false
 							}
@@ -10982,7 +10985,8 @@
 						"StartHealth": 0,
 						"Brittle": false,
 						"BrittleDamage": 0,
-						"BurnDamage": 1
+						"BurnDamage": 1,
+						"StartSpeed": 0
 					},
 					"behaviors": {
 						"MoveTo": {
@@ -11059,7 +11063,8 @@
 						"StartHealth": 0,
 						"Brittle": false,
 						"BrittleDamage": 0,
-						"BurnDamage": 1
+						"BurnDamage": 1,
+						"StartSpeed": 0
 					},
 					"behaviors": {
 						"MoveTo": {
@@ -11136,7 +11141,8 @@
 						"StartHealth": 0,
 						"Brittle": false,
 						"BrittleDamage": 0,
-						"BurnDamage": 1
+						"BurnDamage": 1,
+						"StartSpeed": 0
 					},
 					"behaviors": {
 						"MoveTo": {
@@ -11213,7 +11219,8 @@
 						"StartHealth": 0,
 						"Brittle": false,
 						"BrittleDamage": 0,
-						"BurnDamage": 1
+						"BurnDamage": 1,
+						"StartSpeed": 0
 					},
 					"behaviors": {
 						"MoveTo": {
