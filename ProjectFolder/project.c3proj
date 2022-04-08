@@ -16,6 +16,14 @@
 		},
 		{
 			"type": "plugin",
+			"id": "Spritefont2",
+			"name": "Sprite font",
+			"author": "Scirra",
+			"version": "r285.3",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
 			"id": "Button",
 			"name": "Button",
 			"author": "Scirra",
@@ -42,14 +50,6 @@
 			"type": "plugin",
 			"id": "Sprite",
 			"name": "Sprite",
-			"author": "Scirra",
-			"version": "r285.3",
-			"bundled": false
-		},
-		{
-			"type": "plugin",
-			"id": "Spritefont2",
-			"name": "Sprite font",
 			"author": "Scirra",
 			"version": "r285.3",
 			"bundled": false
@@ -173,12 +173,10 @@
 			"Player",
 			"NextSceneZone",
 			"Guide",
-			"ArrowLauncher",
 			"DoorCloser",
 			"Vignette",
 			"WarningNoCards",
 			"Sprite2",
-			"Dialog_Text",
 			"DialogButtonNext",
 			"WinText",
 			"WinBackground",
@@ -195,7 +193,10 @@
 		"subfolders": [
 			{
 				"items": [
-					"Tutorial_Txt"
+					"Tutorial_Txt",
+					"Dialog_Text",
+					"ScoreText_SF",
+					"TimeText_SF"
 				],
 				"subfolders": [],
 				"name": "Text"
@@ -205,7 +206,8 @@
 					"But_StartGame",
 					"But_EnterLevel",
 					"But_Credits",
-					"But_StartOver"
+					"But_StartOver",
+					"But_LoseFestival"
 				],
 				"subfolders": [],
 				"name": "Buttons"
@@ -285,7 +287,8 @@
 			},
 			{
 				"items": [
-					"HealthPickups"
+					"HealthPickups",
+					"HealthPickUpSpawner"
 				],
 				"subfolders": [],
 				"name": "Pickups"
@@ -315,7 +318,9 @@
 				"items": [],
 				"subfolders": [
 					{
-						"items": [],
+						"items": [
+							"BossSpawnPoint"
+						],
 						"subfolders": [
 							{
 								"items": [
@@ -343,7 +348,8 @@
 					{
 						"items": [
 							"Melee_Enemy_Minor",
-							"Ranged_Enemy_Minor"
+							"Ranged_Enemy_Minor",
+							"EnemySpawnPoint"
 						],
 						"subfolders": [],
 						"name": "Minor Enemies"
@@ -423,6 +429,13 @@
 				],
 				"subfolders": [],
 				"name": "Particles"
+			},
+			{
+				"items": [
+					"ArrowLauncher"
+				],
+				"subfolders": [],
+				"name": "Traps"
 			}
 		]
 	},
@@ -487,7 +500,9 @@
 			"Menu_ES",
 			"Controls_ES",
 			"Lobby_ES",
-			"Combat_ES"
+			"Combat_ES",
+			"NormalMode_ES",
+			"SurvivalMode_ES"
 		],
 		"subfolders": []
 	},

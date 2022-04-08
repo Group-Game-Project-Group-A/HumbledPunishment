@@ -1,0 +1,1172 @@
+{
+	"name": "SurvivalMode_ES",
+	"events": [
+		{
+			"eventType": "include",
+			"includeSheet": "Controls_ES"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "Combat_ES"
+		},
+		{
+			"eventType": "variable",
+			"name": "KillScore",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 275588896015164
+		},
+		{
+			"eventType": "variable",
+			"name": "TimeScore",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 386248694256173
+		},
+		{
+			"eventType": "variable",
+			"name": "StartTime",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 392303285210123
+		},
+		{
+			"eventType": "variable",
+			"name": "CombinedScore",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 483698879957806
+		},
+		{
+			"eventType": "variable",
+			"name": "timeModeTracker",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 900851313105859
+		},
+		{
+			"eventType": "variable",
+			"name": "BossCount",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 197905505718834
+		},
+		{
+			"eventType": "variable",
+			"name": "Timer",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 335461880804490
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 200007208486333
+				}
+			],
+			"actions": [
+				{
+					"id": "set-instvar-value",
+					"objectClass": "BossSpawnPoint",
+					"sid": 970687717595706,
+					"parameters": {
+						"instance-variable": "SpawnType",
+						"value": "99"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "EnemySpawnPoint",
+					"sid": 424345057190762,
+					"parameters": {
+						"instance-variable": "SpawnType",
+						"value": "99"
+					}
+				}
+			],
+			"sid": 333917922211694
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Spawners",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Pick Up Spawners",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "comment",
+							"text": "Every 30 seconds, and if there is no health pick up on the spawner, spawn the health pick up, then set the right variables."
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "every-x-seconds",
+									"objectClass": "System",
+									"sid": 631924092241483,
+									"parameters": {
+										"interval-seconds": "30"
+									}
+								},
+								{
+									"id": "is-overlapping-another-object",
+									"objectClass": "HealthPickUpSpawner",
+									"sid": 705233002771462,
+									"parameters": {
+										"object": "HealthPickups"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "spawn-another-object",
+									"objectClass": "HealthPickUpSpawner",
+									"sid": 512816782209785,
+									"parameters": {
+										"object": "HealthPickups",
+										"layer": "0",
+										"image-point": "0",
+										"create-hierarchy": false
+									}
+								},
+								{
+									"id": "move-to-object",
+									"objectClass": "HealthPickups",
+									"sid": 617229723390441,
+									"parameters": {
+										"where": "in-front",
+										"object": "Player"
+									}
+								},
+								{
+									"id": "set-size",
+									"objectClass": "HealthPickups",
+									"sid": 156849898962095,
+									"parameters": {
+										"width": "32",
+										"height": "32"
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "HealthPickups",
+									"sid": 716712526511468,
+									"parameters": {
+										"instance-variable": "HealthBoost",
+										"value": "2"
+									}
+								}
+							],
+							"sid": 297567846010452
+						}
+					],
+					"sid": 517949054725324
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Enemy Spawner",
+					"description": "Mechanics for the spawning of enemies for the Survival Mode",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 955491091950087,
+									"parameters": {
+										"variable": "StartTime"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 679110691824800,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "every-x-seconds",
+											"objectClass": "System",
+											"sid": 327621966153157,
+											"parameters": {
+												"interval-seconds": "10"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-instvar-value",
+											"objectClass": "EnemySpawnPoint",
+											"sid": 815745938048698,
+											"parameters": {
+												"instance-variable": "SpawnType",
+												"value": "round(random(0,4))"
+											}
+										}
+									],
+									"sid": 417836156350161,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-instance-variable",
+													"objectClass": "EnemySpawnPoint",
+													"sid": 558237120697246,
+													"parameters": {
+														"instance-variable": "SpawnType",
+														"comparison": 3,
+														"value": "0"
+													}
+												},
+												{
+													"id": "is-overlapping-another-object",
+													"objectClass": "EnemySpawnPoint",
+													"sid": 269918514177220,
+													"parameters": {
+														"object": "Ranged_Enemy_Minor"
+													}
+												}
+											],
+											"actions": [],
+											"sid": 129606754052723,
+											"children": [
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "trigger-once-while-true",
+															"objectClass": "System",
+															"sid": 981580517173698
+														}
+													],
+													"actions": [
+														{
+															"id": "spawn-another-object",
+															"objectClass": "EnemySpawnPoint",
+															"sid": 246959130584401,
+															"parameters": {
+																"object": "Ranged_Enemy_Minor",
+																"layer": "0",
+																"image-point": "0",
+																"create-hierarchy": false
+															}
+														}
+													],
+													"sid": 196297753025418,
+													"children": [
+														{
+															"eventType": "comment",
+															"text": "If the SpawnType is less than 0 and it is not overlapping a ranged enemy, Spawn a ranged Enemy at the center of the Circle."
+														},
+														{
+															"eventType": "block",
+															"conditions": [],
+															"actions": [
+																{
+																	"id": "move-to-object",
+																	"objectClass": "Ranged_Enemy_Minor",
+																	"sid": 456228955103541,
+																	"parameters": {
+																		"where": "in-front",
+																		"object": "Player"
+																	}
+																},
+																{
+																	"id": "set-size",
+																	"objectClass": "Ranged_Enemy_Minor",
+																	"sid": 864990212066169,
+																	"parameters": {
+																		"width": "41.054662",
+																		"height": "40"
+																	}
+																},
+																{
+																	"id": "set-range",
+																	"objectClass": "Ranged_Enemy_Minor",
+																	"sid": 649042494051168,
+																	"behaviorType": "LineOfSight",
+																	"parameters": {
+																		"range": "300"
+																	}
+																}
+															],
+															"sid": 166870544739511,
+															"children": [
+																{
+																	"eventType": "comment",
+																	"text": "Move the ranged enemy in front of the player on the layer, set the size to it's normal size, and set the line of sight so that it can see things."
+																}
+															]
+														}
+													]
+												}
+											]
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-instance-variable",
+													"objectClass": "EnemySpawnPoint",
+													"sid": 404102109111437,
+													"parameters": {
+														"instance-variable": "SpawnType",
+														"comparison": 4,
+														"value": "0"
+													}
+												},
+												{
+													"id": "compare-instance-variable",
+													"objectClass": "EnemySpawnPoint",
+													"sid": 117446362902880,
+													"parameters": {
+														"instance-variable": "SpawnType",
+														"comparison": 3,
+														"value": "4"
+													}
+												}
+											],
+											"actions": [],
+											"sid": 565365364565328,
+											"children": [
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "trigger-once-while-true",
+															"objectClass": "System",
+															"sid": 845476202410250
+														}
+													],
+													"actions": [
+														{
+															"id": "spawn-another-object",
+															"objectClass": "EnemySpawnPoint",
+															"sid": 544366311423105,
+															"parameters": {
+																"object": "Melee_Enemy_Minor",
+																"layer": "0",
+																"image-point": "1",
+																"create-hierarchy": false
+															}
+														}
+													],
+													"sid": 812992560433979,
+													"children": [
+														{
+															"eventType": "comment",
+															"text": "When the spawn type is greater than zero, but less than or equal to 4, spawn the Melee enemy at the BOTTOM of the circle (so that it doesn't overlap with a ranged enemy that might be on that point."
+														},
+														{
+															"eventType": "block",
+															"conditions": [],
+															"actions": [
+																{
+																	"id": "set-enabled",
+																	"objectClass": "Melee_Enemy_Minor",
+																	"sid": 520602447793083,
+																	"behaviorType": "Bullet",
+																	"parameters": {
+																		"state": "disabled"
+																	}
+																},
+																{
+																	"id": "set-speed",
+																	"objectClass": "Melee_Enemy_Minor",
+																	"sid": 142608163810195,
+																	"behaviorType": "Bullet",
+																	"parameters": {
+																		"speed": "0"
+																	}
+																},
+																{
+																	"id": "move-to-object",
+																	"objectClass": "Melee_Enemy_Minor",
+																	"sid": 844048125870335,
+																	"parameters": {
+																		"where": "in-front",
+																		"object": "Player"
+																	}
+																},
+																{
+																	"id": "set-size",
+																	"objectClass": "Melee_Enemy_Minor",
+																	"sid": 462898248327013,
+																	"parameters": {
+																		"width": "32",
+																		"height": "32"
+																	}
+																},
+																{
+																	"id": "set-max-speed",
+																	"objectClass": "Melee_Enemy_Minor",
+																	"sid": 289539011294689,
+																	"behaviorType": "MoveTo",
+																	"parameters": {
+																		"max-speed": "random(100,125)"
+																	}
+																},
+																{
+																	"id": "set-range",
+																	"objectClass": "Melee_Enemy_Minor",
+																	"sid": 300116688338238,
+																	"behaviorType": "LineOfSight",
+																	"parameters": {
+																		"range": "10000"
+																	}
+																},
+																{
+																	"id": "set-cone-of-view",
+																	"objectClass": "Melee_Enemy_Minor",
+																	"sid": 236987338894729,
+																	"behaviorType": "LineOfSight",
+																	"parameters": {
+																		"cone-of-view": "360"
+																	}
+																},
+																{
+																	"id": "set-instvar-value",
+																	"objectClass": "Melee_Enemy_Minor",
+																	"sid": 338650589044138,
+																	"parameters": {
+																		"instance-variable": "StartSpeed",
+																		"value": "Melee_Enemy_Minor.MoveTo.MaxSpeed"
+																	}
+																}
+															],
+															"sid": 448994817104827,
+															"children": [
+																{
+																	"eventType": "comment",
+																	"text": "Set all of the variables and shit so that the enemy looks right on the scene."
+																}
+															]
+														}
+													]
+												}
+											]
+										}
+									]
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 748405599038614,
+											"disabled": true,
+											"parameters": {
+												"variable": "Timer",
+												"comparison": 5,
+												"value": "60"
+											}
+										},
+										{
+											"id": "every-x-seconds",
+											"objectClass": "System",
+											"sid": 150897500452988,
+											"parameters": {
+												"interval-seconds": "60"
+											}
+										}
+									],
+									"actions": [],
+									"sid": 165649435766213,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-eventvar",
+													"objectClass": "System",
+													"sid": 595012272821979,
+													"parameters": {
+														"variable": "BossCount",
+														"comparison": 2,
+														"value": "1"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-instvar-value",
+													"objectClass": "BossSpawnPoint",
+													"sid": 884624514796507,
+													"parameters": {
+														"instance-variable": "SpawnType",
+														"value": "round(random(0,2))"
+													}
+												}
+											],
+											"sid": 674168646411740,
+											"children": [
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "compare-instance-variable",
+															"objectClass": "BossSpawnPoint",
+															"sid": 391248891664429,
+															"parameters": {
+																"instance-variable": "SpawnType",
+																"comparison": 5,
+																"value": "1"
+															}
+														}
+													],
+													"actions": [],
+													"sid": 989237033733791,
+													"children": [
+														{
+															"eventType": "block",
+															"conditions": [
+																{
+																	"id": "trigger-once-while-true",
+																	"objectClass": "System",
+																	"sid": 765556186920372
+																}
+															],
+															"actions": [
+																{
+																	"id": "set-eventvar-value",
+																	"objectClass": "System",
+																	"sid": 725742079459335,
+																	"disabled": true,
+																	"parameters": {
+																		"variable": "Timer",
+																		"value": "0"
+																	}
+																},
+																{
+																	"id": "spawn-another-object",
+																	"objectClass": "BossSpawnPoint",
+																	"sid": 190923970762347,
+																	"parameters": {
+																		"object": "Bob",
+																		"layer": "0",
+																		"image-point": "0",
+																		"create-hierarchy": false
+																	}
+																},
+																{
+																	"id": "move-to-object",
+																	"objectClass": "Bob",
+																	"sid": 532620421675150,
+																	"parameters": {
+																		"where": "in-front",
+																		"object": "Player"
+																	}
+																},
+																{
+																	"id": "set-instvar-value",
+																	"objectClass": "Bob",
+																	"sid": 845343596638624,
+																	"parameters": {
+																		"instance-variable": "Health",
+																		"value": "100"
+																	}
+																},
+																{
+																	"id": "set-instvar-value",
+																	"objectClass": "Bob",
+																	"sid": 331477953255335,
+																	"parameters": {
+																		"instance-variable": "StartSpeed",
+																		"value": "Bob.MoveTo.MaxSpeed"
+																	}
+																},
+																{
+																	"id": "add-to-eventvar",
+																	"objectClass": "System",
+																	"sid": 974163997991146,
+																	"parameters": {
+																		"variable": "BossCount",
+																		"value": "1"
+																	}
+																}
+															],
+															"sid": 264763977101406
+														}
+													]
+												},
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "compare-instance-variable",
+															"objectClass": "BossSpawnPoint",
+															"sid": 644907215133975,
+															"parameters": {
+																"instance-variable": "SpawnType",
+																"comparison": 2,
+																"value": "1"
+															}
+														}
+													],
+													"actions": [],
+													"sid": 995259021369554,
+													"children": [
+														{
+															"eventType": "block",
+															"conditions": [
+																{
+																	"id": "trigger-once-while-true",
+																	"objectClass": "System",
+																	"sid": 847790944381611
+																}
+															],
+															"actions": [
+																{
+																	"id": "set-eventvar-value",
+																	"objectClass": "System",
+																	"sid": 676930042041496,
+																	"disabled": true,
+																	"parameters": {
+																		"variable": "Timer",
+																		"value": "0"
+																	}
+																},
+																{
+																	"id": "spawn-another-object",
+																	"objectClass": "BossSpawnPoint",
+																	"sid": 935111794168340,
+																	"parameters": {
+																		"object": "OrcBoss",
+																		"layer": "0",
+																		"image-point": "0",
+																		"create-hierarchy": false
+																	}
+																},
+																{
+																	"id": "move-to-object",
+																	"objectClass": "OrcBoss",
+																	"sid": 627833890758917,
+																	"parameters": {
+																		"where": "in-front",
+																		"object": "Player"
+																	}
+																},
+																{
+																	"id": "set-instvar-value",
+																	"objectClass": "OrcBoss",
+																	"sid": 882450609698932,
+																	"parameters": {
+																		"instance-variable": "Health",
+																		"value": "100"
+																	}
+																},
+																{
+																	"id": "set-instvar-value",
+																	"objectClass": "OrcBoss",
+																	"sid": 912621560752922,
+																	"parameters": {
+																		"instance-variable": "StartSpeed",
+																		"value": "OrcBoss.MoveTo.MaxSpeed"
+																	}
+																},
+																{
+																	"id": "add-to-eventvar",
+																	"objectClass": "System",
+																	"sid": 334329579071567,
+																	"parameters": {
+																		"variable": "BossCount",
+																		"value": "1"
+																	}
+																}
+															],
+															"sid": 935120848335832
+														}
+													]
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					],
+					"sid": 995338644563848
+				}
+			],
+			"sid": 263120034966621
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Scoring",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-destroyed",
+							"objectClass": "Melee_Enemy_Minor",
+							"sid": 871549533446671
+						}
+					],
+					"actions": [
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 217158920330985,
+							"parameters": {
+								"variable": "KillScore",
+								"value": "100"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "ScoreText_SF",
+							"sid": 996995187941605,
+							"parameters": {
+								"text": "\"Score: \" & KillScore"
+							}
+						}
+					],
+					"sid": 927422228361734,
+					"children": [
+						{
+							"eventType": "comment",
+							"text": "Add x to the score when you destroy an enemy, and then update the score text"
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-destroyed",
+							"objectClass": "Ranged_Enemy_Minor",
+							"sid": 416023093593607
+						}
+					],
+					"actions": [
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 722631950828362,
+							"parameters": {
+								"variable": "KillScore",
+								"value": "75"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "ScoreText_SF",
+							"sid": 124414718691180,
+							"parameters": {
+								"text": "\"Score: \" & KillScore"
+							}
+						}
+					],
+					"sid": 585778477236196,
+					"children": [
+						{
+							"eventType": "comment",
+							"text": "Add x to the score when you destroy an enemy, and then update the score text"
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-destroyed",
+							"objectClass": "OrcBoss",
+							"sid": 683269099345255
+						},
+						{
+							"id": "on-destroyed",
+							"objectClass": "Bob",
+							"sid": 454048202295816
+						}
+					],
+					"actions": [
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 689499350324846,
+							"parameters": {
+								"variable": "KillScore",
+								"value": "300"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "ScoreText_SF",
+							"sid": 349537830606187,
+							"parameters": {
+								"text": "\"Score: \" & KillScore"
+							}
+						},
+						{
+							"id": "subtract-from-eventvar",
+							"objectClass": "System",
+							"sid": 438343980655760,
+							"parameters": {
+								"variable": "BossCount",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 551227719475277,
+					"children": [
+						{
+							"eventType": "comment",
+							"text": "Add x to the score when you destroy a boss, update the score text, then subtract 1 from boss count so another boss can spawn"
+						}
+					],
+					"isOrBlock": true
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 581640544407844,
+							"parameters": {
+								"variable": "StartTime"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 862072719671872,
+					"children": [
+						{
+							"eventType": "comment",
+							"text": "if the level has been started, and the player is alive, add 10 to the time score every 1 second, and set the timer text to show the amount of time spent in the round."
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 355843735041821,
+									"parameters": {
+										"variable": "PlayerHealth",
+										"comparison": 4,
+										"value": "0"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 363502056851805,
+							"children": [
+								{
+									"eventType": "comment",
+									"text": "If the way the boss timer isn't correct, we'll use the disabled timer variable to keep track of the spawn timers"
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "every-x-seconds",
+											"objectClass": "System",
+											"sid": 313397826506228,
+											"parameters": {
+												"interval-seconds": "1.0"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "add-to-eventvar",
+											"objectClass": "System",
+											"sid": 781388506663577,
+											"parameters": {
+												"variable": "TimeScore",
+												"value": "10"
+											}
+										},
+										{
+											"id": "set-text",
+											"objectClass": "TimeText_SF",
+											"sid": 528715408921710,
+											"parameters": {
+												"text": "\"Time: \"&round(time-timeModeTracker)"
+											}
+										},
+										{
+											"id": "add-to-eventvar",
+											"objectClass": "System",
+											"sid": 119757271262463,
+											"disabled": true,
+											"parameters": {
+												"variable": "Timer",
+												"value": "1"
+											}
+										}
+									],
+									"sid": 289207491260671
+								}
+							]
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 669079785612742,
+							"parameters": {
+								"variable": "PlayerHealth",
+								"comparison": 3,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 432254127273898,
+							"parameters": {
+								"variable": "StartTime",
+								"value": "false"
+							}
+						}
+					],
+					"sid": 648010163784029,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "trigger-once-while-true",
+									"objectClass": "System",
+									"sid": 943458110637093
+								}
+							],
+							"actions": [
+								{
+									"id": "add-to-eventvar",
+									"objectClass": "System",
+									"sid": 995988221141109,
+									"parameters": {
+										"variable": "CombinedScore",
+										"value": "KillScore+TimeScore"
+									}
+								}
+							],
+							"sid": 332563452893295,
+							"children": [
+								{
+									"eventType": "comment",
+									"text": "Add the killscore and the time score to find the final score"
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 637740832793954,
+									"parameters": {
+										"variable": "KillScore",
+										"comparison": 2,
+										"value": "CombinedScore"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 663653733550924,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "every-x-seconds",
+											"objectClass": "System",
+											"sid": 415452107695951,
+											"parameters": {
+												"interval-seconds": ".05"
+											}
+										}
+									],
+									"actions": [],
+									"sid": 985975995561554,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-eventvar",
+													"objectClass": "System",
+													"sid": 519494693838543,
+													"parameters": {
+														"variable": "TimeScore",
+														"comparison": 3,
+														"value": "200"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "add-to-eventvar",
+													"objectClass": "System",
+													"sid": 733374411109658,
+													"parameters": {
+														"variable": "KillScore",
+														"value": "5"
+													}
+												}
+											],
+											"sid": 379439798072359
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-eventvar",
+													"objectClass": "System",
+													"sid": 171155192214774,
+													"parameters": {
+														"variable": "TimeScore",
+														"comparison": 4,
+														"value": "200"
+													}
+												},
+												{
+													"id": "compare-eventvar",
+													"objectClass": "System",
+													"sid": 768781221554672,
+													"parameters": {
+														"variable": "TimeScore",
+														"comparison": 3,
+														"value": "600"
+													}
+												}
+											],
+											"actions": [],
+											"sid": 627498176712214
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-eventvar",
+													"objectClass": "System",
+													"sid": 667589910958785,
+													"parameters": {
+														"variable": "TimeScore",
+														"comparison": 4,
+														"value": "600"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "add-to-eventvar",
+													"objectClass": "System",
+													"sid": 445572064624412,
+													"parameters": {
+														"variable": "KillScore",
+														"value": "10"
+													}
+												}
+											],
+											"sid": 757343504006400
+										}
+									]
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 614122935616779,
+									"parameters": {
+										"variable": "KillScore",
+										"comparison": 5,
+										"value": "CombinedScore"
+									}
+								},
+								{
+									"id": "is-visible",
+									"objectClass": "But_LoseFestival",
+									"sid": 404148080716440,
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "set-visible",
+									"objectClass": "But_LoseFestival",
+									"sid": 738893870038769,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "set-enabled",
+									"objectClass": "But_LoseFestival",
+									"sid": 420033372515025,
+									"parameters": {
+										"mode": "enabled"
+									}
+								}
+							],
+							"sid": 157788111450539,
+							"children": [
+								{
+									"eventType": "comment",
+									"text": "If the kill score is greater than or equal to the final score, and the button isn't actually visible yet, make the lose button visible and set it enabled"
+								}
+							]
+						}
+					]
+				}
+			],
+			"sid": 625751974570414
+		}
+	],
+	"sid": 201991759953768
+}
