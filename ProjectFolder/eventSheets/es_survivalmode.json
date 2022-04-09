@@ -92,10 +92,10 @@
 				{
 					"id": "set-instvar-value",
 					"objectClass": "BossSpawnPoint",
-					"sid": 970687717595706,
+					"sid": 798351654202979,
 					"parameters": {
 						"instance-variable": "SpawnType",
-						"value": "99"
+						"value": "round(random(0,2))"
 					}
 				},
 				{
@@ -115,6 +115,57 @@
 					"text": "Reset the global variables to 99 so that the boss and enemies don't immediately spawn on the start of the layout."
 				}
 			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Player",
+					"sid": 688222802044662,
+					"parameters": {
+						"object": "DoorCloser"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-collisions-enabled",
+					"objectClass": "DoorCloser",
+					"sid": 366681647019828,
+					"parameters": {
+						"collisions": "disabled"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 645708405925150,
+					"parameters": {
+						"variable": "StartTime",
+						"value": "true"
+					}
+				},
+				{
+					"id": "set-range",
+					"objectClass": "Enemies",
+					"sid": 353980725849805,
+					"behaviorType": "LineOfSight",
+					"parameters": {
+						"range": "10000"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 798330537965635,
+					"parameters": {
+						"variable": "timeModeTracker",
+						"value": "time"
+					}
+				}
+			],
+			"sid": 528139412136253
 		},
 		{
 			"eventType": "block",
@@ -285,9 +336,34 @@
 										{
 											"id": "every-x-seconds",
 											"objectClass": "System",
-											"sid": 327621966153157,
+											"sid": 615079607467940,
 											"parameters": {
-												"interval-seconds": "10"
+												"interval-seconds": "1.0"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "add-to-eventvar",
+											"objectClass": "System",
+											"sid": 357795446806379,
+											"parameters": {
+												"variable": "Timer",
+												"value": "1"
+											}
+										}
+									],
+									"sid": 846887143080317
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "every-x-seconds",
+											"objectClass": "System",
+											"sid": 912984706446874,
+											"parameters": {
+												"interval-seconds": "8"
 											}
 										}
 									],
@@ -295,7 +371,7 @@
 										{
 											"id": "set-instvar-value",
 											"objectClass": "EnemySpawnPoint",
-											"sid": 815745938048698,
+											"sid": 272512097763065,
 											"parameters": {
 												"instance-variable": "SpawnType",
 												"value": "round(random(0,4))"
@@ -310,11 +386,11 @@
 												{
 													"id": "compare-instance-variable",
 													"objectClass": "EnemySpawnPoint",
-													"sid": 558237120697246,
+													"sid": 552857314148780,
 													"parameters": {
 														"instance-variable": "SpawnType",
 														"comparison": 3,
-														"value": "0"
+														"value": "1"
 													}
 												},
 												{
@@ -323,7 +399,8 @@
 													"sid": 269918514177220,
 													"parameters": {
 														"object": "Ranged_Enemy_Minor"
-													}
+													},
+													"isInverted": true
 												}
 											],
 											"actions": [],
@@ -362,13 +439,9 @@
 															"conditions": [],
 															"actions": [
 																{
-																	"id": "move-to-object",
+																	"id": "move-to-top",
 																	"objectClass": "Ranged_Enemy_Minor",
-																	"sid": 456228955103541,
-																	"parameters": {
-																		"where": "in-front",
-																		"object": "Player"
-																	}
+																	"sid": 302870455368596
 																},
 																{
 																	"id": "set-size",
@@ -407,17 +480,17 @@
 												{
 													"id": "compare-instance-variable",
 													"objectClass": "EnemySpawnPoint",
-													"sid": 404102109111437,
+													"sid": 214091940866051,
 													"parameters": {
 														"instance-variable": "SpawnType",
 														"comparison": 4,
-														"value": "0"
+														"value": "1"
 													}
 												},
 												{
 													"id": "compare-instance-variable",
 													"objectClass": "EnemySpawnPoint",
-													"sid": 117446362902880,
+													"sid": 841761465442875,
 													"parameters": {
 														"instance-variable": "SpawnType",
 														"comparison": 3,
@@ -554,7 +627,6 @@
 											"id": "compare-eventvar",
 											"objectClass": "System",
 											"sid": 748405599038614,
-											"disabled": true,
 											"parameters": {
 												"variable": "Timer",
 												"comparison": 5,
@@ -565,6 +637,7 @@
 											"id": "every-x-seconds",
 											"objectClass": "System",
 											"sid": 150897500452988,
+											"disabled": true,
 											"parameters": {
 												"interval-seconds": "60"
 											}
@@ -595,17 +668,7 @@
 													}
 												}
 											],
-											"actions": [
-												{
-													"id": "set-instvar-value",
-													"objectClass": "BossSpawnPoint",
-													"sid": 884624514796507,
-													"parameters": {
-														"instance-variable": "SpawnType",
-														"value": "round(random(0,2))"
-													}
-												}
-											],
+											"actions": [],
 											"sid": 674168646411740,
 											"children": [
 												{
@@ -690,6 +753,20 @@
 																	"parameters": {
 																		"variable": "BossCount",
 																		"value": "1"
+																	}
+																},
+																{
+																	"id": "wait-for-previous-actions",
+																	"objectClass": "System",
+																	"sid": 675809353029410
+																},
+																{
+																	"id": "set-instvar-value",
+																	"objectClass": "BossSpawnPoint",
+																	"sid": 126681399705682,
+																	"parameters": {
+																		"instance-variable": "SpawnType",
+																		"value": "0"
 																	}
 																}
 															],
@@ -778,6 +855,20 @@
 																	"sid": 334329579071567,
 																	"parameters": {
 																		"variable": "BossCount",
+																		"value": "1"
+																	}
+																},
+																{
+																	"id": "wait-for-previous-actions",
+																	"objectClass": "System",
+																	"sid": 430279798589715
+																},
+																{
+																	"id": "set-instvar-value",
+																	"objectClass": "BossSpawnPoint",
+																	"sid": 504256917668287,
+																	"parameters": {
+																		"instance-variable": "SpawnType",
 																		"value": "1"
 																	}
 																}
@@ -916,6 +1007,15 @@
 							"parameters": {
 								"variable": "BossCount",
 								"value": "1"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 313830060983491,
+							"parameters": {
+								"variable": "Timer",
+								"value": "0"
 							}
 						}
 					],

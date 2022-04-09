@@ -188,7 +188,11 @@
 			"MenuBackgrounds",
 			"ZapRadius",
 			"Wall_Bar",
-			"DoorWalls"
+			"DoorWalls",
+			"DoorBlock",
+			"Festival_LoseButton",
+			"ScoreText",
+			"FloorBackground"
 		],
 		"subfolders": [
 			{
@@ -207,7 +211,10 @@
 					"But_EnterLevel",
 					"But_Credits",
 					"But_StartOver",
-					"But_LoseSurvival"
+					"But_LoseSurvival",
+					"But_StartSurvival",
+					"But_StartAdventureMode",
+					"But_Controls"
 				],
 				"subfolders": [],
 				"name": "Buttons"
@@ -466,7 +473,11 @@
 				"name": "Menus"
 			},
 			{
-				"items": [],
+				"items": [
+					"Menu_Survival",
+					"Lobby_Survival",
+					"Arena_Survival"
+				],
 				"subfolders": [],
 				"name": "Survival Mode"
 			},

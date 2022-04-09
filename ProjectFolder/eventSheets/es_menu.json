@@ -111,6 +111,68 @@
 					"sid": 429814602964864
 				}
 			]
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Survival Mode Buttons",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-clicked",
+							"objectClass": "But_StartSurvival",
+							"sid": 354825019978832
+						}
+					],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 416246422703329,
+							"parameters": {
+								"layout": "Menu_Survival"
+							}
+						}
+					],
+					"sid": 276515803963461
+				}
+			],
+			"sid": 245278614187978
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Adventure Mode Buttons",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-clicked",
+							"objectClass": "But_StartAdventureMode",
+							"sid": 615788339171986
+						}
+					],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 331865060597923,
+							"parameters": {
+								"layout": "Story_1_1"
+							}
+						}
+					],
+					"sid": 295929204447198
+				}
+			],
+			"sid": 129668619889509
 		}
 	],
 	"sid": 326467844477213

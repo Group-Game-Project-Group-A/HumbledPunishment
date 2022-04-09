@@ -1,5 +1,5 @@
 {
-	"name": "Menu",
+	"name": "Menu_Survival",
 	"layers": [
 		{
 			"name": "Layer 0",
@@ -7,9 +7,135 @@
 			"subLayers": [],
 			"instances": [
 				{
+					"type": "But_StartGame",
+					"properties": {
+						"type": "button",
+						"text": "Start",
+						"tooltip": "",
+						"initially-visible": true,
+						"enabled": true,
+						"auto-font-size": true,
+						"checked": false,
+						"id": ""
+					},
+					"uid": 10839,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 391,
+						"y": 317,
+						"width": 72,
+						"height": 24,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						]
+					}
+				},
+				{
+					"type": "MenuBackgrounds",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 10843,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 235,
+						"y": 160,
+						"width": 388.363052,
+						"height": 137,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
 					"type": "SpriteFont",
 					"properties": {
-						"text": "P.U.N.I.S.H.M.E.N.T.",
+						"text": "Survive as long as you can!\n\nEarn points for killing enemies, and earn points for the amount of time you're alive!",
+						"enable-bbcode": true,
+						"character-width": 16,
+						"character-height": 16,
+						"character-set": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#\"'&()[]|`\\/@°+=*$£€<>",
+						"spacing-data": "",
+						"scale": 1,
+						"character-spacing": 0,
+						"line-height": 0,
+						"horizontal-alignment": "center",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "center"
+					},
+					"uid": 10845,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 430,
+						"y": 230.5,
+						"width": 388.363052,
+						"height": 140.4431167527788,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "MenuBackgrounds",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 10841,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 235,
+						"y": 72,
+						"width": 388.363052,
+						"height": 44,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "SpriteFont",
+					"properties": {
+						"text": " S.U.R.V.I.V.A.L.",
 						"enable-bbcode": true,
 						"character-width": 16,
 						"character-height": 16,
@@ -24,14 +150,14 @@
 						"initially-visible": true,
 						"origin": "center"
 					},
-					"uid": 2,
+					"uid": 10842,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 439,
-						"y": 164,
-						"width": 480.9985824045409,
-						"height": 54,
+						"x": 427,
+						"y": 97,
+						"width": 408,
+						"height": 43,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -40,170 +166,12 @@
 							1,
 							1
 						],
-						"angle": 6.282466830474092,
+						"angle": 0,
 						"zElevation": 0
-					}
-				},
-				{
-					"type": "But_Credits",
-					"properties": {
-						"type": "button",
-						"text": "Credits",
-						"tooltip": "",
-						"initially-visible": true,
-						"enabled": true,
-						"auto-font-size": true,
-						"checked": false,
-						"id": ""
-					},
-					"uid": 3363,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 365.5,
-						"y": 263,
-						"width": 123,
-						"height": 24,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						]
-					}
-				},
-				{
-					"type": "But_StartSurvival",
-					"properties": {
-						"type": "button",
-						"text": "Survival Mode",
-						"tooltip": "",
-						"initially-visible": true,
-						"enabled": true,
-						"auto-font-size": true,
-						"checked": false,
-						"id": ""
-					},
-					"uid": 10846,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 365.5,
-						"y": 237,
-						"width": 123,
-						"height": 24,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						]
-					}
-				},
-				{
-					"type": "SpriteFont",
-					"properties": {
-						"text": "H.U.M.B.L.E.D.",
-						"enable-bbcode": true,
-						"character-width": 16,
-						"character-height": 16,
-						"character-set": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#\"'&()[]|`\\/@°+=*$£€<>",
-						"spacing-data": "",
-						"scale": 1.5,
-						"character-spacing": 0,
-						"line-height": 0,
-						"horizontal-alignment": "center",
-						"vertical-alignment": "center",
-						"wrapping": "word",
-						"initially-visible": true,
-						"origin": "center"
-					},
-					"uid": 10847,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 441,
-						"y": 140,
-						"width": 336.0007752596066,
-						"height": 54,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 6.282466830474092,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "But_StartAdventureMode",
-					"properties": {
-						"type": "button",
-						"text": "Adventure Mode",
-						"tooltip": "",
-						"initially-visible": true,
-						"enabled": true,
-						"auto-font-size": true,
-						"checked": false,
-						"id": ""
-					},
-					"uid": 10848,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 365.5,
-						"y": 211,
-						"width": 123,
-						"height": 24,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						]
-					}
-				},
-				{
-					"type": "But_Controls",
-					"properties": {
-						"type": "button",
-						"text": "Controls",
-						"tooltip": "",
-						"initially-visible": true,
-						"enabled": true,
-						"auto-font-size": true,
-						"checked": false,
-						"id": ""
-					},
-					"uid": 3,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 365.5,
-						"y": 289,
-						"width": 123,
-						"height": 24,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						]
 					}
 				}
 			],
-			"sid": 156278748856926,
+			"sid": 475794649537010,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"isInitiallyInteractive": true,
@@ -232,7 +200,7 @@
 			"global": false
 		}
 	],
-	"sid": 383136748325603,
+	"sid": 658604379439157,
 	"nonworld-instances": [],
 	"effectTypes": [],
 	"width": 854,

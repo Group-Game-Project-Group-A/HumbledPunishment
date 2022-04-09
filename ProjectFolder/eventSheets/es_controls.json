@@ -139,6 +139,14 @@
 					"parameters": {
 						"collisions": "enabled"
 					}
+				},
+				{
+					"id": "set-collisions-enabled",
+					"objectClass": "DoorBlock",
+					"sid": 149084674503245,
+					"parameters": {
+						"collisions": "enabled"
+					}
 				}
 			],
 			"sid": 139228943738778
