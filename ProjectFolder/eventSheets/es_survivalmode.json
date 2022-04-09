@@ -1,13 +1,13 @@
 {
-	"name": "SurvivalMode_ES",
+	"name": "ES_SurvivalMode",
 	"events": [
 		{
 			"eventType": "include",
-			"includeSheet": "Controls_ES"
+			"includeSheet": "ES_Controls"
 		},
 		{
 			"eventType": "include",
-			"includeSheet": "Combat_ES"
+			"includeSheet": "ES_Combat"
 		},
 		{
 			"eventType": "variable",
@@ -108,7 +108,70 @@
 					}
 				}
 			],
-			"sid": 333917922211694
+			"sid": 333917922211694,
+			"children": [
+				{
+					"eventType": "comment",
+					"text": "Reset the global variables to 99 so that the boss and enemies don't immediately spawn on the start of the layout."
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "But_LoseSurvival",
+					"sid": 629931847106335
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 692840704664306,
+					"parameters": {
+						"layout": "Menu"
+					}
+				}
+			],
+			"sid": 698778938941321,
+			"children": [
+				{
+					"eventType": "comment",
+					"text": "When you die, a button spawns. When you press the button you'll return to the menu"
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 664402410504410,
+					"parameters": {
+						"key": 82
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 272052655946338,
+					"parameters": {
+						"layout": "Menu"
+					}
+				}
+			],
+			"sid": 906325070512997,
+			"children": [
+				{
+					"eventType": "comment",
+					"text": "Pressing R Restarts the game to the Main Menu"
+				}
+			]
 		},
 		{
 			"eventType": "group",
@@ -121,7 +184,7 @@
 					"eventType": "group",
 					"disabled": false,
 					"title": "Pick Up Spawners",
-					"description": "",
+					"description": "Mechanics for the spawning of pick ups",
 					"isActiveOnStart": true,
 					"children": [
 						{
@@ -511,6 +574,14 @@
 									"sid": 165649435766213,
 									"children": [
 										{
+											"eventType": "comment",
+											"text": "Every 60 seconds, set the boss spawn type to 0 or 1, when it's 1 or higher, it'll spawn bob, if it's less than 1, it'll spawn the orc boss."
+										},
+										{
+											"eventType": "comment",
+											"text": "When a boss is spawned, it'll increase the boss count to 1, when it dies it'll decrease it by one. Bosses will only spawn if the bosscount is less than 1"
+										},
+										{
 											"eventType": "block",
 											"conditions": [
 												{
@@ -766,7 +837,7 @@
 					"children": [
 						{
 							"eventType": "comment",
-							"text": "Add x to the score when you destroy an enemy, and then update the score text"
+							"text": "Add 100 to the score when you destroy an enemy, and then update the score text"
 						}
 					]
 				},
@@ -802,7 +873,7 @@
 					"children": [
 						{
 							"eventType": "comment",
-							"text": "Add x to the score when you destroy an enemy, and then update the score text"
+							"text": "Add 75 to the score when you destroy an enemy, and then update the score text"
 						}
 					]
 				},
@@ -852,7 +923,7 @@
 					"children": [
 						{
 							"eventType": "comment",
-							"text": "Add x to the score when you destroy a boss, update the score text, then subtract 1 from boss count so another boss can spawn"
+							"text": "Add 300 to the score when you destroy a boss, update the score text, then subtract 1 from boss count so another boss can spawn"
 						}
 					],
 					"isOrBlock": true
@@ -873,10 +944,6 @@
 					"sid": 862072719671872,
 					"children": [
 						{
-							"eventType": "comment",
-							"text": "if the level has been started, and the player is alive, add 10 to the time score every 1 second, and set the timer text to show the amount of time spent in the round."
-						},
-						{
 							"eventType": "block",
 							"conditions": [
 								{
@@ -893,10 +960,6 @@
 							"actions": [],
 							"sid": 363502056851805,
 							"children": [
-								{
-									"eventType": "comment",
-									"text": "If the way the boss timer isn't correct, we'll use the disabled timer variable to keep track of the spawn timers"
-								},
 								{
 									"eventType": "block",
 									"conditions": [
@@ -938,7 +1001,17 @@
 											}
 										}
 									],
-									"sid": 289207491260671
+									"sid": 289207491260671,
+									"children": [
+										{
+											"eventType": "comment",
+											"text": "If the way the boss timer isn't correct, we'll use the disabled timer variable to keep track of the spawn timers"
+										},
+										{
+											"eventType": "comment",
+											"text": "if the level has been started, and the player is alive, add 10 to the time score every 1 second, and set the timer text to show the amount of time spent in the round."
+										}
+									]
 								}
 							]
 						}
@@ -1032,6 +1105,10 @@
 									"sid": 985975995561554,
 									"children": [
 										{
+											"eventType": "comment",
+											"text": "Every .05 seconds while the KillScore is less than the final score, it will incrementally add to the KillScore until it hits the CombinedScore, and it will update the text object as well"
+										},
+										{
 											"eventType": "block",
 											"conditions": [
 												{
@@ -1053,6 +1130,14 @@
 													"parameters": {
 														"variable": "KillScore",
 														"value": "5"
+													}
+												},
+												{
+													"id": "set-text",
+													"objectClass": "ScoreText_SF",
+													"sid": 137006481382432,
+													"parameters": {
+														"text": "\"Score: \"&KillScore"
 													}
 												}
 											],
@@ -1082,7 +1167,25 @@
 													}
 												}
 											],
-											"actions": [],
+											"actions": [
+												{
+													"id": "add-to-eventvar",
+													"objectClass": "System",
+													"sid": 546224709660813,
+													"parameters": {
+														"variable": "KillScore",
+														"value": "5"
+													}
+												},
+												{
+													"id": "set-text",
+													"objectClass": "ScoreText_SF",
+													"sid": 726843598625418,
+													"parameters": {
+														"text": "\"Score: \"&KillScore"
+													}
+												}
+											],
 											"sid": 627498176712214
 										},
 										{
@@ -1108,6 +1211,14 @@
 														"variable": "KillScore",
 														"value": "10"
 													}
+												},
+												{
+													"id": "set-text",
+													"objectClass": "ScoreText_SF",
+													"sid": 815083636738851,
+													"parameters": {
+														"text": "\"Score: \"&KillScore"
+													}
 												}
 											],
 											"sid": 757343504006400
@@ -1131,7 +1242,7 @@
 								},
 								{
 									"id": "is-visible",
-									"objectClass": "But_LoseFestival",
+									"objectClass": "But_LoseSurvival",
 									"sid": 404148080716440,
 									"isInverted": true
 								}
@@ -1139,7 +1250,7 @@
 							"actions": [
 								{
 									"id": "set-visible",
-									"objectClass": "But_LoseFestival",
+									"objectClass": "But_LoseSurvival",
 									"sid": 738893870038769,
 									"parameters": {
 										"visibility": "visible"
@@ -1147,7 +1258,7 @@
 								},
 								{
 									"id": "set-enabled",
-									"objectClass": "But_LoseFestival",
+									"objectClass": "But_LoseSurvival",
 									"sid": 420033372515025,
 									"parameters": {
 										"mode": "enabled"
@@ -1166,6 +1277,335 @@
 				}
 			],
 			"sid": 625751974570414
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Death",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 856712801759082,
+							"parameters": {
+								"variable": "PlayerHealth",
+								"comparison": 3,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "Sprite2",
+							"sid": 874349903955108
+						},
+						{
+							"id": "set-object-time-scale",
+							"objectClass": "System",
+							"sid": 341210278678773,
+							"parameters": {
+								"object": "Enemies",
+								"time-scale": "0"
+							}
+						},
+						{
+							"id": "set-object-time-scale",
+							"objectClass": "System",
+							"sid": 709429419143770,
+							"parameters": {
+								"object": "Player",
+								"time-scale": "0"
+							}
+						},
+						{
+							"id": "set-object-time-scale",
+							"objectClass": "System",
+							"sid": 294003421315295,
+							"parameters": {
+								"object": "Arrow",
+								"time-scale": "0"
+							}
+						},
+						{
+							"id": "set-object-time-scale",
+							"objectClass": "System",
+							"sid": 974231091544021,
+							"parameters": {
+								"object": "EnemyArrows",
+								"time-scale": "0"
+							}
+						},
+						{
+							"id": "set-object-time-scale",
+							"objectClass": "System",
+							"sid": 256545450380136,
+							"parameters": {
+								"object": "DashPaths",
+								"time-scale": "0"
+							}
+						},
+						{
+							"id": "set-object-time-scale",
+							"objectClass": "System",
+							"sid": 164645426932345,
+							"parameters": {
+								"object": "BossSpawnPoint",
+								"time-scale": "0"
+							}
+						},
+						{
+							"id": "set-object-time-scale",
+							"objectClass": "System",
+							"sid": 604347789955494,
+							"parameters": {
+								"object": "EnemySpawnPoint",
+								"time-scale": "0"
+							}
+						},
+						{
+							"id": "set-object-time-scale",
+							"objectClass": "System",
+							"sid": 988373570647510,
+							"parameters": {
+								"object": "HealthPickUpSpawner",
+								"time-scale": "0"
+							}
+						},
+						{
+							"id": "set-object-time-scale",
+							"objectClass": "System",
+							"sid": 965550013862489,
+							"parameters": {
+								"object": "Bobmelee",
+								"time-scale": "0"
+							}
+						},
+						{
+							"id": "set-object-time-scale",
+							"objectClass": "System",
+							"sid": 765783951980469,
+							"parameters": {
+								"object": "AcidArea",
+								"time-scale": "0"
+							}
+						},
+						{
+							"id": "set-object-time-scale",
+							"objectClass": "System",
+							"sid": 409922081301366,
+							"parameters": {
+								"object": "AcidFlask",
+								"time-scale": "0"
+							}
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 260401480574150,
+							"parameters": {
+								"variable": "isPaused",
+								"value": "true"
+							}
+						},
+						{
+							"id": "set-cursor-style",
+							"objectClass": "Mouse",
+							"sid": 953549852985532,
+							"parameters": {
+								"cursor-style": "normal"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Vignette",
+							"sid": 529873921923647,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 307318812261870,
+							"parameters": {
+								"variable": "isPaused",
+								"value": "true"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "LoseText",
+							"sid": 582061505049622,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "LoseButton",
+							"sid": 375888675166886,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "LoseButton",
+							"sid": 245712068782713,
+							"parameters": {
+								"mode": "enabled"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "WinBackground",
+							"sid": 995926694487805,
+							"parameters": {
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 177004842320046,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-clicked",
+									"objectClass": "But_LoseSurvival",
+									"sid": 360929109520094
+								}
+							],
+							"actions": [
+								{
+									"id": "set-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 352344945294969,
+									"parameters": {
+										"variable": "isPaused",
+										"value": "false"
+									}
+								},
+								{
+									"id": "go-to-nextprevious-layout",
+									"objectClass": "System",
+									"sid": 837723942167381,
+									"parameters": {
+										"which": "previous"
+									}
+								},
+								{
+									"id": "set-object-time-scale",
+									"objectClass": "System",
+									"sid": 805826081334089,
+									"parameters": {
+										"object": "Enemies",
+										"time-scale": "1"
+									}
+								},
+								{
+									"id": "set-object-time-scale",
+									"objectClass": "System",
+									"sid": 977185418376977,
+									"parameters": {
+										"object": "Player",
+										"time-scale": "1"
+									}
+								},
+								{
+									"id": "set-object-time-scale",
+									"objectClass": "System",
+									"sid": 234453320706995,
+									"parameters": {
+										"object": "Arrow",
+										"time-scale": "1"
+									}
+								},
+								{
+									"id": "set-object-time-scale",
+									"objectClass": "System",
+									"sid": 378679048729916,
+									"parameters": {
+										"object": "EnemyArrows",
+										"time-scale": "1"
+									}
+								},
+								{
+									"id": "set-object-time-scale",
+									"objectClass": "System",
+									"sid": 928170425445507,
+									"parameters": {
+										"object": "DashPaths",
+										"time-scale": "1"
+									}
+								},
+								{
+									"id": "set-object-time-scale",
+									"objectClass": "System",
+									"sid": 485226669585486,
+									"parameters": {
+										"object": "BossSpawnPoint",
+										"time-scale": "1"
+									}
+								},
+								{
+									"id": "set-object-time-scale",
+									"objectClass": "System",
+									"sid": 338776980109581,
+									"parameters": {
+										"object": "EnemySpawnPoint",
+										"time-scale": "1"
+									}
+								},
+								{
+									"id": "set-object-time-scale",
+									"objectClass": "System",
+									"sid": 829437360318207,
+									"parameters": {
+										"object": "HealthPickUpSpawner",
+										"time-scale": "1"
+									}
+								},
+								{
+									"id": "set-object-time-scale",
+									"objectClass": "System",
+									"sid": 739226466709269,
+									"parameters": {
+										"object": "Bobmelee",
+										"time-scale": "1"
+									}
+								},
+								{
+									"id": "set-object-time-scale",
+									"objectClass": "System",
+									"sid": 461954262696666,
+									"parameters": {
+										"object": "AcidArea",
+										"time-scale": "1"
+									}
+								},
+								{
+									"id": "set-object-time-scale",
+									"objectClass": "System",
+									"sid": 944287132603455,
+									"parameters": {
+										"object": "AcidFlask",
+										"time-scale": "1"
+									}
+								}
+							],
+							"sid": 494111073995676
+						}
+					]
+				}
+			],
+			"sid": 514161615085880
 		}
 	],
 	"sid": 201991759953768

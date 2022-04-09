@@ -1,5 +1,5 @@
 {
-	"name": "Lobby_ES",
+	"name": "ES_Lobby",
 	"events": [
 		{
 			"eventType": "variable",
@@ -33,7 +33,7 @@
 		},
 		{
 			"eventType": "include",
-			"includeSheet": "Controls_ES"
+			"includeSheet": "ES_Controls"
 		},
 		{
 			"eventType": "group",

@@ -1,0 +1,253 @@
+{
+	"name": "ES_NormalMode",
+	"events": [
+		{
+			"eventType": "include",
+			"includeSheet": "ES_Combat"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 594207414630624,
+					"parameters": {
+						"variable": "EnemyCount",
+						"comparison": 3,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-time-scale",
+					"objectClass": "System",
+					"sid": 607932968579771,
+					"parameters": {
+						"time-scale": "0"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "WinBackground",
+					"sid": 878612370661977,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "WinText",
+					"sid": 927964487520231,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "WinButton",
+					"sid": 686591283746010,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "WinButton",
+					"sid": 939016039654899,
+					"parameters": {
+						"mode": "enabled"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Vignette",
+					"sid": 773808268184185,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 477450695170960,
+					"parameters": {
+						"variable": "isPaused",
+						"value": "true"
+					}
+				}
+			],
+			"sid": 631443156937876,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-clicked",
+							"objectClass": "WinButton",
+							"sid": 665002609779857
+						}
+					],
+					"actions": [
+						{
+							"id": "set-time-scale",
+							"objectClass": "System",
+							"sid": 293743119537899,
+							"parameters": {
+								"time-scale": "1"
+							}
+						},
+						{
+							"id": "go-to-nextprevious-layout",
+							"objectClass": "System",
+							"sid": 162482732518001,
+							"parameters": {
+								"which": "next"
+							}
+						}
+					],
+					"sid": 590617268157015
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 636889890266814,
+					"parameters": {
+						"variable": "PlayerHealth",
+						"comparison": 3,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Sprite2",
+					"sid": 814910173277046
+				},
+				{
+					"id": "set-time-scale",
+					"objectClass": "System",
+					"sid": 751299669319144,
+					"parameters": {
+						"time-scale": "0"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 338052485036871,
+					"parameters": {
+						"variable": "isPaused",
+						"value": "true"
+					}
+				},
+				{
+					"id": "set-cursor-style",
+					"objectClass": "Mouse",
+					"sid": 452344758426807,
+					"parameters": {
+						"cursor-style": "normal"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Vignette",
+					"sid": 312717745347818,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 766756343916475,
+					"parameters": {
+						"variable": "isPaused",
+						"value": "true"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "LoseText",
+					"sid": 833344120215518,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "LoseButton",
+					"sid": 627762407186333,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "LoseButton",
+					"sid": 562758056925569,
+					"parameters": {
+						"mode": "enabled"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "WinBackground",
+					"sid": 122919549703392,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 203299476511849,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-clicked",
+							"objectClass": "LoseButton",
+							"sid": 324712519183743
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 794295340338003,
+							"parameters": {
+								"variable": "isPaused",
+								"value": "false"
+							}
+						},
+						{
+							"id": "go-to-nextprevious-layout",
+							"objectClass": "System",
+							"sid": 973780366074520,
+							"parameters": {
+								"which": "previous"
+							}
+						},
+						{
+							"id": "set-time-scale",
+							"objectClass": "System",
+							"sid": 229091459036409,
+							"parameters": {
+								"time-scale": "1.0"
+							}
+						}
+					],
+					"sid": 888222412926948
+				}
+			]
+		}
+	],
+	"sid": 603949761274379
+}

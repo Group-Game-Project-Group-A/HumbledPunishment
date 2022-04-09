@@ -207,7 +207,7 @@
 					"But_EnterLevel",
 					"But_Credits",
 					"But_StartOver",
-					"But_LoseFestival"
+					"But_LoseSurvival"
 				],
 				"subfolders": [],
 				"name": "Buttons"
@@ -280,7 +280,8 @@
 			},
 			{
 				"items": [
-					"DashPaths"
+					"DashPaths",
+					"ArrowPaths"
 				],
 				"subfolders": [],
 				"name": "Abilities"
@@ -452,57 +453,66 @@
 		"subfolders": []
 	},
 	"layouts": {
-		"items": [
-			"Menu",
-			"Controls",
-			"Story_1_1",
-			"Lobby_1_1",
-			"Arena_1_1",
-			"Story_1_2",
-			"Lobby_1_2",
-			"Arena_1_2",
-			"Story_1_3",
-			"Lobby_1_3",
-			"Arena_1_3",
-			"Story_1_4",
-			"Lobby_1_4",
-			"Arena_1_4",
-			"Story_1_5",
-			"Story_2_1",
-			"Lobby_2_1",
-			"Arena_2_1",
-			"Story_2_2",
-			"Lobby_2_2",
-			"Arena_2_2",
-			"Story_2_3",
-			"Lobby_2_3",
-			"Arena_2_3",
-			"Story_2_4",
-			"Lobby_2_4",
-			"Arena_2_4",
-			"Story_2_5",
-			"Story_3_1",
-			"EndScreen",
-			"Credits"
-		],
+		"items": [],
 		"subfolders": [
 			{
 				"items": [
-					"Prototype_LevelOne"
+					"Menu",
+					"Controls",
+					"EndScreen",
+					"Credits"
 				],
 				"subfolders": [],
-				"name": "Prototypes"
+				"name": "Menus"
+			},
+			{
+				"items": [],
+				"subfolders": [],
+				"name": "Survival Mode"
+			},
+			{
+				"items": [
+					"Story_1_1",
+					"Lobby_1_1",
+					"Arena_1_1",
+					"Story_1_2",
+					"Lobby_1_2",
+					"Arena_1_2",
+					"Story_1_3",
+					"Lobby_1_3",
+					"Arena_1_3",
+					"Story_1_4",
+					"Lobby_1_4",
+					"Arena_1_4",
+					"Story_1_5",
+					"Story_2_1",
+					"Lobby_2_1",
+					"Arena_2_1",
+					"Story_2_2",
+					"Lobby_2_2",
+					"Arena_2_2",
+					"Story_2_3",
+					"Lobby_2_3",
+					"Arena_2_3",
+					"Story_2_4",
+					"Lobby_2_4",
+					"Arena_2_4",
+					"Story_2_5",
+					"Story_3_1"
+				],
+				"subfolders": [],
+				"name": "Adventure Mode"
 			}
 		]
 	},
 	"eventSheets": {
 		"items": [
-			"Menu_ES",
-			"Controls_ES",
-			"Lobby_ES",
-			"Combat_ES",
-			"NormalMode_ES",
-			"SurvivalMode_ES"
+			"ES_Menu",
+			"ES_Controls",
+			"ES_Lobby",
+			"ES_Combat",
+			"ES_NormalMode",
+			"ES_SurvivalMode"
 		],
 		"subfolders": []
 	},
