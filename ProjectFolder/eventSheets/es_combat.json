@@ -4402,6 +4402,14 @@
 													}
 												},
 												{
+													"id": "set-angle",
+													"objectClass": "DashPaths",
+													"sid": 270957724395666,
+													"parameters": {
+														"angle": "Player.Bullet.AngleOfMotion+90"
+													}
+												},
+												{
 													"id": "move-to-object",
 													"objectClass": "DashPaths",
 													"sid": 413355916777721,
@@ -4449,9 +4457,9 @@
 												{
 													"id": "wait",
 													"objectClass": "System",
-													"sid": 398744214457986,
+													"sid": 951706143658470,
 													"parameters": {
-														"seconds": "2"
+														"seconds": "0.75"
 													}
 												},
 												{
@@ -5548,6 +5556,15 @@
 													}
 												},
 												{
+													"id": "set-animation",
+													"objectClass": "Melee_Enemy_Minor",
+													"sid": 735163297164512,
+													"parameters": {
+														"animation": "\"Paralyzed\"",
+														"from": "beginning"
+													}
+												},
+												{
 													"id": "wait",
 													"objectClass": "System",
 													"sid": 939212277769633,
@@ -5562,6 +5579,15 @@
 													"behaviorType": "MoveTo",
 													"parameters": {
 														"max-speed": "150"
+													}
+												},
+												{
+													"id": "set-animation",
+													"objectClass": "Melee_Enemy_Minor",
+													"sid": 835643154030319,
+													"parameters": {
+														"animation": "\"Normal\"",
+														"from": "beginning"
 													}
 												},
 												{
