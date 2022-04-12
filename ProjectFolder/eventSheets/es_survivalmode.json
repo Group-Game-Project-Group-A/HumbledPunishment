@@ -132,9 +132,33 @@
 				{
 					"id": "set-collisions-enabled",
 					"objectClass": "DoorCloser",
-					"sid": 366681647019828,
+					"sid": 149234440396356,
 					"parameters": {
 						"collisions": "disabled"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "DoorWalls",
+					"sid": 999283697959780,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-collisions-enabled",
+					"objectClass": "DoorWalls",
+					"sid": 222093707442784,
+					"parameters": {
+						"collisions": "enabled"
+					}
+				},
+				{
+					"id": "set-collisions-enabled",
+					"objectClass": "DoorBlock",
+					"sid": 696579954244149,
+					"parameters": {
+						"collisions": "enabled"
 					}
 				},
 				{

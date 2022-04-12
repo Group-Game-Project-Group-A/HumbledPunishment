@@ -1,0 +1,26 @@
+{
+	"name": "DashParticles",
+	"plugin-id": "Particles",
+	"sid": 431505982425849,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Pin",
+			"name": "Pin",
+			"sid": 847683952309771
+		}
+	],
+	"effectTypes": [],
+	"image": {
+		"width": 27,
+		"height": 25,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "png",
+		"exportQuality": 0.8,
+		"imageSpriteId": 3566290,
+		"useCollisionPoly": true
+	}
+}
