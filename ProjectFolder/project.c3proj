@@ -200,7 +200,8 @@
 			"DoorBlock",
 			"Festival_LoseButton",
 			"ScoreText",
-			"FloorBackground"
+			"FloorBackground",
+			"SolidWalls_Invisible"
 		],
 		"subfolders": [
 			{
@@ -297,8 +298,8 @@
 				"items": [
 					"DashPaths",
 					"ArrowPaths",
-					"ArrowParticles",
-					"DashParticles"
+					"ArrowFireParticles",
+					"DashFireParticles"
 				],
 				"subfolders": [],
 				"name": "Abilities"
