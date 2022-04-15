@@ -50,9 +50,9 @@
 					"behaviors": {},
 					"world": {
 						"x": 236,
-						"y": 149,
+						"y": 134,
 						"width": 388.363052,
-						"height": 163,
+						"height": 248,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -87,8 +87,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 437.0000131869979,
-						"y": 171.54836607645677,
+						"x": 437,
+						"y": 168,
 						"width": 388.363052,
 						"height": 42.623306587954545,
 						"originX": 0.5,
@@ -106,7 +106,7 @@
 				{
 					"type": "SpriteFont",
 					"properties": {
-						"text": "Use WASD to move around the playing field.\n\nLeft click to fire your bow at the reticle.",
+						"text": "Use WASD to move around the playing field.\n\nLeft click to fire your bow at the reticle.\n\nPress SPACEBAR to dash in the direction that you're moving!",
 						"enable-bbcode": true,
 						"character-width": 16,
 						"character-height": 16,
@@ -125,10 +125,10 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 437.000013,
-						"y": 260.4582710824121,
+						"x": 437,
+						"y": 305,
 						"width": 388.363052,
-						"height": 140.4431167527788,
+						"height": 169.4431167527788,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -180,5 +180,5 @@
 	"vpX": 0.5,
 	"vpY": 0.5,
 	"projection": "perspective",
-	"eventSheet": null
+	"eventSheet": "ES_Menu"
 }

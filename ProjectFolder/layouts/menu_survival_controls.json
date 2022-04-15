@@ -1,5 +1,5 @@
 {
-	"name": "Menu_Survival",
+	"name": "Menu_Survival_Controls",
 	"layers": [
 		{
 			"name": "Layer 0",
@@ -10,7 +10,7 @@
 					"type": "But_StartGame",
 					"properties": {
 						"type": "button",
-						"text": "Start",
+						"text": "Continue",
 						"tooltip": "",
 						"initially-visible": true,
 						"enabled": true,
@@ -18,12 +18,12 @@
 						"checked": false,
 						"id": ""
 					},
-					"uid": 10839,
+					"uid": 21,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
 						"x": 391,
-						"y": 317,
+						"y": 407,
 						"width": 72,
 						"height": 24,
 						"originX": 0,
@@ -45,14 +45,14 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 10843,
+					"uid": 24,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 235,
-						"y": 160,
+						"x": 236,
+						"y": 149,
 						"width": 388.363052,
-						"height": 137,
+						"height": 163,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -68,74 +68,7 @@
 				{
 					"type": "SpriteFont",
 					"properties": {
-						"text": "Survive as long as you can!\n\nEarn points for killing enemies, and earn points for the amount of time you're alive!",
-						"enable-bbcode": true,
-						"character-width": 16,
-						"character-height": 16,
-						"character-set": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#\"'&()[]|`\\/@°+=*$£€<>",
-						"spacing-data": "",
-						"scale": 1,
-						"character-spacing": 0,
-						"line-height": 0,
-						"horizontal-alignment": "center",
-						"vertical-alignment": "center",
-						"wrapping": "word",
-						"initially-visible": true,
-						"origin": "center"
-					},
-					"uid": 10845,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 430,
-						"y": 230.5,
-						"width": 388.363052,
-						"height": 140.4431167527788,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "MenuBackgrounds",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 10841,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 234,
-						"y": 64,
-						"width": 388.363052,
-						"height": 66,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "SpriteFont",
-					"properties": {
-						"text": " S.U.R.V.I.V.A.L.\nM.O.D.E",
+						"text": "C.O.N.T.R.O.L.S.",
 						"enable-bbcode": true,
 						"character-width": 16,
 						"character-height": 16,
@@ -150,14 +83,52 @@
 						"initially-visible": true,
 						"origin": "center"
 					},
-					"uid": 10842,
+					"uid": 25,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 439,
-						"y": 90,
-						"width": 408,
-						"height": 78,
+						"x": 437.0000131869979,
+						"y": 171.54836607645677,
+						"width": 388.363052,
+						"height": 42.623306587954545,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "SpriteFont",
+					"properties": {
+						"text": "Use WASD to move around the playing field.\n\nLeft click to fire your bow at the reticle.",
+						"enable-bbcode": true,
+						"character-width": 16,
+						"character-height": 16,
+						"character-set": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#\"'&()[]|`\\/@°+=*$£€<>",
+						"spacing-data": "",
+						"scale": 1,
+						"character-spacing": 0,
+						"line-height": 0,
+						"horizontal-alignment": "center",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "center"
+					},
+					"uid": 27,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 437.000013,
+						"y": 260.4582710824121,
+						"width": 388.363052,
+						"height": 140.4431167527788,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -171,7 +142,7 @@
 					}
 				}
 			],
-			"sid": 475794649537010,
+			"sid": 368122651585127,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"isInitiallyInteractive": true,
@@ -200,7 +171,7 @@
 			"global": false
 		}
 	],
-	"sid": 658604379439157,
+	"sid": 586818275898248,
 	"nonworld-instances": [],
 	"effectTypes": [],
 	"width": 854,
