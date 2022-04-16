@@ -234,9 +234,9 @@
 				{
 					"id": "go-to-layout",
 					"objectClass": "System",
-					"sid": 272052655946338,
+					"sid": 366664844622280,
 					"parameters": {
-						"layout": "Menu"
+						"layout": "Menu_Survival"
 					}
 				}
 			],
@@ -320,10 +320,10 @@
 								{
 									"id": "set-instvar-value",
 									"objectClass": "HealthPickups",
-									"sid": 716712526511468,
+									"sid": 831873659518810,
 									"parameters": {
 										"instance-variable": "HealthBoost",
-										"value": "2"
+										"value": "5"
 									}
 								}
 							],
@@ -1551,15 +1551,6 @@
 							"sid": 529873921923647,
 							"parameters": {
 								"visibility": "invisible"
-							}
-						},
-						{
-							"id": "set-boolean-eventvar",
-							"objectClass": "System",
-							"sid": 307318812261870,
-							"parameters": {
-								"variable": "isPaused",
-								"value": "true"
 							}
 						},
 						{

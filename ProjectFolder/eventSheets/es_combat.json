@@ -212,6 +212,16 @@
 			"sid": 705718756633429
 		},
 		{
+			"eventType": "variable",
+			"name": "AcidDestroyTime",
+			"type": "number",
+			"initialValue": "30",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 201298252778824
+		},
+		{
 			"eventType": "group",
 			"disabled": false,
 			"title": "PickUps",
@@ -251,10 +261,10 @@
 								{
 									"id": "add-to-eventvar",
 									"objectClass": "System",
-									"sid": 402477424909297,
+									"sid": 738627869853762,
 									"parameters": {
 										"variable": "PlayerHealth",
-										"value": "HealthPickups.HealthBoost"
+										"value": "5"
 									}
 								},
 								{
@@ -369,7 +379,36 @@
 									}
 								}
 							],
-							"sid": 530465646510311
+							"sid": 530465646510311,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 675980759256169,
+											"parameters": {
+												"variable": "PlayerHealth",
+												"comparison": 5,
+												"value": "PlayerMaxHealth"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 984151644558850,
+											"parameters": {
+												"variable": "PlayerHealth",
+												"value": "PlayerMaxHealth"
+											}
+										}
+									],
+									"sid": 510027842056413
+								}
+							]
 						}
 					],
 					"sid": 254719583887247
@@ -410,6 +449,13 @@
 									"parameters": {
 										"object": "Player"
 									}
+								},
+								{
+									"id": "is-enabled",
+									"objectClass": "Player",
+									"sid": 967430019389187,
+									"behaviorType": "Bullet",
+									"isInverted": true
 								}
 							],
 							"actions": [
@@ -4133,10 +4179,10 @@
 										{
 											"id": "set-speed",
 											"objectClass": "Player",
-											"sid": 958869233245715,
+											"sid": 932495141564699,
 											"behaviorType": "Bullet",
 											"parameters": {
-												"speed": "400"
+												"speed": "300"
 											}
 										},
 										{
@@ -4170,6 +4216,7 @@
 											"id": "set-enabled",
 											"objectClass": "Player",
 											"sid": 480135982894531,
+											"disabled": true,
 											"behaviorType": "8Direction",
 											"parameters": {
 												"state": "disabled"
@@ -4205,6 +4252,7 @@
 											"id": "set-enabled",
 											"objectClass": "Player",
 											"sid": 601145033107544,
+											"disabled": true,
 											"behaviorType": "8Direction",
 											"parameters": {
 												"state": "enabled"
@@ -5011,73 +5059,90 @@
 													}
 												}
 											],
-											"actions": [
+											"actions": [],
+											"sid": 542977980781962,
+											"children": [
 												{
-													"id": "spawn-another-object",
-													"objectClass": "Player",
-													"sid": 241656755784004,
-													"parameters": {
-														"object": "DashPaths",
-														"layer": "0",
-														"image-point": "1",
-														"create-hierarchy": false
-													}
-												},
-												{
-													"id": "set-angle",
-													"objectClass": "DashPaths",
-													"sid": 241712050948149,
-													"parameters": {
-														"angle": "Player.Bullet.AngleOfMotion+90"
-													}
-												},
-												{
-													"id": "set-animation",
-													"objectClass": "DashPaths",
-													"sid": 926873181711792,
-													"parameters": {
-														"animation": "\"Ice\"",
-														"from": "beginning"
-													}
-												},
-												{
-													"id": "move-to-object",
-													"objectClass": "DashPaths",
-													"sid": 423159230906087,
-													"parameters": {
-														"where": "behind",
-														"object": "Player"
-													}
-												},
-												{
-													"id": "move-to-object",
-													"objectClass": "DashPaths",
-													"sid": 962442356732664,
-													"parameters": {
-														"where": "behind",
-														"object": "Enemies"
-													}
-												},
-												{
-													"id": "move-to-object",
-													"objectClass": "DashPaths",
-													"sid": 244314656640935,
-													"parameters": {
-														"where": "behind",
-														"object": "Arrow"
-													}
-												},
-												{
-													"id": "move-to-object",
-													"objectClass": "DashPaths",
-													"sid": 428054176053125,
-													"parameters": {
-														"where": "behind",
-														"object": "EnemyArrows"
-													}
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "every-x-seconds",
+															"objectClass": "System",
+															"sid": 792364191455355,
+															"parameters": {
+																"interval-seconds": ".05"
+															}
+														}
+													],
+													"actions": [
+														{
+															"id": "spawn-another-object",
+															"objectClass": "Player",
+															"sid": 554703612413480,
+															"parameters": {
+																"object": "DashPaths",
+																"layer": "0",
+																"image-point": "1",
+																"create-hierarchy": false
+															}
+														},
+														{
+															"id": "set-angle",
+															"objectClass": "DashPaths",
+															"sid": 576994129820669,
+															"parameters": {
+																"angle": "Player.Bullet.AngleOfMotion+90"
+															}
+														},
+														{
+															"id": "set-animation",
+															"objectClass": "DashPaths",
+															"sid": 164289728155770,
+															"parameters": {
+																"animation": "\"Ice\"",
+																"from": "beginning"
+															}
+														},
+														{
+															"id": "move-to-object",
+															"objectClass": "DashPaths",
+															"sid": 251148937278769,
+															"parameters": {
+																"where": "behind",
+																"object": "Player"
+															}
+														},
+														{
+															"id": "move-to-object",
+															"objectClass": "DashPaths",
+															"sid": 355246745545404,
+															"parameters": {
+																"where": "behind",
+																"object": "Enemies"
+															}
+														},
+														{
+															"id": "move-to-object",
+															"objectClass": "DashPaths",
+															"sid": 154807693559073,
+															"parameters": {
+																"where": "behind",
+																"object": "Arrow"
+															}
+														},
+														{
+															"id": "move-to-object",
+															"objectClass": "DashPaths",
+															"sid": 394119954599641,
+															"parameters": {
+																"where": "behind",
+																"object": "EnemyArrows"
+															}
+														}
+													],
+													"sid": 702265221166257
 												}
-											],
-											"sid": 542977980781962
+											]
 										},
 										{
 											"eventType": "block",
@@ -5091,73 +5156,90 @@
 													}
 												}
 											],
-											"actions": [
+											"actions": [],
+											"sid": 191783841709488,
+											"children": [
 												{
-													"id": "spawn-another-object",
-													"objectClass": "Player",
-													"sid": 595628658470108,
-													"parameters": {
-														"object": "DashPaths",
-														"layer": "0",
-														"image-point": "1",
-														"create-hierarchy": false
-													}
-												},
-												{
-													"id": "set-angle",
-													"objectClass": "DashPaths",
-													"sid": 971457349766522,
-													"parameters": {
-														"angle": "Player.Bullet.AngleOfMotion+90"
-													}
-												},
-												{
-													"id": "set-animation",
-													"objectClass": "DashPaths",
-													"sid": 265076745215597,
-													"parameters": {
-														"animation": "\"Fire\"",
-														"from": "beginning"
-													}
-												},
-												{
-													"id": "move-to-object",
-													"objectClass": "DashPaths",
-													"sid": 364759781778303,
-													"parameters": {
-														"where": "behind",
-														"object": "Player"
-													}
-												},
-												{
-													"id": "move-to-object",
-													"objectClass": "DashPaths",
-													"sid": 981243909743432,
-													"parameters": {
-														"where": "behind",
-														"object": "Enemies"
-													}
-												},
-												{
-													"id": "move-to-object",
-													"objectClass": "DashPaths",
-													"sid": 869473077498517,
-													"parameters": {
-														"where": "behind",
-														"object": "Arrow"
-													}
-												},
-												{
-													"id": "move-to-object",
-													"objectClass": "DashPaths",
-													"sid": 827850724648504,
-													"parameters": {
-														"where": "behind",
-														"object": "EnemyArrows"
-													}
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "every-x-seconds",
+															"objectClass": "System",
+															"sid": 588494133415888,
+															"parameters": {
+																"interval-seconds": ".05"
+															}
+														}
+													],
+													"actions": [
+														{
+															"id": "spawn-another-object",
+															"objectClass": "Player",
+															"sid": 558197586943084,
+															"parameters": {
+																"object": "DashPaths",
+																"layer": "0",
+																"image-point": "1",
+																"create-hierarchy": false
+															}
+														},
+														{
+															"id": "set-angle",
+															"objectClass": "DashPaths",
+															"sid": 576270506777874,
+															"parameters": {
+																"angle": "Player.Bullet.AngleOfMotion+90"
+															}
+														},
+														{
+															"id": "set-animation",
+															"objectClass": "DashPaths",
+															"sid": 569665293354632,
+															"parameters": {
+																"animation": "\"Fire\"",
+																"from": "beginning"
+															}
+														},
+														{
+															"id": "move-to-object",
+															"objectClass": "DashPaths",
+															"sid": 509594401507313,
+															"parameters": {
+																"where": "behind",
+																"object": "Player"
+															}
+														},
+														{
+															"id": "move-to-object",
+															"objectClass": "DashPaths",
+															"sid": 579295878308559,
+															"parameters": {
+																"where": "behind",
+																"object": "Enemies"
+															}
+														},
+														{
+															"id": "move-to-object",
+															"objectClass": "DashPaths",
+															"sid": 661143203292892,
+															"parameters": {
+																"where": "behind",
+																"object": "Arrow"
+															}
+														},
+														{
+															"id": "move-to-object",
+															"objectClass": "DashPaths",
+															"sid": 938608377207594,
+															"parameters": {
+																"where": "behind",
+																"object": "EnemyArrows"
+															}
+														}
+													],
+													"sid": 838180822202871
 												}
-											],
-											"sid": 191783841709488
+											]
 										}
 									]
 								},
@@ -7399,10 +7481,28 @@
 										{
 											"id": "move-to-object",
 											"objectClass": "AcidArea",
-											"sid": 975452564376797,
+											"sid": 930429155316070,
 											"parameters": {
 												"where": "behind",
-												"object": "OrcBoss"
+												"object": "Enemies"
+											}
+										},
+										{
+											"id": "move-to-object",
+											"objectClass": "AcidArea",
+											"sid": 976345963205907,
+											"parameters": {
+												"where": "behind",
+												"object": "Arena1_Pillar"
+											}
+										},
+										{
+											"id": "move-to-object",
+											"objectClass": "AcidArea",
+											"sid": 551485809481308,
+											"parameters": {
+												"where": "behind",
+												"object": "Pillaer"
 											}
 										},
 										{
@@ -7710,6 +7810,15 @@
 											"parameters": {
 												"interval-seconds": "1.0"
 											}
+										},
+										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 614367205158455,
+											"parameters": {
+												"variable": "isPaused"
+											},
+											"isInverted": true
 										}
 									],
 									"actions": [
@@ -7791,6 +7900,37 @@
 										}
 									],
 									"sid": 274397086724100
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-width",
+											"objectClass": "AcidArea",
+											"sid": 680922898818666,
+											"parameters": {
+												"comparison": 5,
+												"width": "64+AcidDestroyTime"
+											}
+										},
+										{
+											"id": "compare-height",
+											"objectClass": "AcidArea",
+											"sid": 426361063198313,
+											"parameters": {
+												"comparison": 5,
+												"height": "64+AcidDestroyTime"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "destroy",
+											"objectClass": "AcidArea",
+											"sid": 244708803904937
+										}
+									],
+									"sid": 426137313266418
 								}
 							],
 							"sid": 170161546173632
