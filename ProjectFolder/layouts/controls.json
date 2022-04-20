@@ -7,111 +7,6 @@
 			"subLayers": [],
 			"instances": [
 				{
-					"type": "MenuBackgrounds",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 769,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 236,
-						"y": 134,
-						"width": 388.363052,
-						"height": 248,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "SpriteFont",
-					"properties": {
-						"text": "C.O.N.T.R.O.L.S.",
-						"enable-bbcode": true,
-						"character-width": 16,
-						"character-height": 16,
-						"character-set": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#\"'&()[]|`\\/@°+=*$£€<>",
-						"spacing-data": "",
-						"scale": 1.5,
-						"character-spacing": 0,
-						"line-height": 0,
-						"horizontal-alignment": "center",
-						"vertical-alignment": "center",
-						"wrapping": "word",
-						"initially-visible": true,
-						"origin": "center"
-					},
-					"uid": 3992,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 437,
-						"y": 168,
-						"width": 388.363052,
-						"height": 42.623306587954545,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "SpriteFont",
-					"properties": {
-						"text": "Use WASD to move around the playing field.\n\nLeft click to fire your bow at the reticle.\n\nPress SPACEBAR to dash in the direction that you're moving!",
-						"enable-bbcode": true,
-						"character-width": 16,
-						"character-height": 16,
-						"character-set": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#\"'&()[]|`\\/@°+=*$£€<>",
-						"spacing-data": "",
-						"scale": 1,
-						"character-spacing": 0,
-						"line-height": 0,
-						"horizontal-alignment": "center",
-						"vertical-alignment": "center",
-						"wrapping": "word",
-						"initially-visible": true,
-						"origin": "center"
-					},
-					"uid": 3925,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 437,
-						"y": 305,
-						"width": 388.363052,
-						"height": 169.4431167527788,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
 					"type": "But_StartOver",
 					"properties": {
 						"type": "button",
@@ -139,6 +34,174 @@
 							1,
 							1
 						]
+					}
+				},
+				{
+					"type": "Dialog_Text",
+					"properties": {
+						"text": " C . O . N . T . R . O . L . S .",
+						"enable-bbcode": true,
+						"font": "Pixel_Font",
+						"size": 32,
+						"line-height": 0,
+						"bold": true,
+						"italic": false,
+						"color": [
+							0,
+							0,
+							0,
+							1
+						],
+						"horizontal-alignment": "center",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "center"
+					},
+					"uid": 130,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 429,
+						"y": 173,
+						"width": 854,
+						"height": 54,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Dialog_Text",
+					"properties": {
+						"text": " C . O . N . T . R . O . L . S .",
+						"enable-bbcode": true,
+						"font": "Pixel_Font",
+						"size": 32,
+						"line-height": 0,
+						"bold": true,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "center",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "center"
+					},
+					"uid": 131,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 426,
+						"y": 171,
+						"width": 854,
+						"height": 54,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Dialog_Text",
+					"properties": {
+						"text": "Use WASD to move around the playing field.\n\nLeft click to fire your bow at the reticle.\n\nPress SPACEBAR to dash in the direction that you're moving!",
+						"enable-bbcode": true,
+						"font": "Pixel_Font",
+						"size": 16,
+						"line-height": 1,
+						"bold": false,
+						"italic": false,
+						"color": [
+							0,
+							0,
+							0,
+							1
+						],
+						"horizontal-alignment": "center",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "center"
+					},
+					"uid": 2,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 426,
+						"y": 295,
+						"width": 530,
+						"height": 198,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Dialog_Text",
+					"properties": {
+						"text": "Use WASD to move around the playing field.\n\nLeft click to fire your bow at the reticle.\n\nPress SPACEBAR to dash in the direction that you're moving!",
+						"enable-bbcode": true,
+						"font": "Pixel_Font",
+						"size": 16,
+						"line-height": 1,
+						"bold": false,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "center",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "center"
+					},
+					"uid": 129,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 423,
+						"y": 293,
+						"width": 530,
+						"height": 198,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
 					}
 				}
 			],

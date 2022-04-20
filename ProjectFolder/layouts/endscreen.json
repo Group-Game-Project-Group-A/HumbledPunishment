@@ -67,31 +67,161 @@
 					}
 				},
 				{
-					"type": "SpriteFont",
+					"type": "Dialog_Text",
 					"properties": {
-						"text": "Thank you for playing H.U.M.B.L.E.!!",
+						"text": "F . I . N . I . S . H . E . D .",
 						"enable-bbcode": true,
-						"character-width": 16,
-						"character-height": 16,
-						"character-set": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#\"'&()[]|`\\/@°+=*$£€<>",
-						"spacing-data": "",
-						"scale": 1,
-						"character-spacing": 0,
+						"font": "Pixel_Font",
+						"size": 32,
 						"line-height": 0,
+						"bold": true,
+						"italic": false,
+						"color": [
+							0,
+							0,
+							0,
+							1
+						],
 						"horizontal-alignment": "center",
 						"vertical-alignment": "center",
 						"wrapping": "word",
 						"initially-visible": true,
 						"origin": "center"
 					},
-					"uid": 5979,
+					"uid": 137,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 434.5000131869979,
-						"y": 198.54836607645677,
-						"width": 331.36305194774116,
-						"height": 84.62330658795454,
+						"x": 428,
+						"y": 116,
+						"width": 854,
+						"height": 54,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Dialog_Text",
+					"properties": {
+						"text": "F . I . N . I . S . H . E . D .",
+						"enable-bbcode": true,
+						"font": "Pixel_Font",
+						"size": 32,
+						"line-height": 0,
+						"bold": true,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "center",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "center"
+					},
+					"uid": 138,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 425,
+						"y": 114,
+						"width": 854,
+						"height": 54,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Dialog_Text",
+					"properties": {
+						"text": "Thank you for playing H.U.M.B.L.E.D. P.U.N.I.S.H.M.E.N.T.",
+						"enable-bbcode": true,
+						"font": "Pixel_Font",
+						"size": 16,
+						"line-height": 1,
+						"bold": false,
+						"italic": false,
+						"color": [
+							0,
+							0,
+							0,
+							1
+						],
+						"horizontal-alignment": "center",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "center"
+					},
+					"uid": 139,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 425,
+						"y": 212,
+						"width": 530,
+						"height": 86,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Dialog_Text",
+					"properties": {
+						"text": "Thank you for playing H.U.M.B.L.E.D. P.U.N.I.S.H.M.E.N.T.",
+						"enable-bbcode": true,
+						"font": "Pixel_Font",
+						"size": 16,
+						"line-height": 1,
+						"bold": false,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "center",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "center"
+					},
+					"uid": 140,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 422,
+						"y": 210,
+						"width": 530,
+						"height": 86,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [

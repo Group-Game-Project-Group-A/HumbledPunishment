@@ -25,6 +25,19 @@
 			],
 			"actions": [
 				{
+					"id": "destroy",
+					"objectClass": "Sprite2",
+					"sid": 513781758362710
+				},
+				{
+					"id": "set-cursor-style",
+					"objectClass": "Mouse",
+					"sid": 128251927830762,
+					"parameters": {
+						"cursor-style": "normal"
+					}
+				},
+				{
 					"id": "set-time-scale",
 					"objectClass": "System",
 					"sid": 607932968579771,
@@ -95,6 +108,15 @@
 					],
 					"actions": [
 						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 614666280761220,
+							"parameters": {
+								"variable": "isPaused",
+								"value": "false"
+							}
+						},
+						{
 							"id": "set-time-scale",
 							"objectClass": "System",
 							"sid": 293743119537899,
@@ -136,6 +158,14 @@
 					"sid": 814910173277046
 				},
 				{
+					"id": "set-cursor-style",
+					"objectClass": "Mouse",
+					"sid": 524568609726443,
+					"parameters": {
+						"cursor-style": "normal"
+					}
+				},
+				{
 					"id": "set-time-scale",
 					"objectClass": "System",
 					"sid": 751299669319144,
@@ -150,14 +180,6 @@
 					"parameters": {
 						"variable": "isPaused",
 						"value": "true"
-					}
-				},
-				{
-					"id": "set-cursor-style",
-					"objectClass": "Mouse",
-					"sid": 452344758426807,
-					"parameters": {
-						"cursor-style": "normal"
 					}
 				},
 				{

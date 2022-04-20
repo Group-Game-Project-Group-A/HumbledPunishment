@@ -7,44 +7,6 @@
 			"subLayers": [],
 			"instances": [
 				{
-					"type": "SpriteFont",
-					"properties": {
-						"text": "P.U.N.I.S.H.M.E.N.T.",
-						"enable-bbcode": true,
-						"character-width": 16,
-						"character-height": 16,
-						"character-set": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#\"'&()[]|`\\/@°+=*$£€<>",
-						"spacing-data": "",
-						"scale": 1.5,
-						"character-spacing": 0,
-						"line-height": 0,
-						"horizontal-alignment": "center",
-						"vertical-alignment": "center",
-						"wrapping": "word",
-						"initially-visible": true,
-						"origin": "center"
-					},
-					"uid": 2,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 439,
-						"y": 164,
-						"width": 480.9985824045409,
-						"height": 54,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 6.282466830474092,
-						"zElevation": 0
-					}
-				},
-				{
 					"type": "But_Credits",
 					"properties": {
 						"type": "button",
@@ -105,44 +67,6 @@
 					}
 				},
 				{
-					"type": "SpriteFont",
-					"properties": {
-						"text": "H.U.M.B.L.E.D.",
-						"enable-bbcode": true,
-						"character-width": 16,
-						"character-height": 16,
-						"character-set": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#\"'&()[]|`\\/@°+=*$£€<>",
-						"spacing-data": "",
-						"scale": 1.5,
-						"character-spacing": 0,
-						"line-height": 0,
-						"horizontal-alignment": "center",
-						"vertical-alignment": "center",
-						"wrapping": "word",
-						"initially-visible": true,
-						"origin": "center"
-					},
-					"uid": 10847,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 441,
-						"y": 140,
-						"width": 336.0007752596066,
-						"height": 54,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 6.282466830474092,
-						"zElevation": 0
-					}
-				},
-				{
 					"type": "But_StartAdventureMode",
 					"properties": {
 						"type": "button",
@@ -200,6 +124,174 @@
 							1,
 							1
 						]
+					}
+				},
+				{
+					"type": "Dialog_Text",
+					"properties": {
+						"text": " H . U . M . B . L . E . D .",
+						"enable-bbcode": true,
+						"font": "Pixel_Font",
+						"size": 32,
+						"line-height": 0,
+						"bold": true,
+						"italic": false,
+						"color": [
+							0,
+							0,
+							0,
+							1
+						],
+						"horizontal-alignment": "center",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "center"
+					},
+					"uid": 125,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 427,
+						"y": 137,
+						"width": 854,
+						"height": 54,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Dialog_Text",
+					"properties": {
+						"text": " H . U . M . B . L . E . D .",
+						"enable-bbcode": true,
+						"font": "Pixel_Font",
+						"size": 32,
+						"line-height": 0,
+						"bold": true,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "center",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "center"
+					},
+					"uid": 126,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 424,
+						"y": 135,
+						"width": 854,
+						"height": 54,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Dialog_Text",
+					"properties": {
+						"text": " P . U . N . I . S . H . M . E . N . T .",
+						"enable-bbcode": true,
+						"font": "Pixel_Font",
+						"size": 32,
+						"line-height": 0,
+						"bold": true,
+						"italic": false,
+						"color": [
+							0,
+							0,
+							0,
+							1
+						],
+						"horizontal-alignment": "center",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "center"
+					},
+					"uid": 127,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 427,
+						"y": 178.88669240795699,
+						"width": 854,
+						"height": 54,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Dialog_Text",
+					"properties": {
+						"text": " P . U . N . I . S . H . M . E . N . T .",
+						"enable-bbcode": true,
+						"font": "Pixel_Font",
+						"size": 32,
+						"line-height": 0,
+						"bold": true,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "center",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "center"
+					},
+					"uid": 128,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 424,
+						"y": 176.88669240795699,
+						"width": 854,
+						"height": 54,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
 					}
 				}
 			],

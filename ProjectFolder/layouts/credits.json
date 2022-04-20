@@ -7,44 +7,6 @@
 			"subLayers": [],
 			"instances": [
 				{
-					"type": "SpriteFont",
-					"properties": {
-						"text": "H.U.M.B.L.E.",
-						"enable-bbcode": true,
-						"character-width": 16,
-						"character-height": 16,
-						"character-set": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#\"'&()[]|`\\/@°+=*$£€<>",
-						"spacing-data": "",
-						"scale": 1.5,
-						"character-spacing": 0,
-						"line-height": 0,
-						"horizontal-alignment": "center",
-						"vertical-alignment": "center",
-						"wrapping": "word",
-						"initially-visible": true,
-						"origin": "center"
-					},
-					"uid": 3624,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 433.000013,
-						"y": 184.54836607645677,
-						"width": 288.36305194774116,
-						"height": 42.623306587954545,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
 					"type": "But_StartOver",
 					"properties": {
 						"type": "button",
@@ -75,24 +37,37 @@
 					}
 				},
 				{
-					"type": "MenuBackgrounds",
+					"type": "Dialog_Text",
 					"properties": {
+						"text": " H . U . M . B . L . E . D .",
+						"enable-bbcode": true,
+						"font": "Pixel_Font",
+						"size": 32,
+						"line-height": 0,
+						"bold": true,
+						"italic": false,
+						"color": [
+							0,
+							0,
+							0,
+							1
+						],
+						"horizontal-alignment": "center",
+						"vertical-alignment": "center",
+						"wrapping": "word",
 						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
+						"origin": "center"
 					},
-					"uid": 5996,
+					"uid": 143,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 206,
-						"y": 207,
-						"width": 433.000013,
-						"height": 81.895811,
-						"originX": 0,
-						"originY": 0,
+						"x": 428,
+						"y": 112,
+						"width": 854,
+						"height": 54,
+						"originX": 0.5,
+						"originY": 0.5,
 						"color": [
 							1,
 							1,
@@ -104,33 +79,205 @@
 					}
 				},
 				{
-					"type": "SpriteFont",
+					"type": "Dialog_Text",
 					"properties": {
-						"text": "was created by:\n\nHarry Brock - Programmer\nKyle Coll - Level Designer\nRosswell Cabrera - Art Designer\nSang Nguyen - Writer, Audio Designer, Project Manager",
+						"text": " H . U . M . B . L . E . D .",
 						"enable-bbcode": true,
-						"character-width": 16,
-						"character-height": 16,
-						"character-set": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#\"'&()[]|`\\/@°+=*$£€<>",
-						"spacing-data": "",
-						"scale": 0.5,
-						"character-spacing": 0,
+						"font": "Pixel_Font",
+						"size": 32,
 						"line-height": 0,
+						"bold": true,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
 						"horizontal-alignment": "center",
 						"vertical-alignment": "center",
 						"wrapping": "word",
 						"initially-visible": true,
-						"origin": "top-left"
+						"origin": "center"
 					},
-					"uid": 3625,
+					"uid": 144,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 206,
-						"y": 207,
-						"width": 433.000013,
-						"height": 81.89581074114975,
-						"originX": 0,
-						"originY": 0,
+						"x": 425,
+						"y": 110,
+						"width": 854,
+						"height": 54,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Dialog_Text",
+					"properties": {
+						"text": "was created by:\n\nHarry Brock - Programmer, Game Designer\nKyle Coll - Level Designer\nRosswell Cabrera - Art Designer\nSang Nguyen - Writer, Audio Designer, Project Manager",
+						"enable-bbcode": true,
+						"font": "Pixel_Font",
+						"size": 16,
+						"line-height": 1,
+						"bold": false,
+						"italic": false,
+						"color": [
+							0,
+							0,
+							0,
+							1
+						],
+						"horizontal-alignment": "center",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "center"
+					},
+					"uid": 145,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 425,
+						"y": 279,
+						"width": 600,
+						"height": 166,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Dialog_Text",
+					"properties": {
+						"text": "was created by:\n\nHarry Brock - Programmer, Game Designer\nKyle Coll - Level Designer\nRosswell Cabrera - Art Designer\nSang Nguyen - Writer, Audio Designer, Project Manager",
+						"enable-bbcode": true,
+						"font": "Pixel_Font",
+						"size": 16,
+						"line-height": 1,
+						"bold": false,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "center",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "center"
+					},
+					"uid": 146,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 422,
+						"y": 277,
+						"width": 600,
+						"height": 166,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Dialog_Text",
+					"properties": {
+						"text": " P . U . N . I . S . H . M . E . N . T .",
+						"enable-bbcode": true,
+						"font": "Pixel_Font",
+						"size": 32,
+						"line-height": 0,
+						"bold": true,
+						"italic": false,
+						"color": [
+							0,
+							0,
+							0,
+							1
+						],
+						"horizontal-alignment": "center",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "center"
+					},
+					"uid": 147,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 428,
+						"y": 157,
+						"width": 854,
+						"height": 54,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Dialog_Text",
+					"properties": {
+						"text": " P . U . N . I . S . H . M . E . N . T .",
+						"enable-bbcode": true,
+						"font": "Pixel_Font",
+						"size": 32,
+						"line-height": 0,
+						"bold": true,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "center",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "center"
+					},
+					"uid": 148,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 425,
+						"y": 155,
+						"width": 854,
+						"height": 54,
+						"originX": 0.5,
+						"originY": 0.5,
 						"color": [
 							1,
 							1,

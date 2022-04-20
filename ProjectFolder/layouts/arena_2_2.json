@@ -17,7 +17,7 @@
 					},
 					"uid": 1017,
 					"instanceVariables": {
-						"AttackPower": 1,
+						"AttackPower": 2,
 						"EnemiesItCanHit": 1,
 						"ChargedAttackPower": 2
 					},
@@ -62,7 +62,7 @@
 					},
 					"uid": 1023,
 					"instanceVariables": {
-						"AttackPower": 0,
+						"AttackPower": 1,
 						"EnemiesItCanHit": 1,
 						"ChargedAttackPower": 0
 					},
@@ -80,8 +80,8 @@
 						}
 					},
 					"world": {
-						"x": 14,
-						"y": -128,
+						"x": 163,
+						"y": -315,
 						"width": 32,
 						"height": 6,
 						"originX": 0,
@@ -10409,7 +10409,7 @@
 					},
 					"uid": 6264,
 					"instanceVariables": {
-						"FiringOrder": 2
+						"FiringOrder": 3
 					},
 					"behaviors": {},
 					"world": {
@@ -10440,7 +10440,7 @@
 					},
 					"uid": 6265,
 					"instanceVariables": {
-						"FiringOrder": 2
+						"FiringOrder": 1
 					},
 					"behaviors": {},
 					"world": {
@@ -10471,7 +10471,7 @@
 					},
 					"uid": 6266,
 					"instanceVariables": {
-						"FiringOrder": 2
+						"FiringOrder": 0
 					},
 					"behaviors": {},
 					"world": {
@@ -10502,7 +10502,7 @@
 					},
 					"uid": 6267,
 					"instanceVariables": {
-						"FiringOrder": 2
+						"FiringOrder": 4
 					},
 					"behaviors": {},
 					"world": {
@@ -10533,7 +10533,7 @@
 					},
 					"uid": 6268,
 					"instanceVariables": {
-						"FiringOrder": 2
+						"FiringOrder": 5
 					},
 					"behaviors": {},
 					"world": {
@@ -10564,7 +10564,7 @@
 					},
 					"uid": 6271,
 					"instanceVariables": {
-						"Health": 10,
+						"Health": 20,
 						"Burning": false,
 						"Paralyzed": false,
 						"Frozen": false,
@@ -10642,7 +10642,7 @@
 					},
 					"uid": 6272,
 					"instanceVariables": {
-						"Health": 10,
+						"Health": 20,
 						"Burning": false,
 						"Paralyzed": false,
 						"Frozen": false,
@@ -10836,7 +10836,7 @@
 					},
 					"uid": 6273,
 					"instanceVariables": {
-						"Health": 10,
+						"Health": 26,
 						"Burning": false,
 						"Paralyzed": false,
 						"Frozen": false,
@@ -10910,7 +10910,7 @@
 					},
 					"uid": 5972,
 					"instanceVariables": {
-						"Health": 10,
+						"Health": 26,
 						"Burning": false,
 						"Paralyzed": false,
 						"Frozen": false,
@@ -10984,7 +10984,7 @@
 					},
 					"uid": 6269,
 					"instanceVariables": {
-						"Health": 10,
+						"Health": 20,
 						"Burning": false,
 						"Paralyzed": false,
 						"Frozen": false,

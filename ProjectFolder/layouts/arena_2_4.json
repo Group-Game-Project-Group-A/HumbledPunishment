@@ -17,7 +17,7 @@
 					},
 					"uid": 1159,
 					"instanceVariables": {
-						"AttackPower": 1,
+						"AttackPower": 2,
 						"EnemiesItCanHit": 1,
 						"ChargedAttackPower": 2
 					},
@@ -35,8 +35,8 @@
 						}
 					},
 					"world": {
-						"x": -7,
-						"y": -158,
+						"x": -25,
+						"y": -240,
 						"width": 32,
 						"height": 6,
 						"originX": 0,
@@ -62,7 +62,7 @@
 					},
 					"uid": 1165,
 					"instanceVariables": {
-						"AttackPower": 0,
+						"AttackPower": 1,
 						"EnemiesItCanHit": 1,
 						"ChargedAttackPower": 0
 					},
@@ -80,8 +80,8 @@
 						}
 					},
 					"world": {
-						"x": -5,
-						"y": -132,
+						"x": -13,
+						"y": -313,
 						"width": 32,
 						"height": 6,
 						"originX": 0,
@@ -10450,7 +10450,7 @@
 					},
 					"uid": 6891,
 					"instanceVariables": {
-						"FiringOrder": 2
+						"FiringOrder": 3
 					},
 					"behaviors": {},
 					"world": {
@@ -10481,7 +10481,7 @@
 					},
 					"uid": 6892,
 					"instanceVariables": {
-						"FiringOrder": 2
+						"FiringOrder": 1
 					},
 					"behaviors": {},
 					"world": {
@@ -10512,7 +10512,7 @@
 					},
 					"uid": 6893,
 					"instanceVariables": {
-						"FiringOrder": 2
+						"FiringOrder": 0
 					},
 					"behaviors": {},
 					"world": {
@@ -10543,7 +10543,7 @@
 					},
 					"uid": 6894,
 					"instanceVariables": {
-						"FiringOrder": 2
+						"FiringOrder": 4
 					},
 					"behaviors": {},
 					"world": {
@@ -10574,7 +10574,7 @@
 					},
 					"uid": 6895,
 					"instanceVariables": {
-						"FiringOrder": 2
+						"FiringOrder": 5
 					},
 					"behaviors": {},
 					"world": {
@@ -10845,7 +10845,7 @@
 					},
 					"uid": 690,
 					"instanceVariables": {
-						"Health": 200,
+						"Health": 250,
 						"Burning": false,
 						"Paralyzed": false,
 						"Frozen": false,
