@@ -68,6 +68,27 @@
 			"eventType": "block",
 			"conditions": [
 				{
+					"id": "on-clicked",
+					"objectClass": "But_Controls",
+					"sid": 354150652068296
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 629270458272922,
+					"parameters": {
+						"layout": "Controls"
+					}
+				}
+			],
+			"sid": 288327319871123
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
 					"id": "on-start-of-layout",
 					"objectClass": "System",
 					"sid": 479158676470347
@@ -173,6 +194,36 @@
 				}
 			],
 			"sid": 129668619889509
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 533338561906228
+				}
+			],
+			"actions": [
+				{
+					"id": "set-time-scale",
+					"objectClass": "System",
+					"sid": 478526554780292,
+					"parameters": {
+						"time-scale": "1.0"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 817138178915521,
+					"parameters": {
+						"variable": "EnemyCount",
+						"value": "0"
+					}
+				}
+			],
+			"sid": 402069398015959
 		}
 	],
 	"sid": 326467844477213

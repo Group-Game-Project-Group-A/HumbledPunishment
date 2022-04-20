@@ -6512,7 +6512,7 @@
 					"type": "But_EnterLevel",
 					"properties": {
 						"type": "button",
-						"text": "OK",
+						"text": "Yes!",
 						"tooltip": "",
 						"initially-visible": false,
 						"enabled": false,
@@ -6797,6 +6797,48 @@
 					},
 					"world": {
 						"x": 518,
+						"y": 251,
+						"width": 42,
+						"height": 48,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "AbilityCards",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Multishot",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 13201,
+					"instanceVariables": {
+						"StartPosX": 0,
+						"StartPosY": 0,
+						"Docked": false,
+						"CardPosition": 0,
+						"Type": "Multishot"
+					},
+					"behaviors": {
+						"DragDrop": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": 562,
 						"y": 251,
 						"width": 42,
 						"height": 48,
@@ -7246,48 +7288,6 @@
 						"height": 70,
 						"originX": 0,
 						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "AbilityCards",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Multishot",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 13201,
-					"instanceVariables": {
-						"StartPosX": 0,
-						"StartPosY": 0,
-						"Docked": false,
-						"CardPosition": 0,
-						"Type": "Multishot"
-					},
-					"behaviors": {
-						"DragDrop": {
-							"properties": {
-								"axes": "both",
-								"enabled": true
-							}
-						}
-					},
-					"world": {
-						"x": 562,
-						"y": 251,
-						"width": 42,
-						"height": 48,
-						"originX": 0.5,
-						"originY": 0.5,
 						"color": [
 							1,
 							1,

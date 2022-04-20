@@ -2635,6 +2635,15 @@
 						"animation": "\"Torch-On\"",
 						"from": "beginning"
 					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 878266873605286,
+					"parameters": {
+						"variable": "isPaused",
+						"value": "false"
+					}
 				}
 			],
 			"sid": 549877878730751

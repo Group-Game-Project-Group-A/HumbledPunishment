@@ -1,35 +1,29 @@
 {
-	"name": "HP_Green",
+	"name": "HPBarSetter",
 	"plugin-id": "Sprite",
-	"sid": 354843352467708,
+	"sid": 273499855218001,
 	"isGlobal": false,
 	"instanceVariables": [],
-	"behaviorTypes": [
-		{
-			"behaviorId": "Anchor",
-			"name": "Anchor",
-			"sid": 515821645410713
-		}
-	],
+	"behaviorTypes": [],
 	"effectTypes": [],
 	"animations": {
 		"items": [
 			{
 				"frames": [
 					{
-						"width": 1191,
-						"height": 380,
+						"width": 749,
+						"height": 749,
 						"originX": 0.5,
-						"originY": 0.5,
+						"originY": 1,
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 955204,
+						"imageSpriteId": 4983138,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 962862500001124,
+				"sid": 335930086892944,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

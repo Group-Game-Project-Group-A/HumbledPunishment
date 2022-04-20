@@ -25445,68 +25445,6 @@
 					}
 				},
 				{
-					"type": "Player",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 405,
-					"instanceVariables": {},
-					"behaviors": {
-						"8Direction": {
-							"properties": {
-								"max-speed": 200,
-								"acceleration": 600,
-								"deceleration": 500,
-								"directions": "dir-8",
-								"set-angle": "smooth",
-								"default-controls": false,
-								"enabled": true
-							}
-						},
-						"ScrollTo": {
-							"properties": {
-								"enabled": true
-							}
-						},
-						"BoundToLayout": {
-							"properties": {
-								"bound-by": "edge"
-							}
-						},
-						"Bullet": {
-							"properties": {
-								"speed": 400,
-								"acceleration": 0,
-								"gravity": 0,
-								"bounce-off-solids": false,
-								"set-angle": false,
-								"step": false,
-								"enabled": false
-							}
-						}
-					},
-					"world": {
-						"x": 178,
-						"y": 116,
-						"width": 32,
-						"height": 32,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
 					"type": "Sprite2",
 					"properties": {
 						"initially-visible": true,
@@ -26395,6 +26333,231 @@
 					}
 				},
 				{
+					"type": "Blood",
+					"properties": {
+						"rate": 40,
+						"spray-cone": 360,
+						"type": "one-shot",
+						"object": -1,
+						"live-preview": false,
+						"speed": 400,
+						"size": 5,
+						"opacity": 100,
+						"grow-rate": -20,
+						"x-randomiser": 0,
+						"y-randomiser": 0,
+						"initial-speed-randomiser": 10,
+						"size-randomiser": 15,
+						"grow-rate-randomiser": 0,
+						"acceleration": -150,
+						"gravity": 100,
+						"angle-randomiser": 35,
+						"life-speed-randomiser": 800,
+						"opacity-randomiser": 0,
+						"destroy-mode": "particle-stopped",
+						"timeout": 0.2
+					},
+					"uid": 5973,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 919,
+						"y": -866,
+						"width": 36.41428291206625,
+						"height": 36.41428291206625,
+						"originX": 0,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Blood2",
+					"properties": {
+						"rate": 20,
+						"spray-cone": 360,
+						"type": "one-shot",
+						"object": -1,
+						"live-preview": false,
+						"speed": 400,
+						"size": 3,
+						"opacity": 100,
+						"grow-rate": -20,
+						"x-randomiser": 0,
+						"y-randomiser": 0,
+						"initial-speed-randomiser": 10,
+						"size-randomiser": 8,
+						"grow-rate-randomiser": 0,
+						"acceleration": -150,
+						"gravity": 100,
+						"angle-randomiser": 35,
+						"life-speed-randomiser": 800,
+						"opacity-randomiser": 0,
+						"destroy-mode": "particle-stopped",
+						"timeout": 0.2
+					},
+					"uid": 6270,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 990,
+						"y": -866,
+						"width": 36.41428291206625,
+						"height": 36.41428291206625,
+						"originX": 0,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Blood3",
+					"properties": {
+						"rate": 20,
+						"spray-cone": 360,
+						"type": "one-shot",
+						"object": -1,
+						"live-preview": false,
+						"speed": 400,
+						"size": 3,
+						"opacity": 100,
+						"grow-rate": -20,
+						"x-randomiser": 0,
+						"y-randomiser": 0,
+						"initial-speed-randomiser": 10,
+						"size-randomiser": 8,
+						"grow-rate-randomiser": 0,
+						"acceleration": -150,
+						"gravity": 100,
+						"angle-randomiser": 35,
+						"life-speed-randomiser": 800,
+						"opacity-randomiser": 0,
+						"destroy-mode": "particle-stopped",
+						"timeout": 0.2
+					},
+					"uid": 8024,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1073,
+						"y": -866,
+						"width": 36.41428291206625,
+						"height": 36.41428291206625,
+						"originX": 0,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Enemy_Defeat",
+					"properties": {
+						"rate": 50,
+						"spray-cone": 360,
+						"type": "one-shot",
+						"object": -1,
+						"live-preview": false,
+						"speed": 200,
+						"size": 7,
+						"opacity": 100,
+						"grow-rate": -10,
+						"x-randomiser": 0,
+						"y-randomiser": 0,
+						"initial-speed-randomiser": 10,
+						"size-randomiser": 8,
+						"grow-rate-randomiser": 0,
+						"acceleration": -150,
+						"gravity": 10,
+						"angle-randomiser": 35,
+						"life-speed-randomiser": 800,
+						"opacity-randomiser": 0,
+						"destroy-mode": "fade-to-invisible",
+						"timeout": 0.5
+					},
+					"uid": 8025,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1194,
+						"y": -871,
+						"width": 36.41428291206625,
+						"height": 36.41428291206625,
+						"originX": 0,
+						"originY": 0.5,
+						"color": [
+							0,
+							0,
+							0,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Arrow_Hit_Fire",
+					"properties": {
+						"rate": 50,
+						"spray-cone": 60,
+						"type": "one-shot",
+						"object": -1,
+						"live-preview": false,
+						"speed": 400,
+						"size": 5,
+						"opacity": 100,
+						"grow-rate": -10,
+						"x-randomiser": 10,
+						"y-randomiser": 10,
+						"initial-speed-randomiser": 10,
+						"size-randomiser": 5,
+						"grow-rate-randomiser": 0,
+						"acceleration": -150,
+						"gravity": 0,
+						"angle-randomiser": 0,
+						"life-speed-randomiser": 800,
+						"opacity-randomiser": 0,
+						"destroy-mode": "particle-stopped",
+						"timeout": 0.2
+					},
+					"uid": 8026,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1338,
+						"y": -870,
+						"width": 36.41428291206625,
+						"height": 36.41428291206625,
+						"originX": 0,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
 					"type": "Arrow_Hit_Fire2",
 					"properties": {
 						"rate": 50,
@@ -26423,8 +26586,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 572,
-						"y": 1107,
+						"x": 1351,
+						"y": -870,
 						"width": 36.41428291206625,
 						"height": 36.41428291206625,
 						"originX": 0,
@@ -26468,11 +26631,265 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 634,
-						"y": 1103,
+						"x": 1413,
+						"y": -874,
 						"width": 36.41428291206625,
 						"height": 36.41428291206625,
 						"originX": 0,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Dmg_Text_BG",
+					"properties": {
+						"text": "0",
+						"enable-bbcode": true,
+						"font": "Pixel_Font",
+						"size": 12,
+						"line-height": 0,
+						"bold": true,
+						"italic": false,
+						"color": [
+							0,
+							0,
+							0,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 87,
+					"instanceVariables": {},
+					"behaviors": {
+						"Fade": {
+							"properties": {
+								"fade-in-time": 0,
+								"wait-time": 0,
+								"fade-out-time": 1,
+								"destroy": true,
+								"enabled": true,
+								"live-preview": false
+							}
+						},
+						"Bullet": {
+							"properties": {
+								"speed": 400,
+								"acceleration": 0,
+								"gravity": 0,
+								"bounce-off-solids": false,
+								"set-angle": true,
+								"step": false,
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": 465,
+						"y": 1231,
+						"width": 54.49196277630227,
+						"height": 29.24993704485091,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Dmg_Text",
+					"properties": {
+						"text": "0",
+						"enable-bbcode": true,
+						"font": "Pixel_Font",
+						"size": 12,
+						"line-height": 0,
+						"bold": true,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 88,
+					"instanceVariables": {},
+					"behaviors": {
+						"Fade": {
+							"properties": {
+								"fade-in-time": 0,
+								"wait-time": 0,
+								"fade-out-time": 1,
+								"destroy": true,
+								"enabled": true,
+								"live-preview": false
+							}
+						},
+						"Bullet": {
+							"properties": {
+								"speed": 50,
+								"acceleration": 0,
+								"gravity": 0,
+								"bounce-off-solids": false,
+								"set-angle": false,
+								"step": false,
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": 465,
+						"y": 1231,
+						"width": 54.49196277630227,
+						"height": 29.24993704485091,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "HP_Hearts",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 35,
+						"enable-collisions": false,
+						"live-preview": false
+					},
+					"uid": 102,
+					"instanceVariables": {},
+					"behaviors": {
+						"Pin": {
+							"properties": {
+								"destroy": true
+							}
+						}
+					},
+					"world": {
+						"x": 170,
+						"y": 119,
+						"width": 41,
+						"height": 8,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "HPBarSetter",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": false,
+						"live-preview": false
+					},
+					"uid": 103,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 169,
+						"y": 149,
+						"width": 32,
+						"height": 32,
+						"originX": 0.5,
+						"originY": 1,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Player",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 104,
+					"instanceVariables": {},
+					"behaviors": {
+						"8Direction": {
+							"properties": {
+								"max-speed": 200,
+								"acceleration": 600,
+								"deceleration": 500,
+								"directions": "dir-8",
+								"set-angle": "smooth",
+								"default-controls": false,
+								"enabled": true
+							}
+						},
+						"ScrollTo": {
+							"properties": {
+								"enabled": true
+							}
+						},
+						"BoundToLayout": {
+							"properties": {
+								"bound-by": "edge"
+							}
+						},
+						"Bullet": {
+							"properties": {
+								"speed": 400,
+								"acceleration": 0,
+								"gravity": 0,
+								"bounce-off-solids": false,
+								"set-angle": false,
+								"step": false,
+								"enabled": false
+							}
+						}
+					},
+					"world": {
+						"x": 168,
+						"y": 149,
+						"width": 32,
+						"height": 32,
+						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
 							1,
@@ -26690,344 +27107,6 @@
 						"angle": 0,
 						"zElevation": 0
 					}
-				},
-				{
-					"type": "Blood",
-					"properties": {
-						"rate": 40,
-						"spray-cone": 360,
-						"type": "one-shot",
-						"object": -1,
-						"live-preview": false,
-						"speed": 400,
-						"size": 5,
-						"opacity": 100,
-						"grow-rate": -20,
-						"x-randomiser": 0,
-						"y-randomiser": 0,
-						"initial-speed-randomiser": 10,
-						"size-randomiser": 15,
-						"grow-rate-randomiser": 0,
-						"acceleration": -150,
-						"gravity": 100,
-						"angle-randomiser": 35,
-						"life-speed-randomiser": 800,
-						"opacity-randomiser": 0,
-						"destroy-mode": "particle-stopped",
-						"timeout": 0.2
-					},
-					"uid": 5973,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 140,
-						"y": 1111,
-						"width": 36.41428291206625,
-						"height": 36.41428291206625,
-						"originX": 0,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Blood2",
-					"properties": {
-						"rate": 20,
-						"spray-cone": 360,
-						"type": "one-shot",
-						"object": -1,
-						"live-preview": false,
-						"speed": 400,
-						"size": 3,
-						"opacity": 100,
-						"grow-rate": -20,
-						"x-randomiser": 0,
-						"y-randomiser": 0,
-						"initial-speed-randomiser": 10,
-						"size-randomiser": 8,
-						"grow-rate-randomiser": 0,
-						"acceleration": -150,
-						"gravity": 100,
-						"angle-randomiser": 35,
-						"life-speed-randomiser": 800,
-						"opacity-randomiser": 0,
-						"destroy-mode": "particle-stopped",
-						"timeout": 0.2
-					},
-					"uid": 6270,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 211,
-						"y": 1111,
-						"width": 36.41428291206625,
-						"height": 36.41428291206625,
-						"originX": 0,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Blood3",
-					"properties": {
-						"rate": 20,
-						"spray-cone": 360,
-						"type": "one-shot",
-						"object": -1,
-						"live-preview": false,
-						"speed": 400,
-						"size": 3,
-						"opacity": 100,
-						"grow-rate": -20,
-						"x-randomiser": 0,
-						"y-randomiser": 0,
-						"initial-speed-randomiser": 10,
-						"size-randomiser": 8,
-						"grow-rate-randomiser": 0,
-						"acceleration": -150,
-						"gravity": 100,
-						"angle-randomiser": 35,
-						"life-speed-randomiser": 800,
-						"opacity-randomiser": 0,
-						"destroy-mode": "particle-stopped",
-						"timeout": 0.2
-					},
-					"uid": 8024,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 294,
-						"y": 1111,
-						"width": 36.41428291206625,
-						"height": 36.41428291206625,
-						"originX": 0,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Enemy_Defeat",
-					"properties": {
-						"rate": 50,
-						"spray-cone": 360,
-						"type": "one-shot",
-						"object": -1,
-						"live-preview": false,
-						"speed": 200,
-						"size": 7,
-						"opacity": 100,
-						"grow-rate": -10,
-						"x-randomiser": 0,
-						"y-randomiser": 0,
-						"initial-speed-randomiser": 10,
-						"size-randomiser": 8,
-						"grow-rate-randomiser": 0,
-						"acceleration": -150,
-						"gravity": 10,
-						"angle-randomiser": 35,
-						"life-speed-randomiser": 800,
-						"opacity-randomiser": 0,
-						"destroy-mode": "fade-to-invisible",
-						"timeout": 0.5
-					},
-					"uid": 8025,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 415,
-						"y": 1106,
-						"width": 36.41428291206625,
-						"height": 36.41428291206625,
-						"originX": 0,
-						"originY": 0.5,
-						"color": [
-							0,
-							0,
-							0,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Arrow_Hit_Fire",
-					"properties": {
-						"rate": 50,
-						"spray-cone": 60,
-						"type": "one-shot",
-						"object": -1,
-						"live-preview": false,
-						"speed": 400,
-						"size": 5,
-						"opacity": 100,
-						"grow-rate": -10,
-						"x-randomiser": 10,
-						"y-randomiser": 10,
-						"initial-speed-randomiser": 10,
-						"size-randomiser": 5,
-						"grow-rate-randomiser": 0,
-						"acceleration": -150,
-						"gravity": 0,
-						"angle-randomiser": 0,
-						"life-speed-randomiser": 800,
-						"opacity-randomiser": 0,
-						"destroy-mode": "particle-stopped",
-						"timeout": 0.2
-					},
-					"uid": 8026,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 559,
-						"y": 1107,
-						"width": 36.41428291206625,
-						"height": 36.41428291206625,
-						"originX": 0,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Dmg_Text_BG",
-					"properties": {
-						"text": "0",
-						"enable-bbcode": true,
-						"font": "Pixel_Font",
-						"size": 20,
-						"line-height": 0,
-						"bold": true,
-						"italic": false,
-						"color": [
-							0,
-							0,
-							0,
-							1
-						],
-						"horizontal-alignment": "left",
-						"vertical-alignment": "top",
-						"wrapping": "word",
-						"initially-visible": true,
-						"origin": "top-left"
-					},
-					"uid": 8029,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 219.2411882361995,
-						"y": 999.959551882157,
-						"width": 54.49196277630227,
-						"height": 29.24993704485091,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Dmg_Text",
-					"properties": {
-						"text": "0",
-						"enable-bbcode": true,
-						"font": "Pixel_Font",
-						"size": 20,
-						"line-height": 0,
-						"bold": true,
-						"italic": false,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"horizontal-alignment": "left",
-						"vertical-alignment": "top",
-						"wrapping": "word",
-						"initially-visible": true,
-						"origin": "top-left"
-					},
-					"uid": 8030,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 218.2411882361995,
-						"y": 997.959551882157,
-						"width": 54.49196277630227,
-						"height": 29.24993704485091,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "HP_Hearts",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 35,
-						"enable-collisions": false,
-						"live-preview": false
-					},
-					"uid": 33,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": -304,
-						"y": 236,
-						"width": 41,
-						"height": 8,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
 				}
 			],
 			"sid": 725291316813194,
@@ -27068,5 +27147,5 @@
 	"vpX": 0.5,
 	"vpY": 0.5,
 	"projection": "perspective",
-	"eventSheet": null
+	"eventSheet": "ES_NormalMode"
 }

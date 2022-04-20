@@ -96,16 +96,8 @@
 		},
 		{
 			"type": "behavior",
-			"id": "Anchor",
-			"name": "Anchor",
-			"author": "Scirra",
-			"version": "r285.3",
-			"bundled": false
-		},
-		{
-			"type": "behavior",
-			"id": "Persist",
-			"name": "Persist",
+			"id": "Fade",
+			"name": "Fade",
 			"author": "Scirra",
 			"version": "r285.3",
 			"bundled": false
@@ -201,7 +193,8 @@
 			"Festival_LoseButton",
 			"ScoreText",
 			"FloorBackground",
-			"SolidWalls_Invisible"
+			"SolidWalls_Invisible",
+			"HPBarSetter"
 		],
 		"subfolders": [
 			{
@@ -314,11 +307,6 @@
 			},
 			{
 				"items": [
-					"Health_Text",
-					"HP_UI",
-					"HP_Green",
-					"Health_TextShadow",
-					"HP_BlackBG",
 					"Dmg_Text_BG",
 					"Dmg_Text",
 					"HP_Hearts"
@@ -476,6 +464,19 @@
 		"subfolders": [
 			{
 				"items": [
+					"Lobby_1_2",
+					"Lobby_1_3",
+					"Lobby_1_4",
+					"Lobby_2_1",
+					"Lobby_2_2",
+					"Lobby_2_3",
+					"Menu_Survival_Controls"
+				],
+				"subfolders": [],
+				"name": "Old Lobbies"
+			},
+			{
+				"items": [
 					"Menu",
 					"Controls",
 					"EndScreen",
@@ -487,7 +488,6 @@
 			{
 				"items": [
 					"Menu_Survival",
-					"Menu_Survival_Controls",
 					"Lobby_Survival",
 					"Arena_Survival"
 				],
@@ -497,29 +497,23 @@
 			{
 				"items": [
 					"Story_1_1",
-					"Lobby_1_1",
+					"Lobby_Arena_1",
 					"Arena_1_1",
 					"Story_1_2",
-					"Lobby_1_2",
 					"Arena_1_2",
 					"Story_1_3",
-					"Lobby_1_3",
 					"Arena_1_3",
 					"Story_1_4",
-					"Lobby_1_4",
 					"Arena_1_4",
 					"Story_1_5",
+					"Lobby_Arena_22",
 					"Story_2_1",
-					"Lobby_2_1",
 					"Arena_2_1",
 					"Story_2_2",
-					"Lobby_2_2",
 					"Arena_2_2",
 					"Story_2_3",
-					"Lobby_2_3",
 					"Arena_2_3",
 					"Story_2_4",
-					"Lobby_2_4",
 					"Arena_2_4",
 					"Story_2_5",
 					"Story_3_1"
@@ -742,5 +736,5 @@
 	},
 	"viewportWidth": 854,
 	"viewportHeight": 480,
-	"firstLayout": "Menu_Survival"
+	"firstLayout": "Menu"
 }

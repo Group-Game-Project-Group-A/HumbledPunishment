@@ -183,9 +183,19 @@
 		},
 		{
 			"eventType": "variable",
+			"name": "ArrowAttackPowerMultiplier",
+			"type": "number",
+			"initialValue": "1",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 687851213985762
+		},
+		{
+			"eventType": "variable",
 			"name": "PlayerMaxHealth",
 			"type": "number",
-			"initialValue": "30",
+			"initialValue": "35",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
@@ -822,10 +832,57 @@
 								{
 									"id": "subtract-from-instvar",
 									"objectClass": "Enemies",
-									"sid": 215253708575524,
+									"sid": 897575332878686,
 									"parameters": {
 										"instance-variable": "Health",
-										"value": "Arrow.AttackPower + Enemies.BrittleDamage"
+										"value": "(ArrowAttackPowerMultiplier*Arrow.AttackPower) + Enemies.BrittleDamage"
+									}
+								},
+								{
+									"id": "spawn-another-object",
+									"objectClass": "Enemies",
+									"sid": 831480302218311,
+									"parameters": {
+										"object": "Dmg_Text",
+										"layer": "0",
+										"image-point": "0",
+										"create-hierarchy": false
+									}
+								},
+								{
+									"id": "spawn-another-object",
+									"objectClass": "Enemies",
+									"sid": 903680873265450,
+									"parameters": {
+										"object": "Dmg_Text_BG",
+										"layer": "0",
+										"image-point": "0",
+										"create-hierarchy": false
+									}
+								},
+								{
+									"id": "set-text",
+									"objectClass": "Dmg_Text",
+									"sid": 714511540033655,
+									"parameters": {
+										"text": "Arrow.AttackPower+Enemies.BrittleDamage"
+									}
+								},
+								{
+									"id": "set-text",
+									"objectClass": "Dmg_Text_BG",
+									"sid": 618115702924839,
+									"parameters": {
+										"text": "Arrow.AttackPower+Enemies.BrittleDamage"
+									}
+								},
+								{
+									"id": "set-angle-of-motion",
+									"objectClass": "Dmg_Text",
+									"sid": 534603854457906,
+									"behaviorType": "Bullet",
+									"parameters": {
+										"angle": "Dmg_Text.Bullet.AngleOfMotion + random(-15, 15)"
 									}
 								},
 								{
@@ -1209,6 +1266,14 @@
 										"animation": "\"Electric\"",
 										"from": "beginning"
 									}
+								},
+								{
+									"id": "set-font-color",
+									"objectClass": "Dmg_Text",
+									"sid": 658087884873056,
+									"parameters": {
+										"color": "rgb(242, 230, 0)"
+									}
 								}
 							],
 							"sid": 969900932942616
@@ -1234,6 +1299,14 @@
 										"animation": "\"Ice\"",
 										"from": "beginning"
 									}
+								},
+								{
+									"id": "set-font-color",
+									"objectClass": "Dmg_Text",
+									"sid": 745915648380322,
+									"parameters": {
+										"color": "rgb(0, 241, 242)"
+									}
 								}
 							],
 							"sid": 184426458126779
@@ -1248,34 +1321,43 @@
 									"parameters": {
 										"variable": "Fire"
 									}
-								},
-								{
-									"id": "compare-boolean-eventvar",
-									"objectClass": "System",
-									"sid": 351766323077177,
-									"parameters": {
-										"variable": "MultiShot"
-									},
-									"isInverted": true
 								}
 							],
-							"actions": [],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "Arrow",
+									"sid": 532866658020859,
+									"parameters": {
+										"animation": "\"Fire\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-font-color",
+									"objectClass": "Dmg_Text",
+									"sid": 967679815795230,
+									"parameters": {
+										"color": "rgb(244, 0, 0)"
+									}
+								}
+							],
 							"sid": 390059806813614,
 							"children": [
 								{
 									"eventType": "block",
-									"conditions": [],
-									"actions": [
+									"conditions": [
 										{
-											"id": "set-animation",
-											"objectClass": "Arrow",
-											"sid": 433615542171154,
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 651591773162811,
 											"parameters": {
-												"animation": "\"Fire\"",
-												"from": "beginning"
-											}
+												"variable": "MultiShot"
+											},
+											"isInverted": true
 										}
 									],
+									"actions": [],
 									"sid": 447116670224715,
 									"children": [
 										{
@@ -1458,28 +1540,21 @@
 					],
 					"actions": [
 						{
-							"id": "set-text",
-							"objectClass": "Health_Text",
-							"sid": 959202622229511,
-							"parameters": {
-								"text": "round(PlayerHealth)"
-							}
-						},
-						{
-							"id": "set-text",
-							"objectClass": "Health_TextShadow",
-							"sid": 450507004590457,
-							"parameters": {
-								"text": "round(PlayerHealth)"
-							}
-						},
-						{
 							"id": "set-position",
 							"objectClass": "Sprite2",
-							"sid": 718438085975025,
+							"sid": 839146275736849,
 							"parameters": {
 								"x": "Mouse.X",
 								"y": "Mouse.Y"
+							}
+						},
+						{
+							"id": "set-position-to-another-object",
+							"objectClass": "HPBarSetter",
+							"sid": 678351205291861,
+							"parameters": {
+								"object": "Player",
+								"image-point-optional": "0"
 							}
 						}
 					],
@@ -1515,6 +1590,40 @@
 									"parameters": {
 										"cursor-style": "none"
 									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "Dmg_Text_BG",
+									"sid": 322847859773481,
+									"parameters": {
+										"x": "Dmg_Text.X+.75",
+										"y": "Dmg_Text.Y+.75"
+									}
+								},
+								{
+									"id": "move-to-object",
+									"objectClass": "Dmg_Text_BG",
+									"sid": 391111830522622,
+									"parameters": {
+										"where": "behind",
+										"object": "Dmg_Text"
+									}
+								},
+								{
+									"id": "set-angle",
+									"objectClass": "Dmg_Text_BG",
+									"sid": 401748085845540,
+									"parameters": {
+										"angle": "0"
+									}
+								},
+								{
+									"id": "set-angle",
+									"objectClass": "Dmg_Text",
+									"sid": 652919328595457,
+									"parameters": {
+										"angle": "0"
+									}
 								}
 							],
 							"sid": 341405248769717
@@ -1542,16 +1651,7 @@
 									}
 								}
 							],
-							"actions": [
-								{
-									"id": "set-font-color",
-									"objectClass": "Health_Text",
-									"sid": 275422992206617,
-									"parameters": {
-										"color": "rgbEx(225, 45, 45)"
-									}
-								}
-							],
+							"actions": [],
 							"sid": 939548654210145
 						},
 						{
@@ -1568,16 +1668,7 @@
 									}
 								}
 							],
-							"actions": [
-								{
-									"id": "set-font-color",
-									"objectClass": "Health_Text",
-									"sid": 442207469446936,
-									"parameters": {
-										"color": "rgbEx(225, 255, 255)"
-									}
-								}
-							],
+							"actions": [],
 							"sid": 649543677937394
 						}
 					],
@@ -1892,15 +1983,6 @@
 															}
 														},
 														{
-															"id": "set-instvar-value",
-															"objectClass": "Arrow",
-															"sid": 614111021755921,
-															"parameters": {
-																"instance-variable": "AttackPower",
-																"value": "0.5"
-															}
-														},
-														{
 															"id": "set-angle",
 															"objectClass": "Arrow",
 															"sid": 372296924427478,
@@ -1951,15 +2033,6 @@
 															"parameters": {
 																"instance-variable": "EnemiesItCanHit",
 																"value": "2"
-															}
-														},
-														{
-															"id": "set-instvar-value",
-															"objectClass": "Arrow",
-															"sid": 766811798194588,
-															"parameters": {
-																"instance-variable": "AttackPower",
-																"value": "0.5"
 															}
 														}
 													],
@@ -2077,15 +2150,6 @@
 															"parameters": {
 																"instance-variable": "EnemiesItCanHit",
 																"value": "2"
-															}
-														},
-														{
-															"id": "set-instvar-value",
-															"objectClass": "Arrow",
-															"sid": 557600355001674,
-															"parameters": {
-																"instance-variable": "AttackPower",
-																"value": "0.5"
 															}
 														},
 														{
@@ -3275,15 +3339,6 @@
 																	}
 																},
 																{
-																	"id": "set-instvar-value",
-																	"objectClass": "Arrow",
-																	"sid": 148145477485923,
-																	"parameters": {
-																		"instance-variable": "AttackPower",
-																		"value": "0.5"
-																	}
-																},
-																{
 																	"id": "set-size",
 																	"objectClass": "Arrow",
 																	"sid": 434000254013625,
@@ -3392,15 +3447,6 @@
 																	}
 																},
 																{
-																	"id": "set-instvar-value",
-																	"objectClass": "Arrow",
-																	"sid": 986118394833359,
-																	"parameters": {
-																		"instance-variable": "AttackPower",
-																		"value": "0.5"
-																	}
-																},
-																{
 																	"id": "set-size",
 																	"objectClass": "Arrow",
 																	"sid": 754033599259239,
@@ -3442,15 +3488,6 @@
 																	"parameters": {
 																		"where": "behind",
 																		"object": "Player"
-																	}
-																},
-																{
-																	"id": "set-instvar-value",
-																	"objectClass": "Arrow",
-																	"sid": 750238261273576,
-																	"parameters": {
-																		"instance-variable": "AttackPower",
-																		"value": "0.5"
 																	}
 																},
 																{
@@ -3567,10 +3604,10 @@
 																{
 																	"id": "set-instvar-value",
 																	"objectClass": "Arrow",
-																	"sid": 706609196830646,
+																	"sid": 348418307862785,
 																	"parameters": {
 																		"instance-variable": "AttackPower",
-																		"value": "2"
+																		"value": "4"
 																	}
 																}
 															],
@@ -3684,10 +3721,10 @@
 																{
 																	"id": "set-instvar-value",
 																	"objectClass": "Arrow",
-																	"sid": 335381781445695,
+																	"sid": 356858736519002,
 																	"parameters": {
 																		"instance-variable": "AttackPower",
-																		"value": "2"
+																		"value": "4"
 																	}
 																},
 																{
@@ -3737,10 +3774,10 @@
 																{
 																	"id": "set-instvar-value",
 																	"objectClass": "Arrow",
-																	"sid": 171603133562134,
+																	"sid": 713015690472083,
 																	"parameters": {
 																		"instance-variable": "AttackPower",
-																		"value": "2"
+																		"value": "4"
 																	}
 																},
 																{
@@ -3913,15 +3950,6 @@
 															}
 														},
 														{
-															"id": "set-instvar-value",
-															"objectClass": "Arrow",
-															"sid": 582848411002259,
-															"parameters": {
-																"instance-variable": "AttackPower",
-																"value": "0.5"
-															}
-														},
-														{
 															"id": "set-size",
 															"objectClass": "Arrow",
 															"sid": 420721284008885,
@@ -3966,15 +3994,6 @@
 															}
 														},
 														{
-															"id": "set-instvar-value",
-															"objectClass": "Arrow",
-															"sid": 380745958952772,
-															"parameters": {
-																"instance-variable": "AttackPower",
-																"value": "0.5"
-															}
-														},
-														{
 															"id": "set-size",
 															"objectClass": "Arrow",
 															"sid": 557029355732178,
@@ -4016,15 +4035,6 @@
 															"parameters": {
 																"where": "behind",
 																"object": "Player"
-															}
-														},
-														{
-															"id": "set-instvar-value",
-															"objectClass": "Arrow",
-															"sid": 592275598519439,
-															"parameters": {
-																"instance-variable": "AttackPower",
-																"value": "0.5"
 															}
 														},
 														{
@@ -4114,6 +4124,31 @@
 											]
 										}
 									]
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 751617119920449,
+											"parameters": {
+												"variable": "MultiShot"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 636347693156546,
+											"parameters": {
+												"variable": "ArrowAttackPowerMultiplier",
+												"value": ".33"
+											}
+										}
+									],
+									"sid": 149536094899146
 								}
 							],
 							"sid": 273868925258443
@@ -5469,7 +5504,8 @@
 							}
 						}
 					],
-					"sid": 244858542541465
+					"sid": 244858542541465,
+					"disabled": true
 				}
 			],
 			"sid": 315092312897719
@@ -5521,7 +5557,7 @@
 						{
 							"id": "set-eventvar-value",
 							"objectClass": "System",
-							"sid": 665650042615054,
+							"sid": 263556540546149,
 							"parameters": {
 								"variable": "EnemyCount",
 								"value": "Enemies.Count"
@@ -5544,6 +5580,24 @@
 								"variable": "OrcBossPresent",
 								"value": "OrcBoss.Count"
 							}
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 821713335394498,
+							"parameters": {
+								"variable": "isPaused",
+								"value": "false"
+							}
+						},
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 314194702693520,
+							"parameters": {
+								"variable": "DashOnCD",
+								"value": "false"
+							}
 						}
 					],
 					"sid": 382028632497628
@@ -5565,32 +5619,6 @@
 						}
 					],
 					"sid": 182842321499883
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "is-on-layer",
-							"objectClass": "Enemies",
-							"sid": 203918684347175,
-							"parameters": {
-								"layer": "0"
-							},
-							"isInverted": true
-						}
-					],
-					"actions": [
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 626164230536344,
-							"parameters": {
-								"variable": "EnemyCount",
-								"value": "0"
-							}
-						}
-					],
-					"sid": 356190404803113
 				},
 				{
 					"eventType": "block",
@@ -5644,15 +5672,6 @@
 							}
 						},
 						{
-							"id": "subtract-from-eventvar",
-							"objectClass": "System",
-							"sid": 138501408560603,
-							"parameters": {
-								"variable": "EnemyCount",
-								"value": "1"
-							}
-						},
-						{
 							"id": "wait-for-previous-actions",
 							"objectClass": "System",
 							"sid": 983265560087283
@@ -5664,6 +5683,28 @@
 						}
 					],
 					"sid": 652613357011993
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-destroyed",
+							"objectClass": "Enemies",
+							"sid": 716055637619687
+						}
+					],
+					"actions": [
+						{
+							"id": "subtract-from-eventvar",
+							"objectClass": "System",
+							"sid": 511121022674255,
+							"parameters": {
+								"variable": "EnemyCount",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 635337482148572
 				},
 				{
 					"eventType": "group",
@@ -5837,6 +5878,53 @@
 															"parameters": {
 																"instance-variable": "Health",
 																"value": "Ranged_Enemy_Minor.BurnDamage"
+															}
+														},
+														{
+															"id": "spawn-another-object",
+															"objectClass": "Ranged_Enemy_Minor",
+															"sid": 658968252248112,
+															"parameters": {
+																"object": "Dmg_Text",
+																"layer": "0",
+																"image-point": "0",
+																"create-hierarchy": false
+															}
+														},
+														{
+															"id": "spawn-another-object",
+															"objectClass": "Ranged_Enemy_Minor",
+															"sid": 700859692632518,
+															"parameters": {
+																"object": "Dmg_Text_BG",
+																"layer": "0",
+																"image-point": "0",
+																"create-hierarchy": false
+															}
+														},
+														{
+															"id": "set-text",
+															"objectClass": "Dmg_Text",
+															"sid": 351532806294632,
+															"parameters": {
+																"text": "Ranged_Enemy_Minor.BurnDamage"
+															}
+														},
+														{
+															"id": "set-text",
+															"objectClass": "Dmg_Text_BG",
+															"sid": 709676083290777,
+															"parameters": {
+																"text": "Ranged_Enemy_Minor.BurnDamage"
+															}
+														},
+														{
+															"id": "set-angle-of-motion",
+															"objectClass": "Dmg_Text",
+															"sid": 425721683002695,
+															"behaviorType": "Bullet",
+															"parameters": {
+																"angle": "Dmg_Text.Bullet.AngleOfMotion + random(-15, 15)"
 															}
 														},
 														{
@@ -6090,6 +6178,53 @@
 															}
 														},
 														{
+															"id": "spawn-another-object",
+															"objectClass": "Melee_Enemy_Minor",
+															"sid": 958500178193819,
+															"parameters": {
+																"object": "Dmg_Text",
+																"layer": "0",
+																"image-point": "0",
+																"create-hierarchy": false
+															}
+														},
+														{
+															"id": "spawn-another-object",
+															"objectClass": "Melee_Enemy_Minor",
+															"sid": 206190433506533,
+															"parameters": {
+																"object": "Dmg_Text_BG",
+																"layer": "0",
+																"image-point": "0",
+																"create-hierarchy": false
+															}
+														},
+														{
+															"id": "set-text",
+															"objectClass": "Dmg_Text",
+															"sid": 799746473679460,
+															"parameters": {
+																"text": "Melee_Enemy_Minor.BurnDamage"
+															}
+														},
+														{
+															"id": "set-text",
+															"objectClass": "Dmg_Text_BG",
+															"sid": 335213579613330,
+															"parameters": {
+																"text": "Melee_Enemy_Minor.BurnDamage"
+															}
+														},
+														{
+															"id": "set-angle-of-motion",
+															"objectClass": "Dmg_Text",
+															"sid": 353952847199479,
+															"behaviorType": "Bullet",
+															"parameters": {
+																"angle": "Dmg_Text.Bullet.AngleOfMotion + random(-15, 15)"
+															}
+														},
+														{
 															"id": "set-animation",
 															"objectClass": "Melee_Enemy_Minor",
 															"sid": 691435991394202,
@@ -6324,6 +6459,53 @@
 															}
 														},
 														{
+															"id": "spawn-another-object",
+															"objectClass": "OrcBoss",
+															"sid": 993206067578333,
+															"parameters": {
+																"object": "Dmg_Text",
+																"layer": "0",
+																"image-point": "0",
+																"create-hierarchy": false
+															}
+														},
+														{
+															"id": "spawn-another-object",
+															"objectClass": "OrcBoss",
+															"sid": 712567634599328,
+															"parameters": {
+																"object": "Dmg_Text_BG",
+																"layer": "0",
+																"image-point": "0",
+																"create-hierarchy": false
+															}
+														},
+														{
+															"id": "set-text",
+															"objectClass": "Dmg_Text",
+															"sid": 895863850552156,
+															"parameters": {
+																"text": "OrcBoss.BurnDamage"
+															}
+														},
+														{
+															"id": "set-text",
+															"objectClass": "Dmg_Text_BG",
+															"sid": 101029337093206,
+															"parameters": {
+																"text": "OrcBoss.BurnDamage"
+															}
+														},
+														{
+															"id": "set-angle-of-motion",
+															"objectClass": "Dmg_Text",
+															"sid": 776887590085557,
+															"behaviorType": "Bullet",
+															"parameters": {
+																"angle": "Dmg_Text.Bullet.AngleOfMotion + random(-15, 15)"
+															}
+														},
+														{
 															"id": "wait",
 															"objectClass": "System",
 															"sid": 249737212102126,
@@ -6381,6 +6563,53 @@
 															"parameters": {
 																"instance-variable": "Health",
 																"value": "Bob.BurnDamage"
+															}
+														},
+														{
+															"id": "spawn-another-object",
+															"objectClass": "Bob",
+															"sid": 748316916087545,
+															"parameters": {
+																"object": "Dmg_Text",
+																"layer": "0",
+																"image-point": "0",
+																"create-hierarchy": false
+															}
+														},
+														{
+															"id": "spawn-another-object",
+															"objectClass": "Bob",
+															"sid": 528365532992158,
+															"parameters": {
+																"object": "Dmg_Text_BG",
+																"layer": "0",
+																"image-point": "0",
+																"create-hierarchy": false
+															}
+														},
+														{
+															"id": "set-text",
+															"objectClass": "Dmg_Text",
+															"sid": 513293891123386,
+															"parameters": {
+																"text": "Bob.BurnDamage"
+															}
+														},
+														{
+															"id": "set-text",
+															"objectClass": "Dmg_Text_BG",
+															"sid": 917464080037039,
+															"parameters": {
+																"text": "Bob.BurnDamage"
+															}
+														},
+														{
+															"id": "set-angle-of-motion",
+															"objectClass": "Dmg_Text",
+															"sid": 282250627378598,
+															"behaviorType": "Bullet",
+															"parameters": {
+																"angle": "Dmg_Text.Bullet.AngleOfMotion + random(-15, 15)"
 															}
 														},
 														{
@@ -7027,9 +7256,9 @@
 												{
 													"id": "every-x-seconds",
 													"objectClass": "System",
-													"sid": 822697465788677,
+													"sid": 919478245280718,
 													"parameters": {
-														"interval-seconds": ".25"
+														"interval-seconds": ".5"
 													}
 												}
 											],
@@ -7413,24 +7642,6 @@
 														"variable": "PlayerHealth",
 														"value": "0.5"
 													}
-												},
-												{
-													"id": "set-width",
-													"objectClass": "HP_Green",
-													"sid": 400785805277371,
-													"parameters": {
-														"width": "(PlayerHealth/PlayerMaxHealth) * 96"
-													}
-												},
-												{
-													"id": "set-position",
-													"objectClass": "HP_Green",
-													"sid": 433131477729736,
-													"disabled": true,
-													"parameters": {
-														"x": "136 - ((PlayerHealth/PlayerMaxHealth) * 136)",
-														"y": "HP_Green.Y"
-													}
 												}
 											],
 											"sid": 398032407026685
@@ -7459,39 +7670,11 @@
 											}
 										},
 										{
-											"id": "move-to-object",
+											"id": "set-angle",
 											"objectClass": "AcidArea",
-											"sid": 811660083923893,
+											"sid": 660023115587156,
 											"parameters": {
-												"where": "behind",
-												"object": "Player"
-											}
-										},
-										{
-											"id": "move-to-object",
-											"objectClass": "AcidArea",
-											"sid": 930429155316070,
-											"parameters": {
-												"where": "behind",
-												"object": "Enemies"
-											}
-										},
-										{
-											"id": "move-to-object",
-											"objectClass": "AcidArea",
-											"sid": 976345963205907,
-											"parameters": {
-												"where": "behind",
-												"object": "Arena1_Pillar"
-											}
-										},
-										{
-											"id": "move-to-object",
-											"objectClass": "AcidArea",
-											"sid": 551485809481308,
-											"parameters": {
-												"where": "behind",
-												"object": "Pillaer"
+												"angle": "0"
 											}
 										},
 										{
@@ -7503,6 +7686,44 @@
 												"loop": "not-looping",
 												"volume": "-5",
 												"tag-optional": "\"\""
+											}
+										},
+										{
+											"id": "move-to-object",
+											"objectClass": "AcidArea",
+											"sid": 401278216485813,
+											"disabled": true,
+											"parameters": {
+												"where": "behind",
+												"object": "Player"
+											}
+										},
+										{
+											"id": "move-to-object",
+											"objectClass": "AcidArea",
+											"sid": 526153408352354,
+											"disabled": true,
+											"parameters": {
+												"where": "behind",
+												"object": "OrcBoss"
+											}
+										},
+										{
+											"id": "move-to-object",
+											"objectClass": "AcidArea",
+											"sid": 710707279332581,
+											"parameters": {
+												"where": "behind",
+												"object": "Arena1_Pillar"
+											}
+										},
+										{
+											"id": "move-to-object",
+											"objectClass": "AcidArea",
+											"sid": 113169651205495,
+											"parameters": {
+												"where": "behind",
+												"object": "Pillaer"
 											}
 										}
 									],
@@ -7767,16 +7988,7 @@
 											"sid": 993369736775024
 										}
 									],
-									"actions": [
-										{
-											"id": "set-text",
-											"objectClass": "OrcBossHealthText",
-											"sid": 628381036624656,
-											"parameters": {
-												"text": "\"Sharaglakesh: \"&OrcBoss.Health&\"/\"& OrcBoss.MaxHealth"
-											}
-										}
-									],
+									"actions": [],
 									"sid": 179832288292307
 								},
 								{
@@ -8766,6 +8978,21 @@
 					"parameters": {
 						"animation": "\"On\"",
 						"from": "beginning"
+					}
+				},
+				{
+					"id": "pin-to-object-properties",
+					"objectClass": "HP_Hearts",
+					"sid": 992990953149084,
+					"behaviorType": "Pin",
+					"parameters": {
+						"pin-to": "HPBarSetter",
+						"x": true,
+						"y": true,
+						"angle": false,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
 					}
 				}
 			],

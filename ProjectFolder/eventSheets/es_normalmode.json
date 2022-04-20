@@ -6,6 +6,10 @@
 			"includeSheet": "ES_Combat"
 		},
 		{
+			"eventType": "include",
+			"includeSheet": "ES_Controls"
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{

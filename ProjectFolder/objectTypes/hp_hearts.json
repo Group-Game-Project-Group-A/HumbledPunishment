@@ -4,7 +4,13 @@
 	"sid": 725647586647270,
 	"isGlobal": false,
 	"instanceVariables": [],
-	"behaviorTypes": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Pin",
+			"name": "Pin",
+			"sid": 439269310792250
+		}
+	],
 	"effectTypes": [],
 	"animations": {
 		"items": [
@@ -141,7 +147,7 @@
 					{
 						"width": 41,
 						"height": 8,
-						"originX": 0.5,
+						"originX": 0.524390243902439,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "png",

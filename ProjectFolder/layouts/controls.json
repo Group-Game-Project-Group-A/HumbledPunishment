@@ -7,36 +7,6 @@
 			"subLayers": [],
 			"instances": [
 				{
-					"type": "But_StartGame",
-					"properties": {
-						"type": "button",
-						"text": "Continue",
-						"tooltip": "",
-						"initially-visible": true,
-						"enabled": true,
-						"auto-font-size": true,
-						"checked": false,
-						"id": ""
-					},
-					"uid": 3991,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 391,
-						"y": 407,
-						"width": 72,
-						"height": 24,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						]
-					}
-				},
-				{
 					"type": "MenuBackgrounds",
 					"properties": {
 						"initially-visible": true,
@@ -139,6 +109,36 @@
 						],
 						"angle": 0,
 						"zElevation": 0
+					}
+				},
+				{
+					"type": "But_StartOver",
+					"properties": {
+						"type": "button",
+						"text": "Return to Menu",
+						"tooltip": "",
+						"initially-visible": true,
+						"enabled": true,
+						"auto-font-size": true,
+						"checked": false,
+						"id": ""
+					},
+					"uid": 124,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 365.5,
+						"y": 407,
+						"width": 123,
+						"height": 24,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						]
 					}
 				}
 			],

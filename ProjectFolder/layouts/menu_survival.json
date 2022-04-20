@@ -10,7 +10,7 @@
 					"type": "But_StartGame",
 					"properties": {
 						"type": "button",
-						"text": "Start",
+						"text": "Survive!",
 						"tooltip": "",
 						"initially-visible": true,
 						"enabled": true,
@@ -22,9 +22,9 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 391,
+						"x": 365.5,
 						"y": 317,
-						"width": 72,
+						"width": 123,
 						"height": 24,
 						"originX": 0,
 						"originY": 0,
