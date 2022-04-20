@@ -205,7 +205,7 @@
 			"eventType": "variable",
 			"name": "PlayerHealth",
 			"type": "number",
-			"initialValue": "30",
+			"initialValue": "35",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
@@ -268,21 +268,11 @@
 									}
 								},
 								{
-									"id": "set-width",
-									"objectClass": "HP_Green",
-									"sid": 142582223857018,
+									"id": "set-animation-frame",
+									"objectClass": "HP_Hearts",
+									"sid": 914560413304276,
 									"parameters": {
-										"width": "(PlayerHealth/PlayerMaxHealth) * 96"
-									}
-								},
-								{
-									"id": "set-position",
-									"objectClass": "HP_Green",
-									"sid": 655963345580519,
-									"disabled": true,
-									"parameters": {
-										"x": "48 + ((PlayerHealth/PlayerMaxHealth) * 48)",
-										"y": "HP_Green.Y"
+										"frame-number": "PlayerHealth"
 									}
 								},
 								{
@@ -469,11 +459,11 @@
 									}
 								},
 								{
-									"id": "set-width",
-									"objectClass": "HP_Green",
-									"sid": 521958545826120,
+									"id": "set-animation-frame",
+									"objectClass": "HP_Hearts",
+									"sid": 615180503003595,
 									"parameters": {
-										"width": "(PlayerHealth/PlayerMaxHealth) * 96"
+										"frame-number": "PlayerHealth"
 									}
 								},
 								{
@@ -511,16 +501,6 @@
 										"layer": "0",
 										"image-point": "0",
 										"create-hierarchy": false
-									}
-								},
-								{
-									"id": "set-position",
-									"objectClass": "HP_Green",
-									"sid": 511919967149648,
-									"disabled": true,
-									"parameters": {
-										"x": "48 - ((PlayerHealth/PlayerMaxHealth) * 48)",
-										"y": "HP_Green.Y"
 									}
 								},
 								{
@@ -5461,6 +5441,35 @@
 						}
 					],
 					"sid": 359139091036204
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-x-seconds",
+							"objectClass": "System",
+							"sid": 669621932342039,
+							"parameters": {
+								"interval-seconds": "0.2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"type": "comment",
+							"text": "Hearts Follow the Player"
+						},
+						{
+							"id": "set-position",
+							"objectClass": "HP_Hearts",
+							"sid": 904903114286461,
+							"parameters": {
+								"x": "Player.X",
+								"y": "Player.Y + 30"
+							}
+						}
+					],
+					"sid": 244858542541465
 				}
 			],
 			"sid": 315092312897719
@@ -6597,6 +6606,14 @@
 											}
 										},
 										{
+											"id": "set-animation-frame",
+											"objectClass": "HP_Hearts",
+											"sid": 331110265774979,
+											"parameters": {
+												"frame-number": "PlayerHealth"
+											}
+										},
+										{
 											"id": "spawn-another-object",
 											"objectClass": "Player",
 											"sid": 742695785905424,
@@ -6627,24 +6644,6 @@
 												"layer": "0",
 												"image-point": "0",
 												"create-hierarchy": false
-											}
-										},
-										{
-											"id": "set-width",
-											"objectClass": "HP_Green",
-											"sid": 873711944507212,
-											"parameters": {
-												"width": "(PlayerHealth/PlayerMaxHealth) * 96"
-											}
-										},
-										{
-											"id": "set-position",
-											"objectClass": "HP_Green",
-											"sid": 321353402246854,
-											"disabled": true,
-											"parameters": {
-												"x": "48 - ((PlayerHealth/PlayerMaxHealth) * 48)",
-												"y": "HP_Green.Y"
 											}
 										},
 										{
@@ -7103,6 +7102,14 @@
 											}
 										},
 										{
+											"id": "set-animation-frame",
+											"objectClass": "HP_Hearts",
+											"sid": 108541782049533,
+											"parameters": {
+												"frame-number": "PlayerHealth"
+											}
+										},
+										{
 											"id": "spawn-another-object",
 											"objectClass": "Player",
 											"sid": 710706304167453,
@@ -7144,24 +7151,6 @@
 												"loop": "not-looping",
 												"volume": "-8",
 												"tag-optional": "\"\""
-											}
-										},
-										{
-											"id": "set-width",
-											"objectClass": "HP_Green",
-											"sid": 954787426313050,
-											"parameters": {
-												"width": "(PlayerHealth/PlayerMaxHealth) * 96"
-											}
-										},
-										{
-											"id": "set-position",
-											"objectClass": "HP_Green",
-											"sid": 208551370889900,
-											"disabled": true,
-											"parameters": {
-												"x": "48 - ((PlayerHealth/PlayerMaxHealth) * 48)",
-												"y": "HP_Green.Y"
 											}
 										},
 										{
@@ -7628,6 +7617,14 @@
 													}
 												},
 												{
+													"id": "set-animation-frame",
+													"objectClass": "HP_Hearts",
+													"sid": 978176070360300,
+													"parameters": {
+														"frame-number": "PlayerHealth"
+													}
+												},
+												{
 													"id": "spawn-another-object",
 													"objectClass": "Player",
 													"sid": 683758396800690,
@@ -7647,24 +7644,6 @@
 														"layer": "0",
 														"image-point": "0",
 														"create-hierarchy": false
-													}
-												},
-												{
-													"id": "set-width",
-													"objectClass": "HP_Green",
-													"sid": 259215401540688,
-													"parameters": {
-														"width": "(PlayerHealth/PlayerMaxHealth) * 96"
-													}
-												},
-												{
-													"id": "set-position",
-													"objectClass": "HP_Green",
-													"sid": 635276603818753,
-													"disabled": true,
-													"parameters": {
-														"x": "136 - ((PlayerHealth/PlayerMaxHealth) * 136)",
-														"y": "HP_Green.Y"
 													}
 												},
 												{
@@ -8164,6 +8143,14 @@
 											}
 										},
 										{
+											"id": "set-animation-frame",
+											"objectClass": "HP_Hearts",
+											"sid": 841770666656976,
+											"parameters": {
+												"frame-number": "PlayerHealth"
+											}
+										},
+										{
 											"id": "spawn-another-object",
 											"objectClass": "Player",
 											"sid": 262458436164438,
@@ -8205,24 +8192,6 @@
 												"loop": "not-looping",
 												"volume": "-8",
 												"tag-optional": "\"\""
-											}
-										},
-										{
-											"id": "set-width",
-											"objectClass": "HP_Green",
-											"sid": 904172744913805,
-											"parameters": {
-												"width": "(PlayerHealth/PlayerMaxHealth) * 96"
-											}
-										},
-										{
-											"id": "set-position",
-											"objectClass": "HP_Green",
-											"sid": 427793807657673,
-											"disabled": true,
-											"parameters": {
-												"x": "48 - ((PlayerHealth/PlayerMaxHealth) * 48)",
-												"y": "HP_Green.Y"
 											}
 										},
 										{
@@ -8426,6 +8395,14 @@
 											}
 										},
 										{
+											"id": "set-animation-frame",
+											"objectClass": "HP_Hearts",
+											"sid": 151736423376930,
+											"parameters": {
+												"frame-number": "PlayerHealth"
+											}
+										},
+										{
 											"id": "spawn-another-object",
 											"objectClass": "Player",
 											"sid": 466264749328892,
@@ -8467,24 +8444,6 @@
 												"loop": "not-looping",
 												"volume": "-8",
 												"tag-optional": "\"\""
-											}
-										},
-										{
-											"id": "set-width",
-											"objectClass": "HP_Green",
-											"sid": 468934006926557,
-											"parameters": {
-												"width": "(PlayerHealth/PlayerMaxHealth) * 96"
-											}
-										},
-										{
-											"id": "set-position",
-											"objectClass": "HP_Green",
-											"sid": 965176768904136,
-											"disabled": true,
-											"parameters": {
-												"x": "136 - ((PlayerHealth/PlayerMaxHealth) * 136)",
-												"y": "HP_Green.Y"
 											}
 										},
 										{
