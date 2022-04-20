@@ -25373,7 +25373,14 @@
 					},
 					"uid": 12661,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
 					"world": {
 						"x": 1005,
 						"y": 242,

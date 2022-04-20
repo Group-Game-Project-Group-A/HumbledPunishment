@@ -5226,7 +5226,14 @@
 					},
 					"uid": 4423,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
 					"world": {
 						"x": 432.0366779770066,
 						"y": 128.1437033367477,
