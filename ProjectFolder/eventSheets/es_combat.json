@@ -8122,6 +8122,28 @@
 										}
 									],
 									"sid": 426137313266418
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "on-destroyed",
+											"objectClass": "OrcBoss",
+											"sid": 506897147699583
+										}
+									],
+									"actions": [
+										{
+											"id": "subtract-from-eventvar",
+											"objectClass": "System",
+											"sid": 337419561919587,
+											"parameters": {
+												"variable": "OrcBossPresent",
+												"value": "1"
+											}
+										}
+									],
+									"sid": 680312530535920
 								}
 							],
 							"sid": 170161546173632

@@ -7,6 +7,42 @@
 			"subLayers": [],
 			"instances": [
 				{
+					"type": "DoorBlock",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": false,
+						"live-preview": false
+					},
+					"uid": 211,
+					"instanceVariables": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
+					"world": {
+						"x": 463,
+						"y": 487,
+						"width": 660.8736567552313,
+						"height": 559.9232015822159,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
 					"type": "Arena1_FillLeft",
 					"properties": {
 						"initially-visible": true,
@@ -25225,7 +25261,7 @@
 								"acceleration": 600,
 								"deceleration": 600,
 								"rotate-speed": 0,
-								"set-angle": true,
+								"set-angle": false,
 								"stop-on-solids": false,
 								"enabled": true
 							}
@@ -25303,7 +25339,7 @@
 								"acceleration": 600,
 								"deceleration": 600,
 								"rotate-speed": 0,
-								"set-angle": true,
+								"set-angle": false,
 								"stop-on-solids": false,
 								"enabled": true
 							}
@@ -25381,7 +25417,7 @@
 								"acceleration": 600,
 								"deceleration": 600,
 								"rotate-speed": 0,
-								"set-angle": true,
+								"set-angle": false,
 								"stop-on-solids": false,
 								"enabled": true
 							}
@@ -25776,48 +25812,6 @@
 					}
 				},
 				{
-					"type": "WinText",
-					"properties": {
-						"text": "Round 1 Complete!",
-						"enable-bbcode": true,
-						"font": "Arial",
-						"size": 12,
-						"line-height": 0,
-						"bold": false,
-						"italic": false,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"horizontal-alignment": "center",
-						"vertical-alignment": "center",
-						"wrapping": "word",
-						"initially-visible": false,
-						"origin": "top-left"
-					},
-					"uid": 801,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 0,
-						"y": 225,
-						"width": 854,
-						"height": 30,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
 					"type": "WinButton",
 					"properties": {
 						"type": "button",
@@ -25882,7 +25876,49 @@
 					"properties": {
 						"text": "You Died.",
 						"enable-bbcode": true,
-						"font": "Arial",
+						"font": "Pixel_Font",
+						"size": 12,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							0,
+							0,
+							0,
+							1
+						],
+						"horizontal-alignment": "center",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"initially-visible": false,
+						"origin": "top-left"
+					},
+					"uid": 5983,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1,
+						"y": 226,
+						"width": 854,
+						"height": 30,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "LoseText",
+					"properties": {
+						"text": "You Died.",
+						"enable-bbcode": true,
+						"font": "Pixel_Font",
 						"size": 12,
 						"line-height": 0,
 						"bold": false,
@@ -25899,7 +25935,91 @@
 						"initially-visible": false,
 						"origin": "top-left"
 					},
-					"uid": 5983,
+					"uid": 227,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 0,
+						"y": 225,
+						"width": 854,
+						"height": 30,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "WinText",
+					"properties": {
+						"text": "Round 1 Complete!",
+						"enable-bbcode": true,
+						"font": "Pixel_Font",
+						"size": 12,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							0,
+							0,
+							0,
+							1
+						],
+						"horizontal-alignment": "center",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"initially-visible": false,
+						"origin": "top-left"
+					},
+					"uid": 225,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1,
+						"y": 226,
+						"width": 854,
+						"height": 30,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "WinText",
+					"properties": {
+						"text": "Round 1 Complete!",
+						"enable-bbcode": true,
+						"font": "Pixel_Font",
+						"size": 12,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "center",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"initially-visible": false,
+						"origin": "top-left"
+					},
+					"uid": 228,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {

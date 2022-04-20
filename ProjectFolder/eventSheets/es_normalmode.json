@@ -10,6 +10,16 @@
 			"includeSheet": "ES_Controls"
 		},
 		{
+			"eventType": "variable",
+			"name": "PreviousScenePlayerHealth",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 613194946589038
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -18,6 +28,26 @@
 					"sid": 594207414630624,
 					"parameters": {
 						"variable": "EnemyCount",
+						"comparison": 3,
+						"value": "0"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 857872901292035,
+					"parameters": {
+						"variable": "BobPresent",
+						"comparison": 3,
+						"value": "0"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 181034629678820,
+					"parameters": {
+						"variable": "OrcBossPresent",
 						"comparison": 3,
 						"value": "0"
 					}
@@ -254,6 +284,15 @@
 							}
 						},
 						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 228792487012524,
+							"parameters": {
+								"variable": "PlayerHealth",
+								"value": "PreviousScenePlayerHealth"
+							}
+						},
+						{
 							"id": "go-to-nextprevious-layout",
 							"objectClass": "System",
 							"sid": 973780366074520,
@@ -273,6 +312,28 @@
 					"sid": 888222412926948
 				}
 			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 303317906476837
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 108275188379771,
+					"parameters": {
+						"variable": "PreviousScenePlayerHealth",
+						"value": "PlayerHealth"
+					}
+				}
+			],
+			"sid": 843120722439767
 		}
 	],
 	"sid": 603949761274379

@@ -7,6 +7,42 @@
 			"subLayers": [],
 			"instances": [
 				{
+					"type": "DoorBlock",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": false,
+						"live-preview": false
+					},
+					"uid": 216,
+					"instanceVariables": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
+					"world": {
+						"x": 914,
+						"y": 1061,
+						"width": 660.8736567552313,
+						"height": 559.9232015822159,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
 					"type": "Acid",
 					"properties": {
 						"initially-visible": true,
@@ -1254,6 +1290,42 @@
 					}
 				},
 				{
+					"type": "DoorWalls",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "6 Bars Green",
+						"initial-frame": 0,
+						"enable-collisions": false,
+						"live-preview": false
+					},
+					"uid": 217,
+					"instanceVariables": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
+					"world": {
+						"x": 890.2193426380361,
+						"y": 783.9758280143291,
+						"width": 8.011546,
+						"height": 131.5279126880979,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 4.71238898038469,
+						"zElevation": 0
+					}
+				},
+				{
 					"type": "Level2_Fill",
 					"properties": {
 						"initially-visible": true,
@@ -1270,132 +1342,6 @@
 						"y": 1101,
 						"width": 264,
 						"height": 182,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "HP_Hearts",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 35,
-						"enable-collisions": false,
-						"live-preview": false
-					},
-					"uid": 116,
-					"instanceVariables": {},
-					"behaviors": {
-						"Pin": {
-							"properties": {
-								"destroy": true
-							}
-						}
-					},
-					"world": {
-						"x": 1137.9882363869872,
-						"y": 1087.253369501479,
-						"width": 41,
-						"height": 8,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "HPBarSetter",
-					"properties": {
-						"initially-visible": false,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": false,
-						"live-preview": false
-					},
-					"uid": 117,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 1136.5211370795205,
-						"y": 1117.7604991311905,
-						"width": 32,
-						"height": 32,
-						"originX": 0.5,
-						"originY": 1,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Player",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 118,
-					"instanceVariables": {},
-					"behaviors": {
-						"8Direction": {
-							"properties": {
-								"max-speed": 200,
-								"acceleration": 600,
-								"deceleration": 500,
-								"directions": "dir-8",
-								"set-angle": "smooth",
-								"default-controls": false,
-								"enabled": true
-							}
-						},
-						"ScrollTo": {
-							"properties": {
-								"enabled": true
-							}
-						},
-						"BoundToLayout": {
-							"properties": {
-								"bound-by": "edge"
-							}
-						},
-						"Bullet": {
-							"properties": {
-								"speed": 400,
-								"acceleration": 0,
-								"gravity": 0,
-								"bounce-off-solids": false,
-								"set-angle": false,
-								"step": false,
-								"enabled": false
-							}
-						}
-					},
-					"world": {
-						"x": 1135.4132339553673,
-						"y": 1118.117845234518,
-						"width": 32,
-						"height": 32,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -10335,46 +10281,6 @@
 					}
 				},
 				{
-					"type": "Doors",
-					"properties": {
-						"initially-visible": false,
-						"origin": "top-left",
-						"wrap-horizontal": "repeat",
-						"wrap-vertical": "repeat",
-						"image-offset-x": 0,
-						"image-offset-y": 0,
-						"image-scale-x": 1,
-						"image-scale-y": 1,
-						"image-angle": 0
-					},
-					"uid": 663,
-					"instanceVariables": {},
-					"behaviors": {
-						"Solid": {
-							"properties": {
-								"enabled": false,
-								"tags": ""
-							}
-						}
-					},
-					"world": {
-						"x": 791,
-						"y": 799,
-						"width": 78.05379194919828,
-						"height": 207.1151102097342,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							0.34901960784313724,
-							0.48627450980392156,
-							0.3803921568627451,
-							1
-						],
-						"angle": 4.71238898038469,
-						"zElevation": 0
-					}
-				},
-				{
 					"type": "ArrowLauncher",
 					"properties": {
 						"initially-visible": true,
@@ -10718,7 +10624,7 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 647.3031790387457,
+						"x": 648.3031790387457,
 						"y": 961.3341260185107,
 						"width": 371.879809221379,
 						"height": 477.7359433254687,
@@ -11025,6 +10931,132 @@
 					}
 				},
 				{
+					"type": "HP_Hearts",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 35,
+						"enable-collisions": false,
+						"live-preview": false
+					},
+					"uid": 116,
+					"instanceVariables": {},
+					"behaviors": {
+						"Pin": {
+							"properties": {
+								"destroy": true
+							}
+						}
+					},
+					"world": {
+						"x": 1137.9882363869872,
+						"y": 1087.253369501479,
+						"width": 41,
+						"height": 8,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "HPBarSetter",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": false,
+						"live-preview": false
+					},
+					"uid": 117,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1136.5211370795205,
+						"y": 1117.7604991311905,
+						"width": 32,
+						"height": 32,
+						"originX": 0.5,
+						"originY": 1,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Player",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 118,
+					"instanceVariables": {},
+					"behaviors": {
+						"8Direction": {
+							"properties": {
+								"max-speed": 200,
+								"acceleration": 600,
+								"deceleration": 500,
+								"directions": "dir-8",
+								"set-angle": "smooth",
+								"default-controls": false,
+								"enabled": true
+							}
+						},
+						"ScrollTo": {
+							"properties": {
+								"enabled": true
+							}
+						},
+						"BoundToLayout": {
+							"properties": {
+								"bound-by": "edge"
+							}
+						},
+						"Bullet": {
+							"properties": {
+								"speed": 400,
+								"acceleration": 0,
+								"gravity": 0,
+								"bounce-off-solids": false,
+								"set-angle": false,
+								"step": false,
+								"enabled": false
+							}
+						}
+					},
+					"world": {
+						"x": 1135.4132339553673,
+						"y": 1118.117845234518,
+						"width": 32,
+						"height": 32,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
 					"type": "Ranged_Enemy_Minor",
 					"properties": {
 						"initially-visible": true,
@@ -11202,7 +11234,7 @@
 								"acceleration": 600,
 								"deceleration": 600,
 								"rotate-speed": 0,
-								"set-angle": true,
+								"set-angle": false,
 								"stop-on-solids": false,
 								"enabled": true
 							}
@@ -11227,7 +11259,7 @@
 								"acceleration": 0,
 								"gravity": 0,
 								"bounce-off-solids": true,
-								"set-angle": true,
+								"set-angle": false,
 								"step": false,
 								"enabled": true
 							}
@@ -11280,7 +11312,7 @@
 								"acceleration": 600,
 								"deceleration": 600,
 								"rotate-speed": 0,
-								"set-angle": true,
+								"set-angle": false,
 								"stop-on-solids": false,
 								"enabled": true
 							}
@@ -11305,7 +11337,7 @@
 								"acceleration": 0,
 								"gravity": 0,
 								"bounce-off-solids": true,
-								"set-angle": true,
+								"set-angle": false,
 								"step": false,
 								"enabled": true
 							}
@@ -11358,7 +11390,7 @@
 								"acceleration": 600,
 								"deceleration": 600,
 								"rotate-speed": 0,
-								"set-angle": true,
+								"set-angle": false,
 								"stop-on-solids": false,
 								"enabled": true
 							}
@@ -11383,7 +11415,7 @@
 								"acceleration": 0,
 								"gravity": 0,
 								"bounce-off-solids": true,
-								"set-angle": true,
+								"set-angle": false,
 								"step": false,
 								"enabled": true
 							}
@@ -11436,7 +11468,7 @@
 								"acceleration": 600,
 								"deceleration": 600,
 								"rotate-speed": 0,
-								"set-angle": true,
+								"set-angle": false,
 								"stop-on-solids": false,
 								"enabled": true
 							}
@@ -11461,7 +11493,7 @@
 								"acceleration": 0,
 								"gravity": 0,
 								"bounce-off-solids": true,
-								"set-angle": true,
+								"set-angle": false,
 								"step": false,
 								"enabled": true
 							}
@@ -11514,7 +11546,7 @@
 								"acceleration": 600,
 								"deceleration": 600,
 								"rotate-speed": 0,
-								"set-angle": true,
+								"set-angle": false,
 								"stop-on-solids": false,
 								"enabled": true
 							}
@@ -11539,7 +11571,7 @@
 								"acceleration": 0,
 								"gravity": 0,
 								"bounce-off-solids": true,
-								"set-angle": true,
+								"set-angle": false,
 								"step": false,
 								"enabled": true
 							}
