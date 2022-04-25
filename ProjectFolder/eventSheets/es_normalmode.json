@@ -317,6 +317,32 @@
 			"eventType": "block",
 			"conditions": [
 				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 697021068314866,
+					"parameters": {
+						"variable": "PlayerHealth",
+						"comparison": 2,
+						"value": "PlayerMaxHealth"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation-frame",
+					"objectClass": "HP_Hearts",
+					"sid": 618693204271804,
+					"parameters": {
+						"frame-number": "PlayerHealth"
+					}
+				}
+			],
+			"sid": 975534053823017
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
 					"id": "on-start-of-layout",
 					"objectClass": "System",
 					"sid": 303317906476837
@@ -334,6 +360,149 @@
 				}
 			],
 			"sid": 843120722439767
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 312021935991038,
+					"parameters": {
+						"key": 27
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "toggle-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 180595861871469,
+					"parameters": {
+						"variable": "isPaused"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "PauseText",
+					"sid": 938670064550429,
+					"parameters": {
+						"visibility": "toggle"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "WinBackground",
+					"sid": 658149937498107,
+					"parameters": {
+						"visibility": "toggle"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "ResumeButton",
+					"sid": 124469892617924,
+					"parameters": {
+						"visibility": "toggle"
+					}
+				}
+			],
+			"sid": 145594805252295
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 731387991249447,
+					"parameters": {
+						"variable": "isPaused"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-time-scale",
+					"objectClass": "System",
+					"sid": 663633210701578,
+					"parameters": {
+						"time-scale": "0"
+					}
+				}
+			],
+			"sid": 739250889223534
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 475735728103288,
+					"parameters": {
+						"variable": "isPaused"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-time-scale",
+					"objectClass": "System",
+					"sid": 207985767419670,
+					"parameters": {
+						"time-scale": "1"
+					}
+				}
+			],
+			"sid": 790547909010089
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "ResumeButton",
+					"sid": 599249957934084
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 289790525577098,
+					"parameters": {
+						"variable": "isPaused",
+						"value": "false"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "PauseText",
+					"sid": 103104511504583,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "WinBackground",
+					"sid": 834754100874726,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "ResumeButton",
+					"sid": 990393154280240,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 107064948573447
 		}
 	],
 	"sid": 603949761274379

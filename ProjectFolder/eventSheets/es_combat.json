@@ -223,6 +223,16 @@
 		},
 		{
 			"eventType": "variable",
+			"name": "IsAutoFiring",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 346558445951880
+		},
+		{
+			"eventType": "variable",
 			"name": "AcidDestroyTime",
 			"type": "number",
 			"initialValue": "30",
@@ -230,6 +240,178 @@
 			"isStatic": false,
 			"isConstant": false,
 			"sid": 201298252778824
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 320555644803761
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation-frame",
+					"objectClass": "HP_Hearts",
+					"sid": 239508579576232,
+					"parameters": {
+						"frame-number": "PlayerHealth"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Arena1_Fountain",
+					"sid": 176587556573691,
+					"parameters": {
+						"animation": "\"Fountain-On\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Banner",
+					"sid": 136918308640435,
+					"parameters": {
+						"animation": "\"Banner-On\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Arena1_Torch",
+					"sid": 212070782853207,
+					"parameters": {
+						"animation": "\"Torch-On\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Acid",
+					"sid": 949321287126525,
+					"parameters": {
+						"animation": "\"On\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "pin-to-object-properties",
+					"objectClass": "HP_Hearts",
+					"sid": 178791762551486,
+					"behaviorType": "Pin",
+					"parameters": {
+						"pin-to": "HPBarSetter",
+						"x": true,
+						"y": true,
+						"angle": false,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "Enemies",
+					"sid": 809545500675527,
+					"parameters": {
+						"instance-variable": "StartHealth",
+						"value": "Enemies.Health"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "Enemies",
+					"sid": 628495695271451,
+					"parameters": {
+						"instance-variable": "StartPosX",
+						"value": "Enemies.X"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "Enemies",
+					"sid": 125130075917500,
+					"parameters": {
+						"instance-variable": "StartPosY",
+						"value": "Enemies.Y"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 555875314057651,
+					"parameters": {
+						"variable": "EnemyCount",
+						"value": "Enemies.Count"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 643992777370958,
+					"parameters": {
+						"variable": "BobPresent",
+						"value": "Bob.Count"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 325103430807666,
+					"parameters": {
+						"variable": "OrcBossPresent",
+						"value": "OrcBoss.Count"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 369771004411833,
+					"parameters": {
+						"variable": "isPaused",
+						"value": "false"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 571770683295186,
+					"parameters": {
+						"variable": "DashOnCD",
+						"value": "false"
+					}
+				}
+			],
+			"sid": 605195225115062
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 102281643177156
+				}
+			],
+			"actions": [
+				{
+					"id": "move-to-top",
+					"objectClass": "Arrow",
+					"sid": 871085405207448
+				},
+				{
+					"id": "move-to-top",
+					"objectClass": "Player",
+					"sid": 649049006412800
+				},
+				{
+					"id": "move-to-top",
+					"objectClass": "EnemyArrows",
+					"sid": 538134410350221
+				}
+			],
+			"sid": 652402250742984
 		},
 		{
 			"eventType": "group",
@@ -1518,6 +1700,24 @@
 						}
 					],
 					"sid": 497795141305891
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-created",
+							"objectClass": "Arrow",
+							"sid": 354722513835463
+						}
+					],
+					"actions": [],
+					"sid": 932963378101928,
+					"children": [
+						{
+							"eventType": "comment",
+							"text": "when the arrow is spawned, do something (so make an animation)"
+						}
+					]
 				}
 			],
 			"sid": 131939912751614
@@ -1743,81 +1943,6 @@
 											"eventType": "block",
 											"conditions": [
 												{
-													"id": "on-click",
-													"objectClass": "Mouse",
-													"sid": 614108020789227,
-													"parameters": {
-														"mouse-button": "left",
-														"click-type": "clicked"
-													}
-												}
-											],
-											"actions": [
-												{
-													"id": "spawn-another-object",
-													"objectClass": "Player",
-													"sid": 866069699815084,
-													"parameters": {
-														"object": "Arrow",
-														"layer": "0",
-														"image-point": "0",
-														"create-hierarchy": false
-													}
-												},
-												{
-													"id": "move-to-object",
-													"objectClass": "Arrow",
-													"sid": 885633935515267,
-													"parameters": {
-														"where": "behind",
-														"object": "Player"
-													}
-												},
-												{
-													"id": "play",
-													"objectClass": "Audio",
-													"sid": 859164450145557,
-													"parameters": {
-														"audio-file": "Arrow Shooting Sound Play at -5 DB",
-														"loop": "not-looping",
-														"volume": "-10",
-														"tag-optional": "\"\""
-													}
-												},
-												{
-													"id": "set-size",
-													"objectClass": "Arrow",
-													"sid": 324275766319960,
-													"parameters": {
-														"width": "32",
-														"height": "6"
-													}
-												},
-												{
-													"id": "set-instvar-value",
-													"objectClass": "Arrow",
-													"sid": 992066794754396,
-													"parameters": {
-														"instance-variable": "EnemiesItCanHit",
-														"value": "2"
-													}
-												},
-												{
-													"id": "set-instvar-value",
-													"objectClass": "Arrow",
-													"sid": 138610615554256,
-													"parameters": {
-														"instance-variable": "AttackPower",
-														"value": "1"
-													}
-												}
-											],
-											"sid": 815233422021537
-										},
-										{
-											"eventType": "block",
-											"conditions": [
-												{
 													"id": "compare-distance-travelled",
 													"objectClass": "Arrow",
 													"sid": 991330279695958,
@@ -1836,6 +1961,85 @@
 												}
 											],
 											"sid": 392067150928105
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "mouse-button-is-down",
+													"objectClass": "Mouse",
+													"sid": 556586284111547,
+													"parameters": {
+														"mouse-button": "left"
+													}
+												}
+											],
+											"actions": [],
+											"sid": 772712061021743,
+											"children": [
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "every-x-seconds",
+															"objectClass": "System",
+															"sid": 910621674614326,
+															"parameters": {
+																"interval-seconds": ".17"
+															}
+														}
+													],
+													"actions": [],
+													"sid": 600109085751370,
+													"children": [
+														{
+															"eventType": "block",
+															"conditions": [],
+															"actions": [
+																{
+																	"id": "spawn-another-object",
+																	"objectClass": "Player",
+																	"sid": 317000010009916,
+																	"parameters": {
+																		"object": "Arrow",
+																		"layer": "0",
+																		"image-point": "0",
+																		"create-hierarchy": false
+																	}
+																},
+																{
+																	"id": "move-to-object",
+																	"objectClass": "Arrow",
+																	"sid": 761634440775819,
+																	"parameters": {
+																		"where": "behind",
+																		"object": "Player"
+																	}
+																},
+																{
+																	"id": "set-size",
+																	"objectClass": "Arrow",
+																	"sid": 518340057149037,
+																	"parameters": {
+																		"width": "32",
+																		"height": "6"
+																	}
+																},
+																{
+																	"id": "set-instvar-value",
+																	"objectClass": "Arrow",
+																	"sid": 362797783568882,
+																	"parameters": {
+																		"instance-variable": "EnemiesItCanHit",
+																		"value": "2"
+																	}
+																}
+															],
+															"sid": 502575256100248
+														}
+													]
+												}
+											]
 										}
 									]
 								},
@@ -1916,252 +2120,268 @@
 											"eventType": "block",
 											"conditions": [
 												{
-													"id": "on-click",
+													"id": "mouse-button-is-down",
 													"objectClass": "Mouse",
-													"sid": 446835215970522,
+													"sid": 665033820140277,
 													"parameters": {
-														"mouse-button": "left",
-														"click-type": "clicked"
+														"mouse-button": "left"
 													}
 												}
 											],
-											"actions": [
-												{
-													"id": "play",
-													"objectClass": "Audio",
-													"sid": 702770884128625,
-													"parameters": {
-														"audio-file": "Arrow Shooting Sound Play at -5 DB",
-														"loop": "not-looping",
-														"volume": "-10",
-														"tag-optional": "\"\""
-													}
-												}
-											],
+											"actions": [],
 											"sid": 937482657049777,
 											"children": [
 												{
 													"eventType": "block",
-													"conditions": [],
-													"actions": [
+													"conditions": [
 														{
-															"id": "spawn-another-object",
-															"objectClass": "Player",
-															"sid": 527389847822286,
+															"id": "every-x-seconds",
+															"objectClass": "System",
+															"sid": 304505397622166,
 															"parameters": {
-																"object": "Arrow",
-																"layer": "0",
-																"image-point": "0",
-																"create-hierarchy": false
-															}
-														},
-														{
-															"id": "move-to-object",
-															"objectClass": "Arrow",
-															"sid": 609315309046187,
-															"parameters": {
-																"where": "behind",
-																"object": "Player"
-															}
-														},
-														{
-															"id": "set-size",
-															"objectClass": "Arrow",
-															"sid": 742328282404533,
-															"parameters": {
-																"width": "32",
-																"height": "6"
-															}
-														},
-														{
-															"id": "set-instvar-value",
-															"objectClass": "Arrow",
-															"sid": 371435754778174,
-															"parameters": {
-																"instance-variable": "EnemiesItCanHit",
-																"value": "2"
-															}
-														},
-														{
-															"id": "set-angle",
-															"objectClass": "Arrow",
-															"sid": 372296924427478,
-															"parameters": {
-																"angle": "Player.Angle+10"
+																"interval-seconds": ".17"
 															}
 														}
 													],
-													"sid": 294746482468655
-												},
-												{
-													"eventType": "block",
-													"conditions": [],
 													"actions": [
 														{
-															"id": "spawn-another-object",
-															"objectClass": "Player",
-															"sid": 972732943012924,
+															"id": "play",
+															"objectClass": "Audio",
+															"sid": 908378304018061,
 															"parameters": {
-																"object": "Arrow",
-																"layer": "0",
-																"image-point": "0",
-																"create-hierarchy": false
-															}
-														},
-														{
-															"id": "move-to-object",
-															"objectClass": "Arrow",
-															"sid": 511764535852259,
-															"parameters": {
-																"where": "behind",
-																"object": "Player"
-															}
-														},
-														{
-															"id": "set-size",
-															"objectClass": "Arrow",
-															"sid": 297545759075047,
-															"parameters": {
-																"width": "32",
-																"height": "6"
-															}
-														},
-														{
-															"id": "set-instvar-value",
-															"objectClass": "Arrow",
-															"sid": 723967251541587,
-															"parameters": {
-																"instance-variable": "EnemiesItCanHit",
-																"value": "2"
+																"audio-file": "Arrow Shooting Sound Play at -5 DB",
+																"loop": "not-looping",
+																"volume": "-10",
+																"tag-optional": "\"\""
 															}
 														}
 													],
-													"sid": 401558928241382,
+													"sid": 659073989930467,
 													"children": [
 														{
 															"eventType": "block",
-															"conditions": [
-																{
-																	"id": "compare-boolean-eventvar",
-																	"objectClass": "System",
-																	"sid": 878309150876012,
-																	"parameters": {
-																		"variable": "Fire"
-																	}
-																}
-															],
+															"conditions": [],
 															"actions": [
 																{
 																	"id": "spawn-another-object",
-																	"objectClass": "Arrow",
-																	"sid": 150007713014225,
+																	"objectClass": "Player",
+																	"sid": 252917044236829,
 																	"parameters": {
-																		"object": "ArrowFireParticles",
+																		"object": "Arrow",
 																		"layer": "0",
-																		"image-point": "1",
+																		"image-point": "0",
 																		"create-hierarchy": false
 																	}
 																},
 																{
-																	"id": "pin-to-object-imagepoint",
-																	"objectClass": "ArrowFireParticles",
-																	"sid": 535039258643761,
-																	"behaviorType": "Pin",
+																	"id": "move-to-object",
+																	"objectClass": "Arrow",
+																	"sid": 497847713176465,
 																	"parameters": {
-																		"pin-to": "Arrow",
-																		"image-point": "1",
-																		"angle": false,
-																		"width-type": "no",
-																		"height-type": "no",
-																		"z": false
+																		"where": "behind",
+																		"object": "Player"
 																	}
 																},
 																{
-																	"id": "set-rate",
-																	"objectClass": "ArrowFireParticles",
-																	"sid": 171591121909393,
+																	"id": "set-size",
+																	"objectClass": "Arrow",
+																	"sid": 158977999163424,
 																	"parameters": {
-																		"rate": "60"
+																		"width": "32",
+																		"height": "6"
 																	}
 																},
 																{
-																	"id": "set-spray-cone",
-																	"objectClass": "ArrowFireParticles",
-																	"sid": 530698338987277,
+																	"id": "set-instvar-value",
+																	"objectClass": "Arrow",
+																	"sid": 420927022434554,
 																	"parameters": {
-																		"spray-cone": "15"
+																		"instance-variable": "EnemiesItCanHit",
+																		"value": "2"
 																	}
 																},
 																{
-																	"id": "wait",
-																	"objectClass": "System",
-																	"sid": 450533767464711,
+																	"id": "set-angle",
+																	"objectClass": "Arrow",
+																	"sid": 679440301298536,
 																	"parameters": {
-																		"seconds": "1"
+																		"angle": "Player.Angle+10"
 																	}
-																},
-																{
-																	"id": "destroy",
-																	"objectClass": "ArrowFireParticles",
-																	"sid": 800214014374189
 																}
 															],
-															"sid": 910100059514594
+															"sid": 513421661495815
+														},
+														{
+															"eventType": "block",
+															"conditions": [],
+															"actions": [
+																{
+																	"id": "spawn-another-object",
+																	"objectClass": "Player",
+																	"sid": 279920682174582,
+																	"parameters": {
+																		"object": "Arrow",
+																		"layer": "0",
+																		"image-point": "0",
+																		"create-hierarchy": false
+																	}
+																},
+																{
+																	"id": "move-to-object",
+																	"objectClass": "Arrow",
+																	"sid": 149145616655222,
+																	"parameters": {
+																		"where": "behind",
+																		"object": "Player"
+																	}
+																},
+																{
+																	"id": "set-size",
+																	"objectClass": "Arrow",
+																	"sid": 462634414059356,
+																	"parameters": {
+																		"width": "32",
+																		"height": "6"
+																	}
+																},
+																{
+																	"id": "set-instvar-value",
+																	"objectClass": "Arrow",
+																	"sid": 195797325309252,
+																	"parameters": {
+																		"instance-variable": "EnemiesItCanHit",
+																		"value": "2"
+																	}
+																}
+															],
+															"sid": 873181317753502,
+															"children": [
+																{
+																	"eventType": "block",
+																	"conditions": [
+																		{
+																			"id": "compare-boolean-eventvar",
+																			"objectClass": "System",
+																			"sid": 824264804501392,
+																			"parameters": {
+																				"variable": "Fire"
+																			}
+																		}
+																	],
+																	"actions": [
+																		{
+																			"id": "spawn-another-object",
+																			"objectClass": "Arrow",
+																			"sid": 248175922983574,
+																			"parameters": {
+																				"object": "ArrowFireParticles",
+																				"layer": "0",
+																				"image-point": "1",
+																				"create-hierarchy": false
+																			}
+																		},
+																		{
+																			"id": "pin-to-object-imagepoint",
+																			"objectClass": "ArrowFireParticles",
+																			"sid": 947273155402457,
+																			"behaviorType": "Pin",
+																			"parameters": {
+																				"pin-to": "Arrow",
+																				"image-point": "1",
+																				"angle": false,
+																				"width-type": "no",
+																				"height-type": "no",
+																				"z": false
+																			}
+																		},
+																		{
+																			"id": "set-rate",
+																			"objectClass": "ArrowFireParticles",
+																			"sid": 465004556024812,
+																			"parameters": {
+																				"rate": "60"
+																			}
+																		},
+																		{
+																			"id": "set-spray-cone",
+																			"objectClass": "ArrowFireParticles",
+																			"sid": 696465174427175,
+																			"parameters": {
+																				"spray-cone": "15"
+																			}
+																		},
+																		{
+																			"id": "wait",
+																			"objectClass": "System",
+																			"sid": 577674121170401,
+																			"parameters": {
+																				"seconds": "1"
+																			}
+																		},
+																		{
+																			"id": "destroy",
+																			"objectClass": "ArrowFireParticles",
+																			"sid": 450732271012642
+																		}
+																	],
+																	"sid": 931895731333861
+																}
+															]
+														},
+														{
+															"eventType": "block",
+															"conditions": [],
+															"actions": [
+																{
+																	"id": "spawn-another-object",
+																	"objectClass": "Player",
+																	"sid": 666242701662197,
+																	"parameters": {
+																		"object": "Arrow",
+																		"layer": "0",
+																		"image-point": "0",
+																		"create-hierarchy": false
+																	}
+																},
+																{
+																	"id": "move-to-object",
+																	"objectClass": "Arrow",
+																	"sid": 382812850042679,
+																	"parameters": {
+																		"where": "behind",
+																		"object": "Player"
+																	}
+																},
+																{
+																	"id": "set-size",
+																	"objectClass": "Arrow",
+																	"sid": 438020956869649,
+																	"parameters": {
+																		"width": "32",
+																		"height": "6"
+																	}
+																},
+																{
+																	"id": "set-instvar-value",
+																	"objectClass": "Arrow",
+																	"sid": 843183748197264,
+																	"parameters": {
+																		"instance-variable": "EnemiesItCanHit",
+																		"value": "2"
+																	}
+																},
+																{
+																	"id": "set-angle",
+																	"objectClass": "Arrow",
+																	"sid": 746323447807444,
+																	"parameters": {
+																		"angle": "Player.Angle-10"
+																	}
+																}
+															],
+															"sid": 873984396626819
 														}
 													]
-												},
-												{
-													"eventType": "block",
-													"conditions": [],
-													"actions": [
-														{
-															"id": "spawn-another-object",
-															"objectClass": "Player",
-															"sid": 153547184522904,
-															"parameters": {
-																"object": "Arrow",
-																"layer": "0",
-																"image-point": "0",
-																"create-hierarchy": false
-															}
-														},
-														{
-															"id": "move-to-object",
-															"objectClass": "Arrow",
-															"sid": 635041450750039,
-															"parameters": {
-																"where": "behind",
-																"object": "Player"
-															}
-														},
-														{
-															"id": "set-size",
-															"objectClass": "Arrow",
-															"sid": 469239923418103,
-															"parameters": {
-																"width": "32",
-																"height": "6"
-															}
-														},
-														{
-															"id": "set-instvar-value",
-															"objectClass": "Arrow",
-															"sid": 332810382607071,
-															"parameters": {
-																"instance-variable": "EnemiesItCanHit",
-																"value": "2"
-															}
-														},
-														{
-															"id": "set-angle",
-															"objectClass": "Arrow",
-															"sid": 219935288514560,
-															"parameters": {
-																"angle": "Player.Angle-10"
-															}
-														}
-													],
-													"sid": 509154750070137
 												}
 											]
 										}
@@ -2217,6 +2437,123 @@
 									"actions": [],
 									"sid": 387962865538062,
 									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "mouse-button-is-down",
+													"objectClass": "Mouse",
+													"sid": 716436361925379,
+													"parameters": {
+														"mouse-button": "left"
+													}
+												},
+												{
+													"id": "mouse-button-is-down",
+													"objectClass": "Mouse",
+													"sid": 694272012139082,
+													"parameters": {
+														"mouse-button": "right"
+													},
+													"isInverted": true
+												}
+											],
+											"actions": [],
+											"sid": 493113769641761,
+											"children": [
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "every-x-seconds",
+															"objectClass": "System",
+															"sid": 231250702220712,
+															"parameters": {
+																"interval-seconds": ".17"
+															}
+														}
+													],
+													"actions": [],
+													"sid": 925201936878936,
+													"children": [
+														{
+															"eventType": "block",
+															"conditions": [],
+															"actions": [
+																{
+																	"id": "spawn-another-object",
+																	"objectClass": "Player",
+																	"sid": 149409988139741,
+																	"parameters": {
+																		"object": "Arrow",
+																		"layer": "0",
+																		"image-point": "0",
+																		"create-hierarchy": false
+																	}
+																},
+																{
+																	"id": "move-to-object",
+																	"objectClass": "Arrow",
+																	"sid": 802097997273706,
+																	"parameters": {
+																		"where": "behind",
+																		"object": "Player"
+																	}
+																},
+																{
+																	"id": "play",
+																	"objectClass": "Audio",
+																	"sid": 773260769078065,
+																	"parameters": {
+																		"audio-file": "Arrow Shooting Sound Play at -5 DB",
+																		"loop": "not-looping",
+																		"volume": "-10",
+																		"tag-optional": "\"\""
+																	}
+																},
+																{
+																	"id": "set-size",
+																	"objectClass": "Arrow",
+																	"sid": 900411272210752,
+																	"parameters": {
+																		"width": "32",
+																		"height": "6"
+																	}
+																},
+																{
+																	"id": "set-instvar-value",
+																	"objectClass": "Arrow",
+																	"sid": 217372769302817,
+																	"parameters": {
+																		"instance-variable": "EnemiesItCanHit",
+																		"value": "2"
+																	}
+																},
+																{
+																	"id": "set-eventvar-value",
+																	"objectClass": "System",
+																	"sid": 404225757252851,
+																	"parameters": {
+																		"variable": "CS_Power",
+																		"value": "0"
+																	}
+																},
+																{
+																	"id": "set-instvar-value",
+																	"objectClass": "Arrow",
+																	"sid": 423592216647564,
+																	"parameters": {
+																		"instance-variable": "AttackPower",
+																		"value": "1"
+																	}
+																}
+															],
+															"sid": 407195224586392
+														}
+													]
+												}
+											]
+										},
 										{
 											"eventType": "block",
 											"conditions": [
@@ -2307,9 +2644,9 @@
 												{
 													"id": "mouse-button-is-down",
 													"objectClass": "Mouse",
-													"sid": 931931421769591,
+													"sid": 836558731826350,
 													"parameters": {
-														"mouse-button": "left"
+														"mouse-button": "right"
 													}
 												}
 											],
@@ -2405,9 +2742,9 @@
 												{
 													"id": "on-button-released",
 													"objectClass": "Mouse",
-													"sid": 774272017791839,
+													"sid": 861944938979565,
 													"parameters": {
-														"mouse-button": "left"
+														"mouse-button": "right"
 													}
 												}
 											],
@@ -2747,9 +3084,9 @@
 												{
 													"id": "mouse-button-is-down",
 													"objectClass": "Mouse",
-													"sid": 213992132634636,
+													"sid": 866482637241535,
 													"parameters": {
-														"mouse-button": "left"
+														"mouse-button": "right"
 													}
 												}
 											],
@@ -2845,9 +3182,9 @@
 												{
 													"id": "on-button-released",
 													"objectClass": "Mouse",
-													"sid": 450885410542699,
+													"sid": 400395584431418,
 													"parameters": {
-														"mouse-button": "left"
+														"mouse-button": "right"
 													}
 												}
 											],
@@ -3024,6 +3361,86 @@
 													]
 												}
 											]
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "mouse-button-is-down",
+													"objectClass": "Mouse",
+													"sid": 478002568702913,
+													"parameters": {
+														"mouse-button": "left"
+													}
+												},
+												{
+													"id": "mouse-button-is-down",
+													"objectClass": "Mouse",
+													"sid": 208311234832529,
+													"parameters": {
+														"mouse-button": "right"
+													},
+													"isInverted": true
+												}
+											],
+											"actions": [],
+											"sid": 287648426097189,
+											"children": [
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "every-x-seconds",
+															"objectClass": "System",
+															"sid": 772318019657082,
+															"parameters": {
+																"interval-seconds": ".17"
+															}
+														}
+													],
+													"actions": [
+														{
+															"id": "spawn-another-object",
+															"objectClass": "Player",
+															"sid": 984406149635203,
+															"parameters": {
+																"object": "Arrow",
+																"layer": "0",
+																"image-point": "0",
+																"create-hierarchy": false
+															}
+														},
+														{
+															"id": "move-to-object",
+															"objectClass": "Arrow",
+															"sid": 905958455515309,
+															"parameters": {
+																"where": "behind",
+																"object": "Player"
+															}
+														},
+														{
+															"id": "set-instvar-value",
+															"objectClass": "Arrow",
+															"sid": 937787179851028,
+															"parameters": {
+																"instance-variable": "AttackPower",
+																"value": "1"
+															}
+														},
+														{
+															"id": "set-size",
+															"objectClass": "Arrow",
+															"sid": 420142669912948,
+															"parameters": {
+																"width": "32",
+																"height": "6"
+															}
+														}
+													],
+													"sid": 988034835877088
+												}
+											]
 										}
 									]
 								},
@@ -3077,6 +3494,245 @@
 									"actions": [],
 									"sid": 761808398994371,
 									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "mouse-button-is-down",
+													"objectClass": "Mouse",
+													"sid": 230084349000017,
+													"parameters": {
+														"mouse-button": "left"
+													}
+												},
+												{
+													"id": "mouse-button-is-down",
+													"objectClass": "Mouse",
+													"sid": 291914702388198,
+													"parameters": {
+														"mouse-button": "right"
+													},
+													"isInverted": true
+												}
+											],
+											"actions": [],
+											"sid": 786142224638151,
+											"children": [
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "every-x-seconds",
+															"objectClass": "System",
+															"sid": 103758252082543,
+															"parameters": {
+																"interval-seconds": ".17"
+															}
+														}
+													],
+													"actions": [],
+													"sid": 146637074262203,
+													"children": [
+														{
+															"eventType": "block",
+															"conditions": [],
+															"actions": [
+																{
+																	"id": "spawn-another-object",
+																	"objectClass": "Player",
+																	"sid": 712434106268061,
+																	"parameters": {
+																		"object": "Arrow",
+																		"layer": "0",
+																		"image-point": "0",
+																		"create-hierarchy": false
+																	}
+																},
+																{
+																	"id": "move-to-object",
+																	"objectClass": "Arrow",
+																	"sid": 107411706487979,
+																	"parameters": {
+																		"where": "behind",
+																		"object": "Player"
+																	}
+																},
+																{
+																	"id": "set-size",
+																	"objectClass": "Arrow",
+																	"sid": 941259430908619,
+																	"parameters": {
+																		"width": "32",
+																		"height": "6"
+																	}
+																}
+															],
+															"sid": 486220187436463,
+															"children": [
+																{
+																	"eventType": "block",
+																	"conditions": [
+																		{
+																			"id": "compare-boolean-eventvar",
+																			"objectClass": "System",
+																			"sid": 512596843040998,
+																			"parameters": {
+																				"variable": "Fire"
+																			}
+																		}
+																	],
+																	"actions": [
+																		{
+																			"id": "spawn-another-object",
+																			"objectClass": "Arrow",
+																			"sid": 383134092036422,
+																			"parameters": {
+																				"object": "ArrowFireParticles",
+																				"layer": "0",
+																				"image-point": "1",
+																				"create-hierarchy": false
+																			}
+																		},
+																		{
+																			"id": "pin-to-object-imagepoint",
+																			"objectClass": "ArrowFireParticles",
+																			"sid": 207952033377004,
+																			"behaviorType": "Pin",
+																			"parameters": {
+																				"pin-to": "Arrow",
+																				"image-point": "1",
+																				"angle": false,
+																				"width-type": "no",
+																				"height-type": "no",
+																				"z": false
+																			}
+																		},
+																		{
+																			"id": "set-rate",
+																			"objectClass": "ArrowFireParticles",
+																			"sid": 571970954645793,
+																			"parameters": {
+																				"rate": "60"
+																			}
+																		},
+																		{
+																			"id": "set-spray-cone",
+																			"objectClass": "ArrowFireParticles",
+																			"sid": 858819753994076,
+																			"parameters": {
+																				"spray-cone": "15"
+																			}
+																		},
+																		{
+																			"id": "wait",
+																			"objectClass": "System",
+																			"sid": 295459544888103,
+																			"parameters": {
+																				"seconds": "1"
+																			}
+																		},
+																		{
+																			"id": "destroy",
+																			"objectClass": "ArrowFireParticles",
+																			"sid": 895400140288957
+																		}
+																	],
+																	"sid": 211762019774950
+																}
+															]
+														},
+														{
+															"eventType": "block",
+															"conditions": [],
+															"actions": [
+																{
+																	"id": "spawn-another-object",
+																	"objectClass": "Player",
+																	"sid": 776883745659131,
+																	"parameters": {
+																		"object": "Arrow",
+																		"layer": "0",
+																		"image-point": "0",
+																		"create-hierarchy": false
+																	}
+																},
+																{
+																	"id": "move-to-object",
+																	"objectClass": "Arrow",
+																	"sid": 387132567155609,
+																	"parameters": {
+																		"where": "behind",
+																		"object": "Player"
+																	}
+																},
+																{
+																	"id": "set-size",
+																	"objectClass": "Arrow",
+																	"sid": 412567567280660,
+																	"parameters": {
+																		"width": "32",
+																		"height": "6"
+																	}
+																},
+																{
+																	"id": "set-angle",
+																	"objectClass": "Arrow",
+																	"sid": 704140107479034,
+																	"parameters": {
+																		"angle": "Player.Angle+10"
+																	}
+																}
+															],
+															"sid": 578317220959666
+														},
+														{
+															"eventType": "block",
+															"conditions": [],
+															"actions": [
+																{
+																	"id": "spawn-another-object",
+																	"objectClass": "Player",
+																	"sid": 652690599189115,
+																	"parameters": {
+																		"object": "Arrow",
+																		"layer": "0",
+																		"image-point": "0",
+																		"create-hierarchy": false
+																	}
+																},
+																{
+																	"id": "move-to-object",
+																	"objectClass": "Arrow",
+																	"sid": 638083554685244,
+																	"parameters": {
+																		"where": "behind",
+																		"object": "Player"
+																	}
+																},
+																{
+																	"id": "set-size",
+																	"objectClass": "Arrow",
+																	"sid": 791242288261006,
+																	"parameters": {
+																		"width": "32",
+																		"height": "6"
+																	}
+																},
+																{
+																	"id": "set-angle",
+																	"objectClass": "Arrow",
+																	"sid": 101149717922906,
+																	"parameters": {
+																		"angle": "Player.Angle-10"
+																	}
+																}
+															],
+															"sid": 337376680464391
+														}
+													]
+												}
+											]
+										},
 										{
 											"eventType": "block",
 											"conditions": [
@@ -3160,9 +3816,9 @@
 												{
 													"id": "mouse-button-is-down",
 													"objectClass": "Mouse",
-													"sid": 273799344104329,
+													"sid": 694771993989602,
 													"parameters": {
-														"mouse-button": "left"
+														"mouse-button": "right"
 													}
 												}
 											],
@@ -3258,9 +3914,9 @@
 												{
 													"id": "on-button-released",
 													"objectClass": "Mouse",
-													"sid": 304210013153046,
+													"sid": 810712622403083,
 													"parameters": {
-														"mouse-button": "left"
+														"mouse-button": "right"
 													}
 												}
 											],
@@ -3314,202 +3970,6 @@
 													"actions": [],
 													"sid": 294351286062576,
 													"children": [
-														{
-															"eventType": "block",
-															"conditions": [],
-															"actions": [
-																{
-																	"id": "spawn-another-object",
-																	"objectClass": "Player",
-																	"sid": 547428138824651,
-																	"parameters": {
-																		"object": "Arrow",
-																		"layer": "0",
-																		"image-point": "0",
-																		"create-hierarchy": false
-																	}
-																},
-																{
-																	"id": "move-to-object",
-																	"objectClass": "Arrow",
-																	"sid": 786158936874038,
-																	"parameters": {
-																		"where": "behind",
-																		"object": "Player"
-																	}
-																},
-																{
-																	"id": "set-size",
-																	"objectClass": "Arrow",
-																	"sid": 434000254013625,
-																	"parameters": {
-																		"width": "32",
-																		"height": "6"
-																	}
-																}
-															],
-															"sid": 788612350567223,
-															"children": [
-																{
-																	"eventType": "block",
-																	"conditions": [
-																		{
-																			"id": "compare-boolean-eventvar",
-																			"objectClass": "System",
-																			"sid": 285532412677147,
-																			"parameters": {
-																				"variable": "Fire"
-																			}
-																		}
-																	],
-																	"actions": [
-																		{
-																			"id": "spawn-another-object",
-																			"objectClass": "Arrow",
-																			"sid": 191057127161521,
-																			"parameters": {
-																				"object": "ArrowFireParticles",
-																				"layer": "0",
-																				"image-point": "1",
-																				"create-hierarchy": false
-																			}
-																		},
-																		{
-																			"id": "pin-to-object-imagepoint",
-																			"objectClass": "ArrowFireParticles",
-																			"sid": 298193044294121,
-																			"behaviorType": "Pin",
-																			"parameters": {
-																				"pin-to": "Arrow",
-																				"image-point": "1",
-																				"angle": false,
-																				"width-type": "no",
-																				"height-type": "no",
-																				"z": false
-																			}
-																		},
-																		{
-																			"id": "set-rate",
-																			"objectClass": "ArrowFireParticles",
-																			"sid": 259998338399879,
-																			"parameters": {
-																				"rate": "60"
-																			}
-																		},
-																		{
-																			"id": "set-spray-cone",
-																			"objectClass": "ArrowFireParticles",
-																			"sid": 665593989737586,
-																			"parameters": {
-																				"spray-cone": "15"
-																			}
-																		},
-																		{
-																			"id": "wait",
-																			"objectClass": "System",
-																			"sid": 856765223007708,
-																			"parameters": {
-																				"seconds": "1"
-																			}
-																		},
-																		{
-																			"id": "destroy",
-																			"objectClass": "ArrowFireParticles",
-																			"sid": 830876310183025
-																		}
-																	],
-																	"sid": 200792470279830
-																}
-															]
-														},
-														{
-															"eventType": "block",
-															"conditions": [],
-															"actions": [
-																{
-																	"id": "spawn-another-object",
-																	"objectClass": "Player",
-																	"sid": 262833109168055,
-																	"parameters": {
-																		"object": "Arrow",
-																		"layer": "0",
-																		"image-point": "0",
-																		"create-hierarchy": false
-																	}
-																},
-																{
-																	"id": "move-to-object",
-																	"objectClass": "Arrow",
-																	"sid": 312624610723948,
-																	"parameters": {
-																		"where": "behind",
-																		"object": "Player"
-																	}
-																},
-																{
-																	"id": "set-size",
-																	"objectClass": "Arrow",
-																	"sid": 754033599259239,
-																	"parameters": {
-																		"width": "32",
-																		"height": "6"
-																	}
-																},
-																{
-																	"id": "set-angle",
-																	"objectClass": "Arrow",
-																	"sid": 731333984101593,
-																	"parameters": {
-																		"angle": "Player.Angle+10"
-																	}
-																}
-															],
-															"sid": 165471104093145
-														},
-														{
-															"eventType": "block",
-															"conditions": [],
-															"actions": [
-																{
-																	"id": "spawn-another-object",
-																	"objectClass": "Player",
-																	"sid": 851165819071644,
-																	"parameters": {
-																		"object": "Arrow",
-																		"layer": "0",
-																		"image-point": "0",
-																		"create-hierarchy": false
-																	}
-																},
-																{
-																	"id": "move-to-object",
-																	"objectClass": "Arrow",
-																	"sid": 407169792496102,
-																	"parameters": {
-																		"where": "behind",
-																		"object": "Player"
-																	}
-																},
-																{
-																	"id": "set-size",
-																	"objectClass": "Arrow",
-																	"sid": 147931805385612,
-																	"parameters": {
-																		"width": "32",
-																		"height": "6"
-																	}
-																},
-																{
-																	"id": "set-angle",
-																	"objectClass": "Arrow",
-																	"sid": 506140338108684,
-																	"parameters": {
-																		"angle": "Player.Angle-10"
-																	}
-																}
-															],
-															"sid": 879983446821368
-														},
 														{
 															"eventType": "block",
 															"conditions": [],
@@ -3901,223 +4361,239 @@
 											"eventType": "block",
 											"conditions": [
 												{
-													"id": "on-click",
+													"id": "mouse-button-is-down",
 													"objectClass": "Mouse",
-													"sid": 778455791553367,
+													"sid": 607794458989736,
 													"parameters": {
-														"mouse-button": "left",
-														"click-type": "clicked"
+														"mouse-button": "left"
 													}
 												}
 											],
-											"actions": [
-												{
-													"id": "play",
-													"objectClass": "Audio",
-													"sid": 322729526309127,
-													"parameters": {
-														"audio-file": "Arrow Shooting Sound Play at -5 DB",
-														"loop": "not-looping",
-														"volume": "-10",
-														"tag-optional": "\"\""
-													}
-												}
-											],
+											"actions": [],
 											"sid": 878629799997797,
 											"children": [
 												{
 													"eventType": "block",
-													"conditions": [],
-													"actions": [
+													"conditions": [
 														{
-															"id": "spawn-another-object",
-															"objectClass": "Player",
-															"sid": 494807480609745,
+															"id": "every-x-seconds",
+															"objectClass": "System",
+															"sid": 708760948362806,
 															"parameters": {
-																"object": "Arrow",
-																"layer": "0",
-																"image-point": "0",
-																"create-hierarchy": false
-															}
-														},
-														{
-															"id": "move-to-object",
-															"objectClass": "Arrow",
-															"sid": 926311874815459,
-															"parameters": {
-																"where": "behind",
-																"object": "Player"
-															}
-														},
-														{
-															"id": "set-size",
-															"objectClass": "Arrow",
-															"sid": 420721284008885,
-															"parameters": {
-																"width": "32",
-																"height": "6"
-															}
-														},
-														{
-															"id": "set-angle",
-															"objectClass": "Arrow",
-															"sid": 211229319285923,
-															"parameters": {
-																"angle": "Player.Angle+10"
+																"interval-seconds": ".17"
 															}
 														}
 													],
-													"sid": 936115090039904
-												},
-												{
-													"eventType": "block",
-													"conditions": [],
 													"actions": [
 														{
-															"id": "spawn-another-object",
-															"objectClass": "Player",
-															"sid": 863196683475561,
+															"id": "play",
+															"objectClass": "Audio",
+															"sid": 294456134635665,
 															"parameters": {
-																"object": "Arrow",
-																"layer": "0",
-																"image-point": "0",
-																"create-hierarchy": false
-															}
-														},
-														{
-															"id": "move-to-object",
-															"objectClass": "Arrow",
-															"sid": 688501473227799,
-															"parameters": {
-																"where": "behind",
-																"object": "Player"
-															}
-														},
-														{
-															"id": "set-size",
-															"objectClass": "Arrow",
-															"sid": 557029355732178,
-															"parameters": {
-																"width": "32",
-																"height": "6"
-															}
-														},
-														{
-															"id": "set-angle",
-															"objectClass": "Arrow",
-															"sid": 990411748888321,
-															"parameters": {
-																"angle": "Player.Angle-10"
+																"audio-file": "Arrow Shooting Sound Play at -5 DB",
+																"loop": "not-looping",
+																"volume": "-10",
+																"tag-optional": "\"\""
 															}
 														}
 													],
-													"sid": 833939088026515
-												},
-												{
-													"eventType": "block",
-													"conditions": [],
-													"actions": [
-														{
-															"id": "spawn-another-object",
-															"objectClass": "Player",
-															"sid": 692663539746099,
-															"parameters": {
-																"object": "Arrow",
-																"layer": "0",
-																"image-point": "0",
-																"create-hierarchy": false
-															}
-														},
-														{
-															"id": "move-to-object",
-															"objectClass": "Arrow",
-															"sid": 191197656992251,
-															"parameters": {
-																"where": "behind",
-																"object": "Player"
-															}
-														},
-														{
-															"id": "set-size",
-															"objectClass": "Arrow",
-															"sid": 623231067397077,
-															"parameters": {
-																"width": "32",
-																"height": "6"
-															}
-														}
-													],
-													"sid": 828818240562125,
+													"sid": 877499310291996,
 													"children": [
 														{
 															"eventType": "block",
-															"conditions": [
-																{
-																	"id": "compare-boolean-eventvar",
-																	"objectClass": "System",
-																	"sid": 966906465874898,
-																	"parameters": {
-																		"variable": "Fire"
-																	}
-																}
-															],
+															"conditions": [],
 															"actions": [
 																{
 																	"id": "spawn-another-object",
-																	"objectClass": "Arrow",
-																	"sid": 520363220638143,
+																	"objectClass": "Player",
+																	"sid": 464175007661384,
 																	"parameters": {
-																		"object": "ArrowFireParticles",
+																		"object": "Arrow",
 																		"layer": "0",
-																		"image-point": "1",
+																		"image-point": "0",
 																		"create-hierarchy": false
 																	}
 																},
 																{
-																	"id": "pin-to-object-imagepoint",
-																	"objectClass": "ArrowFireParticles",
-																	"sid": 961261618698263,
-																	"behaviorType": "Pin",
+																	"id": "move-to-object",
+																	"objectClass": "Arrow",
+																	"sid": 729038775799757,
 																	"parameters": {
-																		"pin-to": "Arrow",
-																		"image-point": "1",
-																		"angle": false,
-																		"width-type": "no",
-																		"height-type": "no",
-																		"z": false
+																		"where": "behind",
+																		"object": "Player"
 																	}
 																},
 																{
-																	"id": "set-rate",
-																	"objectClass": "ArrowFireParticles",
-																	"sid": 260387920249371,
+																	"id": "set-size",
+																	"objectClass": "Arrow",
+																	"sid": 914154903089859,
 																	"parameters": {
-																		"rate": "60"
+																		"width": "32",
+																		"height": "6"
 																	}
 																},
 																{
-																	"id": "set-spray-cone",
-																	"objectClass": "ArrowFireParticles",
-																	"sid": 993676374763402,
+																	"id": "set-angle",
+																	"objectClass": "Arrow",
+																	"sid": 558657400682900,
 																	"parameters": {
-																		"spray-cone": "15"
+																		"angle": "Player.Angle+10"
 																	}
-																},
-																{
-																	"id": "wait",
-																	"objectClass": "System",
-																	"sid": 508188935354244,
-																	"parameters": {
-																		"seconds": "1"
-																	}
-																},
-																{
-																	"id": "destroy",
-																	"objectClass": "ArrowFireParticles",
-																	"sid": 650090214833564
 																}
 															],
-															"sid": 550023088527126
+															"sid": 973775084826999
+														},
+														{
+															"eventType": "block",
+															"conditions": [],
+															"actions": [
+																{
+																	"id": "spawn-another-object",
+																	"objectClass": "Player",
+																	"sid": 300718628989680,
+																	"parameters": {
+																		"object": "Arrow",
+																		"layer": "0",
+																		"image-point": "0",
+																		"create-hierarchy": false
+																	}
+																},
+																{
+																	"id": "move-to-object",
+																	"objectClass": "Arrow",
+																	"sid": 105141592517691,
+																	"parameters": {
+																		"where": "behind",
+																		"object": "Player"
+																	}
+																},
+																{
+																	"id": "set-size",
+																	"objectClass": "Arrow",
+																	"sid": 135740739220202,
+																	"parameters": {
+																		"width": "32",
+																		"height": "6"
+																	}
+																},
+																{
+																	"id": "set-angle",
+																	"objectClass": "Arrow",
+																	"sid": 814538656424984,
+																	"parameters": {
+																		"angle": "Player.Angle-10"
+																	}
+																}
+															],
+															"sid": 647053067057998
+														},
+														{
+															"eventType": "block",
+															"conditions": [],
+															"actions": [
+																{
+																	"id": "spawn-another-object",
+																	"objectClass": "Player",
+																	"sid": 967857055334714,
+																	"parameters": {
+																		"object": "Arrow",
+																		"layer": "0",
+																		"image-point": "0",
+																		"create-hierarchy": false
+																	}
+																},
+																{
+																	"id": "move-to-object",
+																	"objectClass": "Arrow",
+																	"sid": 314270620700672,
+																	"parameters": {
+																		"where": "behind",
+																		"object": "Player"
+																	}
+																},
+																{
+																	"id": "set-size",
+																	"objectClass": "Arrow",
+																	"sid": 662176365624907,
+																	"parameters": {
+																		"width": "32",
+																		"height": "6"
+																	}
+																}
+															],
+															"sid": 949984254355833,
+															"children": [
+																{
+																	"eventType": "block",
+																	"conditions": [
+																		{
+																			"id": "compare-boolean-eventvar",
+																			"objectClass": "System",
+																			"sid": 218213390121120,
+																			"parameters": {
+																				"variable": "Fire"
+																			}
+																		}
+																	],
+																	"actions": [
+																		{
+																			"id": "spawn-another-object",
+																			"objectClass": "Arrow",
+																			"sid": 293249439422775,
+																			"parameters": {
+																				"object": "ArrowFireParticles",
+																				"layer": "0",
+																				"image-point": "1",
+																				"create-hierarchy": false
+																			}
+																		},
+																		{
+																			"id": "pin-to-object-imagepoint",
+																			"objectClass": "ArrowFireParticles",
+																			"sid": 909095724137795,
+																			"behaviorType": "Pin",
+																			"parameters": {
+																				"pin-to": "Arrow",
+																				"image-point": "1",
+																				"angle": false,
+																				"width-type": "no",
+																				"height-type": "no",
+																				"z": false
+																			}
+																		},
+																		{
+																			"id": "set-rate",
+																			"objectClass": "ArrowFireParticles",
+																			"sid": 731863618165816,
+																			"parameters": {
+																				"rate": "60"
+																			}
+																		},
+																		{
+																			"id": "set-spray-cone",
+																			"objectClass": "ArrowFireParticles",
+																			"sid": 451749792228061,
+																			"parameters": {
+																				"spray-cone": "15"
+																			}
+																		},
+																		{
+																			"id": "wait",
+																			"objectClass": "System",
+																			"sid": 671730173048960,
+																			"parameters": {
+																				"seconds": "1"
+																			}
+																		},
+																		{
+																			"id": "destroy",
+																			"objectClass": "ArrowFireParticles",
+																			"sid": 414341788743162
+																		}
+																	],
+																	"sid": 756125968590064
+																}
+															]
 														}
 													]
 												}
@@ -5375,76 +5851,100 @@
 											"eventType": "block",
 											"conditions": [
 												{
-													"id": "on-click",
+													"id": "mouse-button-is-down",
 													"objectClass": "Mouse",
-													"sid": 177048473843248,
+													"sid": 451091028753501,
 													"parameters": {
-														"mouse-button": "left",
-														"click-type": "clicked"
+														"mouse-button": "left"
 													}
 												}
 											],
-											"actions": [
+											"actions": [],
+											"sid": 120661483652987,
+											"children": [
 												{
-													"id": "spawn-another-object",
-													"objectClass": "Player",
-													"sid": 223020684755410,
-													"parameters": {
-														"object": "Arrow",
-														"layer": "0",
-														"image-point": "0",
-														"create-hierarchy": false
-													}
-												},
-												{
-													"id": "move-to-object",
-													"objectClass": "Arrow",
-													"sid": 977590862212058,
-													"parameters": {
-														"where": "behind",
-														"object": "Player"
-													}
-												},
-												{
-													"id": "set-instvar-value",
-													"objectClass": "Arrow",
-													"sid": 526812734104872,
-													"parameters": {
-														"instance-variable": "EnemiesItCanHit",
-														"value": "0"
-													}
-												},
-												{
-													"id": "set-instvar-value",
-													"objectClass": "Arrow",
-													"sid": 519266488277848,
-													"parameters": {
-														"instance-variable": "AttackPower",
-														"value": "1"
-													}
-												},
-												{
-													"id": "set-size",
-													"objectClass": "Arrow",
-													"sid": 354081412133390,
-													"parameters": {
-														"width": "32",
-														"height": "6"
-													}
-												},
-												{
-													"id": "play",
-													"objectClass": "Audio",
-													"sid": 899829521976877,
-													"parameters": {
-														"audio-file": "Arrow Shooting Sound Play at -5 DB",
-														"loop": "not-looping",
-														"volume": "-10",
-														"tag-optional": "\"\""
-													}
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "every-x-seconds",
+															"objectClass": "System",
+															"sid": 939273502540387,
+															"parameters": {
+																"interval-seconds": ".17"
+															}
+														}
+													],
+													"actions": [],
+													"sid": 895645177882038,
+													"children": [
+														{
+															"eventType": "block",
+															"conditions": [],
+															"actions": [
+																{
+																	"id": "spawn-another-object",
+																	"objectClass": "Player",
+																	"sid": 906141218529724,
+																	"parameters": {
+																		"object": "Arrow",
+																		"layer": "0",
+																		"image-point": "0",
+																		"create-hierarchy": false
+																	}
+																},
+																{
+																	"id": "move-to-object",
+																	"objectClass": "Arrow",
+																	"sid": 209261946296838,
+																	"parameters": {
+																		"where": "behind",
+																		"object": "Player"
+																	}
+																},
+																{
+																	"id": "set-instvar-value",
+																	"objectClass": "Arrow",
+																	"sid": 807017810553091,
+																	"parameters": {
+																		"instance-variable": "EnemiesItCanHit",
+																		"value": "0"
+																	}
+																},
+																{
+																	"id": "set-instvar-value",
+																	"objectClass": "Arrow",
+																	"sid": 855764460867055,
+																	"parameters": {
+																		"instance-variable": "AttackPower",
+																		"value": "1"
+																	}
+																},
+																{
+																	"id": "set-size",
+																	"objectClass": "Arrow",
+																	"sid": 743451263098933,
+																	"parameters": {
+																		"width": "32",
+																		"height": "6"
+																	}
+																},
+																{
+																	"id": "play",
+																	"objectClass": "Audio",
+																	"sid": 321486396250116,
+																	"parameters": {
+																		"audio-file": "Arrow Shooting Sound Play at -5 DB",
+																		"loop": "not-looping",
+																		"volume": "-10",
+																		"tag-optional": "\"\""
+																	}
+																}
+															],
+															"sid": 128729877549869
+														}
+													]
 												}
-											],
-											"sid": 120661483652987
+											]
 										},
 										{
 											"eventType": "block",
@@ -5517,91 +6017,6 @@
 			"description": "",
 			"isActiveOnStart": true,
 			"children": [
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-start-of-layout",
-							"objectClass": "System",
-							"sid": 856342352572987
-						}
-					],
-					"actions": [
-						{
-							"id": "set-instvar-value",
-							"objectClass": "Enemies",
-							"sid": 261275117913284,
-							"parameters": {
-								"instance-variable": "StartHealth",
-								"value": "Enemies.Health"
-							}
-						},
-						{
-							"id": "set-instvar-value",
-							"objectClass": "Enemies",
-							"sid": 407292175319262,
-							"parameters": {
-								"instance-variable": "StartPosX",
-								"value": "Enemies.X"
-							}
-						},
-						{
-							"id": "set-instvar-value",
-							"objectClass": "Enemies",
-							"sid": 260713190753313,
-							"parameters": {
-								"instance-variable": "StartPosY",
-								"value": "Enemies.Y"
-							}
-						},
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 263556540546149,
-							"parameters": {
-								"variable": "EnemyCount",
-								"value": "Enemies.Count"
-							}
-						},
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 226476162142519,
-							"parameters": {
-								"variable": "BobPresent",
-								"value": "Bob.Count"
-							}
-						},
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 440109360369050,
-							"parameters": {
-								"variable": "OrcBossPresent",
-								"value": "OrcBoss.Count"
-							}
-						},
-						{
-							"id": "set-boolean-eventvar",
-							"objectClass": "System",
-							"sid": 821713335394498,
-							"parameters": {
-								"variable": "isPaused",
-								"value": "false"
-							}
-						},
-						{
-							"id": "set-boolean-eventvar",
-							"objectClass": "System",
-							"sid": 314194702693520,
-							"parameters": {
-								"variable": "DashOnCD",
-								"value": "false"
-							}
-						}
-					],
-					"sid": 382028632497628
-				},
 				{
 					"eventType": "block",
 					"conditions": [
@@ -8955,98 +9370,6 @@
 				}
 			],
 			"sid": 581517714183928
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-start-of-layout",
-					"objectClass": "System",
-					"sid": 777043671989064
-				}
-			],
-			"actions": [
-				{
-					"id": "set-animation",
-					"objectClass": "Arena1_Fountain",
-					"sid": 197290477812514,
-					"parameters": {
-						"animation": "\"Fountain-On\"",
-						"from": "beginning"
-					}
-				},
-				{
-					"id": "set-animation",
-					"objectClass": "Banner",
-					"sid": 410785445253573,
-					"parameters": {
-						"animation": "\"Banner-On\"",
-						"from": "beginning"
-					}
-				},
-				{
-					"id": "set-animation",
-					"objectClass": "Arena1_Torch",
-					"sid": 641510394746846,
-					"parameters": {
-						"animation": "\"Torch-On\"",
-						"from": "beginning"
-					}
-				},
-				{
-					"id": "set-animation",
-					"objectClass": "Acid",
-					"sid": 154957735935643,
-					"parameters": {
-						"animation": "\"On\"",
-						"from": "beginning"
-					}
-				},
-				{
-					"id": "pin-to-object-properties",
-					"objectClass": "HP_Hearts",
-					"sid": 992990953149084,
-					"behaviorType": "Pin",
-					"parameters": {
-						"pin-to": "HPBarSetter",
-						"x": true,
-						"y": true,
-						"angle": false,
-						"width-type": "no",
-						"height-type": "no",
-						"z": false
-					}
-				}
-			],
-			"sid": 932583215756547
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "every-tick",
-					"objectClass": "System",
-					"sid": 650012233552012
-				}
-			],
-			"actions": [
-				{
-					"id": "move-to-top",
-					"objectClass": "Arrow",
-					"sid": 682120963250575
-				},
-				{
-					"id": "move-to-top",
-					"objectClass": "Player",
-					"sid": 110104873043992
-				},
-				{
-					"id": "move-to-top",
-					"objectClass": "EnemyArrows",
-					"sid": 477552424521509
-				}
-			],
-			"sid": 582577069196132
 		}
 	],
 	"sid": 572159754785977

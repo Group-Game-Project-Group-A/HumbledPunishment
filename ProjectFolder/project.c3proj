@@ -178,13 +178,8 @@
 			"WarningNoCards",
 			"Sprite2",
 			"DialogButtonNext",
-			"WinText",
-			"WinBackground",
-			"WinButton",
 			"SpriteFont",
 			"Audio",
-			"LoseText",
-			"LoseButton",
 			"MenuBackgrounds",
 			"ZapRadius",
 			"Wall_Bar",
@@ -321,7 +316,14 @@
 				"items": [
 					"Dmg_Text_BG",
 					"Dmg_Text",
-					"HP_Hearts"
+					"HP_Hearts",
+					"LoseText",
+					"WinBackground",
+					"WinText",
+					"WinButton",
+					"LoseButton",
+					"PauseText",
+					"ResumeButton"
 				],
 				"subfolders": [],
 				"name": "UI"
@@ -476,17 +478,51 @@
 		"items": [],
 		"subfolders": [
 			{
-				"items": [
-					"Lobby_1_2",
-					"Lobby_1_3",
-					"Lobby_1_4",
-					"Lobby_2_1",
-					"Lobby_2_2",
-					"Lobby_2_3",
-					"Menu_Survival_Controls"
+				"items": [],
+				"subfolders": [
+					{
+						"items": [
+							"Lobby_1_2",
+							"Lobby_1_3",
+							"Lobby_1_4",
+							"Lobby_2_1",
+							"Lobby_2_2",
+							"Lobby_2_3"
+						],
+						"subfolders": [],
+						"name": "Lobbies"
+					},
+					{
+						"items": [
+							"Menu_Survival_Controls"
+						],
+						"subfolders": [],
+						"name": "Menus"
+					},
+					{
+						"items": [],
+						"subfolders": [],
+						"name": "Arenas"
+					},
+					{
+						"items": [
+							"Story_1_1",
+							"Story_1_2",
+							"Story_1_3",
+							"Story_1_4",
+							"Story_1_5",
+							"Story_2_1",
+							"Story_2_2",
+							"Story_2_3",
+							"Story_2_4",
+							"Story_2_5",
+							"Story_3_1"
+						],
+						"subfolders": [],
+						"name": "Story"
+					}
 				],
-				"subfolders": [],
-				"name": "Old Lobbies"
+				"name": "OldStuff"
 			},
 			{
 				"items": [
@@ -509,27 +545,16 @@
 			},
 			{
 				"items": [
-					"Story_1_1",
 					"Lobby_Arena_1",
 					"Arena_1_1",
-					"Story_1_2",
 					"Arena_1_2",
-					"Story_1_3",
 					"Arena_1_3",
-					"Story_1_4",
 					"Arena_1_4",
-					"Story_1_5",
 					"Lobby_Arena_22",
-					"Story_2_1",
 					"Arena_2_1",
-					"Story_2_2",
 					"Arena_2_2",
-					"Story_2_3",
 					"Arena_2_3",
-					"Story_2_4",
-					"Arena_2_4",
-					"Story_2_5",
-					"Story_3_1"
+					"Arena_2_4"
 				],
 				"subfolders": [],
 				"name": "Adventure Mode"
