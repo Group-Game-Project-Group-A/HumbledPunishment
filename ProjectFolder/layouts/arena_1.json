@@ -1,5 +1,5 @@
 {
-	"name": "Arena_1_1",
+	"name": "Arena_1",
 	"layers": [
 		{
 			"name": "Layer 0",
@@ -43486,7 +43486,7 @@
 						"LineOfSight": {
 							"properties": {
 								"obstacles": "custom",
-								"range": 300,
+								"range": 0,
 								"cone-of-view": 360,
 								"use-collision-cells": true
 							}
@@ -43865,7 +43865,7 @@
 						"LineOfSight": {
 							"properties": {
 								"obstacles": "custom",
-								"range": 300,
+								"range": 0,
 								"cone-of-view": 360,
 								"use-collision-cells": true
 							}
@@ -43944,7 +43944,7 @@
 						"LineOfSight": {
 							"properties": {
 								"obstacles": "custom",
-								"range": 300,
+								"range": 0,
 								"cone-of-view": 360,
 								"use-collision-cells": true
 							}
@@ -44023,7 +44023,7 @@
 						"LineOfSight": {
 							"properties": {
 								"obstacles": "custom",
-								"range": 300,
+								"range": 0,
 								"cone-of-view": 360,
 								"use-collision-cells": true
 							}
@@ -44102,7 +44102,7 @@
 						"LineOfSight": {
 							"properties": {
 								"obstacles": "custom",
-								"range": 300,
+								"range": 0,
 								"cone-of-view": 360,
 								"use-collision-cells": true
 							}
@@ -45457,8 +45457,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 3728,
-						"y": 1444,
+						"x": 3713,
+						"y": 1400,
 						"width": 32,
 						"height": 28,
 						"originX": 0.5,
@@ -46772,6 +46772,161 @@
 						"height": 155.3538336818332,
 						"originX": 0.5,
 						"originY": 0.524390243902439,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "HealthPickups",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 11162,
+					"instanceVariables": {
+						"HealthBoost": 1
+					},
+					"behaviors": {},
+					"world": {
+						"x": 1270,
+						"y": 1773,
+						"width": 32,
+						"height": 32,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "HealthPickups",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 11163,
+					"instanceVariables": {
+						"HealthBoost": 1
+					},
+					"behaviors": {},
+					"world": {
+						"x": 1561,
+						"y": 379,
+						"width": 32,
+						"height": 32,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "HealthPickups",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 11164,
+					"instanceVariables": {
+						"HealthBoost": 1
+					},
+					"behaviors": {},
+					"world": {
+						"x": 2352,
+						"y": 1129,
+						"width": 32,
+						"height": 32,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "HealthPickups",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 11165,
+					"instanceVariables": {
+						"HealthBoost": 1
+					},
+					"behaviors": {},
+					"world": {
+						"x": 3717,
+						"y": 930,
+						"width": 32,
+						"height": 32,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "HealthPickups",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 11166,
+					"instanceVariables": {
+						"HealthBoost": 1
+					},
+					"behaviors": {},
+					"world": {
+						"x": 3716.09809328372,
+						"y": 1460.4807770813622,
+						"width": 32,
+						"height": 32,
+						"originX": 0.5,
+						"originY": 0.5,
 						"color": [
 							1,
 							1,

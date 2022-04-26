@@ -524,14 +524,6 @@
 						"comparison": 0,
 						"number": "4"
 					}
-				},
-				{
-					"id": "is-overlapping-another-object",
-					"objectClass": "Player",
-					"sid": 250324563091132,
-					"parameters": {
-						"object": "Spikes"
-					}
 				}
 			],
 			"actions": [],
@@ -541,88 +533,209 @@
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "trigger-once-while-true",
-							"objectClass": "System",
-							"sid": 457392017827747
-						}
-					],
-					"actions": [
-						{
-							"id": "subtract-from-eventvar",
-							"objectClass": "System",
-							"sid": 255189796687733,
-							"parameters": {
-								"variable": "PlayerHealth",
-								"value": "2"
-							}
-						},
-						{
-							"id": "spawn-another-object",
+							"id": "is-overlapping-another-object",
 							"objectClass": "Player",
-							"sid": 568308796890358,
+							"sid": 485647690342558,
 							"parameters": {
-								"object": "Dmg_Text",
-								"layer": "0",
-								"image-point": "0",
-								"create-hierarchy": false
-							}
-						},
-						{
-							"id": "spawn-another-object",
-							"objectClass": "Player",
-							"sid": 663031607935369,
-							"parameters": {
-								"object": "Dmg_Text_BG",
-								"layer": "0",
-								"image-point": "0",
-								"create-hierarchy": false
-							}
-						},
-						{
-							"id": "move-to-object",
-							"objectClass": "Dmg_Text",
-							"sid": 917598378392104,
-							"parameters": {
-								"where": "in-front",
-								"object": "Player"
-							}
-						},
-						{
-							"id": "move-to-object",
-							"objectClass": "Dmg_Text_BG",
-							"sid": 548001615319337,
-							"parameters": {
-								"where": "in-front",
-								"object": "Player"
-							}
-						},
-						{
-							"id": "set-text",
-							"objectClass": "Dmg_Text",
-							"sid": 823305997366730,
-							"parameters": {
-								"text": "2"
-							}
-						},
-						{
-							"id": "set-text",
-							"objectClass": "Dmg_Text_BG",
-							"sid": 468344434743761,
-							"parameters": {
-								"text": "2"
-							}
-						},
-						{
-							"id": "set-angle-of-motion",
-							"objectClass": "Dmg_Text",
-							"sid": 167559859644877,
-							"behaviorType": "Bullet",
-							"parameters": {
-								"angle": "Dmg_Text.Bullet.AngleOfMotion + random(-15, 15)"
+								"object": "Spikes"
 							}
 						}
 					],
-					"sid": 897104946506052
+					"actions": [],
+					"sid": 513688000083348,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "trigger-once-while-true",
+									"objectClass": "System",
+									"sid": 847800396224283
+								}
+							],
+							"actions": [
+								{
+									"id": "subtract-from-eventvar",
+									"objectClass": "System",
+									"sid": 929939481811881,
+									"parameters": {
+										"variable": "PlayerHealth",
+										"value": "2"
+									}
+								},
+								{
+									"id": "spawn-another-object",
+									"objectClass": "Player",
+									"sid": 533343994291203,
+									"parameters": {
+										"object": "Dmg_Text",
+										"layer": "0",
+										"image-point": "0",
+										"create-hierarchy": false
+									}
+								},
+								{
+									"id": "spawn-another-object",
+									"objectClass": "Player",
+									"sid": 233548885294478,
+									"parameters": {
+										"object": "Dmg_Text_BG",
+										"layer": "0",
+										"image-point": "0",
+										"create-hierarchy": false
+									}
+								},
+								{
+									"id": "move-to-object",
+									"objectClass": "Dmg_Text",
+									"sid": 495000887977339,
+									"parameters": {
+										"where": "in-front",
+										"object": "Player"
+									}
+								},
+								{
+									"id": "move-to-object",
+									"objectClass": "Dmg_Text_BG",
+									"sid": 249147899298472,
+									"parameters": {
+										"where": "in-front",
+										"object": "Player"
+									}
+								},
+								{
+									"id": "set-text",
+									"objectClass": "Dmg_Text",
+									"sid": 558443688073803,
+									"parameters": {
+										"text": "2"
+									}
+								},
+								{
+									"id": "set-text",
+									"objectClass": "Dmg_Text_BG",
+									"sid": 251508954811549,
+									"parameters": {
+										"text": "2"
+									}
+								},
+								{
+									"id": "set-angle-of-motion",
+									"objectClass": "Dmg_Text",
+									"sid": 345199628065725,
+									"behaviorType": "Bullet",
+									"parameters": {
+										"angle": "Dmg_Text.Bullet.AngleOfMotion + random(-15, 15)"
+									}
+								}
+							],
+							"sid": 487428322726455
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Enemies",
+							"sid": 199117060788985,
+							"parameters": {
+								"object": "Spikes"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 899486173830075,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "trigger-once-while-true",
+									"objectClass": "System",
+									"sid": 560317587108646
+								}
+							],
+							"actions": [
+								{
+									"id": "subtract-from-instvar",
+									"objectClass": "Enemies",
+									"sid": 260719735391551,
+									"parameters": {
+										"instance-variable": "Health",
+										"value": "2"
+									}
+								},
+								{
+									"id": "spawn-another-object",
+									"objectClass": "Enemies",
+									"sid": 590043196936209,
+									"parameters": {
+										"object": "Dmg_Text",
+										"layer": "0",
+										"image-point": "0",
+										"create-hierarchy": false
+									}
+								},
+								{
+									"id": "spawn-another-object",
+									"objectClass": "Enemies",
+									"sid": 463963617681452,
+									"parameters": {
+										"object": "Dmg_Text_BG",
+										"layer": "0",
+										"image-point": "0",
+										"create-hierarchy": false
+									}
+								},
+								{
+									"id": "move-to-object",
+									"objectClass": "Dmg_Text",
+									"sid": 751934334883259,
+									"parameters": {
+										"where": "in-front",
+										"object": "Enemies"
+									}
+								},
+								{
+									"id": "move-to-object",
+									"objectClass": "Dmg_Text_BG",
+									"sid": 373537000799492,
+									"parameters": {
+										"where": "in-front",
+										"object": "Enemies"
+									}
+								},
+								{
+									"id": "set-text",
+									"objectClass": "Dmg_Text",
+									"sid": 802117405264163,
+									"parameters": {
+										"text": "2"
+									}
+								},
+								{
+									"id": "set-text",
+									"objectClass": "Dmg_Text_BG",
+									"sid": 703321400691900,
+									"parameters": {
+										"text": "2"
+									}
+								},
+								{
+									"id": "set-angle-of-motion",
+									"objectClass": "Dmg_Text",
+									"sid": 472745216689058,
+									"behaviorType": "Bullet",
+									"parameters": {
+										"angle": "Dmg_Text.Bullet.AngleOfMotion + random(-15, 15)"
+									}
+								}
+							],
+							"sid": 484879707003308
+						}
+					]
 				}
 			]
 		},

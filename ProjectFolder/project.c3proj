@@ -501,7 +501,14 @@
 						"name": "Menus"
 					},
 					{
-						"items": [],
+						"items": [
+							"Arena_1_2",
+							"Arena_1_3",
+							"Arena_1_4",
+							"Arena_2_2",
+							"Arena_2_3",
+							"Arena_2_4"
+						],
 						"subfolders": [],
 						"name": "Arenas"
 					},
@@ -547,15 +554,9 @@
 			{
 				"items": [
 					"Lobby_Arena_1",
-					"Arena_1_1",
-					"Arena_1_2",
-					"Arena_1_3",
-					"Arena_1_4",
-					"Lobby_Arena_22",
-					"Arena_2_1",
-					"Arena_2_2",
-					"Arena_2_3",
-					"Arena_2_4"
+					"Arena_1",
+					"Lobby_Arena_2",
+					"Arena_2"
 				],
 				"subfolders": [],
 				"name": "Adventure Mode"
