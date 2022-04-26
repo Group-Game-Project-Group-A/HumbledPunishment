@@ -1,0 +1,247 @@
+{
+	"name": "ES_AM_Arena2",
+	"events": [
+		{
+			"eventType": "include",
+			"includeSheet": "ES_NormalMode"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 228980003990346,
+					"parameters": {
+						"variable": "EnemyCount",
+						"comparison": 3,
+						"value": "3"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 776765461943022,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "DoorBlock",
+							"sid": 673989548740216,
+							"parameters": {
+								"instance-variable": "Door",
+								"comparison": 0,
+								"value": "5"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-collisions-enabled",
+							"objectClass": "DoorBlock",
+							"sid": 346623724211332,
+							"parameters": {
+								"collisions": "disabled"
+							}
+						}
+					],
+					"sid": 387329893024181
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "DoorWalls",
+							"sid": 912739395860776,
+							"parameters": {
+								"instance-variable": "Door",
+								"comparison": 0,
+								"value": "5"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "DoorWalls",
+							"sid": 501755332635721,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-collisions-enabled",
+							"objectClass": "DoorWalls",
+							"sid": 215462985100034,
+							"parameters": {
+								"collisions": "disabled"
+							}
+						}
+					],
+					"sid": 968038875666634
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 360337779809930,
+					"parameters": {
+						"variable": "EnemyCount",
+						"comparison": 3,
+						"value": "13"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 246853239508126,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "DoorBlock",
+							"sid": 624813018421853,
+							"parameters": {
+								"instance-variable": "Door",
+								"comparison": 0,
+								"value": "3"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-collisions-enabled",
+							"objectClass": "DoorBlock",
+							"sid": 275398060682319,
+							"parameters": {
+								"collisions": "disabled"
+							}
+						}
+					],
+					"sid": 894910409424591
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "DoorWalls",
+							"sid": 404611415363081,
+							"parameters": {
+								"instance-variable": "Door",
+								"comparison": 0,
+								"value": "3"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "DoorWalls",
+							"sid": 978872379126122,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-collisions-enabled",
+							"objectClass": "DoorWalls",
+							"sid": 277910344585348,
+							"parameters": {
+								"collisions": "disabled"
+							}
+						}
+					],
+					"sid": 211233320785044
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 354197783131102,
+					"parameters": {
+						"variable": "EnemyCount",
+						"comparison": 3,
+						"value": "22"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 914070803470390,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "DoorBlock",
+							"sid": 901770843170178,
+							"parameters": {
+								"instance-variable": "Door",
+								"comparison": 0,
+								"value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-collisions-enabled",
+							"objectClass": "DoorBlock",
+							"sid": 571703268515836,
+							"parameters": {
+								"collisions": "disabled"
+							}
+						}
+					],
+					"sid": 168024772372043
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "DoorWalls",
+							"sid": 160837536412959,
+							"parameters": {
+								"instance-variable": "Door",
+								"comparison": 0,
+								"value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "DoorWalls",
+							"sid": 866239802236827,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-collisions-enabled",
+							"objectClass": "DoorWalls",
+							"sid": 692599078074622,
+							"parameters": {
+								"collisions": "disabled"
+							}
+						}
+					],
+					"sid": 866099692492006
+				}
+			]
+		}
+	],
+	"sid": 340517136722667
+}

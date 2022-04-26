@@ -978,78 +978,106 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "compare-eventvar",
-					"objectClass": "System",
-					"sid": 264442416614156,
+					"id": "is-overlapping-another-object",
+					"objectClass": "Player",
+					"sid": 840829985168666,
 					"parameters": {
-						"variable": "EnemyCount",
-						"comparison": 3,
-						"value": "1"
+						"object": "Acid"
 					}
 				}
 			],
 			"actions": [],
-			"sid": 741864926239777,
+			"sid": 704038101095206,
 			"children": [
 				{
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "compare-instance-variable",
-							"objectClass": "DoorBlock",
-							"sid": 149023617423365,
+							"id": "every-x-seconds",
+							"objectClass": "System",
+							"sid": 638436880494179,
 							"parameters": {
-								"instance-variable": "Door",
-								"comparison": 0,
-								"value": "5"
+								"interval-seconds": ".5"
 							}
 						}
 					],
 					"actions": [
 						{
-							"id": "set-collisions-enabled",
-							"objectClass": "DoorBlock",
-							"sid": 488109652772032,
+							"id": "subtract-from-eventvar",
+							"objectClass": "System",
+							"sid": 776841153778672,
 							"parameters": {
-								"collisions": "disabled"
-							}
-						}
-					],
-					"sid": 406391685766187
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-instance-variable",
-							"objectClass": "DoorWalls",
-							"sid": 593574258183696,
-							"parameters": {
-								"instance-variable": "Door",
-								"comparison": 0,
-								"value": "5"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-visible",
-							"objectClass": "DoorWalls",
-							"sid": 833881073510697,
-							"parameters": {
-								"visibility": "invisible"
+								"variable": "PlayerHealth",
+								"value": "1"
 							}
 						},
 						{
-							"id": "set-collisions-enabled",
-							"objectClass": "DoorWalls",
-							"sid": 233640144450335,
+							"id": "spawn-another-object",
+							"objectClass": "Player",
+							"sid": 453743905307975,
 							"parameters": {
-								"collisions": "disabled"
+								"object": "Dmg_Text",
+								"layer": "0",
+								"image-point": "0",
+								"create-hierarchy": false
+							}
+						},
+						{
+							"id": "spawn-another-object",
+							"objectClass": "Player",
+							"sid": 633507927460409,
+							"parameters": {
+								"object": "Dmg_Text_BG",
+								"layer": "0",
+								"image-point": "0",
+								"create-hierarchy": false
+							}
+						},
+						{
+							"id": "move-to-object",
+							"objectClass": "Dmg_Text",
+							"sid": 153178503191602,
+							"parameters": {
+								"where": "in-front",
+								"object": "Player"
+							}
+						},
+						{
+							"id": "move-to-object",
+							"objectClass": "Dmg_Text_BG",
+							"sid": 714575499327809,
+							"parameters": {
+								"where": "in-front",
+								"object": "Player"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "Dmg_Text",
+							"sid": 929371504835566,
+							"parameters": {
+								"text": "1"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "Dmg_Text_BG",
+							"sid": 367877306991546,
+							"parameters": {
+								"text": "1"
+							}
+						},
+						{
+							"id": "set-angle-of-motion",
+							"objectClass": "Dmg_Text",
+							"sid": 969242340899923,
+							"behaviorType": "Bullet",
+							"parameters": {
+								"angle": "Dmg_Text.Bullet.AngleOfMotion + random(-15, 15)"
 							}
 						}
 					],
-					"sid": 122446588102995
+					"sid": 440663241325153
 				}
 			]
 		},
@@ -1057,157 +1085,106 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "compare-eventvar",
-					"objectClass": "System",
-					"sid": 588846465819764,
+					"id": "is-overlapping-another-object",
+					"objectClass": "Enemies",
+					"sid": 749891136055570,
 					"parameters": {
-						"variable": "EnemyCount",
-						"comparison": 3,
-						"value": "11"
+						"object": "Acid"
 					}
 				}
 			],
 			"actions": [],
-			"sid": 161009810685882,
+			"sid": 291677376670313,
 			"children": [
 				{
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "compare-instance-variable",
-							"objectClass": "DoorBlock",
-							"sid": 888778361992143,
+							"id": "every-x-seconds",
+							"objectClass": "System",
+							"sid": 201591255593499,
 							"parameters": {
-								"instance-variable": "Door",
-								"comparison": 0,
-								"value": "3"
+								"interval-seconds": ".5"
 							}
 						}
 					],
 					"actions": [
 						{
-							"id": "set-collisions-enabled",
-							"objectClass": "DoorBlock",
-							"sid": 315360787969672,
+							"id": "subtract-from-instvar",
+							"objectClass": "Enemies",
+							"sid": 266122401804672,
 							"parameters": {
-								"collisions": "disabled"
-							}
-						}
-					],
-					"sid": 991858631834969
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-instance-variable",
-							"objectClass": "DoorWalls",
-							"sid": 774634544792195,
-							"parameters": {
-								"instance-variable": "Door",
-								"comparison": 0,
-								"value": "3"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-visible",
-							"objectClass": "DoorWalls",
-							"sid": 391712554788591,
-							"parameters": {
-								"visibility": "invisible"
+								"instance-variable": "Health",
+								"value": "1"
 							}
 						},
 						{
-							"id": "set-collisions-enabled",
-							"objectClass": "DoorWalls",
-							"sid": 199170767970379,
+							"id": "spawn-another-object",
+							"objectClass": "Enemies",
+							"sid": 735981227813742,
 							"parameters": {
-								"collisions": "disabled"
-							}
-						}
-					],
-					"sid": 713265925282751
-				}
-			]
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "compare-eventvar",
-					"objectClass": "System",
-					"sid": 925660607149046,
-					"parameters": {
-						"variable": "EnemyCount",
-						"comparison": 3,
-						"value": "22"
-					}
-				}
-			],
-			"actions": [],
-			"sid": 251973676546942,
-			"children": [
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-instance-variable",
-							"objectClass": "DoorBlock",
-							"sid": 212202122381654,
-							"parameters": {
-								"instance-variable": "Door",
-								"comparison": 0,
-								"value": "1"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-collisions-enabled",
-							"objectClass": "DoorBlock",
-							"sid": 392962434080718,
-							"parameters": {
-								"collisions": "disabled"
-							}
-						}
-					],
-					"sid": 457616503204211
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-instance-variable",
-							"objectClass": "DoorWalls",
-							"sid": 163409795359983,
-							"parameters": {
-								"instance-variable": "Door",
-								"comparison": 0,
-								"value": "1"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-visible",
-							"objectClass": "DoorWalls",
-							"sid": 985848825490525,
-							"parameters": {
-								"visibility": "invisible"
+								"object": "Dmg_Text",
+								"layer": "0",
+								"image-point": "0",
+								"create-hierarchy": false
 							}
 						},
 						{
-							"id": "set-collisions-enabled",
-							"objectClass": "DoorWalls",
-							"sid": 349784962691677,
+							"id": "spawn-another-object",
+							"objectClass": "Enemies",
+							"sid": 346447474322803,
 							"parameters": {
-								"collisions": "disabled"
+								"object": "Dmg_Text_BG",
+								"layer": "0",
+								"image-point": "0",
+								"create-hierarchy": false
+							}
+						},
+						{
+							"id": "move-to-object",
+							"objectClass": "Dmg_Text",
+							"sid": 687356474464109,
+							"parameters": {
+								"where": "in-front",
+								"object": "Enemies"
+							}
+						},
+						{
+							"id": "move-to-object",
+							"objectClass": "Dmg_Text_BG",
+							"sid": 195922745083536,
+							"parameters": {
+								"where": "in-front",
+								"object": "Enemies"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "Dmg_Text",
+							"sid": 314725832471996,
+							"parameters": {
+								"text": "1"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "Dmg_Text_BG",
+							"sid": 134661050135603,
+							"parameters": {
+								"text": "1"
+							}
+						},
+						{
+							"id": "set-angle-of-motion",
+							"objectClass": "Dmg_Text",
+							"sid": 275655036663343,
+							"behaviorType": "Bullet",
+							"parameters": {
+								"angle": "Dmg_Text.Bullet.AngleOfMotion + random(-15, 15)"
 							}
 						}
 					],
-					"sid": 666960472192781
+					"sid": 179070985092782
 				}
 			]
 		}
