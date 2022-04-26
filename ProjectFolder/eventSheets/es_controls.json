@@ -110,46 +110,6 @@
 				}
 			],
 			"sid": 386972767845438
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-collision-with-another-object",
-					"objectClass": "Player",
-					"sid": 455564357139035,
-					"parameters": {
-						"object": "DoorCloser"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-visible",
-					"objectClass": "DoorWalls",
-					"sid": 133734348062166,
-					"parameters": {
-						"visibility": "visible"
-					}
-				},
-				{
-					"id": "set-collisions-enabled",
-					"objectClass": "DoorWalls",
-					"sid": 367319158245131,
-					"parameters": {
-						"collisions": "enabled"
-					}
-				},
-				{
-					"id": "set-collisions-enabled",
-					"objectClass": "DoorBlock",
-					"sid": 149084674503245,
-					"parameters": {
-						"collisions": "enabled"
-					}
-				}
-			],
-			"sid": 139228943738778
 		}
 	],
 	"sid": 312005651760020

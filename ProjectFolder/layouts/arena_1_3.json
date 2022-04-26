@@ -17,7 +17,14 @@
 					},
 					"uid": 65,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
 					"world": {
 						"x": 1248,
 						"y": 744,
@@ -3935,7 +3942,14 @@
 					},
 					"uid": 2379,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
 					"world": {
 						"x": 48,
 						"y": 12,
@@ -3964,7 +3978,14 @@
 					},
 					"uid": 2380,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
 					"world": {
 						"x": 300,
 						"y": 12,
@@ -3993,7 +4014,14 @@
 					},
 					"uid": 2381,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
 					"world": {
 						"x": 176,
 						"y": 12,
@@ -4022,7 +4050,14 @@
 					},
 					"uid": 2382,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
 					"world": {
 						"x": 464,
 						"y": 396,
@@ -4051,7 +4086,14 @@
 					},
 					"uid": 2383,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
 					"world": {
 						"x": 640,
 						"y": 396,
@@ -5245,7 +5287,9 @@
 						"live-preview": false
 					},
 					"uid": 2423,
-					"instanceVariables": {},
+					"instanceVariables": {
+						"Door": 0
+					},
 					"behaviors": {},
 					"world": {
 						"x": 372,
@@ -5419,7 +5463,9 @@
 						"live-preview": false
 					},
 					"uid": 2431,
-					"instanceVariables": {},
+					"instanceVariables": {
+						"Door": 0
+					},
 					"behaviors": {
 						"Solid": {
 							"properties": {
@@ -26375,7 +26421,14 @@
 					},
 					"uid": 3098,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
 					"world": {
 						"x": 788,
 						"y": 396,
@@ -26578,7 +26631,14 @@
 					},
 					"uid": 3253,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
 					"world": {
 						"x": 364,
 						"y": 644,
@@ -26607,7 +26667,14 @@
 					},
 					"uid": 3254,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
 					"world": {
 						"x": 464,
 						"y": 644,
@@ -26636,7 +26703,14 @@
 					},
 					"uid": 3255,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
 					"world": {
 						"x": 560,
 						"y": 644,
@@ -27100,7 +27174,14 @@
 					},
 					"uid": 3925,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
 					"world": {
 						"x": 1580,
 						"y": 516,
@@ -27255,7 +27336,8 @@
 						"Brittle": false,
 						"BrittleDamage": 0,
 						"BurnDamage": 1,
-						"StartSpeed": 0
+						"StartSpeed": 0,
+						"Area": 0
 					},
 					"behaviors": {
 						"MoveTo": {
@@ -27333,7 +27415,8 @@
 						"Brittle": false,
 						"BrittleDamage": 0,
 						"BurnDamage": 1,
-						"StartSpeed": 0
+						"StartSpeed": 0,
+						"Area": 0
 					},
 					"behaviors": {
 						"MoveTo": {
@@ -27411,7 +27494,8 @@
 						"Brittle": false,
 						"BrittleDamage": 0,
 						"BurnDamage": 1,
-						"StartSpeed": 0
+						"StartSpeed": 0,
+						"Area": 0
 					},
 					"behaviors": {
 						"MoveTo": {
@@ -27489,7 +27573,8 @@
 						"Brittle": false,
 						"BrittleDamage": 0,
 						"BurnDamage": 1,
-						"StartSpeed": 0
+						"StartSpeed": 0,
+						"Area": 0
 					},
 					"behaviors": {
 						"MoveTo": {
@@ -27567,7 +27652,8 @@
 						"Brittle": false,
 						"BrittleDamage": 0,
 						"BurnDamage": 1,
-						"StartSpeed": 0
+						"StartSpeed": 0,
+						"Area": 0
 					},
 					"behaviors": {
 						"MoveTo": {
@@ -27645,7 +27731,8 @@
 						"Brittle": false,
 						"BrittleDamage": 0,
 						"BurnDamage": 1,
-						"StartSpeed": 0
+						"StartSpeed": 0,
+						"Area": 0
 					},
 					"behaviors": {
 						"MoveTo": {
@@ -27723,7 +27810,8 @@
 						"Brittle": false,
 						"BrittleDamage": 0,
 						"BurnDamage": 1,
-						"StartSpeed": 0
+						"StartSpeed": 0,
+						"Area": 0
 					},
 					"behaviors": {
 						"MoveTo": {
@@ -27801,7 +27889,8 @@
 						"Brittle": false,
 						"BrittleDamage": 0,
 						"BurnDamage": 1,
-						"StartSpeed": 0
+						"StartSpeed": 0,
+						"Area": 0
 					},
 					"behaviors": {
 						"MoveTo": {
@@ -27879,7 +27968,8 @@
 						"Brittle": false,
 						"BrittleDamage": 0,
 						"BurnDamage": 1,
-						"StartSpeed": 0
+						"StartSpeed": 0,
+						"Area": 0
 					},
 					"behaviors": {
 						"MoveTo": {
@@ -28800,7 +28890,8 @@
 						"Brittle": false,
 						"BrittleDamage": 0,
 						"BurnDamage": 1,
-						"StartSpeed": 0
+						"StartSpeed": 0,
+						"Area": 0
 					},
 					"behaviors": {
 						"MoveTo": {
@@ -28874,7 +28965,8 @@
 						"Brittle": false,
 						"BrittleDamage": 0,
 						"BurnDamage": 1,
-						"StartSpeed": 0
+						"StartSpeed": 0,
+						"Area": 0
 					},
 					"behaviors": {
 						"MoveTo": {
@@ -28948,7 +29040,8 @@
 						"Brittle": false,
 						"BrittleDamage": 0,
 						"BurnDamage": 1,
-						"StartSpeed": 0
+						"StartSpeed": 0,
+						"Area": 0
 					},
 					"behaviors": {
 						"MoveTo": {
@@ -29022,7 +29115,8 @@
 						"Brittle": false,
 						"BrittleDamage": 0,
 						"BurnDamage": 1,
-						"StartSpeed": 0
+						"StartSpeed": 0,
+						"Area": 0
 					},
 					"behaviors": {
 						"MoveTo": {
@@ -29096,7 +29190,8 @@
 						"Brittle": false,
 						"BrittleDamage": 0,
 						"BurnDamage": 1,
-						"StartSpeed": 0
+						"StartSpeed": 0,
+						"Area": 0
 					},
 					"behaviors": {
 						"MoveTo": {
@@ -29170,7 +29265,8 @@
 						"Brittle": false,
 						"BrittleDamage": 0,
 						"BurnDamage": 1,
-						"StartSpeed": 0
+						"StartSpeed": 0,
+						"Area": 0
 					},
 					"behaviors": {
 						"MoveTo": {
@@ -29244,7 +29340,8 @@
 						"Brittle": false,
 						"BrittleDamage": 0,
 						"BurnDamage": 1,
-						"StartSpeed": 0
+						"StartSpeed": 0,
+						"Area": 0
 					},
 					"behaviors": {
 						"MoveTo": {
@@ -29318,7 +29415,8 @@
 						"Brittle": false,
 						"BrittleDamage": 0,
 						"BurnDamage": 1,
-						"StartSpeed": 0
+						"StartSpeed": 0,
+						"Area": 0
 					},
 					"behaviors": {
 						"MoveTo": {
@@ -29396,7 +29494,8 @@
 						"Brittle": false,
 						"BrittleDamage": 0,
 						"BurnDamage": 1,
-						"StartSpeed": 0
+						"StartSpeed": 0,
+						"Area": 0
 					},
 					"behaviors": {
 						"MoveTo": {
@@ -29470,7 +29569,8 @@
 						"Brittle": false,
 						"BrittleDamage": 0,
 						"BurnDamage": 1,
-						"StartSpeed": 0
+						"StartSpeed": 0,
+						"Area": 0
 					},
 					"behaviors": {
 						"MoveTo": {
@@ -29544,7 +29644,8 @@
 						"Brittle": false,
 						"BrittleDamage": 0,
 						"BurnDamage": 1,
-						"StartSpeed": 0
+						"StartSpeed": 0,
+						"Area": 0
 					},
 					"behaviors": {
 						"MoveTo": {

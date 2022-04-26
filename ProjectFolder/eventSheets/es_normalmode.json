@@ -357,6 +357,15 @@
 						"variable": "PreviousScenePlayerHealth",
 						"value": "PlayerHealth"
 					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "Enemies",
+					"sid": 181580798783734,
+					"parameters": {
+						"instance-variable": "StartSpeed",
+						"value": "Enemies.MoveTo.MaxSpeed"
+					}
 				}
 			],
 			"sid": 843120722439767
@@ -503,6 +512,591 @@
 				}
 			],
 			"sid": 107064948573447
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-animation-frame",
+					"objectClass": "Spikes",
+					"sid": 135142356362809,
+					"parameters": {
+						"comparison": 0,
+						"number": "4"
+					}
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Player",
+					"sid": 250324563091132,
+					"parameters": {
+						"object": "Spikes"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 956086585660798,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 457392017827747
+						}
+					],
+					"actions": [
+						{
+							"id": "subtract-from-eventvar",
+							"objectClass": "System",
+							"sid": 255189796687733,
+							"parameters": {
+								"variable": "PlayerHealth",
+								"value": "2"
+							}
+						},
+						{
+							"id": "spawn-another-object",
+							"objectClass": "Player",
+							"sid": 568308796890358,
+							"parameters": {
+								"object": "Dmg_Text",
+								"layer": "0",
+								"image-point": "0",
+								"create-hierarchy": false
+							}
+						},
+						{
+							"id": "spawn-another-object",
+							"objectClass": "Player",
+							"sid": 663031607935369,
+							"parameters": {
+								"object": "Dmg_Text_BG",
+								"layer": "0",
+								"image-point": "0",
+								"create-hierarchy": false
+							}
+						},
+						{
+							"id": "move-to-object",
+							"objectClass": "Dmg_Text",
+							"sid": 917598378392104,
+							"parameters": {
+								"where": "in-front",
+								"object": "Player"
+							}
+						},
+						{
+							"id": "move-to-object",
+							"objectClass": "Dmg_Text_BG",
+							"sid": 548001615319337,
+							"parameters": {
+								"where": "in-front",
+								"object": "Player"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "Dmg_Text",
+							"sid": 823305997366730,
+							"parameters": {
+								"text": "2"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "Dmg_Text_BG",
+							"sid": 468344434743761,
+							"parameters": {
+								"text": "2"
+							}
+						},
+						{
+							"id": "set-angle-of-motion",
+							"objectClass": "Dmg_Text",
+							"sid": 167559859644877,
+							"behaviorType": "Bullet",
+							"parameters": {
+								"angle": "Dmg_Text.Bullet.AngleOfMotion + random(-15, 15)"
+							}
+						}
+					],
+					"sid": 897104946506052
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Spikes",
+					"sid": 987916065638727,
+					"parameters": {
+						"object": "DashPaths"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 937716424110420,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 872911870701771,
+							"parameters": {
+								"variable": "Ice"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 154281606616718,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "Spikes",
+									"sid": 515716299024408,
+									"parameters": {
+										"animation": "\"Frozen\"",
+										"from": "current-frame"
+									}
+								},
+								{
+									"id": "stop-animation",
+									"objectClass": "Spikes",
+									"sid": 171303334703841
+								},
+								{
+									"id": "set-collisions-enabled",
+									"objectClass": "Spikes",
+									"sid": 694342831291096,
+									"parameters": {
+										"collisions": "disabled"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 703628244503044,
+									"parameters": {
+										"seconds": "1.0"
+									}
+								},
+								{
+									"id": "set-collisions-enabled",
+									"objectClass": "Spikes",
+									"sid": 282982741083807,
+									"parameters": {
+										"collisions": "enabled"
+									}
+								},
+								{
+									"id": "start-animation",
+									"objectClass": "Spikes",
+									"sid": 984895311034120,
+									"parameters": {
+										"from": "current-frame"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Spikes",
+									"sid": 156642071151894,
+									"parameters": {
+										"animation": "\"On\"",
+										"from": "current-frame"
+									}
+								}
+							],
+							"sid": 779173952370898
+						}
+					]
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Player",
+					"sid": 455564357139035,
+					"parameters": {
+						"object": "DoorCloser"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 139228943738778,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "DoorWalls",
+							"sid": 468571142702274,
+							"parameters": {
+								"instance-variable": "Door",
+								"comparison": 0,
+								"value": "DoorCloser.Door"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 741129768983404,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [
+								{
+									"id": "set-visible",
+									"objectClass": "DoorWalls",
+									"sid": 573556312864665,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "set-collisions-enabled",
+									"objectClass": "DoorWalls",
+									"sid": 260413418141919,
+									"parameters": {
+										"collisions": "enabled"
+									}
+								}
+							],
+							"sid": 721458601107839
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "DoorBlock",
+							"sid": 230259676672176,
+							"parameters": {
+								"instance-variable": "Door",
+								"comparison": 0,
+								"value": "DoorCloser.Door"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-collisions-enabled",
+							"objectClass": "DoorBlock",
+							"sid": 215892358130583,
+							"parameters": {
+								"collisions": "enabled"
+							}
+						}
+					],
+					"sid": 173031085908618
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Melee_Enemy_Minor",
+							"sid": 424081720459680,
+							"parameters": {
+								"instance-variable": "Area",
+								"comparison": 0,
+								"value": "DoorCloser.Door"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-range",
+							"objectClass": "Melee_Enemy_Minor",
+							"sid": 350083007699907,
+							"behaviorType": "LineOfSight",
+							"parameters": {
+								"range": "10000"
+							}
+						}
+					],
+					"sid": 326454855759108
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Ranged_Enemy_Minor",
+							"sid": 966860285438257,
+							"parameters": {
+								"instance-variable": "Area",
+								"comparison": 0,
+								"value": "DoorCloser.Door"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-range",
+							"objectClass": "Ranged_Enemy_Minor",
+							"sid": 784509127364765,
+							"behaviorType": "LineOfSight",
+							"parameters": {
+								"range": "10000"
+							}
+						}
+					],
+					"sid": 316864553112660
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 264442416614156,
+					"parameters": {
+						"variable": "EnemyCount",
+						"comparison": 3,
+						"value": "1"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 741864926239777,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "DoorBlock",
+							"sid": 149023617423365,
+							"parameters": {
+								"instance-variable": "Door",
+								"comparison": 0,
+								"value": "5"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-collisions-enabled",
+							"objectClass": "DoorBlock",
+							"sid": 488109652772032,
+							"parameters": {
+								"collisions": "disabled"
+							}
+						}
+					],
+					"sid": 406391685766187
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "DoorWalls",
+							"sid": 593574258183696,
+							"parameters": {
+								"instance-variable": "Door",
+								"comparison": 0,
+								"value": "5"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "DoorWalls",
+							"sid": 833881073510697,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-collisions-enabled",
+							"objectClass": "DoorWalls",
+							"sid": 233640144450335,
+							"parameters": {
+								"collisions": "disabled"
+							}
+						}
+					],
+					"sid": 122446588102995
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 588846465819764,
+					"parameters": {
+						"variable": "EnemyCount",
+						"comparison": 3,
+						"value": "11"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 161009810685882,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "DoorBlock",
+							"sid": 888778361992143,
+							"parameters": {
+								"instance-variable": "Door",
+								"comparison": 0,
+								"value": "3"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-collisions-enabled",
+							"objectClass": "DoorBlock",
+							"sid": 315360787969672,
+							"parameters": {
+								"collisions": "disabled"
+							}
+						}
+					],
+					"sid": 991858631834969
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "DoorWalls",
+							"sid": 774634544792195,
+							"parameters": {
+								"instance-variable": "Door",
+								"comparison": 0,
+								"value": "3"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "DoorWalls",
+							"sid": 391712554788591,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-collisions-enabled",
+							"objectClass": "DoorWalls",
+							"sid": 199170767970379,
+							"parameters": {
+								"collisions": "disabled"
+							}
+						}
+					],
+					"sid": 713265925282751
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 925660607149046,
+					"parameters": {
+						"variable": "EnemyCount",
+						"comparison": 3,
+						"value": "22"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 251973676546942,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "DoorBlock",
+							"sid": 212202122381654,
+							"parameters": {
+								"instance-variable": "Door",
+								"comparison": 0,
+								"value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-collisions-enabled",
+							"objectClass": "DoorBlock",
+							"sid": 392962434080718,
+							"parameters": {
+								"collisions": "disabled"
+							}
+						}
+					],
+					"sid": 457616503204211
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "DoorWalls",
+							"sid": 163409795359983,
+							"parameters": {
+								"instance-variable": "Door",
+								"comparison": 0,
+								"value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "DoorWalls",
+							"sid": 985848825490525,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-collisions-enabled",
+							"objectClass": "DoorWalls",
+							"sid": 349784962691677,
+							"parameters": {
+								"collisions": "disabled"
+							}
+						}
+					],
+					"sid": 666960472192781
+				}
+			]
 		}
 	],
 	"sid": 603949761274379

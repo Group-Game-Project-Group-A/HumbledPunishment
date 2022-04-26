@@ -3,7 +3,14 @@
 	"plugin-id": "Sprite",
 	"sid": 459427754936889,
 	"isGlobal": false,
-	"instanceVariables": [],
+	"instanceVariables": [
+		{
+			"name": "Area",
+			"type": "number",
+			"desc": "",
+			"sid": 768080265694152
+		}
+	],
 	"behaviorTypes": [
 		{
 			"behaviorId": "Turret",
