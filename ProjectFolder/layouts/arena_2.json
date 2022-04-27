@@ -29789,7 +29789,8 @@
 					"instanceVariables": {
 						"AttackPower": 2,
 						"EnemiesItCanHit": 1,
-						"ChargedAttackPower": 2
+						"ChargedAttackPower": 2,
+						"isBouncing": false
 					},
 					"behaviors": {
 						"Bullet": {

@@ -173,6 +173,16 @@
 		},
 		{
 			"eventType": "variable",
+			"name": "isBouncing",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 358556354950665
+		},
+		{
+			"eventType": "variable",
 			"name": "Electric",
 			"type": "boolean",
 			"initialValue": "false",
@@ -873,76 +883,181 @@
 							"eventType": "block",
 							"conditions": [
 								{
-									"id": "on-collision-with-another-object",
+									"id": "is-boolean-instance-variable-set",
 									"objectClass": "Arrow",
-									"sid": 658229219500987,
+									"sid": 437165041955073,
 									"parameters": {
-										"object": "Arena1_Pillar"
-									}
-								},
-								{
-									"id": "on-collision-with-another-object",
-									"objectClass": "Arrow",
-									"sid": 511035229261017,
-									"parameters": {
-										"object": "Pillaer"
-									}
-								},
-								{
-									"id": "on-collision-with-another-object",
-									"objectClass": "Arrow",
-									"sid": 226390741139458,
-									"parameters": {
-										"object": "Walls"
-									}
-								},
-								{
-									"id": "on-collision-with-another-object",
-									"objectClass": "Arrow",
-									"sid": 900039721766133,
-									"parameters": {
-										"object": "TiledWalls"
-									}
+										"instance-variable": "isBouncing"
+									},
+									"isInverted": true
 								}
 							],
-							"actions": [
-								{
-									"type": "comment",
-									"text": "Added Arrow particle Effects"
-								},
-								{
-									"id": "spawn-another-object",
-									"objectClass": "Arrow",
-									"sid": 867941103267907,
-									"parameters": {
-										"object": "Arrow_Hit_Wall",
-										"layer": "0",
-										"image-point": "0",
-										"create-hierarchy": false
-									}
-								},
-								{
-									"id": "set-angle",
-									"objectClass": "Arrow_Hit_Wall",
-									"sid": 446862451715762,
-									"parameters": {
-										"angle": "Arrow.Angle+180"
-									}
-								},
-								{
-									"id": "destroy",
-									"objectClass": "Arrow",
-									"sid": 444665964915630
-								}
-							],
-							"sid": 574007271027268,
+							"actions": [],
+							"sid": 756960313054679,
 							"children": [
 								{
-									"eventType": "comment",
-									"text": "When the arrow hits anything designated as a wall or tiledwall, spawn the arrow hit particle effect, set the angle right, and then destroy the arrow."
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "on-collision-with-another-object",
+											"objectClass": "Arrow",
+											"sid": 566006688122973,
+											"parameters": {
+												"object": "Arena1_Pillar"
+											}
+										},
+										{
+											"id": "on-collision-with-another-object",
+											"objectClass": "Arrow",
+											"sid": 681968958543861,
+											"parameters": {
+												"object": "Pillaer"
+											}
+										},
+										{
+											"id": "on-collision-with-another-object",
+											"objectClass": "Arrow",
+											"sid": 996395562168926,
+											"parameters": {
+												"object": "Walls"
+											}
+										},
+										{
+											"id": "on-collision-with-another-object",
+											"objectClass": "Arrow",
+											"sid": 917250768036635,
+											"parameters": {
+												"object": "TiledWalls"
+											}
+										}
+									],
+									"actions": [
+										{
+											"type": "comment",
+											"text": "Added Arrow particle Effects"
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "Arrow",
+											"sid": 198156162933373,
+											"parameters": {
+												"object": "Arrow_Hit_Wall",
+												"layer": "0",
+												"image-point": "0",
+												"create-hierarchy": false
+											}
+										},
+										{
+											"id": "set-angle",
+											"objectClass": "Arrow_Hit_Wall",
+											"sid": 683003653425518,
+											"parameters": {
+												"angle": "Arrow.Angle+180"
+											}
+										},
+										{
+											"id": "destroy",
+											"objectClass": "Arrow",
+											"sid": 242165525792739
+										}
+									],
+									"sid": 650183592328105,
+									"children": [
+										{
+											"eventType": "comment",
+											"text": "When the arrow hits anything designated as a wall or tiledwall, spawn the arrow hit particle effect, set the angle right, and then destroy the arrow."
+										}
+									],
+									"isOrBlock": true
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "Arrow",
+									"sid": 533725656773364,
+									"parameters": {
+										"instance-variable": "isBouncing"
+									}
 								}
 							],
-							"isOrBlock": true
+							"actions": [],
+							"sid": 357335267256358,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "on-collision-with-another-object",
+											"objectClass": "Arrow",
+											"sid": 195593523557928,
+											"parameters": {
+												"object": "Arena1_Pillar"
+											}
+										},
+										{
+											"id": "on-collision-with-another-object",
+											"objectClass": "Arrow",
+											"sid": 496366335380825,
+											"parameters": {
+												"object": "Pillaer"
+											}
+										},
+										{
+											"id": "on-collision-with-another-object",
+											"objectClass": "Arrow",
+											"sid": 960124794276237,
+											"parameters": {
+												"object": "Walls"
+											}
+										},
+										{
+											"id": "on-collision-with-another-object",
+											"objectClass": "Arrow",
+											"sid": 144463947925596,
+											"parameters": {
+												"object": "TiledWalls"
+											}
+										}
+									],
+									"actions": [
+										{
+											"type": "comment",
+											"text": "Added Arrow particle Effects"
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "Arrow",
+											"sid": 873811805471010,
+											"parameters": {
+												"object": "Arrow_Hit_Wall",
+												"layer": "0",
+												"image-point": "0",
+												"create-hierarchy": false
+											}
+										},
+										{
+											"id": "set-angle",
+											"objectClass": "Arrow_Hit_Wall",
+											"sid": 707269521283632,
+											"parameters": {
+												"angle": "Arrow.Angle+180"
+											}
+										}
+									],
+									"sid": 486601941234560,
+									"children": [
+										{
+											"eventType": "comment",
+											"text": "When the arrow hits anything designated as a wall or tiledwall, spawn the arrow hit particle effect, set the angle right, and then destroy the arrow."
+										}
+									],
+									"isOrBlock": true
+								}
+							]
 						},
 						{
 							"eventType": "block",
@@ -1710,7 +1825,27 @@
 							"sid": 354722513835463
 						}
 					],
-					"actions": [],
+					"actions": [
+						{
+							"id": "set-speed",
+							"objectClass": "Arrow",
+							"sid": 574898390176402,
+							"disabled": true,
+							"behaviorType": "Bullet",
+							"parameters": {
+								"speed": "350"
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "Arrow",
+							"sid": 793781329852360,
+							"behaviorType": "Bullet",
+							"parameters": {
+								"state": "enabled"
+							}
+						}
+					],
 					"sid": 932963378101928,
 					"children": [
 						{
@@ -1945,11 +2080,11 @@
 												{
 													"id": "compare-distance-travelled",
 													"objectClass": "Arrow",
-													"sid": 991330279695958,
+													"sid": 833008926357353,
 													"behaviorType": "Bullet",
 													"parameters": {
 														"comparison": 5,
-														"distance": "300"
+														"distance": "400"
 													}
 												}
 											],
@@ -2099,11 +2234,11 @@
 												{
 													"id": "compare-distance-travelled",
 													"objectClass": "Arrow",
-													"sid": 533415111534935,
+													"sid": 872723392274237,
 													"behaviorType": "Bullet",
 													"parameters": {
 														"comparison": 5,
-														"distance": "200"
+														"distance": "300"
 													}
 												}
 											],
@@ -2560,11 +2695,11 @@
 												{
 													"id": "compare-eventvar",
 													"objectClass": "System",
-													"sid": 331177388451726,
+													"sid": 386274383801787,
 													"parameters": {
 														"variable": "CS_Power",
 														"comparison": 3,
-														"value": "2"
+														"value": "1"
 													}
 												}
 											],
@@ -2577,11 +2712,11 @@
 														{
 															"id": "compare-distance-travelled",
 															"objectClass": "Arrow",
-															"sid": 816235205196647,
+															"sid": 631807530087099,
 															"behaviorType": "Bullet",
 															"parameters": {
 																"comparison": 5,
-																"distance": "300"
+																"distance": "400"
 															}
 														}
 													],
@@ -2602,11 +2737,11 @@
 												{
 													"id": "compare-eventvar",
 													"objectClass": "System",
-													"sid": 771737219110258,
+													"sid": 978764319446327,
 													"parameters": {
 														"variable": "CS_Power",
 														"comparison": 5,
-														"value": "3"
+														"value": "2"
 													}
 												}
 											],
@@ -2619,11 +2754,11 @@
 														{
 															"id": "compare-distance-travelled",
 															"objectClass": "Arrow",
-															"sid": 358402917097524,
+															"sid": 246713706866622,
 															"behaviorType": "Bullet",
 															"parameters": {
 																"comparison": 5,
-																"distance": "350"
+																"distance": "500"
 															}
 														}
 													],
@@ -2694,12 +2829,12 @@
 															],
 															"actions": [
 																{
-																	"id": "set-enabled",
+																	"id": "set-max-speed",
 																	"objectClass": "Player",
-																	"sid": 200477906536950,
+																	"sid": 389104598673621,
 																	"behaviorType": "8Direction",
 																	"parameters": {
-																		"state": "disabled"
+																		"max-speed": "100"
 																	}
 																}
 															],
@@ -2711,11 +2846,11 @@
 																{
 																	"id": "compare-eventvar",
 																	"objectClass": "System",
-																	"sid": 583719528015072,
+																	"sid": 928230308841773,
 																	"parameters": {
 																		"variable": "CS_Power",
 																		"comparison": 3,
-																		"value": "3"
+																		"value": "2"
 																	}
 																}
 															],
@@ -2768,6 +2903,15 @@
 														"volume": "-10",
 														"tag-optional": "\"\""
 													}
+												},
+												{
+													"id": "set-max-speed",
+													"objectClass": "Player",
+													"sid": 168877558285900,
+													"behaviorType": "8Direction",
+													"parameters": {
+														"max-speed": "200"
+													}
 												}
 											],
 											"sid": 585816651702265,
@@ -2778,11 +2922,11 @@
 														{
 															"id": "compare-eventvar",
 															"objectClass": "System",
-															"sid": 408731518093826,
+															"sid": 445231023646056,
 															"parameters": {
 																"variable": "CS_Power",
 																"comparison": 3,
-																"value": "2"
+																"value": "1"
 															}
 														}
 													],
@@ -2842,6 +2986,24 @@
 																"instance-variable": "AttackPower",
 																"value": "1"
 															}
+														},
+														{
+															"id": "set-bounce-off-solids",
+															"objectClass": "Arrow",
+															"sid": 691034101816586,
+															"behaviorType": "Bullet",
+															"parameters": {
+																"state": false
+															}
+														},
+														{
+															"id": "set-boolean-instvar",
+															"objectClass": "Arrow",
+															"sid": 575277929832759,
+															"parameters": {
+																"instance-variable": "isBouncing",
+																"value": "false"
+															}
 														}
 													],
 													"sid": 451941444365606
@@ -2852,11 +3014,11 @@
 														{
 															"id": "compare-eventvar",
 															"objectClass": "System",
-															"sid": 770886926856813,
+															"sid": 321639082610867,
 															"parameters": {
 																"variable": "CS_Power",
 																"comparison": 5,
-																"value": "3"
+																"value": "2"
 															}
 														}
 													],
@@ -2893,10 +3055,10 @@
 														{
 															"id": "set-size",
 															"objectClass": "Arrow",
-															"sid": 316352360163494,
+															"sid": 872840525702806,
 															"parameters": {
-																"width": "64",
-																"height": "12"
+																"width": "32",
+																"height": "6"
 															}
 														},
 														{
@@ -2906,6 +3068,24 @@
 															"parameters": {
 																"instance-variable": "AttackPower",
 																"value": "4"
+															}
+														},
+														{
+															"id": "set-bounce-off-solids",
+															"objectClass": "Arrow",
+															"sid": 759583780680481,
+															"behaviorType": "Bullet",
+															"parameters": {
+																"state": true
+															}
+														},
+														{
+															"id": "set-boolean-instvar",
+															"objectClass": "Arrow",
+															"sid": 763213908778970,
+															"parameters": {
+																"instance-variable": "isBouncing",
+																"value": "true"
 															}
 														}
 													],
@@ -2943,6 +3123,60 @@
 							"description": "Hold down to power up a shot & then shoot it to do more damage",
 							"isActiveOnStart": true,
 							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 496404271948630,
+											"parameters": {
+												"variable": "CS_Power",
+												"comparison": 5,
+												"value": "2"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "Sprite2",
+											"sid": 834261462691991,
+											"parameters": {
+												"animation": "\"Animation 2\"",
+												"from": "beginning"
+											}
+										}
+									],
+									"sid": 268068279943310
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 955992585840112,
+											"parameters": {
+												"variable": "CS_Power",
+												"comparison": 2,
+												"value": "2"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "Sprite2",
+											"sid": 416340205079976,
+											"parameters": {
+												"animation": "\"Animation 1\"",
+												"from": "beginning"
+											}
+										}
+									],
+									"sid": 900384942131853
+								},
 								{
 									"eventType": "block",
 									"conditions": [
@@ -3017,11 +3251,11 @@
 														{
 															"id": "compare-distance-travelled",
 															"objectClass": "Arrow",
-															"sid": 228155202972858,
+															"sid": 102047150635272,
 															"behaviorType": "Bullet",
 															"parameters": {
 																"comparison": 5,
-																"distance": "300"
+																"distance": "400"
 															}
 														}
 													],
@@ -3059,11 +3293,11 @@
 														{
 															"id": "compare-distance-travelled",
 															"objectClass": "Arrow",
-															"sid": 114099717855670,
+															"sid": 405313446835705,
 															"behaviorType": "Bullet",
 															"parameters": {
 																"comparison": 5,
-																"distance": "350"
+																"distance": "500"
 															}
 														}
 													],
@@ -3134,12 +3368,12 @@
 															],
 															"actions": [
 																{
-																	"id": "set-enabled",
+																	"id": "set-max-speed",
 																	"objectClass": "Player",
-																	"sid": 239336007199927,
+																	"sid": 471360303883766,
 																	"behaviorType": "8Direction",
 																	"parameters": {
-																		"state": "disabled"
+																		"max-speed": "100"
 																	}
 																}
 															],
@@ -3151,11 +3385,11 @@
 																{
 																	"id": "compare-eventvar",
 																	"objectClass": "System",
-																	"sid": 371834187834792,
+																	"sid": 362008754557674,
 																	"parameters": {
 																		"variable": "CS_Power",
 																		"comparison": 3,
-																		"value": "3"
+																		"value": "2"
 																	}
 																}
 															],
@@ -3199,12 +3433,12 @@
 													}
 												},
 												{
-													"id": "set-enabled",
+													"id": "set-max-speed",
 													"objectClass": "Player",
-													"sid": 302203184921809,
+													"sid": 313858921782598,
 													"behaviorType": "8Direction",
 													"parameters": {
-														"state": "enabled"
+														"max-speed": "200"
 													}
 												},
 												{
@@ -3227,11 +3461,11 @@
 														{
 															"id": "compare-eventvar",
 															"objectClass": "System",
-															"sid": 700309907790427,
+															"sid": 915161099710258,
 															"parameters": {
 																"variable": "CS_Power",
 																"comparison": 3,
-																"value": "2"
+																"value": "1"
 															}
 														}
 													],
@@ -3282,6 +3516,24 @@
 																"variable": "CS_Power",
 																"value": "0"
 															}
+														},
+														{
+															"id": "set-bounce-off-solids",
+															"objectClass": "Arrow",
+															"sid": 420279524560560,
+															"behaviorType": "Bullet",
+															"parameters": {
+																"state": false
+															}
+														},
+														{
+															"id": "set-boolean-instvar",
+															"objectClass": "Arrow",
+															"sid": 154656272391295,
+															"parameters": {
+																"instance-variable": "isBouncing",
+																"value": "false"
+															}
 														}
 													],
 													"sid": 755763799326493
@@ -3292,11 +3544,11 @@
 														{
 															"id": "compare-eventvar",
 															"objectClass": "System",
-															"sid": 747148352488898,
+															"sid": 691961397557001,
 															"parameters": {
 																"variable": "CS_Power",
 																"comparison": 5,
-																"value": "3"
+																"value": "2"
 															}
 														}
 													],
@@ -3324,10 +3576,10 @@
 														{
 															"id": "set-size",
 															"objectClass": "Arrow",
-															"sid": 163667810248293,
+															"sid": 247156042842506,
 															"parameters": {
-																"width": "64",
-																"height": "12"
+																"width": "32",
+																"height": "6"
 															}
 														},
 														{
@@ -3337,6 +3589,24 @@
 															"parameters": {
 																"instance-variable": "AttackPower",
 																"value": "4"
+															}
+														},
+														{
+															"id": "set-bounce-off-solids",
+															"objectClass": "Arrow",
+															"sid": 818366539326111,
+															"behaviorType": "Bullet",
+															"parameters": {
+																"state": true
+															}
+														},
+														{
+															"id": "set-boolean-instvar",
+															"objectClass": "Arrow",
+															"sid": 398454896425848,
+															"parameters": {
+																"instance-variable": "isBouncing",
+																"value": "true"
 															}
 														}
 													],
@@ -3498,6 +3768,90 @@
 											"eventType": "block",
 											"conditions": [
 												{
+													"id": "compare-eventvar",
+													"objectClass": "System",
+													"sid": 607919323128604,
+													"parameters": {
+														"variable": "CS_Power",
+														"comparison": 5,
+														"value": "2"
+													}
+												}
+											],
+											"actions": [],
+											"sid": 578105891663794,
+											"children": [
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "compare-distance-travelled",
+															"objectClass": "Arrow",
+															"sid": 970916722915466,
+															"behaviorType": "Bullet",
+															"parameters": {
+																"comparison": 5,
+																"distance": "300"
+															}
+														}
+													],
+													"actions": [
+														{
+															"id": "destroy",
+															"objectClass": "Arrow",
+															"sid": 606309366113053
+														}
+													],
+													"sid": 165713801743198
+												}
+											]
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-eventvar",
+													"objectClass": "System",
+													"sid": 727458894262550,
+													"parameters": {
+														"variable": "CS_Power",
+														"comparison": 3,
+														"value": "1"
+													}
+												}
+											],
+											"actions": [],
+											"sid": 902187108935808,
+											"children": [
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "compare-distance-travelled",
+															"objectClass": "Arrow",
+															"sid": 122775413037873,
+															"behaviorType": "Bullet",
+															"parameters": {
+																"comparison": 5,
+																"distance": "400"
+															}
+														}
+													],
+													"actions": [
+														{
+															"id": "destroy",
+															"objectClass": "Arrow",
+															"sid": 265657312162725
+														}
+													],
+													"sid": 185439397791276
+												}
+											]
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
 													"id": "mouse-button-is-down",
 													"objectClass": "Mouse",
 													"sid": 230084349000017,
@@ -3518,6 +3872,29 @@
 											"actions": [],
 											"sid": 786142224638151,
 											"children": [
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "compare-distance-travelled",
+															"objectClass": "Arrow",
+															"sid": 903745904788856,
+															"behaviorType": "Bullet",
+															"parameters": {
+																"comparison": 5,
+																"distance": "350"
+															}
+														}
+													],
+													"actions": [
+														{
+															"id": "destroy",
+															"objectClass": "Arrow",
+															"sid": 894302582223644
+														}
+													],
+													"sid": 868773155259024
+												},
 												{
 													"eventType": "block",
 													"conditions": [
@@ -3564,6 +3941,24 @@
 																	"parameters": {
 																		"width": "32",
 																		"height": "6"
+																	}
+																},
+																{
+																	"id": "set-bounce-off-solids",
+																	"objectClass": "Arrow",
+																	"sid": 898731609594727,
+																	"behaviorType": "Bullet",
+																	"parameters": {
+																		"state": false
+																	}
+																},
+																{
+																	"id": "set-boolean-instvar",
+																	"objectClass": "Arrow",
+																	"sid": 101375695357752,
+																	"parameters": {
+																		"instance-variable": "isBouncing",
+																		"value": "false"
 																	}
 																}
 															],
@@ -3681,6 +4076,24 @@
 																	"parameters": {
 																		"angle": "Player.Angle+10"
 																	}
+																},
+																{
+																	"id": "set-bounce-off-solids",
+																	"objectClass": "Arrow",
+																	"sid": 946621068607130,
+																	"behaviorType": "Bullet",
+																	"parameters": {
+																		"state": false
+																	}
+																},
+																{
+																	"id": "set-boolean-instvar",
+																	"objectClass": "Arrow",
+																	"sid": 723836067764037,
+																	"parameters": {
+																		"instance-variable": "isBouncing",
+																		"value": "false"
+																	}
 																}
 															],
 															"sid": 578317220959666
@@ -3725,6 +4138,24 @@
 																	"parameters": {
 																		"angle": "Player.Angle-10"
 																	}
+																},
+																{
+																	"id": "set-bounce-off-solids",
+																	"objectClass": "Arrow",
+																	"sid": 535625544492203,
+																	"behaviorType": "Bullet",
+																	"parameters": {
+																		"state": false
+																	}
+																},
+																{
+																	"id": "set-boolean-instvar",
+																	"objectClass": "Arrow",
+																	"sid": 149821657229540,
+																	"parameters": {
+																		"instance-variable": "isBouncing",
+																		"value": "false"
+																	}
 																}
 															],
 															"sid": 337376680464391
@@ -3732,83 +4163,6 @@
 													]
 												}
 											]
-										},
-										{
-											"eventType": "block",
-											"conditions": [
-												{
-													"id": "compare-eventvar",
-													"objectClass": "System",
-													"sid": 115573045095068,
-													"parameters": {
-														"variable": "CS_Power",
-														"comparison": 5,
-														"value": "3"
-													}
-												}
-											],
-											"actions": [
-												{
-													"id": "set-animation",
-													"objectClass": "Sprite2",
-													"sid": 335415313304310,
-													"parameters": {
-														"animation": "\"Animation 2\"",
-														"from": "beginning"
-													}
-												}
-											],
-											"sid": 597687730523516
-										},
-										{
-											"eventType": "block",
-											"conditions": [
-												{
-													"id": "compare-eventvar",
-													"objectClass": "System",
-													"sid": 163347480812672,
-													"parameters": {
-														"variable": "CS_Power",
-														"comparison": 2,
-														"value": "3"
-													}
-												}
-											],
-											"actions": [
-												{
-													"id": "set-animation",
-													"objectClass": "Sprite2",
-													"sid": 983158938647048,
-													"parameters": {
-														"animation": "\"Animation 1\"",
-														"from": "beginning"
-													}
-												}
-											],
-											"sid": 838239711999744
-										},
-										{
-											"eventType": "block",
-											"conditions": [
-												{
-													"id": "compare-distance-travelled",
-													"objectClass": "Arrow",
-													"sid": 520350109597329,
-													"behaviorType": "Bullet",
-													"parameters": {
-														"comparison": 5,
-														"distance": "250"
-													}
-												}
-											],
-											"actions": [
-												{
-													"id": "destroy",
-													"objectClass": "Arrow",
-													"sid": 968946508271283
-												}
-											],
-											"sid": 229815684979474
 										},
 										{
 											"eventType": "block",
@@ -3959,11 +4313,11 @@
 														{
 															"id": "compare-eventvar",
 															"objectClass": "System",
-															"sid": 585520311401875,
+															"sid": 748493860023187,
 															"parameters": {
 																"variable": "CS_Power",
 																"comparison": 3,
-																"value": "2"
+																"value": "1"
 															}
 														}
 													],
@@ -3984,30 +4338,286 @@
 																	}
 																}
 															],
-															"sid": 870643786620923
-														},
-														{
-															"eventType": "block",
-															"conditions": [
+															"sid": 870643786620923,
+															"children": [
 																{
-																	"id": "compare-distance-travelled",
-																	"objectClass": "Arrow",
-																	"sid": 707028358048058,
-																	"behaviorType": "Bullet",
-																	"parameters": {
-																		"comparison": 5,
-																		"distance": "200"
-																	}
-																}
-															],
-															"actions": [
+																	"eventType": "block",
+																	"conditions": [],
+																	"actions": [
+																		{
+																			"id": "spawn-another-object",
+																			"objectClass": "Player",
+																			"sid": 221559744891821,
+																			"parameters": {
+																				"object": "Arrow",
+																				"layer": "0",
+																				"image-point": "0",
+																				"create-hierarchy": false
+																			}
+																		},
+																		{
+																			"id": "move-to-object",
+																			"objectClass": "Arrow",
+																			"sid": 404219480165194,
+																			"parameters": {
+																				"where": "behind",
+																				"object": "Player"
+																			}
+																		},
+																		{
+																			"id": "set-size",
+																			"objectClass": "Arrow",
+																			"sid": 412532330840763,
+																			"parameters": {
+																				"width": "32",
+																				"height": "6"
+																			}
+																		},
+																		{
+																			"id": "set-instvar-value",
+																			"objectClass": "Arrow",
+																			"sid": 213369115249347,
+																			"parameters": {
+																				"instance-variable": "AttackPower",
+																				"value": "1"
+																			}
+																		},
+																		{
+																			"id": "set-bounce-off-solids",
+																			"objectClass": "Arrow",
+																			"sid": 505144562536031,
+																			"behaviorType": "Bullet",
+																			"parameters": {
+																				"state": false
+																			}
+																		},
+																		{
+																			"id": "set-boolean-instvar",
+																			"objectClass": "Arrow",
+																			"sid": 717489749487376,
+																			"parameters": {
+																				"instance-variable": "isBouncing",
+																				"value": "false"
+																			}
+																		}
+																	],
+																	"sid": 402910173317210,
+																	"children": [
+																		{
+																			"eventType": "block",
+																			"conditions": [
+																				{
+																					"id": "compare-boolean-eventvar",
+																					"objectClass": "System",
+																					"sid": 981379635551903,
+																					"parameters": {
+																						"variable": "Fire"
+																					}
+																				}
+																			],
+																			"actions": [
+																				{
+																					"id": "spawn-another-object",
+																					"objectClass": "Arrow",
+																					"sid": 383264006523807,
+																					"parameters": {
+																						"object": "ArrowFireParticles",
+																						"layer": "0",
+																						"image-point": "1",
+																						"create-hierarchy": false
+																					}
+																				},
+																				{
+																					"id": "pin-to-object-imagepoint",
+																					"objectClass": "ArrowFireParticles",
+																					"sid": 884517395024931,
+																					"behaviorType": "Pin",
+																					"parameters": {
+																						"pin-to": "Arrow",
+																						"image-point": "1",
+																						"angle": false,
+																						"width-type": "no",
+																						"height-type": "no",
+																						"z": false
+																					}
+																				},
+																				{
+																					"id": "set-rate",
+																					"objectClass": "ArrowFireParticles",
+																					"sid": 289720571017389,
+																					"parameters": {
+																						"rate": "60"
+																					}
+																				},
+																				{
+																					"id": "set-spray-cone",
+																					"objectClass": "ArrowFireParticles",
+																					"sid": 179250878972437,
+																					"parameters": {
+																						"spray-cone": "15"
+																					}
+																				},
+																				{
+																					"id": "wait",
+																					"objectClass": "System",
+																					"sid": 723275796379346,
+																					"parameters": {
+																						"seconds": "1"
+																					}
+																				},
+																				{
+																					"id": "destroy",
+																					"objectClass": "ArrowFireParticles",
+																					"sid": 932896134023939
+																				}
+																			],
+																			"sid": 948996405509271
+																		}
+																	]
+																},
 																{
-																	"id": "destroy",
-																	"objectClass": "Arrow",
-																	"sid": 694375937978438
+																	"eventType": "block",
+																	"conditions": [],
+																	"actions": [
+																		{
+																			"id": "spawn-another-object",
+																			"objectClass": "Player",
+																			"sid": 994391114201696,
+																			"parameters": {
+																				"object": "Arrow",
+																				"layer": "0",
+																				"image-point": "0",
+																				"create-hierarchy": false
+																			}
+																		},
+																		{
+																			"id": "move-to-object",
+																			"objectClass": "Arrow",
+																			"sid": 489172670992233,
+																			"parameters": {
+																				"where": "behind",
+																				"object": "Player"
+																			}
+																		},
+																		{
+																			"id": "set-size",
+																			"objectClass": "Arrow",
+																			"sid": 796757595411470,
+																			"parameters": {
+																				"width": "32",
+																				"height": "6"
+																			}
+																		},
+																		{
+																			"id": "set-instvar-value",
+																			"objectClass": "Arrow",
+																			"sid": 117195813187282,
+																			"parameters": {
+																				"instance-variable": "AttackPower",
+																				"value": "1"
+																			}
+																		},
+																		{
+																			"id": "set-angle",
+																			"objectClass": "Arrow",
+																			"sid": 511257734439982,
+																			"parameters": {
+																				"angle": "Player.Angle+10"
+																			}
+																		},
+																		{
+																			"id": "set-bounce-off-solids",
+																			"objectClass": "Arrow",
+																			"sid": 996698577037578,
+																			"behaviorType": "Bullet",
+																			"parameters": {
+																				"state": false
+																			}
+																		},
+																		{
+																			"id": "set-boolean-instvar",
+																			"objectClass": "Arrow",
+																			"sid": 217291805838880,
+																			"parameters": {
+																				"instance-variable": "isBouncing",
+																				"value": "false"
+																			}
+																		}
+																	],
+																	"sid": 157612490760811
+																},
+																{
+																	"eventType": "block",
+																	"conditions": [],
+																	"actions": [
+																		{
+																			"id": "spawn-another-object",
+																			"objectClass": "Player",
+																			"sid": 511885269614700,
+																			"parameters": {
+																				"object": "Arrow",
+																				"layer": "0",
+																				"image-point": "0",
+																				"create-hierarchy": false
+																			}
+																		},
+																		{
+																			"id": "move-to-object",
+																			"objectClass": "Arrow",
+																			"sid": 502400647912726,
+																			"parameters": {
+																				"where": "behind",
+																				"object": "Player"
+																			}
+																		},
+																		{
+																			"id": "set-size",
+																			"objectClass": "Arrow",
+																			"sid": 644426029627655,
+																			"parameters": {
+																				"width": "32",
+																				"height": "6"
+																			}
+																		},
+																		{
+																			"id": "set-instvar-value",
+																			"objectClass": "Arrow",
+																			"sid": 807268711405931,
+																			"parameters": {
+																				"instance-variable": "AttackPower",
+																				"value": "1"
+																			}
+																		},
+																		{
+																			"id": "set-angle",
+																			"objectClass": "Arrow",
+																			"sid": 474732075684007,
+																			"parameters": {
+																				"angle": "Player.Angle-10"
+																			}
+																		},
+																		{
+																			"id": "set-bounce-off-solids",
+																			"objectClass": "Arrow",
+																			"sid": 503867708782529,
+																			"behaviorType": "Bullet",
+																			"parameters": {
+																				"state": false
+																			}
+																		},
+																		{
+																			"id": "set-boolean-instvar",
+																			"objectClass": "Arrow",
+																			"sid": 628723057133209,
+																			"parameters": {
+																				"instance-variable": "isBouncing",
+																				"value": "false"
+																			}
+																		}
+																	],
+																	"sid": 286636579581576
 																}
-															],
-															"sid": 352384548450066
+															]
 														}
 													]
 												},
@@ -4017,11 +4627,11 @@
 														{
 															"id": "compare-eventvar",
 															"objectClass": "System",
-															"sid": 737902918081699,
+															"sid": 634098155566632,
 															"parameters": {
 																"variable": "CS_Power",
 																"comparison": 5,
-																"value": "3"
+																"value": "2"
 															}
 														}
 													],
@@ -4055,10 +4665,10 @@
 																{
 																	"id": "set-size",
 																	"objectClass": "Arrow",
-																	"sid": 983111056859985,
+																	"sid": 643318902904351,
 																	"parameters": {
-																		"width": "64",
-																		"height": "12"
+																		"width": "32",
+																		"height": "6"
 																	}
 																},
 																{
@@ -4068,6 +4678,24 @@
 																	"parameters": {
 																		"instance-variable": "AttackPower",
 																		"value": "4"
+																	}
+																},
+																{
+																	"id": "set-bounce-off-solids",
+																	"objectClass": "Arrow",
+																	"sid": 555786614118817,
+																	"behaviorType": "Bullet",
+																	"parameters": {
+																		"state": true
+																	}
+																},
+																{
+																	"id": "set-boolean-instvar",
+																	"objectClass": "Arrow",
+																	"sid": 261824583526835,
+																	"parameters": {
+																		"instance-variable": "isBouncing",
+																		"value": "true"
 																	}
 																}
 															],
@@ -4172,10 +4800,10 @@
 																{
 																	"id": "set-size",
 																	"objectClass": "Arrow",
-																	"sid": 533100974798957,
+																	"sid": 282854625579232,
 																	"parameters": {
-																		"width": "64",
-																		"height": "12"
+																		"width": "32",
+																		"height": "6"
 																	}
 																},
 																{
@@ -4193,6 +4821,24 @@
 																	"sid": 158818887480792,
 																	"parameters": {
 																		"angle": "Player.Angle+10"
+																	}
+																},
+																{
+																	"id": "set-bounce-off-solids",
+																	"objectClass": "Arrow",
+																	"sid": 723004801210926,
+																	"behaviorType": "Bullet",
+																	"parameters": {
+																		"state": true
+																	}
+																},
+																{
+																	"id": "set-boolean-instvar",
+																	"objectClass": "Arrow",
+																	"sid": 732500717537891,
+																	"parameters": {
+																		"instance-variable": "isBouncing",
+																		"value": "true"
 																	}
 																}
 															],
@@ -4225,10 +4871,10 @@
 																{
 																	"id": "set-size",
 																	"objectClass": "Arrow",
-																	"sid": 731125400747083,
+																	"sid": 504783642703046,
 																	"parameters": {
-																		"width": "64",
-																		"height": "12"
+																		"width": "32",
+																		"height": "6"
 																	}
 																},
 																{
@@ -4246,6 +4892,24 @@
 																	"sid": 243019767384018,
 																	"parameters": {
 																		"angle": "Player.Angle-10"
+																	}
+																},
+																{
+																	"id": "set-bounce-off-solids",
+																	"objectClass": "Arrow",
+																	"sid": 666311028367332,
+																	"behaviorType": "Bullet",
+																	"parameters": {
+																		"state": true
+																	}
+																},
+																{
+																	"id": "set-boolean-instvar",
+																	"objectClass": "Arrow",
+																	"sid": 665746252038411,
+																	"parameters": {
+																		"instance-variable": "isBouncing",
+																		"value": "true"
 																	}
 																}
 															],
@@ -4340,11 +5004,11 @@
 												{
 													"id": "compare-distance-travelled",
 													"objectClass": "Arrow",
-													"sid": 473842965678956,
+													"sid": 670056811485721,
 													"behaviorType": "Bullet",
 													"parameters": {
 														"comparison": 5,
-														"distance": "200"
+														"distance": "300"
 													}
 												}
 											],
@@ -5952,11 +6616,11 @@
 												{
 													"id": "compare-distance-travelled",
 													"objectClass": "Arrow",
-													"sid": 649523950395907,
+													"sid": 270879611505612,
 													"behaviorType": "Bullet",
 													"parameters": {
 														"comparison": 5,
-														"distance": "250"
+														"distance": "350"
 													}
 												}
 											],

@@ -4783,35 +4783,6 @@
 					}
 				},
 				{
-					"type": "Tooltip_Background_ChargedShot",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 183,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 1713,
-						"y": -984,
-						"width": 127,
-						"height": 97,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
 					"type": "Tooltip_Background_Multishot",
 					"properties": {
 						"initially-visible": true,
@@ -4914,90 +4885,6 @@
 						"x": 1568,
 						"y": -780,
 						"width": 127,
-						"height": 97,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Tooltip_ChargedShot_Background",
-					"properties": {
-						"text": "CHARGED SHOT\n\nStand still and HOLD FIRE to charge up your shot, inflicting extra damage.",
-						"enable-bbcode": true,
-						"font": "Pixel_Font",
-						"size": 8,
-						"line-height": 0,
-						"bold": false,
-						"italic": false,
-						"color": [
-							0,
-							0,
-							0,
-							1
-						],
-						"horizontal-alignment": "center",
-						"vertical-alignment": "center",
-						"wrapping": "word",
-						"initially-visible": true,
-						"origin": "top-left"
-					},
-					"uid": 188,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 1716,
-						"y": -981,
-						"width": 125,
-						"height": 97,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Tooltip_ChargedShot",
-					"properties": {
-						"text": "[color=#a5a1b4]CHARGED SHOT[/color]\n\nStand still and [color=#a5a1b4]HOLD FIRE[/color] to charge up your shot, inflicting extra damage.",
-						"enable-bbcode": true,
-						"font": "Pixel_Font",
-						"size": 8,
-						"line-height": 0,
-						"bold": false,
-						"italic": false,
-						"color": [
-							0.9803921568627451,
-							0.9803921568627451,
-							0.9803921568627451,
-							1
-						],
-						"horizontal-alignment": "center",
-						"vertical-alignment": "center",
-						"wrapping": "word",
-						"initially-visible": true,
-						"origin": "top-left"
-					},
-					"uid": 189,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 1715,
-						"y": -982,
-						"width": 125,
 						"height": 97,
 						"originX": 0,
 						"originY": 0,
@@ -5505,6 +5392,119 @@
 						"height": 22,
 						"originX": 0.5,
 						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Tooltip_Background_ChargedShot",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 183,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1626,
+						"y": -662,
+						"width": 156,
+						"height": 121,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Tooltip_ChargedShot_Background",
+					"properties": {
+						"text": "CHARGED SHOT\n\nHold the RIGHT MOUSE BUTTON to CHARGE and EMPOWER your arrows, allowing them to ricochet and inflict increased damage upon release.",
+						"enable-bbcode": true,
+						"font": "Pixel_Font",
+						"size": 8,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							0,
+							0,
+							0,
+							1
+						],
+						"horizontal-alignment": "center",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 188,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1629,
+						"y": -663,
+						"width": 156,
+						"height": 121,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Tooltip_ChargedShot",
+					"properties": {
+						"text": "[color=#a5a1b4]CHARGED SHOT[/color]\n\nHold the RIGHT MOUSE BUTTON to [color=#a5a1b4]CHARGE[/color] and [color=#a5a1b4]EMPOWER[/color] your arrows, allowing them to ricochet and inflict increased damage upon release.",
+						"enable-bbcode": true,
+						"font": "Pixel_Font",
+						"size": 8,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							0.9803921568627451,
+							0.9803921568627451,
+							0.9803921568627451,
+							1
+						],
+						"horizontal-alignment": "center",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 189,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1627,
+						"y": -661,
+						"width": 156,
+						"height": 121,
+						"originX": 0,
+						"originY": 0,
 						"color": [
 							1,
 							1,
