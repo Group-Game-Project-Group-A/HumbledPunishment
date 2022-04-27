@@ -1,0 +1,57 @@
+{
+	"name": "UI_Quiver",
+	"plugin-id": "Sprite",
+	"sid": 597480985015003,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 257,
+						"height": 311,
+						"originX": 0.45136186770428016,
+						"originY": 0.34726688102893893,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7181456,
+						"collisionPoly": {
+							"points": [
+								0.40077821011673154,
+								0.09003215434083597,
+								0.45136186770428016,
+								0.06109324758842444,
+								0.5680933852140078,
+								0.03215434083601286,
+								0.9571984435797666,
+								0.34726688102893893,
+								0.6575875486381323,
+								0.7331189710610932,
+								0.45136186770428016,
+								0.9646302250803859,
+								0.038910505836575876,
+								0.9003215434083601,
+								0.2529182879377432,
+								0.34726688102893893
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 909237401055631,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

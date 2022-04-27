@@ -1,0 +1,57 @@
+{
+	"name": "UI_Banner",
+	"plugin-id": "Sprite",
+	"sid": 624633426020828,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 700,
+						"height": 250,
+						"originX": 0.5435714285714286,
+						"originY": 0.548,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4715735,
+						"collisionPoly": {
+							"points": [
+								0.04,
+								0.06,
+								0.5435714285714286,
+								0.444,
+								0.9971428571428571,
+								0.196,
+								0.9442857142857143,
+								0.548,
+								0.9514285714285714,
+								0.768,
+								0.5435714285714286,
+								0.992,
+								0.09428571428571429,
+								0.8799999999999999,
+								0.054285714285714284,
+								0.548
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 488541209896348,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

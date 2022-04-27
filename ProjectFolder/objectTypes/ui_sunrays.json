@@ -1,0 +1,47 @@
+{
+	"name": "UI_SunRays",
+	"plugin-id": "Sprite",
+	"sid": 231749005301276,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 362,
+						"height": 120,
+						"originX": 0.47513812154696133,
+						"originY": 0.36666666666666664,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 6234343,
+						"collisionPoly": {
+							"points": [
+								0.47513812154696133,
+								0.5,
+								0.7182320441988951,
+								0.7416666666666667,
+								0.47513812154696133,
+								0.5916666666666667
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 961912099969665,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

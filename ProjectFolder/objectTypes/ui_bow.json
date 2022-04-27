@@ -1,0 +1,57 @@
+{
+	"name": "UI_Bow",
+	"plugin-id": "Sprite",
+	"sid": 814190482078245,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 247,
+						"height": 325,
+						"originX": 0.5263157894736842,
+						"originY": 0.5015384615384615,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 6153554,
+						"collisionPoly": {
+							"points": [
+								0.04048582995951417,
+								0.003076923076923077,
+								0.5263157894736842,
+								0.11384615384615385,
+								0.6477732793522267,
+								0.27692307692307694,
+								0.9190283400809717,
+								0.5015384615384615,
+								0.9919028340080972,
+								0.9846153846153847,
+								0.5263157894736842,
+								0.5538461538461539,
+								0.5708502024291497,
+								0.5938461538461539,
+								0.48582995951417,
+								0.5015384615384615
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 621301107553695,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}
