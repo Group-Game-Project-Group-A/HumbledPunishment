@@ -15,6 +15,78 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
+					"uid": 11185,
+					"instanceVariables": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
+					"world": {
+						"x": 445.6225606057035,
+						"y": 2463.5837202902776,
+						"width": 1000,
+						"height": 1944,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Level_Fill",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 11184,
+					"instanceVariables": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
+					"world": {
+						"x": 1278.5,
+						"y": -254,
+						"width": 1745,
+						"height": 568,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Level_Fill",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
 					"uid": 10768,
 					"instanceVariables": {},
 					"behaviors": {
@@ -26,9 +98,9 @@
 						}
 					},
 					"world": {
-						"x": 1416.0809247161583,
-						"y": 797,
-						"width": 3472,
+						"x": -145,
+						"y": 834,
+						"width": 294,
 						"height": 1944,
 						"originX": 0.5,
 						"originY": 0.5,
@@ -40807,9 +40879,9 @@
 				1
 			],
 			"backgroundColor": [
-				0.3686274509803922,
-				0.3686274509803922,
-				0.3686274509803922,
+				0,
+				0,
+				0,
 				1
 			],
 			"isTransparent": false,
@@ -41082,5 +41154,5 @@
 	"vpX": 0.5,
 	"vpY": 0.5,
 	"projection": "perspective",
-	"eventSheet": "ES_NormalMode"
+	"eventSheet": "ES_AM_Arena2"
 }
