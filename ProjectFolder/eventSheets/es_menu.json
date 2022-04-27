@@ -102,6 +102,17 @@
 					"parameters": {
 						"cursor-style": "normal"
 					}
+				},
+				{
+					"id": "move-to-position",
+					"objectClass": "UI_BG",
+					"sid": 646706592061518,
+					"behaviorType": "MoveTo",
+					"parameters": {
+						"x": "UI_BG.X",
+						"y": "-250",
+						"mode": "direct"
+					}
 				}
 			],
 			"sid": 130721268814402,
@@ -224,6 +235,40 @@
 				}
 			],
 			"sid": 402069398015959
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-arrived",
+					"objectClass": "UI_BG",
+					"sid": 926598293651365,
+					"behaviorType": "MoveTo"
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "UI_BG",
+					"sid": 185926373595433,
+					"parameters": {
+						"x": "427",
+						"y": "705"
+					}
+				},
+				{
+					"id": "move-to-position",
+					"objectClass": "UI_BG",
+					"sid": 404845645321917,
+					"behaviorType": "MoveTo",
+					"parameters": {
+						"x": "UI_BG.X",
+						"y": "-250",
+						"mode": "direct"
+					}
+				}
+			],
+			"sid": 416058232044958
 		}
 	],
 	"sid": 326467844477213

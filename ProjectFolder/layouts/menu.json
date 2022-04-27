@@ -17,10 +17,22 @@
 					},
 					"uid": 11180,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"MoveTo": {
+							"properties": {
+								"max-speed": 200,
+								"acceleration": 0,
+								"deceleration": 0,
+								"rotate-speed": 0,
+								"set-angle": false,
+								"stop-on-solids": false,
+								"enabled": true
+							}
+						}
+					},
 					"world": {
-						"x": 426.8484986173022,
-						"y": 240.03793370884216,
+						"x": 427,
+						"y": 702,
 						"width": 855.8761917445497,
 						"height": 481.9241325823157,
 						"originX": 0.5,
@@ -46,10 +58,22 @@
 					},
 					"uid": 11181,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"MoveTo": {
+							"properties": {
+								"max-speed": 200,
+								"acceleration": 0,
+								"deceleration": 0,
+								"rotate-speed": 0,
+								"set-angle": false,
+								"stop-on-solids": false,
+								"enabled": true
+							}
+						}
+					},
 					"world": {
 						"x": 427,
-						"y": 701,
+						"y": 222,
 						"width": 855.8761917445497,
 						"height": 481.9241325823157,
 						"originX": 0.5,
@@ -78,7 +102,7 @@
 					"behaviors": {},
 					"world": {
 						"x": 427,
-						"y": 230.5,
+						"y": 246.5,
 						"width": 880,
 						"height": 501,
 						"originX": 0.5,
