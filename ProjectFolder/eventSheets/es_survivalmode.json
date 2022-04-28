@@ -219,36 +219,6 @@
 			]
 		},
 		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-key-pressed",
-					"objectClass": "Keyboard",
-					"sid": 664402410504410,
-					"parameters": {
-						"key": 82
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "go-to-layout",
-					"objectClass": "System",
-					"sid": 366664844622280,
-					"parameters": {
-						"layout": "Menu_Survival"
-					}
-				}
-			],
-			"sid": 906325070512997,
-			"children": [
-				{
-					"eventType": "comment",
-					"text": "Pressing R Restarts the game to the Main Menu"
-				}
-			]
-		},
-		{
 			"eventType": "group",
 			"disabled": false,
 			"title": "Spawners",
@@ -385,9 +355,9 @@
 										{
 											"id": "every-x-seconds",
 											"objectClass": "System",
-											"sid": 912984706446874,
+											"sid": 274737269290479,
 											"parameters": {
-												"interval-seconds": "8"
+												"interval-seconds": "5"
 											}
 										}
 									],
@@ -755,10 +725,10 @@
 																{
 																	"id": "set-instvar-value",
 																	"objectClass": "Bob",
-																	"sid": 845343596638624,
+																	"sid": 106542109993921,
 																	"parameters": {
 																		"instance-variable": "Health",
-																		"value": "100"
+																		"value": "200"
 																	}
 																},
 																{
@@ -858,10 +828,10 @@
 																{
 																	"id": "set-instvar-value",
 																	"objectClass": "OrcBoss",
-																	"sid": 882450609698932,
+																	"sid": 414433289665625,
 																	"parameters": {
 																		"instance-variable": "Health",
-																		"value": "100"
+																		"value": "200"
 																	}
 																},
 																{

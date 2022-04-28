@@ -2794,9 +2794,9 @@
 														{
 															"id": "every-x-seconds",
 															"objectClass": "System",
-															"sid": 626490809648938,
+															"sid": 560491781284347,
 															"parameters": {
-																"interval-seconds": "1.0"
+																"interval-seconds": ".5"
 															}
 														}
 													],
@@ -3333,9 +3333,9 @@
 														{
 															"id": "every-x-seconds",
 															"objectClass": "System",
-															"sid": 542058446940996,
+															"sid": 318106193024795,
 															"parameters": {
-																"interval-seconds": "1.0"
+																"interval-seconds": ".5"
 															}
 														}
 													],
@@ -4185,9 +4185,9 @@
 														{
 															"id": "every-x-seconds",
 															"objectClass": "System",
-															"sid": 412931102010669,
+															"sid": 402321457796697,
 															"parameters": {
-																"interval-seconds": "1.0"
+																"interval-seconds": ".5"
 															}
 														}
 													],
@@ -4220,12 +4220,12 @@
 															],
 															"actions": [
 																{
-																	"id": "set-enabled",
+																	"id": "set-max-speed",
 																	"objectClass": "Player",
-																	"sid": 713660971918791,
+																	"sid": 114637664661604,
 																	"behaviorType": "8Direction",
 																	"parameters": {
-																		"state": "disabled"
+																		"max-speed": "100"
 																	}
 																}
 															],
@@ -4285,12 +4285,12 @@
 													}
 												},
 												{
-													"id": "set-enabled",
+													"id": "set-max-speed",
 													"objectClass": "Player",
-													"sid": 738858675586376,
+													"sid": 362248442947716,
 													"behaviorType": "8Direction",
 													"parameters": {
-														"state": "enabled"
+														"max-speed": "200"
 													}
 												},
 												{

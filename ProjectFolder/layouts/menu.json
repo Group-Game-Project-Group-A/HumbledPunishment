@@ -28,11 +28,16 @@
 								"stop-on-solids": false,
 								"enabled": true
 							}
+						},
+						"Wrap": {
+							"properties": {
+								"wrap-to": "viewport"
+							}
 						}
 					},
 					"world": {
 						"x": 427,
-						"y": 702,
+						"y": 679,
 						"width": 855.8761917445497,
 						"height": 481.9241325823157,
 						"originX": 0.5,
@@ -69,6 +74,11 @@
 								"stop-on-solids": false,
 								"enabled": true
 							}
+						},
+						"Wrap": {
+							"properties": {
+								"wrap-to": "layout"
+							}
 						}
 					},
 					"world": {
@@ -89,7 +99,7 @@
 					}
 				},
 				{
-					"type": "Black",
+					"type": "UI_BG",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -97,21 +107,38 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 11182,
+					"uid": 11186,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"MoveTo": {
+							"properties": {
+								"max-speed": 200,
+								"acceleration": 0,
+								"deceleration": 0,
+								"rotate-speed": 0,
+								"set-angle": false,
+								"stop-on-solids": false,
+								"enabled": true
+							}
+						},
+						"Wrap": {
+							"properties": {
+								"wrap-to": "viewport"
+							}
+						}
+					},
 					"world": {
 						"x": 427,
-						"y": 246.5,
-						"width": 880,
-						"height": 501,
+						"y": 1105,
+						"width": 855.8761917445497,
+						"height": 481.9241325823157,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
 							1,
 							1,
 							1,
-							0.5
+							1
 						],
 						"angle": 0,
 						"zElevation": 0
@@ -151,6 +178,35 @@
 			"overriden": 0,
 			"subLayers": [],
 			"instances": [
+				{
+					"type": "Black",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 11182,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 427,
+						"y": 642.5,
+						"width": 880,
+						"height": 1409,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							0.5
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
 				{
 					"type": "UI_SunRays",
 					"properties": {
@@ -593,7 +649,7 @@
 							1,
 							1
 						],
-						"angle": 6.282581077645869,
+						"angle": 0,
 						"zElevation": 0
 					}
 				}

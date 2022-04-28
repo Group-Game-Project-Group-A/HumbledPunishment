@@ -63,7 +63,7 @@
 					"behaviors": {},
 					"world": {
 						"x": 429,
-						"y": 173,
+						"y": 143,
 						"width": 854,
 						"height": 54,
 						"originX": 0.5,
@@ -105,7 +105,7 @@
 					"behaviors": {},
 					"world": {
 						"x": 426,
-						"y": 171,
+						"y": 141,
 						"width": 854,
 						"height": 54,
 						"originX": 0.5,
@@ -123,7 +123,7 @@
 				{
 					"type": "Dialog_Text",
 					"properties": {
-						"text": "Use WASD to move around the playing field.\n\nLeft click to fire your bow at the reticle.\n\nPress SPACEBAR to dash in the direction that you're moving!",
+						"text": "Use WASD to move around the playing field.\n\nLeft click to fire your bow at the cursor.\n\nPress SPACEBAR to dash in the direction that you're moving!\n\nPress R to return to the Main Menu!",
 						"enable-bbcode": true,
 						"font": "Pixel_Font",
 						"size": 16,
@@ -147,9 +147,9 @@
 					"behaviors": {},
 					"world": {
 						"x": 426,
-						"y": 295,
+						"y": 284,
 						"width": 530,
-						"height": 198,
+						"height": 236,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -165,7 +165,7 @@
 				{
 					"type": "Dialog_Text",
 					"properties": {
-						"text": "Use WASD to move around the playing field.\n\nLeft click to fire your bow at the reticle.\n\nPress SPACEBAR to dash in the direction that you're moving!",
+						"text": "Use WASD to move around the playing field.\n\nLeft click to fire your bow at the cursor.\n\nPress SPACEBAR to dash in the direction that you're moving!\n\nPress R to return to the Main Menu!",
 						"enable-bbcode": true,
 						"font": "Pixel_Font",
 						"size": 16,
@@ -189,9 +189,9 @@
 					"behaviors": {},
 					"world": {
 						"x": 423,
-						"y": 293,
+						"y": 282,
 						"width": 530,
-						"height": 198,
+						"height": 236,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [

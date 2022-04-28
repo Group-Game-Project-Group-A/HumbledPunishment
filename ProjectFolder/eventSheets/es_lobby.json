@@ -371,6 +371,54 @@
 													"parameters": {
 														"visibility": "visible"
 													}
+												},
+												{
+													"id": "set-visible",
+													"objectClass": "Tooltip_ElectricArrows",
+													"sid": 686941675013405,
+													"parameters": {
+														"visibility": "invisible"
+													}
+												},
+												{
+													"id": "set-visible",
+													"objectClass": "Tooltip_ElectricArrows_Background",
+													"sid": 966481752010729,
+													"parameters": {
+														"visibility": "invisible"
+													}
+												},
+												{
+													"id": "set-visible",
+													"objectClass": "Tooltip_Background_Electricity",
+													"sid": 247033789733014,
+													"parameters": {
+														"visibility": "invisible"
+													}
+												},
+												{
+													"id": "set-visible",
+													"objectClass": "Tooltip_IceArrows",
+													"sid": 798699452516655,
+													"parameters": {
+														"visibility": "invisible"
+													}
+												},
+												{
+													"id": "set-visible",
+													"objectClass": "Tooltip_IceArrows_Background",
+													"sid": 249338914418578,
+													"parameters": {
+														"visibility": "invisible"
+													}
+												},
+												{
+													"id": "set-visible",
+													"objectClass": "Tooltip_Background_Ice",
+													"sid": 361612127987666,
+													"parameters": {
+														"visibility": "invisible"
+													}
 												}
 											],
 											"sid": 607858122296378

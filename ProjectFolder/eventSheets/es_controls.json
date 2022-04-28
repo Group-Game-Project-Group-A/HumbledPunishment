@@ -110,6 +110,36 @@
 				}
 			],
 			"sid": 386972767845438
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 941381767904388,
+					"parameters": {
+						"key": 82
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 331326041094916,
+					"parameters": {
+						"layout": "Menu"
+					}
+				}
+			],
+			"sid": 906325070512997,
+			"children": [
+				{
+					"eventType": "comment",
+					"text": "Pressing R Restarts the game to the Main Menu"
+				}
+			]
 		}
 	],
 	"sid": 312005651760020
