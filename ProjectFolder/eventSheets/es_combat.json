@@ -252,6 +252,10 @@
 			"sid": 201298252778824
 		},
 		{
+			"eventType": "comment",
+			"text": "On the start of the layout, set up EVERYTHING, basically"
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -396,6 +400,10 @@
 			"sid": 605195225115062
 		},
 		{
+			"eventType": "comment",
+			"text": "Every frame, set the player and projetiles to the top of the layer"
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -427,7 +435,7 @@
 			"eventType": "group",
 			"disabled": false,
 			"title": "PickUps",
-			"description": "",
+			"description": "Functions to do with pick ups are placed here",
 			"isActiveOnStart": true,
 			"children": [
 				{
@@ -612,25 +620,20 @@
 			"eventType": "group",
 			"disabled": false,
 			"title": "Projectiles",
-			"description": "",
+			"description": "Functions to do with ALL projectiles are placed here (mainly arrows, both enemy and player arrows)",
 			"isActiveOnStart": true,
 			"children": [
 				{
 					"eventType": "group",
 					"disabled": false,
-					"title": "Trap Arrows",
-					"description": "",
-					"isActiveOnStart": true,
-					"children": [],
-					"sid": 731368845278822
-				},
-				{
-					"eventType": "group",
-					"disabled": false,
 					"title": "Enemy Arrows",
-					"description": "",
+					"description": "Functions to do with Enemy Arrows are here",
 					"isActiveOnStart": true,
 					"children": [
+						{
+							"eventType": "comment",
+							"text": "When the enemy arrow collides with the player (and the player isn't dashing) do damage to the player and destroy the enemy arrow, while spawning blood particles, and flickering the player's damaged animation (turning the player red over and over again), with a little screen shake"
+						},
 						{
 							"eventType": "block",
 							"conditions": [
@@ -667,10 +670,6 @@
 									"parameters": {
 										"frame-number": "PlayerHealth"
 									}
-								},
-								{
-									"type": "comment",
-									"text": "Added Blood particle Effects (Located everywhere the player takes damage)"
 								},
 								{
 									"id": "spawn-another-object",
@@ -824,6 +823,10 @@
 							"sid": 449482338872518
 						},
 						{
+							"eventType": "comment",
+							"text": "When the enemy arrow collides with TiledWalls, Walls, Pillaer, OR the Arena 1 Pillar, destroy the arrow."
+						},
+						{
 							"eventType": "block",
 							"conditions": [
 								{
@@ -880,6 +883,10 @@
 					"isActiveOnStart": true,
 					"children": [
 						{
+							"eventType": "comment",
+							"text": "When the arrow hits anything designated as a wall or tiledwall, and it's not a ricochet arrow, spawn the arrow hit particle effect, set the angle right, and then destroy the arrow."
+						},
+						{
 							"eventType": "block",
 							"conditions": [
 								{
@@ -933,10 +940,6 @@
 									],
 									"actions": [
 										{
-											"type": "comment",
-											"text": "Added Arrow particle Effects"
-										},
-										{
 											"id": "spawn-another-object",
 											"objectClass": "Arrow",
 											"sid": 198156162933373,
@@ -962,15 +965,13 @@
 										}
 									],
 									"sid": 650183592328105,
-									"children": [
-										{
-											"eventType": "comment",
-											"text": "When the arrow hits anything designated as a wall or tiledwall, spawn the arrow hit particle effect, set the angle right, and then destroy the arrow."
-										}
-									],
 									"isOrBlock": true
 								}
 							]
+						},
+						{
+							"eventType": "comment",
+							"text": "When the arrow hits anything designated as a wall or tiledwall, and it IS a ricochet arrow, spawn the arrow hit particle effect, and then set the angle right"
 						},
 						{
 							"eventType": "block",
@@ -978,14 +979,14 @@
 								{
 									"id": "is-boolean-instance-variable-set",
 									"objectClass": "Arrow",
-									"sid": 533725656773364,
+									"sid": 513182381493128,
 									"parameters": {
 										"instance-variable": "isBouncing"
 									}
 								}
 							],
 							"actions": [],
-							"sid": 357335267256358,
+							"sid": 972131918544130,
 							"children": [
 								{
 									"eventType": "block",
@@ -993,7 +994,7 @@
 										{
 											"id": "on-collision-with-another-object",
 											"objectClass": "Arrow",
-											"sid": 195593523557928,
+											"sid": 529021289817461,
 											"parameters": {
 												"object": "Arena1_Pillar"
 											}
@@ -1001,7 +1002,7 @@
 										{
 											"id": "on-collision-with-another-object",
 											"objectClass": "Arrow",
-											"sid": 496366335380825,
+											"sid": 570019604637831,
 											"parameters": {
 												"object": "Pillaer"
 											}
@@ -1009,7 +1010,7 @@
 										{
 											"id": "on-collision-with-another-object",
 											"objectClass": "Arrow",
-											"sid": 960124794276237,
+											"sid": 837172038324517,
 											"parameters": {
 												"object": "Walls"
 											}
@@ -1017,7 +1018,7 @@
 										{
 											"id": "on-collision-with-another-object",
 											"objectClass": "Arrow",
-											"sid": 144463947925596,
+											"sid": 498442987988930,
 											"parameters": {
 												"object": "TiledWalls"
 											}
@@ -1025,13 +1026,9 @@
 									],
 									"actions": [
 										{
-											"type": "comment",
-											"text": "Added Arrow particle Effects"
-										},
-										{
 											"id": "spawn-another-object",
 											"objectClass": "Arrow",
-											"sid": 873811805471010,
+											"sid": 755524329828349,
 											"parameters": {
 												"object": "Arrow_Hit_Wall",
 												"layer": "0",
@@ -1042,22 +1039,20 @@
 										{
 											"id": "set-angle",
 											"objectClass": "Arrow_Hit_Wall",
-											"sid": 707269521283632,
+											"sid": 130671537880089,
 											"parameters": {
 												"angle": "Arrow.Angle+180"
 											}
 										}
 									],
-									"sid": 486601941234560,
-									"children": [
-										{
-											"eventType": "comment",
-											"text": "When the arrow hits anything designated as a wall or tiledwall, spawn the arrow hit particle effect, set the angle right, and then destroy the arrow."
-										}
-									],
+									"sid": 315531694032975,
 									"isOrBlock": true
 								}
 							]
+						},
+						{
+							"eventType": "comment",
+							"text": "When the arrow hits any enemies, and it's not PIERCING through that enemy, (IE it can't travel through the enemy), spawn the arrow hit particle effect, set the angle right, and then destroy the arrow."
 						},
 						{
 							"eventType": "block",
@@ -1082,10 +1077,6 @@
 								}
 							],
 							"actions": [
-								{
-									"type": "comment",
-									"text": "Added Arrow particle Effects"
-								},
 								{
 									"id": "spawn-another-object",
 									"objectClass": "Arrow",
@@ -1112,6 +1103,10 @@
 								}
 							],
 							"sid": 716713561743057
+						},
+						{
+							"eventType": "comment",
+							"text": "When the arrow hits an enemy, spawn the hit particle effect, then subtract the attack power + brittle damage from their health, set the enemies to their hurt animation over and over again, and subtract the enemies it can hit (piercing variable) by 1. Underneath will be the arrows functions for piercing, destroying itself, and dealing elemental status effects"
 						},
 						{
 							"eventType": "block",
@@ -1284,7 +1279,7 @@
 							"children": [
 								{
 									"eventType": "comment",
-									"text": "When the arrow hits an enemy, spawn the hit particle effect, then subtract the attack power + brittle damage from their health, set the enemies to their hurt animation over and over again, and subtract the enemies it can hit (piercing variable) by 1."
+									"text": "If the enemiesitcanhit is greater than two, subtract 1 from that variable."
 								},
 								{
 									"eventType": "block",
@@ -1311,13 +1306,11 @@
 											}
 										}
 									],
-									"sid": 247826867972640,
-									"children": [
-										{
-											"eventType": "comment",
-											"text": "If the enemiesitcanhit is greater than two, subtract 1 from that variable."
-										}
-									]
+									"sid": 247826867972640
+								},
+								{
+									"eventType": "comment",
+									"text": "If the enemiesitcanhit is less than 2, destroy the arrow on collision"
 								},
 								{
 									"eventType": "block",
@@ -1340,13 +1333,7 @@
 											"sid": 856680190381522
 										}
 									],
-									"sid": 968637858234001,
-									"children": [
-										{
-											"eventType": "comment",
-											"text": "If the enemiesitcanhit is less than 2, destroy the arrow on collision"
-										}
-									]
+									"sid": 968637858234001
 								},
 								{
 									"eventType": "block",
@@ -1392,15 +1379,13 @@
 													"sid": 324109575442843
 												}
 											],
-											"sid": 597051880482629,
-											"children": [
-												{
-													"eventType": "comment",
-													"text": "If the element is electric, spawn the zap radius, and destroy it after .02 seconds. This will hurt all enemies within the zap radius (and the enemy hit a second time)."
-												}
-											]
+											"sid": 597051880482629
 										}
 									]
+								},
+								{
+									"eventType": "comment",
+									"text": "If the element is fire, burn the enemy if it is not true, add to the burn damage if it IS burning, and under 3 damage/tick of damage"
 								},
 								{
 									"eventType": "block",
@@ -1498,6 +1483,10 @@
 									]
 								},
 								{
+									"eventType": "comment",
+									"text": "If the element is Ice, set brittle to true"
+								},
+								{
 									"eventType": "block",
 									"conditions": [
 										{
@@ -1543,6 +1532,10 @@
 							]
 						},
 						{
+							"eventType": "comment",
+							"text": "If the element is Electric, set the animation to Electric, and set the damage text's font color to that element"
+						},
+						{
 							"eventType": "block",
 							"conditions": [
 								{
@@ -1576,6 +1569,10 @@
 							"sid": 969900932942616
 						},
 						{
+							"eventType": "comment",
+							"text": "If the element is Ice, set the animation to Ice, and set the damage text's font color to that element"
+						},
+						{
 							"eventType": "block",
 							"conditions": [
 								{
@@ -1607,6 +1604,10 @@
 								}
 							],
 							"sid": 184426458126779
+						},
+						{
+							"eventType": "comment",
+							"text": "If the element is Fire, set the animation to Fire, and set the damage text's font color to that element"
 						},
 						{
 							"eventType": "block",
@@ -1713,6 +1714,10 @@
 							]
 						},
 						{
+							"eventType": "comment",
+							"text": "When the enemy collides with the melee enemies, push the enemy back a bit, then continue on"
+						},
+						{
 							"eventType": "block",
 							"conditions": [
 								{
@@ -1782,6 +1787,10 @@
 							"sid": 183345174126309
 						},
 						{
+							"eventType": "comment",
+							"text": "when the arrow is destroyed, spawn the arrow particle effect, and set the angle right."
+						},
+						{
 							"eventType": "block",
 							"conditions": [
 								{
@@ -1817,6 +1826,10 @@
 					"sid": 497795141305891
 				},
 				{
+					"eventType": "comment",
+					"text": "When the arrow is spawned, it'll set it's bullet to enabled (so it can fire)"
+				},
+				{
 					"eventType": "block",
 					"conditions": [
 						{
@@ -1846,13 +1859,7 @@
 							}
 						}
 					],
-					"sid": 932963378101928,
-					"children": [
-						{
-							"eventType": "comment",
-							"text": "when the arrow is spawned, do something (so make an animation)"
-						}
-					]
+					"sid": 932963378101928
 				}
 			],
 			"sid": 131939912751614
@@ -1861,7 +1868,7 @@
 			"eventType": "group",
 			"disabled": false,
 			"title": "Player",
-			"description": "",
+			"description": "Functions to do with the Player are placed here",
 			"isActiveOnStart": true,
 			"children": [
 				{
@@ -1874,15 +1881,6 @@
 						}
 					],
 					"actions": [
-						{
-							"id": "set-position",
-							"objectClass": "Sprite2",
-							"sid": 839146275736849,
-							"parameters": {
-								"x": "Mouse.X",
-								"y": "Mouse.Y"
-							}
-						},
 						{
 							"id": "set-position-to-another-object",
 							"objectClass": "HPBarSetter",
@@ -1912,10 +1910,10 @@
 								{
 									"id": "set-angle-toward-position",
 									"objectClass": "Player",
-									"sid": 229660578550748,
+									"sid": 944586053648545,
 									"parameters": {
-										"x": "Mouse.X",
-										"y": "Mouse.Y"
+										"x": "Sprite2.X",
+										"y": "Sprite2.Y"
 									}
 								},
 								{
@@ -1968,52 +1966,8 @@
 				{
 					"eventType": "group",
 					"disabled": false,
-					"title": "Player Health",
-					"description": "",
-					"isActiveOnStart": true,
-					"children": [
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "compare-eventvar",
-									"objectClass": "System",
-									"sid": 539628380594678,
-									"parameters": {
-										"variable": "PlayerHealth",
-										"comparison": 3,
-										"value": "9"
-									}
-								}
-							],
-							"actions": [],
-							"sid": 939548654210145
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "compare-eventvar",
-									"objectClass": "System",
-									"sid": 891865314178737,
-									"parameters": {
-										"variable": "PlayerHealth",
-										"comparison": 5,
-										"value": "10"
-									}
-								}
-							],
-							"actions": [],
-							"sid": 649543677937394
-						}
-					],
-					"sid": 975237607257507
-				},
-				{
-					"eventType": "group",
-					"disabled": false,
 					"title": "Player Abilities",
-					"description": "",
+					"description": "Player Ability Functions are placed here",
 					"isActiveOnStart": true,
 					"children": [
 						{
@@ -2023,6 +1977,10 @@
 							"description": "Shots go through more than one enemy",
 							"isActiveOnStart": true,
 							"children": [
+								{
+									"eventType": "comment",
+									"text": "When you've got JUST piercing shot"
+								},
 								{
 									"eventType": "block",
 									"conditions": [
@@ -2075,6 +2033,10 @@
 									"sid": 984077972560687,
 									"children": [
 										{
+											"eventType": "comment",
+											"text": "When the arrow has traveled more than 400 pixels, it'll destroy itself (so 400 pixel range)"
+										},
+										{
 											"eventType": "block",
 											"conditions": [
 												{
@@ -2098,6 +2060,10 @@
 											"sid": 392067150928105
 										},
 										{
+											"eventType": "comment",
+											"text": "If the Left Mouse Button is down -OR- the gamepad's {insert button here} is down, every .17 seconds, fire an arrow."
+										},
+										{
 											"eventType": "block",
 											"conditions": [
 												{
@@ -2107,11 +2073,24 @@
 													"parameters": {
 														"mouse-button": "left"
 													}
+												},
+												{
+													"id": "is-button-down",
+													"objectClass": "Gamepad",
+													"sid": 596134026419724,
+													"parameters": {
+														"gamepad": "0",
+														"button": "right-shoulder-trigger"
+													}
 												}
 											],
 											"actions": [],
 											"sid": 772712061021743,
 											"children": [
+												{
+													"eventType": "comment",
+													"text": "Play the arrow shooting audio here"
+												},
 												{
 													"eventType": "block",
 													"conditions": [
@@ -2124,7 +2103,19 @@
 															}
 														}
 													],
-													"actions": [],
+													"actions": [
+														{
+															"id": "play",
+															"objectClass": "Audio",
+															"sid": 967639426341774,
+															"parameters": {
+																"audio-file": "Arrow Shooting Sound Play at -5 DB",
+																"loop": "not-looping",
+																"volume": "-10",
+																"tag-optional": "\"\""
+															}
+														}
+													],
 													"sid": 600109085751370,
 													"children": [
 														{
@@ -2174,9 +2165,14 @@
 														}
 													]
 												}
-											]
+											],
+											"isOrBlock": true
 										}
 									]
+								},
+								{
+									"eventType": "comment",
+									"text": "When you're using pierce shot AND multishot"
 								},
 								{
 									"eventType": "block",
@@ -2229,6 +2225,10 @@
 									"sid": 814654737656382,
 									"children": [
 										{
+											"eventType": "comment",
+											"text": "When the arrow has traveled more than 300 pixels, it'll destroy itself (so 300 pixel range)"
+										},
+										{
 											"eventType": "block",
 											"conditions": [
 												{
@@ -2252,8 +2252,21 @@
 											"sid": 425438514738299
 										},
 										{
+											"eventType": "comment",
+											"text": "If the Left Mouse Button is down -OR- the gamepad's {insert button here} is down, every .17 seconds, fire your arrows."
+										},
+										{
 											"eventType": "block",
 											"conditions": [
+												{
+													"id": "is-button-down",
+													"objectClass": "Gamepad",
+													"sid": 166769862060701,
+													"parameters": {
+														"gamepad": "0",
+														"button": "right-shoulder-trigger"
+													}
+												},
 												{
 													"id": "mouse-button-is-down",
 													"objectClass": "Mouse",
@@ -2266,6 +2279,10 @@
 											"actions": [],
 											"sid": 937482657049777,
 											"children": [
+												{
+													"eventType": "comment",
+													"text": "Play the arrow shooting audio here"
+												},
 												{
 													"eventType": "block",
 													"conditions": [
@@ -2518,9 +2535,14 @@
 														}
 													]
 												}
-											]
+											],
+											"isOrBlock": true
 										}
 									]
+								},
+								{
+									"eventType": "comment",
+									"text": "When you're using pierce shot AND charged shot"
 								},
 								{
 									"eventType": "block",
@@ -2573,121 +2595,8 @@
 									"sid": 387962865538062,
 									"children": [
 										{
-											"eventType": "block",
-											"conditions": [
-												{
-													"id": "mouse-button-is-down",
-													"objectClass": "Mouse",
-													"sid": 716436361925379,
-													"parameters": {
-														"mouse-button": "left"
-													}
-												},
-												{
-													"id": "mouse-button-is-down",
-													"objectClass": "Mouse",
-													"sid": 694272012139082,
-													"parameters": {
-														"mouse-button": "right"
-													},
-													"isInverted": true
-												}
-											],
-											"actions": [],
-											"sid": 493113769641761,
-											"children": [
-												{
-													"eventType": "block",
-													"conditions": [
-														{
-															"id": "every-x-seconds",
-															"objectClass": "System",
-															"sid": 231250702220712,
-															"parameters": {
-																"interval-seconds": ".17"
-															}
-														}
-													],
-													"actions": [],
-													"sid": 925201936878936,
-													"children": [
-														{
-															"eventType": "block",
-															"conditions": [],
-															"actions": [
-																{
-																	"id": "spawn-another-object",
-																	"objectClass": "Player",
-																	"sid": 149409988139741,
-																	"parameters": {
-																		"object": "Arrow",
-																		"layer": "0",
-																		"image-point": "0",
-																		"create-hierarchy": false
-																	}
-																},
-																{
-																	"id": "move-to-object",
-																	"objectClass": "Arrow",
-																	"sid": 802097997273706,
-																	"parameters": {
-																		"where": "behind",
-																		"object": "Player"
-																	}
-																},
-																{
-																	"id": "play",
-																	"objectClass": "Audio",
-																	"sid": 773260769078065,
-																	"parameters": {
-																		"audio-file": "Arrow Shooting Sound Play at -5 DB",
-																		"loop": "not-looping",
-																		"volume": "-10",
-																		"tag-optional": "\"\""
-																	}
-																},
-																{
-																	"id": "set-size",
-																	"objectClass": "Arrow",
-																	"sid": 900411272210752,
-																	"parameters": {
-																		"width": "32",
-																		"height": "6"
-																	}
-																},
-																{
-																	"id": "set-instvar-value",
-																	"objectClass": "Arrow",
-																	"sid": 217372769302817,
-																	"parameters": {
-																		"instance-variable": "EnemiesItCanHit",
-																		"value": "2"
-																	}
-																},
-																{
-																	"id": "set-eventvar-value",
-																	"objectClass": "System",
-																	"sid": 404225757252851,
-																	"parameters": {
-																		"variable": "CS_Power",
-																		"value": "0"
-																	}
-																},
-																{
-																	"id": "set-instvar-value",
-																	"objectClass": "Arrow",
-																	"sid": 423592216647564,
-																	"parameters": {
-																		"instance-variable": "AttackPower",
-																		"value": "1"
-																	}
-																}
-															],
-															"sid": 407195224586392
-														}
-													]
-												}
-											]
+											"eventType": "comment",
+											"text": "When you're not fully charged, and the arrow has traveled more than 400 pixels, it'll destroy itself (so 400 pixel range when not charged up)"
 										},
 										{
 											"eventType": "block",
@@ -2695,7 +2604,7 @@
 												{
 													"id": "compare-eventvar",
 													"objectClass": "System",
-													"sid": 386274383801787,
+													"sid": 873874224199551,
 													"parameters": {
 														"variable": "CS_Power",
 														"comparison": 3,
@@ -2704,7 +2613,7 @@
 												}
 											],
 											"actions": [],
-											"sid": 186332913364813,
+											"sid": 866062575154614,
 											"children": [
 												{
 													"eventType": "block",
@@ -2712,7 +2621,7 @@
 														{
 															"id": "compare-distance-travelled",
 															"objectClass": "Arrow",
-															"sid": 631807530087099,
+															"sid": 776868100456008,
 															"behaviorType": "Bullet",
 															"parameters": {
 																"comparison": 5,
@@ -2724,12 +2633,16 @@
 														{
 															"id": "destroy",
 															"objectClass": "Arrow",
-															"sid": 214229802873472
+															"sid": 799336876106273
 														}
 													],
-													"sid": 709745133220257
+													"sid": 900193665899483
 												}
 											]
+										},
+										{
+											"eventType": "comment",
+											"text": "When you ARE fully charged, and the arrow has traveled more than 500 pixels, it'll destroy itself (so 500 pixel range when not charged up)"
 										},
 										{
 											"eventType": "block",
@@ -2737,7 +2650,7 @@
 												{
 													"id": "compare-eventvar",
 													"objectClass": "System",
-													"sid": 978764319446327,
+													"sid": 231464681145774,
 													"parameters": {
 														"variable": "CS_Power",
 														"comparison": 5,
@@ -2746,7 +2659,7 @@
 												}
 											],
 											"actions": [],
-											"sid": 155153390745902,
+											"sid": 555937049157557,
 											"children": [
 												{
 													"eventType": "block",
@@ -2754,7 +2667,7 @@
 														{
 															"id": "compare-distance-travelled",
 															"objectClass": "Arrow",
-															"sid": 246713706866622,
+															"sid": 785969421139634,
 															"behaviorType": "Bullet",
 															"parameters": {
 																"comparison": 5,
@@ -2766,12 +2679,182 @@
 														{
 															"id": "destroy",
 															"objectClass": "Arrow",
-															"sid": 694751726372758
+															"sid": 855890444870848
 														}
 													],
-													"sid": 457896752158208
+													"sid": 546637169595259
 												}
 											]
+										},
+										{
+											"eventType": "comment",
+											"text": "If the Left Mouse Button is down -OR- the gamepad's {insert button here} is down, and the Right Mouse Button -OR- the gamepad's {insert button here} is NOT down, every .17 seconds, fire your arrows. (this stops you from being able to fire normal arrows while charging up your shot)"
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "mouse-button-is-down",
+													"objectClass": "Mouse",
+													"sid": 716436361925379,
+													"parameters": {
+														"mouse-button": "left"
+													}
+												},
+												{
+													"id": "is-button-down",
+													"objectClass": "Gamepad",
+													"sid": 136553158798837,
+													"parameters": {
+														"gamepad": "0",
+														"button": "right-shoulder-trigger"
+													}
+												}
+											],
+											"actions": [],
+											"sid": 493113769641761,
+											"children": [
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "is-button-down",
+															"objectClass": "Gamepad",
+															"sid": 891616702455081,
+															"parameters": {
+																"gamepad": "0",
+																"button": "right-shoulder-button"
+															}
+														},
+														{
+															"id": "mouse-button-is-down",
+															"objectClass": "Mouse",
+															"sid": 161522899261443,
+															"parameters": {
+																"mouse-button": "right"
+															},
+															"isInverted": true
+														}
+													],
+													"actions": [],
+													"sid": 432236263233861,
+													"children": [
+														{
+															"eventType": "comment",
+															"text": "Play the arrow shooting audio here"
+														},
+														{
+															"eventType": "block",
+															"conditions": [
+																{
+																	"id": "every-x-seconds",
+																	"objectClass": "System",
+																	"sid": 300523032256413,
+																	"parameters": {
+																		"interval-seconds": ".17"
+																	}
+																}
+															],
+															"actions": [
+																{
+																	"id": "play",
+																	"objectClass": "Audio",
+																	"sid": 983176348428898,
+																	"parameters": {
+																		"audio-file": "Arrow Shooting Sound Play at -5 DB",
+																		"loop": "not-looping",
+																		"volume": "-10",
+																		"tag-optional": "\"\""
+																	}
+																}
+															],
+															"sid": 632483502909023,
+															"children": [
+																{
+																	"eventType": "block",
+																	"conditions": [],
+																	"actions": [
+																		{
+																			"id": "spawn-another-object",
+																			"objectClass": "Player",
+																			"sid": 718972955308026,
+																			"parameters": {
+																				"object": "Arrow",
+																				"layer": "0",
+																				"image-point": "0",
+																				"create-hierarchy": false
+																			}
+																		},
+																		{
+																			"id": "move-to-object",
+																			"objectClass": "Arrow",
+																			"sid": 966394514397519,
+																			"parameters": {
+																				"where": "behind",
+																				"object": "Player"
+																			}
+																		},
+																		{
+																			"id": "play",
+																			"objectClass": "Audio",
+																			"sid": 903092378123026,
+																			"parameters": {
+																				"audio-file": "Arrow Shooting Sound Play at -5 DB",
+																				"loop": "not-looping",
+																				"volume": "-10",
+																				"tag-optional": "\"\""
+																			}
+																		},
+																		{
+																			"id": "set-size",
+																			"objectClass": "Arrow",
+																			"sid": 732309896400981,
+																			"parameters": {
+																				"width": "32",
+																				"height": "6"
+																			}
+																		},
+																		{
+																			"id": "set-instvar-value",
+																			"objectClass": "Arrow",
+																			"sid": 216856430978498,
+																			"parameters": {
+																				"instance-variable": "EnemiesItCanHit",
+																				"value": "2"
+																			}
+																		},
+																		{
+																			"id": "set-eventvar-value",
+																			"objectClass": "System",
+																			"sid": 648692068236760,
+																			"parameters": {
+																				"variable": "CS_Power",
+																				"value": "0"
+																			}
+																		},
+																		{
+																			"id": "set-instvar-value",
+																			"objectClass": "Arrow",
+																			"sid": 394756358414557,
+																			"parameters": {
+																				"instance-variable": "AttackPower",
+																				"value": "1"
+																			}
+																		}
+																	],
+																	"sid": 100558644216350
+																}
+															]
+														}
+													],
+													"isOrBlock": true
+												}
+											],
+											"isOrBlock": true
+										},
+										{
+											"eventType": "comment",
+											"text": "When the right mouse button is down, every .5 seconds, charge up your shot."
 										},
 										{
 											"eventType": "block",
@@ -2814,6 +2897,10 @@
 													"sid": 924218911079550,
 													"children": [
 														{
+															"eventType": "comment",
+															"text": "When the charged power is greater than 1, half the movement speed of the player"
+														},
+														{
 															"eventType": "block",
 															"conditions": [
 																{
@@ -2839,6 +2926,10 @@
 																}
 															],
 															"sid": 497137590580329
+														},
+														{
+															"eventType": "comment",
+															"text": "While the CS power is less than or equal to 2, reduce the size of the sprite (IE: honing in)"
 														},
 														{
 															"eventType": "block",
@@ -2870,6 +2961,10 @@
 													]
 												}
 											]
+										},
+										{
+											"eventType": "comment",
+											"text": "When the right mouse button (or the gamepad's charge shot button) is released, return the reticle to normal size, PLAY THE ARROW SHOOTING SOUND, return full speed to the player, and fire the arrow."
 										},
 										{
 											"eventType": "block",
@@ -2916,6 +3011,10 @@
 											],
 											"sid": 585816651702265,
 											"children": [
+												{
+													"eventType": "comment",
+													"text": "When the Charged Shot power is less than or equal to 1, fire the arrow. This arrow WILL NOT be powered up, and WILL NOT ricochet."
+												},
 												{
 													"eventType": "block",
 													"conditions": [
@@ -3009,6 +3108,10 @@
 													"sid": 451941444365606
 												},
 												{
+													"eventType": "comment",
+													"text": "When the Charged Shot power is greater than or equal to 2, fire the arrow. This arrow WILL be powered up, and WILL ricochet."
+												},
+												{
 													"eventType": "block",
 													"conditions": [
 														{
@@ -3092,6 +3195,10 @@
 													"sid": 224011911793735,
 													"children": [
 														{
+															"eventType": "comment",
+															"text": "reset the charging power to 0"
+														},
+														{
 															"eventType": "block",
 															"conditions": [],
 															"actions": [
@@ -3124,6 +3231,10 @@
 							"isActiveOnStart": true,
 							"children": [
 								{
+									"eventType": "comment",
+									"text": "When the charging power is greater than or equal to 2, set the animation of the sprite to it's \"full charge\" animation"
+								},
+								{
 									"eventType": "block",
 									"conditions": [
 										{
@@ -3151,6 +3262,10 @@
 									"sid": 268068279943310
 								},
 								{
+									"eventType": "comment",
+									"text": "When the charging power is less than 2, set the animation of the sprite to it's \"normal\" animation"
+								},
+								{
 									"eventType": "block",
 									"conditions": [
 										{
@@ -3176,6 +3291,10 @@
 										}
 									],
 									"sid": 900384942131853
+								},
+								{
+									"eventType": "comment",
+									"text": "If you are JUST using Charged Shot"
 								},
 								{
 									"eventType": "block",
@@ -3229,16 +3348,20 @@
 									"sid": 412078334320272,
 									"children": [
 										{
+											"eventType": "comment",
+											"text": "if the charging power is less than or equal to 1, and the arrow has traveled more than 400 pixels, it'll destroy itself (so 400 pixel range)"
+										},
+										{
 											"eventType": "block",
 											"conditions": [
 												{
 													"id": "compare-eventvar",
 													"objectClass": "System",
-													"sid": 263930198792608,
+													"sid": 557358878739747,
 													"parameters": {
 														"variable": "CS_Power",
 														"comparison": 3,
-														"value": "2"
+														"value": "1"
 													}
 												}
 											],
@@ -3271,16 +3394,20 @@
 											]
 										},
 										{
+											"eventType": "comment",
+											"text": "if the charging power is greater than or equal to 2, and the arrow has traveled more than 500 pixels, it'll destroy itself (so 500 pixel range)"
+										},
+										{
 											"eventType": "block",
 											"conditions": [
 												{
 													"id": "compare-eventvar",
 													"objectClass": "System",
-													"sid": 227480359122991,
+													"sid": 186668550975652,
 													"parameters": {
 														"variable": "CS_Power",
 														"comparison": 5,
-														"value": "3"
+														"value": "2"
 													}
 												}
 											],
@@ -3311,6 +3438,105 @@
 													"sid": 102414567093286
 												}
 											]
+										},
+										{
+											"eventType": "comment",
+											"text": "If the Left Mouse Button is down -OR- the gamepad's {insert button here} is down, and the Right Mouse Button -OR- the gamepad's {insert button here} is NOT down, every .17 seconds, fire your arrows. (this stops you from being able to fire normal arrows while charging up your shot) (gamepad portion not implemented yet)"
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "mouse-button-is-down",
+													"objectClass": "Mouse",
+													"sid": 632388307151663,
+													"parameters": {
+														"mouse-button": "left"
+													}
+												},
+												{
+													"id": "mouse-button-is-down",
+													"objectClass": "Mouse",
+													"sid": 259787632570508,
+													"parameters": {
+														"mouse-button": "right"
+													},
+													"isInverted": true
+												}
+											],
+											"actions": [],
+											"sid": 648507962912641,
+											"children": [
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "every-x-seconds",
+															"objectClass": "System",
+															"sid": 223704319984742,
+															"parameters": {
+																"interval-seconds": ".17"
+															}
+														}
+													],
+													"actions": [
+														{
+															"id": "spawn-another-object",
+															"objectClass": "Player",
+															"sid": 581872145729863,
+															"parameters": {
+																"object": "Arrow",
+																"layer": "0",
+																"image-point": "0",
+																"create-hierarchy": false
+															}
+														},
+														{
+															"id": "move-to-object",
+															"objectClass": "Arrow",
+															"sid": 288020587798276,
+															"parameters": {
+																"where": "behind",
+																"object": "Player"
+															}
+														},
+														{
+															"id": "set-instvar-value",
+															"objectClass": "Arrow",
+															"sid": 982394995246266,
+															"parameters": {
+																"instance-variable": "AttackPower",
+																"value": "1"
+															}
+														},
+														{
+															"id": "set-size",
+															"objectClass": "Arrow",
+															"sid": 313131490784533,
+															"parameters": {
+																"width": "32",
+																"height": "6"
+															}
+														},
+														{
+															"id": "play",
+															"objectClass": "Audio",
+															"sid": 518796253262375,
+															"parameters": {
+																"audio-file": "Arrow Shooting Sound Play at -5 DB",
+																"loop": "not-looping",
+																"volume": "-10",
+																"tag-optional": "\"\""
+															}
+														}
+													],
+													"sid": 768122339629868
+												}
+											]
+										},
+										{
+											"eventType": "comment",
+											"text": "When the right mouse button is down, every .5 seconds, charge up your shot."
 										},
 										{
 											"eventType": "block",
@@ -3353,6 +3579,10 @@
 													"sid": 534992838386890,
 													"children": [
 														{
+															"eventType": "comment",
+															"text": "When the charged power is greater than 1, half the movement speed of the player"
+														},
+														{
 															"eventType": "block",
 															"conditions": [
 																{
@@ -3377,7 +3607,13 @@
 																	}
 																}
 															],
-															"sid": 735091838650882
+															"sid": 735091838650882,
+															"children": [
+																{
+																	"eventType": "comment",
+																	"text": "While the CS power is less than or equal to 2, reduce the size of the sprite (IE: showing the charging of the arrow)"
+																}
+															]
 														},
 														{
 															"eventType": "block",
@@ -3409,6 +3645,10 @@
 													]
 												}
 											]
+										},
+										{
+											"eventType": "comment",
+											"text": "When the right mouse button (or the gamepad's charge shot button) is released, return the reticle to normal size, PLAY THE ARROW SHOOTING SOUND, return full speed to the player, and fire the arrow."
 										},
 										{
 											"eventType": "block",
@@ -3455,6 +3695,10 @@
 											],
 											"sid": 138332300026206,
 											"children": [
+												{
+													"eventType": "comment",
+													"text": "When the Charged Shot power is less than or equal to 1, fire the arrow. This arrow WILL NOT be powered up, and WILL NOT ricochet."
+												},
 												{
 													"eventType": "block",
 													"conditions": [
@@ -3539,6 +3783,10 @@
 													"sid": 755763799326493
 												},
 												{
+													"eventType": "comment",
+													"text": "When the Charged Shot power is greater than or equal to 2, fire the arrow. This arrow WILL be powered up, and WILL ricochet."
+												},
+												{
 													"eventType": "block",
 													"conditions": [
 														{
@@ -3613,6 +3861,10 @@
 													"sid": 660967945586210,
 													"children": [
 														{
+															"eventType": "comment",
+															"text": "reset the charging power to 0"
+														},
+														{
 															"eventType": "block",
 															"conditions": [],
 															"actions": [
@@ -3631,88 +3883,12 @@
 													]
 												}
 											]
-										},
-										{
-											"eventType": "block",
-											"conditions": [
-												{
-													"id": "mouse-button-is-down",
-													"objectClass": "Mouse",
-													"sid": 478002568702913,
-													"parameters": {
-														"mouse-button": "left"
-													}
-												},
-												{
-													"id": "mouse-button-is-down",
-													"objectClass": "Mouse",
-													"sid": 208311234832529,
-													"parameters": {
-														"mouse-button": "right"
-													},
-													"isInverted": true
-												}
-											],
-											"actions": [],
-											"sid": 287648426097189,
-											"children": [
-												{
-													"eventType": "block",
-													"conditions": [
-														{
-															"id": "every-x-seconds",
-															"objectClass": "System",
-															"sid": 772318019657082,
-															"parameters": {
-																"interval-seconds": ".17"
-															}
-														}
-													],
-													"actions": [
-														{
-															"id": "spawn-another-object",
-															"objectClass": "Player",
-															"sid": 984406149635203,
-															"parameters": {
-																"object": "Arrow",
-																"layer": "0",
-																"image-point": "0",
-																"create-hierarchy": false
-															}
-														},
-														{
-															"id": "move-to-object",
-															"objectClass": "Arrow",
-															"sid": 905958455515309,
-															"parameters": {
-																"where": "behind",
-																"object": "Player"
-															}
-														},
-														{
-															"id": "set-instvar-value",
-															"objectClass": "Arrow",
-															"sid": 937787179851028,
-															"parameters": {
-																"instance-variable": "AttackPower",
-																"value": "1"
-															}
-														},
-														{
-															"id": "set-size",
-															"objectClass": "Arrow",
-															"sid": 420142669912948,
-															"parameters": {
-																"width": "32",
-																"height": "6"
-															}
-														}
-													],
-													"sid": 988034835877088
-												}
-											]
 										}
 									]
+								},
+								{
+									"eventType": "comment",
+									"text": "When you're using BOTH multishot AND charged shot"
 								},
 								{
 									"eventType": "block",
@@ -3765,6 +3941,10 @@
 									"sid": 761808398994371,
 									"children": [
 										{
+											"eventType": "comment",
+											"text": "if the charging power is greater than or equal to 2, and the arrow has traveled more than 300 pixels, it'll destroy itself (so 300 pixel range)"
+										},
+										{
 											"eventType": "block",
 											"conditions": [
 												{
@@ -3805,6 +3985,10 @@
 													"sid": 165713801743198
 												}
 											]
+										},
+										{
+											"eventType": "comment",
+											"text": "if the charging power is less than or equal to 2, and the arrow has traveled more than 400 pixels, it'll destroy itself (so 400 pixel range)"
 										},
 										{
 											"eventType": "block",
@@ -3849,6 +4033,10 @@
 											]
 										},
 										{
+											"eventType": "comment",
+											"text": "If the Left Mouse Button is down -OR- the gamepad's {insert button here} is down, and the Right Mouse Button -OR- the gamepad's {insert button here} is NOT down, every .17 seconds, fire your arrows. (this stops you from being able to fire normal arrows while charging up your shot) (gamepad portion not implemented yet)"
+										},
+										{
 											"eventType": "block",
 											"conditions": [
 												{
@@ -3872,6 +4060,10 @@
 											"actions": [],
 											"sid": 786142224638151,
 											"children": [
+												{
+													"eventType": "comment",
+													"text": "if the arrow has traveled more than 350 pixels, it'll destroy itself (so 350 pixel range) (This is specifically for normal shots, not the charging shots or the charged shots)"
+												},
 												{
 													"eventType": "block",
 													"conditions": [
@@ -3911,6 +4103,10 @@
 													"sid": 146637074262203,
 													"children": [
 														{
+															"eventType": "comment",
+															"text": "PLAY THE ARROW SHOOTING SOUNDS HERE"
+														},
+														{
 															"eventType": "block",
 															"conditions": [],
 															"actions": [
@@ -3923,6 +4119,17 @@
 																		"layer": "0",
 																		"image-point": "0",
 																		"create-hierarchy": false
+																	}
+																},
+																{
+																	"id": "play",
+																	"objectClass": "Audio",
+																	"sid": 941740506086894,
+																	"parameters": {
+																		"audio-file": "Arrow Shooting Sound Play at -5 DB",
+																		"loop": "not-looping",
+																		"volume": "-10",
+																		"tag-optional": "\"\""
 																	}
 																},
 																{
@@ -4165,6 +4372,14 @@
 											]
 										},
 										{
+											"eventType": "comment",
+											"text": "When the right mouse button is down, every .5 seconds, charge up your shot."
+										},
+										{
+											"eventType": "comment",
+											"text": "reset the charging power to 0"
+										},
+										{
 											"eventType": "block",
 											"conditions": [
 												{
@@ -4205,6 +4420,10 @@
 													"sid": 269230145204169,
 													"children": [
 														{
+															"eventType": "comment",
+															"text": "When the charged power is greater than 1, half the movement speed of the player"
+														},
+														{
 															"eventType": "block",
 															"conditions": [
 																{
@@ -4230,6 +4449,10 @@
 																}
 															],
 															"sid": 260544964975302
+														},
+														{
+															"eventType": "comment",
+															"text": "While the CS power is less than or equal to 2, reduce the size of the reticle sprite (IE: showing the charging of the arrow)"
 														},
 														{
 															"eventType": "block",
@@ -4261,6 +4484,10 @@
 													]
 												}
 											]
+										},
+										{
+											"eventType": "comment",
+											"text": "When the right mouse button (or the gamepad's charge shot button) is released, return the reticle to normal size, PLAY THE ARROW SHOOTING SOUND, return full speed to the player, and fire the arrow. Gamepad not implemented yet"
 										},
 										{
 											"eventType": "block",
@@ -4308,6 +4535,10 @@
 											"sid": 151413305515007,
 											"children": [
 												{
+													"eventType": "comment",
+													"text": "When the Charged Shot power is less than or equal to 1, fire the arrow. This arrow WILL NOT be powered up, and WILL NOT ricochet, and it will reset the CS_Power to 0"
+												},
+												{
 													"eventType": "block",
 													"conditions": [
 														{
@@ -4329,6 +4560,283 @@
 															"conditions": [],
 															"actions": [
 																{
+																	"id": "spawn-another-object",
+																	"objectClass": "Player",
+																	"sid": 964131848310297,
+																	"parameters": {
+																		"object": "Arrow",
+																		"layer": "0",
+																		"image-point": "0",
+																		"create-hierarchy": false
+																	}
+																},
+																{
+																	"id": "move-to-object",
+																	"objectClass": "Arrow",
+																	"sid": 443501268837673,
+																	"parameters": {
+																		"where": "behind",
+																		"object": "Player"
+																	}
+																},
+																{
+																	"id": "set-size",
+																	"objectClass": "Arrow",
+																	"sid": 699806347660009,
+																	"parameters": {
+																		"width": "32",
+																		"height": "6"
+																	}
+																},
+																{
+																	"id": "set-instvar-value",
+																	"objectClass": "Arrow",
+																	"sid": 167196945938095,
+																	"parameters": {
+																		"instance-variable": "AttackPower",
+																		"value": "1"
+																	}
+																},
+																{
+																	"id": "set-bounce-off-solids",
+																	"objectClass": "Arrow",
+																	"sid": 288740467273591,
+																	"behaviorType": "Bullet",
+																	"parameters": {
+																		"state": false
+																	}
+																},
+																{
+																	"id": "set-boolean-instvar",
+																	"objectClass": "Arrow",
+																	"sid": 629729188292704,
+																	"parameters": {
+																		"instance-variable": "isBouncing",
+																		"value": "false"
+																	}
+																}
+															],
+															"sid": 538462323822066,
+															"children": [
+																{
+																	"eventType": "block",
+																	"conditions": [
+																		{
+																			"id": "compare-boolean-eventvar",
+																			"objectClass": "System",
+																			"sid": 880071397924456,
+																			"parameters": {
+																				"variable": "Fire"
+																			}
+																		}
+																	],
+																	"actions": [
+																		{
+																			"id": "spawn-another-object",
+																			"objectClass": "Arrow",
+																			"sid": 735280077125995,
+																			"parameters": {
+																				"object": "ArrowFireParticles",
+																				"layer": "0",
+																				"image-point": "1",
+																				"create-hierarchy": false
+																			}
+																		},
+																		{
+																			"id": "pin-to-object-imagepoint",
+																			"objectClass": "ArrowFireParticles",
+																			"sid": 498299956757775,
+																			"behaviorType": "Pin",
+																			"parameters": {
+																				"pin-to": "Arrow",
+																				"image-point": "1",
+																				"angle": false,
+																				"width-type": "no",
+																				"height-type": "no",
+																				"z": false
+																			}
+																		},
+																		{
+																			"id": "set-rate",
+																			"objectClass": "ArrowFireParticles",
+																			"sid": 607241169915927,
+																			"parameters": {
+																				"rate": "60"
+																			}
+																		},
+																		{
+																			"id": "set-spray-cone",
+																			"objectClass": "ArrowFireParticles",
+																			"sid": 318905329898956,
+																			"parameters": {
+																				"spray-cone": "15"
+																			}
+																		},
+																		{
+																			"id": "wait",
+																			"objectClass": "System",
+																			"sid": 895348602299726,
+																			"parameters": {
+																				"seconds": "1"
+																			}
+																		},
+																		{
+																			"id": "destroy",
+																			"objectClass": "ArrowFireParticles",
+																			"sid": 385417267766116
+																		}
+																	],
+																	"sid": 950845572445312
+																}
+															]
+														},
+														{
+															"eventType": "block",
+															"conditions": [],
+															"actions": [
+																{
+																	"id": "spawn-another-object",
+																	"objectClass": "Player",
+																	"sid": 636961458318592,
+																	"parameters": {
+																		"object": "Arrow",
+																		"layer": "0",
+																		"image-point": "0",
+																		"create-hierarchy": false
+																	}
+																},
+																{
+																	"id": "move-to-object",
+																	"objectClass": "Arrow",
+																	"sid": 171244679033968,
+																	"parameters": {
+																		"where": "behind",
+																		"object": "Player"
+																	}
+																},
+																{
+																	"id": "set-size",
+																	"objectClass": "Arrow",
+																	"sid": 578852849081250,
+																	"parameters": {
+																		"width": "32",
+																		"height": "6"
+																	}
+																},
+																{
+																	"id": "set-instvar-value",
+																	"objectClass": "Arrow",
+																	"sid": 185005483510817,
+																	"parameters": {
+																		"instance-variable": "AttackPower",
+																		"value": "1"
+																	}
+																},
+																{
+																	"id": "set-angle",
+																	"objectClass": "Arrow",
+																	"sid": 593696277789232,
+																	"parameters": {
+																		"angle": "Player.Angle+10"
+																	}
+																},
+																{
+																	"id": "set-bounce-off-solids",
+																	"objectClass": "Arrow",
+																	"sid": 453820771177116,
+																	"behaviorType": "Bullet",
+																	"parameters": {
+																		"state": false
+																	}
+																},
+																{
+																	"id": "set-boolean-instvar",
+																	"objectClass": "Arrow",
+																	"sid": 646030674273614,
+																	"parameters": {
+																		"instance-variable": "isBouncing",
+																		"value": "false"
+																	}
+																}
+															],
+															"sid": 623162765728865
+														},
+														{
+															"eventType": "block",
+															"conditions": [],
+															"actions": [
+																{
+																	"id": "spawn-another-object",
+																	"objectClass": "Player",
+																	"sid": 401039054063554,
+																	"parameters": {
+																		"object": "Arrow",
+																		"layer": "0",
+																		"image-point": "0",
+																		"create-hierarchy": false
+																	}
+																},
+																{
+																	"id": "move-to-object",
+																	"objectClass": "Arrow",
+																	"sid": 241671369255568,
+																	"parameters": {
+																		"where": "behind",
+																		"object": "Player"
+																	}
+																},
+																{
+																	"id": "set-size",
+																	"objectClass": "Arrow",
+																	"sid": 861672875296449,
+																	"parameters": {
+																		"width": "32",
+																		"height": "6"
+																	}
+																},
+																{
+																	"id": "set-instvar-value",
+																	"objectClass": "Arrow",
+																	"sid": 464567083925410,
+																	"parameters": {
+																		"instance-variable": "AttackPower",
+																		"value": "1"
+																	}
+																},
+																{
+																	"id": "set-angle",
+																	"objectClass": "Arrow",
+																	"sid": 317466723937383,
+																	"parameters": {
+																		"angle": "Player.Angle-10"
+																	}
+																},
+																{
+																	"id": "set-bounce-off-solids",
+																	"objectClass": "Arrow",
+																	"sid": 418982488081183,
+																	"behaviorType": "Bullet",
+																	"parameters": {
+																		"state": false
+																	}
+																},
+																{
+																	"id": "set-boolean-instvar",
+																	"objectClass": "Arrow",
+																	"sid": 171064909120134,
+																	"parameters": {
+																		"instance-variable": "isBouncing",
+																		"value": "false"
+																	}
+																}
+															],
+															"sid": 746178454235988
+														},
+														{
+															"eventType": "block",
+															"conditions": [],
+															"actions": [
+																{
 																	"id": "set-eventvar-value",
 																	"objectClass": "System",
 																	"sid": 368575575985448,
@@ -4338,288 +4846,13 @@
 																	}
 																}
 															],
-															"sid": 870643786620923,
-															"children": [
-																{
-																	"eventType": "block",
-																	"conditions": [],
-																	"actions": [
-																		{
-																			"id": "spawn-another-object",
-																			"objectClass": "Player",
-																			"sid": 221559744891821,
-																			"parameters": {
-																				"object": "Arrow",
-																				"layer": "0",
-																				"image-point": "0",
-																				"create-hierarchy": false
-																			}
-																		},
-																		{
-																			"id": "move-to-object",
-																			"objectClass": "Arrow",
-																			"sid": 404219480165194,
-																			"parameters": {
-																				"where": "behind",
-																				"object": "Player"
-																			}
-																		},
-																		{
-																			"id": "set-size",
-																			"objectClass": "Arrow",
-																			"sid": 412532330840763,
-																			"parameters": {
-																				"width": "32",
-																				"height": "6"
-																			}
-																		},
-																		{
-																			"id": "set-instvar-value",
-																			"objectClass": "Arrow",
-																			"sid": 213369115249347,
-																			"parameters": {
-																				"instance-variable": "AttackPower",
-																				"value": "1"
-																			}
-																		},
-																		{
-																			"id": "set-bounce-off-solids",
-																			"objectClass": "Arrow",
-																			"sid": 505144562536031,
-																			"behaviorType": "Bullet",
-																			"parameters": {
-																				"state": false
-																			}
-																		},
-																		{
-																			"id": "set-boolean-instvar",
-																			"objectClass": "Arrow",
-																			"sid": 717489749487376,
-																			"parameters": {
-																				"instance-variable": "isBouncing",
-																				"value": "false"
-																			}
-																		}
-																	],
-																	"sid": 402910173317210,
-																	"children": [
-																		{
-																			"eventType": "block",
-																			"conditions": [
-																				{
-																					"id": "compare-boolean-eventvar",
-																					"objectClass": "System",
-																					"sid": 981379635551903,
-																					"parameters": {
-																						"variable": "Fire"
-																					}
-																				}
-																			],
-																			"actions": [
-																				{
-																					"id": "spawn-another-object",
-																					"objectClass": "Arrow",
-																					"sid": 383264006523807,
-																					"parameters": {
-																						"object": "ArrowFireParticles",
-																						"layer": "0",
-																						"image-point": "1",
-																						"create-hierarchy": false
-																					}
-																				},
-																				{
-																					"id": "pin-to-object-imagepoint",
-																					"objectClass": "ArrowFireParticles",
-																					"sid": 884517395024931,
-																					"behaviorType": "Pin",
-																					"parameters": {
-																						"pin-to": "Arrow",
-																						"image-point": "1",
-																						"angle": false,
-																						"width-type": "no",
-																						"height-type": "no",
-																						"z": false
-																					}
-																				},
-																				{
-																					"id": "set-rate",
-																					"objectClass": "ArrowFireParticles",
-																					"sid": 289720571017389,
-																					"parameters": {
-																						"rate": "60"
-																					}
-																				},
-																				{
-																					"id": "set-spray-cone",
-																					"objectClass": "ArrowFireParticles",
-																					"sid": 179250878972437,
-																					"parameters": {
-																						"spray-cone": "15"
-																					}
-																				},
-																				{
-																					"id": "wait",
-																					"objectClass": "System",
-																					"sid": 723275796379346,
-																					"parameters": {
-																						"seconds": "1"
-																					}
-																				},
-																				{
-																					"id": "destroy",
-																					"objectClass": "ArrowFireParticles",
-																					"sid": 932896134023939
-																				}
-																			],
-																			"sid": 948996405509271
-																		}
-																	]
-																},
-																{
-																	"eventType": "block",
-																	"conditions": [],
-																	"actions": [
-																		{
-																			"id": "spawn-another-object",
-																			"objectClass": "Player",
-																			"sid": 994391114201696,
-																			"parameters": {
-																				"object": "Arrow",
-																				"layer": "0",
-																				"image-point": "0",
-																				"create-hierarchy": false
-																			}
-																		},
-																		{
-																			"id": "move-to-object",
-																			"objectClass": "Arrow",
-																			"sid": 489172670992233,
-																			"parameters": {
-																				"where": "behind",
-																				"object": "Player"
-																			}
-																		},
-																		{
-																			"id": "set-size",
-																			"objectClass": "Arrow",
-																			"sid": 796757595411470,
-																			"parameters": {
-																				"width": "32",
-																				"height": "6"
-																			}
-																		},
-																		{
-																			"id": "set-instvar-value",
-																			"objectClass": "Arrow",
-																			"sid": 117195813187282,
-																			"parameters": {
-																				"instance-variable": "AttackPower",
-																				"value": "1"
-																			}
-																		},
-																		{
-																			"id": "set-angle",
-																			"objectClass": "Arrow",
-																			"sid": 511257734439982,
-																			"parameters": {
-																				"angle": "Player.Angle+10"
-																			}
-																		},
-																		{
-																			"id": "set-bounce-off-solids",
-																			"objectClass": "Arrow",
-																			"sid": 996698577037578,
-																			"behaviorType": "Bullet",
-																			"parameters": {
-																				"state": false
-																			}
-																		},
-																		{
-																			"id": "set-boolean-instvar",
-																			"objectClass": "Arrow",
-																			"sid": 217291805838880,
-																			"parameters": {
-																				"instance-variable": "isBouncing",
-																				"value": "false"
-																			}
-																		}
-																	],
-																	"sid": 157612490760811
-																},
-																{
-																	"eventType": "block",
-																	"conditions": [],
-																	"actions": [
-																		{
-																			"id": "spawn-another-object",
-																			"objectClass": "Player",
-																			"sid": 511885269614700,
-																			"parameters": {
-																				"object": "Arrow",
-																				"layer": "0",
-																				"image-point": "0",
-																				"create-hierarchy": false
-																			}
-																		},
-																		{
-																			"id": "move-to-object",
-																			"objectClass": "Arrow",
-																			"sid": 502400647912726,
-																			"parameters": {
-																				"where": "behind",
-																				"object": "Player"
-																			}
-																		},
-																		{
-																			"id": "set-size",
-																			"objectClass": "Arrow",
-																			"sid": 644426029627655,
-																			"parameters": {
-																				"width": "32",
-																				"height": "6"
-																			}
-																		},
-																		{
-																			"id": "set-instvar-value",
-																			"objectClass": "Arrow",
-																			"sid": 807268711405931,
-																			"parameters": {
-																				"instance-variable": "AttackPower",
-																				"value": "1"
-																			}
-																		},
-																		{
-																			"id": "set-angle",
-																			"objectClass": "Arrow",
-																			"sid": 474732075684007,
-																			"parameters": {
-																				"angle": "Player.Angle-10"
-																			}
-																		},
-																		{
-																			"id": "set-bounce-off-solids",
-																			"objectClass": "Arrow",
-																			"sid": 503867708782529,
-																			"behaviorType": "Bullet",
-																			"parameters": {
-																				"state": false
-																			}
-																		},
-																		{
-																			"id": "set-boolean-instvar",
-																			"objectClass": "Arrow",
-																			"sid": 628723057133209,
-																			"parameters": {
-																				"instance-variable": "isBouncing",
-																				"value": "false"
-																			}
-																		}
-																	],
-																	"sid": 286636579581576
-																}
-															]
+															"sid": 870643786620923
 														}
 													]
+												},
+												{
+													"eventType": "comment",
+													"text": "When the Charged Shot power is greater than or equal to 2, fire the arrow. This arrow WILL be powered up, and WILL ricochet, and it will reset the CS_Power to 0"
 												},
 												{
 													"eventType": "block",
@@ -4922,14 +5155,14 @@
 																{
 																	"id": "set-eventvar-value",
 																	"objectClass": "System",
-																	"sid": 469292256213736,
+																	"sid": 581664428803839,
 																	"parameters": {
 																		"variable": "CS_Power",
 																		"value": "0"
 																	}
 																}
 															],
-															"sid": 343221000690022
+															"sid": 606295828874588
 														}
 													]
 												}
@@ -4947,6 +5180,39 @@
 							"description": "Fires 3 arrows in a cone in front of the player",
 							"isActiveOnStart": true,
 							"children": [
+								{
+									"eventType": "comment",
+									"text": "When you're using multishot (even paired with other abilities), you'll reduce the amount of damage you can do by half."
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-boolean-eventvar",
+											"objectClass": "System",
+											"sid": 654156528708785,
+											"parameters": {
+												"variable": "MultiShot"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 858455629128739,
+											"parameters": {
+												"variable": "ArrowAttackPowerMultiplier",
+												"value": ".5"
+											}
+										}
+									],
+									"sid": 817708816943228
+								},
+								{
+									"eventType": "comment",
+									"text": "When you're JUST using multishot"
+								},
 								{
 									"eventType": "block",
 									"conditions": [
@@ -4999,6 +5265,10 @@
 									"sid": 366947458137785,
 									"children": [
 										{
+											"eventType": "comment",
+											"text": "When the arrow has traveled more than 300 pixels, it'll destroy itself (so 300 pixel range)"
+										},
+										{
 											"eventType": "block",
 											"conditions": [
 												{
@@ -5020,6 +5290,10 @@
 												}
 											],
 											"sid": 232190853565421
+										},
+										{
+											"eventType": "comment",
+											"text": "If the Left Mouse Button is down -OR- the gamepad's {insert button here} is down, every .17 seconds, fire your arrows."
 										},
 										{
 											"eventType": "block",
@@ -5264,31 +5538,6 @@
 											]
 										}
 									]
-								},
-								{
-									"eventType": "block",
-									"conditions": [
-										{
-											"id": "compare-boolean-eventvar",
-											"objectClass": "System",
-											"sid": 751617119920449,
-											"parameters": {
-												"variable": "MultiShot"
-											}
-										}
-									],
-									"actions": [
-										{
-											"id": "set-eventvar-value",
-											"objectClass": "System",
-											"sid": 549003639397157,
-											"parameters": {
-												"variable": "ArrowAttackPowerMultiplier",
-												"value": ".5"
-											}
-										}
-									],
-									"sid": 149536094899146
 								}
 							],
 							"sid": 273868925258443
@@ -5300,6 +5549,10 @@
 							"description": "Press Space Bar to Dash forward, leaving a trail of elements behind you",
 							"isActiveOnStart": true,
 							"children": [
+								{
+									"eventType": "comment",
+									"text": "When you press the Space Bar (or whatever dash button) and dash is NOT on CD, do the dash"
+								},
 								{
 									"eventType": "block",
 									"conditions": [
@@ -5417,6 +5670,10 @@
 									"sid": 238540012758398,
 									"children": [
 										{
+											"eventType": "comment",
+											"text": "after 1.5 seconds, set the dash CD to false"
+										},
+										{
 											"eventType": "block",
 											"conditions": [],
 											"actions": [
@@ -5441,6 +5698,402 @@
 											"sid": 907679864005649
 										}
 									]
+								},
+								{
+									"eventType": "comment",
+									"text": "While you are dashing, you can't be collided with anything with \"Enemy\" tag (so you won't get stuck on enemies when you're dashing)"
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-enabled",
+											"objectClass": "Player",
+											"sid": 151672392126795,
+											"behaviorType": "Bullet"
+										}
+									],
+									"actions": [
+										{
+											"id": "set-solid-collision-filter",
+											"objectClass": "Player",
+											"sid": 374063106897263,
+											"parameters": {
+												"mode": "exclusive",
+												"tags": "\"Enemy\""
+											}
+										}
+									],
+									"sid": 243688426259780,
+									"children": [
+										{
+											"eventType": "comment",
+											"text": "if you picked electric, spawn the electric stuff"
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-boolean-eventvar",
+													"objectClass": "System",
+													"sid": 973302779148161,
+													"parameters": {
+														"variable": "Electric"
+													}
+												}
+											],
+											"actions": [],
+											"sid": 329969045837969,
+											"children": [
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "every-x-seconds",
+															"objectClass": "System",
+															"sid": 421599094148703,
+															"parameters": {
+																"interval-seconds": ".05"
+															}
+														}
+													],
+													"actions": [
+														{
+															"id": "spawn-another-object",
+															"objectClass": "Player",
+															"sid": 196986486194381,
+															"parameters": {
+																"object": "DashPaths",
+																"layer": "0",
+																"image-point": "1",
+																"create-hierarchy": false
+															}
+														},
+														{
+															"id": "set-angle",
+															"objectClass": "DashPaths",
+															"sid": 947139183020806,
+															"parameters": {
+																"angle": "Player.Bullet.AngleOfMotion+90"
+															}
+														},
+														{
+															"id": "set-animation",
+															"objectClass": "DashPaths",
+															"sid": 690788778936825,
+															"parameters": {
+																"animation": "\"Electric\"",
+																"from": "beginning"
+															}
+														},
+														{
+															"id": "move-to-object",
+															"objectClass": "DashPaths",
+															"sid": 666339951076146,
+															"parameters": {
+																"where": "behind",
+																"object": "Player"
+															}
+														},
+														{
+															"id": "move-to-object",
+															"objectClass": "DashPaths",
+															"sid": 988402313870515,
+															"parameters": {
+																"where": "behind",
+																"object": "Enemies"
+															}
+														},
+														{
+															"id": "move-to-object",
+															"objectClass": "DashPaths",
+															"sid": 811748262803119,
+															"parameters": {
+																"where": "behind",
+																"object": "Arrow"
+															}
+														},
+														{
+															"id": "move-to-object",
+															"objectClass": "DashPaths",
+															"sid": 312898385076813,
+															"parameters": {
+																"where": "behind",
+																"object": "EnemyArrows"
+															}
+														}
+													],
+													"sid": 759188129510165
+												}
+											]
+										},
+										{
+											"eventType": "comment",
+											"text": "if you picked ice, spawn the ice stuff"
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-boolean-eventvar",
+													"objectClass": "System",
+													"sid": 473202777145320,
+													"parameters": {
+														"variable": "Ice"
+													}
+												}
+											],
+											"actions": [],
+											"sid": 551222841292697,
+											"children": [
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "every-x-seconds",
+															"objectClass": "System",
+															"sid": 425110879374007,
+															"parameters": {
+																"interval-seconds": ".05"
+															}
+														}
+													],
+													"actions": [
+														{
+															"id": "spawn-another-object",
+															"objectClass": "Player",
+															"sid": 549743954321547,
+															"parameters": {
+																"object": "DashPaths",
+																"layer": "0",
+																"image-point": "1",
+																"create-hierarchy": false
+															}
+														},
+														{
+															"id": "set-angle",
+															"objectClass": "DashPaths",
+															"sid": 395091314666804,
+															"parameters": {
+																"angle": "Player.Bullet.AngleOfMotion+90"
+															}
+														},
+														{
+															"id": "set-animation",
+															"objectClass": "DashPaths",
+															"sid": 820209264948978,
+															"parameters": {
+																"animation": "\"Ice\"",
+																"from": "beginning"
+															}
+														},
+														{
+															"id": "move-to-object",
+															"objectClass": "DashPaths",
+															"sid": 991758495177865,
+															"parameters": {
+																"where": "behind",
+																"object": "Player"
+															}
+														},
+														{
+															"id": "move-to-object",
+															"objectClass": "DashPaths",
+															"sid": 883067257530654,
+															"parameters": {
+																"where": "behind",
+																"object": "Enemies"
+															}
+														},
+														{
+															"id": "move-to-object",
+															"objectClass": "DashPaths",
+															"sid": 498480272696908,
+															"parameters": {
+																"where": "behind",
+																"object": "Arrow"
+															}
+														},
+														{
+															"id": "move-to-object",
+															"objectClass": "DashPaths",
+															"sid": 154337573790210,
+															"parameters": {
+																"where": "behind",
+																"object": "EnemyArrows"
+															}
+														}
+													],
+													"sid": 703114331192537
+												}
+											]
+										},
+										{
+											"eventType": "comment",
+											"text": "if you picked fire, spawn the fire stuff"
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-boolean-eventvar",
+													"objectClass": "System",
+													"sid": 890592574719165,
+													"parameters": {
+														"variable": "Fire"
+													}
+												}
+											],
+											"actions": [],
+											"sid": 403673392597685,
+											"children": [
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "every-x-seconds",
+															"objectClass": "System",
+															"sid": 518591220468862,
+															"parameters": {
+																"interval-seconds": ".05"
+															}
+														}
+													],
+													"actions": [
+														{
+															"id": "spawn-another-object",
+															"objectClass": "Player",
+															"sid": 982817893709566,
+															"parameters": {
+																"object": "DashPaths",
+																"layer": "0",
+																"image-point": "1",
+																"create-hierarchy": false
+															}
+														},
+														{
+															"id": "set-angle",
+															"objectClass": "DashPaths",
+															"sid": 755207902109019,
+															"parameters": {
+																"angle": "Player.Bullet.AngleOfMotion+90"
+															}
+														},
+														{
+															"id": "set-animation",
+															"objectClass": "DashPaths",
+															"sid": 362504848388723,
+															"parameters": {
+																"animation": "\"Fire\"",
+																"from": "beginning"
+															}
+														},
+														{
+															"id": "move-to-object",
+															"objectClass": "DashPaths",
+															"sid": 256132995093612,
+															"parameters": {
+																"where": "behind",
+																"object": "Player"
+															}
+														},
+														{
+															"id": "move-to-object",
+															"objectClass": "DashPaths",
+															"sid": 328650787220314,
+															"parameters": {
+																"where": "behind",
+																"object": "Enemies"
+															}
+														},
+														{
+															"id": "move-to-object",
+															"objectClass": "DashPaths",
+															"sid": 131527639571903,
+															"parameters": {
+																"where": "behind",
+																"object": "Arrow"
+															}
+														},
+														{
+															"id": "move-to-object",
+															"objectClass": "DashPaths",
+															"sid": 351086560822128,
+															"parameters": {
+																"where": "behind",
+																"object": "EnemyArrows"
+															}
+														}
+													],
+													"sid": 333191807395573
+												}
+											]
+										}
+									]
+								},
+								{
+									"eventType": "comment",
+									"text": "when the dash particle's animations are done, they destroy themselves"
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "on-any-animation-finished",
+											"objectClass": "DashPaths",
+											"sid": 556201928674691
+										}
+									],
+									"actions": [
+										{
+											"id": "destroy",
+											"objectClass": "DashPaths",
+											"sid": 435381511003189
+										}
+									],
+									"sid": 815850641750757
+								},
+								{
+									"eventType": "comment",
+									"text": "Player stops bouncing (bullet maneuver) when you collide with a wall (so you can't dash through walls)"
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "on-collision-with-another-object",
+											"objectClass": "Player",
+											"sid": 139233141719813,
+											"parameters": {
+												"object": "Walls"
+											}
+										},
+										{
+											"id": "on-collision-with-another-object",
+											"objectClass": "Player",
+											"sid": 524929898342954,
+											"parameters": {
+												"object": "TiledWalls"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-speed",
+											"objectClass": "Player",
+											"sid": 626433720086019,
+											"behaviorType": "Bullet",
+											"parameters": {
+												"speed": "0"
+											}
+										}
+									],
+									"sid": 582004163852547,
+									"isOrBlock": true
+								},
+								{
+									"eventType": "comment",
+									"text": "When the ranged enemy collides with fire particles, arrow particles, or dash paths, do the things"
 								},
 								{
 									"eventType": "block",
@@ -5473,6 +6126,10 @@
 									"actions": [],
 									"sid": 482174509199363,
 									"children": [
+										{
+											"eventType": "comment",
+											"text": "if you chose electric, paralyze them for 5 seconds"
+										},
 										{
 											"eventType": "block",
 											"conditions": [
@@ -5516,6 +6173,10 @@
 											"sid": 532769083318820
 										},
 										{
+											"eventType": "comment",
+											"text": "if you chose ice, freeze them for 5 seconds"
+										},
+										{
 											"eventType": "block",
 											"conditions": [
 												{
@@ -5556,6 +6217,10 @@
 												}
 											],
 											"sid": 464562942948821
+										},
+										{
+											"eventType": "comment",
+											"text": "if you chose fire, burn them for 4.5 seconds"
 										},
 										{
 											"eventType": "block",
@@ -5603,6 +6268,10 @@
 									"isOrBlock": true
 								},
 								{
+									"eventType": "comment",
+									"text": "When the orc boss is collides with fire particles, arrow particles, or dash paths, do the things"
+								},
+								{
 									"eventType": "block",
 									"conditions": [
 										{
@@ -5633,6 +6302,10 @@
 									"actions": [],
 									"sid": 312084537178581,
 									"children": [
+										{
+											"eventType": "comment",
+											"text": "if you chose electric, paralyze them for 5 seconds"
+										},
 										{
 											"eventType": "block",
 											"conditions": [
@@ -5676,6 +6349,10 @@
 											"sid": 343017071645713
 										},
 										{
+											"eventType": "comment",
+											"text": "if you chose ice, freeze them for 5 seconds"
+										},
+										{
 											"eventType": "block",
 											"conditions": [
 												{
@@ -5716,6 +6393,10 @@
 												}
 											],
 											"sid": 942781144226584
+										},
+										{
+											"eventType": "comment",
+											"text": "if you chose fire, burn them for 4.5 seconds"
 										},
 										{
 											"eventType": "block",
@@ -5763,6 +6444,10 @@
 									"isOrBlock": true
 								},
 								{
+									"eventType": "comment",
+									"text": "When bob, that bastard is collides with fire particles, arrow particles, or dash paths, do the things"
+								},
+								{
 									"eventType": "block",
 									"conditions": [
 										{
@@ -5793,6 +6478,10 @@
 									"actions": [],
 									"sid": 801518737170153,
 									"children": [
+										{
+											"eventType": "comment",
+											"text": "if you chose electric, paralyze them for 5 seconds"
+										},
 										{
 											"eventType": "block",
 											"conditions": [
@@ -5836,6 +6525,10 @@
 											"sid": 654601182255286
 										},
 										{
+											"eventType": "comment",
+											"text": "if you chose ice, freeze them for 5 seconds"
+										},
+										{
 											"eventType": "block",
 											"conditions": [
 												{
@@ -5876,6 +6569,10 @@
 												}
 											],
 											"sid": 698512127970625
+										},
+										{
+											"eventType": "comment",
+											"text": "if you chose fire, burn them for 4.5 seconds"
 										},
 										{
 											"eventType": "block",
@@ -5923,6 +6620,10 @@
 									"isOrBlock": true
 								},
 								{
+									"eventType": "comment",
+									"text": "When the melee enemy collides with fire particles, arrow particles, or dash paths, do the things"
+								},
+								{
 									"eventType": "block",
 									"conditions": [
 										{
@@ -5953,6 +6654,10 @@
 									"actions": [],
 									"sid": 371890012801192,
 									"children": [
+										{
+											"eventType": "comment",
+											"text": "if you chose electric, paralyze them for 5 seconds"
+										},
 										{
 											"eventType": "block",
 											"conditions": [
@@ -5996,6 +6701,10 @@
 											"sid": 118253319827425
 										},
 										{
+											"eventType": "comment",
+											"text": "if you chose ice, freeze them for 5 seconds"
+										},
+										{
 											"eventType": "block",
 											"conditions": [
 												{
@@ -6036,6 +6745,10 @@
 												}
 											],
 											"sid": 164554854781706
+										},
+										{
+											"eventType": "comment",
+											"text": "if you chose fire, burn them for 4.5 seconds"
 										},
 										{
 											"eventType": "block",
@@ -6081,374 +6794,6 @@
 										}
 									],
 									"isOrBlock": true
-								},
-								{
-									"eventType": "block",
-									"conditions": [
-										{
-											"id": "is-enabled",
-											"objectClass": "Player",
-											"sid": 939561967740395,
-											"behaviorType": "Bullet"
-										}
-									],
-									"actions": [
-										{
-											"id": "set-solid-collision-filter",
-											"objectClass": "Player",
-											"sid": 795632946841581,
-											"parameters": {
-												"mode": "exclusive",
-												"tags": "\"Enemy\""
-											}
-										}
-									],
-									"sid": 469072423141570,
-									"children": [
-										{
-											"eventType": "block",
-											"conditions": [
-												{
-													"id": "compare-boolean-eventvar",
-													"objectClass": "System",
-													"sid": 592316397041937,
-													"parameters": {
-														"variable": "Electric"
-													}
-												}
-											],
-											"actions": [],
-											"sid": 588032580327830,
-											"children": [
-												{
-													"eventType": "block",
-													"conditions": [
-														{
-															"id": "every-x-seconds",
-															"objectClass": "System",
-															"sid": 151850162374979,
-															"parameters": {
-																"interval-seconds": ".05"
-															}
-														}
-													],
-													"actions": [
-														{
-															"id": "spawn-another-object",
-															"objectClass": "Player",
-															"sid": 699227838770171,
-															"parameters": {
-																"object": "DashPaths",
-																"layer": "0",
-																"image-point": "1",
-																"create-hierarchy": false
-															}
-														},
-														{
-															"id": "set-angle",
-															"objectClass": "DashPaths",
-															"sid": 447497951158127,
-															"parameters": {
-																"angle": "Player.Bullet.AngleOfMotion+90"
-															}
-														},
-														{
-															"id": "set-animation",
-															"objectClass": "DashPaths",
-															"sid": 648428543413229,
-															"parameters": {
-																"animation": "\"Electric\"",
-																"from": "beginning"
-															}
-														},
-														{
-															"id": "move-to-object",
-															"objectClass": "DashPaths",
-															"sid": 962834372720324,
-															"parameters": {
-																"where": "behind",
-																"object": "Player"
-															}
-														},
-														{
-															"id": "move-to-object",
-															"objectClass": "DashPaths",
-															"sid": 452007899895094,
-															"parameters": {
-																"where": "behind",
-																"object": "Enemies"
-															}
-														},
-														{
-															"id": "move-to-object",
-															"objectClass": "DashPaths",
-															"sid": 948518796799820,
-															"parameters": {
-																"where": "behind",
-																"object": "Arrow"
-															}
-														},
-														{
-															"id": "move-to-object",
-															"objectClass": "DashPaths",
-															"sid": 445787366939763,
-															"parameters": {
-																"where": "behind",
-																"object": "EnemyArrows"
-															}
-														}
-													],
-													"sid": 772003413098664
-												}
-											]
-										},
-										{
-											"eventType": "block",
-											"conditions": [
-												{
-													"id": "compare-boolean-eventvar",
-													"objectClass": "System",
-													"sid": 516370132838623,
-													"parameters": {
-														"variable": "Ice"
-													}
-												}
-											],
-											"actions": [],
-											"sid": 542977980781962,
-											"children": [
-												{
-													"eventType": "block",
-													"conditions": [
-														{
-															"id": "every-x-seconds",
-															"objectClass": "System",
-															"sid": 792364191455355,
-															"parameters": {
-																"interval-seconds": ".05"
-															}
-														}
-													],
-													"actions": [
-														{
-															"id": "spawn-another-object",
-															"objectClass": "Player",
-															"sid": 554703612413480,
-															"parameters": {
-																"object": "DashPaths",
-																"layer": "0",
-																"image-point": "1",
-																"create-hierarchy": false
-															}
-														},
-														{
-															"id": "set-angle",
-															"objectClass": "DashPaths",
-															"sid": 576994129820669,
-															"parameters": {
-																"angle": "Player.Bullet.AngleOfMotion+90"
-															}
-														},
-														{
-															"id": "set-animation",
-															"objectClass": "DashPaths",
-															"sid": 164289728155770,
-															"parameters": {
-																"animation": "\"Ice\"",
-																"from": "beginning"
-															}
-														},
-														{
-															"id": "move-to-object",
-															"objectClass": "DashPaths",
-															"sid": 251148937278769,
-															"parameters": {
-																"where": "behind",
-																"object": "Player"
-															}
-														},
-														{
-															"id": "move-to-object",
-															"objectClass": "DashPaths",
-															"sid": 355246745545404,
-															"parameters": {
-																"where": "behind",
-																"object": "Enemies"
-															}
-														},
-														{
-															"id": "move-to-object",
-															"objectClass": "DashPaths",
-															"sid": 154807693559073,
-															"parameters": {
-																"where": "behind",
-																"object": "Arrow"
-															}
-														},
-														{
-															"id": "move-to-object",
-															"objectClass": "DashPaths",
-															"sid": 394119954599641,
-															"parameters": {
-																"where": "behind",
-																"object": "EnemyArrows"
-															}
-														}
-													],
-													"sid": 702265221166257
-												}
-											]
-										},
-										{
-											"eventType": "block",
-											"conditions": [
-												{
-													"id": "compare-boolean-eventvar",
-													"objectClass": "System",
-													"sid": 690305822901420,
-													"parameters": {
-														"variable": "Fire"
-													}
-												}
-											],
-											"actions": [],
-											"sid": 191783841709488,
-											"children": [
-												{
-													"eventType": "block",
-													"conditions": [
-														{
-															"id": "every-x-seconds",
-															"objectClass": "System",
-															"sid": 588494133415888,
-															"parameters": {
-																"interval-seconds": ".05"
-															}
-														}
-													],
-													"actions": [
-														{
-															"id": "spawn-another-object",
-															"objectClass": "Player",
-															"sid": 558197586943084,
-															"parameters": {
-																"object": "DashPaths",
-																"layer": "0",
-																"image-point": "1",
-																"create-hierarchy": false
-															}
-														},
-														{
-															"id": "set-angle",
-															"objectClass": "DashPaths",
-															"sid": 576270506777874,
-															"parameters": {
-																"angle": "Player.Bullet.AngleOfMotion+90"
-															}
-														},
-														{
-															"id": "set-animation",
-															"objectClass": "DashPaths",
-															"sid": 569665293354632,
-															"parameters": {
-																"animation": "\"Fire\"",
-																"from": "beginning"
-															}
-														},
-														{
-															"id": "move-to-object",
-															"objectClass": "DashPaths",
-															"sid": 509594401507313,
-															"parameters": {
-																"where": "behind",
-																"object": "Player"
-															}
-														},
-														{
-															"id": "move-to-object",
-															"objectClass": "DashPaths",
-															"sid": 579295878308559,
-															"parameters": {
-																"where": "behind",
-																"object": "Enemies"
-															}
-														},
-														{
-															"id": "move-to-object",
-															"objectClass": "DashPaths",
-															"sid": 661143203292892,
-															"parameters": {
-																"where": "behind",
-																"object": "Arrow"
-															}
-														},
-														{
-															"id": "move-to-object",
-															"objectClass": "DashPaths",
-															"sid": 938608377207594,
-															"parameters": {
-																"where": "behind",
-																"object": "EnemyArrows"
-															}
-														}
-													],
-													"sid": 838180822202871
-												}
-											]
-										}
-									]
-								},
-								{
-									"eventType": "block",
-									"conditions": [
-										{
-											"id": "on-any-animation-finished",
-											"objectClass": "DashPaths",
-											"sid": 572571154484845
-										}
-									],
-									"actions": [
-										{
-											"id": "destroy",
-											"objectClass": "DashPaths",
-											"sid": 436805609254785
-										}
-									],
-									"sid": 883799569755552
-								},
-								{
-									"eventType": "block",
-									"conditions": [
-										{
-											"id": "on-collision-with-another-object",
-											"objectClass": "Player",
-											"sid": 687414315152467,
-											"parameters": {
-												"object": "Walls"
-											}
-										},
-										{
-											"id": "on-collision-with-another-object",
-											"objectClass": "Player",
-											"sid": 303847371685978,
-											"parameters": {
-												"object": "TiledWalls"
-											}
-										}
-									],
-									"actions": [
-										{
-											"id": "set-speed",
-											"objectClass": "Player",
-											"sid": 163700601408617,
-											"behaviorType": "Bullet",
-											"parameters": {
-												"speed": "0"
-											}
-										}
-									],
-									"sid": 428604441295985,
-									"isOrBlock": true
 								}
 							],
 							"sid": 256218946089155
@@ -6460,6 +6805,10 @@
 							"description": "Just fires one shot in the direction you're facing",
 							"isActiveOnStart": true,
 							"children": [
+								{
+									"eventType": "comment",
+									"text": "When you choose NO abilities"
+								},
 								{
 									"eventType": "block",
 									"conditions": [
@@ -6512,6 +6861,37 @@
 									"sid": 164093465672044,
 									"children": [
 										{
+											"eventType": "comment",
+											"text": "When the arrow has traveled more than 350 pixels, it'll destroy itself (so 350 pixel range)"
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-distance-travelled",
+													"objectClass": "Arrow",
+													"sid": 382466807776933,
+													"behaviorType": "Bullet",
+													"parameters": {
+														"comparison": 5,
+														"distance": "350"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "destroy",
+													"objectClass": "Arrow",
+													"sid": 530445314071407
+												}
+											],
+											"sid": 448191814234450
+										},
+										{
+											"eventType": "comment",
+											"text": "If the Left Mouse Button is down -OR- the gamepad's {insert button here} is down, every .17 seconds, fire an arrow."
+										},
+										{
 											"eventType": "block",
 											"conditions": [
 												{
@@ -6541,6 +6921,10 @@
 													"actions": [],
 													"sid": 895645177882038,
 													"children": [
+														{
+															"eventType": "comment",
+															"text": "Play the arrow shooting audio here"
+														},
 														{
 															"eventType": "block",
 															"conditions": [],
@@ -6609,29 +6993,6 @@
 													]
 												}
 											]
-										},
-										{
-											"eventType": "block",
-											"conditions": [
-												{
-													"id": "compare-distance-travelled",
-													"objectClass": "Arrow",
-													"sid": 270879611505612,
-													"behaviorType": "Bullet",
-													"parameters": {
-														"comparison": 5,
-														"distance": "350"
-													}
-												}
-											],
-											"actions": [
-												{
-													"id": "destroy",
-													"objectClass": "Arrow",
-													"sid": 757866542252083
-												}
-											],
-											"sid": 461902369634551
 										}
 									]
 								}
@@ -6640,36 +7001,6 @@
 						}
 					],
 					"sid": 359139091036204
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "every-x-seconds",
-							"objectClass": "System",
-							"sid": 669621932342039,
-							"parameters": {
-								"interval-seconds": "0.2"
-							}
-						}
-					],
-					"actions": [
-						{
-							"type": "comment",
-							"text": "Hearts Follow the Player"
-						},
-						{
-							"id": "set-position",
-							"objectClass": "HP_Hearts",
-							"sid": 904903114286461,
-							"parameters": {
-								"x": "Player.X",
-								"y": "Player.Y + 30"
-							}
-						}
-					],
-					"sid": 244858542541465,
-					"disabled": true
 				}
 			],
 			"sid": 315092312897719
@@ -6678,9 +7009,13 @@
 			"eventType": "group",
 			"disabled": false,
 			"title": "Enemies",
-			"description": "",
+			"description": "Functions to do with Enemies are placed here",
 			"isActiveOnStart": true,
 			"children": [
+				{
+					"eventType": "comment",
+					"text": "When the enemies are outside of the layout, destroy them. This is to protect against any enemies that may somehow, somewhere, pop up outside of the arenas"
+				},
 				{
 					"eventType": "block",
 					"conditions": [
@@ -6698,6 +7033,10 @@
 						}
 					],
 					"sid": 182842321499883
+				},
+				{
+					"eventType": "comment",
+					"text": "When the enemy's health is less than or equal to zero, spawn their kill particles, set their visibility to invisible, disable their collisions and movement, wait for all that, and then destroy them"
 				},
 				{
 					"eventType": "block",
@@ -6764,6 +7103,10 @@
 					"sid": 652613357011993
 				},
 				{
+					"eventType": "comment",
+					"text": "when the enemies are destroyed, subtract 1 from EnemyCount. This is where we would put any kind of enemy death sounds"
+				},
+				{
 					"eventType": "block",
 					"conditions": [
 						{
@@ -6786,43 +7129,51 @@
 					"sid": 635337482148572
 				},
 				{
+					"eventType": "comment",
+					"text": "When the enemy is hit by the ZapRadius (electric arrow stuff), subtract 1 from their health"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Enemies",
+							"sid": 786746888260725,
+							"parameters": {
+								"object": "ZapRadius"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "subtract-from-instvar",
+							"objectClass": "Enemies",
+							"sid": 988241610677185,
+							"parameters": {
+								"instance-variable": "Health",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 171467030743208
+				},
+				{
 					"eventType": "group",
 					"disabled": false,
 					"title": "Status Effects",
-					"description": "",
+					"description": "Functions to do with Enemy Status Effects are placed here",
 					"isActiveOnStart": true,
 					"children": [
 						{
 							"eventType": "group",
 							"disabled": false,
 							"title": "Shared Status Effects",
-							"description": "",
+							"description": "Status Effects that are shared are placed here",
 							"isActiveOnStart": true,
 							"children": [
 								{
-									"eventType": "block",
-									"conditions": [
-										{
-											"id": "on-collision-with-another-object",
-											"objectClass": "Enemies",
-											"sid": 660876338484639,
-											"parameters": {
-												"object": "ZapRadius"
-											}
-										}
-									],
-									"actions": [
-										{
-											"id": "subtract-from-instvar",
-											"objectClass": "Enemies",
-											"sid": 123974190633627,
-											"parameters": {
-												"instance-variable": "Health",
-												"value": "1"
-											}
-										}
-									],
-									"sid": 572942148844837
+									"eventType": "comment",
+									"text": "When the enemy is brittle, their move speed is reduced by 20% for 5 seconds, and they take 1 extra damage from arrows"
 								},
 								{
 									"eventType": "block",
@@ -6839,10 +7190,6 @@
 									"actions": [],
 									"sid": 362130105809800,
 									"children": [
-										{
-											"eventType": "comment",
-											"text": "When the enemy is brittle, their move speed is reduced by 20% for 5 seconds"
-										},
 										{
 											"eventType": "block",
 											"conditions": [],
@@ -6912,16 +7259,20 @@
 							"eventType": "group",
 							"disabled": false,
 							"title": "Minor Enemy Status Effects",
-							"description": "",
+							"description": "Status Effects for Ranged & Melee enemies are placed here",
 							"isActiveOnStart": true,
 							"children": [
 								{
 									"eventType": "group",
 									"disabled": false,
 									"title": "Mask Enemy Status Effect",
-									"description": "",
+									"description": "Status Effects for Ranged Enemies are placed here",
 									"isActiveOnStart": true,
 									"children": [
+										{
+											"eventType": "comment",
+											"text": "When the enemy is burning, every second, do burn damage, spawn damage text, and play the burning animation"
+										},
 										{
 											"eventType": "block",
 											"conditions": [
@@ -7038,6 +7389,10 @@
 											]
 										},
 										{
+											"eventType": "comment",
+											"text": "When the enemy is frozen, set their animation to their Frozen animation, and increase the time between their shots for 5 seconds"
+										},
+										{
 											"eventType": "block",
 											"conditions": [
 												{
@@ -7056,15 +7411,6 @@
 													"eventType": "block",
 													"conditions": [],
 													"actions": [
-														{
-															"id": "set-max-speed",
-															"objectClass": "Ranged_Enemy_Minor",
-															"sid": 902825108162775,
-															"behaviorType": "MoveTo",
-															"parameters": {
-																"max-speed": "75"
-															}
-														},
 														{
 															"id": "set-animation",
 															"objectClass": "Ranged_Enemy_Minor",
@@ -7124,6 +7470,10 @@
 											]
 										},
 										{
+											"eventType": "comment",
+											"text": "When the enemy is paralyzed, set their animation to paralyzed, and disable their turret (they can't shoot) for 5 seconds"
+										},
+										{
 											"eventType": "block",
 											"conditions": [
 												{
@@ -7142,15 +7492,6 @@
 													"eventType": "block",
 													"conditions": [],
 													"actions": [
-														{
-															"id": "set-max-speed",
-															"objectClass": "Ranged_Enemy_Minor",
-															"sid": 970003460382564,
-															"behaviorType": "MoveTo",
-															"parameters": {
-																"max-speed": "0"
-															}
-														},
 														{
 															"id": "set-enabled",
 															"objectClass": "Ranged_Enemy_Minor",
@@ -7175,15 +7516,6 @@
 															"sid": 732754252294649,
 															"parameters": {
 																"seconds": "5.0"
-															}
-														},
-														{
-															"id": "set-max-speed",
-															"objectClass": "Ranged_Enemy_Minor",
-															"sid": 364846359433149,
-															"behaviorType": "MoveTo",
-															"parameters": {
-																"max-speed": "150"
 															}
 														},
 														{
@@ -7216,9 +7548,13 @@
 									"eventType": "group",
 									"disabled": false,
 									"title": "Skeleton Enemy Status Effects",
-									"description": "",
+									"description": "Status Effects for Melee Enemies are placed here",
 									"isActiveOnStart": true,
 									"children": [
+										{
+											"eventType": "comment",
+											"text": "When the enemy is burning, every second, do burn damage, spawn damage text, and play the burning animation"
+										},
 										{
 											"eventType": "block",
 											"conditions": [
@@ -7335,6 +7671,10 @@
 											]
 										},
 										{
+											"eventType": "comment",
+											"text": "When the enemy is frozen, set their animation to their Frozen animation, and reduce the speed at which they can travel for 5 seconds"
+										},
+										{
 											"eventType": "block",
 											"conditions": [
 												{
@@ -7410,6 +7750,10 @@
 													"sid": 793530297682912
 												}
 											]
+										},
+										{
+											"eventType": "comment",
+											"text": "When the enemy is paralyzed, set their animation to paralyzed, and disable their movement capabilities for 5 seconds"
 										},
 										{
 											"eventType": "block",
@@ -7490,16 +7834,20 @@
 							"eventType": "group",
 							"disabled": false,
 							"title": "Boss Status Effects",
-							"description": "",
+							"description": "Status Effects for Boss enemies are placed here",
 							"isActiveOnStart": true,
 							"children": [
 								{
 									"eventType": "group",
 									"disabled": false,
 									"title": "Orc Boss Status Effect",
-									"description": "",
+									"description": "Status Effects for the Orc Boss are placed here",
 									"isActiveOnStart": true,
 									"children": [
+										{
+											"eventType": "comment",
+											"text": "When the boss is burning, every second, do burn damage, spawn damage text, and play the burning animation"
+										},
 										{
 											"eventType": "block",
 											"conditions": [
@@ -7604,9 +7952,13 @@
 									"eventType": "group",
 									"disabled": false,
 									"title": "Rogue Boss Status Effect",
-									"description": "",
+									"description": "Status Effects for the Rogue Boss are placed here",
 									"isActiveOnStart": true,
 									"children": [
+										{
+											"eventType": "comment",
+											"text": "When the boss is burning, every second, do burn damage, spawn damage text, and play the burning animation"
+										},
 										{
 											"eventType": "block",
 											"conditions": [
@@ -7706,15 +8058,6 @@
 										}
 									],
 									"sid": 392520410996648
-								},
-								{
-									"eventType": "group",
-									"disabled": false,
-									"title": "Reaper Boss Status Effect",
-									"description": "",
-									"isActiveOnStart": true,
-									"children": [],
-									"sid": 308691563754627
 								}
 							],
 							"sid": 672419888076320
@@ -7726,16 +8069,20 @@
 					"eventType": "group",
 					"disabled": false,
 					"title": "Minor Enemies",
-					"description": "",
+					"description": "Functions to do with Minor Enemies are placed here",
 					"isActiveOnStart": true,
 					"children": [
 						{
 							"eventType": "group",
 							"disabled": false,
 							"title": "Mask Enemy",
-							"description": "",
+							"description": "Functions to do with the Ranged Enemy are placed here",
 							"isActiveOnStart": true,
 							"children": [
+								{
+									"eventType": "comment",
+									"text": "When the enemy has LOS of the player, acquire the target."
+								},
 								{
 									"eventType": "block",
 									"conditions": [
@@ -7762,6 +8109,10 @@
 										}
 									],
 									"sid": 601794269772438
+								},
+								{
+									"eventType": "comment",
+									"text": "When the enemy has a target, shoot the arrows at the player"
 								},
 								{
 									"eventType": "block",
@@ -7810,9 +8161,13 @@
 							"eventType": "group",
 							"disabled": false,
 							"title": "Skeleton Enemy",
-							"description": "",
+							"description": "Functions to do with the Melee Enemy are placed here",
 							"isActiveOnStart": true,
 							"children": [
+								{
+									"eventType": "comment",
+									"text": "When the enemy collides with another enemy, bounce off eachother"
+								},
 								{
 									"eventType": "block",
 									"conditions": [
@@ -7881,6 +8236,10 @@
 										}
 									],
 									"sid": 957127785164787
+								},
+								{
+									"eventType": "comment",
+									"text": "When the enemy collides with the player, and the player isn't dashing, damage the player, spawn the blood particles, do some screen shake, push the player back a bit, PLAY THE PLAYER HURT SOUND, and play the player hurt animation. Knock back might not work"
 								},
 								{
 									"eventType": "block",
@@ -8103,6 +8462,10 @@
 									"sid": 241592897466575
 								},
 								{
+									"eventType": "comment",
+									"text": "When the enemy has LOS of the player, move towards the player"
+								},
+								{
 									"eventType": "block",
 									"conditions": [
 										{
@@ -8130,6 +8493,10 @@
 										}
 									],
 									"sid": 683260126752158
+								},
+								{
+									"eventType": "comment",
+									"text": "Every tick, add the walls to the enemy's LOS obstacles (they can't see through walls)"
 								},
 								{
 									"eventType": "block",
@@ -8172,7 +8539,7 @@
 					"eventType": "group",
 					"disabled": false,
 					"title": "Bosses",
-					"description": "",
+					"description": "Functions to do with Boss Enemies are placed here",
 					"isActiveOnStart": true,
 					"children": [
 						{
@@ -8182,6 +8549,10 @@
 							"description": "Orc Shaman who throws acid flasks at the player, sometimes the acid does a DoT effect, sometimes it pushes the player back",
 							"isActiveOnStart": true,
 							"children": [
+								{
+									"eventType": "comment",
+									"text": "Boss moves to the travel waypoints when it's told"
+								},
 								{
 									"eventType": "block",
 									"conditions": [
@@ -8210,6 +8581,10 @@
 										}
 									],
 									"sid": 772502526625976
+								},
+								{
+									"eventType": "comment",
+									"text": "Every 5 seconds, the boss's destination will increase by 1 until it resets."
 								},
 								{
 									"eventType": "block",
@@ -8305,6 +8680,10 @@
 									]
 								},
 								{
+									"eventType": "comment",
+									"text": "When the boss is overlapping a travel waypoint, and has LOS of the player, every .5 seconds, throw an acid flask at the player."
+								},
+								{
 									"eventType": "block",
 									"conditions": [
 										{
@@ -8386,6 +8765,10 @@
 											"sid": 115939700865067
 										}
 									]
+								},
+								{
+									"eventType": "comment",
+									"text": "When the acid flask hits the player, do damage, and do the damage stuff"
 								},
 								{
 									"eventType": "block",
@@ -8564,6 +8947,10 @@
 									"sid": 621644820379520,
 									"children": [
 										{
+											"eventType": "comment",
+											"text": "if the animation is 1, poison the player"
+										},
+										{
 											"eventType": "block",
 											"conditions": [
 												{
@@ -8627,6 +9014,10 @@
 											"sid": 810078872032621
 										},
 										{
+											"eventType": "comment",
+											"text": "if the animation is 2, knock the player back (this might not work)"
+										},
+										{
 											"eventType": "block",
 											"conditions": [
 												{
@@ -8686,6 +9077,10 @@
 									"isOrBlock": true
 								},
 								{
+									"eventType": "comment",
+									"text": "when the player is overlapping the acid pools, deal damage || Add damage text"
+								},
+								{
 									"eventType": "block",
 									"conditions": [
 										{
@@ -8726,6 +9121,10 @@
 											"sid": 398032407026685
 										}
 									]
+								},
+								{
+									"eventType": "comment",
+									"text": "When the flask is destroyed, spawn an acid pool"
 								},
 								{
 									"eventType": "block",
@@ -8809,6 +9208,10 @@
 									"sid": 692645084940788,
 									"children": [
 										{
+											"eventType": "comment",
+											"text": "set the animation of the pool to the animation of the flask"
+										},
+										{
 											"eventType": "block",
 											"conditions": [
 												{
@@ -8861,6 +9264,10 @@
 									]
 								},
 								{
+									"eventType": "comment",
+									"text": "when the flask has arrived at it's destination, destroy  itself"
+								},
+								{
 									"eventType": "block",
 									"conditions": [
 										{
@@ -8878,6 +9285,10 @@
 										}
 									],
 									"sid": 580912464394876
+								},
+								{
+									"eventType": "comment",
+									"text": "when the player is poisoned, do poison damage every 1 second || Add damage text"
 								},
 								{
 									"eventType": "block",
@@ -9059,16 +9470,8 @@
 									]
 								},
 								{
-									"eventType": "block",
-									"conditions": [
-										{
-											"id": "every-tick",
-											"objectClass": "System",
-											"sid": 993369736775024
-										}
-									],
-									"actions": [],
-									"sid": 179832288292307
+									"eventType": "comment",
+									"text": "every second, and the game isn't paused, increase the size of the acid area"
 								},
 								{
 									"eventType": "block",
@@ -9103,6 +9506,10 @@
 										}
 									],
 									"sid": 138398868012879
+								},
+								{
+									"eventType": "comment",
+									"text": "Play boss music when the boss is present"
 								},
 								{
 									"eventType": "block",
@@ -9172,6 +9579,10 @@
 									"sid": 274397086724100
 								},
 								{
+									"eventType": "comment",
+									"text": "When the acid area has been in the game too long, destroy itself"
+								},
+								{
 									"eventType": "block",
 									"conditions": [
 										{
@@ -9201,6 +9612,10 @@
 										}
 									],
 									"sid": 426137313266418
+								},
+								{
+									"eventType": "comment",
+									"text": "when the orcboss dies, remove 1 from OrcBossPresent"
 								},
 								{
 									"eventType": "block",
@@ -9235,6 +9650,10 @@
 							"isActiveOnStart": true,
 							"children": [
 								{
+									"eventType": "comment",
+									"text": "Boss moves to the travel waypoints when it's told"
+								},
+								{
 									"eventType": "block",
 									"conditions": [
 										{
@@ -9262,6 +9681,10 @@
 										}
 									],
 									"sid": 441383964046034
+								},
+								{
+									"eventType": "comment",
+									"text": "When the boss has arrived at it's destination, and has LOS of the player, \"dash\" at the player"
 								},
 								{
 									"eventType": "block",
@@ -9339,6 +9762,10 @@
 											]
 										}
 									]
+								},
+								{
+									"eventType": "comment",
+									"text": "Every 7 seconds cycle through the travel waypoints it's supposed to be at"
 								},
 								{
 									"eventType": "block",
@@ -9432,6 +9859,10 @@
 											"isOrBlock": true
 										}
 									]
+								},
+								{
+									"eventType": "comment",
+									"text": "When the enemy's \"melee attack\" hits the player, do the damage, destroy the \"melee attack\" and turn the boss visible again."
 								},
 								{
 									"eventType": "block",
@@ -9623,6 +10054,10 @@
 									"sid": 630807644760218
 								},
 								{
+									"eventType": "comment",
+									"text": "When the boss has arrived where it is supposed to be, and there is an errant \"melee attack\" out there, destroy it. Set it's visibility to visible."
+								},
+								{
 									"eventType": "block",
 									"conditions": [
 										{
@@ -9651,6 +10086,10 @@
 									"isOrBlock": true
 								},
 								{
+									"eventType": "comment",
+									"text": "Every tick set the vignette to the player's position and at the top of the layer"
+								},
+								{
 									"eventType": "block",
 									"conditions": [
 										{
@@ -9660,14 +10099,6 @@
 										}
 									],
 									"actions": [
-										{
-											"id": "set-text",
-											"objectClass": "BobHealthText",
-											"sid": 308470688227645,
-											"parameters": {
-												"text": "\"Bob: \"&Bob.Health&\"/\"& Bob.MaxHealth"
-											}
-										},
 										{
 											"id": "set-position-to-another-object",
 											"objectClass": "Vignette",
@@ -9684,6 +10115,10 @@
 										}
 									],
 									"sid": 111066779667484
+								},
+								{
+									"eventType": "comment",
+									"text": "when the boss hits the enemy, deal damage and do damage stuff"
 								},
 								{
 									"eventType": "block",
@@ -9862,6 +10297,10 @@
 									"sid": 377445891367078
 								},
 								{
+									"eventType": "comment",
+									"text": "when there is a boss present, play the boss music once."
+								},
+								{
 									"eventType": "block",
 									"conditions": [
 										{
@@ -9953,6 +10392,10 @@
 			"description": "",
 			"isActiveOnStart": true,
 			"children": [
+				{
+					"eventType": "comment",
+					"text": "every .75 seconds, fire an arrow"
+				},
 				{
 					"eventType": "block",
 					"conditions": [

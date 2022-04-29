@@ -48,6 +48,14 @@
 		},
 		{
 			"type": "plugin",
+			"id": "gamepad",
+			"name": "Gamepad",
+			"author": "Scirra",
+			"version": "r285.3",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
 			"id": "Sprite",
 			"name": "Sprite",
 			"author": "Scirra",
@@ -227,7 +235,8 @@
 			{
 				"items": [
 					"Keyboard",
-					"Mouse"
+					"Mouse",
+					"Gamepad"
 				],
 				"subfolders": [],
 				"name": "Inputs"

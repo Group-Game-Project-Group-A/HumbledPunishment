@@ -12,6 +12,30 @@
 			"sid": 333485203561551
 		},
 		{
+			"eventType": "variable",
+			"name": "MenuOpen",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 666478338489690
+		},
+		{
+			"eventType": "variable",
+			"name": "MenuSelection",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 773697460805987
+		},
+		{
+			"eventType": "comment",
+			"text": "while W is down, or the left joystick is pushed up, move the player up"
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -20,6 +44,17 @@
 					"sid": 336808293492607,
 					"parameters": {
 						"key": 87
+					}
+				},
+				{
+					"id": "compare-axis",
+					"objectClass": "Gamepad",
+					"sid": 510589890599258,
+					"parameters": {
+						"gamepad": "0",
+						"axis": "left-analog-y-axis",
+						"comparison": 2,
+						"value": "-25"
 					}
 				}
 			],
@@ -34,7 +69,12 @@
 					}
 				}
 			],
-			"sid": 770013458991863
+			"sid": 770013458991863,
+			"isOrBlock": true
+		},
+		{
+			"eventType": "comment",
+			"text": "while A is down, or the left joystick is pushed left, move the player left"
 		},
 		{
 			"eventType": "block",
@@ -45,6 +85,17 @@
 					"sid": 623847129675014,
 					"parameters": {
 						"key": 65
+					}
+				},
+				{
+					"id": "compare-axis",
+					"objectClass": "Gamepad",
+					"sid": 880951205812095,
+					"parameters": {
+						"gamepad": "0",
+						"axis": "left-analog-x-axis",
+						"comparison": 2,
+						"value": "-25"
 					}
 				}
 			],
@@ -59,7 +110,12 @@
 					}
 				}
 			],
-			"sid": 501506433469473
+			"sid": 501506433469473,
+			"isOrBlock": true
+		},
+		{
+			"eventType": "comment",
+			"text": "while S is down, or the left joystick is pushed down, move the player down"
 		},
 		{
 			"eventType": "block",
@@ -70,6 +126,17 @@
 					"sid": 984136407257969,
 					"parameters": {
 						"key": 83
+					}
+				},
+				{
+					"id": "compare-axis",
+					"objectClass": "Gamepad",
+					"sid": 967510244387707,
+					"parameters": {
+						"gamepad": "0",
+						"axis": "left-analog-y-axis",
+						"comparison": 4,
+						"value": "25"
 					}
 				}
 			],
@@ -84,7 +151,12 @@
 					}
 				}
 			],
-			"sid": 979860117776179
+			"sid": 979860117776179,
+			"isOrBlock": true
+		},
+		{
+			"eventType": "comment",
+			"text": "while D is down, or the left joystick is pushed right, move the player right"
 		},
 		{
 			"eventType": "block",
@@ -95,6 +167,17 @@
 					"sid": 613090097948565,
 					"parameters": {
 						"key": 68
+					}
+				},
+				{
+					"id": "compare-axis",
+					"objectClass": "Gamepad",
+					"sid": 222853610621996,
+					"parameters": {
+						"gamepad": "0",
+						"axis": "left-analog-x-axis",
+						"comparison": 4,
+						"value": "25"
 					}
 				}
 			],
@@ -109,7 +192,12 @@
 					}
 				}
 			],
-			"sid": 386972767845438
+			"sid": 386972767845438,
+			"isOrBlock": true
+		},
+		{
+			"eventType": "comment",
+			"text": "Press R to go to the main menu"
 		},
 		{
 			"eventType": "block",
@@ -133,13 +221,77 @@
 					}
 				}
 			],
-			"sid": 906325070512997,
+			"sid": 906325070512997
+		},
+		{
+			"eventType": "comment",
+			"text": "when you have a gamepad, have the gamepad control the reticle"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "has-gamepads",
+					"objectClass": "Gamepad",
+					"sid": 313961050002844
+				}
+			],
+			"actions": [],
+			"sid": 112544434646287,
 			"children": [
 				{
-					"eventType": "comment",
-					"text": "Pressing R Restarts the game to the Main Menu"
+					"eventType": "block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "Sprite2",
+							"sid": 286216977086792,
+							"parameters": {
+								"x": "Player.X",
+								"y": "Player.Y"
+							}
+						},
+						{
+							"id": "move-at-angle",
+							"objectClass": "Sprite2",
+							"sid": 740688569631693,
+							"parameters": {
+								"angle": "angle(0,0,Gamepad.Axis(0,2),Gamepad.Axis(0,3))",
+								"distance": "distance(0,0,Gamepad.Axis(0,2),Gamepad.Axis(0,3))*2"
+							}
+						}
+					],
+					"sid": 650208646044274
 				}
 			]
+		},
+		{
+			"eventType": "comment",
+			"text": "when you don't have a gamepad, let the mouse control the reticle"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "has-gamepads",
+					"objectClass": "Gamepad",
+					"sid": 227638416471874,
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "Sprite2",
+					"sid": 186438169591020,
+					"parameters": {
+						"x": "Mouse.X",
+						"y": "Mouse.Y"
+					}
+				}
+			],
+			"sid": 556074405577121
 		}
 	],
 	"sid": 312005651760020

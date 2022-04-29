@@ -2,6 +2,94 @@
 	"name": "ES_Menu",
 	"events": [
 		{
+			"eventType": "comment",
+			"text": "At the start of the layout, set the cursor to normal, move the UI down, reset the timescale and enemy count"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 657455471648494
+				}
+			],
+			"actions": [
+				{
+					"id": "set-cursor-style",
+					"objectClass": "Mouse",
+					"sid": 104205466035121,
+					"parameters": {
+						"cursor-style": "normal"
+					}
+				},
+				{
+					"id": "move-to-position",
+					"objectClass": "UI_BG",
+					"sid": 813215501103047,
+					"behaviorType": "MoveTo",
+					"parameters": {
+						"x": "UI_BG.X",
+						"y": "-250",
+						"mode": "direct"
+					}
+				},
+				{
+					"id": "set-time-scale",
+					"objectClass": "System",
+					"sid": 479815992277877,
+					"parameters": {
+						"time-scale": "1.0"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 544686875514434,
+					"parameters": {
+						"variable": "EnemyCount",
+						"value": "0"
+					}
+				}
+			],
+			"sid": 960842411023570,
+			"children": [
+				{
+					"eventType": "comment",
+					"text": "if there's no audio playing, play the music"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-any-playing",
+							"objectClass": "Audio",
+							"sid": 244722088398105,
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 570602160641116,
+							"parameters": {
+								"audio-file": "Common Battle Music Play at -10 DB",
+								"loop": "looping",
+								"volume": "-20",
+								"tag-optional": "\"Normal\""
+							}
+						}
+					],
+					"sid": 676834376285016
+				}
+			]
+		},
+		{
+			"eventType": "comment",
+			"text": "When you click on the start game button, go to the next layout"
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -21,6 +109,10 @@
 				}
 			],
 			"sid": 340353346403150
+		},
+		{
+			"eventType": "comment",
+			"text": "When you click on the credits button, go to the credits layout"
 		},
 		{
 			"eventType": "block",
@@ -44,6 +136,10 @@
 			"sid": 817785890990450
 		},
 		{
+			"eventType": "comment",
+			"text": "When you click on the start over button, go to the menu layout"
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -63,6 +159,10 @@
 				}
 			],
 			"sid": 561847107513438
+		},
+		{
+			"eventType": "comment",
+			"text": "When you click on the controls button, go to the controls layout"
 		},
 		{
 			"eventType": "block",
@@ -86,71 +186,16 @@
 			"sid": 288327319871123
 		},
 		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-start-of-layout",
-					"objectClass": "System",
-					"sid": 479158676470347
-				}
-			],
-			"actions": [
-				{
-					"id": "set-cursor-style",
-					"objectClass": "Mouse",
-					"sid": 671149851247483,
-					"parameters": {
-						"cursor-style": "normal"
-					}
-				},
-				{
-					"id": "move-to-position",
-					"objectClass": "UI_BG",
-					"sid": 646706592061518,
-					"behaviorType": "MoveTo",
-					"parameters": {
-						"x": "UI_BG.X",
-						"y": "-250",
-						"mode": "direct"
-					}
-				}
-			],
-			"sid": 130721268814402,
-			"children": [
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "is-any-playing",
-							"objectClass": "Audio",
-							"sid": 815840796476200,
-							"isInverted": true
-						}
-					],
-					"actions": [
-						{
-							"id": "play",
-							"objectClass": "Audio",
-							"sid": 782809342731126,
-							"parameters": {
-								"audio-file": "Common Battle Music Play at -10 DB",
-								"loop": "looping",
-								"volume": "-20",
-								"tag-optional": "\"Normal\""
-							}
-						}
-					],
-					"sid": 429814602964864
-				}
-			]
-		},
-		{
 			"eventType": "group",
 			"disabled": false,
 			"title": "Survival Mode Buttons",
 			"description": "",
 			"isActiveOnStart": true,
 			"children": [
+				{
+					"eventType": "comment",
+					"text": "When you click on the start survival mode button, go to the survival menu layout"
+				},
 				{
 					"eventType": "block",
 					"conditions": [
@@ -183,6 +228,10 @@
 			"isActiveOnStart": true,
 			"children": [
 				{
+					"eventType": "comment",
+					"text": "When you click on the start adventure mode button, go to the adventure mode lobby 1"
+				},
+				{
 					"eventType": "block",
 					"conditions": [
 						{
@@ -205,70 +254,6 @@
 				}
 			],
 			"sid": 129668619889509
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-start-of-layout",
-					"objectClass": "System",
-					"sid": 533338561906228
-				}
-			],
-			"actions": [
-				{
-					"id": "set-time-scale",
-					"objectClass": "System",
-					"sid": 478526554780292,
-					"parameters": {
-						"time-scale": "1.0"
-					}
-				},
-				{
-					"id": "set-eventvar-value",
-					"objectClass": "System",
-					"sid": 817138178915521,
-					"parameters": {
-						"variable": "EnemyCount",
-						"value": "0"
-					}
-				}
-			],
-			"sid": 402069398015959
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-arrived",
-					"objectClass": "UI_BG",
-					"sid": 926598293651365,
-					"behaviorType": "MoveTo"
-				}
-			],
-			"actions": [
-				{
-					"id": "set-position",
-					"objectClass": "UI_BG",
-					"sid": 185926373595433,
-					"parameters": {
-						"x": "427",
-						"y": "705"
-					}
-				},
-				{
-					"id": "move-to-position",
-					"objectClass": "UI_BG",
-					"sid": 404845645321917,
-					"behaviorType": "MoveTo",
-					"parameters": {
-						"x": "UI_BG.X",
-						"y": "-250",
-						"mode": "direct"
-					}
-				}
-			],
-			"sid": 416058232044958
 		}
 	],
 	"sid": 326467844477213
