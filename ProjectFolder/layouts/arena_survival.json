@@ -44634,11 +44634,46 @@
 						}
 					},
 					"world": {
-						"x": 1006.4991006447997,
-						"y": 1654.0446292671043,
+						"x": 1006.499101,
+						"y": 1651.0446292671043,
 						"width": 41,
 						"height": 8,
 						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "DashBar",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Normal",
+						"initial-frame": 39,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 11188,
+					"instanceVariables": {},
+					"behaviors": {
+						"Pin": {
+							"properties": {
+								"destroy": false
+							}
+						}
+					},
+					"world": {
+						"x": 1007.004013,
+						"y": 1659.0366294272403,
+						"width": 41,
+						"height": 8,
+						"originX": 0.5121951219512195,
 						"originY": 0.5,
 						"color": [
 							1,

@@ -274,6 +274,44 @@
 					}
 				},
 				{
+					"id": "set-animation-frame",
+					"objectClass": "DashBar",
+					"sid": 960949053268895,
+					"parameters": {
+						"frame-number": "39"
+					}
+				},
+				{
+					"id": "pin-to-object-properties",
+					"objectClass": "DashBar",
+					"sid": 218074966826319,
+					"behaviorType": "Pin",
+					"parameters": {
+						"pin-to": "HPBarSetter",
+						"x": true,
+						"y": true,
+						"angle": false,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
+					}
+				},
+				{
+					"id": "pin-to-object-properties",
+					"objectClass": "HP_Hearts",
+					"sid": 746180288498650,
+					"behaviorType": "Pin",
+					"parameters": {
+						"pin-to": "HPBarSetter",
+						"x": true,
+						"y": true,
+						"angle": false,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
+					}
+				},
+				{
 					"id": "set-animation",
 					"objectClass": "Arena1_Fountain",
 					"sid": 176587556573691,
@@ -307,21 +345,6 @@
 					"parameters": {
 						"animation": "\"On\"",
 						"from": "beginning"
-					}
-				},
-				{
-					"id": "pin-to-object-properties",
-					"objectClass": "HP_Hearts",
-					"sid": 178791762551486,
-					"behaviorType": "Pin",
-					"parameters": {
-						"pin-to": "HPBarSetter",
-						"x": true,
-						"y": true,
-						"angle": false,
-						"width-type": "no",
-						"height-type": "no",
-						"z": false
 					}
 				},
 				{
@@ -1533,7 +1556,7 @@
 						},
 						{
 							"eventType": "comment",
-							"text": "If the element is Electric, set the animation to Electric, and set the damage text's font color to that element"
+							"text": "If the element is Electric, set the animation to Electric, and set the the Dash Bar & damage text's font color to that element"
 						},
 						{
 							"eventType": "block",
@@ -1564,13 +1587,22 @@
 									"parameters": {
 										"color": "rgb(242, 230, 0)"
 									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "DashBar",
+									"sid": 455415063207778,
+									"parameters": {
+										"animation": "\"Electric\"",
+										"from": "current-frame"
+									}
 								}
 							],
 							"sid": 969900932942616
 						},
 						{
 							"eventType": "comment",
-							"text": "If the element is Ice, set the animation to Ice, and set the damage text's font color to that element"
+							"text": "If the element is Ice, set the animation to Ice, and set the the Dash Bar & damage text's font color to that element"
 						},
 						{
 							"eventType": "block",
@@ -1595,6 +1627,15 @@
 									}
 								},
 								{
+									"id": "set-animation",
+									"objectClass": "DashBar",
+									"sid": 260625913384208,
+									"parameters": {
+										"animation": "\"Ice\"",
+										"from": "current-frame"
+									}
+								},
+								{
 									"id": "set-font-color",
 									"objectClass": "Dmg_Text",
 									"sid": 745915648380322,
@@ -1607,7 +1648,7 @@
 						},
 						{
 							"eventType": "comment",
-							"text": "If the element is Fire, set the animation to Fire, and set the damage text's font color to that element"
+							"text": "If the element is Fire, set the animation to Fire, and set the the Dash Bar & damage text's font color to that element"
 						},
 						{
 							"eventType": "block",
@@ -1622,6 +1663,15 @@
 								}
 							],
 							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "DashBar",
+									"sid": 235603284810628,
+									"parameters": {
+										"animation": "\"Fire\"",
+										"from": "current-frame"
+									}
+								},
 								{
 									"id": "set-animation",
 									"objectClass": "Arrow",
@@ -5722,6 +5772,14 @@
 												"mode": "exclusive",
 												"tags": "\"Enemy\""
 											}
+										},
+										{
+											"id": "start-animation",
+											"objectClass": "DashBar",
+											"sid": 402172447770758,
+											"parameters": {
+												"from": "beginning"
+											}
 										}
 									],
 									"sid": 243688426259780,
@@ -7104,7 +7162,7 @@
 				},
 				{
 					"eventType": "comment",
-					"text": "when the enemies are destroyed, subtract 1 from EnemyCount. This is where we would put any kind of enemy death sounds"
+					"text": "when the enemies are destroyed, subtract 1 from EnemyCount. This is where we would put any kind of universal enemy death sounds"
 				},
 				{
 					"eventType": "block",
@@ -9015,7 +9073,7 @@
 										},
 										{
 											"eventType": "comment",
-											"text": "if the animation is 2, knock the player back (this might not work)"
+											"text": "if the animation is 2, knock the player back"
 										},
 										{
 											"eventType": "block",
@@ -9030,6 +9088,15 @@
 												}
 											],
 											"actions": [
+												{
+													"id": "set-enabled",
+													"objectClass": "Player",
+													"sid": 113849360956154,
+													"behaviorType": "Bullet",
+													"parameters": {
+														"state": "enabled"
+													}
+												},
 												{
 													"id": "set-speed",
 													"objectClass": "Player",
@@ -9063,6 +9130,15 @@
 													"behaviorType": "Bullet",
 													"parameters": {
 														"speed": "0"
+													}
+												},
+												{
+													"id": "set-enabled",
+													"objectClass": "Player",
+													"sid": 902238812846752,
+													"behaviorType": "Bullet",
+													"parameters": {
+														"state": "disabled"
 													}
 												},
 												{
@@ -9170,7 +9246,6 @@
 											"id": "move-to-object",
 											"objectClass": "AcidArea",
 											"sid": 401278216485813,
-											"disabled": true,
 											"parameters": {
 												"where": "behind",
 												"object": "Player"
@@ -9180,7 +9255,6 @@
 											"id": "move-to-object",
 											"objectClass": "AcidArea",
 											"sid": 526153408352354,
-											"disabled": true,
 											"parameters": {
 												"where": "behind",
 												"object": "OrcBoss"

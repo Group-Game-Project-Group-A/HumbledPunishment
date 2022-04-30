@@ -46937,6 +46937,41 @@
 						"angle": 0,
 						"zElevation": 0
 					}
+				},
+				{
+					"type": "DashBar",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Normal",
+						"initial-frame": 39,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 11189,
+					"instanceVariables": {},
+					"behaviors": {
+						"Pin": {
+							"properties": {
+								"destroy": false
+							}
+						}
+					},
+					"world": {
+						"x": 176.50377535337503,
+						"y": 571.9965878170523,
+						"width": 41,
+						"height": 8,
+						"originX": 0.5121951219512195,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
 				}
 			],
 			"sid": 846710645887002,
