@@ -86,112 +86,234 @@
 			]
 		},
 		{
-			"eventType": "comment",
-			"text": "When you click on the start game button, go to the next layout"
-		},
-		{
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "on-clicked",
-					"objectClass": "But_StartGame",
-					"sid": 273602011573554
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 660124963442553,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "But_Arrow"
+					}
 				}
 			],
 			"actions": [
 				{
-					"id": "go-to-nextprevious-layout",
-					"objectClass": "System",
-					"sid": 153288868628763,
+					"id": "set-enabled",
+					"objectClass": "But_Arrow",
+					"sid": 455899700587870,
+					"behaviorType": "Bullet",
 					"parameters": {
-						"which": "next"
+						"state": "enabled"
 					}
 				}
 			],
-			"sid": 340353346403150
-		},
-		{
-			"eventType": "comment",
-			"text": "When you click on the credits button, go to the credits layout"
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-clicked",
-					"objectClass": "But_Credits",
-					"sid": 564299738809763
-				}
-			],
-			"actions": [
-				{
-					"id": "go-to-layout",
-					"objectClass": "System",
-					"sid": 188713578750491,
-					"parameters": {
-						"layout": "Credits"
-					}
-				}
-			],
-			"sid": 817785890990450
-		},
-		{
-			"eventType": "comment",
-			"text": "When you click on the start over button, go to the menu layout"
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-clicked",
-					"objectClass": "But_StartOver",
-					"sid": 390859035761401
-				}
-			],
-			"actions": [
-				{
-					"id": "go-to-layout",
-					"objectClass": "System",
-					"sid": 929871169310539,
-					"parameters": {
-						"layout": "Menu"
-					}
-				}
-			],
-			"sid": 561847107513438
-		},
-		{
-			"eventType": "comment",
-			"text": "When you click on the controls button, go to the controls layout"
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-clicked",
-					"objectClass": "But_Controls",
-					"sid": 354150652068296
-				}
-			],
-			"actions": [
-				{
-					"id": "go-to-layout",
-					"objectClass": "System",
-					"sid": 629270458272922,
-					"parameters": {
-						"layout": "Controls"
-					}
-				}
-			],
-			"sid": 288327319871123
-		},
-		{
-			"eventType": "group",
-			"disabled": false,
-			"title": "Survival Mode Buttons",
-			"description": "",
-			"isActiveOnStart": true,
+			"sid": 321976258228434,
 			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "But_Arrow_Text",
+							"sid": 798971922389238,
+							"parameters": {
+								"instance-variable": "ButtonType",
+								"comparison": 0,
+								"value": "But_Arrow.ButtonType"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "pin-to-object-properties",
+							"objectClass": "But_Arrow_Text",
+							"sid": 656848277770310,
+							"behaviorType": "Pin",
+							"parameters": {
+								"pin-to": "But_Arrow",
+								"x": true,
+								"y": true,
+								"angle": true,
+								"width-type": "no",
+								"height-type": "no",
+								"z": false
+							}
+						}
+					],
+					"sid": 424475353692909
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "But_Arrow_Text",
+							"sid": 172878344271896,
+							"parameters": {
+								"instance-variable": "ButtonType",
+								"comparison": 0,
+								"value": "But_Arrow.ButtonType"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "unpin",
+							"objectClass": "But_Arrow_Text",
+							"sid": 496490529169531,
+							"behaviorType": "Pin"
+						}
+					],
+					"sid": 515133107787297
+				},
+				{
+					"eventType": "comment",
+					"text": "When you click on the credits button, go to the credits layout"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "But_Arrow",
+							"sid": 702353970882706,
+							"parameters": {
+								"instance-variable": "ButtonType",
+								"comparison": 0,
+								"value": "\"Credits\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 294721993753523,
+							"parameters": {
+								"seconds": "1.0"
+							}
+						},
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 153006257577236,
+							"parameters": {
+								"layout": "Credits"
+							}
+						}
+					],
+					"sid": 789720408392235
+				},
+				{
+					"eventType": "comment",
+					"text": "When you click on the start game button, go to the next layout"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "But_Arrow",
+							"sid": 382213514075605,
+							"parameters": {
+								"instance-variable": "ButtonType",
+								"comparison": 0,
+								"value": "\"StartGame\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 990355097527681,
+							"parameters": {
+								"seconds": "1.0"
+							}
+						},
+						{
+							"id": "go-to-nextprevious-layout",
+							"objectClass": "System",
+							"sid": 470602538355752,
+							"parameters": {
+								"which": "next"
+							}
+						}
+					],
+					"sid": 464102087671544
+				},
+				{
+					"eventType": "comment",
+					"text": "When you click on the start over button, go to the menu layout"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "But_Arrow",
+							"sid": 804710431448883,
+							"parameters": {
+								"instance-variable": "ButtonType",
+								"comparison": 0,
+								"value": "\"StartOver\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 381685046840697,
+							"parameters": {
+								"seconds": "1.0"
+							}
+						},
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 542902789107675,
+							"parameters": {
+								"layout": "Menu_Main"
+							}
+						}
+					],
+					"sid": 674831527490920
+				},
+				{
+					"eventType": "comment",
+					"text": "When you click on the controls button, go to the controls layout"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "But_Arrow",
+							"sid": 846841542189540,
+							"parameters": {
+								"instance-variable": "ButtonType",
+								"comparison": 0,
+								"value": "\"Controls\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 375456021317951,
+							"parameters": {
+								"layout": "Controls"
+							}
+						}
+					],
+					"sid": 306993327528651
+				},
 				{
 					"eventType": "comment",
 					"text": "When you click on the start survival mode button, go to the survival menu layout"
@@ -200,33 +322,36 @@
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "on-clicked",
-							"objectClass": "But_StartSurvival",
-							"sid": 354825019978832
+							"id": "compare-instance-variable",
+							"objectClass": "But_Arrow",
+							"sid": 613033154013349,
+							"parameters": {
+								"instance-variable": "ButtonType",
+								"comparison": 0,
+								"value": "\"SurvivalMode\""
+							}
 						}
 					],
 					"actions": [
 						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 118177242104206,
+							"parameters": {
+								"seconds": "1.0"
+							}
+						},
+						{
 							"id": "go-to-layout",
 							"objectClass": "System",
-							"sid": 416246422703329,
+							"sid": 800258699166189,
 							"parameters": {
 								"layout": "Menu_Survival"
 							}
 						}
 					],
-					"sid": 276515803963461
-				}
-			],
-			"sid": 245278614187978
-		},
-		{
-			"eventType": "group",
-			"disabled": false,
-			"title": "Adventure Mode Buttons",
-			"description": "",
-			"isActiveOnStart": true,
-			"children": [
+					"sid": 100975437743678
+				},
 				{
 					"eventType": "comment",
 					"text": "When you click on the start adventure mode button, go to the adventure mode lobby 1"
@@ -235,25 +360,37 @@
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "on-clicked",
-							"objectClass": "But_StartAdventureMode",
-							"sid": 615788339171986
+							"id": "compare-instance-variable",
+							"objectClass": "But_Arrow",
+							"sid": 908154972822511,
+							"parameters": {
+								"instance-variable": "ButtonType",
+								"comparison": 0,
+								"value": "\"AdventureMode\""
+							}
 						}
 					],
 					"actions": [
 						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 306958620568492,
+							"parameters": {
+								"seconds": "1.0"
+							}
+						},
+						{
 							"id": "go-to-layout",
 							"objectClass": "System",
-							"sid": 658920348182419,
+							"sid": 783414770122073,
 							"parameters": {
 								"layout": "Lobby_Arena_1"
 							}
 						}
 					],
-					"sid": 295929204447198
+					"sid": 540256546195184
 				}
-			],
-			"sid": 129668619889509
+			]
 		}
 	],
 	"sid": 326467844477213

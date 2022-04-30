@@ -1,0 +1,62 @@
+{
+	"name": "But_Arrow",
+	"plugin-id": "Sprite",
+	"sid": 489058769150672,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "ButtonType",
+			"type": "string",
+			"desc": "",
+			"sid": 702262213831595
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Bullet",
+			"name": "Bullet",
+			"sid": 413699289322671
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 743,
+						"height": 161,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7375476,
+						"collisionPoly": {
+							"points": [
+								0,
+								0.6645962732919255,
+								1,
+								0.6645962732919255,
+								1,
+								0.33540372670807456,
+								0,
+								0.33540372670807456
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 136916132027644,
+				"name": "Normal",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

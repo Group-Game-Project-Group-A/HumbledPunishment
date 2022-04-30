@@ -2,38 +2,267 @@
 	"name": "Controls",
 	"layers": [
 		{
-			"name": "Layer 0",
+			"name": "BG",
 			"overriden": 0,
 			"subLayers": [],
 			"instances": [
 				{
-					"type": "But_StartOver",
+					"type": "UI_BG",
 					"properties": {
-						"type": "button",
-						"text": "Return to Menu",
-						"tooltip": "",
 						"initially-visible": true,
-						"enabled": true,
-						"auto-font-size": true,
-						"checked": false,
-						"id": ""
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
 					},
-					"uid": 124,
+					"uid": 3623,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"MoveTo": {
+							"properties": {
+								"max-speed": 200,
+								"acceleration": 0,
+								"deceleration": 0,
+								"rotate-speed": 0,
+								"set-angle": false,
+								"stop-on-solids": false,
+								"enabled": true
+							}
+						},
+						"Wrap": {
+							"properties": {
+								"wrap-to": "viewport"
+							}
+						}
+					},
 					"world": {
-						"x": 365.5,
-						"y": 407,
-						"width": 123,
-						"height": 24,
-						"originX": 0,
-						"originY": 0,
+						"x": 427,
+						"y": 682.8469848632812,
+						"width": 855.8761917445497,
+						"height": 481.9241325823157,
+						"originX": 0.5,
+						"originY": 0.5,
 						"color": [
 							1,
 							1,
 							1,
 							1
-						]
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "UI_BG",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 11198,
+					"instanceVariables": {},
+					"behaviors": {
+						"MoveTo": {
+							"properties": {
+								"max-speed": 200,
+								"acceleration": 0,
+								"deceleration": 0,
+								"rotate-speed": 0,
+								"set-angle": false,
+								"stop-on-solids": false,
+								"enabled": true
+							}
+						},
+						"Wrap": {
+							"properties": {
+								"wrap-to": "layout"
+							}
+						}
+					},
+					"world": {
+						"x": 427,
+						"y": 225.84698486328125,
+						"width": 855.8761917445497,
+						"height": 481.9241325823157,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "UI_BG",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 11199,
+					"instanceVariables": {},
+					"behaviors": {
+						"MoveTo": {
+							"properties": {
+								"max-speed": 200,
+								"acceleration": 0,
+								"deceleration": 0,
+								"rotate-speed": 0,
+								"set-angle": false,
+								"stop-on-solids": false,
+								"enabled": true
+							}
+						},
+						"Wrap": {
+							"properties": {
+								"wrap-to": "viewport"
+							}
+						}
+					},
+					"world": {
+						"x": 427,
+						"y": 1108.8469848632812,
+						"width": 855.8761917445497,
+						"height": 481.9241325823157,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Black",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 11200,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 427,
+						"y": 646.3469848632812,
+						"width": 880,
+						"height": 1409,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							0.5
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "UI_Banner",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 11216,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 458,
+						"y": 138,
+						"width": 700,
+						"height": 250,
+						"originX": 0.5435714285714286,
+						"originY": 0.548,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				}
+			],
+			"sid": 234541522831455,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"isInitiallyInteractive": true,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				0.3686274509803922,
+				0.3686274509803922,
+				0.3686274509803922,
+				1
+			],
+			"isTransparent": true,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"renderingMode": "3d",
+			"drawOrder": "z-order",
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"zElevation": 0,
+			"global": false
+		},
+		{
+			"name": "Layer 0",
+			"overriden": 0,
+			"subLayers": [],
+			"instances": [
+				{
+					"type": "UI_Arrow",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 11217,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 391,
+						"y": 176,
+						"width": 564.2968172216353,
+						"height": 119.05684293982475,
+						"originX": 0.4060693641618497,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
 					}
 				},
 				{
@@ -63,7 +292,7 @@
 					"behaviors": {},
 					"world": {
 						"x": 429,
-						"y": 143,
+						"y": 183,
 						"width": 854,
 						"height": 54,
 						"originX": 0.5,
@@ -105,7 +334,7 @@
 					"behaviors": {},
 					"world": {
 						"x": 426,
-						"y": 141,
+						"y": 181,
 						"width": 854,
 						"height": 54,
 						"originX": 0.5,
@@ -123,7 +352,7 @@
 				{
 					"type": "Dialog_Text",
 					"properties": {
-						"text": "Use WASD to move around the playing field.\n\nLeft click to fire your bow at the cursor.\n\nPress SPACEBAR to dash in the direction that you're moving!\n\nPress R to return to the Main Menu!",
+						"text": "- Use WASD to move around the playing field.\n- Left click to fire your bow at the cursor.\n- Press SPACEBAR to dash in the direction that you're moving!\n- Press R to return to the Main Menu!",
 						"enable-bbcode": true,
 						"font": "Pixel_Font",
 						"size": 16,
@@ -147,9 +376,9 @@
 					"behaviors": {},
 					"world": {
 						"x": 426,
-						"y": 284,
+						"y": 323,
 						"width": 530,
-						"height": 236,
+						"height": 154,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -165,7 +394,7 @@
 				{
 					"type": "Dialog_Text",
 					"properties": {
-						"text": "Use WASD to move around the playing field.\n\nLeft click to fire your bow at the cursor.\n\nPress SPACEBAR to dash in the direction that you're moving!\n\nPress R to return to the Main Menu!",
+						"text": "- Use WASD to move around the playing field.\n- Left click to fire your bow at the cursor.\n- Press SPACEBAR to dash in the direction that you're moving!\n- Press R to return to the Main Menu!",
 						"enable-bbcode": true,
 						"font": "Pixel_Font",
 						"size": 16,
@@ -189,11 +418,104 @@
 					"behaviors": {},
 					"world": {
 						"x": 423,
-						"y": 282,
+						"y": 321,
 						"width": 530,
-						"height": 236,
+						"height": 154,
 						"originX": 0.5,
 						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "But_Arrow",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Normal",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 3,
+					"instanceVariables": {
+						"ButtonType": "StartOver"
+					},
+					"behaviors": {
+						"Bullet": {
+							"properties": {
+								"speed": 600,
+								"acceleration": 0,
+								"gravity": 0,
+								"bounce-off-solids": false,
+								"set-angle": true,
+								"step": false,
+								"enabled": false
+							}
+						}
+					},
+					"world": {
+						"x": 401.965823,
+						"y": 419,
+						"width": 280,
+						"height": 54.00000000000001,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "But_Arrow_Text",
+					"properties": {
+						"text": "Return to Menu",
+						"enable-bbcode": true,
+						"font": "Arial",
+						"size": 8,
+						"line-height": 0,
+						"bold": true,
+						"italic": true,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "center",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 3363,
+					"instanceVariables": {
+						"ButtonType": "StartOver"
+					},
+					"behaviors": {
+						"Pin": {
+							"properties": {
+								"destroy": false
+							}
+						}
+					},
+					"world": {
+						"x": 380.3676666263222,
+						"y": 413.44979810040985,
+						"width": 93.26465581446156,
+						"height": 12.077423,
+						"originX": 0,
+						"originY": 0,
 						"color": [
 							1,
 							1,
@@ -221,7 +543,7 @@
 				0.3686274509803922,
 				1
 			],
-			"isTransparent": false,
+			"isTransparent": true,
 			"parallaxX": 1,
 			"parallaxY": 1,
 			"scaleRate": 1,

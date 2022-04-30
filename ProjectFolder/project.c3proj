@@ -32,6 +32,14 @@
 		},
 		{
 			"type": "plugin",
+			"id": "Sprite",
+			"name": "Sprite",
+			"author": "Scirra",
+			"version": "r285.3",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
 			"id": "Keyboard",
 			"name": "Keyboard",
 			"author": "Scirra",
@@ -50,14 +58,6 @@
 			"type": "plugin",
 			"id": "gamepad",
 			"name": "Gamepad",
-			"author": "Scirra",
-			"version": "r285.3",
-			"bundled": false
-		},
-		{
-			"type": "plugin",
-			"id": "Sprite",
-			"name": "Sprite",
 			"author": "Scirra",
 			"version": "r285.3",
 			"bundled": false
@@ -227,7 +227,9 @@
 					"But_LoseSurvival",
 					"But_StartSurvival",
 					"But_StartAdventureMode",
-					"But_Controls"
+					"But_Controls",
+					"But_Arrow",
+					"But_Arrow_Text"
 				],
 				"subfolders": [],
 				"name": "Buttons"
@@ -559,7 +561,7 @@
 			},
 			{
 				"items": [
-					"Menu",
+					"Menu_Main",
 					"Controls",
 					"EndScreen",
 					"Credits"
@@ -803,5 +805,5 @@
 	},
 	"viewportWidth": 854,
 	"viewportHeight": 480,
-	"firstLayout": "Menu"
+	"firstLayout": "Menu_Main"
 }
