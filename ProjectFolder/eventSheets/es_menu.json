@@ -72,11 +72,11 @@
 						{
 							"id": "play",
 							"objectClass": "Audio",
-							"sid": 570602160641116,
+							"sid": 730095228097408,
 							"parameters": {
-								"audio-file": "Common Battle Music Play at -10 DB",
+								"audio-file": "General Music",
 								"loop": "looping",
-								"volume": "-20",
+								"volume": "0",
 								"tag-optional": "\"Normal\""
 							}
 						}
@@ -107,6 +107,17 @@
 					"behaviorType": "Bullet",
 					"parameters": {
 						"state": "enabled"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 947627700189287,
+					"parameters": {
+						"audio-file": "Arrow",
+						"loop": "not-looping",
+						"volume": "-5",
+						"tag-optional": "\"\""
 					}
 				}
 			],

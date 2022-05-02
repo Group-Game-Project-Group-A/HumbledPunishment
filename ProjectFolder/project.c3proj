@@ -487,6 +487,20 @@
 				],
 				"subfolders": [],
 				"name": "Traps"
+			},
+			{
+				"items": [
+					"Intro_1",
+					"Intro_1_1",
+					"Intro_2",
+					"Intro_3",
+					"Outro_1",
+					"Outro_2",
+					"Outro_3",
+					"Outro_4"
+				],
+				"subfolders": [],
+				"name": "Intro & Outro Texts"
 			}
 		]
 	},
@@ -580,10 +594,12 @@
 			},
 			{
 				"items": [
+					"Intro",
 					"Lobby_Arena_1",
 					"Arena_1",
 					"Lobby_Arena_2",
-					"Arena_2"
+					"Arena_2",
+					"Outro"
 				],
 				"subfolders": [],
 				"name": "Adventure Mode"
@@ -616,29 +632,49 @@
 					"sid": 359440169694650
 				},
 				{
-					"name": "Boss 1 Evil Laugh Play at -5 DB.webm",
-					"type": "audio/webm; codecs=opus",
-					"sid": 848239444594578
-				},
-				{
-					"name": "Boss 2 Evil Laugh Play at - 5 DB.webm",
-					"type": "audio/webm; codecs=opus",
-					"sid": 445419777120051
-				},
-				{
-					"name": "Flask Explosion Play at -5 DB.webm",
-					"type": "audio/webm; codecs=opus",
-					"sid": 243957531579990
-				},
-				{
-					"name": "Player Hurt Play at -5 DB.webm",
-					"type": "audio/webm; codecs=opus",
-					"sid": 680817940797424
-				},
-				{
 					"name": "Skeleton_enemy_Defeated.webm",
 					"type": "audio/webm; codecs=opus",
 					"sid": 547404724251389
+				},
+				{
+					"name": "Boss 1 Flask Explosion.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 496174423804941
+				},
+				{
+					"name": "Boss 2 Evil Laugh.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 384777444033084
+				},
+				{
+					"name": "Button Select Sound.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 648227016012532
+				},
+				{
+					"name": "Dash.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 400065717627074
+				},
+				{
+					"name": "Health Pickup.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 173478653466659
+				},
+				{
+					"name": "Punch Flinch Audio.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 344457496002199
+				},
+				{
+					"name": "Boss 1 Evil Laugh.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 677697817988823
+				},
+				{
+					"name": "Arrow.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 934034119467539
 				}
 			],
 			"subfolders": []
@@ -646,19 +682,19 @@
 		"music": {
 			"items": [
 				{
-					"name": "2nd Boss Fight Play at -4 DB.webm",
+					"name": "1st Boss Fight Music.webm",
 					"type": "audio/webm; codecs=opus",
-					"sid": 882881721656722
+					"sid": 847352951322544
 				},
 				{
-					"name": "Common Battle Music Play at -10 DB.webm",
+					"name": "2nd Boss Fight Music.webm",
 					"type": "audio/webm; codecs=opus",
-					"sid": 556116273695916
+					"sid": 861954783412472
 				},
 				{
-					"name": "1st Boss Fight Play at -4 DB.webm",
+					"name": "General Music.webm",
 					"type": "audio/webm; codecs=opus",
-					"sid": 626355822984292
+					"sid": 538428186843068
 				}
 			],
 			"subfolders": []
@@ -673,6 +709,16 @@
 					"name": "Pixel_Font.ttf",
 					"type": "application/font-sfnt",
 					"sid": 726001770092039
+				},
+				{
+					"name": "ROMANUS.otf",
+					"type": "application/font-sfnt",
+					"sid": 576413789008087
+				},
+				{
+					"name": "Roman SD.ttf",
+					"type": "application/font-sfnt",
+					"sid": 746243016707576
 				}
 			],
 			"subfolders": []

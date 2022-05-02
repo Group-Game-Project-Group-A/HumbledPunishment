@@ -501,6 +501,17 @@
 									}
 								},
 								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 948287516546078,
+									"parameters": {
+										"audio-file": "Health Pickup",
+										"loop": "not-looping",
+										"volume": "-10",
+										"tag-optional": "\"\""
+									}
+								},
+								{
 									"id": "set-animation-frame",
 									"objectClass": "HP_Hearts",
 									"sid": 914560413304276,
@@ -735,11 +746,11 @@
 								{
 									"id": "play",
 									"objectClass": "Audio",
-									"sid": 401207393427325,
+									"sid": 514545447985615,
 									"parameters": {
-										"audio-file": "Player Hurt Play at -5 DB",
+										"audio-file": "Arrow Shooting Sound Play at -5 DB",
 										"loop": "not-looping",
-										"volume": "-7",
+										"volume": "-20",
 										"tag-optional": "\"\""
 									}
 								},
@@ -2158,6 +2169,7 @@
 															"id": "play",
 															"objectClass": "Audio",
 															"sid": 967639426341774,
+															"disabled": true,
 															"parameters": {
 																"audio-file": "Arrow Shooting Sound Play at -5 DB",
 																"loop": "not-looping",
@@ -2331,7 +2343,7 @@
 											"children": [
 												{
 													"eventType": "comment",
-													"text": "Play the arrow shooting audio here"
+													"text": "Play the arrow shooting audio here. Currently disabled because it's going to sound annoying."
 												},
 												{
 													"eventType": "block",
@@ -2350,6 +2362,7 @@
 															"id": "play",
 															"objectClass": "Audio",
 															"sid": 908378304018061,
+															"disabled": true,
 															"parameters": {
 																"audio-file": "Arrow Shooting Sound Play at -5 DB",
 																"loop": "not-looping",
@@ -2791,7 +2804,7 @@
 													"children": [
 														{
 															"eventType": "comment",
-															"text": "Play the arrow shooting audio here"
+															"text": "Play the arrow shooting audio here. Disabled because it will sound annoying."
 														},
 														{
 															"eventType": "block",
@@ -2810,6 +2823,7 @@
 																	"id": "play",
 																	"objectClass": "Audio",
 																	"sid": 983176348428898,
+																	"disabled": true,
 																	"parameters": {
 																		"audio-file": "Arrow Shooting Sound Play at -5 DB",
 																		"loop": "not-looping",
@@ -2848,6 +2862,7 @@
 																			"id": "play",
 																			"objectClass": "Audio",
 																			"sid": 903092378123026,
+																			"disabled": true,
 																			"parameters": {
 																				"audio-file": "Arrow Shooting Sound Play at -5 DB",
 																				"loop": "not-looping",
@@ -3572,6 +3587,7 @@
 															"id": "play",
 															"objectClass": "Audio",
 															"sid": 518796253262375,
+															"disabled": true,
 															"parameters": {
 																"audio-file": "Arrow Shooting Sound Play at -5 DB",
 																"loop": "not-looping",
@@ -3735,6 +3751,7 @@
 													"id": "play",
 													"objectClass": "Audio",
 													"sid": 705254061778353,
+													"disabled": true,
 													"parameters": {
 														"audio-file": "Arrow Shooting Sound Play at -5 DB",
 														"loop": "not-looping",
@@ -4175,6 +4192,7 @@
 																	"id": "play",
 																	"objectClass": "Audio",
 																	"sid": 941740506086894,
+																	"disabled": true,
 																	"parameters": {
 																		"audio-file": "Arrow Shooting Sound Play at -5 DB",
 																		"loop": "not-looping",
@@ -4574,6 +4592,7 @@
 													"id": "play",
 													"objectClass": "Audio",
 													"sid": 897129865643845,
+													"disabled": true,
 													"parameters": {
 														"audio-file": "Arrow Shooting Sound Play at -5 DB",
 														"loop": "not-looping",
@@ -5377,6 +5396,7 @@
 															"id": "play",
 															"objectClass": "Audio",
 															"sid": 294456134635665,
+															"disabled": true,
 															"parameters": {
 																"audio-file": "Arrow Shooting Sound Play at -5 DB",
 																"loop": "not-looping",
@@ -5650,6 +5670,17 @@
 											"behaviorType": "Bullet",
 											"parameters": {
 												"angle": "Player.8Direction.MovingAngle"
+											}
+										},
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 889082484157689,
+											"parameters": {
+												"audio-file": "Dash",
+												"loop": "not-looping",
+												"volume": "-10",
+												"tag-optional": "\"\""
 											}
 										},
 										{
@@ -7038,6 +7069,7 @@
 																	"id": "play",
 																	"objectClass": "Audio",
 																	"sid": 321486396250116,
+																	"disabled": true,
 																	"parameters": {
 																		"audio-file": "Arrow Shooting Sound Play at -5 DB",
 																		"loop": "not-looping",
@@ -8331,6 +8363,17 @@
 											}
 										},
 										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 627600285003623,
+											"parameters": {
+												"audio-file": "Punch Flinch Audio",
+												"loop": "not-looping",
+												"volume": "-10",
+												"tag-optional": "\"\""
+											}
+										},
+										{
 											"id": "set-animation-frame",
 											"objectClass": "HP_Hearts",
 											"sid": 331110265774979,
@@ -8398,17 +8441,6 @@
 											"behaviorType": "Bullet",
 											"parameters": {
 												"angle": "angle(Enemies.X, Enemies.Y, Self.X, Self.Y)"
-											}
-										},
-										{
-											"id": "play",
-											"objectClass": "Audio",
-											"sid": 762340264609622,
-											"parameters": {
-												"audio-file": "Player Hurt Play at -5 DB",
-												"loop": "not-looping",
-												"volume": "-8",
-												"tag-optional": "\"\""
 											}
 										},
 										{
@@ -8894,11 +8926,11 @@
 										{
 											"id": "play",
 											"objectClass": "Audio",
-											"sid": 898259035893448,
+											"sid": 658046630028167,
 											"parameters": {
-												"audio-file": "Player Hurt Play at -5 DB",
+												"audio-file": "Punch Flinch Audio",
 												"loop": "not-looping",
-												"volume": "-8",
+												"volume": "-15",
 												"tag-optional": "\"\""
 											}
 										},
@@ -9234,11 +9266,11 @@
 										{
 											"id": "play",
 											"objectClass": "Audio",
-											"sid": 729530756068592,
+											"sid": 508893800338420,
 											"parameters": {
-												"audio-file": "Flask Explosion Play at -5 DB",
+												"audio-file": "Boss 1 Flask Explosion",
 												"loop": "not-looping",
-												"volume": "-5",
+												"volume": "0",
 												"tag-optional": "\"\""
 											}
 										},
@@ -9619,11 +9651,11 @@
 										{
 											"id": "play",
 											"objectClass": "Audio",
-											"sid": 205045530526895,
+											"sid": 125447487595505,
 											"parameters": {
-												"audio-file": "1st Boss Fight Play at -4 DB",
+												"audio-file": "1st Boss Fight Music",
 												"loop": "looping",
-												"volume": "-100",
+												"volume": "0",
 												"tag-optional": "\"Boss1\""
 											}
 										},
@@ -9631,6 +9663,7 @@
 											"id": "fade-volume",
 											"objectClass": "Audio",
 											"sid": 551647787394820,
+											"disabled": true,
 											"parameters": {
 												"tag": "\"Boss1\"",
 												"db": "-10",
@@ -9641,11 +9674,11 @@
 										{
 											"id": "play",
 											"objectClass": "Audio",
-											"sid": 435976873563100,
+											"sid": 234157494673125,
 											"parameters": {
-												"audio-file": "Boss 1 Evil Laugh Play at -5 DB",
+												"audio-file": "Boss 1 Evil Laugh",
 												"loop": "not-looping",
-												"volume": "-5",
+												"volume": "0",
 												"tag-optional": "\"\""
 											}
 										}
@@ -10004,11 +10037,11 @@
 										{
 											"id": "play",
 											"objectClass": "Audio",
-											"sid": 427356529730923,
+											"sid": 120474426801006,
 											"parameters": {
-												"audio-file": "Player Hurt Play at -5 DB",
+												"audio-file": "Punch Flinch Audio",
 												"loop": "not-looping",
-												"volume": "-8",
+												"volume": "-5",
 												"tag-optional": "\"\""
 											}
 										},
@@ -10260,11 +10293,11 @@
 										{
 											"id": "play",
 											"objectClass": "Audio",
-											"sid": 202367989284043,
+											"sid": 810313574584060,
 											"parameters": {
-												"audio-file": "Player Hurt Play at -5 DB",
+												"audio-file": "Punch Flinch Audio",
 												"loop": "not-looping",
-												"volume": "-8",
+												"volume": "-5",
 												"tag-optional": "\"\""
 											}
 										},
@@ -10408,11 +10441,11 @@
 										{
 											"id": "play",
 											"objectClass": "Audio",
-											"sid": 710125690593126,
+											"sid": 896761525475192,
 											"parameters": {
-												"audio-file": "2nd Boss Fight Play at -4 DB",
-												"loop": "not-looping",
-												"volume": "-100",
+												"audio-file": "2nd Boss Fight Music",
+												"loop": "looping",
+												"volume": "0",
 												"tag-optional": "\"Boss2\""
 											}
 										},
@@ -10420,6 +10453,7 @@
 											"id": "fade-volume",
 											"objectClass": "Audio",
 											"sid": 476402009167270,
+											"disabled": true,
 											"parameters": {
 												"tag": "\"Boss2\"",
 												"db": "-10",
@@ -10430,11 +10464,11 @@
 										{
 											"id": "play",
 											"objectClass": "Audio",
-											"sid": 411423032801989,
+											"sid": 820288786983397,
 											"parameters": {
-												"audio-file": "Boss 2 Evil Laugh Play at - 5 DB",
+												"audio-file": "Boss 2 Evil Laugh",
 												"loop": "not-looping",
-												"volume": "-5",
+												"volume": "0",
 												"tag-optional": "\"\""
 											}
 										}

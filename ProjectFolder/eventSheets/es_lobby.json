@@ -2917,11 +2917,11 @@
 								{
 									"id": "play",
 									"objectClass": "Audio",
-									"sid": 726776133272092,
+									"sid": 563599912193373,
 									"parameters": {
-										"audio-file": "Common Battle Music Play at -10 DB",
+										"audio-file": "General Music",
 										"loop": "looping",
-										"volume": "-100",
+										"volume": "0",
 										"tag-optional": "\"Normal\""
 									}
 								},
@@ -2929,6 +2929,7 @@
 									"id": "fade-volume",
 									"objectClass": "Audio",
 									"sid": 928952636785231,
+									"disabled": true,
 									"parameters": {
 										"tag": "\"Normal\"",
 										"db": "-20",
@@ -2966,11 +2967,11 @@
 								{
 									"id": "play",
 									"objectClass": "Audio",
-									"sid": 707284814299701,
+									"sid": 253268129222988,
 									"parameters": {
-										"audio-file": "Common Battle Music Play at -10 DB",
+										"audio-file": "General Music",
 										"loop": "looping",
-										"volume": "-100",
+										"volume": "0",
 										"tag-optional": "\"Normal\""
 									}
 								},
@@ -2978,6 +2979,7 @@
 									"id": "fade-volume",
 									"objectClass": "Audio",
 									"sid": 200187181090781,
+									"disabled": true,
 									"parameters": {
 										"tag": "\"Normal\"",
 										"db": "-20",

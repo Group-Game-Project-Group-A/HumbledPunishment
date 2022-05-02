@@ -312,7 +312,7 @@
 					"properties": {
 						"text": " C . O . N . T . R . O . L . S .",
 						"enable-bbcode": true,
-						"font": "Pixel_Font",
+						"font": "ROMANUS",
 						"size": 32,
 						"line-height": 0,
 						"bold": true,
@@ -334,7 +334,7 @@
 					"behaviors": {},
 					"world": {
 						"x": 426,
-						"y": 181,
+						"y": 175,
 						"width": 854,
 						"height": 54,
 						"originX": 0.5,
@@ -354,50 +354,8 @@
 					"properties": {
 						"text": "- Use WASD to move around the playing field.\n- Left click to fire your bow at the cursor.\n- Press SPACEBAR to dash in the direction that you're moving!\n- Press R to return to the Main Menu!",
 						"enable-bbcode": true,
-						"font": "Pixel_Font",
-						"size": 16,
-						"line-height": 1,
-						"bold": false,
-						"italic": false,
-						"color": [
-							0,
-							0,
-							0,
-							1
-						],
-						"horizontal-alignment": "center",
-						"vertical-alignment": "center",
-						"wrapping": "word",
-						"initially-visible": true,
-						"origin": "center"
-					},
-					"uid": 2,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 426,
-						"y": 323,
-						"width": 530,
-						"height": 154,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Dialog_Text",
-					"properties": {
-						"text": "- Use WASD to move around the playing field.\n- Left click to fire your bow at the cursor.\n- Press SPACEBAR to dash in the direction that you're moving!\n- Press R to return to the Main Menu!",
-						"enable-bbcode": true,
-						"font": "Pixel_Font",
-						"size": 16,
+						"font": "Roman SD",
+						"size": 14,
 						"line-height": 1,
 						"bold": false,
 						"italic": false,
@@ -418,9 +376,9 @@
 					"behaviors": {},
 					"world": {
 						"x": 423,
-						"y": 321,
+						"y": 331.5,
 						"width": 530,
-						"height": 154,
+						"height": 175,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -461,7 +419,7 @@
 					},
 					"world": {
 						"x": 401.965823,
-						"y": 419,
+						"y": 440,
 						"width": 280,
 						"height": 54.00000000000001,
 						"originX": 0.5,
@@ -481,7 +439,7 @@
 					"properties": {
 						"text": "Return to Menu",
 						"enable-bbcode": true,
-						"font": "Arial",
+						"font": "ROMANUS",
 						"size": 8,
 						"line-height": 0,
 						"bold": true,
@@ -511,7 +469,7 @@
 					},
 					"world": {
 						"x": 380.3676666263222,
-						"y": 413.44979810040985,
+						"y": 433.44979810040985,
 						"width": 93.26465581446156,
 						"height": 12.077423,
 						"originX": 0,
