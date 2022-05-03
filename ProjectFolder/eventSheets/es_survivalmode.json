@@ -1691,6 +1691,100 @@
 				}
 			],
 			"sid": 514161615085880
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 414199137267339
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Character_1",
+					"sid": 754484892110175,
+					"parameters": {
+						"animation": "\"Idle\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Character_2",
+					"sid": 271288535027452,
+					"parameters": {
+						"animation": "\"Idle\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Character_3",
+					"sid": 743781170276010,
+					"parameters": {
+						"animation": "\"Idle\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Character_4",
+					"sid": 820588341701503,
+					"parameters": {
+						"animation": "\"Idle\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Character_5",
+					"sid": 544492445803585,
+					"parameters": {
+						"animation": "\"Idle\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Character_6",
+					"sid": 853816098343711,
+					"parameters": {
+						"animation": "\"Idle\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Character_7",
+					"sid": 428447566623118,
+					"parameters": {
+						"animation": "\"Idle\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Character_8",
+					"sid": 188185175527143,
+					"parameters": {
+						"animation": "\"Idle\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Character_9",
+					"sid": 267924152794100,
+					"parameters": {
+						"animation": "\"Idle\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 386948809733500
 		}
 	],
 	"sid": 201991759953768

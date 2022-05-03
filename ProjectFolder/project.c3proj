@@ -408,7 +408,16 @@
 			},
 			{
 				"items": [
-					"Level_Fill"
+					"Level_Fill",
+					"Character_1",
+					"Character_2",
+					"Character_3",
+					"Character_4",
+					"Character_5",
+					"Character_6",
+					"Character_7",
+					"Character_8",
+					"Character_9"
 				],
 				"subfolders": [
 					{
@@ -844,7 +853,7 @@
 		"renderingMode": "auto",
 		"anisotropicFiltering": "auto",
 		"maxSpriteSheetSize": 2048,
-		"loaderStyle": "progress",
+		"loaderStyle": "splash",
 		"preloadSounds": true,
 		"cordovaiOSScheme": "app",
 		"cordovaAndroidScheme": "https"
