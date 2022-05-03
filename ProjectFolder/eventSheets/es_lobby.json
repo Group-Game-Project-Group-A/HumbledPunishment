@@ -109,6 +109,38 @@
 									"parameters": {
 										"visibility": "visible"
 									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "UI_Bow",
+									"sid": 442644541448341,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "UI_Quiver",
+									"sid": 123172662392217,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "Scroll",
+									"sid": 802759310438177,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "Black",
+									"sid": 884102704099652,
+									"parameters": {
+										"visibility": "visible"
+									}
 								}
 							],
 							"sid": 241973884428367,
@@ -1427,6 +1459,38 @@
 									"id": "set-visible",
 									"objectClass": "But_EnterLevel",
 									"sid": 653852377119669,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "UI_Bow",
+									"sid": 944780212948990,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "UI_Quiver",
+									"sid": 529355566675430,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "Scroll",
+									"sid": 612562464133870,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "Black",
+									"sid": 176605903747540,
 									"parameters": {
 										"visibility": "invisible"
 									}
