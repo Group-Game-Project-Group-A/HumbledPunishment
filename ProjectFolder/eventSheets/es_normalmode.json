@@ -971,6 +971,52 @@
 						}
 					],
 					"sid": 316864553112660
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "DoorCloser",
+							"sid": 872930306112340,
+							"parameters": {
+								"instance-variable": "Door",
+								"comparison": 0,
+								"value": "6"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "BossCardName",
+							"sid": 878327611367155,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "start-fade",
+							"objectClass": "BossCardName",
+							"sid": 390318348667314,
+							"behaviorType": "Fade"
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "BossCardDescription",
+							"sid": 443579405538529,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "start-fade",
+							"objectClass": "BossCardDescription",
+							"sid": 117973364183147,
+							"behaviorType": "Fade"
+						}
+					],
+					"sid": 426029613930239
 				}
 			]
 		},

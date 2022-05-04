@@ -911,8 +911,8 @@
 						},
 						{
 							"id": "set-text",
-							"objectClass": "ScoreText_SF",
-							"sid": 996995187941605,
+							"objectClass": "ScoreText",
+							"sid": 260476758284126,
 							"parameters": {
 								"text": "\"Score: \" & KillScore"
 							}
@@ -947,8 +947,8 @@
 						},
 						{
 							"id": "set-text",
-							"objectClass": "ScoreText_SF",
-							"sid": 124414718691180,
+							"objectClass": "ScoreText",
+							"sid": 417703504378079,
 							"parameters": {
 								"text": "\"Score: \" & KillScore"
 							}
@@ -988,8 +988,8 @@
 						},
 						{
 							"id": "set-text",
-							"objectClass": "ScoreText_SF",
-							"sid": 349537830606187,
+							"objectClass": "ScoreText",
+							"sid": 158070300015022,
 							"parameters": {
 								"text": "\"Score: \" & KillScore"
 							}
@@ -1078,8 +1078,8 @@
 										},
 										{
 											"id": "set-text",
-											"objectClass": "TimeText_SF",
-											"sid": 528715408921710,
+											"objectClass": "TimeText",
+											"sid": 962723099319927,
 											"parameters": {
 												"text": "\"Time: \"&round(time-timeModeTracker)"
 											}
@@ -1228,8 +1228,8 @@
 												},
 												{
 													"id": "set-text",
-													"objectClass": "ScoreText_SF",
-													"sid": 137006481382432,
+													"objectClass": "ScoreText",
+													"sid": 317509590162936,
 													"parameters": {
 														"text": "\"Score: \"&KillScore"
 													}
@@ -1273,8 +1273,8 @@
 												},
 												{
 													"id": "set-text",
-													"objectClass": "ScoreText_SF",
-													"sid": 726843598625418,
+													"objectClass": "ScoreText",
+													"sid": 530339895790064,
 													"parameters": {
 														"text": "\"Score: \"&KillScore"
 													}
@@ -1308,8 +1308,8 @@
 												},
 												{
 													"id": "set-text",
-													"objectClass": "ScoreText_SF",
-													"sid": 815083636738851,
+													"objectClass": "ScoreText",
+													"sid": 287077884510213,
 													"parameters": {
 														"text": "\"Score: \"&KillScore"
 													}

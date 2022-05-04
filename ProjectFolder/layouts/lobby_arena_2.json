@@ -4466,7 +4466,7 @@
 					"type": "But_EnterLevel",
 					"properties": {
 						"type": "button",
-						"text": "Yes!",
+						"text": "Continue",
 						"tooltip": "",
 						"initially-visible": false,
 						"enabled": false,
@@ -5411,7 +5411,7 @@
 					"properties": {
 						"text": "Are you sure?",
 						"enable-bbcode": true,
-						"font": "Pixel_Font",
+						"font": "ROMANUS",
 						"size": 12,
 						"line-height": 0,
 						"bold": false,
@@ -5433,7 +5433,7 @@
 					"behaviors": {},
 					"world": {
 						"x": 427.572987,
-						"y": 374.825692,
+						"y": 375.325692,
 						"width": 854,
 						"height": 22,
 						"originX": 0.5,
@@ -5453,7 +5453,7 @@
 					"properties": {
 						"text": "Are you sure?",
 						"enable-bbcode": true,
-						"font": "Pixel_Font",
+						"font": "ROMANUS",
 						"size": 12,
 						"line-height": 0,
 						"bold": false,

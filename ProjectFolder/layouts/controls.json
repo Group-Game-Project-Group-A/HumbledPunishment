@@ -270,7 +270,7 @@
 					"properties": {
 						"text": " C . O . N . T . R . O . L . S .",
 						"enable-bbcode": true,
-						"font": "Pixel_Font",
+						"font": "ROMANUS",
 						"size": 32,
 						"line-height": 0,
 						"bold": true,
@@ -291,8 +291,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 429,
-						"y": 183,
+						"x": 427,
+						"y": 176,
 						"width": 854,
 						"height": 54,
 						"originX": 0.5,
@@ -337,48 +337,6 @@
 						"y": 175,
 						"width": 854,
 						"height": 54,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Dialog_Text",
-					"properties": {
-						"text": "- Use WASD to move around the playing field.\n- Left click to fire your bow at the cursor.\n- Press SPACEBAR to dash in the direction that you're moving!\n- Press R to return to the Main Menu!",
-						"enable-bbcode": true,
-						"font": "Roman SD",
-						"size": 14,
-						"line-height": 1,
-						"bold": false,
-						"italic": false,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"horizontal-alignment": "center",
-						"vertical-alignment": "center",
-						"wrapping": "word",
-						"initially-visible": true,
-						"origin": "center"
-					},
-					"uid": 129,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 423,
-						"y": 331.5,
-						"width": 530,
-						"height": 175,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -474,6 +432,90 @@
 						"height": 12.077423,
 						"originX": 0,
 						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Dialog_Text",
+					"properties": {
+						"text": "- Use WASD to move around the playing field.\n- Left click to fire your bow at the cursor.\n- Press SPACEBAR to dash in the direction that you're moving!\n- Press R to return to the Main Menu!",
+						"enable-bbcode": true,
+						"font": "Roman SD",
+						"size": 14,
+						"line-height": 1,
+						"bold": false,
+						"italic": false,
+						"color": [
+							0,
+							0,
+							0,
+							1
+						],
+						"horizontal-alignment": "center",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "center"
+					},
+					"uid": 11288,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 424,
+						"y": 332.5,
+						"width": 530,
+						"height": 175,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Dialog_Text",
+					"properties": {
+						"text": "- Use WASD to move around the playing field.\n- Left click to fire your bow at the cursor.\n- Press SPACEBAR to dash in the direction that you're moving!\n- Press R to return to the Main Menu!",
+						"enable-bbcode": true,
+						"font": "Roman SD",
+						"size": 14,
+						"line-height": 1,
+						"bold": false,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "center",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "center"
+					},
+					"uid": 129,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 423,
+						"y": 331.5,
+						"width": 530,
+						"height": 175,
+						"originX": 0.5,
+						"originY": 0.5,
 						"color": [
 							1,
 							1,

@@ -16,14 +16,6 @@
 		},
 		{
 			"type": "plugin",
-			"id": "Spritefont2",
-			"name": "Sprite font",
-			"author": "Scirra",
-			"version": "r293.2",
-			"bundled": false
-		},
-		{
-			"type": "plugin",
 			"id": "Button",
 			"name": "Button",
 			"author": "Scirra",
@@ -58,6 +50,14 @@
 			"type": "plugin",
 			"id": "gamepad",
 			"name": "Gamepad",
+			"author": "Scirra",
+			"version": "r293.2",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Spritefont2",
+			"name": "Sprite font",
 			"author": "Scirra",
 			"version": "r293.2",
 			"bundled": false
@@ -202,19 +202,20 @@
 			"DoorWalls",
 			"DoorBlock",
 			"Festival_LoseButton",
-			"ScoreText",
 			"FloorBackground",
 			"SolidWalls_Invisible",
 			"HPBarSetter",
-			"Scroll"
+			"Scroll",
+			"BossCardName",
+			"BossCardDescription"
 		],
 		"subfolders": [
 			{
 				"items": [
 					"Tutorial_Txt",
 					"Dialog_Text",
-					"ScoreText_SF",
-					"TimeText_SF"
+					"ScoreText",
+					"TimeText"
 				],
 				"subfolders": [],
 				"name": "Text"

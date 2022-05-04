@@ -45458,8 +45458,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 3713,
-						"y": 1400,
+						"x": 3705.617716842309,
+						"y": 1368.482489018387,
 						"width": 32,
 						"height": 28,
 						"originX": 0.5,
@@ -46922,8 +46922,8 @@
 					},
 					"behaviors": {},
 					"world": {
-						"x": 3716.09809328372,
-						"y": 1460.4807770813622,
+						"x": 4041,
+						"y": 1198,
 						"width": 32,
 						"height": 32,
 						"originX": 0.5,
@@ -46963,6 +46963,112 @@
 						"height": 8,
 						"originX": 0.5121951219512195,
 						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "BossCardName",
+					"properties": {
+						"text": "Sharaglakesh",
+						"enable-bbcode": true,
+						"font": "Roman SD",
+						"size": 30,
+						"line-height": 0,
+						"bold": true,
+						"italic": false,
+						"color": [
+							0,
+							0,
+							0,
+							1
+						],
+						"horizontal-alignment": "center",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"initially-visible": false,
+						"origin": "top-left"
+					},
+					"uid": 11292,
+					"instanceVariables": {},
+					"behaviors": {
+						"Fade": {
+							"properties": {
+								"fade-in-time": 0,
+								"wait-time": 10,
+								"fade-out-time": 2,
+								"destroy": false,
+								"enabled": false,
+								"live-preview": false
+							}
+						}
+					},
+					"world": {
+						"x": 3543,
+						"y": 1368,
+						"width": 378,
+						"height": 49,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "BossCardDescription",
+					"properties": {
+						"text": "He's definitely going to eat you after...",
+						"enable-bbcode": true,
+						"font": "Roman SD",
+						"size": 15,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							0,
+							0,
+							0,
+							1
+						],
+						"horizontal-alignment": "center",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"initially-visible": false,
+						"origin": "top-left"
+					},
+					"uid": 11293,
+					"instanceVariables": {},
+					"behaviors": {
+						"Fade": {
+							"properties": {
+								"fade-in-time": 0,
+								"wait-time": 10,
+								"fade-out-time": 2,
+								"destroy": false,
+								"enabled": false,
+								"live-preview": false
+							}
+						}
+					},
+					"world": {
+						"x": 3591,
+						"y": 1418,
+						"width": 259.2692307692307,
+						"height": 73,
+						"originX": 0,
+						"originY": 0,
 						"color": [
 							1,
 							1,
@@ -47103,7 +47209,133 @@
 					"properties": {
 						"text": "You Died.",
 						"enable-bbcode": true,
-						"font": "Pixel_Font",
+						"font": "ROMANUS",
+						"size": 12,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							0,
+							0,
+							0,
+							1
+						],
+						"horizontal-alignment": "center",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"initially-visible": false,
+						"origin": "top-left"
+					},
+					"uid": 11294,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1,
+						"y": 226,
+						"width": 854,
+						"height": 30,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "WinText",
+					"properties": {
+						"text": "Round 1 Complete!",
+						"enable-bbcode": true,
+						"font": "ROMANUS",
+						"size": 12,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							0,
+							0,
+							0,
+							1
+						],
+						"horizontal-alignment": "center",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"initially-visible": false,
+						"origin": "top-left"
+					},
+					"uid": 11295,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1,
+						"y": 226,
+						"width": 854,
+						"height": 30,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "PauseText",
+					"properties": {
+						"text": "P.A.U.S.E.D.",
+						"enable-bbcode": true,
+						"font": "ROMANUS",
+						"size": 12,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							0,
+							0,
+							0,
+							1
+						],
+						"horizontal-alignment": "center",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"initially-visible": false,
+						"origin": "top-left"
+					},
+					"uid": 11296,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1,
+						"y": 226,
+						"width": 854,
+						"height": 30,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "LoseText",
+					"properties": {
+						"text": "You Died.",
+						"enable-bbcode": true,
+						"font": "ROMANUS",
 						"size": 12,
 						"line-height": 0,
 						"bold": false,
@@ -47145,7 +47377,7 @@
 					"properties": {
 						"text": "Round 1 Complete!",
 						"enable-bbcode": true,
-						"font": "Pixel_Font",
+						"font": "ROMANUS",
 						"size": 12,
 						"line-height": 0,
 						"bold": false,
@@ -47187,7 +47419,7 @@
 					"properties": {
 						"text": "P.A.U.S.E.D.",
 						"enable-bbcode": true,
-						"font": "Arial",
+						"font": "ROMANUS",
 						"size": 12,
 						"line-height": 0,
 						"bold": false,

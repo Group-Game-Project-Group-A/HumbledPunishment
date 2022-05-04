@@ -255,12 +255,6 @@
 									"parameters": {
 										"visibility": "visible"
 									}
-								},
-								{
-									"id": "start-fade",
-									"objectClass": "LeftClickToContinue",
-									"sid": 717001286820271,
-									"behaviorType": "Fade"
 								}
 							],
 							"sid": 624467425485320
@@ -329,6 +323,26 @@
 					]
 				}
 			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-fade-out-finished",
+					"objectClass": "LeftClickToContinue",
+					"sid": 328864319078069,
+					"behaviorType": "Fade"
+				}
+			],
+			"actions": [
+				{
+					"id": "restart-fade",
+					"objectClass": "LeftClickToContinue",
+					"sid": 975660819652514,
+					"behaviorType": "Fade"
+				}
+			],
+			"sid": 201362383117262
 		}
 	],
 	"sid": 845870143342011

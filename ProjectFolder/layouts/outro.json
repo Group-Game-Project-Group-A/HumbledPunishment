@@ -270,7 +270,7 @@
 						"horizontal-alignment": "center",
 						"vertical-alignment": "center",
 						"wrapping": "word",
-						"initially-visible": false,
+						"initially-visible": true,
 						"origin": "top-left"
 					},
 					"uid": 11287,
@@ -280,16 +280,16 @@
 							"properties": {
 								"fade-in-time": 2,
 								"wait-time": 0,
-								"fade-out-time": 0,
+								"fade-out-time": 2,
 								"destroy": false,
-								"enabled": false,
+								"enabled": true,
 								"live-preview": false
 							}
 						}
 					},
 					"world": {
 						"x": 586,
-						"y": 418,
+						"y": 440,
 						"width": 261,
 						"height": 32,
 						"originX": 0,

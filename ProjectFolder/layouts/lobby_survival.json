@@ -6635,7 +6635,7 @@
 					"type": "But_EnterLevel",
 					"properties": {
 						"type": "button",
-						"text": "Yes!",
+						"text": "Continue",
 						"tooltip": "",
 						"initially-visible": false,
 						"enabled": false,
@@ -6991,10 +6991,10 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1710,
-						"y": -983,
-						"width": 127,
-						"height": 97,
+						"x": 1685.4779196927957,
+						"y": -973.0868185992152,
+						"width": 143,
+						"height": 112,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -7012,7 +7012,7 @@
 					"properties": {
 						"text": "CHARGED SHOT\n\nStand still and HOLD FIRE to charge up your shot, inflicting extra damage.",
 						"enable-bbcode": true,
-						"font": "Pixel_Font",
+						"font": "Roman SD",
 						"size": 8,
 						"line-height": 0,
 						"bold": false,
@@ -7033,10 +7033,10 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1713,
-						"y": -980,
-						"width": 125,
-						"height": 97,
+						"x": 1468.822689706987,
+						"y": -830.7805325987142,
+						"width": 143,
+						"height": 112,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -7054,7 +7054,7 @@
 					"properties": {
 						"text": "[color=#a5a1b4]CHARGED SHOT[/color]\n\nStand still and [color=#a5a1b4]HOLD FIRE[/color] to charge up your shot, inflicting extra damage.",
 						"enable-bbcode": true,
-						"font": "Pixel_Font",
+						"font": "Roman SD",
 						"size": 8,
 						"line-height": 0,
 						"bold": false,
@@ -7075,10 +7075,10 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1712,
-						"y": -981,
-						"width": 125,
-						"height": 97,
+						"x": 1053.5560564320883,
+						"y": -726.9095083062023,
+						"width": 143,
+						"height": 112,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -7104,10 +7104,10 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1710,
-						"y": -882,
-						"width": 127,
-						"height": 97,
+						"x": 1685.4779196927955,
+						"y": -856.9561733032806,
+						"width": 143,
+						"height": 112,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -7125,7 +7125,7 @@
 					"properties": {
 						"text": "PIERCE SHOT\n\nYour arrows PIERCE, allowing you to hit multiple enemies with the same arrow.",
 						"enable-bbcode": true,
-						"font": "Pixel_Font",
+						"font": "Roman SD",
 						"size": 8,
 						"line-height": 0,
 						"bold": false,
@@ -7146,10 +7146,10 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1713,
-						"y": -880,
-						"width": 125,
-						"height": 97,
+						"x": 1468.822689706987,
+						"y": -730.7805325987142,
+						"width": 143,
+						"height": 112,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -7167,7 +7167,7 @@
 					"properties": {
 						"text": "[color=#a5a1b4]PIERCE SHOT[/color]\n\nYour arrows [color=#a5a1b4]PIERCE[/color], allowing you to hit multiple enemies with the same arrow.",
 						"enable-bbcode": true,
-						"font": "Pixel_Font",
+						"font": "Roman SD",
 						"size": 8,
 						"line-height": 0,
 						"bold": false,
@@ -7188,10 +7188,10 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1712,
-						"y": -881,
-						"width": 125,
-						"height": 97,
+						"x": 1409.9088404708234,
+						"y": -739.606728441439,
+						"width": 143,
+						"height": 112,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -7217,10 +7217,10 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1710,
-						"y": -780,
-						"width": 127,
-						"height": 97,
+						"x": 1683.9126805242506,
+						"y": -737.7385424492862,
+						"width": 143,
+						"height": 112,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -7238,7 +7238,7 @@
 					"properties": {
 						"text": "MULTISHOT\n\nShoot three arrows in a cone in front of you at the same time.",
 						"enable-bbcode": true,
-						"font": "Pixel_Font",
+						"font": "Roman SD",
 						"size": 8,
 						"line-height": 0,
 						"bold": false,
@@ -7259,10 +7259,10 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1711,
-						"y": -779,
-						"width": 125,
-						"height": 97,
+						"x": 1466.822689706987,
+						"y": -629.7805325987142,
+						"width": 143,
+						"height": 112,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -7280,7 +7280,7 @@
 					"properties": {
 						"text": "[color=#a5a1b4]MULTISHOT[/color]\n\nShoot three arrows in a cone in front of you at the same time.",
 						"enable-bbcode": true,
-						"font": "Pixel_Font",
+						"font": "Roman SD",
 						"size": 8,
 						"line-height": 0,
 						"bold": false,
@@ -7301,10 +7301,10 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1710,
-						"y": -780,
-						"width": 125,
-						"height": 97,
+						"x": 1402.1696301861584,
+						"y": -587.9973286584853,
+						"width": 143,
+						"height": 112,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -7330,10 +7330,10 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1565,
-						"y": -982,
-						"width": 127,
-						"height": 97,
+						"x": 1504.4774188162614,
+						"y": -971.5650722097002,
+						"width": 143,
+						"height": 112,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -7351,7 +7351,7 @@
 					"properties": {
 						"text": "FIRE ARROWS\n\nAttacks BURN enemies, causing them to take damage over time.",
 						"enable-bbcode": true,
-						"font": "Pixel_Font",
+						"font": "Roman SD",
 						"size": 8,
 						"line-height": 0,
 						"bold": false,
@@ -7372,10 +7372,10 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1566,
-						"y": -981,
-						"width": 125,
-						"height": 97,
+						"x": 1321.822689706987,
+						"y": -831.7805325987142,
+						"width": 143,
+						"height": 112,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -7393,7 +7393,7 @@
 					"properties": {
 						"text": "[color=#FF0000]FIRE ARROWS[/color]\n\nAttacks [color=#FF0000]BURN[/color] enemies, causing them to take damage over time.",
 						"enable-bbcode": true,
-						"font": "Pixel_Font",
+						"font": "Roman SD",
 						"size": 8,
 						"line-height": 0,
 						"bold": false,
@@ -7414,10 +7414,10 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1565,
-						"y": -982,
-						"width": 125,
-						"height": 97,
+						"x": 1171.603222305701,
+						"y": -746.1706319392267,
+						"width": 143,
+						"height": 112,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -7443,10 +7443,10 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1566,
-						"y": -881,
-						"width": 127,
-						"height": 97,
+						"x": 1505.4774188162617,
+						"y": -855.9561733032807,
+						"width": 143,
+						"height": 112,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -7464,7 +7464,7 @@
 					"properties": {
 						"text": "ELECTRIC ARROWS\n\nAttacks SHOCK enemies, causing damage to spread to nearby enemies.",
 						"enable-bbcode": true,
-						"font": "Pixel_Font",
+						"font": "Roman SD",
 						"size": 8,
 						"line-height": 0,
 						"bold": false,
@@ -7485,10 +7485,10 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1567,
-						"y": -880,
-						"width": 125,
-						"height": 97,
+						"x": 1322.822689706987,
+						"y": -730.7805325987142,
+						"width": 143,
+						"height": 112,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -7506,7 +7506,7 @@
 					"properties": {
 						"text": "[color=#f2e600]ELECTRIC ARROWS[/color]\n\nAttacks [color=#f2e600]SHOCK[/color] enemies, causing damage to spread to nearby enemies.",
 						"enable-bbcode": true,
-						"font": "Pixel_Font",
+						"font": "Roman SD",
 						"size": 8,
 						"line-height": 0,
 						"bold": false,
@@ -7527,10 +7527,10 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1566,
-						"y": -881,
-						"width": 125,
-						"height": 97,
+						"x": 1191.9078387177556,
+						"y": -950.914016195008,
+						"width": 143,
+						"height": 112,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -7556,10 +7556,10 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1565,
-						"y": -779,
-						"width": 127,
-						"height": 97,
+						"x": 1508.6513899323813,
+						"y": -737.782035228316,
+						"width": 143,
+						"height": 112,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -7577,7 +7577,7 @@
 					"properties": {
 						"text": "FROST ARROWS\n\nAttacks EMBRITTLE enemies, causing them to take extra arrow damage.",
 						"enable-bbcode": true,
-						"font": "Pixel_Font",
+						"font": "Roman SD",
 						"size": 8,
 						"line-height": 0,
 						"bold": false,
@@ -7598,10 +7598,10 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1566,
-						"y": -778,
-						"width": 125,
-						"height": 97,
+						"x": 1321.822689706987,
+						"y": -628.7805325987142,
+						"width": 143,
+						"height": 112,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -7619,7 +7619,7 @@
 					"properties": {
 						"text": "[color=#00f1f2]FROST ARROWS[/color]\n\nAttacks [color=#00f1f2]EMBRITTLE[/color] enemies, causing them to take extra arrow damage.",
 						"enable-bbcode": true,
-						"font": "Pixel_Font",
+						"font": "Roman SD",
 						"size": 8,
 						"line-height": 0,
 						"bold": false,
@@ -7640,10 +7640,10 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1565,
-						"y": -779,
-						"width": 125,
-						"height": 97,
+						"x": 1200.8210201185402,
+						"y": -597.9540028383001,
+						"width": 143,
+						"height": 112,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -7661,7 +7661,7 @@
 					"properties": {
 						"text": "Are you sure?",
 						"enable-bbcode": true,
-						"font": "Pixel_Font",
+						"font": "ROMANUS",
 						"size": 12,
 						"line-height": 0,
 						"bold": false,
@@ -7683,7 +7683,7 @@
 					"behaviors": {},
 					"world": {
 						"x": 328,
-						"y": 345.5,
+						"y": 346,
 						"width": 200,
 						"height": 30,
 						"originX": 0,
@@ -7703,7 +7703,7 @@
 					"properties": {
 						"text": "Are you sure?",
 						"enable-bbcode": true,
-						"font": "Pixel_Font",
+						"font": "ROMANUS",
 						"size": 12,
 						"line-height": 0,
 						"bold": false,
