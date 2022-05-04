@@ -1,0 +1,441 @@
+{
+	"name": "ES_Dialogues_Outro",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 674387000679746
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 170440917321387,
+					"parameters": {
+						"variable": "Clicks",
+						"value": "0"
+					}
+				}
+			],
+			"sid": 187914030731577,
+			"disabled": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-click",
+					"objectClass": "Mouse",
+					"sid": 567435532003843,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 682112392661335,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 439900582903344,
+							"parameters": {
+								"variable": "Clicks",
+								"comparison": 3,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 945064959584452,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [
+								{
+									"id": "set-visible",
+									"objectClass": "Outro_1",
+									"sid": 915855392572393,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "start-fade",
+									"objectClass": "Outro_1",
+									"sid": 751828633495194,
+									"behaviorType": "Fade"
+								},
+								{
+									"id": "wait-for-previous-actions",
+									"objectClass": "System",
+									"sid": 924505140119662
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 209798800781941,
+									"parameters": {
+										"variable": "Clicks",
+										"value": "1"
+									}
+								}
+							],
+							"sid": 137555459546497
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 377259410899622,
+							"parameters": {
+								"variable": "Clicks",
+								"comparison": 4,
+								"value": "0"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 436581999247262,
+							"parameters": {
+								"variable": "Clicks",
+								"comparison": 3,
+								"value": "1"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 568686034452274,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [
+								{
+									"id": "set-visible",
+									"objectClass": "Outro_2",
+									"sid": 488616959650861,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "start-fade",
+									"objectClass": "Outro_2",
+									"sid": 465291627008892,
+									"behaviorType": "Fade"
+								},
+								{
+									"id": "wait-for-previous-actions",
+									"objectClass": "System",
+									"sid": 213648472970746
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 435891145275242,
+									"parameters": {
+										"variable": "Clicks",
+										"value": "2"
+									}
+								}
+							],
+							"sid": 735650398417287
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 915768334292245,
+							"parameters": {
+								"variable": "Clicks",
+								"comparison": 4,
+								"value": "1"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 981525544777785,
+							"parameters": {
+								"variable": "Clicks",
+								"comparison": 3,
+								"value": "2"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 743019300875320,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [
+								{
+									"id": "set-visible",
+									"objectClass": "Outro_3",
+									"sid": 126106564449292,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "start-fade",
+									"objectClass": "Outro_3",
+									"sid": 292564186650169,
+									"behaviorType": "Fade"
+								},
+								{
+									"id": "wait-for-previous-actions",
+									"objectClass": "System",
+									"sid": 896886654278122
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 846862819088050,
+									"parameters": {
+										"variable": "Clicks",
+										"value": "3"
+									}
+								}
+							],
+							"sid": 627184101943432
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 368793746873588,
+							"parameters": {
+								"variable": "Clicks",
+								"comparison": 4,
+								"value": "2"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 654053228838860,
+							"parameters": {
+								"variable": "Clicks",
+								"comparison": 3,
+								"value": "3"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 783559780907162,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [
+								{
+									"id": "set-fade-out-time",
+									"objectClass": "Outro_1",
+									"sid": 429407523292139,
+									"behaviorType": "Fade",
+									"parameters": {
+										"fade-out-time": "2"
+									}
+								},
+								{
+									"id": "set-fade-out-time",
+									"objectClass": "Outro_2",
+									"sid": 782199135371097,
+									"behaviorType": "Fade",
+									"parameters": {
+										"fade-out-time": "2"
+									}
+								},
+								{
+									"id": "set-fade-out-time",
+									"objectClass": "Outro_3",
+									"sid": 691826631318201,
+									"behaviorType": "Fade",
+									"parameters": {
+										"fade-out-time": "2"
+									}
+								},
+								{
+									"id": "set-fade-in-time",
+									"objectClass": "Outro_1",
+									"sid": 375741151697377,
+									"behaviorType": "Fade",
+									"parameters": {
+										"fade-in-time": "0"
+									}
+								},
+								{
+									"id": "set-fade-in-time",
+									"objectClass": "Outro_2",
+									"sid": 932919470126072,
+									"behaviorType": "Fade",
+									"parameters": {
+										"fade-in-time": "0"
+									}
+								},
+								{
+									"id": "set-fade-in-time",
+									"objectClass": "Outro_3",
+									"sid": 284608294189422,
+									"behaviorType": "Fade",
+									"parameters": {
+										"fade-in-time": "0"
+									}
+								},
+								{
+									"id": "restart-fade",
+									"objectClass": "Outro_1",
+									"sid": 172062994844979,
+									"behaviorType": "Fade"
+								},
+								{
+									"id": "restart-fade",
+									"objectClass": "Outro_2",
+									"sid": 605709682693539,
+									"behaviorType": "Fade"
+								},
+								{
+									"id": "restart-fade",
+									"objectClass": "Outro_3",
+									"sid": 544089859908873,
+									"behaviorType": "Fade"
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 929151154829400,
+									"parameters": {
+										"seconds": "1"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "Outro_4",
+									"sid": 403138984962900,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "start-fade",
+									"objectClass": "Outro_4",
+									"sid": 785476018805707,
+									"behaviorType": "Fade"
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 569771065569173,
+									"parameters": {
+										"seconds": "2"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "LeftClickToContinue",
+									"sid": 105516215259227,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "start-fade",
+									"objectClass": "LeftClickToContinue",
+									"sid": 589413905860436,
+									"behaviorType": "Fade"
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 797138306939737,
+									"parameters": {
+										"variable": "Clicks",
+										"value": "4"
+									}
+								}
+							],
+							"sid": 940850368189859
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 211748549399561,
+							"parameters": {
+								"variable": "Clicks",
+								"comparison": 4,
+								"value": "3"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 485967093994271,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 887749346262609,
+									"parameters": {
+										"seconds": "1.0"
+									}
+								},
+								{
+									"id": "go-to-nextprevious-layout",
+									"objectClass": "System",
+									"sid": 720745266772453,
+									"parameters": {
+										"which": "next"
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 211029101414921,
+									"parameters": {
+										"variable": "Clicks",
+										"value": "0"
+									}
+								}
+							],
+							"sid": 440066518306556
+						}
+					]
+				}
+			]
+		}
+	],
+	"sid": 846426093231307
+}

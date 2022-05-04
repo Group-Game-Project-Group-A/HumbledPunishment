@@ -2,6 +2,16 @@
 	"name": "ES_AM_Arena2",
 	"events": [
 		{
+			"eventType": "variable",
+			"name": "BobBossFight",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 342137340508259
+		},
+		{
 			"eventType": "include",
 			"includeSheet": "ES_NormalMode"
 		},
@@ -241,6 +251,167 @@
 					"sid": 866099692492006
 				}
 			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "DoorCloser",
+					"sid": 275354553619529,
+					"parameters": {
+						"object": "Player"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 632724917171779,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "DoorCloser",
+							"sid": 130928639965469,
+							"parameters": {
+								"instance-variable": "Door",
+								"comparison": 0,
+								"value": "6"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 280194262001414,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "trigger-once-while-true",
+									"objectClass": "System",
+									"sid": 900062599582596
+								}
+							],
+							"actions": [
+								{
+									"id": "fade-volume",
+									"objectClass": "Audio",
+									"sid": 634234988155246,
+									"parameters": {
+										"tag": "\"Normal\"",
+										"db": "-100",
+										"duration": "1",
+										"ending": "stop"
+									}
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 461079858575756,
+									"parameters": {
+										"audio-file": "2nd Boss Fight Music",
+										"loop": "looping",
+										"volume": "0",
+										"tag-optional": "\"\""
+									}
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 938068696784933,
+									"parameters": {
+										"audio-file": "Boss 2 Evil Laugh",
+										"loop": "not-looping",
+										"volume": "0",
+										"tag-optional": "\"\""
+									}
+								},
+								{
+									"id": "set-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 321852374565846,
+									"parameters": {
+										"variable": "BobBossFight",
+										"value": "true"
+									}
+								}
+							],
+							"sid": 763507568683322
+						}
+					]
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 911810266858696,
+					"parameters": {
+						"variable": "BobBossFight"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 810142796078753,
+			"children": [
+				{
+					"eventType": "comment",
+					"text": "Every tick set the vignette to the player's position and at the top of the layer"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 778886208599660
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position-to-another-object",
+							"objectClass": "Vignette",
+							"sid": 521258567647758,
+							"parameters": {
+								"object": "Player",
+								"image-point-optional": "0"
+							}
+						},
+						{
+							"id": "move-to-top",
+							"objectClass": "Vignette",
+							"sid": 711926422662080
+						}
+					],
+					"sid": 689004607919930
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-destroyed",
+					"objectClass": "Bob",
+					"sid": 408942566432287
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 610006832452561,
+					"parameters": {
+						"variable": "BobBossFight",
+						"value": "false"
+					}
+				}
+			],
+			"sid": 880247270282183
 		}
 	],
 	"sid": 340517136722667

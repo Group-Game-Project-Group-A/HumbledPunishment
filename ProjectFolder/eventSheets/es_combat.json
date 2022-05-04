@@ -9327,19 +9327,19 @@
 										{
 											"id": "move-to-object",
 											"objectClass": "AcidArea",
-											"sid": 401278216485813,
+											"sid": 425241931273177,
 											"parameters": {
 												"where": "behind",
-												"object": "Player"
+												"object": "OrcBoss"
 											}
 										},
 										{
 											"id": "move-to-object",
 											"objectClass": "AcidArea",
-											"sid": 526153408352354,
+											"sid": 401278216485813,
 											"parameters": {
 												"where": "behind",
-												"object": "OrcBoss"
+												"object": "Player"
 											}
 										},
 										{
@@ -9659,6 +9659,15 @@
 												"width": "AcidArea.Width+1",
 												"height": "AcidArea.Height+1"
 											}
+										},
+										{
+											"id": "move-to-object",
+											"objectClass": "OrcBoss",
+											"sid": 179160657193155,
+											"parameters": {
+												"where": "in-front",
+												"object": "AcidArea"
+											}
 										}
 									],
 									"sid": 138398868012879
@@ -9688,20 +9697,10 @@
 									],
 									"actions": [
 										{
-											"id": "fade-volume",
-											"objectClass": "Audio",
-											"sid": 990075108034099,
-											"parameters": {
-												"tag": "\"Normal\"",
-												"db": "-100",
-												"duration": "1",
-												"ending": "stop"
-											}
-										},
-										{
 											"id": "play",
 											"objectClass": "Audio",
 											"sid": 125447487595505,
+											"disabled": true,
 											"parameters": {
 												"audio-file": "1st Boss Fight Music",
 												"loop": "looping",
@@ -9725,6 +9724,7 @@
 											"id": "play",
 											"objectClass": "Audio",
 											"sid": 234157494673125,
+											"disabled": true,
 											"parameters": {
 												"audio-file": "Boss 1 Evil Laugh",
 												"loop": "not-looping",
@@ -10244,37 +10244,6 @@
 								},
 								{
 									"eventType": "comment",
-									"text": "Every tick set the vignette to the player's position and at the top of the layer"
-								},
-								{
-									"eventType": "block",
-									"conditions": [
-										{
-											"id": "every-tick",
-											"objectClass": "System",
-											"sid": 758070783444276
-										}
-									],
-									"actions": [
-										{
-											"id": "set-position-to-another-object",
-											"objectClass": "Vignette",
-											"sid": 446890013289679,
-											"parameters": {
-												"object": "Player",
-												"image-point-optional": "0"
-											}
-										},
-										{
-											"id": "move-to-top",
-											"objectClass": "Vignette",
-											"sid": 321843199386803
-										}
-									],
-									"sid": 111066779667484
-								},
-								{
-									"eventType": "comment",
 									"text": "when the boss hits the enemy, deal damage and do damage stuff"
 								},
 								{
@@ -10452,78 +10421,6 @@
 										}
 									],
 									"sid": 377445891367078
-								},
-								{
-									"eventType": "comment",
-									"text": "when there is a boss present, play the boss music once."
-								},
-								{
-									"eventType": "block",
-									"conditions": [
-										{
-											"id": "compare-eventvar",
-											"objectClass": "System",
-											"sid": 299990787913024,
-											"parameters": {
-												"variable": "BobPresent",
-												"comparison": 5,
-												"value": "1"
-											}
-										},
-										{
-											"id": "trigger-once-while-true",
-											"objectClass": "System",
-											"sid": 132407492128231
-										}
-									],
-									"actions": [
-										{
-											"id": "fade-volume",
-											"objectClass": "Audio",
-											"sid": 352871887426288,
-											"parameters": {
-												"tag": "\"Normal\"",
-												"db": "-100",
-												"duration": "1",
-												"ending": "stop"
-											}
-										},
-										{
-											"id": "play",
-											"objectClass": "Audio",
-											"sid": 896761525475192,
-											"parameters": {
-												"audio-file": "2nd Boss Fight Music",
-												"loop": "looping",
-												"volume": "0",
-												"tag-optional": "\"Boss2\""
-											}
-										},
-										{
-											"id": "fade-volume",
-											"objectClass": "Audio",
-											"sid": 476402009167270,
-											"disabled": true,
-											"parameters": {
-												"tag": "\"Boss2\"",
-												"db": "-10",
-												"duration": "1",
-												"ending": "keep-playing"
-											}
-										},
-										{
-											"id": "play",
-											"objectClass": "Audio",
-											"sid": 820288786983397,
-											"parameters": {
-												"audio-file": "Boss 2 Evil Laugh",
-												"loop": "not-looping",
-												"volume": "0",
-												"tag-optional": "\"\""
-											}
-										}
-									],
-									"sid": 530671892822744
 								}
 							],
 							"sid": 832179404900057

@@ -40901,6 +40901,37 @@
 						"angle": 0,
 						"zElevation": 0
 					}
+				},
+				{
+					"type": "TravelWaypoints",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 11285,
+					"instanceVariables": {
+						"Order": 4
+					},
+					"behaviors": {},
+					"world": {
+						"x": 2228,
+						"y": 762,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
 				}
 			],
 			"sid": 157154720859052,
