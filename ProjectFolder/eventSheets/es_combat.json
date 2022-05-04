@@ -9327,37 +9327,10 @@
 										{
 											"id": "move-to-object",
 											"objectClass": "AcidArea",
-											"sid": 425241931273177,
+											"sid": 311752408982150,
 											"parameters": {
 												"where": "behind",
 												"object": "OrcBoss"
-											}
-										},
-										{
-											"id": "move-to-object",
-											"objectClass": "AcidArea",
-											"sid": 401278216485813,
-											"parameters": {
-												"where": "behind",
-												"object": "Player"
-											}
-										},
-										{
-											"id": "move-to-object",
-											"objectClass": "AcidArea",
-											"sid": 710707279332581,
-											"parameters": {
-												"where": "behind",
-												"object": "Arena1_Pillar"
-											}
-										},
-										{
-											"id": "move-to-object",
-											"objectClass": "AcidArea",
-											"sid": 113169651205495,
-											"parameters": {
-												"where": "behind",
-												"object": "Pillaer"
 											}
 										}
 									],
@@ -9659,15 +9632,6 @@
 												"width": "AcidArea.Width+1",
 												"height": "AcidArea.Height+1"
 											}
-										},
-										{
-											"id": "move-to-object",
-											"objectClass": "OrcBoss",
-											"sid": 179160657193155,
-											"parameters": {
-												"where": "in-front",
-												"object": "AcidArea"
-											}
 										}
 									],
 									"sid": 138398868012879
@@ -9872,14 +9836,14 @@
 												{
 													"id": "trigger-once-while-true",
 													"objectClass": "System",
-													"sid": 331084355375096
+													"sid": 983515195991928
 												}
 											],
 											"actions": [
 												{
 													"id": "spawn-another-object",
 													"objectClass": "Bob",
-													"sid": 637483041592712,
+													"sid": 883575591028196,
 													"parameters": {
 														"object": "Bobmelee",
 														"layer": "0",
@@ -9890,7 +9854,7 @@
 												{
 													"id": "move-to-object",
 													"objectClass": "Bobmelee",
-													"sid": 533303310417986,
+													"sid": 349585315236491,
 													"behaviorType": "MoveTo",
 													"parameters": {
 														"object": "Player",
@@ -9899,7 +9863,7 @@
 													}
 												}
 											],
-											"sid": 989169066226223,
+											"sid": 951360874284699,
 											"children": [
 												{
 													"eventType": "block",
@@ -9908,13 +9872,13 @@
 														{
 															"id": "set-visible",
 															"objectClass": "Bob",
-															"sid": 257793512860821,
+															"sid": 270925862734067,
 															"parameters": {
 																"visibility": "invisible"
 															}
 														}
 													],
-													"sid": 538660954588779
+													"sid": 636579011621586
 												}
 											]
 										}

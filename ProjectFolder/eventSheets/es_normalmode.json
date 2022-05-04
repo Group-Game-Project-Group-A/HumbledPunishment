@@ -988,6 +988,17 @@
 					],
 					"actions": [
 						{
+							"id": "fade-volume",
+							"objectClass": "Audio",
+							"sid": 349481248809978,
+							"parameters": {
+								"tag": "\"Normal\"",
+								"db": "-100",
+								"duration": "1",
+								"ending": "stop"
+							}
+						},
+						{
 							"id": "set-visible",
 							"objectClass": "BossCardName",
 							"sid": 878327611367155,
@@ -1016,7 +1027,149 @@
 							"behaviorType": "Fade"
 						}
 					],
-					"sid": 426029613930239
+					"sid": 426029613930239,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 587050494235833,
+									"parameters": {
+										"first-value": "LayoutName",
+										"comparison": 0,
+										"second-value": "\"Arena_1\""
+									}
+								}
+							],
+							"actions": [],
+							"sid": 194433653624214,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "trigger-once-while-true",
+											"objectClass": "System",
+											"sid": 248029866043655
+										}
+									],
+									"actions": [
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 260138883522003,
+											"parameters": {
+												"audio-file": "1st Boss Fight Music",
+												"loop": "looping",
+												"volume": "0",
+												"tag-optional": "\"\""
+											}
+										},
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 346555438115284,
+											"parameters": {
+												"audio-file": "Boss 1 Evil Laugh",
+												"loop": "not-looping",
+												"volume": "0",
+												"tag-optional": "\"\""
+											}
+										}
+									],
+									"sid": 550758452280617
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 288618972571788,
+									"parameters": {
+										"first-value": "LayoutName",
+										"comparison": 0,
+										"second-value": "\"Arena_2\""
+									}
+								}
+							],
+							"actions": [],
+							"sid": 893199747782693,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "trigger-once-while-true",
+											"objectClass": "System",
+											"sid": 609950643545252
+										}
+									],
+									"actions": [
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 461079858575756,
+											"parameters": {
+												"audio-file": "2nd Boss Fight Music",
+												"loop": "looping",
+												"volume": "0",
+												"tag-optional": "\"\""
+											}
+										},
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 938068696784933,
+											"parameters": {
+												"audio-file": "Boss 2 Evil Laugh",
+												"loop": "not-looping",
+												"volume": "0",
+												"tag-optional": "\"\""
+											}
+										},
+										{
+											"id": "set-visible",
+											"objectClass": "Vignette",
+											"sid": 651507455134858,
+											"parameters": {
+												"visibility": "visible"
+											}
+										},
+										{
+											"id": "set-range",
+											"objectClass": "Bob",
+											"sid": 866266171286938,
+											"behaviorType": "LineOfSight",
+											"parameters": {
+												"range": "10000"
+											}
+										}
+									],
+									"sid": 316715373528096
+								}
+							]
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "set-collisions-enabled",
+							"objectClass": "DoorCloser",
+							"sid": 671491721683278,
+							"parameters": {
+								"collisions": "disabled"
+							}
+						}
+					],
+					"sid": 345141568672680
 				}
 			]
 		},
