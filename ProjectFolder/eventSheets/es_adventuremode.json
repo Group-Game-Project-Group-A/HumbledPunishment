@@ -177,7 +177,85 @@
 							}
 						}
 					],
-					"sid": 590617268157015
+					"sid": 590617268157015,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-tag-playing",
+									"objectClass": "Audio",
+									"sid": 265989048028116,
+									"parameters": {
+										"tag": "\"OrcBoss\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "fade-volume",
+									"objectClass": "Audio",
+									"sid": 723322530854368,
+									"parameters": {
+										"tag": "\"OrcBoss\"",
+										"db": "-100",
+										"duration": "1",
+										"ending": "stop"
+									}
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 134055700363511,
+									"parameters": {
+										"audio-file": "General Music",
+										"loop": "not-looping",
+										"volume": "0",
+										"tag-optional": "\"\""
+									}
+								}
+							],
+							"sid": 224175148487627
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-tag-playing",
+									"objectClass": "Audio",
+									"sid": 121013602924823,
+									"parameters": {
+										"tag": "\"BobBoss\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "fade-volume",
+									"objectClass": "Audio",
+									"sid": 648454176623191,
+									"parameters": {
+										"tag": "\"BobBoss\"",
+										"db": "-100",
+										"duration": "1",
+										"ending": "stop"
+									}
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 928727837646295,
+									"parameters": {
+										"audio-file": "General Music",
+										"loop": "not-looping",
+										"volume": "0",
+										"tag-optional": "\"\""
+									}
+								}
+							],
+							"sid": 506863602494075
+						}
+					]
 				}
 			]
 		},
@@ -954,12 +1032,12 @@
 										{
 											"id": "play",
 											"objectClass": "Audio",
-											"sid": 260138883522003,
+											"sid": 812412582444338,
 											"parameters": {
 												"audio-file": "1st Boss Fight Music",
 												"loop": "looping",
 												"volume": "0",
-												"tag-optional": "\"\""
+												"tag-optional": "\"OrcBoss\""
 											}
 										},
 										{
@@ -1008,12 +1086,12 @@
 										{
 											"id": "play",
 											"objectClass": "Audio",
-											"sid": 461079858575756,
+											"sid": 446796470027686,
 											"parameters": {
 												"audio-file": "2nd Boss Fight Music",
 												"loop": "looping",
 												"volume": "0",
-												"tag-optional": "\"\""
+												"tag-optional": "\"BobBoss\""
 											}
 										},
 										{
