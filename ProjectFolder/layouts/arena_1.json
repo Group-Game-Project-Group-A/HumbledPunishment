@@ -3945,6 +3945,50 @@
 					}
 				},
 				{
+					"type": "Tutorial_Txt",
+					"properties": {
+						"text": "Press SPACEBAR to dash!",
+						"enable-bbcode": true,
+						"font": "Roman SD",
+						"size": 12,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "center",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 11044,
+					"instanceVariables": {
+						"Type": ""
+					},
+					"behaviors": {},
+					"world": {
+						"x": 79,
+						"y": 427,
+						"width": 200,
+						"height": 52,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
 					"type": "Level_Fill",
 					"properties": {
 						"initially-visible": true,
@@ -47078,6 +47122,138 @@
 						"angle": 0,
 						"zElevation": 0
 					}
+				},
+				{
+					"type": "Tutorial_Txt",
+					"properties": {
+						"text": "\"Dashing over enemies FREEZE them, temporarily slowing their movement!\"",
+						"enable-bbcode": true,
+						"font": "Roman SD",
+						"size": 12,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "center",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 11313,
+					"instanceVariables": {
+						"Type": "Element"
+					},
+					"behaviors": {},
+					"world": {
+						"x": 388,
+						"y": 1027,
+						"width": 358,
+						"height": 68,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Tutorial_Txt",
+					"properties": {
+						"text": "Press -P- to pause!",
+						"enable-bbcode": true,
+						"font": "Roman SD",
+						"size": 12,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "center",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 11314,
+					"instanceVariables": {
+						"Type": ""
+					},
+					"behaviors": {},
+					"world": {
+						"x": -202,
+						"y": 676,
+						"width": 200,
+						"height": 52,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Tutorial_Txt",
+					"properties": {
+						"text": "\"Dashing over traps FREEZE them, temporarily disabling them!\"",
+						"enable-bbcode": true,
+						"font": "Roman SD",
+						"size": 12,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "center",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"initially-visible": false,
+						"origin": "top-left"
+					},
+					"uid": 11315,
+					"instanceVariables": {
+						"Type": "Frost"
+					},
+					"behaviors": {},
+					"world": {
+						"x": 400,
+						"y": 799,
+						"width": 358,
+						"height": 58,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
 				}
 			],
 			"sid": 846710645887002,
@@ -47140,68 +47316,6 @@
 						],
 						"angle": 0,
 						"zElevation": 0
-					}
-				},
-				{
-					"type": "WinButton",
-					"properties": {
-						"type": "button",
-						"text": "Continue",
-						"tooltip": "",
-						"initially-visible": false,
-						"enabled": false,
-						"auto-font-size": true,
-						"checked": false,
-						"id": "",
-						"class": ""
-					},
-					"uid": 803,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 391,
-						"y": 262,
-						"width": 72,
-						"height": 24,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						]
-					}
-				},
-				{
-					"type": "LoseButton",
-					"properties": {
-						"type": "button",
-						"text": "Try Again?",
-						"tooltip": "",
-						"initially-visible": false,
-						"enabled": false,
-						"auto-font-size": true,
-						"checked": false,
-						"id": "",
-						"class": ""
-					},
-					"uid": 5982,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 391,
-						"y": 262,
-						"width": 72,
-						"height": 24,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						]
 					}
 				},
 				{
@@ -47457,13 +47571,13 @@
 					}
 				},
 				{
-					"type": "ResumeButton",
+					"type": "LoseButton",
 					"properties": {
 						"type": "button",
-						"text": "Resume",
+						"text": "Try Again?",
 						"tooltip": "",
 						"initially-visible": false,
-						"enabled": true,
+						"enabled": false,
 						"auto-font-size": true,
 						"checked": false,
 						"id": "",
@@ -47473,8 +47587,39 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 391,
-						"y": 262,
+						"x": 391.00002,
+						"y": 272.671283,
+						"width": 72,
+						"height": 24,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						]
+					}
+				},
+				{
+					"type": "WinButton",
+					"properties": {
+						"type": "button",
+						"text": "Continue",
+						"tooltip": "",
+						"initially-visible": false,
+						"enabled": false,
+						"auto-font-size": true,
+						"checked": false,
+						"id": "",
+						"class": ""
+					},
+					"uid": 2316,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 391.00002,
+						"y": 272.671283,
 						"width": 72,
 						"height": 24,
 						"originX": 0,

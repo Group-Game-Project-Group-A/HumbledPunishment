@@ -29735,8 +29735,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 2226,
-						"y": 1043,
+						"x": 532.350892146951,
+						"y": 1388.9308254413565,
 						"width": 32,
 						"height": 32,
 						"originX": 0.5,
@@ -38703,7 +38703,7 @@
 						"BrittleDamage": 0,
 						"BurnDamage": 1,
 						"StartSpeed": 0,
-						"Area": 0
+						"Area": 2
 					},
 					"behaviors": {
 						"MoveTo": {
@@ -38782,7 +38782,7 @@
 						"BrittleDamage": 0,
 						"BurnDamage": 1,
 						"StartSpeed": 0,
-						"Area": 0
+						"Area": 2
 					},
 					"behaviors": {
 						"MoveTo": {
@@ -38861,7 +38861,7 @@
 						"BrittleDamage": 0,
 						"BurnDamage": 1,
 						"StartSpeed": 0,
-						"Area": 0
+						"Area": 2
 					},
 					"behaviors": {
 						"MoveTo": {
@@ -38940,7 +38940,7 @@
 						"BrittleDamage": 0,
 						"BurnDamage": 1,
 						"StartSpeed": 0,
-						"Area": 0
+						"Area": 2
 					},
 					"behaviors": {
 						"MoveTo": {
@@ -39019,7 +39019,7 @@
 						"BrittleDamage": 0,
 						"BurnDamage": 1,
 						"StartSpeed": 0,
-						"Area": 0
+						"Area": 2
 					},
 					"behaviors": {
 						"MoveTo": {
@@ -39098,7 +39098,7 @@
 						"BrittleDamage": 0,
 						"BurnDamage": 1,
 						"StartSpeed": 0,
-						"Area": 0
+						"Area": 2
 					},
 					"behaviors": {
 						"MoveTo": {
@@ -39173,7 +39173,7 @@
 						"BrittleDamage": 0,
 						"BurnDamage": 1,
 						"StartSpeed": 0,
-						"Area": 0
+						"Area": 2
 					},
 					"behaviors": {
 						"MoveTo": {
@@ -39248,7 +39248,7 @@
 						"BrittleDamage": 0,
 						"BurnDamage": 1,
 						"StartSpeed": 0,
-						"Area": 0
+						"Area": 2
 					},
 					"behaviors": {
 						"MoveTo": {
@@ -39323,7 +39323,7 @@
 						"BrittleDamage": 0,
 						"BurnDamage": 1,
 						"StartSpeed": 0,
-						"Area": 0
+						"Area": 2
 					},
 					"behaviors": {
 						"MoveTo": {
@@ -40705,8 +40705,8 @@
 						}
 					},
 					"world": {
-						"x": 2227,
-						"y": 1019,
+						"x": 533.350892146951,
+						"y": 1364.9308254413565,
 						"width": 41,
 						"height": 8,
 						"originX": 0.5121951219512195,
@@ -40740,8 +40740,8 @@
 						}
 					},
 					"world": {
-						"x": 2226,
-						"y": 1011,
+						"x": 532.350892146951,
+						"y": 1356.9308254413565,
 						"width": 41,
 						"height": 8,
 						"originX": 0.5,
@@ -40802,8 +40802,8 @@
 						}
 					},
 					"world": {
-						"x": 2226,
-						"y": 1043,
+						"x": 532.350892146951,
+						"y": 1388.9308254413565,
 						"width": 32,
 						"height": 32,
 						"originX": 0.5,
@@ -40910,6 +40910,164 @@
 						"y": -1077,
 						"width": 81.18327974276528,
 						"height": 102.50666666666667,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Melee_Enemy_Minor",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Normal",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 10794,
+					"instanceVariables": {
+						"Health": 10,
+						"Burning": false,
+						"Paralyzed": false,
+						"Frozen": false,
+						"StartPosX": 0,
+						"StartPosY": 0,
+						"StartHealth": 0,
+						"Brittle": false,
+						"BrittleDamage": 0,
+						"BurnDamage": 1,
+						"StartSpeed": 0,
+						"Area": 0
+					},
+					"behaviors": {
+						"MoveTo": {
+							"properties": {
+								"max-speed": 115,
+								"acceleration": 600,
+								"deceleration": 600,
+								"rotate-speed": 0,
+								"set-angle": false,
+								"stop-on-solids": false,
+								"enabled": true
+							}
+						},
+						"LineOfSight": {
+							"properties": {
+								"obstacles": "custom",
+								"range": 0,
+								"cone-of-view": 360,
+								"use-collision-cells": true
+							}
+						},
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": "Enemy"
+							}
+						},
+						"Bullet": {
+							"properties": {
+								"speed": 0,
+								"acceleration": 0,
+								"gravity": 0,
+								"bounce-off-solids": true,
+								"set-angle": false,
+								"step": false,
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": 2218,
+						"y": 997,
+						"width": 32,
+						"height": 32,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Melee_Enemy_Minor",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Normal",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 10795,
+					"instanceVariables": {
+						"Health": 10,
+						"Burning": false,
+						"Paralyzed": false,
+						"Frozen": false,
+						"StartPosX": 0,
+						"StartPosY": 0,
+						"StartHealth": 0,
+						"Brittle": false,
+						"BrittleDamage": 0,
+						"BurnDamage": 1,
+						"StartSpeed": 0,
+						"Area": 0
+					},
+					"behaviors": {
+						"MoveTo": {
+							"properties": {
+								"max-speed": 115,
+								"acceleration": 600,
+								"deceleration": 600,
+								"rotate-speed": 0,
+								"set-angle": false,
+								"stop-on-solids": false,
+								"enabled": true
+							}
+						},
+						"LineOfSight": {
+							"properties": {
+								"obstacles": "custom",
+								"range": 0,
+								"cone-of-view": 360,
+								"use-collision-cells": true
+							}
+						},
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": "Enemy"
+							}
+						},
+						"Bullet": {
+							"properties": {
+								"speed": 0,
+								"acceleration": 0,
+								"gravity": 0,
+								"bounce-off-solids": true,
+								"set-angle": false,
+								"step": false,
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": 2083,
+						"y": 1217,
+						"width": 32,
+						"height": 32,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [

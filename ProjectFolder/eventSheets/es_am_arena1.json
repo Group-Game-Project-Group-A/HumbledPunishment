@@ -3,7 +3,7 @@
 	"events": [
 		{
 			"eventType": "include",
-			"includeSheet": "ES_NormalMode"
+			"includeSheet": "ES_AdventureMode"
 		},
 		{
 			"eventType": "block",
@@ -241,6 +241,166 @@
 					"sid": 666960472192781
 				}
 			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Tutorial_Txt",
+					"sid": 362945033605910,
+					"parameters": {
+						"instance-variable": "Type",
+						"comparison": 0,
+						"value": "\"Element\""
+					}
+				}
+			],
+			"actions": [],
+			"sid": 839202591314472,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 631158939879461,
+							"parameters": {
+								"variable": "Ice"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 250477209582931,
+							"parameters": {
+								"variable": "Fire"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 115427285379124,
+							"parameters": {
+								"variable": "Electric"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "Tutorial_Txt",
+							"sid": 296652344749499,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 858033236578175
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 793897215095819,
+							"parameters": {
+								"variable": "Electric"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "Tutorial_Txt",
+							"sid": 753867019409485,
+							"parameters": {
+								"text": "\"Dashing over enemies STUN them!\""
+							}
+						}
+					],
+					"sid": 437701683025460
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 207161143564799,
+							"parameters": {
+								"variable": "Ice"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "Tutorial_Txt",
+							"sid": 777655671771426,
+							"parameters": {
+								"text": "\"Dashing over enemies FREEZE them, temporarily slowing their movement!\""
+							}
+						}
+					],
+					"sid": 343654645257100
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 816592564343568,
+							"parameters": {
+								"variable": "Fire"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "Tutorial_Txt",
+							"sid": 353066138073049,
+							"parameters": {
+								"text": "\"Dashing over enemies BURN them!\""
+							}
+						}
+					],
+					"sid": 320701631597425
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Tutorial_Txt",
+					"sid": 850010455770873,
+					"parameters": {
+						"instance-variable": "Type",
+						"comparison": 0,
+						"value": "\"Frost\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "Tutorial_Txt",
+					"sid": 515540739511694,
+					"parameters": {
+						"text": "\"Dashing over traps FREEZE them, temporarily disabling them!\""
+					}
+				}
+			],
+			"sid": 455777273943133
 		}
 	],
 	"sid": 747247173287654

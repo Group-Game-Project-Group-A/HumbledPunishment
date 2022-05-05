@@ -7102,6 +7102,15 @@
 							"parameters": {
 								"mouse-button": "left"
 							}
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 314341577201414,
+							"parameters": {
+								"variable": "isPaused"
+							},
+							"isInverted": true
 						}
 					],
 					"actions": [

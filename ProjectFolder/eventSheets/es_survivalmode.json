@@ -196,17 +196,34 @@
 			"conditions": [
 				{
 					"id": "on-clicked",
-					"objectClass": "But_LoseSurvival",
-					"sid": 629931847106335
+					"objectClass": "LoseButton",
+					"sid": 746996464382930
 				}
 			],
 			"actions": [
 				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 976543029825806,
+					"parameters": {
+						"variable": "isPaused",
+						"value": "false"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 593707873846700,
+					"parameters": {
+						"seconds": "1.0"
+					}
+				},
+				{
 					"id": "go-to-layout",
 					"objectClass": "System",
-					"sid": 146611298164046,
+					"sid": 346937605211688,
 					"parameters": {
-						"layout": "Menu_Survival"
+						"layout": "Menu_Main"
 					}
 				}
 			],
@@ -1336,26 +1353,34 @@
 								},
 								{
 									"id": "is-visible",
-									"objectClass": "But_LoseSurvival",
-									"sid": 404148080716440,
+									"objectClass": "But_Arrow",
+									"sid": 968207740961926,
 									"isInverted": true
 								}
 							],
 							"actions": [
 								{
 									"id": "set-visible",
-									"objectClass": "But_LoseSurvival",
-									"sid": 738893870038769,
+									"objectClass": "But_Arrow",
+									"sid": 592320357246503,
 									"parameters": {
 										"visibility": "visible"
 									}
 								},
 								{
-									"id": "set-enabled",
-									"objectClass": "But_LoseSurvival",
-									"sid": 420033372515025,
+									"id": "set-collisions-enabled",
+									"objectClass": "But_Arrow",
+									"sid": 746490942409748,
 									"parameters": {
-										"mode": "enabled"
+										"collisions": "enabled"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "But_Arrow_Text",
+									"sid": 258250129070083,
+									"parameters": {
+										"visibility": "visible"
 									}
 								}
 							],
@@ -1563,8 +1588,8 @@
 							"conditions": [
 								{
 									"id": "on-clicked",
-									"objectClass": "But_LoseSurvival",
-									"sid": 360929109520094
+									"objectClass": "LoseButton",
+									"sid": 927782858768830
 								}
 							],
 							"actions": [
@@ -1578,11 +1603,11 @@
 									}
 								},
 								{
-									"id": "go-to-nextprevious-layout",
+									"id": "go-to-layout",
 									"objectClass": "System",
-									"sid": 837723942167381,
+									"sid": 586656024508455,
 									"parameters": {
-										"which": "previous"
+										"layout": "Menu_Main"
 									}
 								},
 								{

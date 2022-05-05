@@ -7,6 +7,35 @@
 			"subLayers": [],
 			"instances": [
 				{
+					"type": "Level2_Fill",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 7306,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 427.64256460702916,
+						"y": 240.00646696112838,
+						"width": 855.5797724063148,
+						"height": 480.77858490407044,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
 					"type": "NextSceneZone",
 					"properties": {
 						"initially-visible": true,
@@ -21,159 +50,10 @@
 					},
 					"behaviors": {},
 					"world": {
-						"x": 426.9999966447618,
-						"y": 60,
-						"width": 250,
-						"height": 88,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "NextSceneZone",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 2316,
-					"instanceVariables": {
-						"NextScene": "Arena_2_4"
-					},
-					"behaviors": {},
-					"world": {
-						"x": 427,
-						"y": 79,
-						"width": 260.87151299297494,
-						"height": 125.42793176058706,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Level2_Fill",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 7304,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 155,
-						"y": 240,
-						"width": 296,
-						"height": 415,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Level2_Fill",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 7305,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 704,
-						"y": 240,
-						"width": 288,
-						"height": 416,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Level2_Fill",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 7306,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 428,
-						"y": 284,
-						"width": 291,
-						"height": 333,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "NextSceneZone",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 7307,
-					"instanceVariables": {
-						"NextScene": "Arena_1_4"
-					},
-					"behaviors": {},
-					"world": {
-						"x": 431,
-						"y": 67,
-						"width": 256,
-						"height": 101,
+						"x": 437.99142982395506,
+						"y": 91.65387036297406,
+						"width": 82.09559120379345,
+						"height": 54.978380182217805,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -4311,64 +4191,6 @@
 						"angle": 0,
 						"zElevation": 0
 					}
-				},
-				{
-					"type": "Black",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 11282,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 429,
-						"y": 217,
-						"width": 882,
-						"height": 1409,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							0.5
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "UI_Quiver",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 11275,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 701,
-						"y": 238,
-						"width": 257,
-						"height": 311,
-						"originX": 0.45136186770428016,
-						"originY": 0.34726688102893893,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 5.92066863340585,
-						"zElevation": 0
-					}
 				}
 			],
 			"sid": 970252060896317,
@@ -4404,6 +4226,35 @@
 			"overriden": 0,
 			"subLayers": [],
 			"instances": [
+				{
+					"type": "UI_Quiver",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 11275,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 701,
+						"y": 238,
+						"width": 257,
+						"height": 311,
+						"originX": 0.45136186770428016,
+						"originY": 0.34726688102893893,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 5.92066863340585,
+						"zElevation": 0
+					}
+				},
 				{
 					"type": "Scroll",
 					"properties": {
@@ -4463,37 +4314,6 @@
 					}
 				},
 				{
-					"type": "But_EnterLevel",
-					"properties": {
-						"type": "button",
-						"text": "Continue",
-						"tooltip": "",
-						"initially-visible": false,
-						"enabled": false,
-						"auto-font-size": true,
-						"checked": false,
-						"id": "",
-						"class": ""
-					},
-					"uid": 987,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 365.50001261783393,
-						"y": 400.624268,
-						"width": 123,
-						"height": 24,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						]
-					}
-				},
-				{
 					"type": "ElementDock",
 					"properties": {
 						"initially-visible": true,
@@ -4541,7 +4361,7 @@
 					},
 					"behaviors": {},
 					"world": {
-						"x": 484,
+						"x": 499,
 						"y": 191,
 						"width": 36,
 						"height": 36,
@@ -4573,7 +4393,7 @@
 					},
 					"behaviors": {},
 					"world": {
-						"x": 550,
+						"x": 537,
 						"y": 191,
 						"width": 36,
 						"height": 36,
@@ -4615,7 +4435,7 @@
 						}
 					},
 					"world": {
-						"x": 303,
+						"x": 304,
 						"y": 251,
 						"width": 29.15425531914893,
 						"height": 38.26573426573427,
@@ -4699,7 +4519,7 @@
 						}
 					},
 					"world": {
-						"x": 391,
+						"x": 390,
 						"y": 251,
 						"width": 29.768617021276594,
 						"height": 38.26573426573427,
@@ -4741,7 +4561,7 @@
 						}
 					},
 					"world": {
-						"x": 473,
+						"x": 477,
 						"y": 251,
 						"width": 33.51063829787234,
 						"height": 33.56643356643357,
@@ -5629,6 +5449,183 @@
 							1
 						],
 						"angle": 0.21393545803073444,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "ClickDrag",
+					"properties": {
+						"text": "Click & drag onto the slots to augment your bow",
+						"enable-bbcode": true,
+						"font": "ROMANUS",
+						"size": 12,
+						"line-height": 0,
+						"bold": true,
+						"italic": false,
+						"color": [
+							0,
+							0,
+							0,
+							1
+						],
+						"horizontal-alignment": "center",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"initially-visible": false,
+						"origin": "top-left"
+					},
+					"uid": 11282,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 344.56768264292054,
+						"y": 112.42917635885533,
+						"width": 174.7285021514923,
+						"height": 46.392322928761644,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "ClickDrag",
+					"properties": {
+						"text": "Click & drag onto the slots to augment your bow",
+						"enable-bbcode": true,
+						"font": "ROMANUS",
+						"size": 12,
+						"line-height": 0,
+						"bold": true,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "center",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"initially-visible": false,
+						"origin": "top-left"
+					},
+					"uid": 11283,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 343.56768264292054,
+						"y": 111.42917635885533,
+						"width": 174.7285021514923,
+						"height": 46.392322928761644,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "But_Arrow",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Normal",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 11306,
+					"instanceVariables": {
+						"ButtonType": "Continue"
+					},
+					"behaviors": {
+						"Bullet": {
+							"properties": {
+								"speed": 600,
+								"acceleration": 0,
+								"gravity": 0,
+								"bounce-off-solids": false,
+								"set-angle": true,
+								"step": false,
+								"enabled": false
+							}
+						}
+					},
+					"world": {
+						"x": 412.718009516735,
+						"y": 412.00135796654683,
+						"width": 221.6594017745559,
+						"height": 42.74859891366436,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "But_Arrow_Text",
+					"properties": {
+						"text": "Continue",
+						"enable-bbcode": true,
+						"font": "ROMANUS",
+						"size": 8,
+						"line-height": 0,
+						"bold": true,
+						"italic": true,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "center",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 11307,
+					"instanceVariables": {
+						"ButtonType": "Continue"
+					},
+					"behaviors": {
+						"Pin": {
+							"properties": {
+								"destroy": false
+							}
+						}
+					},
+					"world": {
+						"x": 390.20900214951325,
+						"y": 403.9611087168996,
+						"width": 93.26465581446156,
+						"height": 12.047422920766008,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
 						"zElevation": 0
 					}
 				}

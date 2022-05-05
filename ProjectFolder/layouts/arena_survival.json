@@ -46055,37 +46055,6 @@
 					}
 				},
 				{
-					"type": "But_LoseSurvival",
-					"properties": {
-						"type": "button",
-						"text": "Main Menu",
-						"tooltip": "",
-						"initially-visible": false,
-						"enabled": false,
-						"auto-font-size": true,
-						"checked": false,
-						"id": "",
-						"class": ""
-					},
-					"uid": 13205,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 365.5,
-						"y": 274,
-						"width": 123,
-						"height": 24,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						]
-					}
-				},
-				{
 					"type": "ScoreText",
 					"properties": {
 						"text": "Score: 000",
@@ -46251,6 +46220,37 @@
 						],
 						"angle": 0,
 						"zElevation": 0
+					}
+				},
+				{
+					"type": "LoseButton",
+					"properties": {
+						"type": "button",
+						"text": "Return",
+						"tooltip": "Return to the Main Menu",
+						"initially-visible": false,
+						"enabled": false,
+						"auto-font-size": true,
+						"checked": false,
+						"id": "",
+						"class": ""
+					},
+					"uid": 7307,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 391.0000198238116,
+						"y": 272.6712831904501,
+						"width": 72,
+						"height": 20,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						]
 					}
 				}
 			],

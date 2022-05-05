@@ -95,22 +95,6 @@
 									}
 								},
 								{
-									"id": "set-enabled",
-									"objectClass": "But_EnterLevel",
-									"sid": 348108624172042,
-									"parameters": {
-										"mode": "enabled"
-									}
-								},
-								{
-									"id": "set-visible",
-									"objectClass": "But_EnterLevel",
-									"sid": 115613622241101,
-									"parameters": {
-										"visibility": "visible"
-									}
-								},
-								{
 									"id": "set-visible",
 									"objectClass": "UI_Bow",
 									"sid": 442644541448341,
@@ -138,6 +122,38 @@
 									"id": "set-visible",
 									"objectClass": "Black",
 									"sid": 884102704099652,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "ClickDrag",
+									"sid": 375839843462588,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "But_Arrow",
+									"sid": 126698507444777,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "set-collisions-enabled",
+									"objectClass": "But_Arrow",
+									"sid": 831369664741031,
+									"parameters": {
+										"collisions": "enabled"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "But_Arrow_Text",
+									"sid": 882982220954416,
 									"parameters": {
 										"visibility": "visible"
 									}
@@ -1218,14 +1234,77 @@
 									"eventType": "block",
 									"conditions": [
 										{
-											"id": "on-clicked",
-											"objectClass": "But_EnterLevel",
-											"sid": 842558266527822
+											"id": "on-object-clicked",
+											"objectClass": "Mouse",
+											"sid": 803265683440783,
+											"parameters": {
+												"mouse-button": "left",
+												"click-type": "clicked",
+												"object-clicked": "But_Arrow"
+											}
 										}
 									],
 									"actions": [],
 									"sid": 975630470163295,
 									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-instance-variable",
+													"objectClass": "But_Arrow_Text",
+													"sid": 487514668900920,
+													"parameters": {
+														"instance-variable": "ButtonType",
+														"comparison": 0,
+														"value": "But_Arrow.ButtonType"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "pin-to-object-properties",
+													"objectClass": "But_Arrow_Text",
+													"sid": 974136688415141,
+													"behaviorType": "Pin",
+													"parameters": {
+														"pin-to": "But_Arrow",
+														"x": true,
+														"y": true,
+														"angle": true,
+														"width-type": "no",
+														"height-type": "no",
+														"z": false
+													}
+												}
+											],
+											"sid": 546074464128032
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-instance-variable",
+													"objectClass": "But_Arrow_Text",
+													"sid": 815853946153432,
+													"parameters": {
+														"instance-variable": "ButtonType",
+														"comparison": 0,
+														"value": "But_Arrow.ButtonType"
+													},
+													"isInverted": true
+												}
+											],
+											"actions": [
+												{
+													"id": "unpin",
+													"objectClass": "But_Arrow_Text",
+													"sid": 899832709586245,
+													"behaviorType": "Pin"
+												}
+											],
+											"sid": 718972879314332
+										},
 										{
 											"eventType": "comment",
 											"text": "Click the button to go to the level that's indicated by the NextSceneZone's NextScene string variable"
@@ -1241,9 +1320,37 @@
 											],
 											"actions": [
 												{
+													"id": "set-enabled",
+													"objectClass": "But_Arrow",
+													"sid": 943690047476175,
+													"behaviorType": "Bullet",
+													"parameters": {
+														"state": "enabled"
+													}
+												},
+												{
+													"id": "play",
+													"objectClass": "Audio",
+													"sid": 189226944495050,
+													"parameters": {
+														"audio-file": "Arrow",
+														"loop": "not-looping",
+														"volume": "-5",
+														"tag-optional": "\"\""
+													}
+												},
+												{
+													"id": "wait",
+													"objectClass": "System",
+													"sid": 928094266198442,
+													"parameters": {
+														"seconds": "1.0"
+													}
+												},
+												{
 													"id": "go-to-nextprevious-layout",
 													"objectClass": "System",
-													"sid": 673374851731574,
+													"sid": 574123882131362,
 													"parameters": {
 														"which": "next"
 													}
@@ -1448,22 +1555,6 @@
 									}
 								},
 								{
-									"id": "set-enabled",
-									"objectClass": "But_EnterLevel",
-									"sid": 284117421040963,
-									"parameters": {
-										"mode": "enabled"
-									}
-								},
-								{
-									"id": "set-visible",
-									"objectClass": "But_EnterLevel",
-									"sid": 653852377119669,
-									"parameters": {
-										"visibility": "invisible"
-									}
-								},
-								{
 									"id": "set-visible",
 									"objectClass": "UI_Bow",
 									"sid": 944780212948990,
@@ -1491,6 +1582,38 @@
 									"id": "set-visible",
 									"objectClass": "Black",
 									"sid": 176605903747540,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "ClickDrag",
+									"sid": 340804782129265,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "But_Arrow",
+									"sid": 653331852895830,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "set-collisions-enabled",
+									"objectClass": "But_Arrow",
+									"sid": 518811799466211,
+									"parameters": {
+										"collisions": "disabled"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "But_Arrow_Text",
+									"sid": 839882150518580,
 									"parameters": {
 										"visibility": "invisible"
 									}

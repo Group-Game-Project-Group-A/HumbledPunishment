@@ -1,5 +1,5 @@
 {
-	"name": "ES_NormalMode",
+	"name": "ES_AdventureMode",
 	"events": [
 		{
 			"eventType": "include",
@@ -18,6 +18,37 @@
 			"isStatic": false,
 			"isConstant": false,
 			"sid": 613194946589038
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 984718312067378
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 683895880703857,
+					"parameters": {
+						"variable": "PreviousScenePlayerHealth",
+						"value": "PlayerHealth"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "Enemies",
+					"sid": 555596886219792,
+					"parameters": {
+						"instance-variable": "StartSpeed",
+						"value": "Enemies.MoveTo.MaxSpeed"
+					}
+				}
+			],
+			"sid": 828548793562312
 		},
 		{
 			"eventType": "block",
@@ -93,26 +124,26 @@
 				},
 				{
 					"id": "set-visible",
-					"objectClass": "WinButton",
-					"sid": 686591283746010,
+					"objectClass": "Vignette",
+					"sid": 773808268184185,
 					"parameters": {
-						"visibility": "visible"
+						"visibility": "invisible"
 					}
 				},
 				{
 					"id": "set-enabled",
 					"objectClass": "WinButton",
-					"sid": 939016039654899,
+					"sid": 544203862651279,
 					"parameters": {
 						"mode": "enabled"
 					}
 				},
 				{
 					"id": "set-visible",
-					"objectClass": "Vignette",
-					"sid": 773808268184185,
+					"objectClass": "WinButton",
+					"sid": 352415548983561,
 					"parameters": {
-						"visibility": "invisible"
+						"visibility": "visible"
 					}
 				},
 				{
@@ -133,31 +164,14 @@
 						{
 							"id": "on-clicked",
 							"objectClass": "WinButton",
-							"sid": 665002609779857
+							"sid": 420546470685890
 						}
 					],
 					"actions": [
 						{
-							"id": "set-boolean-eventvar",
-							"objectClass": "System",
-							"sid": 614666280761220,
-							"parameters": {
-								"variable": "isPaused",
-								"value": "false"
-							}
-						},
-						{
-							"id": "set-time-scale",
-							"objectClass": "System",
-							"sid": 293743119537899,
-							"parameters": {
-								"time-scale": "1"
-							}
-						},
-						{
 							"id": "go-to-nextprevious-layout",
 							"objectClass": "System",
-							"sid": 162482732518001,
+							"sid": 592163348147856,
 							"parameters": {
 								"which": "next"
 							}
@@ -196,37 +210,11 @@
 					}
 				},
 				{
-					"id": "set-time-scale",
-					"objectClass": "System",
-					"sid": 751299669319144,
-					"parameters": {
-						"time-scale": "0"
-					}
-				},
-				{
-					"id": "set-boolean-eventvar",
-					"objectClass": "System",
-					"sid": 338052485036871,
-					"parameters": {
-						"variable": "isPaused",
-						"value": "true"
-					}
-				},
-				{
 					"id": "set-visible",
 					"objectClass": "Vignette",
 					"sid": 312717745347818,
 					"parameters": {
 						"visibility": "invisible"
-					}
-				},
-				{
-					"id": "set-boolean-eventvar",
-					"objectClass": "System",
-					"sid": 766756343916475,
-					"parameters": {
-						"variable": "isPaused",
-						"value": "true"
 					}
 				},
 				{
@@ -239,8 +227,25 @@
 				},
 				{
 					"id": "set-visible",
+					"objectClass": "WinBackground",
+					"sid": 122919549703392,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 833551893149690,
+					"parameters": {
+						"variable": "isPaused",
+						"value": "true"
+					}
+				},
+				{
+					"id": "set-visible",
 					"objectClass": "LoseButton",
-					"sid": 627762407186333,
+					"sid": 183749240479298,
 					"parameters": {
 						"visibility": "visible"
 					}
@@ -248,17 +253,9 @@
 				{
 					"id": "set-enabled",
 					"objectClass": "LoseButton",
-					"sid": 562758056925569,
+					"sid": 913476499716087,
 					"parameters": {
 						"mode": "enabled"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "WinBackground",
-					"sid": 122919549703392,
-					"parameters": {
-						"visibility": "visible"
 					}
 				}
 			],
@@ -270,23 +267,14 @@
 						{
 							"id": "on-clicked",
 							"objectClass": "LoseButton",
-							"sid": 324712519183743
+							"sid": 989687503682558
 						}
 					],
 					"actions": [
 						{
-							"id": "set-boolean-eventvar",
-							"objectClass": "System",
-							"sid": 794295340338003,
-							"parameters": {
-								"variable": "isPaused",
-								"value": "false"
-							}
-						},
-						{
 							"id": "set-eventvar-value",
 							"objectClass": "System",
-							"sid": 228792487012524,
+							"sid": 569886013915014,
 							"parameters": {
 								"variable": "PlayerHealth",
 								"value": "PreviousScenePlayerHealth"
@@ -295,21 +283,13 @@
 						{
 							"id": "go-to-nextprevious-layout",
 							"objectClass": "System",
-							"sid": 973780366074520,
+							"sid": 168698643922396,
 							"parameters": {
 								"which": "previous"
 							}
-						},
-						{
-							"id": "set-time-scale",
-							"objectClass": "System",
-							"sid": 229091459036409,
-							"parameters": {
-								"time-scale": "1.0"
-							}
 						}
 					],
-					"sid": 888222412926948
+					"sid": 575024662601960
 				}
 			]
 		},
@@ -343,42 +323,11 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "on-start-of-layout",
-					"objectClass": "System",
-					"sid": 303317906476837
-				}
-			],
-			"actions": [
-				{
-					"id": "set-eventvar-value",
-					"objectClass": "System",
-					"sid": 108275188379771,
-					"parameters": {
-						"variable": "PreviousScenePlayerHealth",
-						"value": "PlayerHealth"
-					}
-				},
-				{
-					"id": "set-instvar-value",
-					"objectClass": "Enemies",
-					"sid": 181580798783734,
-					"parameters": {
-						"instance-variable": "StartSpeed",
-						"value": "Enemies.MoveTo.MaxSpeed"
-					}
-				}
-			],
-			"sid": 843120722439767
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
 					"id": "on-key-pressed",
 					"objectClass": "Keyboard",
-					"sid": 312021935991038,
+					"sid": 328923875331946,
 					"parameters": {
-						"key": 27
+						"key": 80
 					}
 				}
 			],
@@ -403,14 +352,6 @@
 					"id": "set-visible",
 					"objectClass": "WinBackground",
 					"sid": 658149937498107,
-					"parameters": {
-						"visibility": "toggle"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "ResumeButton",
-					"sid": 124469892617924,
 					"parameters": {
 						"visibility": "toggle"
 					}
@@ -466,52 +407,6 @@
 				}
 			],
 			"sid": 790547909010089
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-clicked",
-					"objectClass": "ResumeButton",
-					"sid": 599249957934084
-				}
-			],
-			"actions": [
-				{
-					"id": "set-boolean-eventvar",
-					"objectClass": "System",
-					"sid": 289790525577098,
-					"parameters": {
-						"variable": "isPaused",
-						"value": "false"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "PauseText",
-					"sid": 103104511504583,
-					"parameters": {
-						"visibility": "invisible"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "WinBackground",
-					"sid": 834754100874726,
-					"parameters": {
-						"visibility": "invisible"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "ResumeButton",
-					"sid": 990393154280240,
-					"parameters": {
-						"visibility": "invisible"
-					}
-				}
-			],
-			"sid": 107064948573447
 		},
 		{
 			"eventType": "block",
